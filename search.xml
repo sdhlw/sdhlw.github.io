@@ -3,9 +3,9 @@
   <entry>
     <title>hexo的使用</title>
     <url>/2022/07/30/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h4 id="一、基本命令"><a href="#一、基本命令" class="headerlink" title="一、基本命令"></a>一、基本命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init <span class="comment"># 初始化博客</span></span><br><span class="line">hexo s  <span class="comment"># 启动博客 start</span></span><br><span class="line"></span><br><span class="line">hexo n <span class="string">&quot;my post&quot;</span>  <span class="comment"># 新建一个md文件</span></span><br><span class="line">hexo g <span class="comment"># 生成页面</span></span><br><span class="line">hexo d <span class="comment"># 部署发布</span></span><br><span class="line"></span><br><span class="line">hexo clean <span class="comment"># 清楚缓存</span></span><br><span class="line"></span><br><span class="line">hexo n page tags  <span class="comment"># 使tags点击可用，执行结束记得修改生成的md文件，type 填写为 tags</span></span><br><span class="line">hexo n page categories <span class="comment"># 与上同理</span></span><br><span class="line">hexo n page about <span class="comment"># 生成的md文件，就是点击看到的文章，可直接编辑填写</span></span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<h4 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init <span class="comment"># 初始化博客</span></span><br><span class="line">hexo s  <span class="comment"># 启动博客 start</span></span><br><span class="line"></span><br><span class="line">hexo n <span class="string">&quot;my post&quot;</span>  <span class="comment"># 新建一个md文件</span></span><br><span class="line">hexo g <span class="comment"># 生成页面</span></span><br><span class="line">hexo d <span class="comment"># 部署发布</span></span><br><span class="line"></span><br><span class="line">hexo clean <span class="comment"># 清楚缓存</span></span><br><span class="line"></span><br><span class="line">hexo n page tags  <span class="comment"># 使tags点击可用，执行结束记得修改生成的md文件，type 填写为 tags</span></span><br><span class="line">hexo n page categories <span class="comment"># 与上同理</span></span><br><span class="line">hexo n page about <span class="comment"># 生成的md文件，就是点击看到的文章，可直接编辑填写</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="二、配置参考"><a href="#二、配置参考" class="headerlink" title="二、配置参考"></a>二、配置参考</h4><ul>
+<h4 id="配置参考"><a href="#配置参考" class="headerlink" title="配置参考"></a>配置参考</h4><ul>
 <li><p>初步搭建视频参考：<a href="https://www.youtube.com/watch?v=erKYtw4Rfhk&t=1338s&ab_channel=CodeSheep%E7%A8%8B%E5%BA%8F%E7%BE%8A">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo - YouTube</a> ↩</p>
 </li>
 <li><p>初步搭建文章参考：<a href="https://zhuanlan.zhihu.com/p/60578464">使用 Hexo+GitHub 搭建个人免费博客教程 知乎 </a></p>
@@ -21,7 +21,7 @@
 <li><p>添加搜索：<a href="https://yashuning.github.io/2018/06/29/hexo-Next-%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/">hexo - Next 主题添加搜索功能 | Yaya’s blog (yashuning.github.io)</a></p>
 </li>
 </ul>
-<h4 id="三、问题解决："><a href="#三、问题解决：" class="headerlink" title="三、问题解决："></a>三、问题解决：</h4><p>1、端口占用：<a href="https://blog.csdn.net/weixin_45627031/article/details/108359235">(88条消息) FATAL Port 4000 has been used. Try other port instead._我是泛滥的博客-CSDN博客</a></p>
+<h4 id="问题解决："><a href="#问题解决：" class="headerlink" title="问题解决："></a>问题解决：</h4><p>1、端口占用：<a href="https://blog.csdn.net/weixin_45627031/article/details/108359235">(88条消息) FATAL Port 4000 has been used. Try other port instead._我是泛滥的博客-CSDN博客</a></p>
 <p>2、</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo d</span><br><span class="line">FATAL YAMLException: can not <span class="built_in">read</span> an implicit mapping pair; a colon is missed (107:14)</span><br><span class="line"><span class="comment"># 配置里：branch里少了一个空格</span></span><br></pre></td></tr></table></figure>
 
