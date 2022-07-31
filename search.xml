@@ -1,11 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hexo的使用</title>
-    <url>/2022/07/30/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<h4 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init <span class="comment"># 初始化博客</span></span><br><span class="line">hexo s  <span class="comment"># 启动博客 start</span></span><br><span class="line"></span><br><span class="line">hexo n <span class="string">&quot;my post&quot;</span>  <span class="comment"># 新建一个md文件</span></span><br><span class="line">hexo g <span class="comment"># 生成页面</span></span><br><span class="line">hexo d <span class="comment"># 部署发布</span></span><br><span class="line"></span><br><span class="line">hexo clean <span class="comment"># 清楚缓存</span></span><br><span class="line"></span><br><span class="line">hexo n page tags  <span class="comment"># 使tags点击可用，执行结束记得修改生成的md文件，type 填写为 tags</span></span><br><span class="line">hexo n page categories <span class="comment"># 与上同理</span></span><br><span class="line">hexo n page about <span class="comment"># 生成的md文件，就是点击看到的文章，可直接编辑填写</span></span><br></pre></td></tr></table></figure>
+    <title>Linux基本命令</title>
+    <url>/2022/07/31/Linux-base/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="Base"><a href="#Base" class="headerlink" title="Base"></a><font color=yellow>Base</font></h3><ul>
+<li><p><code>ls -lsh 目录名</code><br><code>-l</code> 列出详细信息 (l: list)<br> <code>-sh</code> 显示人类可读方式文件大小 (s: size; h: human readable) </p>
+</li>
+<li><p><code>cd - </code> 回到刚才的目录<code>.</code> 当前目录 <code>..</code>父目录</p>
+</li>
+<li><p>wc命令    -l -c -w<br>- c 统计字节数。<br>-l 统计行数。<br>-w 统计字数。</p>
+<span id="more"></span>
+</li>
+<li><p>which命令：在PATH变量指定的路径中，<strong>搜索某个系统命令的位置</strong>，并且返回第一个搜索结果。也就是说，使用which命令，就可以看到某个系统命令是否存在，以及执行的到底是哪一个位置的命令。 ^[10]^</p>
+</li>
+<li><p>find命令：查找文件&#x2F;文件夹<br><code>find ~/ -name test -type -d </code> ：查找家目录下，类型为目录的test<br><code> -type</code> 类型参数^[11]^<br>类型参数列表：<br>f 普通文件<br>l 符号连接<br>d 目录<br>c 字符设备<br>b 块设备<br>s 套接字<br>p Fifo</p>
+</li>
+<li><p>paste 命令用于合并文件的列<sup id="fnref:13"><a href="#fn:13" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Linux paste 命令 | 菜鸟教程 (runoob.com)](https://www.runoob.com/linux/linux-comm-paste.html)
+">[13]</span></a></sup></p>
+</li>
+</ul>
+<h3 id="Linux-文件颜色含义"><a href="#Linux-文件颜色含义" class="headerlink" title="Linux 文件颜色含义"></a><font color=yellow>Linux 文件颜色含义</font></h3><p>Linux系统颜色默认表示的文件类型：<br>蓝色表示目录；<br>绿色表示可执行文件；<br>红色表示压缩文件；<br>浅蓝色表示链接文件；<br>灰色表示其它文件；<br>红色闪烁表示链接的文件有问题了；<br>黄色是设备文件，包括block, char, fifo。<br>用dircolors -p看到缺省的颜色设置，包括各种颜色和“粗体”，下划线，闪烁等定义。<sup id="fnref:12"><a href="#fn:12" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[(87条消息) linux软连接出现红色闪烁_Danker01的博客-CSDN博客_软连接红色](https://blog.csdn.net/weixin_42575020/article/details/105952464)
+">[12]</span></a></sup></p>
+<h3 id="软链接-amp-硬链接"><a href="#软链接-amp-硬链接" class="headerlink" title="软链接 &amp; 硬链接"></a><font color=yellow>软链接 &amp; 硬链接</font></h3><p><code>ln -s  源文件（源目录） 目标文件（目标目录）</code>  创建软链接（类似于快捷方式，大小较小）<br>不填写目标文件或目标目录，默认在当前目录创建软链接，可填写目标目录&#x2F;名称，即可重命令软链接名称。</p>
+<p><code>ln 源文件 目标文件</code>  创建硬链接（类似于cp  -p 加 同步更新 ）^[1]^<br><code>ln  -s  source/*  target/</code> 把一个文件夹下的所有文件软连接到另一个文件夹下，即每个文件都有一个软链接。^[2]^</p>
+<p><code>wget -c -b</code>   -c 断点续传   -b 后台运行</p>
+<h3 id="前后台命令"><a href="#前后台命令" class="headerlink" title="前后台命令 "></a><font color=yellow>前后台命令 </font></h3><p><code>nohup  命令   &gt; run.log 2&gt;&amp;1 &amp;</code>        后台执行，不挂断，标准输出和错误输出都放到log文件里<br>把标准错误（2）重定向到标准输出中（1），而标准输出又导入文件output里面。<br>&gt;console.txt，实际是 1&gt;console.txt的省略用法；&lt; console.txt ，实际是 0 &lt; console.txt的省略用法。^[3]^</p>
+<p>使用nohup关闭终端回来：用<code>ps -aux|grep 软件名</code>，前提是记住自己运行的软件名。^[4]^<br>未关闭终端：<code>jobs</code> 查看当前终端后台运行命令 ，终端关闭后无法查看。</p>
+<p>命令前后台切换^[5]^：<br>后台执行命令：<code>命令 &amp;</code><br>程序正在前台运行： Ctrl+z 选项把程序暂停，在最后一行加上bg %number  （number用<code>job -l</code> 查看）<br>程序正在后台运行：fg %number 把程序掉到前台<br>终止后台运行的程序：kill %number</p>
+<h3 id="git-bash"><a href="#git-bash" class="headerlink" title="git bash "></a><font color=yellow>git bash </font></h3><p>windows terminal 添加git bash：^[6]^</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;guid&quot; : &quot;&#123;DCCB2820-E057-5204-2732-968F1D89107E&#125;&quot;,</span><br><span class="line">    &quot;name&quot; : &quot;Git Bash&quot;,</span><br><span class="line">    &quot;commandline&quot; : &quot;C:\\Program Files\\Git\\bin\\bash.exe --login -i&quot;,</span><br><span class="line">    &quot;icon&quot; : &quot;C:\\Users\\Lenovo\\Pictures\\nodelete\\git-bash.png&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
 
-<h4 id="配置参考"><a href="#配置参考" class="headerlink" title="配置参考"></a>配置参考</h4><ul>
+<p>git bash 设置打开默认目录：vim ~&#x2F;.bash_profile  将一下内容放进去：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> D:\\MyData\\10-other\\gitbook_md  <span class="comment"># 加入要去的目录</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="WSL-amp-VMware"><a href="#WSL-amp-VMware" class="headerlink" title="WSL &amp; VMware "></a><font color=yellow>WSL &amp; VMware </font></h3><p>WSL依赖于hyper-v必须开启，而VMware不依赖这个，必须关闭^[7]^<br>CMD管理员模式启动，输入bcdedit &#x2F;set hypervisorlaunchtype auto开启，则可以使用WSL<br>CMD管理员模式启动，输入bcdedit &#x2F;set hypervisorlaunchtype off关闭，则可以使用VMware</p>
+<h3 id="解压缩"><a href="#解压缩" class="headerlink" title="解压缩"></a><font color=yellow>解压缩</font></h3><p><code>tar zxvf  aaa.tar.gz</code>^[8]^</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>tar</td>
+<td>Linux压缩&#x2F;解压缩工具</td>
+</tr>
+<tr>
+<td>-z</td>
+<td>代表gzip，使用gzip工具进行压缩或解压</td>
+</tr>
+<tr>
+<td>-x</td>
+<td>代表extract，解压文件（压缩文件是-c）</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>代表verbose，显示解压过程（文件列表）</td>
+</tr>
+<tr>
+<td>-f</td>
+<td>代表file，指定要解压的文件名（or 要压缩成的文件名）</td>
+</tr>
+</tbody></table>
+<h3 id="添加环境变量"><a href="#添加环境变量" class="headerlink" title="添加环境变量"></a><font color=yellow>添加环境变量</font></h3><p>临时：<code>export PATH=/usr/local/nginx/sbin/:$PATH</code>，将&#x2F;usr&#x2F;local&#x2F;nginx&#x2F;sbin&#x2F;目录临时添加到环境变量中^[9]^</p>
+<p>当前用户永久：<code>vim ~/.bashrc</code>将一下内容添加进去：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"> <span class="comment"># 注意等号后边要加引号，与临时添加有所差别；路径用绝对路径，不管是临时还是永久添加，不要~，用pwd去获得绝对路径</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="string">&quot;/usr/local/nginx/sbin/:<span class="variable">$PATH</span>&quot;</span> </span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p>1、<a href="https://blog.csdn.net/gao_zhennan/article/details/79127232">(84条消息) 软链接和硬链接到底有啥作用和区别_明月几时有666的博客-CSDN博客_软连接和硬连接的优缺点</a><br>2、<a href="https://blog.csdn.net/sinat_29891353/article/details/69525388">(84条消息) linux软连接多个文件 批量_dingdongkk的博客-CSDN博客_软链接多个文件</a><br>3、<a href="https://blog.csdn.net/ianly123/article/details/85113539">https://blog.csdn.net/ianly123/article/details/85113539</a><br>4、<a href="https://blog.csdn.net/weixin_38145317/article/details/124037568">(85条消息) nohup使用笔记，后台运行，进程查看与终止_wanghua609的博客-CSDN博客_nohup进程</a><br>5、<a href="https://www.cnblogs.com/geogre123/p/10643152.html">Linux程序前台后台切换 - G先生 - 博客园 (cnblogs.com)</a><br>6、<a href="https://www.cnblogs.com/cong-wang/p/15026535.html">Windows Terminal添加Git Bash支持 - TruthHell - 博客园 (cnblogs.com)</a><br>7、<a href="https://blog.csdn.net/qq_34398519/article/details/114289586">https://blog.csdn.net/qq_34398519/article/details/114289586</a><br>8、<a href="https://blog.csdn.net/ProLayman/article/details/114577007">(87条消息) tar -zxvf是什么意思_ProLayman的博客-CSDN博客_tar –zxvf</a><br>9、<a href="https://www.cnblogs.com/yaoqingzhuan/p/10889718.html">linux添加环境变量 - ilovetesting - 博客园 (cnblogs.com)</a><br>10、<a href="https://www.cnblogs.com/peida/archive/2012/11/08/2759805.html">每天一个linux命令（16）：which命令 - peida - 博客园 (cnblogs.com)</a><br>11、<a href="https://www.cnblogs.com/jiftle/p/9707518.html">linux find 命令查找文件和文件夹 - jiftle - 博客园 (cnblogs.com)</a></p>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:12"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">12.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/weixin_42575020/article/details/105952464">(87条消息) linux软连接出现红色闪烁_Danker01的博客-CSDN博客_软连接红色</a><a href="#fnref:12" rev="footnote"> ↩</a></span></li><li id="fn:13"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">13.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.runoob.com/linux/linux-comm-paste.html">Linux paste 命令 | 菜鸟教程 (runoob.com)</a><a href="#fnref:13" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>base</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows超赞软件</title>
+    <url>/2022/07/31/Windows%E8%B6%85%E8%B5%9E%E8%BD%AF%E4%BB%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="软件"><a href="#软件" class="headerlink" title="软件:"></a>软件:</h4><ul>
+<li><p>edge浏览器（已换谷歌内核，且扩展丰富，无需翻墙即可添加多数Google扩展），Chrome浏览器、360极速浏览器、</p>
+</li>
+<li><p>Foxmail（邮箱）、Bandizip（解压软件）、LICEcap（录屏GIF）、Snipaste（截图，贴图）</p>
+</li>
+<li><p>Typora（markdown编辑器）、Listary（快速搜索文件文件夹）、ripgrep(命令行搜索软件，用于搜索文件内容)、百度网盘、PanDownload（百度云解除）</p>
+</li>
+<li><p>QQ OCR(没错，qq自带OCR!!!)、天若OCR、Quicker（快捷面板）、Utools (和quicker有些像)、手心输入法（最后还是换回搜狗，不得不承认搜狗的强大）、(PDF-XChange Editor、文电通pdf阅读器)、</p>
+</li>
+<li><p>one commander(文件资源管理器)、clover（文件资源管理器标签化）、DeskPins1.3（窗口置顶）、spacesniff(直观地看到文件和文件夹的磁盘空间占用情况)、coodesker(桌面管理软件)、files uwp preview(文件资源管理器)</p>
+</li>
+<li><p>MobaXterm (ssh客户端，最推荐，功能很多，不止ssh)、Putty(ssh客户端，比较mini)、Xshell（ssh客户端，朋友用过，自己木有）</p>
+</li>
+<li><p>IDE&amp;编辑器<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="编辑器就是纯编辑文本的编辑器、IDE是带有软件开发功能的“集成开发环境”。目前的编辑器功能强大，基本可以算作是IDE。简单点说自称IDE的IDE能做的活，自称编辑器的IDE未必能做，自称编辑器的IDE能做的活，自称IDE的IDE基本能做。
+">[1]</span></a></sup>：Vscode(Python、markdown、LaTex等我都行，牛不牛)、Sublime Text、Thonny（python）</p>
+</li>
+</ul>
+<h4 id="Edge扩展"><a href="#Edge扩展" class="headerlink" title="Edge扩展"></a>Edge扩展</h4><ul>
+<li>adblock （广告拦截）</li>
+<li>Dark Reader (暗黑模式)</li>
+<li>fireshot-capture page(截图)</li>
+<li>infinity pro （好看好用的标签页）</li>
+<li>IGG谷歌学术助手</li>
+<li>沙拉查词</li>
+<li>壹伴（公众号助手）</li>
+</ul>
+<h4 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h4><ul>
+<li>软件下载：https:<a href="https://links.jianshu.com/go?to=//en.softonic.com/">&#x2F;&#x2F;en.softonic.com&#x2F;</a></li>
+<li>135编辑器（公众号排版）：<a href="https://www.135editor.com/">https://www.135editor.com/</a></li>
+<li>创客贴（公众号封面）：<a href="https://www.chuangkit.com/">https://www.chuangkit.com/</a></li>
+</ul>
+<h4 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h4><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">编辑器就是纯编辑文本的编辑器、IDE是带有软件开发功能的“集成开发环境”。目前的编辑器功能强大，基本可以算作是IDE。简单点说自称IDE的IDE能做的活，自称编辑器的IDE未必能做，自称编辑器的IDE能做的活，自称IDE的IDE基本能做。<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+      <categories>
+        <category>software</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hexo的使用</title>
+    <url>/2022/07/30/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="配置参考"><a href="#配置参考" class="headerlink" title="配置参考"></a>配置参考</h4><ul>
 <li><p>初步搭建视频参考：<a href="https://www.youtube.com/watch?v=erKYtw4Rfhk&t=1338s&ab_channel=CodeSheep%E7%A8%8B%E5%BA%8F%E7%BE%8A">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo - YouTube</a> ↩</p>
 </li>
 <li><p>初步搭建文章参考：<a href="https://zhuanlan.zhihu.com/p/60578464">使用 Hexo+GitHub 搭建个人免费博客教程 知乎 </a></p>
@@ -25,14 +145,32 @@
 <li><p>NeXt RSS的订阅：点击RSS图标，自动打开一个网址，复制该网址链接（此链接就是订阅源），复制到相应软件中，即可订阅</p>
 </li>
 </ul>
+<h4 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init <span class="comment"># 初始化博客</span></span><br><span class="line"></span><br><span class="line">hexo clean <span class="comment"># 清除缓存</span></span><br><span class="line">hexo g <span class="comment"># generate 生成页面</span></span><br><span class="line">hexo s  <span class="comment"># server  启动本地服务预览：localhost:端口 填入浏览器地址</span></span><br><span class="line">hexo d <span class="comment"># deploy 部署发布</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建文章：layout有三种：post(会发布)、draft(草稿)、page(首页标签页)</span></span><br><span class="line"><span class="comment"># 三种文章的模板文件在根文件夹的scaffolds里</span></span><br><span class="line">hexo n [layout] 文件名  <span class="comment"># 不加layout, 默认layout是post</span></span><br><span class="line">hexo n <span class="built_in">test</span> <span class="comment"># 创建一个名叫test的发布文件</span></span><br><span class="line">hexo n draft <span class="built_in">test</span> <span class="comment"># 创建一个名叫test的草稿文件，不发布</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建三个首页的标签页：</span></span><br><span class="line">hexo n page tags  <span class="comment"># 使tags点击可用，执行结束记得修改生成的md文件，type填写为 tags</span></span><br><span class="line">hexo n page categories <span class="comment"># 与上同理</span></span><br><span class="line">hexo n page about <span class="comment"># 生成的md文件，就是点击看到的文章，可直接编辑填写</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>Hexo的分类和标签<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Hexo-NexT 分类多层级描述 | Chang (cs-cshi.github.io)](https://cs-cshi.github.io/hexo-blog/Hexo-NexT 分类多层级描述/)
+">[1]</span></a></sup>：分类具有顺序和层次性，而标签没有顺序和层次</p>
+<p>父子分类：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 文章的前缀</span><br><span class="line">categories:   # 方法1 Life是Diary的子分类，即分类具有顺序和层次性</span><br><span class="line">- Diary</span><br><span class="line">- Life</span><br><span class="line"></span><br><span class="line">categories:   # 方法2 Life是Diary的子分类</span><br><span class="line">- [Diary, Life]</span><br></pre></td></tr></table></figure>
+
+<p>同级分类：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">categories:  # Diary和life为同级分类</span><br><span class="line">- [Diary]</span><br><span class="line">- [Life]</span><br></pre></td></tr></table></figure>
+
+<p>标签使用：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">tags:</span><br><span class="line">- PS3</span><br><span class="line">- Games</span><br></pre></td></tr></table></figure>
+
+
+
 <h4 id="问题解决："><a href="#问题解决：" class="headerlink" title="问题解决："></a>问题解决：</h4><p>1、端口占用：<a href="https://blog.csdn.net/weixin_45627031/article/details/108359235">(88条消息) FATAL Port 4000 has been used. Try other port instead._我是泛滥的博客-CSDN博客</a></p>
 <p>2、</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo d</span><br><span class="line">FATAL YAMLException: can not <span class="built_in">read</span> an implicit mapping pair; a colon is missed (107:14)</span><br><span class="line"><span class="comment"># 配置里：branch里少了一个空格</span></span><br></pre></td></tr></table></figure>
 
 <p>3、<a href="https://blog.garryde.com/archives/46153.html">Hexo Next 修改中文不生效 - 咖里De (garryde.com)</a></p>
-]]></content>
+<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">[Hexo-NexT 分类多层级描述 | Chang (cs-cshi.github.io)](https://cs-cshi.github.io/hexo-blog/Hexo-NexT 分类多层级描述/)<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
       <categories>
-        <category>hexo</category>
+        <category>software</category>
+        <category>Hexo</category>
       </categories>
       <tags>
         <tag>software</tag>
