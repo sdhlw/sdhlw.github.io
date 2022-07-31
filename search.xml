@@ -152,6 +152,14 @@
 </li>
 <li><p>评论功能的实现：<a href="https://xinyufeng.net/2020/06/01/Hexo-Next%E4%B8%BB%E9%A2%98-%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/">Hexo Next主题 添加文章评论功能 | Peak Xin (xinyufeng.net)</a></p>
 </li>
+<li><p>博客成立时间：<a href="https://blog.51cto.com/u_12877374/4977880">使用 Github 空间搭建 Hexo 技术博客——Hexo NexT主题内网站运行时间的设置（十）_12867374的技术博客_51CTO博客</a></p>
+</li>
+<li><p>去除power by ：</p>
+</li>
+<li><p>将主题（<code>next</code>）配置文件 <code>_config.yml</code> 中的以下字段设为 <code>false</code></p>
+<blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">footer:</span><br><span class="line">    powered: false</span><br><span class="line">    theme:</span><br><span class="line">        enable: false</span><br><span class="line">        version: false</span><br></pre></td></tr></table></figure></blockquote>
+</li>
 </ul>
 <h4 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init <span class="comment"># 初始化博客</span></span><br><span class="line"></span><br><span class="line">hexo clean <span class="comment"># 清除缓存</span></span><br><span class="line">hexo g <span class="comment"># generate 生成页面</span></span><br><span class="line">hexo s  <span class="comment"># server  启动本地服务预览：localhost:端口 填入浏览器地址</span></span><br><span class="line">hexo d <span class="comment"># deploy 部署发布</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建文章：layout有三种：post(会发布)、draft(草稿)、page(首页标签页)</span></span><br><span class="line"><span class="comment"># 三种文章的模板文件在根文件夹的scaffolds里</span></span><br><span class="line">hexo n [layout] 文件名  <span class="comment"># 不加layout, 默认layout是post</span></span><br><span class="line">hexo n <span class="built_in">test</span> <span class="comment"># 创建一个名叫test的发布文件</span></span><br><span class="line">hexo n draft <span class="built_in">test</span> <span class="comment"># 创建一个名叫test的草稿文件，不发布</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建三个首页的标签页：</span></span><br><span class="line">hexo n page tags  <span class="comment"># 使tags点击可用，执行结束记得修改生成的md文件，type填写为 tags</span></span><br><span class="line">hexo n page categories <span class="comment"># 与上同理</span></span><br><span class="line">hexo n page about <span class="comment"># 生成的md文件，就是点击看到的文章，可直接编辑填写</span></span><br></pre></td></tr></table></figure>
 
