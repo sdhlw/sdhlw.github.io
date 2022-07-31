@@ -20,6 +20,10 @@
 </li>
 <li><p>添加搜索：<a href="https://yashuning.github.io/2018/06/29/hexo-Next-%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/">hexo - Next 主题添加搜索功能 | Yaya’s blog (yashuning.github.io)</a></p>
 </li>
+<li><p>查看next版本：主题文件夹–&gt;package.json–&gt;搜索“version”。自己目前用的7.8.0版本</p>
+</li>
+<li><p>NeXt RSS的订阅：点击RSS图标，自动打开一个网址，复制该网址链接（此链接就是订阅源），复制到相应软件中，即可订阅</p>
+</li>
 </ul>
 <h4 id="问题解决："><a href="#问题解决：" class="headerlink" title="问题解决："></a>问题解决：</h4><p>1、端口占用：<a href="https://blog.csdn.net/weixin_45627031/article/details/108359235">(88条消息) FATAL Port 4000 has been used. Try other port instead._我是泛滥的博客-CSDN博客</a></p>
 <p>2、</p>
