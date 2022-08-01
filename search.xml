@@ -305,10 +305,10 @@
   <entry>
     <title>【机器学习】Cross-Validation（交叉验证）</title>
     <url>/2022/08/01/%E3%80%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%91Cross-Validation%EF%BC%88%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/%E3%80%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%91Cross-Validation%EF%BC%88%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%EF%BC%89.assets/image-20220801170610443.png" alt="image-20220801170610443"></p>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208011735473.png" alt="image-20220801170610443"></p>
 <p>该方法存在两个弊端：</p>
 <p>1、训练集和测试集划分有多重方式，每种方式的test MSE和最优degree是不一样的，结果取决于划分方式</p>
-<p><img src="/%E3%80%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%91Cross-Validation%EF%BC%88%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%EF%BC%89.assets/image-20220801171705989.png" alt="image-20220801171705989"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208011735436.png" alt="image-20220801171705989"></p>
 <p>2、训练集没有用到所有数据，效果不好</p>
 <p>因此提出交叉验证。</p>
 <hr>

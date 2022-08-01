@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-08-01T09:26:41.027Z</updated>
+  <updated>2022-08-01T09:36:04.106Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://example.com/2022/08/01/%E3%80%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%91Cross-Validation%EF%BC%88%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%EF%BC%89/"/>
     <id>http://example.com/2022/08/01/%E3%80%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%91Cross-Validation%EF%BC%88%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%EF%BC%89/</id>
     <published>2022-08-01T09:04:04.000Z</published>
-    <updated>2022-08-01T09:26:41.027Z</updated>
+    <updated>2022-08-01T09:36:04.106Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="/%E3%80%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%91Cross-Validation%EF%BC%88%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%EF%BC%89.assets/image-20220801170610443.png" alt="image-20220801170610443"></p><p>该方法存在两个弊端：</p><p>1、训练集和测试集划分有多重方式，每种方式的test MSE和最优degree是不一样的，结果取决于划分方式</p><p><img src="/%E3%80%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%91Cross-Validation%EF%BC%88%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%EF%BC%89.assets/image-20220801171705989.png" alt="image-20220801171705989"></p><p>2、训练集没有用到所有数据，效果不好</p><p>因此提出交叉验证。</p><hr><p>交叉验证</p><ul><li><p>LOOCV方法（Leave-one-out cross-validation）：只用一个数据作为测试集，其他的数据都作为训练集，并将此步骤重复N次（N为数据集的数据数量），结果最后做平均。本质是n折交叉验证。</p></li><li><p>K折交叉验证（K-fold Cross Validation）：测试集将不再只包含一个数据，而是多个，具体数目将根据K的选取决定，结果最后做平均。</p><p>五折交叉验证：</p><ul><li>将所有数据集分成5份</li><li>不重复地每次取其中一份做测试集，用其他四份做训练集训练模型，之后计算该模型在测试集上的MSEi</li><li>将5次的MSEi取平均得到最后的MSE</li></ul></li></ul><h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><p>1、<a href="https://zhuanlan.zhihu.com/p/24825503">【机器学习】Cross-Validation（交叉验证）详解 - 知乎 (zhihu.com)</a></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208011735473.png" alt="image-20220801170610443"></p><p>该方法存在两个弊端：</p><p>1、训练集和测试集划分有多重方式，每种方式的test MSE和最优degree是不一样的，结果取决于划分方式</p><p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208011735436.png" alt="image-20220801171705989"></p><p>2、训练集没有用到所有数据，效果不好</p><p>因此提出交叉验证。</p><hr><p>交叉验证</p><ul><li><p>LOOCV方法（Leave-one-out cross-validation）：只用一个数据作为测试集，其他的数据都作为训练集，并将此步骤重复N次（N为数据集的数据数量），结果最后做平均。本质是n折交叉验证。</p></li><li><p>K折交叉验证（K-fold Cross Validation）：测试集将不再只包含一个数据，而是多个，具体数目将根据K的选取决定，结果最后做平均。</p><p>五折交叉验证：</p><ul><li>将所有数据集分成5份</li><li>不重复地每次取其中一份做测试集，用其他四份做训练集训练模型，之后计算该模型在测试集上的MSEi</li><li>将5次的MSEi取平均得到最后的MSE</li></ul></li></ul><h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><p>1、<a href="https://zhuanlan.zhihu.com/p/24825503">【机器学习】Cross-Validation（交叉验证）详解 - 知乎 (zhihu.com)</a></p>]]></content>
     
     
     <summary type="html">简单介绍交叉验证的基本原理</summary>
