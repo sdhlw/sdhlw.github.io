@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Linux基本命令</title>
+    <title>Linux 基本命令</title>
     <url>/2022/07/31/Linux-base/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="Base"><a href="#Base" class="headerlink" title="Base"></a><font color=yellow>Base</font></h3><ul>
 <li><p><code>ls -lsh 目录名</code><br><code>-l</code> 列出详细信息 (l: list)<br> <code>-sh</code> 显示人类可读方式文件大小 (s: size; h: human readable) </p>
@@ -9,7 +9,6 @@
 <li><p><code>cd - </code> 回到刚才的目录<code>.</code> 当前目录 <code>..</code>父目录</p>
 </li>
 <li><p>wc命令    -l -c -w<br>- c 统计字节数。<br>-l 统计行数。<br>-w 统计字数。</p>
-<span id="more"></span>
 </li>
 <li><p>which命令：在PATH变量指定的路径中，<strong>搜索某个系统命令的位置</strong>，并且返回第一个搜索结果。也就是说，使用which命令，就可以看到某个系统命令是否存在，以及执行的到底是哪一个位置的命令。 ^[10]^</p>
 </li>
