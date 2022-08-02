@@ -210,7 +210,7 @@
 </li>
 <li><p>Foxmail（邮箱）、Bandizip（解压软件）、LICEcap（录屏GIF）、Snipaste（截图，贴图）</p>
 </li>
-<li><p>Typora（markdown编辑器）、Listary（快速搜索文件文件夹）、ripgrep(命令行搜索软件，用于搜索文件内容)、百度网盘、PanDownload（百度云解除）</p>
+<li><p>Typora（markdown编辑器）、Listary（快速搜索文件文件夹）、ripgrep(命令行搜索软件，用于搜索文件内容)、百度网盘、PanDownload（百度云解除）、Xmind(思维导图)</p>
 </li>
 <li><p>QQ OCR(没错，qq自带OCR!!!)、天若OCR、Quicker（快捷面板）、Utools (和quicker有些像)、手心输入法（最后还是换回搜狗，不得不承认搜狗的强大）、(PDF-XChange Editor、文电通pdf阅读器)、</p>
 </li>
@@ -237,6 +237,8 @@
 <li><p>135编辑器（公众号排版）：<a href="https://www.135editor.com/">https://www.135editor.com/</a></p>
 </li>
 <li><p>创客贴（公众号封面）：<a href="https://www.chuangkit.com/">https://www.chuangkit.com/</a></p>
+</li>
+<li><p>LaTex在线：<a href="https://www.overleaf.com/">https://www.overleaf.com/</a></p>
 </li>
 </ul>
 <div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">编辑器就是纯编辑文本的编辑器、IDE是带有软件开发功能的“集成开发环境”。目前的编辑器功能强大，基本可以算作是IDE。简单点说自称IDE的IDE能做的活，自称编辑器的IDE未必能做，自称编辑器的IDE能做的活，自称IDE的IDE基本能做。<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
@@ -278,7 +280,10 @@
 <li>将主题（<code>next</code>）配置文件 <code>_config.yml</code> 中的以下字段设为 <code>false</code></li>
 </ul>
 <blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">footer:</span><br><span class="line">    powered: false</span><br><span class="line">    theme:</span><br><span class="line">        enable: false</span><br><span class="line">        version: false</span><br></pre></td></tr></table></figure></blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">footer:</span><br><span class="line">    powered: false</span><br><span class="line">    theme:</span><br><span class="line">        enable: false</span><br><span class="line">        version: false</span><br></pre></td></tr></table></figure>
+</blockquote>
+</li>
+<li><p>代码块增加复制功能：在配置文件_config.yml 中设置 copy_button 为 true 即可。</p>
 </li>
 </ul>
 <h4 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init <span class="comment"># 初始化博客</span></span><br><span class="line"></span><br><span class="line">hexo clean <span class="comment"># 清除缓存</span></span><br><span class="line">hexo g <span class="comment"># generate 生成页面</span></span><br><span class="line">hexo s  <span class="comment"># server  启动本地服务预览：localhost:端口 填入浏览器地址</span></span><br><span class="line">hexo d <span class="comment"># deploy 部署发布</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建文章：layout有三种：post(会发布)、draft(草稿)、page(首页标签页)</span></span><br><span class="line"><span class="comment"># 三种文章的模板文件在根文件夹的scaffolds里</span></span><br><span class="line">hexo n [layout] 文件名  <span class="comment"># 不加layout, 默认layout是post</span></span><br><span class="line">hexo n <span class="built_in">test</span> <span class="comment"># 创建一个名叫test的发布文件</span></span><br><span class="line">hexo n draft <span class="built_in">test</span> <span class="comment"># 创建一个名叫test的草稿文件，不发布</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建三个首页的标签页：</span></span><br><span class="line">hexo n page tags  <span class="comment"># 使tags点击可用，执行结束记得修改生成的md文件，type填写为 tags</span></span><br><span class="line">hexo n page categories <span class="comment"># 与上同理</span></span><br><span class="line">hexo n page about <span class="comment"># 生成的md文件，就是点击看到的文章，可直接编辑填写</span></span><br></pre></td></tr></table></figure>
