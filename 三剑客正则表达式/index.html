@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.2.0">
+<meta name="referrer" content="no-referrer">  
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="本文为该视频（三剑客正则）的笔记分享。 基本用法正则表达式regular expression（RE）（匹配有规律的东西）： 基础正则(Basic RE (BRE) )：^ $ ^$ . * [a-z] [^abc] 扩展正则(Extended RE (ERE))：+ | （）{} ？ 正则：使用一些符号表达重复出现，大小写，开头&#x2F;结尾含义 应用：三剑客（grep，awk, sed）、开">
+<meta property="og:type" content="article">
+<meta property="og:title" content="正则表达式（视频笔记）">
+<meta property="og:url" content="https://www.sdhlw.top/%E4%B8%89%E5%89%91%E5%AE%A2%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/index.html">
+<meta property="og:site_name" content="Jay&#39;s Blog">
+<meta property="og:description" content="本文为该视频（三剑客正则）的笔记分享。 基本用法正则表达式regular expression（RE）（匹配有规律的东西）： 基础正则(Basic RE (BRE) )：^ $ ^$ . * [a-z] [^abc] 扩展正则(Extended RE (ERE))：+ | （）{} ？ 正则：使用一些符号表达重复出现，大小写，开头&#x2F;结尾含义 应用：三剑客（grep，awk, sed）、开">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-08-16T08:11:24.000Z">
+<meta property="article:modified_time" content="2022-08-19T08:53:27.044Z">
+<meta property="article:author" content="Jay Chou">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://www.sdhlw.top/%E4%B8%89%E5%89%91%E5%AE%A2%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>正则表达式（视频笔记） | Jay's Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Jay's Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Jay's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/%E4%B8%89%E5%89%91%E5%AE%A2%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/jay.jpg">
+      <meta itemprop="name" content="Jay Chou">
+      <meta itemprop="description" content="a solitary spark and wars begin">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jay's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          正则表达式（视频笔记）
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-08-16 16:11:24" itemprop="dateCreated datePublished" datetime="2022-08-16T16:11:24+08:00">2022-08-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-08-19 16:53:27" itemprop="dateModified" datetime="2022-08-19T16:53:27+08:00">2022-08-19</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Regex/" itemprop="url" rel="index"><span itemprop="name">Regex</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/%E4%B8%89%E5%89%91%E5%AE%A2%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/%E4%B8%89%E5%89%91%E5%AE%A2%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>2.4k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>2 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为该视频（<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Kg411g7bC?p=3&share_source=copy_web&vd_source=7f2a81e814313c699f856c2ec72be7d9">三剑客正则</a>）的笔记分享。</p>
+<h1 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h1><p>正则表达式regular expression（RE）（匹配有规律的东西）：</p>
+<p>基础正则(Basic RE (BRE) )：<code>^ $ ^$ . * [a-z] [^abc]</code></p>
+<p>扩展正则(Extended RE (ERE))：+ | （）{} ？</p>
+<p>正则：使用一些符号表达重复出现，大小写，开头&#x2F;结尾含义</p>
+<p>应用：三剑客（grep，awk, sed）、开发语言（python，golang, …）</p>
+<p>使用：过滤有规律的内容</p>
+<span id="more"></span>
+
+<table>
+<thead>
+<tr>
+<th>基础正则</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>^</td>
+<td>以…开头的行 ^he</td>
+</tr>
+<tr>
+<td>$</td>
+<td>以…结尾的行 he$</td>
+</tr>
+<tr>
+<td>^$</td>
+<td>空行</td>
+</tr>
+<tr>
+<td>.</td>
+<td>任意一个字符</td>
+</tr>
+<tr>
+<td>*</td>
+<td>前一个字符连续出现（重复）0次或0次以上</td>
+</tr>
+<tr>
+<td>.*</td>
+<td>所有内容</td>
+</tr>
+<tr>
+<td>\</td>
+<td>转义字符 \n换行 \t tab键</td>
+</tr>
+<tr>
+<td>[]</td>
+<td>一个整体，匹配任意一个字符[abc] a或b或c</td>
+</tr>
+<tr>
+<td>[^]</td>
+<td>取反排除， [abc]</td>
+</tr>
+<tr>
+<td>正则贪婪性</td>
+<td>熟悉特点即可，.*或连续出现</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>扩展正则</th>
+<th>含义</th>
+<th>搭配</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+</td>
+<td>前一个字符连续出现1次或1次以上</td>
+<td>[]+</td>
+</tr>
+<tr>
+<td>|</td>
+<td>或者</td>
+<td></td>
+</tr>
+<tr>
+<td>（）</td>
+<td>一个整体，sed反向引用</td>
+<td></td>
+</tr>
+<tr>
+<td>{}</td>
+<td>o{n,m}前一个字母o，至少连续出现n次，最多连续出现m次</td>
+<td></td>
+</tr>
+<tr>
+<td>？</td>
+<td>连续出现 前一个字符出现0次或1次</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>注意事项：</p>
+<ul>
+<li><p>所有的符号英文符号</p>
+</li>
+<li><p>学习正则，通过grep命令学习， grep加上单引号</p>
+</li>
+<li><p>给grep,egrep加上颜色：<code>alias grep = &#39;grep — color=auto&#39;</code> 和<code>alias egrep=&#39;egrep —color=auto&#39;</code></p>
+</li>
+<li><p>注意系统的字符集：en_US. utf-8(大部分情况没问题)，如果出现问题修改字符集为：<code>export LANG=c</code></p>
+</li>
+<li><p>快速掌握正则：配合grep -o 参数学习</p>
+</li>
+</ul>
+<p>正则vs通配符</p>
+<table>
+<thead>
+<tr>
+<th>分类</th>
+<th>诞生目标（用途）</th>
+<th>支持的命令</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>正则（re）</td>
+<td>三剑客，高级语言，进行过滤（匹配字符）</td>
+<td>三剑客grep,sed,awk,find,rename(ubuntu),expr</td>
+</tr>
+<tr>
+<td>通配符（pathname extension或glob）</td>
+<td>匹配文件（文件名）*.txt *.log {01..10}</td>
+<td>Linux下面大部分命令都支持</td>
+</tr>
+</tbody></table>
+<h1 id="基础正则详解"><a href="#基础正则详解" class="headerlink" title="基础正则详解"></a>基础正则详解</h1><p>1、<code>^...</code> 表示以什么开头的行 <code>^he</code> 以he开头的行</p>
+<p>2、<code>...$</code> 表示以什么结尾的行<code>he$</code>以he结尾的行</p>
+<p>有些结尾并不是看到的字符，有些隐藏了（cat -A 显示所有）</p>
+<p>3、<code>^$ </code>空行（这一行没有任何内容，也没有空格，空格也是个字符）</p>
+<p>排除文件中的空行：<code>grep -v &#39;^$&#39; </code>文件</p>
+<p>4、<code>.</code>(点) 表示任意一个字符，但是<code>.</code>（点）不匹配空行</p>
+<p>5、<code>\</code> 转义字符：去除原有特殊含义</p>
+<p>匹配以点结尾的行 ：<code>grep &#39;.$&#39; </code>文件</p>
+<p>转义字符序列： \n回车换行 \t tab键</p>
+<p>6、<code>*</code> 前一个字符连续出现0 次或0次以上</p>
+<p>连续出现：0（0出现一次）00（0出现2次）addfs(字母出现了6次)</p>
+<p>7、<code>.*</code> 所有内容（任意内容）</p>
+<p><code>.</code>(点)任意一个字符+ <code>*</code>前一个字符连续出现0 次或0次以上 所以就是所有内容（包括空行）</p>
+<p>正则表达式的贪婪性，<code>._</code>表示所有或_连续出现的时候，表现出尽可能贪婪匹配</p>
+<p>特殊情况：<code>grep &#39;2*&#39; 文件</code>  或<code>grep &#39;2*&#39; 文件</code>（所有都输出来了）</p>
+<p><code>2* </code>数字2出现了0次或0次以上</p>
+<p>0次以上： 2   2222   2222</p>
+<p>0次：相当于空 （grep 空就全输出了）</p>
+<p>8、<code>[] [abc] </code>1次匹配1个字符，匹配任何一个字符（a或b或c）</p>
+<p><code>[a-z]</code> 代表a到z的小写字母</p>
+<p><code>[A-Z]</code> 代表A到Z的大写字母</p>
+<p><code>[a-zA-Z] </code>或<code>[a-Z]</code>代表大小写字母</p>
+<p><code>[a-Z0-9] </code>代表大小写字母和数字</p>
+<p><code>[a-z] </code>grep 用-i，不区分大小写就是代表大小写字母</p>
+<p><code>[ ]</code>里面的内容去掉特殊含义 如<code>[a-Z|]</code>匹配大小写和|</p>
+<p><code>（）</code>小括号 括弧</p>
+<p><code>[ ] </code>中括号</p>
+<p><code>&#123; &#125;</code> 大括号 花括号</p>
+<p>9、<code>[^] </code>取反 如<code>[^abc] </code>匹配a或b或c之外的内容</p>
+<h1 id="扩展正则详解"><a href="#扩展正则详解" class="headerlink" title="扩展正则详解"></a>扩展正则详解</h1><p>1、<code>+</code>前一个字符连续出现1次或1次以上</p>
+<p><code>grep -E &#39;0+&#39; 文件</code>  0出现一次或一次以上，这三种命令一样效果</p>
+<p><code>grep &#39;0+&#39; 文件</code>grep没用E参数不能使用扩展正则，但是转义字符把扩展正则转为基本正则。不推荐这样使用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">egrep &#x27;0+&#x27; 文件</span><br></pre></td></tr></table></figure>
+
+<p>2、 | 或者 如<code>egrep &#39;apple | APPLE&#39; 文件</code></p>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+<th>应用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>[]</td>
+<td>1次匹配1个字符 [apple] a或p或l或e</td>
+<td>匹配单个字符[]和+</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>匹配1个字符或多个 a</td>
+</tr>
+</tbody></table>
+<p>3、（）被括起来的内容，表示一个整体（一个字符）、后向引用（反向引用sed）</p>
+<p><code>egrep &#39;oldb(o|e)y&#39; 文件</code>  匹配oldboy或oldbey的字符</p>
+<p>4、<code>&#123;&#125; </code>连续出现</p>
+<table>
+<thead>
+<tr>
+<th>符号</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>o{n,m}</td>
+<td>前一个字母o，至少连续出现n次，最多连续出现m次</td>
+<td>≥n ≤m</td>
+</tr>
+<tr>
+<td>o{n}</td>
+<td>前一个字母o，连续出现n次</td>
+<td>&#x3D;&#x3D;n</td>
+</tr>
+<tr>
+<td>o{n,}</td>
+<td>前一个字母o，至少连续出现n次</td>
+<td>≥n</td>
+</tr>
+<tr>
+<td>o{,m}</td>
+<td>前一个字母o，最多连续出现m次</td>
+<td>≤m</td>
+</tr>
+</tbody></table>
+<p>5、<code>？</code>连续出现 前一个字符出现0次或1次</p>
+<p><code>egrep &#39;god | gd&#39; 文件</code>等于 <code>egrep &#39;go?d&#39; 文件</code></p>
+<p>过滤身份证号码： <code>egrep &#39;[0-9]&#123;17&#125;[0-9x]&#39; 文件</code> （1-17位数字，最后一个是数字或x）</p>
+<p>排除文件中的空行或含有#号的行：<code>egrep -v &#39;^$ | #&#39; 文件</code></p>
+<p>表达式<code>[0-255]</code>是一个字符集，它的含义是匹配 0，1，2，5中任意一个字符</p>
+<p><code>[1-9][0-9]</code>可以匹配10到99之间的数字。这两个是最简单的。</p>
+<hr>
+<p>grep ‘搜索内容’ 文件</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-a</td>
+<td>将 binary 文件以 text 文件的方式搜寻数据</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>计算找到 ‘搜寻字符串’ 的次数</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>忽略大小写的不同，所以大小写视为相同</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>顺便输出行号</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>反向选择，亦即显示出没有 ‘搜寻字符串’ 内容的那一行！</td>
+</tr>
+<tr>
+<td>–color&#x3D;auto</td>
+<td>可以将找到的关键词部分加上颜色的显示喔！</td>
+</tr>
+<tr>
+<td>-o</td>
+<td>显示匹配过程，即只显示匹配到的内容</td>
+</tr>
+<tr>
+<td>-E</td>
+<td>支持扩展正则(扩展正则用grep -E 或egrep)</td>
+</tr>
+</tbody></table>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>Jay Chou
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://www.sdhlw.top/%E4%B8%89%E5%89%91%E5%AE%A2%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="正则表达式（视频笔记）">https://www.sdhlw.top/三剑客正则表达式/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-Hans" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/%E4%BC%98%E5%8C%96Python%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6/" rel="prev" title="优化Python运行速度">
+      <i class="fa fa-chevron-left"></i> 优化Python运行速度
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/Daytime/" rel="next" title="Daytime">
+      Daytime <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95"><span class="nav-text">基本用法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E6%AD%A3%E5%88%99%E8%AF%A6%E8%A7%A3"><span class="nav-text">基础正则详解</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%89%A9%E5%B1%95%E6%AD%A3%E5%88%99%E8%AF%A6%E8%A7%A3"><span class="nav-text">扩展正则详解</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jay Chou"
+      src="/images/jay.jpg">
+  <p class="site-author-name" itemprop="name">Jay Chou</p>
+  <div class="site-description" itemprop="description">a solitary spark and wars begin</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/sdhlw" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;sdhlw" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/sdhlw6@163.com" title="E-Mail → sdhlw6@163.com"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-Hans" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://coffeelize.top/" title="https:&#x2F;&#x2F;coffeelize.top&#x2F;" rel="noopener" target="_blank">Cheeph's Blog</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://ghgxj.xyz/" title="https:&#x2F;&#x2F;ghgxj.xyz&#x2F;" rel="noopener" target="_blank">ZXC's Blog</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jay Chou</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">Symbols count total: </span>
+    <span title="Symbols count total">42k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">Reading time total &asymp;</span>
+    <span title="Reading time total">38 mins.</span>
+</div>
+
+<!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>  Sometimes your whole life boils down to one insame move.
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("07/30/2022 22:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+
+
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'Oim1VYsoljWnP8igqpVKjUsV-gzGzoHsz',
+      appKey     : 'aBL6hWoUpci8phPVg3ufqMEL',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
++ 
+
+  <script async src="/js/cursor/fireworks.js"></script>
+
+
+ </body>
+</html>
