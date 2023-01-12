@@ -34,7 +34,7 @@
     
     
     
-    <category term="Software" scheme="https://www.sdhlw.top/categories/Software/"/>
+    <category term="Software" scheme="https://www.sdhlw.top/categories/software/"/>
     
     
   </entry>
@@ -57,7 +57,7 @@
     
     
     
-    <category term="Python" scheme="https://www.sdhlw.top/categories/Python/"/>
+    <category term="Python" scheme="https://www.sdhlw.top/categories/python/"/>
     
     
   </entry>
@@ -100,9 +100,9 @@
     
     
     
-    <category term="Python" scheme="https://www.sdhlw.top/categories/Python/"/>
+    <category term="Python" scheme="https://www.sdhlw.top/categories/python/"/>
     
-    <category term="Software" scheme="https://www.sdhlw.top/categories/Software/"/>
+    <category term="Software" scheme="https://www.sdhlw.top/categories/software/"/>
     
     
   </entry>
@@ -122,9 +122,9 @@
     
     
     
-    <category term="Python" scheme="https://www.sdhlw.top/categories/Python/"/>
+    <category term="Python" scheme="https://www.sdhlw.top/categories/python/"/>
     
-    <category term="Regex" scheme="https://www.sdhlw.top/categories/Regex/"/>
+    <category term="Regex" scheme="https://www.sdhlw.top/categories/regex/"/>
     
     
   </entry>
@@ -163,7 +163,7 @@
     
     
     
-    <category term="Regex" scheme="https://www.sdhlw.top/categories/Regex/"/>
+    <category term="Regex" scheme="https://www.sdhlw.top/categories/regex/"/>
     
     
   </entry>
@@ -182,9 +182,9 @@
     
     
     
-    <category term="Python" scheme="https://www.sdhlw.top/categories/Python/"/>
+    <category term="Python" scheme="https://www.sdhlw.top/categories/python/"/>
     
-    <category term="Regex" scheme="https://www.sdhlw.top/categories/Regex/"/>
+    <category term="Regex" scheme="https://www.sdhlw.top/categories/regex/"/>
     
     
   </entry>
@@ -209,7 +209,7 @@
     
     
     
-    <category term="Regex" scheme="https://www.sdhlw.top/categories/Regex/"/>
+    <category term="Regex" scheme="https://www.sdhlw.top/categories/regex/"/>
     
     
   </entry>
@@ -228,7 +228,7 @@
     
     
     
-    <category term="Python" scheme="https://www.sdhlw.top/categories/Python/"/>
+    <category term="Python" scheme="https://www.sdhlw.top/categories/python/"/>
     
     
   </entry>
@@ -247,7 +247,7 @@
     
     
     
-    <category term="Linux" scheme="https://www.sdhlw.top/categories/Linux/"/>
+    <category term="Linux" scheme="https://www.sdhlw.top/categories/linux/"/>
     
     
   </entry>
@@ -266,14 +266,14 @@
     
     
     
-    <category term="Python" scheme="https://www.sdhlw.top/categories/Python/"/>
+    <category term="Python" scheme="https://www.sdhlw.top/categories/python/"/>
     
-    <category term="base" scheme="https://www.sdhlw.top/categories/Python/base/"/>
+    <category term="base" scheme="https://www.sdhlw.top/categories/python/base/"/>
     
     
-    <category term="Python" scheme="https://www.sdhlw.top/tags/Python/"/>
+    <category term="Python" scheme="https://www.sdhlw.top/tags/python/"/>
     
-    <category term="Pycharm" scheme="https://www.sdhlw.top/tags/Pycharm/"/>
+    <category term="Pycharm" scheme="https://www.sdhlw.top/tags/pycharm/"/>
     
   </entry>
   
@@ -291,10 +291,10 @@
     
     
     
-    <category term="Software" scheme="https://www.sdhlw.top/categories/Software/"/>
+    <category term="Software" scheme="https://www.sdhlw.top/categories/software/"/>
     
     
-    <category term="Seqkit" scheme="https://www.sdhlw.top/tags/Seqkit/"/>
+    <category term="Seqkit" scheme="https://www.sdhlw.top/tags/seqkit/"/>
     
   </entry>
   
@@ -315,7 +315,7 @@
     <category term="文献管理" scheme="https://www.sdhlw.top/categories/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/"/>
     
     
-    <category term="Endnote" scheme="https://www.sdhlw.top/tags/Endnote/"/>
+    <category term="Endnote" scheme="https://www.sdhlw.top/tags/endnote/"/>
     
   </entry>
   
@@ -336,7 +336,7 @@
     
     
     
-    <category term="Markdown" scheme="https://www.sdhlw.top/categories/Markdown/"/>
+    <category term="Markdown" scheme="https://www.sdhlw.top/categories/markdown/"/>
     
     
   </entry>
@@ -355,7 +355,7 @@
     
     
     
-    <category term="Software" scheme="https://www.sdhlw.top/categories/Software/"/>
+    <category term="Software" scheme="https://www.sdhlw.top/categories/software/"/>
     
     
     <category term="文献管理" scheme="https://www.sdhlw.top/tags/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/"/>
@@ -376,12 +376,12 @@
     
     
     
-    <category term="Software" scheme="https://www.sdhlw.top/categories/Software/"/>
+    <category term="Software" scheme="https://www.sdhlw.top/categories/software/"/>
     
-    <category term="Git Bash" scheme="https://www.sdhlw.top/categories/Software/Git-Bash/"/>
+    <category term="Git Bash" scheme="https://www.sdhlw.top/categories/software/git-bash/"/>
     
     
-    <category term="Git Bash" scheme="https://www.sdhlw.top/tags/Git-Bash/"/>
+    <category term="Git Bash" scheme="https://www.sdhlw.top/tags/git-bash/"/>
     
   </entry>
   
@@ -400,9 +400,9 @@
     
     
     
-    <category term="Git" scheme="https://www.sdhlw.top/tags/Git/"/>
+    <category term="Git" scheme="https://www.sdhlw.top/tags/git/"/>
     
-    <category term="Pandoc" scheme="https://www.sdhlw.top/tags/Pandoc/"/>
+    <category term="Pandoc" scheme="https://www.sdhlw.top/tags/pandoc/"/>
     
     <category term="word" scheme="https://www.sdhlw.top/tags/word/"/>
     
@@ -441,12 +441,12 @@
     
     
     
-    <category term="Linux" scheme="https://www.sdhlw.top/categories/Linux/"/>
+    <category term="Linux" scheme="https://www.sdhlw.top/categories/linux/"/>
     
-    <category term="Base_command" scheme="https://www.sdhlw.top/categories/Linux/Base-command/"/>
+    <category term="Base_command" scheme="https://www.sdhlw.top/categories/linux/base-command/"/>
     
     
-    <category term="Linux" scheme="https://www.sdhlw.top/tags/Linux/"/>
+    <category term="Linux" scheme="https://www.sdhlw.top/tags/linux/"/>
     
   </entry>
   
@@ -464,7 +464,7 @@
     
     
     
-    <category term="Python" scheme="https://www.sdhlw.top/categories/Python/"/>
+    <category term="Python" scheme="https://www.sdhlw.top/categories/python/"/>
     
     
   </entry>
