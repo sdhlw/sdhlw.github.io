@@ -21,23 +21,23 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="1、改变默认路径1jupyter notebook --generate-config  # 若已有jupyter_notebook_config.py文件则不用执行  搜索找到jupyter_notebook_config.py文件，打开文件，找到c.NotebookApp.notebook_dir这行，在引号内填写自己事先创建的文件夹地址(注意地址的填写方式：D:&#x2F;&#x2F;adf&#x2F;&#x2F;fafad)。[">
+  <meta name="description" content="使用环境：Vscode 和Jupyter notebook 相关插件 问题Vscode连接python环境时右下角始终显示connecting to kernel，无法执行基本代码功能。 解决方法1、删除多余的python版本  需要删除的版本，我已删除，这里用保留版本的python做演示；注意，用该方法卸载之后，要去python的安装目录下检查，一定要删除干净，否则重启之后，修改过的环境变量可能">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Jupyter Notebook 使用">
-<meta property="og:url" content="https://www.sdhlw.top/jupyter-notebook-%E4%BD%BF%E7%94%A8/index.html">
+<meta property="og:title" content="connecting to kernel：python">
+<meta property="og:url" content="https://www.sdhlw.top/connecting-to-kernel%EF%BC%9Apython/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="1、改变默认路径1jupyter notebook --generate-config  # 若已有jupyter_notebook_config.py文件则不用执行  搜索找到jupyter_notebook_config.py文件，打开文件，找到c.NotebookApp.notebook_dir这行，在引号内填写自己事先创建的文件夹地址(注意地址的填写方式：D:&#x2F;&#x2F;adf&#x2F;&#x2F;fafad)。[">
+<meta property="og:description" content="使用环境：Vscode 和Jupyter notebook 相关插件 问题Vscode连接python环境时右下角始终显示connecting to kernel，无法执行基本代码功能。 解决方法1、删除多余的python版本  需要删除的版本，我已删除，这里用保留版本的python做演示；注意，用该方法卸载之后，要去python的安装目录下检查，一定要删除干净，否则重启之后，修改过的环境变量可能">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208291609292.png">
-<meta property="article:published_time" content="2022-08-28T13:35:48.000Z">
-<meta property="article:modified_time" content="2023-01-17T09:39:31.086Z">
+<meta property="og:image" content="https://gitee.com/starmus/image_typora/raw/master/Snipaste_2023-01-12_10-32-20.png">
+<meta property="og:image" content="https://gitee.com/starmus/image_typora/raw/master/Snipaste_2023-01-12_10-39-56.png">
+<meta property="article:published_time" content="2023-01-17T14:30:05.000Z">
+<meta property="article:modified_time" content="2023-01-17T14:34:46.781Z">
 <meta property="article:author" content="Jay Chou">
-<meta property="article:tag" content="Software">
-<meta property="article:tag" content="Python">
+<meta property="article:tag" content="-Python -jupyter notebook -Vscode">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208291609292.png">
+<meta name="twitter:image" content="https://gitee.com/starmus/image_typora/raw/master/Snipaste_2023-01-12_10-32-20.png">
 
-<link rel="canonical" href="https://www.sdhlw.top/jupyter-notebook-%E4%BD%BF%E7%94%A8/">
+<link rel="canonical" href="https://www.sdhlw.top/connecting-to-kernel%EF%BC%9Apython/">
 
 
 <script id="page-configurations">
@@ -50,7 +50,7 @@
   };
 </script>
 
-  <title>Jupyter Notebook 使用 | Jay's Blog</title>
+  <title>connecting to kernel：python | Jay's Blog</title>
   
 
 
@@ -199,7 +199,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/jupyter-notebook-%E4%BD%BF%E7%94%A8/">
+    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/connecting-to-kernel%EF%BC%9Apython/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/jay.jpg">
@@ -212,7 +212,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Jupyter Notebook 使用
+          connecting to kernel：python
         </h1>
 
         <div class="post-meta">
@@ -221,16 +221,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2022-08-28 21:35:48" itemprop="dateCreated datePublished" datetime="2022-08-28T21:35:48+08:00">2022-08-28</time>
+              <time title="Created: 2023-01-17 22:30:05 / Modified: 22:34:46" itemprop="dateCreated datePublished" datetime="2023-01-17T22:30:05+08:00">2023-01-17</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-01-17 17:39:31" itemprop="dateModified" datetime="2023-01-17T17:39:31+08:00">2023-01-17</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -250,8 +244,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/jupyter-notebook-%E4%BD%BF%E7%94%A8/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/jupyter-notebook-%E4%BD%BF%E7%94%A8/" itemprop="commentCount"></span>
+    <a title="valine" href="/connecting-to-kernel%EF%BC%9Apython/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/connecting-to-kernel%EF%BC%9Apython/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -261,7 +255,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>524</span>
+              <span>616</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -280,19 +274,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="1、改变默认路径"><a href="#1、改变默认路径" class="headerlink" title="1、改变默认路径"></a>1、改变默认路径</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter notebook --generate-config  # 若已有jupyter_notebook_config.py文件则不用执行</span><br></pre></td></tr></table></figure>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>使用环境：Vscode 和Jupyter notebook 相关插件</p>
+<h5 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h5><p>Vscode连接python环境时右下角始终显示connecting to kernel，无法执行基本代码功能。</p>
+<h5 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h5><p>1、删除多余的python版本</p>
+<p><img src="https://gitee.com/starmus/image_typora/raw/master/Snipaste_2023-01-12_10-32-20.png"></p>
+<p>需要删除的版本，我已删除，这里用保留版本的python做演示；<br>注意，用该方法卸载之后，要去python的安装目录下检查，一定要删除干净，否则重启之后，修改过的环境变量可能会复原为原来的设置；</p>
+<p>python默认安装路径：<code>C:\Users\你的用户名\AppData\Local\Programs\Python</code><br>将你要删除的python版本的整个文件夹删除</p>
+<p>2、配置好环境变量<br>右键此电脑–&gt;属性–&gt;高级系统设置–&gt;环境变量</p>
+<p><img src="https://gitee.com/starmus/image_typora/raw/master/Snipaste_2023-01-12_10-39-56.png"></p>
+<p>将删除的python版本的环境变量也删除，用户变量和系统变量都需删除（点击相应环境变量，删除，确定即可）；</p>
+<p>将保留的python版本的两个目录都添加到path里（点击新建，粘贴目录，点击确定即可），用户变量和系统变量都添加进去；<br><code>C:\Users\你的用户名\AppData\Local\Programs\Python\Python310</code><br><code>C:\Users\你的用户名\AppData\Local\Programs\Python\Python310\Scripts</code></p>
+<p>3、重启电脑，查看环境变量是否发生改变，若与上两步设置一致，则完成；若环境变量改变，可能是python没有删除干净，确保第一步完成；</p>
 
-<p>搜索找到jupyter_notebook_config.py文件，打开文件，找到<code>c.NotebookApp.notebook_dir</code>这行，在引号内填写自己事先创建的文件夹地址(注意地址的填写方式：<code>D://adf//fafad</code>)。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://zhuanlan.zhihu.com/p/70420213
-">[1]</span></a></sup></p>
-<span id="more"></span>
-
-<h3 id="2、新建报错"><a href="#2、新建报错" class="headerlink" title="2、新建报错"></a>2、新建报错</h3><p><code>An error occurred while creating a new notebook</code></p>
-<p>找到jupyter_notebook_config.py文件，打开文件，找到<code>c.NotebookApp.allow_origin</code>这行，在引号里<br>填入<code>*</code>，重启软件即可。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://www.bilibili.com/read/cv13682239
-">[2]</span></a></sup></p>
-<h3 id="3、debug"><a href="#3、debug" class="headerlink" title="3、debug"></a>3、debug</h3><p>在需要停下来的地方，插入<code>import pdb; pdb.set_trace()</code><br><code>n</code>执行下一行，<code>c</code>执行下面所有代码。<code>h</code>可以查看所有命令。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://www.jianshu.com/p/6ba71f336121
-">[3]</span></a></sup></p>
-<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208291609292.png" alt="image-20220829160917356"></p>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://zhuanlan.zhihu.com/p/70420213<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://www.bilibili.com/read/cv13682239<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://www.jianshu.com/p/6ba71f336121<a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>
     </div>
 
     
@@ -307,7 +300,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="https://www.sdhlw.top/jupyter-notebook-%E4%BD%BF%E7%94%A8/" title="Jupyter Notebook 使用">https://www.sdhlw.top/jupyter-notebook-使用/</a>
+    <a href="https://www.sdhlw.top/connecting-to-kernel%EF%BC%9Apython/" title="connecting to kernel：python">https://www.sdhlw.top/connecting-to-kernel：python/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-Hans" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -319,8 +312,7 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/software/" rel="tag"><i class="fa fa-tag"></i> Software</a>
-              <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
+              <a href="/tags/python-jupyter-notebook-vscode/" rel="tag"><i class="fa fa-tag"></i> -Python -jupyter notebook -Vscode</a>
           </div>
 
         
@@ -329,13 +321,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/Python%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" rel="prev" title="Python的正则表达式">
-      <i class="fa fa-chevron-left"></i> Python的正则表达式
+    <a href="/2022-09-01-10-33-44-Vscode%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="prev" title="Vscode的使用">
+      <i class="fa fa-chevron-left"></i> Vscode的使用
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022-08-30-15-11-00-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1VS%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/" rel="next" title="面向对象VS面向过程">
-      面向对象VS面向过程 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -395,7 +384,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E6%94%B9%E5%8F%98%E9%BB%98%E8%AE%A4%E8%B7%AF%E5%BE%84"><span class="nav-text">1、改变默认路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%96%B0%E5%BB%BA%E6%8A%A5%E9%94%99"><span class="nav-text">2、新建报错</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81debug"><span class="nav-text">3、debug</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%97%AE%E9%A2%98"><span class="nav-text">问题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="nav-text">解决方法</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
