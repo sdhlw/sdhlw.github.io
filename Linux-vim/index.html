@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.2.0">
+<meta name="referrer" content="no-referrer">  
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="【不定时更新】记录Vim编辑器的使用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux-vim">
+<meta property="og:url" content="https://www.sdhlw.top/Linux-vim/index.html">
+<meta property="og:site_name" content="Jay&#39;s Blog">
+<meta property="og:description" content="【不定时更新】记录Vim编辑器的使用">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-08-01T03:48:39.000Z">
+<meta property="article:modified_time" content="2022-08-12T07:07:13.549Z">
+<meta property="article:author" content="Jay Chou">
+<meta property="article:tag" content="software">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://www.sdhlw.top/Linux-vim/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Linux-vim | Jay's Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Jay's Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Jay's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/Linux-vim/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/jay.jpg">
+      <meta itemprop="name" content="Jay Chou">
+      <meta itemprop="description" content="a solitary spark and wars begin">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jay's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Linux-vim
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-08-01 11:48:39" itemprop="dateCreated datePublished" datetime="2022-08-01T11:48:39+08:00">2022-08-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-08-12 15:07:13" itemprop="dateModified" datetime="2022-08-12T15:07:13+08:00">2022-08-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/vim/" itemprop="url" rel="index"><span itemprop="name">Vim</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/Linux-vim/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/Linux-vim/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>1.6k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>1 mins.</span>
+            </span>
+            <div class="post-description">【不定时更新】记录Vim编辑器的使用</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一、Vim有四种模式-lt-span-class-x3D-”hint–top-hint–error-hint–medium-hint–rounded-hint–bounce”-aria-label-x3D-”Vim-x2F-三种模式-维基教科书，自由的教学读本-wikibooks-org"><a href="#一、Vim有四种模式-lt-span-class-x3D-”hint–top-hint–error-hint–medium-hint–rounded-hint–bounce”-aria-label-x3D-”Vim-x2F-三种模式-维基教科书，自由的教学读本-wikibooks-org" class="headerlink" title="一、Vim有四种模式&lt;span class&#x3D;”hint–top hint–error hint–medium hint–rounded hint–bounce” aria-label&#x3D;”Vim&#x2F;三种模式 - 维基教科书，自由的教学读本 (wikibooks.org)"></a>一、Vim有四种模式<sup id="fnref:1"><a href="#fn:1" rel="footnote">&lt;span class&#x3D;”hint–top hint–error hint–medium hint–rounded hint–bounce” aria-label&#x3D;”<a target="_blank" rel="noopener" href="https://zh.m.wikibooks.org/zh-hans/Vim/%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F">Vim&#x2F;三种模式 - 维基教科书，自由的教学读本 (wikibooks.org)</a></h1><p>“&gt;[1]</span></a></sup></p>
+<h2 id="1、命令模式-x2F-正常模式（Command-mode）"><a href="#1、命令模式-x2F-正常模式（Command-mode）" class="headerlink" title="1、命令模式&#x2F;正常模式（Command mode）"></a>1、<strong>命令模式&#x2F;正常模式</strong>（Command mode）</h2><p>敲击键盘动作会被Vim识别为命令，而非输入字符。启动Vim默认进入命令模式。</p>
+<ul>
+<li><code>i</code>：切换到插入模式  </li>
+<li><code>：</code>：切换到底线命令模式</li>
+<li><code>v</code>：进入可视化模式(小写V、大写V、Ctrl+V均可进入该模式下)</li>
+<li><code>U</code>：撤销上一步操作</li>
+<li><code>yy</code> - 复制当前行，包括换行符</li>
+<li><code>dd</code> - 剪切当前行，包括换行符</li>
+<li><code>p</code>键可以将内容粘贴到当前光标后面</li>
+</ul>
+<h2 id="2、插入模式（Insert-mode）"><a href="#2、插入模式（Insert-mode）" class="headerlink" title="2、插入模式（Insert mode）"></a>2、<strong>插入模式</strong>（Insert mode）</h2><p>编辑文本，需进入该模式</p>
+<ul>
+<li><code>Esc</code>：退出插入模式，进入命令模式</li>
+</ul>
+<h2 id="3、底线命令模式（Last-line-mode）"><a href="#3、底线命令模式（Last-line-mode）" class="headerlink" title="3、底线命令模式（Last line mode）"></a>3、<strong>底线命令模式</strong>（Last line mode）</h2><ul>
+<li><code>Esc</code>：退出底线命令模式，进入命令模式</li>
+<li><code>q!</code>：不保存，强制退出vim</li>
+<li><code>wq</code>：保存，退出vim</li>
+<li><code>q</code>：不保存，退出vim</li>
+<li><code>w</code>：保存，不退出vim</li>
+</ul>
+<h2 id="4、可视化模式-Visual-mode-lt-span-class-x3D-”hint–top-hint–error-hint–medium-hint–rounded-hint–bounce”-aria-label-x3D-”Linux-Vim可视化模式及其用法-biancheng-net"><a href="#4、可视化模式-Visual-mode-lt-span-class-x3D-”hint–top-hint–error-hint–medium-hint–rounded-hint–bounce”-aria-label-x3D-”Linux-Vim可视化模式及其用法-biancheng-net" class="headerlink" title="4、可视化模式(Visual-mode)&lt;span class&#x3D;”hint–top hint–error hint–medium hint–rounded hint–bounce” aria-label&#x3D;”Linux Vim可视化模式及其用法 (biancheng.net)"></a>4、<strong>可视化模式</strong>(Visual-mode)<sup id="fnref:2"><a href="#fn:2" rel="footnote">&lt;span class&#x3D;”hint–top hint–error hint–medium hint–rounded hint–bounce” aria-label&#x3D;”<a target="_blank" rel="noopener" href="http://c.biancheng.net/view/6355.html">Linux Vim可视化模式及其用法 (biancheng.net)</a></h2><p>“&gt;[2]</span></a></sup>：</p>
+<ul>
+<li><p>文本选择：小写V进入（选择是以字符为单位的）、大写V进入（选择是以行为单位的）、Ctrl+V进入（矩形区域作为目标文本，以按下 Ctrl+v 位置作为矩形的一角，光标移动的终点位置作为它的对角）</p>
+</li>
+<li><p>可视化命令：</p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>命令</strong></th>
+<th align="left"><strong>命令</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">d</td>
+<td align="left">删除选中的部分文本。</td>
+</tr>
+<tr>
+<td align="left">D</td>
+<td align="left">删除选中部分所在的行，和 d 不同之处在于，即使选中文本中有些字符所在的行没有都选中，删除时也会一并删除。</td>
+</tr>
+<tr>
+<td align="left">y</td>
+<td align="left">将选中部分复制到剪贴板中。</td>
+</tr>
+<tr>
+<td align="left">p（小写）</td>
+<td align="left">将剪贴板中的内容粘贴到光标之后。</td>
+</tr>
+<tr>
+<td align="left">P（大写）</td>
+<td align="left">将剪贴板中的内容粘贴到光标之前。</td>
+</tr>
+<tr>
+<td align="left">u（小写）</td>
+<td align="left">将选中部分中的大写字符全部改为小写字符。</td>
+</tr>
+<tr>
+<td align="left">U（大写）</td>
+<td align="left">将选中部分中的小写字符全部改为大写字符。</td>
+</tr>
+<tr>
+<td align="left">&gt;</td>
+<td align="left">将选中部分右移（缩进）一个 tab 键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8 个空白字符的长度）。</td>
+</tr>
+<tr>
+<td align="left">&lt;</td>
+<td align="left">将选中部分左移一个 tab 键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8 个空白字符的长度）。</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+<h1 id="二、小技巧"><a href="#二、小技巧" class="headerlink" title="二、小技巧"></a>二、小技巧</h1><h2 id="1、设置行号"><a href="#1、设置行号" class="headerlink" title="1、设置行号"></a>1、设置行号</h2><p>vim ~&#x2F;.vimrc 写入：set number</p>
+<h2 id="2、设置粘贴模式"><a href="#2、设置粘贴模式" class="headerlink" title="2、设置粘贴模式"></a>2、设置粘贴模式</h2><p><code>:set paste</code> + 回车 + <code>i</code></p>
+<h2 id="3、快速到达首尾"><a href="#3、快速到达首尾" class="headerlink" title="3、快速到达首尾"></a>3、快速到达首尾</h2><ul>
+<li><code>gg</code>：跳转到文件头</li>
+<li>行数 +<code>gg</code>：跳转到指定行</li>
+<li>shift + g ：跳转到文件末尾</li>
+</ul>
+<h2 id="4、多行注释"><a href="#4、多行注释" class="headerlink" title="4、多行注释"></a>4、多行注释</h2><p><code>:20,30 s/^/#/g     </code> ：20-30行 用 # 注释掉。（python是用#注释地～～～）</p>
+<p><code> :20,30 s/^#//g</code> ：20-30行 取消注释</p>
+<ul>
+<li><p>注释：</p>
+<p>​	Ctrl + v ：vim中的视图模式，把要注释的内容选上<br>​	shift + i ：插入字符<br>​	shift + # ：把#插入到要注释的行前面（在第一行有显示）<br>​	Esc    ：按至少2次Esc，则会把所有选中的行都在其前面加#</p>
+</li>
+<li><p>取消注释：</p>
+<p>​    Ctrl+v：进入视图模式<br>​    上下方向键选中要注释的行，左右键选择要删除的字符#<br>​    按d删除</p>
+</li>
+</ul>
+<h2 id="5、vim的搜索功能-lt-span-class-x3D-”hint–top-hint–error-hint–medium-hint–rounded-hint–bounce”-aria-label-x3D-”在-Vim-中优雅地查找和替换-Harttle-Land"><a href="#5、vim的搜索功能-lt-span-class-x3D-”hint–top-hint–error-hint–medium-hint–rounded-hint–bounce”-aria-label-x3D-”在-Vim-中优雅地查找和替换-Harttle-Land" class="headerlink" title="5、vim的搜索功能&lt;span class&#x3D;”hint–top hint–error hint–medium hint–rounded hint–bounce” aria-label&#x3D;”在 Vim 中优雅地查找和替换 | Harttle Land"></a>5、vim的搜索功能<sup id="fnref:3"><a href="#fn:3" rel="footnote">&lt;span class&#x3D;”hint–top hint–error hint–medium hint–rounded hint–bounce” aria-label&#x3D;”<a target="_blank" rel="noopener" href="https://harttle.land/2016/08/08/vim-search-in-file.html">在 Vim 中优雅地查找和替换 | Harttle Land</a></h2><p>“&gt;[3]</span></a></sup></p>
+<p>在 normal 模式下按下 <code>/</code> 即可进入查找模式，输入要查找的字符串并按下回车。 Vim 会跳转到第一个匹配。按下 <code>n</code> 查找下一个，按下 <code>N</code> 查找上一个。</p>
+<h1 id="三、脚注："><a href="#三、脚注：" class="headerlink" title="三、脚注："></a>三、脚注：</h1><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://zh.m.wikibooks.org/zh-hans/Vim/%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F">Vim/三种模式 - 维基教科书，自由的教学读本 (wikibooks.org)</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="http://c.biancheng.net/view/6355.html">Linux Vim可视化模式及其用法 (biancheng.net)</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://harttle.land/2016/08/08/vim-search-in-file.html">在 Vim 中优雅地查找和替换 | Harttle Land</a><a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>Jay Chou
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://www.sdhlw.top/Linux-vim/" title="Linux-vim">https://www.sdhlw.top/Linux-vim/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-Hans" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/software/" rel="tag"><i class="fa fa-tag"></i> software</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/Windows%20%E8%B6%85%E8%B5%9E%E8%BD%AF%E4%BB%B6%20&%20%E6%89%A9%E5%B1%95%20&%20%E7%BD%91%E7%AB%99/" rel="prev" title="Windows 超赞软件 & 扩展 & 网站">
+      <i class="fa fa-chevron-left"></i> Windows 超赞软件 & 扩展 & 网站
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/%E3%80%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%91Cross-Validation%EF%BC%88%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%EF%BC%89/" rel="next" title="【机器学习】Cross-Validation（交叉验证）">
+      【机器学习】Cross-Validation（交叉验证） <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81Vim%E6%9C%89%E5%9B%9B%E7%A7%8D%E6%A8%A1%E5%BC%8F-lt-span-class-x3D-%E2%80%9Dhint%E2%80%93top-hint%E2%80%93error-hint%E2%80%93medium-hint%E2%80%93rounded-hint%E2%80%93bounce%E2%80%9D-aria-label-x3D-%E2%80%9DVim-x2F-%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F-%E7%BB%B4%E5%9F%BA%E6%95%99%E7%A7%91%E4%B9%A6%EF%BC%8C%E8%87%AA%E7%94%B1%E7%9A%84%E6%95%99%E5%AD%A6%E8%AF%BB%E6%9C%AC-wikibooks-org"><span class="nav-text">一、Vim有四种模式&lt;span class&#x3D;”hint–top hint–error hint–medium hint–rounded hint–bounce” aria-label&#x3D;”Vim&#x2F;三种模式 - 维基教科书，自由的教学读本 (wikibooks.org)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F-x2F-%E6%AD%A3%E5%B8%B8%E6%A8%A1%E5%BC%8F%EF%BC%88Command-mode%EF%BC%89"><span class="nav-text">1、命令模式&#x2F;正常模式（Command mode）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81%E6%8F%92%E5%85%A5%E6%A8%A1%E5%BC%8F%EF%BC%88Insert-mode%EF%BC%89"><span class="nav-text">2、插入模式（Insert mode）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E5%BA%95%E7%BA%BF%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F%EF%BC%88Last-line-mode%EF%BC%89"><span class="nav-text">3、底线命令模式（Last line mode）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A8%A1%E5%BC%8F-Visual-mode-lt-span-class-x3D-%E2%80%9Dhint%E2%80%93top-hint%E2%80%93error-hint%E2%80%93medium-hint%E2%80%93rounded-hint%E2%80%93bounce%E2%80%9D-aria-label-x3D-%E2%80%9DLinux-Vim%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A8%A1%E5%BC%8F%E5%8F%8A%E5%85%B6%E7%94%A8%E6%B3%95-biancheng-net"><span class="nav-text">4、可视化模式(Visual-mode)&lt;span class&#x3D;”hint–top hint–error hint–medium hint–rounded hint–bounce” aria-label&#x3D;”Linux Vim可视化模式及其用法 (biancheng.net)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%B0%8F%E6%8A%80%E5%B7%A7"><span class="nav-text">二、小技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E8%AE%BE%E7%BD%AE%E8%A1%8C%E5%8F%B7"><span class="nav-text">1、设置行号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81%E8%AE%BE%E7%BD%AE%E7%B2%98%E8%B4%B4%E6%A8%A1%E5%BC%8F"><span class="nav-text">2、设置粘贴模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E5%BF%AB%E9%80%9F%E5%88%B0%E8%BE%BE%E9%A6%96%E5%B0%BE"><span class="nav-text">3、快速到达首尾</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81%E5%A4%9A%E8%A1%8C%E6%B3%A8%E9%87%8A"><span class="nav-text">4、多行注释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5%E3%80%81vim%E7%9A%84%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD-lt-span-class-x3D-%E2%80%9Dhint%E2%80%93top-hint%E2%80%93error-hint%E2%80%93medium-hint%E2%80%93rounded-hint%E2%80%93bounce%E2%80%9D-aria-label-x3D-%E2%80%9D%E5%9C%A8-Vim-%E4%B8%AD%E4%BC%98%E9%9B%85%E5%9C%B0%E6%9F%A5%E6%89%BE%E5%92%8C%E6%9B%BF%E6%8D%A2-Harttle-Land"><span class="nav-text">5、vim的搜索功能&lt;span class&#x3D;”hint–top hint–error hint–medium hint–rounded hint–bounce” aria-label&#x3D;”在 Vim 中优雅地查找和替换 | Harttle Land</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E8%84%9A%E6%B3%A8%EF%BC%9A"><span class="nav-text">三、脚注：</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Jay Chou"
+      src="/images/jay.jpg">
+  <p class="site-author-name" itemprop="name">Jay Chou</p>
+  <div class="site-description" itemprop="description">a solitary spark and wars begin</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/sdhlw" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;sdhlw" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/sdhlw6@163.com" title="E-Mail → sdhlw6@163.com"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-Hans" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://coffeelize.top/" title="https:&#x2F;&#x2F;coffeelize.top&#x2F;" rel="noopener" target="_blank">Cheeph's Blog</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://ghgxj.xyz/" title="https:&#x2F;&#x2F;ghgxj.xyz&#x2F;" rel="noopener" target="_blank">ZXC's Blog</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jay Chou</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+      <span class="post-meta-item-text">Symbols count total: </span>
+    <span title="Symbols count total">42k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span class="post-meta-item-text">Reading time total &asymp;</span>
+    <span title="Reading time total">38 mins.</span>
+</div>
+
+<!-- 网站运行时间的设置 -->
+<span id="timeDate">载入天数...</span>
+<span id="times">载入时分秒...</span>  Sometimes your whole life boils down to one insame move.
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("07/30/2022 22:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+setInterval("createtime()",250);
+</script>
+
+
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'Oim1VYsoljWnP8igqpVKjUsV-gzGzoHsz',
+      appKey     : 'aBL6hWoUpci8phPVg3ufqMEL',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
++ 
+
+  <script async src="/js/cursor/fireworks.js"></script>
+
+
+ </body>
+</html>
