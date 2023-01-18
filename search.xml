@@ -812,14 +812,14 @@
   <entry>
     <title>connecting to kernel：python</title>
     <url>/connecting-to-kernel%EF%BC%9Apython/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>使用环境：Vscode 和Jupyter notebook 相关插件</p>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>使用环境：Vscode 和Jupyter Notebook 相关插件</p>
 <h5 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h5><p>Vscode连接python环境时右下角始终显示connecting to kernel，无法执行基本代码功能。</p>
 <h5 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h5><p>1、删除多余的python版本</p>
-<p><img src="https://gitee.com/starmus/image_typora/raw/master/Snipaste_2023-01-12_10-32-20.png"></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301182151530.png"></p>
 <p>需要删除的版本，我已删除，这里用保留版本的python做演示；<br>注意，用该方法卸载之后，要去python的安装目录下检查，一定要删除干净，否则重启之后，修改过的环境变量可能会复原为原来的设置；</p>
 <p>python默认安装路径：<code>C:\Users\你的用户名\AppData\Local\Programs\Python</code><br>将你要删除的python版本的整个文件夹删除</p>
 <p>2、配置好环境变量<br>右键此电脑–&gt;属性–&gt;高级系统设置–&gt;环境变量</p>
-<p><img src="https://gitee.com/starmus/image_typora/raw/master/Snipaste_2023-01-12_10-39-56.png"></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301182156852.png" alt="image-20230118215647728"></p>
 <p>将删除的python版本的环境变量也删除，用户变量和系统变量都需删除（点击相应环境变量，删除，确定即可）；</p>
 <p>将保留的python版本的两个目录都添加到path里（点击新建，粘贴目录，点击确定即可），用户变量和系统变量都添加进去；<br><code>C:\Users\你的用户名\AppData\Local\Programs\Python\Python310</code><br><code>C:\Users\你的用户名\AppData\Local\Programs\Python\Python310\Scripts</code></p>
 <p>3、重启电脑，查看环境变量是否发生改变，若与上两步设置一致，则完成；若环境变量改变，可能是python没有删除干净，确保第一步完成；</p>
@@ -828,7 +828,9 @@
         <category>Study</category>
       </categories>
       <tags>
-        <tag>-Python -jupyter notebook -Vscode</tag>
+        <tag>Vscode</tag>
+        <tag>Python</tag>
+        <tag>Jupyter Notebook</tag>
       </tags>
   </entry>
   <entry>
@@ -970,7 +972,7 @@
 <p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616198.png"><br>在控制台 对象存储 中获取基本信息：<br><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616267.png"></p>
 <h5 id="3、Picgo配置"><a href="#3、Picgo配置" class="headerlink" title="3、Picgo配置"></a>3、Picgo配置</h5><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616330.png"></p>
 <h5 id="4、Obsidian配置及图片上传"><a href="#4、Obsidian配置及图片上传" class="headerlink" title="4、Obsidian配置及图片上传"></a>4、Obsidian配置及图片上传</h5><p>安装插件：Image auto upload Plugin<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://sspai.com/post/72562">[2]</span></a></sup><br>默认配置，粘贴图片即可自动上传图片到图床。</p>
-<p>个人需求配置：取消粘贴即自动上传，图片有需要上传到图床时，通过命令行模式一键上传所有文章内的图片。</p>
+<p>个人需求配置：取消粘贴即自动上传，图片有需要上传到图床时，通过命令行模式一键上传文章内的图片。</p>
 <p>命令行模式：<br>以文章为单位，在 Obsidian 中，按下命令行快捷键 Ctrl &#x2F; Command + P，并选择 “upload all images”<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://sspai.com/post/75765
 ">[3]</span></a></sup>。</p>
 <p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616415.png"></p>
