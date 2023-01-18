@@ -814,6 +814,8 @@
     <url>/connecting-to-kernel%EF%BC%9Apython/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>使用环境：Vscode 和Jupyter Notebook 相关插件</p>
 <h5 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h5><p>Vscode连接python环境时右下角始终显示connecting to kernel，无法执行基本代码功能。</p>
+<span id="more"></span>
+
 <h5 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h5><p>1、删除多余的python版本</p>
 <p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301182151530.png"></p>
 <p>需要删除的版本，我已删除，这里用保留版本的python做演示；<br>注意，用该方法卸载之后，要去python的安装目录下检查，一定要删除干净，否则重启之后，修改过的环境变量可能会复原为原来的设置；</p>
@@ -897,7 +899,7 @@
 
 
 
-<p>Hexo的分类和标签<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Hexo-NexT 分类多层级描述 | Chang (cs-cshi.github.io)](https://cs-cshi.github.io/hexo-blog/Hexo-NexT 分类多层级描述/)
+<p>Hexo的分类和标签<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Hexo-NexT 分类多层级描述 | Chang (cs-cshi.github.io)](https://cs-cshi.github.io/hexo-blog/Hexo-NexT分类多层级描述/)
 ">[2]</span></a></sup>：分类具有顺序和层次性，而标签没有顺序和层次</p>
 <p>父子分类：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 文章的前缀</span><br><span class="line">categories:   # 方法1 Life是Diary的子分类，即分类具有顺序和层次性</span><br><span class="line">- Diary</span><br><span class="line">- Life</span><br><span class="line"></span><br><span class="line">categories:   # 方法2 Life是Diary的子分类</span><br><span class="line">- [Diary, Life]</span><br></pre></td></tr></table></figure>
@@ -921,7 +923,7 @@
 
 
 
-<h4 id="四、参考文章"><a href="#四、参考文章" class="headerlink" title="四、参考文章"></a>四、参考文章</h4><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://lanlan2017.github.io/blog/65d90bd2/">Hexo脚注插件 | 蓝蓝站点 (lanlan2017.github.io)</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">[Hexo-NexT 分类多层级描述 | Chang (cs-cshi.github.io)](https://cs-cshi.github.io/hexo-blog/Hexo-NexT 分类多层级描述/)<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.vgtiger.com/2021/05/20/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8D%E6%98%BE%E7%A4%BA%E5%9B%BE%E5%BA%8A%E5%9B%BE%E7%89%87%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">Hexo博客不显示图床图片的解决方法 · vgtiger's Studio</a><a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+<h4 id="四、参考文章"><a href="#四、参考文章" class="headerlink" title="四、参考文章"></a>四、参考文章</h4><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://lanlan2017.github.io/blog/65d90bd2/">Hexo脚注插件 | 蓝蓝站点 (lanlan2017.github.io)</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://cs-cshi.github.io/hexo-blog/Hexo-NexT%E5%88%86%E7%B1%BB%E5%A4%9A%E5%B1%82%E7%BA%A7%E6%8F%8F%E8%BF%B0/">Hexo-NexT 分类多层级描述 | Chang (cs-cshi.github.io)</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.vgtiger.com/2021/05/20/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8D%E6%98%BE%E7%A4%BA%E5%9B%BE%E5%BA%8A%E5%9B%BE%E7%89%87%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">Hexo博客不显示图床图片的解决方法 · vgtiger's Studio</a><a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
       <categories>
         <category>Study</category>
       </categories>
@@ -959,9 +961,12 @@
     <url>/obsidian%E5%9B%BE%E5%BA%8A%EF%BC%9A%E8%85%BE%E8%AE%AF%E4%BA%91cos-picgo/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：</p>
 <ul>
-<li>Obsidian实现图床功能</li>
-<li>图床换成腾讯云</li>
-<li>Obsidian&#x2F;Typora实现可选择图片是否上传图床</li>
+<li><p>Obsidian实现图床功能</p>
+</li>
+<li><p>图床换成腾讯云</p>
+</li>
+<li><p>Obsidian&#x2F;Typora实现可选择图片是否上传图床</p>
+<span id="more"></span></li>
 </ul>
 <h5 id="1、注册腾讯云账号，创建-COS-存储桶"><a href="#1、注册腾讯云账号，创建-COS-存储桶" class="headerlink" title="1、注册腾讯云账号，创建 COS 存储桶"></a>1、注册腾讯云账号，创建 COS 存储桶</h5><p>对象存储（Cloud Object Storage，COS）是腾讯云提供的⼀种存储海量⽂件的分布式存储服务，⽤户可通过⽹络随时存储和查看数据。通过 COS 可以进⾏任意格式⽂件的上传、下载和管理。<br>注册：略<br>创建 COS 存储桶<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://cloud.tencent.com/developer/article/2175760?from=15425&areaSource=102001.1&traceId=rScBYp1UZMEgRry4X3S5G">[1]</span></a></sup>：<br><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616052.png"><br><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616087.png"></p>
 <ul>
