@@ -1718,114 +1718,82 @@
 <th>Marker</th>
 <th>Description</th>
 <th>Resulting Marker</th>
-<th></th>
-<th></th>
 </tr>
 </thead>
 <tbody><tr>
 <td>“o”</td>
 <td>Circle</td>
 <td><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319310.png"></td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>“+”</td>
 <td>Plus sign</td>
 <td><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319423.png"></td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>“*”</td>
 <td>Asterisk</td>
 <td><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319507.png"></td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>“.”</td>
 <td>Point</td>
 <td><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319579.png"></td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>“x”</td>
 <td>Cross</td>
 <td><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319647.png"></td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>“_”</td>
 <td>Horizontal line</td>
 <td><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319704.png"></td>
-<td></td>
-<td></td>
 </tr>
 <tr>
-<td>“           | “</td>
+<td>“ | “</td>
 <td>Vertical line</td>
 <td><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319799.png"></td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>“square”</td>
 <td>Square</td>
 <td><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319868.png"></td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>“diamond”</td>
 <td>Diamond</td>
 <td><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319941.png"></td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>“^”</td>
 <td>Upward-pointing triangle</td>
 <td><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319014.png"></td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>“v”</td>
 <td>Downward-pointing triangle</td>
 <td><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319087.png"></td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>“&gt;”</td>
 <td>Right-pointing triangle</td>
 <td><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319188.png"></td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>“&lt;”</td>
 <td>Left-pointing triangle</td>
 <td><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319266.png"></td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>“pentagram”</td>
 <td>Pentagram</td>
 <td><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319344.png"></td>
-<td></td>
-<td></td>
 </tr>
 <tr>
 <td>“hexagram”</td>
 <td>Hexagram</td>
 <td><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319433.png"></td>
-<td></td>
-<td></td>
 </tr>
 </tbody></table>
 <p>Line Style<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://www.mathworks.com/help/matlab/creating_plots/specify-line-and-marker-appearance-in-plots.html
