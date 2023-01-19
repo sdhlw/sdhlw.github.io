@@ -1634,7 +1634,7 @@
   <entry>
     <title>绘图的线型、颜色、标记</title>
     <url>/%E7%BB%98%E5%9B%BE%E7%9A%84%E7%BA%BF%E5%9E%8B%E3%80%81%E9%A2%9C%E8%89%B2%E3%80%81%E6%A0%87%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="绘图：-plot"><a href="#绘图：-plot" class="headerlink" title="绘图：.plot()"></a>绘图：.plot()</h4><p><code>plt.plot()</code>：绘制点和线<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h5 id="绘图：-plot"><a href="#绘图：-plot" class="headerlink" title="绘图：.plot()"></a>绘图：.plot()</h5><p><code>plt.plot()</code>：绘制点和线<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot
 ">[1]</span></a></sup></p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> numpy.random <span class="keyword">import</span> randn</span><br><span class="line">plt.plot(randn(<span class="number">50</span>).cumsum(),<span class="string">&#x27;k--&#x27;</span>)   <span class="comment"># 生成50个正态分布的数</span></span><br></pre></td></tr></table></figure>
 
