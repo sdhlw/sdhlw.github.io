@@ -625,6 +625,32 @@
       </tags>
   </entry>
   <entry>
+    <title>Python 链表</title>
+    <url>/Python%E9%93%BE%E8%A1%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>链表的基本结构：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208311024919.png" alt="image-20220831102428767"></p>
+<ul>
+<li><p>节点：每个节点有两个部分，左边部分称为值域，用来存放用户数据；右边部分称为指针域，用来存放指向下一个元素的指针。</p>
+</li>
+<li><p>head：head节点永远指向第一个节点</p>
+</li>
+<li><p>tail：tail永远指向最后一个节点</p>
+</li>
+<li><p>None：链表中最后一个节点的指针域为None值</p>
+<span id="more"></span></li>
+</ul>
+<p>该代码来源：<a href="https://www.bilibili.com/video/BV1nK4y1v7uv?share_source=copy_web&vd_source=7f2a81e814313c699f856c2ec72be7d9">Python数据结构与算法03——单链表、双链表、单项循环链表</a> </p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Node</span>(<span class="title class_ inherited__">object</span>):  <span class="comment"># 定义节点类</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,elem</span>):</span><br><span class="line">        self.elem = elem </span><br><span class="line">        self.<span class="built_in">next</span> = <span class="literal">None</span></span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">SingleLinkList</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="comment"># 定义单链表类</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,node=<span class="literal">None</span></span>):</span><br><span class="line">        self._head = node</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">is_empty</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> self._head == <span class="literal">None</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">length</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="comment"># 链表长度</span></span><br><span class="line">        <span class="comment"># cur 游标，用于移动遍历节点</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        <span class="comment"># count 记录数量</span></span><br><span class="line">        count = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            count += <span class="number">1</span></span><br><span class="line">            cur = cur.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> count</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">travel</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="comment"># 遍历整个链表</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            <span class="built_in">print</span>(cur.elem,end=<span class="string">&quot; &quot;</span>)</span><br><span class="line">            cur = cur.<span class="built_in">next</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot; &quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">self,item</span>):</span><br><span class="line">        <span class="comment"># 链表头部添加元素，头插法</span></span><br><span class="line">        node = Node(item)</span><br><span class="line">        node.<span class="built_in">next</span> = self._head</span><br><span class="line">        self._head = node</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">append</span>(<span class="params">self,item</span>):</span><br><span class="line">        <span class="comment"># 链表尾部添加元素</span></span><br><span class="line">        node = Node(item)</span><br><span class="line">        <span class="keyword">if</span> self.is_empty():</span><br><span class="line">            self._head = node</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            cur = self._head</span><br><span class="line">            <span class="keyword">while</span> cur.<span class="built_in">next</span> != <span class="literal">None</span>:</span><br><span class="line">                cur = cur.<span class="built_in">next</span></span><br><span class="line">            cur.<span class="built_in">next</span> =node</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">insert</span>(<span class="params">self,pos,item</span>):</span><br><span class="line">        <span class="comment"># 指定位置添加元素</span></span><br><span class="line">        <span class="comment">#:param pos 从0开始</span></span><br><span class="line">        <span class="keyword">if</span> pos &lt;= <span class="number">0</span>:</span><br><span class="line">            self.add(item)</span><br><span class="line">        <span class="keyword">elif</span> pos &gt; (self.length()-<span class="number">1</span>):</span><br><span class="line">            self.append(item)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            pre = self._head</span><br><span class="line">            count = <span class="number">0</span></span><br><span class="line">            <span class="keyword">while</span> count &lt; (pos-<span class="number">1</span>):</span><br><span class="line">                count += <span class="number">1</span></span><br><span class="line">                pre = pre.<span class="built_in">next</span></span><br><span class="line">            <span class="comment"># 当循环退出后，pre指向pos-1位置</span></span><br><span class="line">            node = Node(item)</span><br><span class="line">            node.<span class="built_in">next</span> = pre.<span class="built_in">next</span></span><br><span class="line">            pre.<span class="built_in">next</span> = node</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">remove</span>(<span class="params">self, item</span>):</span><br><span class="line">        <span class="comment"># 删除节点</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        pre = <span class="literal">None</span></span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">if</span> cur.elem == item:</span><br><span class="line">                <span class="comment"># 先判断此节点是否是头节点</span></span><br><span class="line">                <span class="comment"># 头节点</span></span><br><span class="line">                <span class="keyword">if</span> cur == self._head:</span><br><span class="line">                    self._head = cur.<span class="built_in">next</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    pre.<span class="built_in">next</span> = cur.<span class="built_in">next</span></span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                pre = cur</span><br><span class="line">                cur = cur.<span class="built_in">next</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">search</span>(<span class="params">self,item</span>):</span><br><span class="line">        <span class="comment"># 查找节点是否存在</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">if</span> cur.elem == item:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                cur = cur.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">        ll = SingleLinkList()</span><br><span class="line">        <span class="built_in">print</span>(ll.is_empty())</span><br><span class="line">        <span class="built_in">print</span>(ll.length())</span><br><span class="line"></span><br><span class="line">        ll.append(<span class="number">1</span>)</span><br><span class="line">        <span class="built_in">print</span>(ll.is_empty())</span><br><span class="line">        <span class="built_in">print</span>(ll.length())</span><br><span class="line"></span><br><span class="line">        ll.append(<span class="number">2</span>)</span><br><span class="line">        ll.add(<span class="number">8</span>)</span><br><span class="line">        ll.append(<span class="number">3</span>)</span><br><span class="line">        ll.append(<span class="number">4</span>)</span><br><span class="line">        ll.append(<span class="number">5</span>)</span><br><span class="line">        ll.append(<span class="number">6</span>)</span><br><span class="line">        <span class="comment"># 8 1 2 3 4 5 6 </span></span><br><span class="line">        ll.insert(-<span class="number">1</span>,<span class="number">9</span>)  <span class="comment"># 9 8 1 23456</span></span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.insert(<span class="number">3</span>,<span class="number">100</span>) <span class="comment"># 9 8 1 100 2 3456</span></span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.insert(<span class="number">10</span>,<span class="number">200</span>) <span class="comment"># 9 8 1 100 23456 200</span></span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.remove(<span class="number">100</span>)</span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.remove(<span class="number">9</span>)</span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.remove(<span class="number">200</span>)</span><br><span class="line">        ll.travel()</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python的正则表达式</title>
     <url>/Python%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>re库是Python关于正则表达式的一个内置模块，使用时无需下载，直接import即可。</p>
@@ -699,32 +725,6 @@
       </categories>
       <tags>
         <tag>Regex</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python 链表</title>
-    <url>/Python%E9%93%BE%E8%A1%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>链表的基本结构：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208311024919.png" alt="image-20220831102428767"></p>
-<ul>
-<li><p>节点：每个节点有两个部分，左边部分称为值域，用来存放用户数据；右边部分称为指针域，用来存放指向下一个元素的指针。</p>
-</li>
-<li><p>head：head节点永远指向第一个节点</p>
-</li>
-<li><p>tail：tail永远指向最后一个节点</p>
-</li>
-<li><p>None：链表中最后一个节点的指针域为None值</p>
-<span id="more"></span></li>
-</ul>
-<p>该代码来源：<a href="https://www.bilibili.com/video/BV1nK4y1v7uv?share_source=copy_web&vd_source=7f2a81e814313c699f856c2ec72be7d9">Python数据结构与算法03——单链表、双链表、单项循环链表</a> </p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Node</span>(<span class="title class_ inherited__">object</span>):  <span class="comment"># 定义节点类</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,elem</span>):</span><br><span class="line">        self.elem = elem </span><br><span class="line">        self.<span class="built_in">next</span> = <span class="literal">None</span></span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">SingleLinkList</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="comment"># 定义单链表类</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,node=<span class="literal">None</span></span>):</span><br><span class="line">        self._head = node</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">is_empty</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> self._head == <span class="literal">None</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">length</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="comment"># 链表长度</span></span><br><span class="line">        <span class="comment"># cur 游标，用于移动遍历节点</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        <span class="comment"># count 记录数量</span></span><br><span class="line">        count = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            count += <span class="number">1</span></span><br><span class="line">            cur = cur.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> count</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">travel</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="comment"># 遍历整个链表</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            <span class="built_in">print</span>(cur.elem,end=<span class="string">&quot; &quot;</span>)</span><br><span class="line">            cur = cur.<span class="built_in">next</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot; &quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">self,item</span>):</span><br><span class="line">        <span class="comment"># 链表头部添加元素，头插法</span></span><br><span class="line">        node = Node(item)</span><br><span class="line">        node.<span class="built_in">next</span> = self._head</span><br><span class="line">        self._head = node</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">append</span>(<span class="params">self,item</span>):</span><br><span class="line">        <span class="comment"># 链表尾部添加元素</span></span><br><span class="line">        node = Node(item)</span><br><span class="line">        <span class="keyword">if</span> self.is_empty():</span><br><span class="line">            self._head = node</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            cur = self._head</span><br><span class="line">            <span class="keyword">while</span> cur.<span class="built_in">next</span> != <span class="literal">None</span>:</span><br><span class="line">                cur = cur.<span class="built_in">next</span></span><br><span class="line">            cur.<span class="built_in">next</span> =node</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">insert</span>(<span class="params">self,pos,item</span>):</span><br><span class="line">        <span class="comment"># 指定位置添加元素</span></span><br><span class="line">        <span class="comment">#:param pos 从0开始</span></span><br><span class="line">        <span class="keyword">if</span> pos &lt;= <span class="number">0</span>:</span><br><span class="line">            self.add(item)</span><br><span class="line">        <span class="keyword">elif</span> pos &gt; (self.length()-<span class="number">1</span>):</span><br><span class="line">            self.append(item)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            pre = self._head</span><br><span class="line">            count = <span class="number">0</span></span><br><span class="line">            <span class="keyword">while</span> count &lt; (pos-<span class="number">1</span>):</span><br><span class="line">                count += <span class="number">1</span></span><br><span class="line">                pre = pre.<span class="built_in">next</span></span><br><span class="line">            <span class="comment"># 当循环退出后，pre指向pos-1位置</span></span><br><span class="line">            node = Node(item)</span><br><span class="line">            node.<span class="built_in">next</span> = pre.<span class="built_in">next</span></span><br><span class="line">            pre.<span class="built_in">next</span> = node</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">remove</span>(<span class="params">self, item</span>):</span><br><span class="line">        <span class="comment"># 删除节点</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        pre = <span class="literal">None</span></span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">if</span> cur.elem == item:</span><br><span class="line">                <span class="comment"># 先判断此节点是否是头节点</span></span><br><span class="line">                <span class="comment"># 头节点</span></span><br><span class="line">                <span class="keyword">if</span> cur == self._head:</span><br><span class="line">                    self._head = cur.<span class="built_in">next</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    pre.<span class="built_in">next</span> = cur.<span class="built_in">next</span></span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                pre = cur</span><br><span class="line">                cur = cur.<span class="built_in">next</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">search</span>(<span class="params">self,item</span>):</span><br><span class="line">        <span class="comment"># 查找节点是否存在</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">if</span> cur.elem == item:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                cur = cur.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">        ll = SingleLinkList()</span><br><span class="line">        <span class="built_in">print</span>(ll.is_empty())</span><br><span class="line">        <span class="built_in">print</span>(ll.length())</span><br><span class="line"></span><br><span class="line">        ll.append(<span class="number">1</span>)</span><br><span class="line">        <span class="built_in">print</span>(ll.is_empty())</span><br><span class="line">        <span class="built_in">print</span>(ll.length())</span><br><span class="line"></span><br><span class="line">        ll.append(<span class="number">2</span>)</span><br><span class="line">        ll.add(<span class="number">8</span>)</span><br><span class="line">        ll.append(<span class="number">3</span>)</span><br><span class="line">        ll.append(<span class="number">4</span>)</span><br><span class="line">        ll.append(<span class="number">5</span>)</span><br><span class="line">        ll.append(<span class="number">6</span>)</span><br><span class="line">        <span class="comment"># 8 1 2 3 4 5 6 </span></span><br><span class="line">        ll.insert(-<span class="number">1</span>,<span class="number">9</span>)  <span class="comment"># 9 8 1 23456</span></span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.insert(<span class="number">3</span>,<span class="number">100</span>) <span class="comment"># 9 8 1 100 2 3456</span></span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.insert(<span class="number">10</span>,<span class="number">200</span>) <span class="comment"># 9 8 1 100 23456 200</span></span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.remove(<span class="number">100</span>)</span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.remove(<span class="number">9</span>)</span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.remove(<span class="number">200</span>)</span><br><span class="line">        ll.travel()</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
         <tag>Python</tag>
       </tags>
   </entry>
@@ -1034,35 +1034,6 @@
       </tags>
   </entry>
   <entry>
-    <title>好文推荐</title>
-    <url>/%E5%A5%BD%E6%96%87%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、<a href="https://retompi.com/archived-blog/posts/2020/01/16/version-control-for-word-files-like-plain-text.html#git-pandoc">如何对 Word 文件进行「纯文本式」版本控制？ | TomBen (retompi.com)</a></p>
-<p>2、<a href="https://backlog.com/git-tutorial/cn/stepup/stepup1_1.html">什么是分支？【分支 (branch)】| 猴子都能懂的GIT入门| 贝格乐（Backlog）</a></p>
-<p>3、<a href="https://blog.51cto.com/yttitan/2409618">Shell脚本中的多任务并发执行_一壶浊酒的技术博客_51CTO博客</a></p>
-<p>4、[Yet Another Python Encoding Tutorial](<a href="https://notebook.community/gmonce/datascience/src/1">https://notebook.community/gmonce/datascience/src/1</a> - Yet Another Python Encoding Tutorial)</p>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>好文推荐</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文献管理</title>
-    <url>/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、本地文献以一个字母开头（与课题相关）数字文献名作为文件名。（eg：k1、my literature）</p>
-<p>2、本地文献与Endnote相一致，ID为字母与数字，Label填写细分类或关键词，方便定位，Rating打分。</p>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>文献管理</tag>
-        <tag>Endnote</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>优化Python运行速度</title>
     <url>/%E4%BC%98%E5%8C%96Python%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>[TOC]</p>
@@ -1109,6 +1080,35 @@
       </categories>
       <tags>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>好文推荐</title>
+    <url>/%E5%A5%BD%E6%96%87%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、<a href="https://retompi.com/archived-blog/posts/2020/01/16/version-control-for-word-files-like-plain-text.html#git-pandoc">如何对 Word 文件进行「纯文本式」版本控制？ | TomBen (retompi.com)</a></p>
+<p>2、<a href="https://backlog.com/git-tutorial/cn/stepup/stepup1_1.html">什么是分支？【分支 (branch)】| 猴子都能懂的GIT入门| 贝格乐（Backlog）</a></p>
+<p>3、<a href="https://blog.51cto.com/yttitan/2409618">Shell脚本中的多任务并发执行_一壶浊酒的技术博客_51CTO博客</a></p>
+<p>4、[Yet Another Python Encoding Tutorial](<a href="https://notebook.community/gmonce/datascience/src/1">https://notebook.community/gmonce/datascience/src/1</a> - Yet Another Python Encoding Tutorial)</p>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>好文推荐</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文献管理</title>
+    <url>/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、本地文献以一个字母开头（与课题相关）数字文献名作为文件名。（eg：k1、my literature）</p>
+<p>2、本地文献与Endnote相一致，ID为字母与数字，Label填写细分类或关键词，方便定位，Rating打分。</p>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>文献管理</tag>
+        <tag>Endnote</tag>
       </tags>
   </entry>
   <entry>
@@ -1634,13 +1634,13 @@
   <entry>
     <title>绘图的线型、颜色、标记</title>
     <url>/%E7%BB%98%E5%9B%BE%E7%9A%84%E7%BA%BF%E5%9E%8B%E3%80%81%E9%A2%9C%E8%89%B2%E3%80%81%E6%A0%87%E8%AE%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h5 id="绘图：-plot"><a href="#绘图：-plot" class="headerlink" title="绘图：.plot()"></a>绘图：.plot()</h5><p><code>plt.plot()</code>：绘制点和线<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h5 id="绘图：-plot"><a href="#绘图：-plot" class="headerlink" title="绘图：.plot()"></a>绘图：.plot()</h5><p><code>plt.plot()</code>：绘制点和线<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="<https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot>
 ">[1]</span></a></sup></p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> numpy.random <span class="keyword">import</span> randn</span><br><span class="line">plt.plot(randn(<span class="number">50</span>).cumsum(),<span class="string">&#x27;k--&#x27;</span>)   <span class="comment"># 生成50个正态分布的数</span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>randn函数返回一个或一组样本，具有标准正态分布；</li>
-<li>cumsum函数计算各行的累加值<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://blog.csdn.net/banana1006034246/article/details/78841461
+<li>cumsum函数计算各行的累加值<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="<https://blog.csdn.net/banana1006034246/article/details/78841461>
 ">[2]</span></a></sup>；</li>
 <li>in：</li>
 </ul>
@@ -1659,7 +1659,7 @@
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.plot(randn(<span class="number">50</span>).cumsum(),<span class="string">&#x27;ko--&#x27;</span>)</span><br><span class="line">plt.plot(randn(<span class="number">50</span>).cumsum(),color=<span class="string">&#x27;k&#x27;</span>,linestyle=<span class="string">&#x27;dashed&#x27;</span>,marker=<span class="string">&#x27;o&#x27;</span>)</span><br></pre></td></tr></table></figure>
 
 <p>用字符串指定时，颜色一定在最前面，可规范顺序：color+marker+line style</p>
-<p>Color<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="http://math.loyola.edu/~loberbro/matlab/html/colorsInMatlab.html
+<p>Color<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="<http://math.loyola.edu/~loberbro/matlab/html/colorsInMatlab.html>
 ">[3]</span></a></sup>：</p>
 <table>
 <thead>
@@ -1710,7 +1710,7 @@
 <td>[1,1,1]</td>
 </tr>
 </tbody></table>
-<p>Marker<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://www.mathworks.com/help/matlab/creating_plots/specify-line-and-marker-appearance-in-plots.html
+<p>Marker<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="<https://www.mathworks.com/help/matlab/creating_plots/specify-line-and-marker-appearance-in-plots.html>
 ">[4]</span></a></sup>：</p>
 <table>
 <thead>
@@ -1796,7 +1796,7 @@
 <td><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319433.png"></td>
 </tr>
 </tbody></table>
-<p>Line Style<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://www.mathworks.com/help/matlab/creating_plots/specify-line-and-marker-appearance-in-plots.html
+<p>Line Style<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="<https://www.mathworks.com/help/matlab/creating_plots/specify-line-and-marker-appearance-in-plots.html>
 ">[4]</span></a></sup>：</p>
 <table>
 <thead>
@@ -1833,7 +1833,7 @@
 <p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319819.png"></p>
 <p>目前有三种可选：steps、steps-mid、steps-post 具体差别还待探究；</p>
 <p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301192319919.png"><br>该图出处：<a href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/step_demo.html">https://matplotlib.org/stable/gallery/lines_bars_and_markers/step_demo.html</a></p>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://blog.csdn.net/banana1006034246/article/details/78841461<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">http://math.loyola.edu/~loberbro/matlab/html/colorsInMatlab.html<a href="#fnref:3" rev="footnote"> ↩</a></span></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://www.mathworks.com/help/matlab/creating_plots/specify-line-and-marker-appearance-in-plots.html<a href="#fnref:4" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot">https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/banana1006034246/article/details/78841461">https://blog.csdn.net/banana1006034246/article/details/78841461</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="http://math.loyola.edu/~loberbro/matlab/html/colorsInMatlab.html">http://math.loyola.edu/~loberbro/matlab/html/colorsInMatlab.html</a><a href="#fnref:3" rev="footnote"> ↩</a></span></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.mathworks.com/help/matlab/creating_plots/specify-line-and-marker-appearance-in-plots.html">https://www.mathworks.com/help/matlab/creating_plots/specify-line-and-marker-appearance-in-plots.html</a><a href="#fnref:4" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
       <categories>
         <category>Study</category>
       </categories>
