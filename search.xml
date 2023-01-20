@@ -1034,6 +1034,35 @@
       </tags>
   </entry>
   <entry>
+    <title>好文推荐</title>
+    <url>/%E5%A5%BD%E6%96%87%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、<a href="https://retompi.com/archived-blog/posts/2020/01/16/version-control-for-word-files-like-plain-text.html#git-pandoc">如何对 Word 文件进行「纯文本式」版本控制？ | TomBen (retompi.com)</a></p>
+<p>2、<a href="https://backlog.com/git-tutorial/cn/stepup/stepup1_1.html">什么是分支？【分支 (branch)】| 猴子都能懂的GIT入门| 贝格乐（Backlog）</a></p>
+<p>3、<a href="https://blog.51cto.com/yttitan/2409618">Shell脚本中的多任务并发执行_一壶浊酒的技术博客_51CTO博客</a></p>
+<p>4、[Yet Another Python Encoding Tutorial](<a href="https://notebook.community/gmonce/datascience/src/1">https://notebook.community/gmonce/datascience/src/1</a> - Yet Another Python Encoding Tutorial)</p>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>好文推荐</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文献管理</title>
+    <url>/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、本地文献以一个字母开头（与课题相关）数字文献名作为文件名。（eg：k1、my literature）</p>
+<p>2、本地文献与Endnote相一致，ID为字母与数字，Label填写细分类或关键词，方便定位，Rating打分。</p>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>文献管理</tag>
+        <tag>Endnote</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>优化Python运行速度</title>
     <url>/%E4%BC%98%E5%8C%96Python%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>[TOC]</p>
@@ -1080,35 +1109,6 @@
       </categories>
       <tags>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>好文推荐</title>
-    <url>/%E5%A5%BD%E6%96%87%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、<a href="https://retompi.com/archived-blog/posts/2020/01/16/version-control-for-word-files-like-plain-text.html#git-pandoc">如何对 Word 文件进行「纯文本式」版本控制？ | TomBen (retompi.com)</a></p>
-<p>2、<a href="https://backlog.com/git-tutorial/cn/stepup/stepup1_1.html">什么是分支？【分支 (branch)】| 猴子都能懂的GIT入门| 贝格乐（Backlog）</a></p>
-<p>3、<a href="https://blog.51cto.com/yttitan/2409618">Shell脚本中的多任务并发执行_一壶浊酒的技术博客_51CTO博客</a></p>
-<p>4、[Yet Another Python Encoding Tutorial](<a href="https://notebook.community/gmonce/datascience/src/1">https://notebook.community/gmonce/datascience/src/1</a> - Yet Another Python Encoding Tutorial)</p>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>好文推荐</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文献管理</title>
-    <url>/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、本地文献以一个字母开头（与课题相关）数字文献名作为文件名。（eg：k1、my literature）</p>
-<p>2、本地文献与Endnote相一致，ID为字母与数字，Label填写细分类或关键词，方便定位，Rating打分。</p>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>文献管理</tag>
-        <tag>Endnote</tag>
       </tags>
   </entry>
   <entry>
