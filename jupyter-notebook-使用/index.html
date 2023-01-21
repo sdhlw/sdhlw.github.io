@@ -32,8 +32,8 @@
 <meta property="article:published_time" content="2022-08-28T13:35:48.000Z">
 <meta property="article:modified_time" content="2023-01-17T09:39:31.086Z">
 <meta property="article:author" content="Jay Chou">
-<meta property="article:tag" content="Software">
 <meta property="article:tag" content="Python">
+<meta property="article:tag" content="Software">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208291609292.png">
 
@@ -241,21 +241,7 @@
                 </span>
             </span>
 
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/jupyter-notebook-%E4%BD%BF%E7%94%A8/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/jupyter-notebook-%E4%BD%BF%E7%94%A8/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
+          <br>
             <span class="post-meta-item" title="Symbols count in article">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
@@ -319,8 +305,8 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/software/" rel="tag"><i class="fa fa-tag"></i> Software</a>
               <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
+              <a href="/tags/software/" rel="tag"><i class="fa fa-tag"></i> Software</a>
           </div>
 
         
@@ -348,7 +334,7 @@
 
           </div>
           
-    <div class="comments" id="valine-comments"></div>
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -574,32 +560,23 @@ setInterval("createtime()",250);
 
   
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
 
 <script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '538cf602b46b1438bd87',
+      clientSecret: '9dbe1db02a6d0c204031babe4747a8c6a0db315a',
+      repo        : 'Gitment_blog',
+      owner       : 'sdhlw',
+      admin       : ['sdhlw'],
+      id          : '8c34d804830c3b29f1a1909772918659',
+        language: '',
+      distractionFreeMode: true
     });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : false,
-      notify     : false,
-      appId      : 'Oim1VYsoljWnP8igqpVKjUsV-gzGzoHsz',
-      appKey     : 'aBL6hWoUpci8phPVg3ufqMEL',
-      placeholder: "Just go go",
-      avatar     : 'mm',
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : false,
-      lang       : '' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : false,
-      serverURLs : ''
-    });
-  }, window.Valine);
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
 });
 </script>
 
