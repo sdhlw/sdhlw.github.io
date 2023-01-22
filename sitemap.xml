@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.sdhlw.top/npm-node-%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/</loc>
+    
+    <lastmod>2023-01-22T16:04:43.059Z</lastmod>
+    
+    <date>1674403375000</date>
+    <title>NPM---Node 包管理器 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/hexo%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0%EF%BC%9Agitalk/</loc>
+    
+    <lastmod>2023-01-22T16:02:13.188Z</lastmod>
+    
+    <date>1674402620000</date>
+    <title>Hexo评论功能的实现：Gitalk | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://www.sdhlw.top/about/index.html</loc>
     
     <lastmod>2023-01-20T03:57:43.939Z</lastmod>
