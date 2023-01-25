@@ -1,28 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>面向对象VS面向过程</title>
-    <url>/2022-08-30-15-11-00-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1VS%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为转载，原文为：<a href="http://zhidao.baidu.com/question/2089034/answer/9637033">http://zhidao.baidu.com/question/2089034/answer/9637033</a></p>
-<h3 id="1、概念："><a href="#1、概念：" class="headerlink" title="1、概念："></a>1、概念：</h3><p>面向过程就是分析出解决问题所需要的<strong>步骤</strong>，然后用函数把这些步骤一步一步实现，使用的时候一个一个依次调用就可以了。</p>
-<p>面向对象是把构成问题事务分解成各个<strong>对象</strong>，建立对象的目的不是为了完成一个步骤，而是为了描叙某个事物在整个解决问题的步骤中的行为。</p>
-<span id="more"></span>
-
-<h3 id="2、实际案例讲解："><a href="#2、实际案例讲解：" class="headerlink" title="2、实际案例讲解："></a>2、实际案例讲解：</h3><p>例如五子棋，面向过程的设计思路就是首先分析问题的步骤：1、开始游戏，2、黑子先走，3、绘制画面，4、判断输赢，5、轮到白子，6、绘制画面，7、判断输赢，8、返回步骤2，9、输出最后结果。把上面每个步骤用分别的函数来实现，问题就解决了。</p>
-<p>而面向对象的设计则是从另外的思路来解决问题。整个五子棋可以分为 1、黑白双方，这两方的行为是一模一样的，2、棋盘系统，负责绘制画面，3、规则系统，负责判定诸如犯规、输赢等。第一类对象（玩家对象）负责接受用户输入，并告知第二类对象（棋盘对象）棋子布局的变化，棋盘对象接收到了棋子的i变化就要负责在屏幕上面显示出这种变化，同时利用第三类对象（规则系统）来对棋局进行判定。</p>
-<p>可以明显地看出，<strong>面向对象是以功能来划分问题，而不是步骤。</strong>同样是绘制棋局，这样的行为在面向过程的设计中分散在了总多步骤中，很可能出现不同的绘制版本，因为通常设计人员会考虑到实际情况进行各种各样的简化。而面向对象的设计中，绘图只可能在棋盘对象中出现，从而保证了绘图的统一。</p>
-<p>功能上的统一保证了面向对象设计的可扩展性。比如我要加入悔棋的功能，如果要改动面向过程的设计，那么从输入到判断到显示这一连串的步骤都要改动，甚至步骤之间的循序都要进行大规模调整。如果是面向对象的话，只用改动棋盘对象就行了，棋盘系统保存了黑白双方的棋谱，简单回溯就可以了，而显示和规则判断则不用顾及，同时整个对对象功能的调用顺序都没有变化，改动只是局部的。</p>
-<p>再比如我要把这个五子棋游戏改为围棋游戏，如果你是面向过程设计，那么五子棋的规则就分布在了你的程序的每一个角落，要改动还不如重写。但是如果你当初就是面向对象的设计，那么你只用改动规则对象就可以了，五子棋和围棋的区别不就是规则吗？（当然棋盘大小好像也不一样，但是你会觉得这是一个难题吗？直接在棋盘对象中进行一番小改动就可以了。）而下棋的大致步骤从面向对象的角度来看没有任何变化。</p>
-<p>当然，要达到改动只是局部的需要设计的人有足够的经验，使用对象不能保证你的程序就是面向对象，初学者或者很蹩脚的程序员很可能以面向对象之虚而行面向过程之实，这样设计出来的所谓面向对象的程序很难有良好的可移植性和可扩展性。</p>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>计算机基础</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Vscode的使用</title>
     <url>/2022-09-01-10-33-44-Vscode%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>setting.json文件配置：</p>
@@ -58,6 +36,28 @@
       <tags>
         <tag>Regex</tag>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>面向对象VS面向过程</title>
+    <url>/2022-08-30-15-11-00-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1VS%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为转载，原文为：<a href="http://zhidao.baidu.com/question/2089034/answer/9637033">http://zhidao.baidu.com/question/2089034/answer/9637033</a></p>
+<h3 id="1、概念："><a href="#1、概念：" class="headerlink" title="1、概念："></a>1、概念：</h3><p>面向过程就是分析出解决问题所需要的<strong>步骤</strong>，然后用函数把这些步骤一步一步实现，使用的时候一个一个依次调用就可以了。</p>
+<p>面向对象是把构成问题事务分解成各个<strong>对象</strong>，建立对象的目的不是为了完成一个步骤，而是为了描叙某个事物在整个解决问题的步骤中的行为。</p>
+<span id="more"></span>
+
+<h3 id="2、实际案例讲解："><a href="#2、实际案例讲解：" class="headerlink" title="2、实际案例讲解："></a>2、实际案例讲解：</h3><p>例如五子棋，面向过程的设计思路就是首先分析问题的步骤：1、开始游戏，2、黑子先走，3、绘制画面，4、判断输赢，5、轮到白子，6、绘制画面，7、判断输赢，8、返回步骤2，9、输出最后结果。把上面每个步骤用分别的函数来实现，问题就解决了。</p>
+<p>而面向对象的设计则是从另外的思路来解决问题。整个五子棋可以分为 1、黑白双方，这两方的行为是一模一样的，2、棋盘系统，负责绘制画面，3、规则系统，负责判定诸如犯规、输赢等。第一类对象（玩家对象）负责接受用户输入，并告知第二类对象（棋盘对象）棋子布局的变化，棋盘对象接收到了棋子的i变化就要负责在屏幕上面显示出这种变化，同时利用第三类对象（规则系统）来对棋局进行判定。</p>
+<p>可以明显地看出，<strong>面向对象是以功能来划分问题，而不是步骤。</strong>同样是绘制棋局，这样的行为在面向过程的设计中分散在了总多步骤中，很可能出现不同的绘制版本，因为通常设计人员会考虑到实际情况进行各种各样的简化。而面向对象的设计中，绘图只可能在棋盘对象中出现，从而保证了绘图的统一。</p>
+<p>功能上的统一保证了面向对象设计的可扩展性。比如我要加入悔棋的功能，如果要改动面向过程的设计，那么从输入到判断到显示这一连串的步骤都要改动，甚至步骤之间的循序都要进行大规模调整。如果是面向对象的话，只用改动棋盘对象就行了，棋盘系统保存了黑白双方的棋谱，简单回溯就可以了，而显示和规则判断则不用顾及，同时整个对对象功能的调用顺序都没有变化，改动只是局部的。</p>
+<p>再比如我要把这个五子棋游戏改为围棋游戏，如果你是面向过程设计，那么五子棋的规则就分布在了你的程序的每一个角落，要改动还不如重写。但是如果你当初就是面向对象的设计，那么你只用改动规则对象就可以了，五子棋和围棋的区别不就是规则吗？（当然棋盘大小好像也不一样，但是你会觉得这是一个难题吗？直接在棋盘对象中进行一番小改动就可以了。）而下棋的大致步骤从面向对象的角度来看没有任何变化。</p>
+<p>当然，要达到改动只是局部的需要设计的人有足够的经验，使用对象不能保证你的程序就是面向对象，初学者或者很蹩脚的程序员很可能以面向对象之虚而行面向过程之实，这样设计出来的所谓面向对象的程序很难有良好的可移植性和可扩展性。</p>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>计算机基础</tag>
       </tags>
   </entry>
   <entry>
@@ -870,7 +870,9 @@
 
 <p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237750.png"></p>
 <h3 id="4、添加样式"><a href="#4、添加样式" class="headerlink" title="4、添加样式"></a>4、添加样式</h3><p>1、创建 <code>highlight.styl</code><br>可以添加<code>theme/next/source/css/_common/components/highlight.styl</code>文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 展开收起效果</span><br><span class="line">.highlight-container</span><br><span class="line">  position: relative</span><br><span class="line">  background-color: highlight-background</span><br><span class="line">  &amp;.on</span><br><span class="line">    .highlight-footer</span><br><span class="line">      display: none</span><br><span class="line">    .hide-btn</span><br><span class="line">      display: flex</span><br><span class="line">    .highlight-wrap</span><br><span class="line">      max-height: none</span><br><span class="line">  .highlight-wrap</span><br><span class="line">    overflow: hidden</span><br><span class="line">    max-height: 200px</span><br><span class="line">  .highlight-footer</span><br><span class="line">    position absolute</span><br><span class="line">    width: 100%</span><br><span class="line">    left: 0</span><br><span class="line">    bottom: 0</span><br><span class="line">    height: 60px</span><br><span class="line">    background-image: &#x27;linear-gradient(-180deg, rgba(255,255,255,0) 0%, %s 65%)&#x27; % highlight-background;</span><br><span class="line">    text-align: center</span><br><span class="line">  .show-btn</span><br><span class="line">    font-size: 12px</span><br><span class="line">    color: #fff</span><br><span class="line">    position: absolute</span><br><span class="line">    left: 50%</span><br><span class="line">    transform: translateX(-50%)</span><br><span class="line">    bottom: 0</span><br><span class="line">    line-height: 2em</span><br><span class="line">    text-decoration: none</span><br><span class="line">    padding: 0 0.8em</span><br><span class="line">    text-align: center</span><br><span class="line">    border-radius: 4px 4px 0</span><br><span class="line">    &amp;:hover</span><br><span class="line">      text-decoration: none</span><br><span class="line">  .hide-btn</span><br><span class="line">    color: #fff</span><br><span class="line">    font-size: 12px</span><br><span class="line">    width: 22px</span><br><span class="line">    position: absolute</span><br><span class="line">    left: -21px</span><br><span class="line">    top: 0</span><br><span class="line">    line-height: 1em</span><br><span class="line">    text-decoration: none</span><br><span class="line">    text-align: center</span><br><span class="line">    display: none</span><br><span class="line">    flex-direction: column</span><br><span class="line">    background-color: highlight-background</span><br><span class="line">    border-radius: 4px 0 0 4px</span><br><span class="line">    padding: 0.1em 0 0.6em</span><br><span class="line">    transition: top ease 0.35s</span><br><span class="line">  .fa-angle-up,</span><br><span class="line">  .fa-angle-down</span><br><span class="line">    font-style: normal</span><br><span class="line">    color: #fff</span><br><span class="line">  .fa-angle-up:before</span><br><span class="line">    content:&quot;\f106&quot;</span><br><span class="line">  .fa-angle-down:before</span><br><span class="line">    content:&quot;\f107&quot;</span><br><span class="line">    margin-left: 0.5em</span><br><span class="line">  .js_unfold_code_btn, .js_retract_code_btn</span><br><span class="line">    background: rgba(0,0,0,0.5)</span><br><span class="line">    border-bottom: none !important</span><br><span class="line">    &amp;:hover</span><br><span class="line">      border-bottom-color: none !important</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 展开收起效果</span><br><span class="line">.highlight-container</span><br><span class="line">  position: relative</span><br><span class="line">  background-color: highlight-background</span><br><span class="line">  &amp;.on</span><br><span class="line">    .highlight-footer</span><br><span class="line">      display: none</span><br><span class="line">    .hide-btn</span><br><span class="line">      display: flex</span><br><span class="line">    .highlight-wrap</span><br><span class="line">      max-height: none</span><br><span class="line">  .highlight-wrap</span><br><span class="line">    overflow: hidden</span><br><span class="line">    max-height: 200px</span><br><span class="line">  .highlight-footer</span><br><span class="line">    position absolute</span><br><span class="line">    width: 100%</span><br><span class="line">    left: 0</span><br><span class="line">    bottom: 0</span><br><span class="line">    height: 60px</span><br><span class="line">    background-image: &#x27;linear-gradient(-180deg, rgba(255,255,255,0) 0%, %s 65%)&#x27; % highlight-background;</span><br><span class="line">    text-align: center</span><br><span class="line">  .show-btn</span><br><span class="line">    font-size: 12px</span><br><span class="line">    color: #fff</span><br><span class="line">    position: absolute</span><br><span class="line">    left: 50%</span><br><span class="line">    transform: translateX(-50%)</span><br><span class="line">    bottom: 0</span><br><span class="line">    line-height: 2em</span><br><span class="line">    text-decoration: none</span><br><span class="line">    padding: 0 0.8em</span><br><span class="line">    text-align: center</span><br><span class="line">    border-radius: 4px 4px 0</span><br><span class="line">    &amp;:hover</span><br><span class="line">      text-decoration: none</span><br><span class="line">  .hide-btn</span><br><span class="line">    color: #fff</span><br><span class="line">    font-size: 12px</span><br><span class="line">    width: 22px</span><br><span class="line">    position: absolute</span><br><span class="line">    left: -21px</span><br><span class="line">    top: 0</span><br><span class="line">    line-height: 1em</span><br><span class="line">    text-decoration: none</span><br><span class="line">    text-align: center</span><br><span class="line">    display: none</span><br><span class="line">    flex-direction: column</span><br><span class="line">    background-color: highlight-background</span><br><span class="line">    border-radius: 4px 0 0 4px</span><br><span class="line">    padding: 0.1em 0 0.6em</span><br><span class="line">    transition: top ease 0.35s</span><br><span class="line">  .fa-angle-up,</span><br><span class="line">  .fa-angle-down</span><br><span class="line">    font-style: normal</span><br><span class="line">    color: #fff</span><br><span class="line">  .fa-angle-up:before</span><br><span class="line">    content:&quot;\f106&quot;</span><br><span class="line">  .fa-angle-down:before</span><br><span class="line">    content:&quot;\f107&quot;</span><br><span class="line">    margin-left: 0.5em</span><br><span class="line">  .js_unfold_code_btn, .js_retract_code_btn</span><br><span class="line">    background: rgba(0,0,0,0.5)</span><br><span class="line">    border-bottom: none !important</span><br><span class="line">    &amp;:hover</span><br><span class="line">      border-bottom-color: none !important</span><br></pre></td></tr></table></figure>
+
+
 
 <p>2、引用样式<br>找到文件 <code>themes/next/source/css/_common/components/index.styl</code>：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@import &#x27;post&#x27;;</span><br><span class="line">@import &#x27;pages&#x27;;</span><br><span class="line">@import &#x27;third-party&#x27;;</span><br><span class="line">// 添加这一行，不要加分号！！</span><br><span class="line">@import &#x27;highlight&#x27;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -1072,30 +1074,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Jupyter Notebook 使用</title>
-    <url>/jupyter-notebook-%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="1、改变默认路径"><a href="#1、改变默认路径" class="headerlink" title="1、改变默认路径"></a>1、改变默认路径</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">jupyter notebook --generate-config  # 若已有jupyter_notebook_config.py文件则不用执行</span><br></pre></td></tr></table></figure>
-
-<p>搜索找到jupyter_notebook_config.py文件，打开文件，找到<code>c.NotebookApp.notebook_dir</code>这行，在引号内填写自己事先创建的文件夹地址(注意地址的填写方式：<code>D://adf//fafad</code>)。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://zhuanlan.zhihu.com/p/70420213
-">[1]</span></a></sup></p>
-<span id="more"></span>
-
-<h3 id="2、新建报错"><a href="#2、新建报错" class="headerlink" title="2、新建报错"></a>2、新建报错</h3><p><code>An error occurred while creating a new notebook</code></p>
-<p>找到jupyter_notebook_config.py文件，打开文件，找到<code>c.NotebookApp.allow_origin</code>这行，在引号里<br>填入<code>*</code>，重启软件即可。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://www.bilibili.com/read/cv13682239
-">[2]</span></a></sup></p>
-<h3 id="3、debug"><a href="#3、debug" class="headerlink" title="3、debug"></a>3、debug</h3><p>在需要停下来的地方，插入<code>import pdb; pdb.set_trace()</code><br><code>n</code>执行下一行，<code>c</code>执行下面所有代码。<code>h</code>可以查看所有命令。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://www.jianshu.com/p/6ba71f336121
-">[3]</span></a></sup></p>
-<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208291609292.png" alt="image-20220829160917356"></p>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://zhuanlan.zhihu.com/p/70420213<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://www.bilibili.com/read/cv13682239<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://www.jianshu.com/p/6ba71f336121<a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>Software</tag>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>NPM---Node 包管理器</title>
     <url>/npm-node-%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>npm（“Node 包管理器”）是 JavaScript 运行时 Node.js 的默认程序包管理器。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[什么是 npm —— 写给初学者的编程教程](https://www.freecodecamp.org/chinese/news/what-is-npm-a-node-package-manager-tutorial-for-beginners/)
@@ -1196,6 +1174,30 @@
       </tags>
   </entry>
   <entry>
+    <title>Jupyter Notebook 使用</title>
+    <url>/jupyter-notebook-%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="1、改变默认路径"><a href="#1、改变默认路径" class="headerlink" title="1、改变默认路径"></a>1、改变默认路径</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">jupyter notebook --generate-config  # 若已有jupyter_notebook_config.py文件则不用执行</span><br></pre></td></tr></table></figure>
+
+<p>搜索找到jupyter_notebook_config.py文件，打开文件，找到<code>c.NotebookApp.notebook_dir</code>这行，在引号内填写自己事先创建的文件夹地址(注意地址的填写方式：<code>D://adf//fafad</code>)。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://zhuanlan.zhihu.com/p/70420213
+">[1]</span></a></sup></p>
+<span id="more"></span>
+
+<h3 id="2、新建报错"><a href="#2、新建报错" class="headerlink" title="2、新建报错"></a>2、新建报错</h3><p><code>An error occurred while creating a new notebook</code></p>
+<p>找到jupyter_notebook_config.py文件，打开文件，找到<code>c.NotebookApp.allow_origin</code>这行，在引号里<br>填入<code>*</code>，重启软件即可。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://www.bilibili.com/read/cv13682239
+">[2]</span></a></sup></p>
+<h3 id="3、debug"><a href="#3、debug" class="headerlink" title="3、debug"></a>3、debug</h3><p>在需要停下来的地方，插入<code>import pdb; pdb.set_trace()</code><br><code>n</code>执行下一行，<code>c</code>执行下面所有代码。<code>h</code>可以查看所有命令。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://www.jianshu.com/p/6ba71f336121
+">[3]</span></a></sup></p>
+<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208291609292.png" alt="image-20220829160917356"></p>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://zhuanlan.zhihu.com/p/70420213<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://www.bilibili.com/read/cv13682239<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://www.jianshu.com/p/6ba71f336121<a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Software</tag>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【机器学习】Cross-Validation（交叉验证）</title>
     <url>/%E3%80%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%91Cross-Validation%EF%BC%88%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208011735473.png" alt="image-20220801170610443"></p>
@@ -1226,6 +1228,21 @@
       <tags>
         <tag>交叉验证</tag>
         <tag>Machine Learning</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>好文推荐</title>
+    <url>/%E5%A5%BD%E6%96%87%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、<a href="https://retompi.com/archived-blog/posts/2020/01/16/version-control-for-word-files-like-plain-text.html#git-pandoc">如何对 Word 文件进行「纯文本式」版本控制？ | TomBen (retompi.com)</a></p>
+<p>2、<a href="https://backlog.com/git-tutorial/cn/stepup/stepup1_1.html">什么是分支？【分支 (branch)】| 猴子都能懂的GIT入门| 贝格乐（Backlog）</a></p>
+<p>3、<a href="https://blog.51cto.com/yttitan/2409618">Shell脚本中的多任务并发执行_一壶浊酒的技术博客_51CTO博客</a></p>
+<p>4、[Yet Another Python Encoding Tutorial](<a href="https://notebook.community/gmonce/datascience/src/1">https://notebook.community/gmonce/datascience/src/1</a> - Yet Another Python Encoding Tutorial)</p>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>好文推荐</tag>
       </tags>
   </entry>
   <entry>
@@ -1275,21 +1292,6 @@
       </categories>
       <tags>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>好文推荐</title>
-    <url>/%E5%A5%BD%E6%96%87%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、<a href="https://retompi.com/archived-blog/posts/2020/01/16/version-control-for-word-files-like-plain-text.html#git-pandoc">如何对 Word 文件进行「纯文本式」版本控制？ | TomBen (retompi.com)</a></p>
-<p>2、<a href="https://backlog.com/git-tutorial/cn/stepup/stepup1_1.html">什么是分支？【分支 (branch)】| 猴子都能懂的GIT入门| 贝格乐（Backlog）</a></p>
-<p>3、<a href="https://blog.51cto.com/yttitan/2409618">Shell脚本中的多任务并发执行_一壶浊酒的技术博客_51CTO博客</a></p>
-<p>4、[Yet Another Python Encoding Tutorial](<a href="https://notebook.community/gmonce/datascience/src/1">https://notebook.community/gmonce/datascience/src/1</a> - Yet Another Python Encoding Tutorial)</p>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>好文推荐</tag>
       </tags>
   </entry>
   <entry>
