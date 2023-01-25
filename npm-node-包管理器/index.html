@@ -15,10 +15,11 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="npm（“Node 包管理器”）是 JavaScript 运行时 Node.js 的默认程序包管理器。[1] npm 由两个主要部分组成：  用于发布和下载程序包的 CLI（命令行界面）工具  托管 JavaScript 程序包的  在线存储库">
@@ -31,7 +32,7 @@
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301222349448.png">
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301222349502.png">
 <meta property="article:published_time" content="2023-01-22T16:02:55.000Z">
-<meta property="article:modified_time" content="2023-01-22T16:04:43.059Z">
+<meta property="article:modified_time" content="2023-01-22T16:19:45.391Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="NPM">
 <meta property="article:tag" content="Java">
@@ -224,7 +225,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2023-01-23 00:02:55 / Modified: 00:04:43" itemprop="dateCreated datePublished" datetime="2023-01-23T00:02:55+08:00">2023-01-23</time>
+              <time title="Created: 2023-01-23 00:02:55 / Modified: 00:19:45" itemprop="dateCreated datePublished" datetime="2023-01-23T00:02:55+08:00">2023-01-23</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -267,8 +268,8 @@
 <ul>
 <li><p>用于发布和下载程序包的 CLI（命令行界面）工具</p>
 </li>
-<li><p>托管 JavaScript 程序包的  在线存储库</p>
-<span id="more"></span></li>
+<li><p>托管 JavaScript 程序包的  在线存储库<span id="more"></span></p>
+</li>
 </ul>
 <p>为了更直观地解释，我们可以将存储库  npmjs.com  视为一个物流集散中心，该中心从卖方（npm 包裹的作者）那里接收货物的包裹，并将这些货物分发给买方（npm 包裹的用户）。</p>
 <p>为了促进此过程，npmjs.com  物流集散中心雇用了一群勤劳的袋熊（npm CLI），他们将被分配给每个  npmjs.com  用户作为私人助理。 因此，dependencies（依赖项）会如下传递给 JavaScript 开发人员：</p>
@@ -349,7 +350,10 @@
     <a href="/hexo%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0%EF%BC%9Agitalk/" rel="prev" title="Hexo评论功能的实现：Gitalk">
       <i class="fa fa-chevron-left"></i> Hexo评论功能的实现：Gitalk
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/hexo%E4%BB%A3%E7%A0%81%E5%9D%97%E6%8A%98%E5%8F%A0%E5%8A%9F%E8%83%BD/" rel="next" title="Hexo代码块折叠功能">
+      Hexo代码块折叠功能 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -425,7 +429,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-count">30</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -502,13 +506,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">60k</span>
+    <span title="Symbols count total">65k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">54 mins.</span>
+    <span title="Reading time total">59 mins.</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
@@ -548,6 +552,8 @@ setInterval("createtime()",250);
 
   
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
@@ -563,6 +569,9 @@ setInterval("createtime()",250);
 
 
 
+<script src="/js/code-unfold.js"></script>
+
+  
 
   
 
