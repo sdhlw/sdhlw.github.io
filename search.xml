@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Vscode的使用</title>
+    <url>/2022-09-01-10-33-44-Vscode%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>setting.json文件配置：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">&#123;            //有自己添加的内容都要放到这个花括号里</span><br><span class="line"></span><br><span class="line">//配置a</span><br><span class="line">adfadfd,     //如果后面还有内容，前面的语句一定要有一个英文逗号</span><br><span class="line">// 配置b</span><br><span class="line">adfadff</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Software</tag>
+        <tag>Vscode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>面向对象VS面向过程</title>
     <url>/2022-08-30-15-11-00-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1VS%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为转载，原文为：<a href="http://zhidao.baidu.com/question/2089034/answer/9637033">http://zhidao.baidu.com/question/2089034/answer/9637033</a></p>
@@ -20,21 +35,6 @@
       </categories>
       <tags>
         <tag>计算机基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vscode的使用</title>
-    <url>/2022-09-01-10-33-44-Vscode%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>setting.json文件配置：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">&#123;            //有自己添加的内容都要放到这个花括号里</span><br><span class="line"></span><br><span class="line">//配置a</span><br><span class="line">adfadfd,     //如果后面还有内容，前面的语句一定要有一个英文逗号</span><br><span class="line">// 配置b</span><br><span class="line">adfadff</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>Software</tag>
-        <tag>Vscode</tag>
       </tags>
   </entry>
   <entry>
