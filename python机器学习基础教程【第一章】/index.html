@@ -22,19 +22,19 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="本书的附加代码可以在 GitHub 下载：https:&#x2F;&#x2F;github.com&#x2F;amueller&#x2F;introduction_to_ml_with_python 监督学习算法（supervised learning algorithm）无监督学习算法（unsupervised learning algorithm） 在机器学习中，这里的每个实体或每一行被称为一个样本（sample）或数据点，而每一列">
+  <meta name="description" content="本书的附加代码可以在 GitHub 下载：introduction to ml with python 监督学习算法（supervised learning algorithm）无监督学习算法（unsupervised learning algorithm） 在机器学习中，这里的每个实体或每一行被称为一个样本（sample）或数据点，而每一列（用来描述这些实体的属性）则被称为特征（feature）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python机器学习基础教程【第一章】">
 <meta property="og:url" content="https://www.sdhlw.top/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E3%80%90%E7%AC%AC%E4%B8%80%E7%AB%A0%E3%80%91/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="本书的附加代码可以在 GitHub 下载：https:&#x2F;&#x2F;github.com&#x2F;amueller&#x2F;introduction_to_ml_with_python 监督学习算法（supervised learning algorithm）无监督学习算法（unsupervised learning algorithm） 在机器学习中，这里的每个实体或每一行被称为一个样本（sample）或数据点，而每一列">
+<meta property="og:description" content="本书的附加代码可以在 GitHub 下载：introduction to ml with python 监督学习算法（supervised learning algorithm）无监督学习算法（unsupervised learning algorithm） 在机器学习中，这里的每个实体或每一行被称为一个样本（sample）或数据点，而每一列（用来描述这些实体的属性）则被称为特征（feature）">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528408.png">
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528467.png">
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528536.png">
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528610.png">
 <meta property="article:published_time" content="2023-02-02T09:43:19.000Z">
-<meta property="article:modified_time" content="2023-02-02T09:49:59.190Z">
+<meta property="article:modified_time" content="2023-02-02T12:10:38.427Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="专业书笔记">
@@ -228,7 +228,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2023-02-02 17:43:19 / Modified: 17:49:59" itemprop="dateCreated datePublished" datetime="2023-02-02T17:43:19+08:00">2023-02-02</time>
+              <time title="Created: 2023-02-02 17:43:19 / Modified: 20:10:38" itemprop="dateCreated datePublished" datetime="2023-02-02T17:43:19+08:00">2023-02-02</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -265,7 +265,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本书的附加代码可以在 GitHub 下载：<a target="_blank" rel="noopener" href="https://github.com/amueller/introduction_to_ml_with_python">https://github.com/amueller/introduction_to_ml_with_python</a></p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本书的附加代码可以在 GitHub 下载：<a target="_blank" rel="noopener" href="https://github.com/amueller/introduction_to_ml_with_python">introduction to ml with python</a></p>
 <p>监督学习算法（supervised learning algorithm）<br>无监督学习算法（unsupervised learning algorithm）</p>
 <p>在机器学习中，这里的每个实体或每一行被称为一个样本（sample）或数据点，而每一列（用来描述这些实体的属性）则被称为特征（feature）。</p>
 <p>如何构建良好的数据表征，这被称为特征提取（feature extraction）或特征工程（feature engineering）</p>
@@ -306,7 +306,7 @@
 <p>训练集中特征的散点图矩阵：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 利用X_train中的数据创建DataFrame</span></span><br><span class="line"><span class="comment"># 利用iris_dataset.feature_names中的字符串对数据列进行标记</span></span><br><span class="line">iris_dataframe = pd.DataFrame(X_train, columns=iris_dataset.feature_names)</span><br><span class="line"><span class="comment"># 利用DataFrame创建散点图矩阵，按y_train着色</span></span><br><span class="line">grr = pd.scatter_matrix(iris_dataframe, c=y_train, figsize=(<span class="number">15</span>, <span class="number">15</span>), marker=<span class="string">&#x27;o&#x27;</span>,</span><br><span class="line"> hist_kwds=&#123;<span class="string">&#x27;bins&#x27;</span>: <span class="number">20</span>&#125;, s=<span class="number">60</span>, alpha=<span class="number">.8</span>)</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528536.png" alt="|500"></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528536.png"></p>
 <p>绘制散点图矩阵函数： pandas的scatter_matrix。<br>版本较新换成：pd.plotting.scatter_matrix</p>
 <p><code>pandas.DataFrame( data, index, columns, dtype, copy)</code></p>
 <ul>
@@ -413,7 +413,10 @@
     <a href="/hexo%E4%BB%A3%E7%A0%81%E5%9D%97%E6%8A%98%E5%8F%A0%E5%8A%9F%E8%83%BD/" rel="prev" title="Hexo代码块折叠功能">
       <i class="fa fa-chevron-left"></i> Hexo代码块折叠功能
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/pip%E4%B8%8B%E8%BD%BD%E5%A4%AA%E6%85%A2/" rel="next" title="pip下载太慢">
+      pip下载太慢 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -489,7 +492,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">31</span>
+          <span class="site-state-item-count">32</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -556,7 +559,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">70k</span>
+    <span title="Symbols count total">71k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
