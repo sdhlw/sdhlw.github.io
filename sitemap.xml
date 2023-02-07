@@ -2,9 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.sdhlw.top/pip%E4%B8%8B%E8%BD%BD%E5%A4%AA%E6%85%A2/</loc>
+    
+    <lastmod>2023-02-07T15:04:44.353Z</lastmod>
+    
+    <date>1675341204000</date>
+    <title>pip下载太慢 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/</loc>
+    
+    <lastmod>2023-02-07T15:04:29.725Z</lastmod>
+    
+    <date>1675781853000</date>
+    <title>解决npm下载慢问题 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E8%AE%BE%E7%BD%AE-next-%E4%B8%BB%E9%A2%98%E6%94%AF%E6%8C%81-latex-%E6%B8%B2%E6%9F%93/</loc>
+    
+    <lastmod>2023-02-07T15:01:49.192Z</lastmod>
+    
+    <date>1675781827000</date>
+    <title>设置 Next 主题支持 Latex 渲染 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://www.sdhlw.top/%E6%B3%A2%E5%A3%AB%E9%A1%BF%E6%88%BF%E4%BB%B7%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E5%A4%84%E7%90%86/</loc>
     
-    <lastmod>2023-02-07T14:01:53.332Z</lastmod>
+    <lastmod>2023-02-07T14:30:00.356Z</lastmod>
     
     <date>1675751614000</date>
     <title>波士顿房价数据集的处理 | Jay's Blog</title>
@@ -140,17 +173,6 @@
     
     <date>1675615269000</date>
     <title>Vscode的Jupyter的change presentation | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/pip%E4%B8%8B%E8%BD%BD%E5%A4%AA%E6%85%A2/</loc>
-    
-    <lastmod>2023-02-02T12:34:37.597Z</lastmod>
-    
-    <date>1675341204000</date>
-    <title>pip下载太慢 | Jay's Blog</title>
     
     <desc></desc>
   </url>

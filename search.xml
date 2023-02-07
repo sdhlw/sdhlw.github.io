@@ -2988,7 +2988,7 @@ aria-label="[preprocessing.MinMaxScaler用法](https://hg95.github.io/sklearn-no
 <p>归一化其实就是标准化的一种方式，只不过归一化是将数据映射到了<code>[0,1]</code>这个区间中。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
 class="hint--top hint--error hint--medium hint--rounded hint--bounce"
 aria-label="[使用sklearn进行对数据标准化、归一化以及将数据还原](https://blog.csdn.net/FrankieHello/article/details/79659111)">[2]</span></a></sup></p>
-<p>归一化之后的数据服从正态分布，公式如下：<span
+<p>归一化之后的数据服从正态分布，公式如下： <span
 class="math display">\[X^* = \frac{x-min(x)}{max(x)-min(x)}\]</span></p>
 <figure>
 <img
@@ -3025,7 +3025,7 @@ aria-label="[sklearn 的 PolynomialFeatures 的用法](https://www.cnblogs.com/l
 <li><code>interaction_only</code>：默认为 False，如果指定为
 True，那么就不会有特征自己和自己结合的项，组合的特征中没有 <span
 class="math inline">\(a^2\)</span> 和 <span
-class="math inline">\(b^2\)</span>；</li>
+class="math inline">\(b^2\)</span> ；</li>
 <li><code>include_bias</code>：默认为 True 。如果为 True
 的话，那么结果中就会有 0 次幂项，即全为 1 这一列。</li>
 </ul>
@@ -3435,6 +3435,76 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       <tags>
         <tag>Python</tag>
         <tag>Matplotlib</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决npm下载慢问题</title>
+    <url>/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h5 id="npm镜像">npm镜像：</h5>
+<p>淘宝：<code>http://registry.npm.taobao.org</code>
+腾讯云：<code>http://mirrors.cloud.tencent.com/npm/</code>
+华为云：<code>https://mirrors.huaweicloud.com/repository/npm/</code></p>
+<span id="more"></span>
+<h5 id="下载时临时使用淘宝镜像">下载时临时使用淘宝镜像</h5>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install xxx --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<hr />
+<h5 id="永久更改镜像">永久更改镜像</h5>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p>再执行 <code>npm config get registry</code> 返回
+<code>http://registry.npm.taobao.org</code> 则设置成功</p>
+<hr />
+<h5 id="通过使用淘宝定制的cnpm安装">通过使用淘宝定制的cnpm安装：</h5>
+<ul>
+<li>安装cnpm</li>
+</ul>
+<p><code>npm install -g cnpm --registry=https://registry.npmmirror.com</code></p>
+<ul>
+<li>使用cnpm</li>
+</ul>
+<p><code>cnpm install xxx</code></p>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>NPM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>设置 Next 主题支持 Latex 渲染</title>
+    <url>/%E8%AE%BE%E7%BD%AE-next-%E4%B8%BB%E9%A2%98%E6%94%AF%E6%8C%81-latex-%E6%B8%B2%E6%9F%93/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：让 hexo 的 next 主题支持渲染 LaTeX 语法的数学公式。</p>
+<p>环境： <code>hexo version</code>即可查看hexo版本； <img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237479.png"
+alt="img" /></p>
+<p>查看<code>theme/next/package.json</code>即可查看next版本； <img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237584.png"
+alt="img" /></p>
+<span id="more"></span>
+<p>步骤： 1、Powershell :</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-rendered-marked</span><br><span class="line">npm install hexo-<span class="built_in">filter</span>-mathjax --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p>2、修改next主题配置文件，搜索math，找到mathjax，修改为true；</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mathjax:</span><br><span class="line">	enable: true</span><br></pre></td></tr></table></figure>
+<p>3、在文章的 front-matter 中添加 <code>mathjax: true</code>
+，该文章即可渲染[<a
+href="app://obsidian.md/index.html#fn-1-66fd1567c623a948">1]</a>；建议将
+<code>mathjax: true</code> 写入 <code>\scaffolds</code> 的 post.md
+文件中的 front-matter，以后每篇文章都会自动添加，自动渲染。</p>
+<h3 id="参考文章">参考文章</h3>
+<hr />
+<ol type="1">
+<li><a
+href="https://roro4ever.github.io/2019/12/01/hexo-Next主题渲染-latex-公式的配置方法/hexo-next主题渲染-latex-公式的配置方法/">Hexo
+Next主题渲染 Latex 公式的配置方法</a><a
+href="app://obsidian.md/index.html#fnref-1-66fd1567c623a948">↩︎</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Latex</tag>
       </tags>
   </entry>
   <entry>
