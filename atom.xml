@@ -69,7 +69,7 @@
     <link href="https://www.sdhlw.top/vscode-jupyter-notebook%EF%BC%9Aoutput-exceeds-the-size-limit/"/>
     <id>https://www.sdhlw.top/vscode-jupyter-notebook%EF%BC%9Aoutput-exceeds-the-size-limit/</id>
     <published>2023-02-05T16:48:05.000Z</published>
-    <updated>2023-02-05T16:50:45.725Z</updated>
+    <updated>2023-02-07T07:10:20.530Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Output exceeds the size limit. Open the full output data in a text editor</p><p>每次报错信息过多就要用文本编辑器打开，可是打开之后都是没编译的，乱码看起来很难受。</p><span id="more"></span><p>参考了这篇<a href="https://stackoverflow.com/questions/72823258/vscode-interactive-python-output-exceeds-size-limit">回答</a>，找到以下解决方案，我修改为1000：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302060049102.png"></p><p>修改之后，重启Vscode即可。</p>]]></content>
     
@@ -84,7 +84,7 @@
     
     <category term="Vscode" scheme="https://www.sdhlw.top/tags/vscode/"/>
     
-    <category term="Jupyter notebook" scheme="https://www.sdhlw.top/tags/jupyter-notebook/"/>
+    <category term="Jupyter Notebook" scheme="https://www.sdhlw.top/tags/jupyter-notebook/"/>
     
   </entry>
   

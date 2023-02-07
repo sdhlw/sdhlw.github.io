@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.sdhlw.top/vscode-jupyter-notebook%EF%BC%9Aoutput-exceeds-the-size-limit/</loc>
+    
+    <lastmod>2023-02-07T07:10:20.530Z</lastmod>
+    
+    <date>1675615685000</date>
+    <title>Vscode & Jupyter-Notebook：Output exceeds the size limit | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://www.sdhlw.top/%E6%B3%A2%E5%A3%AB%E9%A1%BF%E6%88%BF%E4%BB%B7%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E5%A4%84%E7%90%86/</loc>
     
     <lastmod>2023-02-07T06:38:32.599Z</lastmod>
@@ -19,17 +30,6 @@
     
     <date>1675751580000</date>
     <title>Numpy不用省略号和科学计数法 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/vscode-jupyter-notebook%EF%BC%9Aoutput-exceeds-the-size-limit/</loc>
-    
-    <lastmod>2023-02-05T16:50:45.725Z</lastmod>
-    
-    <date>1675615685000</date>
-    <title>Vscode & Jupyter-Notebook：Output exceeds the size limit | Jay's Blog</title>
     
     <desc></desc>
   </url>
