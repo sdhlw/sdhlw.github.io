@@ -22,22 +22,13 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="需求：  Obsidian实现图床功能  图床换成腾讯云  Obsidian&#x2F;Typora实现可选择图片是否上传图床">
+  <meta name="description" content="需求：  Obsidian实现图床功能 图床换成腾讯云 Obsidian&#x2F;Typora实现可选择图片是否上传图床">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Obsidian&#x2F;Typora图床：腾讯云COS+Picgo">
 <meta property="og:url" content="https://www.sdhlw.top/obsidian%E5%9B%BE%E5%BA%8A%EF%BC%9A%E8%85%BE%E8%AE%AF%E4%BA%91cos-picgo/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="需求：  Obsidian实现图床功能  图床换成腾讯云  Obsidian&#x2F;Typora实现可选择图片是否上传图床">
+<meta property="og:description" content="需求：  Obsidian实现图床功能 图床换成腾讯云 Obsidian&#x2F;Typora实现可选择图片是否上传图床">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616052.png">
-<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616087.png">
-<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616142.png">
-<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616198.png">
-<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616267.png">
-<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616330.png">
-<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616415.png">
-<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616484.png">
-<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301182208994.png">
 <meta property="article:published_time" content="2023-01-18T08:23:52.000Z">
 <meta property="article:modified_time" content="2023-01-18T14:47:24.010Z">
 <meta property="article:author" content="Jay Chou">
@@ -46,7 +37,6 @@
 <meta property="article:tag" content="腾讯云COS">
 <meta property="article:tag" content="图床">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616052.png">
 
 <link rel="canonical" href="https://www.sdhlw.top/obsidian%E5%9B%BE%E5%BA%8A%EF%BC%9A%E8%85%BE%E8%AE%AF%E4%BA%91cos-picgo/">
 
@@ -252,7 +242,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>672</span>
+              <span>660</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -273,31 +263,85 @@
       
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：</p>
 <ul>
-<li><p>Obsidian实现图床功能</p>
-</li>
-<li><p>图床换成腾讯云</p>
-</li>
-<li><p>Obsidian&#x2F;Typora实现可选择图片是否上传图床</p>
+<li><p>Obsidian实现图床功能</p></li>
+<li><p>图床换成腾讯云</p></li>
+<li><p>Obsidian/Typora实现可选择图片是否上传图床</p>
 <span id="more"></span></li>
 </ul>
-<h5 id="1、注册腾讯云账号，创建-COS-存储桶"><a href="#1、注册腾讯云账号，创建-COS-存储桶" class="headerlink" title="1、注册腾讯云账号，创建 COS 存储桶"></a>1、注册腾讯云账号，创建 COS 存储桶</h5><p>对象存储（Cloud Object Storage，COS）是腾讯云提供的⼀种存储海量⽂件的分布式存储服务，⽤户可通过⽹络随时存储和查看数据。通过 COS 可以进⾏任意格式⽂件的上传、下载和管理。<br>注册：略<br>创建 COS 存储桶<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://cloud.tencent.com/developer/article/2175760?from=15425&areaSource=102001.1&traceId=rScBYp1UZMEgRry4X3S5G">[1]</span></a></sup>：<br><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616052.png"><br><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616087.png"></p>
+<h5 id="注册腾讯云账号创建-cos-存储桶">1、注册腾讯云账号，创建 COS
+存储桶</h5>
+<p>对象存储（Cloud Object
+Storage，COS）是腾讯云提供的⼀种存储海量⽂件的分布式存储服务，⽤户可通过⽹络随时存储和查看数据。通过
+COS 可以进⾏任意格式⽂件的上传、下载和管理。 注册：略 创建 COS
+存储桶<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="https://cloud.tencent.com/developer/article/2175760?from=15425&amp;areaSource=102001.1&amp;traceId=rScBYp1UZMEgRry4X3S5G">[1]</span></a></sup>：
+<img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616052.png" />
+<img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616087.png" /></p>
 <ul>
 <li>高级可选配置默认即可</li>
 <li>配置好之后创建</li>
 </ul>
-<h5 id="2、获取腾讯云COS密钥及基本信息"><a href="#2、获取腾讯云COS密钥及基本信息" class="headerlink" title="2、获取腾讯云COS密钥及基本信息"></a>2、获取腾讯云COS密钥及基本信息</h5><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616142.png"></p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616198.png"><br>在控制台 对象存储 中获取基本信息：<br><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616267.png"></p>
-<h5 id="3、Picgo配置"><a href="#3、Picgo配置" class="headerlink" title="3、Picgo配置"></a>3、Picgo配置</h5><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616330.png"></p>
-<h5 id="4、Obsidian-x2F-Typora配置及图片上传"><a href="#4、Obsidian-x2F-Typora配置及图片上传" class="headerlink" title="4、Obsidian &#x2F; Typora配置及图片上传"></a>4、Obsidian &#x2F; Typora配置及图片上传</h5><p>安装插件：Image auto upload Plugin<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://sspai.com/post/72562">[2]</span></a></sup><br>默认配置，粘贴图片即可自动上传图片到图床。</p>
+<h5 id="获取腾讯云cos密钥及基本信息">2、获取腾讯云COS密钥及基本信息</h5>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616142.png" /></p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616198.png" />
+在控制台 对象存储 中获取基本信息： <img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616267.png" /></p>
+<h5 id="picgo配置">3、Picgo配置</h5>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616330.png" /></p>
+<h5 id="obsidian-typora配置及图片上传">4、Obsidian /
+Typora配置及图片上传</h5>
+<p>安装插件：Image auto upload
+Plugin<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="https://sspai.com/post/72562">[2]</span></a></sup>
+默认配置，粘贴图片即可自动上传图片到图床。</p>
 <p>个人需求配置：取消粘贴即自动上传，图片有需要上传到图床时，通过命令行模式一键上传文章内的图片。</p>
-<p>命令行模式：<br>以文章为单位，在 Obsidian 中，按下命令行快捷键 Ctrl &#x2F; Command + P，并选择 “upload all images”<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://sspai.com/post/75765
+<p>命令行模式： 以文章为单位，在 Obsidian 中，按下命令行快捷键 Ctrl /
+Command + P，并选择 "upload all
+images"<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="https://sspai.com/post/75765
 ">[3]</span></a></sup>。</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616415.png"></p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616484.png"></p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616415.png" /></p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616484.png" /></p>
 <p>Typora配置情况：</p>
 <p>同样设置粘贴不自动上传图片，需上传时右键再点击上传图片即可；</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301182208994.png"></p>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://cloud.tencent.com/developer/article/2175760?from=15425&amp;areaSource=102001.1&amp;traceId=rScBYp1UZMEgRry4X3S5G<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://sspai.com/post/72562<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://sspai.com/post/75765<a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301182208994.png" /></p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">https://cloud.tencent.com/developer/article/2175760?from=15425&amp;areaSource=102001.1&amp;traceId=rScBYp1UZMEgRry4X3S5G<a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">https://sspai.com/post/72562<a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:3">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">https://sspai.com/post/75765<a href="#fnref:3" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
     </div>
 
     
@@ -402,7 +446,9 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1%E3%80%81%E6%B3%A8%E5%86%8C%E8%85%BE%E8%AE%AF%E4%BA%91%E8%B4%A6%E5%8F%B7%EF%BC%8C%E5%88%9B%E5%BB%BA-COS-%E5%AD%98%E5%82%A8%E6%A1%B6"><span class="nav-text">1、注册腾讯云账号，创建 COS 存储桶</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2%E3%80%81%E8%8E%B7%E5%8F%96%E8%85%BE%E8%AE%AF%E4%BA%91COS%E5%AF%86%E9%92%A5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF"><span class="nav-text">2、获取腾讯云COS密钥及基本信息</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3%E3%80%81Picgo%E9%85%8D%E7%BD%AE"><span class="nav-text">3、Picgo配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4%E3%80%81Obsidian-x2F-Typora%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0"><span class="nav-text">4、Obsidian &#x2F; Typora配置及图片上传</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%B3%A8%E5%86%8C%E8%85%BE%E8%AE%AF%E4%BA%91%E8%B4%A6%E5%8F%B7%E5%88%9B%E5%BB%BA-cos-%E5%AD%98%E5%82%A8%E6%A1%B6"><span class="nav-text">1、注册腾讯云账号，创建 COS
+存储桶</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%AF%86%E9%92%A5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF"><span class="nav-text">2、获取腾讯云COS密钥及基本信息</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#picgo%E9%85%8D%E7%BD%AE"><span class="nav-text">3、Picgo配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#obsidian-typora%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0"><span class="nav-text">4、Obsidian &#x2F;
+Typora配置及图片上传</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
