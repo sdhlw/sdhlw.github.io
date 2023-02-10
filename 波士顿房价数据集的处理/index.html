@@ -30,7 +30,7 @@
 <meta property="og:description" content="需求 波士顿房价数据集在scikit-learn1.2版本以后被移除了。 目前自己用的刚好是1.2版本，但是需要复现书中的一些代码（Python机器学习基础教程），所以需要从其他途径获取波士顿房价数据集，主要是获得data(506, 104)和相关的target。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-02-07T06:33:34.000Z">
-<meta property="article:modified_time" content="2023-02-07T14:30:00.356Z">
+<meta property="article:modified_time" content="2023-02-08T04:33:20.464Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="专业书笔记">
@@ -221,10 +221,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2023-02-07 14:33:34 / Modified: 22:30:00" itemprop="dateCreated datePublished" datetime="2023-02-07T14:33:34+08:00">2023-02-07</time>
+              <time title="Created: 2023-02-07 14:33:34" itemprop="dateCreated datePublished" datetime="2023-02-07T14:33:34+08:00">2023-02-07</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-02-08 12:33:20" itemprop="dateModified" datetime="2023-02-08T12:33:20+08:00">2023-02-08</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -268,8 +274,8 @@
 <h3 id="实现">实现</h3>
 <p>1、获得data(506,104)：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">data_url = <span class="string">&quot;http://lib.stat.cmu.edu/datasets/boston&quot;</span></span><br><span class="line">raw_df = pd.read_csv(data_url, sep=<span class="string">&quot;\s+&quot;</span>, skiprows=<span class="number">22</span>, header=<span class="literal">None</span>)</span><br><span class="line">data = np.hstack([raw_df.values[::<span class="number">2</span>, :], raw_df.values[<span class="number">1</span>::<span class="number">2</span>, :<span class="number">2</span>]])</span><br><span class="line">target = raw_df.values[<span class="number">1</span>::<span class="number">2</span>, <span class="number">2</span>] <span class="comment"># 归一化和特征构造后都没有变化</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Data shape: &#123;&#125;&quot;</span>.<span class="built_in">format</span>(data.shape))</span><br><span class="line"></span><br><span class="line">X = MinMaxScaler().fit_transform(data)</span><br><span class="line">X = PolynomialFeatures(degree=<span class="number">2</span>, include_bias=<span class="literal">False</span>).fit_transform(X) <span class="comment"># X即为最后的data(506,104)</span></span><br><span class="line"><span class="built_in">print</span>(X.shape)</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># Data shape: (506, 13)  </span></span><br><span class="line"><span class="comment"># X shape: (506, 104)</span></span><br></pre></td></tr></table></figure>
-<p>2、获取target
-对数据进行归一化和多项式构造，并没有改变行的布局，只是列发生变化，所以shape变化的前后，target不变。</p>
+<p>2、获取target：</p>
+<p>对数据进行归一化和多项式构造，并没有改变行的布局，只是列发生变化，所以shape变化的前后，target不变。</p>
 <h3 id="理解">理解</h3>
 <h4 id="特征的由少变多">特征的由少变多</h4>
 <p>最初的 13 个特征加上这 13 个特征两两组合（有放回）得到的 91
@@ -507,7 +513,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">36</span>
+          <span class="site-state-item-count">38</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -520,7 +526,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">32</span>
+        <span class="site-state-item-count">33</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -571,13 +577,13 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">72k</span>
+    <span title="Symbols count total">73k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:05</span>
+    <span title="Reading time total">1:07</span>
 </div>
 
 <!-- 网站运行时间的设置 -->

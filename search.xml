@@ -65,67 +65,6 @@ Fields。此方法可以同时调整顺序及Field在文献题录列表区的列
       </tags>
   </entry>
   <entry>
-    <title>Git-use</title>
-    <url>/Git-use/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><figure>
-<img
-src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208061634599.png"
-alt="image-20220806163425145" />
-<figcaption aria-hidden="true">image-20220806163425145</figcaption>
-</figure>
-<h4 id="基本设置">基本设置</h4>
-<p><a href="https://www.cnblogs.com/cong-wang/p/15026535.html">Windows
-Terminal 添加git bash</a>：</p>
-<p>打开Windows
-Terminal的设置文件settings.json，在profiles的list中添加一项：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;guid&quot; : &quot;&#123;DCCB2820-E057-5204-2732-968F1D89107E&#125;&quot;,</span><br><span class="line">    &quot;name&quot; : &quot;Git Bash&quot;,</span><br><span class="line">    &quot;commandline&quot; : &quot;C:\\Program Files\\Git\\bin\\bash.exe --login -i&quot;,</span><br><span class="line">    &quot;icon&quot; : &quot;C:\\Users\\Lenovo\\Pictures\\nodelete\\git-bash.png&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-<p>git bash 设置打开默认目录： vim ~/.bash_profile 将一下内容放进去(git
-bash here 会失去作用)：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> D:\\MyData\\10-other\\gitbook_md  <span class="comment"># 加入要去的目录</span></span><br></pre></td></tr></table></figure>
-<h4 id="基本命令">基本命令</h4>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;用户名&quot;  # 在命令行中配置本地仓库的账号和邮箱</span><br><span class="line">git config --global user.email &quot;123@qq.com&quot;</span><br><span class="line">git config --global color.ui true # 启用一些额外的颜色，这样就可以更容易地阅读命令的输出</span><br><span class="line"></span><br><span class="line">git init # 初始化仓库</span><br><span class="line">git add . # .表示所有文件。也可以git add 文件名 添加单独文件</span><br><span class="line">git commit -a -m &quot;备注信息&quot;  # 设置-a，修改文件后不需要再执行 git add 命令</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">给远程仓库取个别名叫origin</span></span><br><span class="line">git remote add origin https://gitee.com/star-language-star/python </span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">从远程获取代码并合并本地的版本(远程有readme，两边不统一，不可以推送，见报错2)</span></span><br><span class="line">git pull --rebase origin master </span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">将本地的 master分支推送到origin主机的master分支</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">第一次用-u，第二次就不用-u了。详见参考文章2</span></span><br><span class="line">git push -u origin master </span><br></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">以后更改代码后拖到远程仓库步骤：到python项目文件夹下执行：</span></span><br><span class="line">git add . # 添加文件</span><br><span class="line">git commit -a -m &quot;备注信息&quot;  # 提交</span><br><span class="line">git push origin master  # 拖到远程仓库</span><br></pre></td></tr></table></figure>
-<h4 id="版本控制">版本控制</h4>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git commit -a -m &quot;备注信息&quot;  # 提交保留当前版本到本地仓库</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">对文件进行修改之后，想回退版本</span></span><br><span class="line">git log # 查看提交信息，有HEAD的就是最新版本</span><br><span class="line">git reflog # 回退到之前版本，git log看不到之后的提交，需用reflog</span><br><span class="line">git reset --hard HEAD^ # 回到上一个版本</span><br><span class="line">git reset --hard f6fb32a（历史版本号）# 版本号用log或reflog查看</span><br></pre></td></tr></table></figure>
-<p>gitee更换地址后配置git：</p>
-<p>https://blog.csdn.net/m0_37034294/article/details/79986198</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">git remote rm origin</span><br><span class="line">git remote add origin 你的新远程仓库地址 # 之后输入的用户名是仓库地址中的用户名</span><br></pre></td></tr></table></figure>
-<h4 id="其他">其他</h4>
-<p>git clone --depth 1
-https://github.com/labuladong/fucking-algorithm.git</p>
-<p>只克隆下包含最近一次commit的一个分支，这样这个项目文件就不会很大</p>
-<h4 id="报错">报错</h4>
-<p>1、$ git add . warning: LF will be replaced by CRLF in
-k_mer/.idea/inspectionProfiles/profiles_settings.xml.</p>
-<p><a href="https://www.jianshu.com/p/450cd21b36a4">关于git提示“warning:
-LF will be replaced by CRLF”终极解答 - 简书 (jianshu.com)</a></p>
-<p>执行了：git config --global core.autocrlf false</p>
-<p>2、error: failed to push some refs to</p>
-<p><a
-href="https://blog.csdn.net/qq_45893999/article/details/106273214">(42条消息)
-error: failed to push some refs
-to如何解决_尘客-追梦的博客-CSDN博客</a></p>
-<p>3、<a
-href="https://www.cnblogs.com/banbosuiyue/p/12674778.html">git提交后文件夹显示灰色无法打开的解决办法</a></p>
-<h4 id="参考文章">参考文章</h4>
-<p>1、<a
-href="https://zhuanlan.zhihu.com/p/94008510">看完这篇还不会用Git，那我就哭了！</a>
-2、<a
-href="https://blog.csdn.net/Lakers2015/article/details/111318801">git
-push 的 -u 参数含义</a> 3、<a
-href="https://blog.csdn.net/ZZQHELLO2018/article/details/82354900">Git版本控制（完美整理版）</a>
-4、<a
-href="https://www.cnblogs.com/chenjunjie12321/p/6876220.html">git的突出解决--git
-rebase之abort、continue、skip</a></p>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux-base</title>
     <url>/Linux-base/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="base">1、Base</h1>
@@ -507,6 +446,67 @@ paste 命令 | 菜鸟教程
       </categories>
       <tags>
         <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git-use</title>
+    <url>/Git-use/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><figure>
+<img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208061634599.png"
+alt="image-20220806163425145" />
+<figcaption aria-hidden="true">image-20220806163425145</figcaption>
+</figure>
+<h4 id="基本设置">基本设置</h4>
+<p><a href="https://www.cnblogs.com/cong-wang/p/15026535.html">Windows
+Terminal 添加git bash</a>：</p>
+<p>打开Windows
+Terminal的设置文件settings.json，在profiles的list中添加一项：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;guid&quot; : &quot;&#123;DCCB2820-E057-5204-2732-968F1D89107E&#125;&quot;,</span><br><span class="line">    &quot;name&quot; : &quot;Git Bash&quot;,</span><br><span class="line">    &quot;commandline&quot; : &quot;C:\\Program Files\\Git\\bin\\bash.exe --login -i&quot;,</span><br><span class="line">    &quot;icon&quot; : &quot;C:\\Users\\Lenovo\\Pictures\\nodelete\\git-bash.png&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<p>git bash 设置打开默认目录： vim ~/.bash_profile 将一下内容放进去(git
+bash here 会失去作用)：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> D:\\MyData\\10-other\\gitbook_md  <span class="comment"># 加入要去的目录</span></span><br></pre></td></tr></table></figure>
+<h4 id="基本命令">基本命令</h4>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;用户名&quot;  # 在命令行中配置本地仓库的账号和邮箱</span><br><span class="line">git config --global user.email &quot;123@qq.com&quot;</span><br><span class="line">git config --global color.ui true # 启用一些额外的颜色，这样就可以更容易地阅读命令的输出</span><br><span class="line"></span><br><span class="line">git init # 初始化仓库</span><br><span class="line">git add . # .表示所有文件。也可以git add 文件名 添加单独文件</span><br><span class="line">git commit -a -m &quot;备注信息&quot;  # 设置-a，修改文件后不需要再执行 git add 命令</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">给远程仓库取个别名叫origin</span></span><br><span class="line">git remote add origin https://gitee.com/star-language-star/python </span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">从远程获取代码并合并本地的版本(远程有readme，两边不统一，不可以推送，见报错2)</span></span><br><span class="line">git pull --rebase origin master </span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">将本地的 master分支推送到origin主机的master分支</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">第一次用-u，第二次就不用-u了。详见参考文章2</span></span><br><span class="line">git push -u origin master </span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">以后更改代码后拖到远程仓库步骤：到python项目文件夹下执行：</span></span><br><span class="line">git add . # 添加文件</span><br><span class="line">git commit -a -m &quot;备注信息&quot;  # 提交</span><br><span class="line">git push origin master  # 拖到远程仓库</span><br></pre></td></tr></table></figure>
+<h4 id="版本控制">版本控制</h4>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git commit -a -m &quot;备注信息&quot;  # 提交保留当前版本到本地仓库</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">对文件进行修改之后，想回退版本</span></span><br><span class="line">git log # 查看提交信息，有HEAD的就是最新版本</span><br><span class="line">git reflog # 回退到之前版本，git log看不到之后的提交，需用reflog</span><br><span class="line">git reset --hard HEAD^ # 回到上一个版本</span><br><span class="line">git reset --hard f6fb32a（历史版本号）# 版本号用log或reflog查看</span><br></pre></td></tr></table></figure>
+<p>gitee更换地址后配置git：</p>
+<p>https://blog.csdn.net/m0_37034294/article/details/79986198</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">git remote rm origin</span><br><span class="line">git remote add origin 你的新远程仓库地址 # 之后输入的用户名是仓库地址中的用户名</span><br></pre></td></tr></table></figure>
+<h4 id="其他">其他</h4>
+<p>git clone --depth 1
+https://github.com/labuladong/fucking-algorithm.git</p>
+<p>只克隆下包含最近一次commit的一个分支，这样这个项目文件就不会很大</p>
+<h4 id="报错">报错</h4>
+<p>1、$ git add . warning: LF will be replaced by CRLF in
+k_mer/.idea/inspectionProfiles/profiles_settings.xml.</p>
+<p><a href="https://www.jianshu.com/p/450cd21b36a4">关于git提示“warning:
+LF will be replaced by CRLF”终极解答 - 简书 (jianshu.com)</a></p>
+<p>执行了：git config --global core.autocrlf false</p>
+<p>2、error: failed to push some refs to</p>
+<p><a
+href="https://blog.csdn.net/qq_45893999/article/details/106273214">(42条消息)
+error: failed to push some refs
+to如何解决_尘客-追梦的博客-CSDN博客</a></p>
+<p>3、<a
+href="https://www.cnblogs.com/banbosuiyue/p/12674778.html">git提交后文件夹显示灰色无法打开的解决办法</a></p>
+<h4 id="参考文章">参考文章</h4>
+<p>1、<a
+href="https://zhuanlan.zhihu.com/p/94008510">看完这篇还不会用Git，那我就哭了！</a>
+2、<a
+href="https://blog.csdn.net/Lakers2015/article/details/111318801">git
+push 的 -u 参数含义</a> 3、<a
+href="https://blog.csdn.net/ZZQHELLO2018/article/details/82354900">Git版本控制（完美整理版）</a>
+4、<a
+href="https://www.cnblogs.com/chenjunjie12321/p/6876220.html">git的突出解决--git
+rebase之abort、continue、skip</a></p>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -1958,6 +1958,135 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
+    <title>Python (matplotlib)保存矢量图</title>
+    <url>/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="保存矢量图">保存矢量图</h3>
+<p>语法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Python中Matplotlib Savefig()不同参数的使用](https://blog.csdn.net/wilbeok/article/details/111194473)
+">[1]</span></a></sup>：
+<code>savefig(fname, dpi=None, facecolor=’w’, edgecolor=’w’, orientation=’portrait’, papertype=None, format=None, transparent=False, bbox_inches=None, pad_inches=0.1, frameon=None, metadata=None)</code></p>
+<p>简单使用：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.savefig(<span class="string">&#x27;C:\\Users\\Lenovo\\Pictures\\test03.svg&#x27;</span>, <span class="built_in">format</span>=<span class="string">&#x27;svg&#x27;</span>,dpi = <span class="number">600</span>,transparent=<span class="literal">False</span>,bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<ul>
+<li>fname即
+<code>test03.svg</code>，<code>format='svg'</code>，<code>dpi = 600</code>
+为导出矢量图的三个参数</li>
+<li>transparent=False 照片背景不要透明</li>
+<li><code>bbox_inches='tight'</code> :
+使未保存到图中的图例（或其他部分）包含进来，避免图片保存下来不全。bbox_inches的作用是调整图的bbox,
+即bounding
+box(边界框)<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Python_matplotlib图例放在外侧保存时显示不完整问题解决](https://blog.csdn.net/Poul_henry/article/details/88311964)
+">[2]</span></a></sup></li>
+</ul>
+<span id="more"></span>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/wilbeok/article/details/111194473">Python中Matplotlib
+Savefig()不同参数的使用</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/Poul_henry/article/details/88311964">Python_matplotlib图例放在外侧保存时显示不完整问题解决</a><a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>Matplotlib</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python(matplotlib) 改变画布背景</title>
+    <url>/python-matplotlib-%E6%94%B9%E5%8F%98%E7%94%BB%E5%B8%83%E8%83%8C%E6%99%AF/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>起因：为了设置画布不透明效果</p>
+<p>对象形式：<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[How to set opacity of background colour of graph with Matplotlib](https://stackoverflow.com/questions/4581504/how-to-set-opacity-of-background-colour-of-graph-with-matplotlib)
+">[1]</span></a></sup></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">fig = plt.figure()</span><br><span class="line">fig.patch.set_facecolor(<span class="string">&#x27;white&#x27;</span>)  <span class="comment"># 设置画布白色不透明（坐标轴外），再画图</span></span><br><span class="line">fig.patch.set_alpha(<span class="number">1</span>)</span><br><span class="line">ax = fig.add_subplot(<span class="number">111</span>)  <span class="comment"># 创建1*1的网格，并添加第一个网格</span></span><br><span class="line">ax.patch.set_facecolor(<span class="string">&#x27;white&#x27;</span>) <span class="comment"># 设置白色不透明（坐标轴内）</span></span><br><span class="line">ax.patch.set_alpha(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">ax.plot(<span class="built_in">range</span>(<span class="number">10</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># If we don&#x27;t specify the edgecolor and facecolor for the figure when</span></span><br><span class="line"><span class="comment"># saving with savefig, it will override the value we set earlier!</span></span><br><span class="line">fig.savefig(<span class="string">&#x27;test01.png&#x27;</span>, facecolor=fig.get_facecolor(), edgecolor=<span class="string">&#x27;none&#x27;</span>)  <span class="comment"># 一定要加这俩个参数，否则保存后会被改掉参数</span></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<figure>
+<img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302110342899.png"
+alt="test01.png" />
+<figcaption aria-hidden="true">test01.png</figcaption>
+</figure>
+<span id="more"></span>
+<p>形式<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[python绘图背景透明_如何在 Matplotlib 中更改绘图背景](https://blog.csdn.net/weixin_39568889/article/details/113313559?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22113313559%22%2C%22source%22%3A%22unlogin%22%7D)
+">[2]</span></a></sup></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">plt.rcParams.update(&#123;</span><br><span class="line">    <span class="string">&quot;figure.facecolor&quot;</span>:  (<span class="string">&#x27;#FFFFFF&#x27;</span>),  <span class="comment"># 白色 坐标轴外</span></span><br><span class="line">    <span class="string">&quot;axes.facecolor&quot;</span>:    (<span class="string">&#x27;#FFFFFF&#x27;</span>),  <span class="comment"># 白色 坐标轴内</span></span><br><span class="line">    <span class="string">&quot;savefig.facecolor&quot;</span>: (<span class="string">&#x27;#FFFFFF&#x27;</span>),  <span class="comment"># 白色 保存图片时</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">plt.plot(<span class="built_in">range</span>(<span class="number">1000</span>))</span><br><span class="line"></span><br><span class="line">plt.savefig(<span class="string">&#x27;test02.svg&#x27;</span>, facecolor=fig.get_facecolor(), edgecolor=<span class="string">&#x27;none&#x27;</span>,<span class="built_in">format</span>=<span class="string">&#x27;svg&#x27;</span>,dpi = <span class="number">600</span>, bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>bbox_inches='tight'</code> :
+解决导出图片时，坐标轴外内容过多没保存下来<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Python_matplotlib图例放在外侧保存时显示不完整问题解决](https://blog.csdn.net/Poul_henry/article/details/88311964)
+">[3]</span></a></sup></li>
+<li>fname即
+<code>test02.svg</code>，<code>format='svg'</code>，<code>dpi = 600</code>
+为导出矢量图的三个参数</li>
+</ul>
+<figure>
+<img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302110342978.svg"
+alt="test02.svg" />
+<figcaption aria-hidden="true">test02.svg</figcaption>
+</figure>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://stackoverflow.com/questions/4581504/how-to-set-opacity-of-background-colour-of-graph-with-matplotlib">How
+to set opacity of background colour of graph with
+Matplotlib</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/weixin_39568889/article/details/113313559?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22113313559%22%2C%22source%22%3A%22unlogin%22%7D">python绘图背景透明_如何在
+Matplotlib 中更改绘图背景</a><a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:3">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/Poul_henry/article/details/88311964">Python_matplotlib图例放在外侧保存时显示不完整问题解决</a><a href="#fnref:3" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>plt</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python机器学习基础教程【第一章】</title>
     <url>/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E3%80%90%E7%AC%AC%E4%B8%80%E7%AB%A0%E3%80%91/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本书的附加代码可以在 GitHub 下载：<a
@@ -2944,8 +3073,8 @@ href="https://deerchao.cn/tutorials/regex/regex.htm">正则表达式30分钟入�
 <h3 id="实现">实现</h3>
 <p>1、获得data(506,104)：</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">data_url = <span class="string">&quot;http://lib.stat.cmu.edu/datasets/boston&quot;</span></span><br><span class="line">raw_df = pd.read_csv(data_url, sep=<span class="string">&quot;\s+&quot;</span>, skiprows=<span class="number">22</span>, header=<span class="literal">None</span>)</span><br><span class="line">data = np.hstack([raw_df.values[::<span class="number">2</span>, :], raw_df.values[<span class="number">1</span>::<span class="number">2</span>, :<span class="number">2</span>]])</span><br><span class="line">target = raw_df.values[<span class="number">1</span>::<span class="number">2</span>, <span class="number">2</span>] <span class="comment"># 归一化和特征构造后都没有变化</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Data shape: &#123;&#125;&quot;</span>.<span class="built_in">format</span>(data.shape))</span><br><span class="line"></span><br><span class="line">X = MinMaxScaler().fit_transform(data)</span><br><span class="line">X = PolynomialFeatures(degree=<span class="number">2</span>, include_bias=<span class="literal">False</span>).fit_transform(X) <span class="comment"># X即为最后的data(506,104)</span></span><br><span class="line"><span class="built_in">print</span>(X.shape)</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># Data shape: (506, 13)  </span></span><br><span class="line"><span class="comment"># X shape: (506, 104)</span></span><br></pre></td></tr></table></figure>
-<p>2、获取target
-对数据进行归一化和多项式构造，并没有改变行的布局，只是列发生变化，所以shape变化的前后，target不变。</p>
+<p>2、获取target：</p>
+<p>对数据进行归一化和多项式构造，并没有改变行的布局，只是列发生变化，所以shape变化的前后，target不变。</p>
 <h3 id="理解">理解</h3>
 <h4 id="特征的由少变多">特征的由少变多</h4>
 <p>最初的 13 个特征加上这 13 个特征两两组合（有放回）得到的 91
