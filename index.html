@@ -193,6 +193,105 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/%E7%AE%80%E8%B0%88array-reshape-dataframe/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/jay.jpg">
+      <meta itemprop="name" content="Jay Chou">
+      <meta itemprop="description" content="a solitary spark and wars begin">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jay's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/%E7%AE%80%E8%B0%88array-reshape-dataframe/" class="post-title-link" itemprop="url">简谈array,reshape,dataframe</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2023-02-15 16:18:19 / Modified: 16:20:19" itemprop="dateCreated datePublished" datetime="2023-02-15T16:18:19+08:00">2023-02-15</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">Study</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>2.8k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>3 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="array">array</h3>
+<p>Numpy的数据结构是n维的数组对象，叫做ndarray。
+NumPy数组一般是同质的（但有一种特殊的数组类型例外，它是异质的），即数组中的所有元素类型必须是一致的。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[NumPy中的ndarray与Pandas的Series和DataFrame之间的区别与转换](https://zhuanlan.zhihu.com/p/83660582)">[1]</span></a></sup></p>
+<p>优点：</p>
+<ul>
+<li>内存块风格：ndarray中的所有元素的类型都是相同的，存储元素时内存可以连续，在科学计算中，Numpy的ndarray就可以省掉很多循环语句，代码使用方面比Python原生list简单的多。</li>
+<li>ndarray支持并行化运算（向量化运算）</li>
+<li>Numpy底层使用C语言编写，内部解除了GIL（全局解释器锁），其对数组的操作速度不受Python解释器的限制，效率远高于纯Python代码。</li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/%E7%AE%80%E8%B0%88array-reshape-dataframe/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -218,7 +317,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2023-02-11 03:54:42 / Modified: 03:58:20" itemprop="dateCreated datePublished" datetime="2023-02-11T03:54:42+08:00">2023-02-11</time>
+              <time title="Created: 2023-02-11 03:54:42 / Modified: 04:07:44" itemprop="dateCreated datePublished" datetime="2023-02-11T03:54:42+08:00">2023-02-11</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -236,7 +335,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>599</span>
+              <span>600</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -259,17 +358,17 @@
 <p>语法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
 class="hint--top hint--error hint--medium hint--rounded hint--bounce"
 aria-label="[Python中Matplotlib Savefig()不同参数的使用](https://blog.csdn.net/wilbeok/article/details/111194473)
-">[1]</span></a></sup>：
-<code>savefig(fname, dpi=None, facecolor=’w’, edgecolor=’w’, orientation=’portrait’, papertype=None, format=None, transparent=False, bbox_inches=None, pad_inches=0.1, frameon=None, metadata=None)</code></p>
+">[1]</span></a></sup>：</p>
+<p><code>savefig(fname, dpi=None, facecolor=’w’, edgecolor=’w’, orientation=’portrait’, papertype=None, format=None, transparent=False, bbox_inches=None, pad_inches=0.1, frameon=None, metadata=None)</code></p>
 <p>简单使用：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">plt.savefig(<span class="string">&#x27;C:\\Users\\Lenovo\\Pictures\\test03.svg&#x27;</span>, <span class="built_in">format</span>=<span class="string">&#x27;svg&#x27;</span>,dpi = <span class="number">600</span>,transparent=<span class="literal">False</span>,bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 <ul>
 <li>fname即
 <code>test03.svg</code>，<code>format='svg'</code>，<code>dpi = 600</code>
 为导出矢量图的三个参数</li>
-<li>transparent=False 照片背景不要透明</li>
-<li><code>bbox_inches='tight'</code> :
-使未保存到图中的图例（或其他部分）包含进来，避免图片保存下来不全。bbox_inches的作用是调整图的bbox,
+<li><code>transparent=False</code> ：照片背景不要透明</li>
+<li><code>bbox_inches='tight'</code>
+：使未保存到图中的图例（或其他部分）包含进来，避免图片保存下来不全。bbox_inches的作用是调整图的bbox,
 即bounding
 box(边界框)<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
 class="hint--top hint--error hint--medium hint--rounded hint--bounce"
@@ -325,10 +424,16 @@ aria-label="[Python_matplotlib图例放在外侧保存时显示不完整问题�
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2023-02-11 03:31:23 / Modified: 03:45:11" itemprop="dateCreated datePublished" datetime="2023-02-11T03:31:23+08:00">2023-02-11</time>
+              <time title="Created: 2023-02-11 03:31:23" itemprop="dateCreated datePublished" datetime="2023-02-11T03:31:23+08:00">2023-02-11</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-02-12 17:05:22" itemprop="dateModified" datetime="2023-02-12T17:05:22+08:00">2023-02-12</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -370,12 +475,8 @@ class="hint--top hint--error hint--medium hint--rounded hint--bounce"
 aria-label="[How to set opacity of background colour of graph with Matplotlib](https://stackoverflow.com/questions/4581504/how-to-set-opacity-of-background-colour-of-graph-with-matplotlib)
 ">[1]</span></a></sup></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">fig = plt.figure()</span><br><span class="line">fig.patch.set_facecolor(<span class="string">&#x27;white&#x27;</span>)  <span class="comment"># 设置画布白色不透明（坐标轴外），再画图</span></span><br><span class="line">fig.patch.set_alpha(<span class="number">1</span>)</span><br><span class="line">ax = fig.add_subplot(<span class="number">111</span>)  <span class="comment"># 创建1*1的网格，并添加第一个网格</span></span><br><span class="line">ax.patch.set_facecolor(<span class="string">&#x27;white&#x27;</span>) <span class="comment"># 设置白色不透明（坐标轴内）</span></span><br><span class="line">ax.patch.set_alpha(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">ax.plot(<span class="built_in">range</span>(<span class="number">10</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># If we don&#x27;t specify the edgecolor and facecolor for the figure when</span></span><br><span class="line"><span class="comment"># saving with savefig, it will override the value we set earlier!</span></span><br><span class="line">fig.savefig(<span class="string">&#x27;test01.png&#x27;</span>, facecolor=fig.get_facecolor(), edgecolor=<span class="string">&#x27;none&#x27;</span>)  <span class="comment"># 一定要加这俩个参数，否则保存后会被改掉参数</span></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-<figure>
-<img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302110342899.png"
-alt="test01.png" />
-<figcaption aria-hidden="true">test01.png</figcaption>
-</figure>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302110342899.png" /></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/python-matplotlib-%E6%94%B9%E5%8F%98%E7%94%BB%E5%B8%83%E8%83%8C%E6%99%AF/#more" rel="contents">
@@ -1061,109 +1162,6 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/20230
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E3%80%90%E7%AC%AC%E4%B8%80%E7%AB%A0%E3%80%91/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/jay.jpg">
-      <meta itemprop="name" content="Jay Chou">
-      <meta itemprop="description" content="a solitary spark and wars begin">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jay's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E3%80%90%E7%AC%AC%E4%B8%80%E7%AB%A0%E3%80%91/" class="post-title-link" itemprop="url">Python机器学习基础教程【第一章】</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2023-02-02 17:43:19 / Modified: 20:10:38" itemprop="dateCreated datePublished" datetime="2023-02-02T17:43:19+08:00">2023-02-02</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">Study</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="Symbols count in article">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>5k</span>
-            </span>
-            <span class="post-meta-item" title="Reading time">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>5 mins.</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>本书的附加代码可以在 GitHub 下载：<a
-target="_blank" rel="noopener" href="https://github.com/amueller/introduction_to_ml_with_python">introduction
-to ml with python</a></p>
-<p>监督学习算法（supervised learning algorithm）
-无监督学习算法（unsupervised learning algorithm）</p>
-<p>在机器学习中，这里的每个实体或每一行被称为一个样本（sample）或数据点，而每一列（用来描述这些实体的属性）则被称为特征（feature）。</p>
-<p>如何构建良好的数据表征，这被称为特征提取（feature
-extraction）或特征工程（feature engineering）</p>
-<p><strong>scikit-learn</strong> 依赖于另外两个 Python 包：NumPy
-（Python 科学计算的基础包之一）和 SciPy（ Python
-中用于科学计算的函数集合）。 算法详细文档：<a
-target="_blank" rel="noopener" href="https://scikit-learn.org/stable/index.html"
-class="uri">https://scikit-learn.org/stable/index.html</a> 用户指南：<a
-target="_blank" rel="noopener" href="http://scikit-learn.org/stable/user_guide.html"
-class="uri">http://scikit-learn.org/stable/user_guide.html</a></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E3%80%90%E7%AC%AC%E4%B8%80%E7%AB%A0%E3%80%91/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1235,7 +1233,7 @@ class="uri">http://scikit-learn.org/stable/user_guide.html</a></p>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">38</span>
+          <span class="site-state-item-count">39</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -1299,13 +1297,13 @@ class="uri">http://scikit-learn.org/stable/user_guide.html</a></p>
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">73k</span>
+    <span title="Symbols count total">76k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:07</span>
+    <span title="Reading time total">1:09</span>
 </div>
 
 <!-- 网站运行时间的设置 -->

@@ -30,7 +30,7 @@
 <meta property="og:description" content="保存矢量图 语法[1]： savefig(fname, dpi&#x3D;None, facecolor&#x3D;’w’, edgecolor&#x3D;’w’, orientation&#x3D;’portrait’, papertype&#x3D;None, format&#x3D;None, transparent&#x3D;False, bbox_inches&#x3D;None, pad_inches&#x3D;0.1, frameon&#x3D;None, metadata&#x3D;N">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-02-10T19:54:42.000Z">
-<meta property="article:modified_time" content="2023-02-10T19:58:20.544Z">
+<meta property="article:modified_time" content="2023-02-10T20:07:44.093Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="Matplotlib">
@@ -222,7 +222,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2023-02-11 03:54:42 / Modified: 03:58:20" itemprop="dateCreated datePublished" datetime="2023-02-11T03:54:42+08:00">2023-02-11</time>
+              <time title="Created: 2023-02-11 03:54:42 / Modified: 04:07:44" itemprop="dateCreated datePublished" datetime="2023-02-11T03:54:42+08:00">2023-02-11</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -240,7 +240,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>599</span>
+              <span>600</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -263,17 +263,17 @@
 <p>语法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
 class="hint--top hint--error hint--medium hint--rounded hint--bounce"
 aria-label="[Python中Matplotlib Savefig()不同参数的使用](https://blog.csdn.net/wilbeok/article/details/111194473)
-">[1]</span></a></sup>：
-<code>savefig(fname, dpi=None, facecolor=’w’, edgecolor=’w’, orientation=’portrait’, papertype=None, format=None, transparent=False, bbox_inches=None, pad_inches=0.1, frameon=None, metadata=None)</code></p>
+">[1]</span></a></sup>：</p>
+<p><code>savefig(fname, dpi=None, facecolor=’w’, edgecolor=’w’, orientation=’portrait’, papertype=None, format=None, transparent=False, bbox_inches=None, pad_inches=0.1, frameon=None, metadata=None)</code></p>
 <p>简单使用：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">plt.savefig(<span class="string">&#x27;C:\\Users\\Lenovo\\Pictures\\test03.svg&#x27;</span>, <span class="built_in">format</span>=<span class="string">&#x27;svg&#x27;</span>,dpi = <span class="number">600</span>,transparent=<span class="literal">False</span>,bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 <ul>
 <li>fname即
 <code>test03.svg</code>，<code>format='svg'</code>，<code>dpi = 600</code>
 为导出矢量图的三个参数</li>
-<li>transparent=False 照片背景不要透明</li>
-<li><code>bbox_inches='tight'</code> :
-使未保存到图中的图例（或其他部分）包含进来，避免图片保存下来不全。bbox_inches的作用是调整图的bbox,
+<li><code>transparent=False</code> ：照片背景不要透明</li>
+<li><code>bbox_inches='tight'</code>
+：使未保存到图中的图例（或其他部分）包含进来，避免图片保存下来不全。bbox_inches的作用是调整图的bbox,
 即bounding
 box(边界框)<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
 class="hint--top hint--error hint--medium hint--rounded hint--bounce"
@@ -342,7 +342,10 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
     <a href="/python-matplotlib-%E6%94%B9%E5%8F%98%E7%94%BB%E5%B8%83%E8%83%8C%E6%99%AF/" rel="prev" title="Python(matplotlib) 改变画布背景">
       <i class="fa fa-chevron-left"></i> Python(matplotlib) 改变画布背景
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/%E7%AE%80%E8%B0%88array-reshape-dataframe/" rel="next" title="简谈array,reshape,dataframe">
+      简谈array,reshape,dataframe <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -418,7 +421,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">38</span>
+          <span class="site-state-item-count">39</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -482,13 +485,13 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">73k</span>
+    <span title="Symbols count total">76k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:07</span>
+    <span title="Reading time total">1:09</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
