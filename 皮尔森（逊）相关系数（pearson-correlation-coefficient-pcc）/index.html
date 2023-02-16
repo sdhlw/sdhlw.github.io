@@ -22,21 +22,21 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="【不定时更新】记录Vim编辑器的使用">
+  <meta name="description" content="介绍 皮尔森相关系数 皮尔森相关系数也称皮尔森积矩相关系数(Pearson product-moment correlation coefficient) ，是一种线性相关系数，是最常用的一种相关系数。记为r，用来反映变量X和变量Y的线性相关程度，r 值介于-1到1之间，绝对值越大表明相关性越强。[1] 适用连续变量。 相关系数 与相关程度一般划分为 - 0.8 - 1.0 极强相关">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux-vim">
-<meta property="og:url" content="https://www.sdhlw.top/Linux-vim/index.html">
+<meta property="og:title" content="皮尔森（逊）相关系数（Pearson Correlation Coefficient, PCC）">
+<meta property="og:url" content="https://www.sdhlw.top/%E7%9A%AE%E5%B0%94%E6%A3%AE%EF%BC%88%E9%80%8A%EF%BC%89%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%EF%BC%88pearson-correlation-coefficient-pcc%EF%BC%89/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="【不定时更新】记录Vim编辑器的使用">
+<meta property="og:description" content="介绍 皮尔森相关系数 皮尔森相关系数也称皮尔森积矩相关系数(Pearson product-moment correlation coefficient) ，是一种线性相关系数，是最常用的一种相关系数。记为r，用来反映变量X和变量Y的线性相关程度，r 值介于-1到1之间，绝对值越大表明相关性越强。[1] 适用连续变量。 相关系数 与相关程度一般划分为 - 0.8 - 1.0 极强相关">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-08-01T03:48:39.000Z">
-<meta property="article:modified_time" content="2023-02-07T09:48:34.688Z">
+<meta property="article:published_time" content="2023-02-16T13:56:53.000Z">
+<meta property="article:modified_time" content="2023-02-16T13:59:14.499Z">
 <meta property="article:author" content="Jay Chou">
-<meta property="article:tag" content="Linux">
-<meta property="article:tag" content="Vim">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Statistics">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://www.sdhlw.top/Linux-vim/">
+<link rel="canonical" href="https://www.sdhlw.top/%E7%9A%AE%E5%B0%94%E6%A3%AE%EF%BC%88%E9%80%8A%EF%BC%89%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%EF%BC%88pearson-correlation-coefficient-pcc%EF%BC%89/">
 
 
 <script id="page-configurations">
@@ -49,7 +49,7 @@
   };
 </script>
 
-  <title>Linux-vim | Jay's Blog</title>
+  <title>皮尔森（逊）相关系数（Pearson Correlation Coefficient, PCC） | Jay's Blog</title>
   
 
 
@@ -198,7 +198,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/Linux-vim/">
+    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/%E7%9A%AE%E5%B0%94%E6%A3%AE%EF%BC%88%E9%80%8A%EF%BC%89%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%EF%BC%88pearson-correlation-coefficient-pcc%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/jay.jpg">
@@ -211,7 +211,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Linux-vim
+          皮尔森（逊）相关系数（Pearson Correlation Coefficient, PCC）
         </h1>
 
         <div class="post-meta">
@@ -220,16 +220,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2022-08-01 11:48:39" itemprop="dateCreated datePublished" datetime="2022-08-01T11:48:39+08:00">2022-08-01</time>
+              <time title="Created: 2023-02-16 21:56:53 / Modified: 21:59:14" itemprop="dateCreated datePublished" datetime="2023-02-16T21:56:53+08:00">2023-02-16</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-07 17:48:34" itemprop="dateModified" datetime="2023-02-07T17:48:34+08:00">2023-02-07</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -246,7 +240,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.2k</span>
+              <span>1.4k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -255,7 +249,6 @@
                 <span class="post-meta-item-text">Reading time &asymp;</span>
               <span>1 mins.</span>
             </span>
-            <div class="post-description">【不定时更新】记录Vim编辑器的使用</div>
 
         </div>
       </header>
@@ -266,140 +259,65 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一vim有四种模式">一、Vim有四种模式</h1>
-<h2
-id="命令模式正常模式command-mode">1、<strong>命令模式/正常模式</strong>（Command
-mode）</h2>
-<p>敲击键盘动作会被Vim识别为命令，而非输入字符。启动Vim默认进入命令模式。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="介绍">介绍</h3>
+<h4 id="皮尔森相关系数">皮尔森相关系数</h4>
+<p>皮尔森相关系数也称皮尔森积矩相关系数(Pearson product-moment
+correlation coefficient)
+，是一种线性相关系数，是最常用的一种相关系数。记为r，用来反映变量X和变量Y的线性相关程度，r
+值介于-1到1之间，绝对值越大表明相关性越强。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
 class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Vim/三种模式 - 维基教科书，自由的教学读本 (wikibooks.org)](https://zh.m.wikibooks.org/zh-hans/Vim/三种模式)
+aria-label="[python 皮尔森相关系数（Pearson）](https://blog.csdn.net/small__roc/article/details/123519616)
 ">[1]</span></a></sup></p>
-<ul>
-<li><code>i</code>：切换到插入模式<br />
-</li>
-<li><code>：</code>：切换到底线命令模式</li>
-<li><code>v</code>：进入可视化模式(小写V、大写V、Ctrl+V均可进入该模式下)</li>
-<li><code>U</code>：撤销上一步操作</li>
-<li><code>yy</code> - 复制当前行，包括换行符</li>
-<li><code>dd</code> - 剪切当前行，包括换行符</li>
-<li><code>p</code>键可以将内容粘贴到当前光标后面</li>
-</ul>
-<h2 id="插入模式insert-mode">2、<strong>插入模式</strong>（Insert
-mode）</h2>
-<p>编辑文本，需进入该模式</p>
-<ul>
-<li><code>Esc</code>：退出插入模式，进入命令模式</li>
-</ul>
-<h2
-id="底线命令模式last-line-mode">3、<strong>底线命令模式</strong>（Last
-line mode）</h2>
-<ul>
-<li><code>Esc</code>：退出底线命令模式，进入命令模式</li>
-<li><code>q!</code>：不保存，强制退出vim</li>
-<li><code>wq</code>：保存，退出vim</li>
-<li><code>q</code>：不保存，退出vim</li>
-<li><code>w</code>：保存，不退出vim</li>
-</ul>
-<h2
-id="可视化模式visual-mode">4、<strong>可视化模式</strong>(Visual-mode)：</h2>
-<ul>
-<li><p>文本选择：小写V进入（选择是以字符为单位的）、大写V进入（选择是以行为单位的）、Ctrl+V进入（矩形区域作为目标文本，以按下
-Ctrl+v
-位置作为矩形的一角，光标移动的终点位置作为它的对角）<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+<p>适用连续变量。</p>
+<p>相关系数 与相关程度一般划分为 - 0.8 - 1.0 极强相关 - 0.6 - 0.8 强相关
+- 0.4 - 0.6 中等程度相关 - 0.2 - 0.4 弱相关 - 0.0 - 0.2
+极弱相关或无相关</p>
+<p>原假设：两者不存在相关性
+P值小，即我们观察的样本（不存在相关性）发生的概率小，存在相关性的概率大，如果原假设成立即不存在相关性，那么我们这个样本就很极端很显著。</p>
+<p><strong>相关系数绝对值越大，越相关，P值越小越相关。</strong></p>
+<span id="more"></span>
+<h4 id="线性回归的r平方">线性回归的R平方</h4>
+<p>线性回归后得到的r平方和使用皮尔森相关求得的r再平方数值上面是一样的。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
 class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Linux Vim可视化模式及其用法 (biancheng.net)](http://c.biancheng.net/view/6355.html)
-">[2]</span></a></sup></p></li>
-<li><p>可视化命令：</p>
-<table>
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 85%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;"><strong>命令</strong></th>
-<th style="text-align: left;"><strong>命令</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">d</td>
-<td style="text-align: left;">删除选中的部分文本。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">D</td>
-<td style="text-align: left;">删除选中部分所在的行，和 d
-不同之处在于，即使选中文本中有些字符所在的行没有都选中，删除时也会一并删除。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">y</td>
-<td style="text-align: left;">将选中部分复制到剪贴板中。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">p（小写）</td>
-<td style="text-align: left;">将剪贴板中的内容粘贴到光标之后。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">P（大写）</td>
-<td style="text-align: left;">将剪贴板中的内容粘贴到光标之前。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">u（小写）</td>
-<td
-style="text-align: left;">将选中部分中的大写字符全部改为小写字符。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">U（大写）</td>
-<td
-style="text-align: left;">将选中部分中的小写字符全部改为大写字符。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">&gt;</td>
-<td style="text-align: left;">将选中部分右移（缩进）一个 tab
-键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
-个空白字符的长度）。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">&lt;</td>
-<td style="text-align: left;">将选中部分左移一个 tab
-键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
-个空白字符的长度）。</td>
-</tr>
-</tbody>
-</table></li>
-</ul>
-<h1 id="二小技巧">二、小技巧</h1>
-<h2 id="设置行号">1、设置行号</h2>
-<p>vim ~/.vimrc 写入：set number</p>
-<h2 id="设置粘贴模式">2、设置粘贴模式</h2>
-<p><code>:set paste</code> + 回车 + <code>i</code></p>
-<h2 id="快速到达首尾">3、快速到达首尾</h2>
-<ul>
-<li><code>gg</code>：跳转到文件头</li>
-<li>行数 +<code>gg</code>：跳转到指定行</li>
-<li>shift + g ：跳转到文件末尾</li>
-</ul>
-<h2 id="多行注释">4、多行注释</h2>
-<p><code>:20,30 s/^/#/g</code> ：20-30行 用 #
-注释掉。（python是用#注释地～～～）</p>
-<p><code>:20,30 s/^#//g</code> ：20-30行 取消注释</p>
-<ul>
-<li><p>注释：</p>
-<p>​ Ctrl + v ：vim中的视图模式，把要注释的内容选上 ​ shift + i ：插入字符
-​shift + # ：把#插入到要注释的行前面（在第一行有显示） ​ Esc
-：按至少2次Esc，则会把所有选中的行都在其前面加#</p></li>
-<li><p>取消注释：</p>
-<p>​ Ctrl+v：进入视图模式 ​
-上下方向键选中要注释的行，左右键选择要删除的字符# ​ 按d删除</p></li>
-</ul>
-<h2 id="vim的搜索功能">5、vim的搜索功能</h2>
-<p>在 normal 模式下按下 <code>/</code>
-即可进入查找模式，输入要查找的字符串并按下回车。 Vim
-会跳转到第一个匹配。按下 <code>n</code> 查找下一个，按下 <code>N</code>
-查找上一个。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[在 Vim 中优雅地查找和替换 | Harttle Land](https://harttle.land/2016/08/08/vim-search-in-file.html)
+aria-label="[请问皮尔逊相关系数和r方是一种东西吗？](http://zhidao.baidu.com/question/493668152452206612/answer/2899388201)
 ">[3]</span></a></sup></p>
+<p>R平方：决定系数，反应因变量的全部变异能通过回归关系被自变量解释的比例。<span
+class="math inline">\(R^2\)</span>
+值越接近1，吻合程度越高，越接近0，则吻合程度越低。<span
+class="math inline">\(R^2\)</span> 作为相关系数，一般机器默认的是<span
+class="math inline">\(R^2\)</span>
+&gt;0.99，这样才具有可行度和线性关系。<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[线性回归r2代表什么](https://worktile.com/kb/ask/6156.html)
+">[4]</span></a></sup></p>
+<h3 id="使用">使用</h3>
+<p><code>scipy.stats.pearsonr(x, y, *, alternative='two-sided')</code></p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li>x(N,) array_like Input
+array.<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[scipy.stats.pearsonr](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html)
+">[2]</span></a></sup></li>
+<li>y(N,) array_like Input array.</li>
+<li>alternative {‘two-sided’, ‘greater’, ‘less’}, optional</li>
+</ul>
+<p>Defines the alternative hypothesis. Default is ‘two-sided’. The
+following options are available:</p>
+<ul>
+<li>‘two-sided’: the correlation(相关) is nonzero</li>
+<li>‘less’: the correlation is negative (less than zero)</li>
+<li>‘greater’: the correlation is positive (greater than zero)</li>
+</ul>
+<p><strong>Attributes</strong></p>
+<ul>
+<li><code>statistic</code> ：float，Pearson product-moment
+<strong>correlation coefficient</strong>.</li>
+<li><code>pvalue</code> ：float，The p-value associated with the chosen
+alternative.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Python实现</span></span><br><span class="line"><span class="keyword">from</span> scipy.stats <span class="keyword">import</span> pearsonr</span><br><span class="line"></span><br><span class="line">x = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line">y = [<span class="number">1.2</span>,<span class="number">2.2</span>,<span class="number">3.1</span>,<span class="number">4.1</span>]</span><br><span class="line">result = pearsonr(x,y)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;pearson相关系数: &#123;:.6f&#125;&quot;</span>.<span class="built_in">format</span>(result.statistic))  <span class="comment"># result[0]</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;P-Value: &#123;:.6f&#125;&quot;</span>.<span class="built_in">format</span>(result.pvalue))  <span class="comment"># result[1]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># pearson相关系数: 0.999783</span></span><br><span class="line"><span class="comment"># P-Value: 0.000217</span></span><br></pre></td></tr></table></figure>
+<h3 id="参考文献">参考文献</h3>
 <div id="footnotes">
 <hr>
 <div id="footnotelist">
@@ -407,23 +325,27 @@ aria-label="[在 Vim 中优雅地查找和替换 | Harttle Land](https://harttle
 <li id="fn:1">
 <span
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://zh.m.wikibooks.org/zh-hans/Vim/%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F">Vim/三种模式
-- 维基教科书，自由的教学读本
-(wikibooks.org)</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/small__roc/article/details/123519616">python
+皮尔森相关系数（Pearson）</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
 </li>
 <li id="fn:2">
 <span
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="http://c.biancheng.net/view/6355.html">Linux
-Vim可视化模式及其用法
-(biancheng.net)</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span>
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html">scipy.stats.pearsonr</a><a href="#fnref:2" rev="footnote">
+↩︎</a></span>
 </li>
 <li id="fn:3">
 <span
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://harttle.land/2016/08/08/vim-search-in-file.html">在
-Vim 中优雅地查找和替换 | Harttle
-Land</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="http://zhidao.baidu.com/question/493668152452206612/answer/2899388201">请问皮尔逊相关系数和r方是一种东西吗？</a><a href="#fnref:3" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:4">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://worktile.com/kb/ask/6156.html">线性回归r2代表什么</a><a href="#fnref:4" rev="footnote">
+↩︎</a></span>
 </li>
 </ol>
 </div>
@@ -443,7 +365,7 @@ Land</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="https://www.sdhlw.top/Linux-vim/" title="Linux-vim">https://www.sdhlw.top/Linux-vim/</a>
+    <a href="https://www.sdhlw.top/%E7%9A%AE%E5%B0%94%E6%A3%AE%EF%BC%88%E9%80%8A%EF%BC%89%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%EF%BC%88pearson-correlation-coefficient-pcc%EF%BC%89/" title="皮尔森（逊）相关系数（Pearson Correlation Coefficient, PCC）">https://www.sdhlw.top/皮尔森（逊）相关系数（pearson-correlation-coefficient-pcc）/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-Hans" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -455,8 +377,8 @@ Land</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/linux/" rel="tag"><i class="fa fa-tag"></i> Linux</a>
-              <a href="/tags/vim/" rel="tag"><i class="fa fa-tag"></i> Vim</a>
+              <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
+              <a href="/tags/statistics/" rel="tag"><i class="fa fa-tag"></i> Statistics</a>
           </div>
 
         
@@ -465,13 +387,10 @@ Land</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/Windows%20%E8%B6%85%E8%B5%9E%E8%BD%AF%E4%BB%B6%20&%20%E6%89%A9%E5%B1%95%20&%20%E7%BD%91%E7%AB%99/" rel="prev" title="Windows 超赞软件 & 扩展 & 网站">
-      <i class="fa fa-chevron-left"></i> Windows 超赞软件 & 扩展 & 网站
+    <a href="/%E7%AE%80%E8%B0%88-python-yield/" rel="prev" title="简谈 Python yield">
+      <i class="fa fa-chevron-left"></i> 简谈 Python yield
     </a></div>
-      <div class="post-nav-item">
-    <a href="/%E3%80%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%91Cross-Validation%EF%BC%88%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%EF%BC%89/" rel="next" title="【机器学习】Cross-Validation（交叉验证）">
-      【机器学习】Cross-Validation（交叉验证） <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -531,10 +450,7 @@ Land</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80vim%E6%9C%89%E5%9B%9B%E7%A7%8D%E6%A8%A1%E5%BC%8F"><span class="nav-text">一、Vim有四种模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F%E6%AD%A3%E5%B8%B8%E6%A8%A1%E5%BC%8Fcommand-mode"><span class="nav-text">1、命令模式&#x2F;正常模式（Command
-mode）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8F%92%E5%85%A5%E6%A8%A1%E5%BC%8Finsert-mode"><span class="nav-text">2、插入模式（Insert
-mode）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%95%E7%BA%BF%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8Flast-line-mode"><span class="nav-text">3、底线命令模式（Last
-line mode）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A8%A1%E5%BC%8Fvisual-mode"><span class="nav-text">4、可视化模式(Visual-mode)：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E5%B0%8F%E6%8A%80%E5%B7%A7"><span class="nav-text">二、小技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E8%A1%8C%E5%8F%B7"><span class="nav-text">1、设置行号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E7%B2%98%E8%B4%B4%E6%A8%A1%E5%BC%8F"><span class="nav-text">2、设置粘贴模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E5%88%B0%E8%BE%BE%E9%A6%96%E5%B0%BE"><span class="nav-text">3、快速到达首尾</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E8%A1%8C%E6%B3%A8%E9%87%8A"><span class="nav-text">4、多行注释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vim%E7%9A%84%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="nav-text">5、vim的搜索功能</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8B%E7%BB%8D"><span class="nav-text">介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9A%AE%E5%B0%94%E6%A3%AE%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0"><span class="nav-text">皮尔森相关系数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E7%9A%84r%E5%B9%B3%E6%96%B9"><span class="nav-text">线性回归的R平方</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8"><span class="nav-text">使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="nav-text">参考文献</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -704,6 +620,59 @@ setInterval("createtime()",250);
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
@@ -718,7 +687,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'Gitment_blog',
       owner       : 'sdhlw',
       admin       : ['sdhlw'],
-      id          : 'e416d7a79c79767a15387ad9078a3f9c',
+      id          : 'b6ca7e156213e643ee9d16efd8dcc0c9',
         language: '',
       distractionFreeMode: true
     });

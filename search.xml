@@ -3195,6 +3195,109 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
+    <title>皮尔森（逊）相关系数（Pearson Correlation Coefficient, PCC）</title>
+    <url>/%E7%9A%AE%E5%B0%94%E6%A3%AE%EF%BC%88%E9%80%8A%EF%BC%89%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%EF%BC%88pearson-correlation-coefficient-pcc%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="介绍">介绍</h3>
+<h4 id="皮尔森相关系数">皮尔森相关系数</h4>
+<p>皮尔森相关系数也称皮尔森积矩相关系数(Pearson product-moment
+correlation coefficient)
+，是一种线性相关系数，是最常用的一种相关系数。记为r，用来反映变量X和变量Y的线性相关程度，r
+值介于-1到1之间，绝对值越大表明相关性越强。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[python 皮尔森相关系数（Pearson）](https://blog.csdn.net/small__roc/article/details/123519616)
+">[1]</span></a></sup></p>
+<p>适用连续变量。</p>
+<p>相关系数 与相关程度一般划分为 - 0.8 - 1.0 极强相关 - 0.6 - 0.8 强相关
+- 0.4 - 0.6 中等程度相关 - 0.2 - 0.4 弱相关 - 0.0 - 0.2
+极弱相关或无相关</p>
+<p>原假设：两者不存在相关性
+P值小，即我们观察的样本（不存在相关性）发生的概率小，存在相关性的概率大，如果原假设成立即不存在相关性，那么我们这个样本就很极端很显著。</p>
+<p><strong>相关系数绝对值越大，越相关，P值越小越相关。</strong></p>
+<span id="more"></span>
+<h4 id="线性回归的r平方">线性回归的R平方</h4>
+<p>线性回归后得到的r平方和使用皮尔森相关求得的r再平方数值上面是一样的。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[请问皮尔逊相关系数和r方是一种东西吗？](http://zhidao.baidu.com/question/493668152452206612/answer/2899388201)
+">[3]</span></a></sup></p>
+<p>R平方：决定系数，反应因变量的全部变异能通过回归关系被自变量解释的比例。<span
+class="math inline">\(R^2\)</span>
+值越接近1，吻合程度越高，越接近0，则吻合程度越低。<span
+class="math inline">\(R^2\)</span> 作为相关系数，一般机器默认的是<span
+class="math inline">\(R^2\)</span>
+&gt;0.99，这样才具有可行度和线性关系。<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[线性回归r2代表什么](https://worktile.com/kb/ask/6156.html)
+">[4]</span></a></sup></p>
+<h3 id="使用">使用</h3>
+<p><code>scipy.stats.pearsonr(x, y, *, alternative='two-sided')</code></p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li>x(N,) array_like Input
+array.<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[scipy.stats.pearsonr](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html)
+">[2]</span></a></sup></li>
+<li>y(N,) array_like Input array.</li>
+<li>alternative {‘two-sided’, ‘greater’, ‘less’}, optional</li>
+</ul>
+<p>Defines the alternative hypothesis. Default is ‘two-sided’. The
+following options are available:</p>
+<ul>
+<li>‘two-sided’: the correlation(相关) is nonzero</li>
+<li>‘less’: the correlation is negative (less than zero)</li>
+<li>‘greater’: the correlation is positive (greater than zero)</li>
+</ul>
+<p><strong>Attributes</strong></p>
+<ul>
+<li><code>statistic</code> ：float，Pearson product-moment
+<strong>correlation coefficient</strong>.</li>
+<li><code>pvalue</code> ：float，The p-value associated with the chosen
+alternative.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Python实现</span></span><br><span class="line"><span class="keyword">from</span> scipy.stats <span class="keyword">import</span> pearsonr</span><br><span class="line"></span><br><span class="line">x = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line">y = [<span class="number">1.2</span>,<span class="number">2.2</span>,<span class="number">3.1</span>,<span class="number">4.1</span>]</span><br><span class="line">result = pearsonr(x,y)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;pearson相关系数: &#123;:.6f&#125;&quot;</span>.<span class="built_in">format</span>(result.statistic))  <span class="comment"># result[0]</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;P-Value: &#123;:.6f&#125;&quot;</span>.<span class="built_in">format</span>(result.pvalue))  <span class="comment"># result[1]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># pearson相关系数: 0.999783</span></span><br><span class="line"><span class="comment"># P-Value: 0.000217</span></span><br></pre></td></tr></table></figure>
+<h3 id="参考文献">参考文献</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/small__roc/article/details/123519616">python
+皮尔森相关系数（Pearson）</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html">scipy.stats.pearsonr</a><a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:3">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="http://zhidao.baidu.com/question/493668152452206612/answer/2899388201">请问皮尔逊相关系数和r方是一种东西吗？</a><a href="#fnref:3" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:4">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://worktile.com/kb/ask/6156.html">线性回归r2代表什么</a><a href="#fnref:4" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>Statistics</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>简谈 Python yield</title>
     <url>/%E7%AE%80%E8%B0%88-python-yield/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>带yield的函数是一个生成器（generator），而不是一个函数了，这个生成器有一个函数就是next函数，next就相当于“下一步”生成哪个数，这一次的next开始的地方是接着上一次的next停止的地方执行的。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
