@@ -2,9 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.sdhlw.top/%E7%AE%80%E8%B0%88-python-yield/</loc>
+    
+    <lastmod>2023-02-16T01:38:12.036Z</lastmod>
+    
+    <date>1676511384000</date>
+    <title>简谈 Python yield | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://www.sdhlw.top/%E7%AE%80%E8%B0%88array-reshape-dataframe/</loc>
     
-    <lastmod>2023-02-15T08:20:19.915Z</lastmod>
+    <lastmod>2023-02-15T09:13:04.141Z</lastmod>
     
     <date>1676449099000</date>
     <title>简谈array,reshape,dataframe | Jay's Blog</title>

@@ -22,23 +22,20 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="需求：  Obsidian实现图床功能 图床换成腾讯云 Obsidian&#x2F;Typora实现可选择图片是否上传图床">
+  <meta name="description" content="带yield的函数是一个生成器（generator），而不是一个函数了，这个生成器有一个函数就是next函数，next就相当于“下一步”生成哪个数，这一次的next开始的地方是接着上一次的next停止的地方执行的。[1] 先把yield看做“return”，在程序中返回某个值，返回之后程序就不再往下运行了。 程序执行遇到yield关键字，yield返回后面的值之后，程序暂停，直到再次调用nex">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Obsidian&#x2F;Typora图床：腾讯云COS+Picgo">
-<meta property="og:url" content="https://www.sdhlw.top/obsidian%E5%9B%BE%E5%BA%8A%EF%BC%9A%E8%85%BE%E8%AE%AF%E4%BA%91cos-picgo/index.html">
+<meta property="og:title" content="简谈 Python yield">
+<meta property="og:url" content="https://www.sdhlw.top/%E7%AE%80%E8%B0%88-python-yield/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="需求：  Obsidian实现图床功能 图床换成腾讯云 Obsidian&#x2F;Typora实现可选择图片是否上传图床">
+<meta property="og:description" content="带yield的函数是一个生成器（generator），而不是一个函数了，这个生成器有一个函数就是next函数，next就相当于“下一步”生成哪个数，这一次的next开始的地方是接着上一次的next停止的地方执行的。[1] 先把yield看做“return”，在程序中返回某个值，返回之后程序就不再往下运行了。 程序执行遇到yield关键字，yield返回后面的值之后，程序暂停，直到再次调用nex">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-01-18T08:23:52.000Z">
-<meta property="article:modified_time" content="2023-01-18T14:47:24.010Z">
+<meta property="article:published_time" content="2023-02-16T01:36:24.000Z">
+<meta property="article:modified_time" content="2023-02-16T01:38:12.036Z">
 <meta property="article:author" content="Jay Chou">
-<meta property="article:tag" content="Obsidian">
-<meta property="article:tag" content="Picgo">
-<meta property="article:tag" content="腾讯云COS">
-<meta property="article:tag" content="图床">
+<meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://www.sdhlw.top/obsidian%E5%9B%BE%E5%BA%8A%EF%BC%9A%E8%85%BE%E8%AE%AF%E4%BA%91cos-picgo/">
+<link rel="canonical" href="https://www.sdhlw.top/%E7%AE%80%E8%B0%88-python-yield/">
 
 
 <script id="page-configurations">
@@ -51,7 +48,7 @@
   };
 </script>
 
-  <title>Obsidian/Typora图床：腾讯云COS+Picgo | Jay's Blog</title>
+  <title>简谈 Python yield | Jay's Blog</title>
   
 
 
@@ -200,7 +197,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/obsidian%E5%9B%BE%E5%BA%8A%EF%BC%9A%E8%85%BE%E8%AE%AF%E4%BA%91cos-picgo/">
+    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/%E7%AE%80%E8%B0%88-python-yield/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/jay.jpg">
@@ -213,7 +210,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Obsidian/Typora图床：腾讯云COS+Picgo
+          简谈 Python yield
         </h1>
 
         <div class="post-meta">
@@ -224,7 +221,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2023-01-18 16:23:52 / Modified: 22:47:24" itemprop="dateCreated datePublished" datetime="2023-01-18T16:23:52+08:00">2023-01-18</time>
+              <time title="Created: 2023-02-16 09:36:24 / Modified: 09:38:12" itemprop="dateCreated datePublished" datetime="2023-02-16T09:36:24+08:00">2023-02-16</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -242,7 +239,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>660</span>
+              <span>875</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -261,61 +258,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：</p>
-<ul>
-<li><p>Obsidian实现图床功能</p></li>
-<li><p>图床换成腾讯云</p></li>
-<li><p>Obsidian/Typora实现可选择图片是否上传图床</p>
-<span id="more"></span></li>
-</ul>
-<h5 id="注册腾讯云账号创建-cos-存储桶">1、注册腾讯云账号，创建 COS
-存储桶</h5>
-<p>对象存储（Cloud Object
-Storage，COS）是腾讯云提供的⼀种存储海量⽂件的分布式存储服务，⽤户可通过⽹络随时存储和查看数据。通过
-COS 可以进⾏任意格式⽂件的上传、下载和管理。 注册：略 创建 COS
-存储桶<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>带yield的函数是一个生成器（generator），而不是一个函数了，这个生成器有一个函数就是next函数，next就相当于“下一步”生成哪个数，这一次的next开始的地方是接着上一次的next停止的地方执行的。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
 class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://cloud.tencent.com/developer/article/2175760?from=15425&amp;areaSource=102001.1&amp;traceId=rScBYp1UZMEgRry4X3S5G">[1]</span></a></sup>：
-<img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616052.png" />
-<img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616087.png" /></p>
-<ul>
-<li>高级可选配置默认即可</li>
-<li>配置好之后创建</li>
-</ul>
-<h5 id="获取腾讯云cos密钥及基本信息">2、获取腾讯云COS密钥及基本信息</h5>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616142.png" /></p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616198.png" />
-在控制台 对象存储 中获取基本信息： <img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616267.png" /></p>
-<h5 id="picgo配置">3、Picgo配置</h5>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616330.png" /></p>
-<h5 id="obsidian-typora配置及图片上传">4、Obsidian /
-Typora配置及图片上传</h5>
-<p>安装插件：Image auto upload
-Plugin<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://sspai.com/post/72562">[2]</span></a></sup>
-默认配置，粘贴图片即可自动上传图片到图床。</p>
-<p>个人需求配置：取消粘贴即自动上传，图片有需要上传到图床时，通过命令行模式一键上传文章内的图片。</p>
-<p>命令行模式： 以文章为单位，在 Obsidian 中，按下命令行快捷键 Ctrl /
-Command + P，并选择 "upload all
-images"<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://sspai.com/post/75765
-">[3]</span></a></sup>。</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616415.png" /></p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616484.png" /></p>
-<p>Typora配置情况：</p>
-<p>同样设置粘贴不自动上传图片，需上传时右键再点击上传图片即可；</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301182208994.png" /></p>
+aria-label="[python中yield的用法详解——最简单，最清晰的解释](https://blog.csdn.net/mieleizhi0522/article/details/82142856)
+">[1]</span></a></sup></p>
+<p>先把yield看做“<strong>return</strong>”，在程序中返回某个值，返回之后程序就不再往下运行了。</p>
+<p>程序执行遇到yield关键字，yield返回后面的值之后，程序暂停，直到再次调用next方法或send方法。</p>
+<span id="more"></span>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">foo</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;starting...&quot;</span>)  <span class="comment"># 输出starting...</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        res = <span class="keyword">yield</span> <span class="number">4</span>     <span class="comment"># 返回4，停止运行,不赋值，res为none.</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;res:&quot;</span>,res) <span class="comment"># 输出res值</span></span><br><span class="line">g = foo()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(g))  <span class="comment"># 从yield返回值，并停止</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;*&quot;</span>*<span class="number">20</span>)   <span class="comment"># 输出20个星号</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(g))  <span class="comment"># 从上次停止的地方开始运行，直到遇到yield返回停止</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># starting...</span></span><br><span class="line"><span class="comment"># 4</span></span><br><span class="line"><span class="comment"># ********************</span></span><br><span class="line"><span class="comment"># res: None</span></span><br><span class="line"><span class="comment"># 4</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">foo</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;starting...&quot;</span>)   <span class="comment"># 输出starting...</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        res = <span class="keyword">yield</span> <span class="number">4</span>      <span class="comment"># 返回4，停止运行,不赋值，res为none.</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;res:&quot;</span>,res)  <span class="comment"># 输出res值</span></span><br><span class="line">g = foo()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(g))   <span class="comment"># 从yield返回值，并停止</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;*&quot;</span>*<span class="number">20</span>)    <span class="comment"># 输出20个星号</span></span><br><span class="line"><span class="built_in">print</span>(g.send(<span class="number">7</span>)) <span class="comment"># 从上次停止的地方开始运行，并将7赋值给res,直到遇到yield返回停止</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># starting...</span></span><br><span class="line"><span class="comment"># 4</span></span><br><span class="line"><span class="comment"># ********************</span></span><br><span class="line"><span class="comment"># res: 7</span></span><br><span class="line"><span class="comment"># 4</span></span><br></pre></td></tr></table></figure>
+<h3 id="参考文章">参考文章</h3>
 <div id="footnotes">
 <hr>
 <div id="footnotelist">
@@ -323,19 +275,7 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/20230118220
 <li id="fn:1">
 <span
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://cloud.tencent.com/developer/article/2175760?from=15425&amp;areaSource=102001.1&amp;traceId=rScBYp1UZMEgRry4X3S5G<a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://sspai.com/post/72562<a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:3">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://sspai.com/post/75765<a href="#fnref:3" rev="footnote">
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/mieleizhi0522/article/details/82142856">python中yield的用法详解——最简单，最清晰的解释</a><a href="#fnref:1" rev="footnote">
 ↩︎</a></span>
 </li>
 </ol>
@@ -356,7 +296,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://s
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="https://www.sdhlw.top/obsidian%E5%9B%BE%E5%BA%8A%EF%BC%9A%E8%85%BE%E8%AE%AF%E4%BA%91cos-picgo/" title="Obsidian&#x2F;Typora图床：腾讯云COS+Picgo">https://www.sdhlw.top/obsidian图床：腾讯云cos-picgo/</a>
+    <a href="https://www.sdhlw.top/%E7%AE%80%E8%B0%88-python-yield/" title="简谈 Python yield">https://www.sdhlw.top/简谈-python-yield/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-Hans" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -368,10 +308,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://s
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/obsidian/" rel="tag"><i class="fa fa-tag"></i> Obsidian</a>
-              <a href="/tags/picgo/" rel="tag"><i class="fa fa-tag"></i> Picgo</a>
-              <a href="/tags/%E8%85%BE%E8%AE%AF%E4%BA%91cos/" rel="tag"><i class="fa fa-tag"></i> 腾讯云COS</a>
-              <a href="/tags/%E5%9B%BE%E5%BA%8A/" rel="tag"><i class="fa fa-tag"></i> 图床</a>
+              <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
           </div>
 
         
@@ -380,13 +317,10 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://s
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/connecting-to-kernel%EF%BC%9Apython/" rel="prev" title="connecting to kernel：python">
-      <i class="fa fa-chevron-left"></i> connecting to kernel：python
+    <a href="/%E7%AE%80%E8%B0%88array-reshape-dataframe/" rel="prev" title="简谈array,reshape,dataframe">
+      <i class="fa fa-chevron-left"></i> 简谈array,reshape,dataframe
     </a></div>
-      <div class="post-nav-item">
-    <a href="/%E7%BB%98%E5%9B%BE%E7%9A%84%E7%BA%BF%E5%9E%8B%E3%80%81%E9%A2%9C%E8%89%B2%E3%80%81%E6%A0%87%E8%AE%B0/" rel="next" title="绘图的线型、颜色、标记">
-      绘图的线型、颜色、标记 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -446,9 +380,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://s
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%B3%A8%E5%86%8C%E8%85%BE%E8%AE%AF%E4%BA%91%E8%B4%A6%E5%8F%B7%E5%88%9B%E5%BB%BA-cos-%E5%AD%98%E5%82%A8%E6%A1%B6"><span class="nav-text">1、注册腾讯云账号，创建 COS
-存储桶</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%AF%86%E9%92%A5%E5%8F%8A%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF"><span class="nav-text">2、获取腾讯云COS密钥及基本信息</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#picgo%E9%85%8D%E7%BD%AE"><span class="nav-text">3、Picgo配置</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#obsidian-typora%E9%85%8D%E7%BD%AE%E5%8F%8A%E5%9B%BE%E7%89%87%E4%B8%8A%E4%BC%A0"><span class="nav-text">4、Obsidian &#x2F;
-Typora配置及图片上传</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -618,6 +550,59 @@ setInterval("createtime()",250);
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
@@ -632,7 +617,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'Gitment_blog',
       owner       : 'sdhlw',
       admin       : ['sdhlw'],
-      id          : 'c1c43d638e22491b563d92770b220772',
+      id          : 'c3f2125642885f3c0b070881345e65ff',
         language: '',
       distractionFreeMode: true
     });

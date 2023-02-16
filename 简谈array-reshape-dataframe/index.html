@@ -30,7 +30,7 @@
 <meta property="og:description" content="array Numpy的数据结构是n维的数组对象，叫做ndarray。 NumPy数组一般是同质的（但有一种特殊的数组类型例外，它是异质的），即数组中的所有元素类型必须是一致的。[1] 优点：  内存块风格：ndarray中的所有元素的类型都是相同的，存储元素时内存可以连续，在科学计算中，Numpy的ndarray就可以省掉很多循环语句，代码使用方面比Python原生list简单的多。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-02-15T08:18:19.000Z">
-<meta property="article:modified_time" content="2023-02-15T08:20:19.915Z">
+<meta property="article:modified_time" content="2023-02-15T09:13:04.141Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
@@ -221,7 +221,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2023-02-15 16:18:19 / Modified: 16:20:19" itemprop="dateCreated datePublished" datetime="2023-02-15T16:18:19+08:00">2023-02-15</time>
+              <time title="Created: 2023-02-15 16:18:19 / Modified: 17:13:04" itemprop="dateCreated datePublished" datetime="2023-02-15T16:18:19+08:00">2023-02-15</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -291,7 +291,7 @@ aria-label="[python基础之numpy.reshape详解](https://www.jianshu.com/p/fc2fe
 <p>出现-1的话，有两种情况 -
 <code>reshape(-1)</code>：原本数组有n个元素，返回一个n行无列的数组 -
 <code>reshape(-1,n)</code>
-n为任意数字，n为行数，-1会根据行数，自动计算出新数组的列数，再根据这个新的维度重新组合数组。</p>
+n为任意数字，n为列数，-1会根据列数，自动计算出新数组的行数，再根据这个新的维度重新组合数组。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">x = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">82</span>,<span class="number">63</span>,<span class="number">91</span>,<span class="number">52</span>],[<span class="number">121</span>,<span class="number">345</span>,<span class="number">567</span>,<span class="number">987</span>]])</span><br><span class="line">y = x.reshape(-<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;y:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(y))  </span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x:</span></span><br><span class="line"><span class="comment"># [[  1   2   3   4]</span></span><br><span class="line"><span class="comment">#  [ 82  63  91  52]</span></span><br><span class="line"><span class="comment">#  [121 345 567 987]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># y:</span></span><br><span class="line"><span class="comment"># [  1   2   3   4  82  63  91  52 121 345 567 987]</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">x = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">82</span>,<span class="number">63</span>,<span class="number">91</span>,<span class="number">52</span>],[<span class="number">121</span>,<span class="number">345</span>,<span class="number">567</span>,<span class="number">987</span>]])</span><br><span class="line">y = x.reshape(-<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;y:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(y))  </span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x:</span></span><br><span class="line"><span class="comment"># [[  1   2   3   4]</span></span><br><span class="line"><span class="comment">#  [ 82  63  91  52]</span></span><br><span class="line"><span class="comment">#  [121 345 567 987]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># y:</span></span><br><span class="line"><span class="comment"># [[  1   2]</span></span><br><span class="line"><span class="comment">#  [  3   4]</span></span><br><span class="line"><span class="comment">#  [ 82  63]</span></span><br><span class="line"><span class="comment">#  [ 91  52]</span></span><br><span class="line"><span class="comment">#  [121 345]</span></span><br><span class="line"><span class="comment">#  [567 987]]</span></span><br></pre></td></tr></table></figure>
 <h3 id="dataframe">dataframe</h3>
@@ -370,7 +370,10 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
     <a href="/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/" rel="prev" title="Python (matplotlib)保存矢量图">
       <i class="fa fa-chevron-left"></i> Python (matplotlib)保存矢量图
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/%E7%AE%80%E8%B0%88-python-yield/" rel="next" title="简谈 Python yield">
+      简谈 Python yield <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -446,7 +449,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">39</span>
+          <span class="site-state-item-count">40</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -510,13 +513,13 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">76k</span>
+    <span title="Symbols count total">77k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:09</span>
+    <span title="Reading time total">1:10</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
