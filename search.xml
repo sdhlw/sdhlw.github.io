@@ -3298,40 +3298,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>简谈 Python yield</title>
-    <url>/%E7%AE%80%E8%B0%88-python-yield/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>带yield的函数是一个生成器（generator），而不是一个函数了，这个生成器有一个函数就是next函数，next就相当于“下一步”生成哪个数，这一次的next开始的地方是接着上一次的next停止的地方执行的。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[python中yield的用法详解——最简单，最清晰的解释](https://blog.csdn.net/mieleizhi0522/article/details/82142856)
-">[1]</span></a></sup></p>
-<p>先把yield看做“<strong>return</strong>”，在程序中返回某个值，返回之后程序就不再往下运行了。</p>
-<p>程序执行遇到yield关键字，yield返回后面的值之后，程序暂停，直到再次调用next方法或send方法。</p>
-<span id="more"></span>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">foo</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;starting...&quot;</span>)  <span class="comment"># 输出starting...</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        res = <span class="keyword">yield</span> <span class="number">4</span>     <span class="comment"># 返回4，停止运行,不赋值，res为none.</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;res:&quot;</span>,res) <span class="comment"># 输出res值</span></span><br><span class="line">g = foo()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(g))  <span class="comment"># 从yield返回值，并停止</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;*&quot;</span>*<span class="number">20</span>)   <span class="comment"># 输出20个星号</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(g))  <span class="comment"># 从上次停止的地方开始运行，直到遇到yield返回停止</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># starting...</span></span><br><span class="line"><span class="comment"># 4</span></span><br><span class="line"><span class="comment"># ********************</span></span><br><span class="line"><span class="comment"># res: None</span></span><br><span class="line"><span class="comment"># 4</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">foo</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;starting...&quot;</span>)   <span class="comment"># 输出starting...</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        res = <span class="keyword">yield</span> <span class="number">4</span>      <span class="comment"># 返回4，停止运行,不赋值，res为none.</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;res:&quot;</span>,res)  <span class="comment"># 输出res值</span></span><br><span class="line">g = foo()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(g))   <span class="comment"># 从yield返回值，并停止</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;*&quot;</span>*<span class="number">20</span>)    <span class="comment"># 输出20个星号</span></span><br><span class="line"><span class="built_in">print</span>(g.send(<span class="number">7</span>)) <span class="comment"># 从上次停止的地方开始运行，并将7赋值给res,直到遇到yield返回停止</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># starting...</span></span><br><span class="line"><span class="comment"># 4</span></span><br><span class="line"><span class="comment"># ********************</span></span><br><span class="line"><span class="comment"># res: 7</span></span><br><span class="line"><span class="comment"># 4</span></span><br></pre></td></tr></table></figure>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/mieleizhi0522/article/details/82142856">python中yield的用法详解——最简单，最清晰的解释</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>简谈array,reshape,dataframe</title>
     <url>/%E7%AE%80%E8%B0%88array-reshape-dataframe/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="array">array</h3>
@@ -3381,6 +3347,7 @@ aria-label="[numpy 和 pandas 的区别详解](https://benpaodewoniu.github.io/2
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df=df.values</span><br></pre></td></tr></table></figure>
 <h3 id="array转化成dataframe">array转化成dataframe</h3>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df = pd.DataFrame(df)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">a = np.array([[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">1</span>,<span class="number">2</span>]])</span><br><span class="line">b = pd.DataFrame(a)</span><br><span class="line">c = b.values</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(a))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(b))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(c))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># &lt;class &#x27;numpy.ndarray&#x27;&gt;</span></span><br><span class="line"><span class="comment"># &lt;class &#x27;pandas.core.frame.DataFrame&#x27;&gt;</span></span><br><span class="line"><span class="comment"># &lt;class &#x27;numpy.ndarray&#x27;&gt;</span></span><br></pre></td></tr></table></figure>
 <h3 id="参考文章">参考文章</h3>
 <div id="footnotes">
 <hr>
@@ -3476,6 +3443,40 @@ style="display: inline-block; vertical-align: top; padding-right: 10px; margin-l
 style="display: inline-block; vertical-align: top; margin-left: 10px;">python中的模块、库、包有什么区别？
 - 风影忍着的回答 - 知乎
 <a href="https://www.zhihu.com/question/30082392/answer/2030353759">https://www.zhihu.com/question/30082392/answer/2030353759</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>简谈 Python yield</title>
+    <url>/%E7%AE%80%E8%B0%88-python-yield/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>带yield的函数是一个生成器（generator），而不是一个函数了，这个生成器有一个函数就是next函数，next就相当于“下一步”生成哪个数，这一次的next开始的地方是接着上一次的next停止的地方执行的。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[python中yield的用法详解——最简单，最清晰的解释](https://blog.csdn.net/mieleizhi0522/article/details/82142856)
+">[1]</span></a></sup></p>
+<p>先把yield看做“<strong>return</strong>”，在程序中返回某个值，返回之后程序就不再往下运行了。</p>
+<p>程序执行遇到yield关键字，yield返回后面的值之后，程序暂停，直到再次调用next方法或send方法。</p>
+<span id="more"></span>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">foo</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;starting...&quot;</span>)  <span class="comment"># 输出starting...</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        res = <span class="keyword">yield</span> <span class="number">4</span>     <span class="comment"># 返回4，停止运行,不赋值，res为none.</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;res:&quot;</span>,res) <span class="comment"># 输出res值</span></span><br><span class="line">g = foo()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(g))  <span class="comment"># 从yield返回值，并停止</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;*&quot;</span>*<span class="number">20</span>)   <span class="comment"># 输出20个星号</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(g))  <span class="comment"># 从上次停止的地方开始运行，直到遇到yield返回停止</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># starting...</span></span><br><span class="line"><span class="comment"># 4</span></span><br><span class="line"><span class="comment"># ********************</span></span><br><span class="line"><span class="comment"># res: None</span></span><br><span class="line"><span class="comment"># 4</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">foo</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;starting...&quot;</span>)   <span class="comment"># 输出starting...</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        res = <span class="keyword">yield</span> <span class="number">4</span>      <span class="comment"># 返回4，停止运行,不赋值，res为none.</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;res:&quot;</span>,res)  <span class="comment"># 输出res值</span></span><br><span class="line">g = foo()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(g))   <span class="comment"># 从yield返回值，并停止</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;*&quot;</span>*<span class="number">20</span>)    <span class="comment"># 输出20个星号</span></span><br><span class="line"><span class="built_in">print</span>(g.send(<span class="number">7</span>)) <span class="comment"># 从上次停止的地方开始运行，并将7赋值给res,直到遇到yield返回停止</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># starting...</span></span><br><span class="line"><span class="comment"># 4</span></span><br><span class="line"><span class="comment"># ********************</span></span><br><span class="line"><span class="comment"># res: 7</span></span><br><span class="line"><span class="comment"># 4</span></span><br></pre></td></tr></table></figure>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/mieleizhi0522/article/details/82142856">python中yield的用法详解——最简单，最清晰的解释</a><a href="#fnref:1" rev="footnote">
 ↩︎</a></span>
 </li>
 </ol>
