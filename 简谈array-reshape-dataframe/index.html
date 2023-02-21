@@ -30,7 +30,7 @@
 <meta property="og:description" content="array Numpy的数据结构是n维的数组对象，叫做ndarray。 NumPy数组一般是同质的（但有一种特殊的数组类型例外，它是异质的），即数组中的所有元素类型必须是一致的。[1] 优点：  内存块风格：ndarray中的所有元素的类型都是相同的，存储元素时内存可以连续，在科学计算中，Numpy的ndarray就可以省掉很多循环语句，代码使用方面比Python原生list简单的多。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-02-15T08:18:19.000Z">
-<meta property="article:modified_time" content="2023-02-16T14:24:22.997Z">
+<meta property="article:modified_time" content="2023-02-17T09:20:09.212Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
@@ -227,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-16 22:24:22" itemprop="dateModified" datetime="2023-02-16T22:24:22+08:00">2023-02-16</time>
+                <time title="Modified: 2023-02-17 17:20:09" itemprop="dateModified" datetime="2023-02-17T17:20:09+08:00">2023-02-17</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -245,14 +245,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>3.1k</span>
+              <span>4k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>3 mins.</span>
+              <span>4 mins.</span>
             </span>
 
         </div>
@@ -300,6 +300,9 @@ aria-label="[python基础之numpy.reshape详解](https://www.jianshu.com/p/fc2fe
 n为任意数字，n为列数，-1会根据列数，自动计算出新数组的行数，再根据这个新的维度重新组合数组。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">x = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">82</span>,<span class="number">63</span>,<span class="number">91</span>,<span class="number">52</span>],[<span class="number">121</span>,<span class="number">345</span>,<span class="number">567</span>,<span class="number">987</span>]])</span><br><span class="line">y = x.reshape(-<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;y:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(y))  </span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x:</span></span><br><span class="line"><span class="comment"># [[  1   2   3   4]</span></span><br><span class="line"><span class="comment">#  [ 82  63  91  52]</span></span><br><span class="line"><span class="comment">#  [121 345 567 987]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># y:</span></span><br><span class="line"><span class="comment"># [  1   2   3   4  82  63  91  52 121 345 567 987]</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">x = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">82</span>,<span class="number">63</span>,<span class="number">91</span>,<span class="number">52</span>],[<span class="number">121</span>,<span class="number">345</span>,<span class="number">567</span>,<span class="number">987</span>]])</span><br><span class="line">y = x.reshape(-<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;y:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(y))  </span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x:</span></span><br><span class="line"><span class="comment"># [[  1   2   3   4]</span></span><br><span class="line"><span class="comment">#  [ 82  63  91  52]</span></span><br><span class="line"><span class="comment">#  [121 345 567 987]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># y:</span></span><br><span class="line"><span class="comment"># [[  1   2]</span></span><br><span class="line"><span class="comment">#  [  3   4]</span></span><br><span class="line"><span class="comment">#  [ 82  63]</span></span><br><span class="line"><span class="comment">#  [ 91  52]</span></span><br><span class="line"><span class="comment">#  [121 345]</span></span><br><span class="line"><span class="comment">#  [567 987]]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 这是二维数据，6行1列，表示（6,1） </span></span><br><span class="line">[[ <span class="number">0.08540663</span>]</span><br><span class="line"> [ <span class="number">1.85038409</span>]</span><br><span class="line"> [-<span class="number">2.41396732</span>]</span><br><span class="line"> [ <span class="number">1.39196365</span>]</span><br><span class="line"> [-<span class="number">0.35908504</span>]</span><br><span class="line"> [ <span class="number">0.64526911</span>]]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 这是一维数据，6行无列（6，）</span></span><br><span class="line">[ <span class="number">0.08540663</span>  <span class="number">1.85038409</span> -<span class="number">2.41396732</span>  <span class="number">1.39196365</span> -<span class="number">0.35908504</span>  <span class="number">0.64526911</span>]</span><br></pre></td></tr></table></figure>
+<p>上面二维变一维：reshape(-1) 一维变二维：reshape(-1,1)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">a = np.array([[ <span class="number">0.08540663</span>],[ <span class="number">1.85038409</span>],[-<span class="number">2.41396732</span>],[ <span class="number">1.39196365</span>],[-<span class="number">0.35908504</span>],[ <span class="number">0.64526911</span>]]) <span class="comment"># a是二维数据</span></span><br><span class="line">b = a.reshape(-<span class="number">1</span>)  <span class="comment"># b是一维数据</span></span><br><span class="line">c = b.reshape(-<span class="number">1</span>,<span class="number">1</span>) <span class="comment"># c是二维数据</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;a的维度：&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(a.shape))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;b：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(b))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;b的维度：&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(b.shape))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;c：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(c))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;c的维度：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(c.shape))</span><br><span class="line"></span><br><span class="line"><span class="comment"># a的维度：(6, 1)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># b：[ 0.08540663  1.85038409 -2.41396732  1.39196365 -0.35908504  0.64526911]</span></span><br><span class="line"><span class="comment"># b的维度：(6,)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># c：[[ 0.08540663]</span></span><br><span class="line"><span class="comment">#  [ 1.85038409]</span></span><br><span class="line"><span class="comment">#  [-2.41396732]</span></span><br><span class="line"><span class="comment">#  [ 1.39196365]</span></span><br><span class="line"><span class="comment">#  [-0.35908504]</span></span><br><span class="line"><span class="comment">#  [ 0.64526911]]</span></span><br><span class="line"><span class="comment"># c的维度：(6, 1)</span></span><br></pre></td></tr></table></figure>
 <h3 id="dataframe">dataframe</h3>
 <p>Pandas有两个主要的数据结构，Series和DataFrame，记住大小写区分。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
 class="hint--top hint--error hint--medium hint--rounded hint--bounce"
@@ -456,7 +459,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">41</span>
+          <span class="site-state-item-count">42</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -469,7 +472,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">34</span>
+        <span class="site-state-item-count">35</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -520,13 +523,13 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">79k</span>
+    <span title="Symbols count total">80k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:12</span>
+    <span title="Reading time total">1:13</span>
 </div>
 
 <!-- 网站运行时间的设置 -->

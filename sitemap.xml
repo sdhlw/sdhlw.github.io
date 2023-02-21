@@ -2,9 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.sdhlw.top/obsidian%E6%8F%92%E4%BB%B6%E4%B9%8Bdataview/</loc>
+    
+    <lastmod>2023-02-21T12:16:42.191Z</lastmod>
+    
+    <date>1676980149000</date>
+    <title>Obsidian插件之Dataview | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://www.sdhlw.top/%E7%AE%80%E8%B0%88array-reshape-dataframe/</loc>
     
-    <lastmod>2023-02-16T14:24:22.997Z</lastmod>
+    <lastmod>2023-02-17T09:20:09.212Z</lastmod>
     
     <date>1676449099000</date>
     <title>简谈array,reshape,dataframe | Jay's Blog</title>

@@ -1916,6 +1916,60 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://s
       </tags>
   </entry>
   <entry>
+    <title>Obsidian插件之Dataview</title>
+    <url>/obsidian%E6%8F%92%E4%BB%B6%E4%B9%8Bdataview/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、下载并启用插件
+2、写相应代码块<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Obsidian 插件之 Dataview](https://sspai.com/post/68183)
+">[1]</span></a></sup></p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302211102135.png" /></p>
+<ul>
+<li>list：展现形式。创建列表，还有 table、task 可以选择</li>
+<li>from：检索范围。从哪个文件夹（写在双引号里面），或者标签（写在#后面）</li>
+<li>where：</li>
+<li></li>
+<li>聚合条件。contains(file.name,"Dataview") 就是匹配文件名为 “Dataview”
+的文件</li>
+<li>sort：排序，根据什么做排序。 sort file.ctime
+就是根据文件的创建时间正序</li>
+</ul>
+<span id="more"></span>
+<p>一些自带的元数据：</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302211102234.png" /></p>
+<p>yml标记语言：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title:</span><br><span class="line">author:</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>title、author、tags这里都是yml语言的key，key可以自定义，也可支持中英文，dataview也是可以识别使用的；</p>
+<p>例子：</p>
+<p>前后加三个 ` ，前面的三个 ` 记得加上dataview，中间加入一下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">table Title, Status</span><br><span class="line">from #test</span><br><span class="line">where</span><br><span class="line">contains(file.name,&quot;aa&quot;)</span><br><span class="line">sort file.ctime</span><br></pre></td></tr></table></figure>
+<p>创建一个tab，文章从test标签中查找，且文件名含有aa的文章，表格表头为file,
+Title, Status。</p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://sspai.com/post/68183">Obsidian
+插件之 Dataview</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Obsidian插件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>pip下载太慢</title>
     <url>/pip%E4%B8%8B%E8%BD%BD%E5%A4%AA%E6%85%A2/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="临时换源">临时换源：</h4>
@@ -3298,6 +3352,40 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
+    <title>简谈 Python yield</title>
+    <url>/%E7%AE%80%E8%B0%88-python-yield/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>带yield的函数是一个生成器（generator），而不是一个函数了，这个生成器有一个函数就是next函数，next就相当于“下一步”生成哪个数，这一次的next开始的地方是接着上一次的next停止的地方执行的。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[python中yield的用法详解——最简单，最清晰的解释](https://blog.csdn.net/mieleizhi0522/article/details/82142856)
+">[1]</span></a></sup></p>
+<p>先把yield看做“<strong>return</strong>”，在程序中返回某个值，返回之后程序就不再往下运行了。</p>
+<p>程序执行遇到yield关键字，yield返回后面的值之后，程序暂停，直到再次调用next方法或send方法。</p>
+<span id="more"></span>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">foo</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;starting...&quot;</span>)  <span class="comment"># 输出starting...</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        res = <span class="keyword">yield</span> <span class="number">4</span>     <span class="comment"># 返回4，停止运行,不赋值，res为none.</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;res:&quot;</span>,res) <span class="comment"># 输出res值</span></span><br><span class="line">g = foo()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(g))  <span class="comment"># 从yield返回值，并停止</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;*&quot;</span>*<span class="number">20</span>)   <span class="comment"># 输出20个星号</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(g))  <span class="comment"># 从上次停止的地方开始运行，直到遇到yield返回停止</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># starting...</span></span><br><span class="line"><span class="comment"># 4</span></span><br><span class="line"><span class="comment"># ********************</span></span><br><span class="line"><span class="comment"># res: None</span></span><br><span class="line"><span class="comment"># 4</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">foo</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;starting...&quot;</span>)   <span class="comment"># 输出starting...</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        res = <span class="keyword">yield</span> <span class="number">4</span>      <span class="comment"># 返回4，停止运行,不赋值，res为none.</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;res:&quot;</span>,res)  <span class="comment"># 输出res值</span></span><br><span class="line">g = foo()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(g))   <span class="comment"># 从yield返回值，并停止</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;*&quot;</span>*<span class="number">20</span>)    <span class="comment"># 输出20个星号</span></span><br><span class="line"><span class="built_in">print</span>(g.send(<span class="number">7</span>)) <span class="comment"># 从上次停止的地方开始运行，并将7赋值给res,直到遇到yield返回停止</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># starting...</span></span><br><span class="line"><span class="comment"># 4</span></span><br><span class="line"><span class="comment"># ********************</span></span><br><span class="line"><span class="comment"># res: 7</span></span><br><span class="line"><span class="comment"># 4</span></span><br></pre></td></tr></table></figure>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/mieleizhi0522/article/details/82142856">python中yield的用法详解——最简单，最清晰的解释</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>简谈array,reshape,dataframe</title>
     <url>/%E7%AE%80%E8%B0%88array-reshape-dataframe/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="array">array</h3>
@@ -3336,6 +3424,9 @@ aria-label="[python基础之numpy.reshape详解](https://www.jianshu.com/p/fc2fe
 n为任意数字，n为列数，-1会根据列数，自动计算出新数组的行数，再根据这个新的维度重新组合数组。</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">82</span>,<span class="number">63</span>,<span class="number">91</span>,<span class="number">52</span>],[<span class="number">121</span>,<span class="number">345</span>,<span class="number">567</span>,<span class="number">987</span>]])</span><br><span class="line">y = x.reshape(-<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;y:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(y))  </span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x:</span></span><br><span class="line"><span class="comment"># [[  1   2   3   4]</span></span><br><span class="line"><span class="comment">#  [ 82  63  91  52]</span></span><br><span class="line"><span class="comment">#  [121 345 567 987]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># y:</span></span><br><span class="line"><span class="comment"># [  1   2   3   4  82  63  91  52 121 345 567 987]</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">82</span>,<span class="number">63</span>,<span class="number">91</span>,<span class="number">52</span>],[<span class="number">121</span>,<span class="number">345</span>,<span class="number">567</span>,<span class="number">987</span>]])</span><br><span class="line">y = x.reshape(-<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;y:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(y))  </span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x:</span></span><br><span class="line"><span class="comment"># [[  1   2   3   4]</span></span><br><span class="line"><span class="comment">#  [ 82  63  91  52]</span></span><br><span class="line"><span class="comment">#  [121 345 567 987]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># y:</span></span><br><span class="line"><span class="comment"># [[  1   2]</span></span><br><span class="line"><span class="comment">#  [  3   4]</span></span><br><span class="line"><span class="comment">#  [ 82  63]</span></span><br><span class="line"><span class="comment">#  [ 91  52]</span></span><br><span class="line"><span class="comment">#  [121 345]</span></span><br><span class="line"><span class="comment">#  [567 987]]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 这是二维数据，6行1列，表示（6,1） </span></span><br><span class="line">[[ <span class="number">0.08540663</span>]</span><br><span class="line"> [ <span class="number">1.85038409</span>]</span><br><span class="line"> [-<span class="number">2.41396732</span>]</span><br><span class="line"> [ <span class="number">1.39196365</span>]</span><br><span class="line"> [-<span class="number">0.35908504</span>]</span><br><span class="line"> [ <span class="number">0.64526911</span>]]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 这是一维数据，6行无列（6，）</span></span><br><span class="line">[ <span class="number">0.08540663</span>  <span class="number">1.85038409</span> -<span class="number">2.41396732</span>  <span class="number">1.39196365</span> -<span class="number">0.35908504</span>  <span class="number">0.64526911</span>]</span><br></pre></td></tr></table></figure>
+<p>上面二维变一维：reshape(-1) 一维变二维：reshape(-1,1)</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = np.array([[ <span class="number">0.08540663</span>],[ <span class="number">1.85038409</span>],[-<span class="number">2.41396732</span>],[ <span class="number">1.39196365</span>],[-<span class="number">0.35908504</span>],[ <span class="number">0.64526911</span>]]) <span class="comment"># a是二维数据</span></span><br><span class="line">b = a.reshape(-<span class="number">1</span>)  <span class="comment"># b是一维数据</span></span><br><span class="line">c = b.reshape(-<span class="number">1</span>,<span class="number">1</span>) <span class="comment"># c是二维数据</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;a的维度：&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(a.shape))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;b：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(b))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;b的维度：&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(b.shape))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;c：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(c))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;c的维度：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(c.shape))</span><br><span class="line"></span><br><span class="line"><span class="comment"># a的维度：(6, 1)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># b：[ 0.08540663  1.85038409 -2.41396732  1.39196365 -0.35908504  0.64526911]</span></span><br><span class="line"><span class="comment"># b的维度：(6,)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># c：[[ 0.08540663]</span></span><br><span class="line"><span class="comment">#  [ 1.85038409]</span></span><br><span class="line"><span class="comment">#  [-2.41396732]</span></span><br><span class="line"><span class="comment">#  [ 1.39196365]</span></span><br><span class="line"><span class="comment">#  [-0.35908504]</span></span><br><span class="line"><span class="comment">#  [ 0.64526911]]</span></span><br><span class="line"><span class="comment"># c的维度：(6, 1)</span></span><br></pre></td></tr></table></figure>
 <h3 id="dataframe">dataframe</h3>
 <p>Pandas有两个主要的数据结构，Series和DataFrame，记住大小写区分。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
 class="hint--top hint--error hint--medium hint--rounded hint--bounce"
@@ -3443,40 +3534,6 @@ style="display: inline-block; vertical-align: top; padding-right: 10px; margin-l
 style="display: inline-block; vertical-align: top; margin-left: 10px;">python中的模块、库、包有什么区别？
 - 风影忍着的回答 - 知乎
 <a href="https://www.zhihu.com/question/30082392/answer/2030353759">https://www.zhihu.com/question/30082392/answer/2030353759</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>简谈 Python yield</title>
-    <url>/%E7%AE%80%E8%B0%88-python-yield/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>带yield的函数是一个生成器（generator），而不是一个函数了，这个生成器有一个函数就是next函数，next就相当于“下一步”生成哪个数，这一次的next开始的地方是接着上一次的next停止的地方执行的。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[python中yield的用法详解——最简单，最清晰的解释](https://blog.csdn.net/mieleizhi0522/article/details/82142856)
-">[1]</span></a></sup></p>
-<p>先把yield看做“<strong>return</strong>”，在程序中返回某个值，返回之后程序就不再往下运行了。</p>
-<p>程序执行遇到yield关键字，yield返回后面的值之后，程序暂停，直到再次调用next方法或send方法。</p>
-<span id="more"></span>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">foo</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;starting...&quot;</span>)  <span class="comment"># 输出starting...</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        res = <span class="keyword">yield</span> <span class="number">4</span>     <span class="comment"># 返回4，停止运行,不赋值，res为none.</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;res:&quot;</span>,res) <span class="comment"># 输出res值</span></span><br><span class="line">g = foo()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(g))  <span class="comment"># 从yield返回值，并停止</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;*&quot;</span>*<span class="number">20</span>)   <span class="comment"># 输出20个星号</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(g))  <span class="comment"># 从上次停止的地方开始运行，直到遇到yield返回停止</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># starting...</span></span><br><span class="line"><span class="comment"># 4</span></span><br><span class="line"><span class="comment"># ********************</span></span><br><span class="line"><span class="comment"># res: None</span></span><br><span class="line"><span class="comment"># 4</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">foo</span>():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;starting...&quot;</span>)   <span class="comment"># 输出starting...</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        res = <span class="keyword">yield</span> <span class="number">4</span>      <span class="comment"># 返回4，停止运行,不赋值，res为none.</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;res:&quot;</span>,res)  <span class="comment"># 输出res值</span></span><br><span class="line">g = foo()</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(g))   <span class="comment"># 从yield返回值，并停止</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;*&quot;</span>*<span class="number">20</span>)    <span class="comment"># 输出20个星号</span></span><br><span class="line"><span class="built_in">print</span>(g.send(<span class="number">7</span>)) <span class="comment"># 从上次停止的地方开始运行，并将7赋值给res,直到遇到yield返回停止</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># starting...</span></span><br><span class="line"><span class="comment"># 4</span></span><br><span class="line"><span class="comment"># ********************</span></span><br><span class="line"><span class="comment"># res: 7</span></span><br><span class="line"><span class="comment"># 4</span></span><br></pre></td></tr></table></figure>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/mieleizhi0522/article/details/82142856">python中yield的用法详解——最简单，最清晰的解释</a><a href="#fnref:1" rev="footnote">
 ↩︎</a></span>
 </li>
 </ol>
