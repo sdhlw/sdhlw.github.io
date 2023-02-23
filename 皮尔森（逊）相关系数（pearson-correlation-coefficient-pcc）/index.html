@@ -30,7 +30,7 @@
 <meta property="og:description" content="介绍 皮尔森相关系数 皮尔森相关系数也称皮尔森积矩相关系数(Pearson product-moment correlation coefficient) ，是一种线性相关系数，是最常用的一种相关系数。记为r，用来反映变量X和变量Y的线性相关程度，r 值介于-1到1之间，绝对值越大表明相关性越强。[1] 适用连续变量。 相关系数 与相关程度一般划分为 - 0.8 - 1.0 极强相关">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-02-16T13:56:53.000Z">
-<meta property="article:modified_time" content="2023-02-16T13:59:14.499Z">
+<meta property="article:modified_time" content="2023-02-22T03:11:18.920Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="Statistics">
@@ -220,10 +220,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2023-02-16 21:56:53 / Modified: 21:59:14" itemprop="dateCreated datePublished" datetime="2023-02-16T21:56:53+08:00">2023-02-16</time>
+              <time title="Created: 2023-02-16 21:56:53" itemprop="dateCreated datePublished" datetime="2023-02-16T21:56:53+08:00">2023-02-16</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2023-02-22 11:11:18" itemprop="dateModified" datetime="2023-02-22T11:11:18+08:00">2023-02-22</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -240,14 +246,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.4k</span>
+              <span>3k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>1 mins.</span>
+              <span>3 mins.</span>
             </span>
 
         </div>
@@ -317,6 +323,36 @@ following options are available:</p>
 alternative.</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Python实现</span></span><br><span class="line"><span class="keyword">from</span> scipy.stats <span class="keyword">import</span> pearsonr</span><br><span class="line"></span><br><span class="line">x = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line">y = [<span class="number">1.2</span>,<span class="number">2.2</span>,<span class="number">3.1</span>,<span class="number">4.1</span>]</span><br><span class="line">result = pearsonr(x,y)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;pearson相关系数: &#123;:.6f&#125;&quot;</span>.<span class="built_in">format</span>(result.statistic))  <span class="comment"># result[0]</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;P-Value: &#123;:.6f&#125;&quot;</span>.<span class="built_in">format</span>(result.pvalue))  <span class="comment"># result[1]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># pearson相关系数: 0.999783</span></span><br><span class="line"><span class="comment"># P-Value: 0.000217</span></span><br></pre></td></tr></table></figure>
+<p><code>numpy.corrcoef(x, y=None, rowvar=True, bias=&lt;no value&gt;, ddof=&lt;no value&gt;, *, dtype=None)</code></p>
+<p>Return Pearson product-moment correlation
+coefficients.<sup id="fnref:5"><a href="#fn:5" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[numpy.corrcoef](https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html)
+">[5]</span></a></sup></p>
+<p>这里计算的是特征与特征（行与行/列与列）的相关系数。</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li><code>x</code>：array_like，A 1-D or 2-D array containing multiple
+variables and observations.</li>
+<li><code>y</code>：array_like, optional，An additional set of variables
+and observations. y has the same shape as x.</li>
+<li><code>rowvar</code>：bool, optional，If rowvar is True (default),
+then <strong>each row represents a variable, with observations in the
+columns</strong>. Otherwise, the relationship is transposed: each column
+represents a variable, while the rows contain observations.
+默认行为特征，列为样本；</li>
+<li><code>dtype</code>：data-type, optional，Data-type of the result. By
+default, the return data-type will have at least numpy.float64
+precision.</li>
+</ul>
+<p>Returns: R：ndarray，The correlation coefficient matrix of the
+variables.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">a = pd.Series([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>])</span><br><span class="line">b = pd.Series([<span class="number">2</span>,<span class="number">4</span>,<span class="number">1</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">2</span>,<span class="number">7</span>,<span class="number">0</span>])</span><br><span class="line">c = pd.Series([<span class="number">0</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">7</span>,<span class="number">1</span>,<span class="number">9</span>,<span class="number">6</span>,<span class="number">2</span>])</span><br><span class="line">x = np.vstack((a,b,c))</span><br><span class="line">r = np.corrcoef(x)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;r:\n&#123;&#125;&quot;</span>.<span class="built_in">format</span>(r))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x:</span></span><br><span class="line"><span class="comment"># [[ 1  2  3  4  5  6  7  8  9 10]</span></span><br><span class="line"><span class="comment">#  [ 2  4  1  5  1  3  6  2  7  0]</span></span><br><span class="line"><span class="comment">#  [ 0  3  2  1  4  7  1  9  6  2]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># r:</span></span><br><span class="line"><span class="comment"># [[1.         0.10233683 0.47840854]</span></span><br><span class="line"><span class="comment">#  [0.10233683 1.         0.0242104 ]</span></span><br><span class="line"><span class="comment">#  [0.47840854 0.0242104  1.        ]]</span></span><br></pre></td></tr></table></figure>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302221100116.png" /></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">a = np.array([[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]])</span><br><span class="line">b = np.array([[<span class="number">11</span>, <span class="number">25</span>, <span class="number">346</span>], [<span class="number">734</span>, <span class="number">48</span>, <span class="number">49</span>]])</span><br><span class="line">r = np.corrcoef(a,b)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;a:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(a))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;b:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(b))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;r:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(r))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># a:</span></span><br><span class="line"><span class="comment"># [[1 2 3]</span></span><br><span class="line"><span class="comment">#  [4 5 6]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># b:</span></span><br><span class="line"><span class="comment"># [[ 11  25 346]</span></span><br><span class="line"><span class="comment">#  [734  48  49]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># r:</span></span><br><span class="line"><span class="comment"># [[ 1.          1.          0.88390399 -0.86539304]</span></span><br><span class="line"><span class="comment">#  [ 1.          1.          0.88390399 -0.86539304]</span></span><br><span class="line"><span class="comment">#  [ 0.88390399  0.88390399  1.         -0.53057867]</span></span><br><span class="line"><span class="comment">#  [-0.86539304 -0.86539304 -0.53057867  1.        ]]</span></span><br></pre></td></tr></table></figure>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302221100313.png" /></p>
 <h3 id="参考文献">参考文献</h3>
 <div id="footnotes">
 <hr>
@@ -345,6 +381,12 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
 <span
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span
 style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://worktile.com/kb/ask/6156.html">线性回归r2代表什么</a><a href="#fnref:4" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:5">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">5.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html">numpy.corrcoef</a><a href="#fnref:5" rev="footnote">
 ↩︎</a></span>
 </li>
 </ol>
@@ -469,14 +511,14 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">42</span>
+          <span class="site-state-item-count">43</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -533,13 +575,13 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">80k</span>
+    <span title="Symbols count total">83k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:13</span>
+    <span title="Reading time total">1:15</span>
 </div>
 
 <!-- 网站运行时间的设置 -->

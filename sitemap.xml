@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.sdhlw.top/%E6%9C%9F%E5%88%8A%E3%80%81%E5%87%BA%E7%89%88%E7%A4%BE%E3%80%81%E7%B4%A2%E5%BC%95%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    
+    <lastmod>2023-02-23T07:45:55.566Z</lastmod>
+    
+    <date>1677137562000</date>
+    <title>期刊、出版社、索引数据库 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E7%9A%AE%E5%B0%94%E6%A3%AE%EF%BC%88%E9%80%8A%EF%BC%89%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%EF%BC%88pearson-correlation-coefficient-pcc%EF%BC%89/</loc>
+    
+    <lastmod>2023-02-22T03:11:18.920Z</lastmod>
+    
+    <date>1676555813000</date>
+    <title>皮尔森（逊）相关系数（Pearson Correlation Coefficient, PCC） | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://www.sdhlw.top/obsidian%E6%8F%92%E4%BB%B6%E4%B9%8Bdataview/</loc>
     
     <lastmod>2023-02-21T12:16:42.191Z</lastmod>
@@ -19,17 +41,6 @@
     
     <date>1676449099000</date>
     <title>简谈array,reshape,dataframe | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E7%9A%AE%E5%B0%94%E6%A3%AE%EF%BC%88%E9%80%8A%EF%BC%89%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%EF%BC%88pearson-correlation-coefficient-pcc%EF%BC%89/</loc>
-    
-    <lastmod>2023-02-16T13:59:14.499Z</lastmod>
-    
-    <date>1676555813000</date>
-    <title>皮尔森（逊）相关系数（Pearson Correlation Coefficient, PCC） | Jay's Blog</title>
     
     <desc></desc>
   </url>
