@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Vscode 的使用</title>
-    <url>/2022-09-01-10-33-44-Vscode%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>setting.json文件配置：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">&#123;            //有自己添加的内容都要放到这个花括号里</span><br><span class="line"></span><br><span class="line">//配置a</span><br><span class="line">adfadfd,     //如果后面还有内容，前面的语句一定要有一个英文逗号</span><br><span class="line">// 配置b</span><br><span class="line">adfadff</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>Vscode</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>面向对象VS面向过程</title>
     <url>/2022-08-30-15-11-00-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1VS%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为转载，原文为：http://zhidao.baidu.com/question/2089034/answer/9637033</p>
@@ -35,6 +22,19 @@
       </categories>
       <tags>
         <tag>计算机基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vscode 的使用</title>
+    <url>/2022-09-01-10-33-44-Vscode%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>setting.json文件配置：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">&#123;            //有自己添加的内容都要放到这个花括号里</span><br><span class="line"></span><br><span class="line">//配置a</span><br><span class="line">adfadfd,     //如果后面还有内容，前面的语句一定要有一个英文逗号</span><br><span class="line">// 配置b</span><br><span class="line">adfadff</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Vscode</tag>
       </tags>
   </entry>
   <entry>
@@ -123,6 +123,180 @@ rebase之abort、continue、skip</a></p>
       </categories>
       <tags>
         <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux-vim</title>
+    <url>/Linux-vim/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一vim有四种模式">一、Vim有四种模式</h1>
+<h2
+id="命令模式正常模式command-mode">1、<strong>命令模式/正常模式</strong>（Command
+mode）</h2>
+<p>敲击键盘动作会被Vim识别为命令，而非输入字符。启动Vim默认进入命令模式。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Vim/三种模式 - 维基教科书，自由的教学读本 (wikibooks.org)](https://zh.m.wikibooks.org/zh-hans/Vim/三种模式)
+">[1]</span></a></sup></p>
+<ul>
+<li><code>i</code>：切换到插入模式<br />
+</li>
+<li><code>：</code>：切换到底线命令模式</li>
+<li><code>v</code>：进入可视化模式(小写V、大写V、Ctrl+V均可进入该模式下)</li>
+<li><code>U</code>：撤销上一步操作</li>
+<li><code>yy</code> - 复制当前行，包括换行符</li>
+<li><code>dd</code> - 剪切当前行，包括换行符</li>
+<li><code>p</code>键可以将内容粘贴到当前光标后面</li>
+</ul>
+<h2 id="插入模式insert-mode">2、<strong>插入模式</strong>（Insert
+mode）</h2>
+<p>编辑文本，需进入该模式</p>
+<ul>
+<li><code>Esc</code>：退出插入模式，进入命令模式</li>
+</ul>
+<h2
+id="底线命令模式last-line-mode">3、<strong>底线命令模式</strong>（Last
+line mode）</h2>
+<ul>
+<li><code>Esc</code>：退出底线命令模式，进入命令模式</li>
+<li><code>q!</code>：不保存，强制退出vim</li>
+<li><code>wq</code>：保存，退出vim</li>
+<li><code>q</code>：不保存，退出vim</li>
+<li><code>w</code>：保存，不退出vim</li>
+</ul>
+<h2
+id="可视化模式visual-mode">4、<strong>可视化模式</strong>(Visual-mode)：</h2>
+<ul>
+<li><p>文本选择：小写V进入（选择是以字符为单位的）、大写V进入（选择是以行为单位的）、Ctrl+V进入（矩形区域作为目标文本，以按下
+Ctrl+v
+位置作为矩形的一角，光标移动的终点位置作为它的对角）<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Linux Vim可视化模式及其用法 (biancheng.net)](http://c.biancheng.net/view/6355.html)
+">[2]</span></a></sup></p></li>
+<li><p>可视化命令：</p>
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 85%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>命令</strong></th>
+<th style="text-align: left;"><strong>命令</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">d</td>
+<td style="text-align: left;">删除选中的部分文本。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">D</td>
+<td style="text-align: left;">删除选中部分所在的行，和 d
+不同之处在于，即使选中文本中有些字符所在的行没有都选中，删除时也会一并删除。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">将选中部分复制到剪贴板中。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">p（小写）</td>
+<td style="text-align: left;">将剪贴板中的内容粘贴到光标之后。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">P（大写）</td>
+<td style="text-align: left;">将剪贴板中的内容粘贴到光标之前。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">u（小写）</td>
+<td
+style="text-align: left;">将选中部分中的大写字符全部改为小写字符。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">U（大写）</td>
+<td
+style="text-align: left;">将选中部分中的小写字符全部改为大写字符。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&gt;</td>
+<td style="text-align: left;">将选中部分右移（缩进）一个 tab
+键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
+个空白字符的长度）。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&lt;</td>
+<td style="text-align: left;">将选中部分左移一个 tab
+键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
+个空白字符的长度）。</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<h1 id="二小技巧">二、小技巧</h1>
+<h2 id="设置行号">1、设置行号</h2>
+<p>vim ~/.vimrc 写入：set number</p>
+<h2 id="设置粘贴模式">2、设置粘贴模式</h2>
+<p><code>:set paste</code> + 回车 + <code>i</code></p>
+<h2 id="快速到达首尾">3、快速到达首尾</h2>
+<ul>
+<li><code>gg</code>：跳转到文件头</li>
+<li>行数 +<code>gg</code>：跳转到指定行</li>
+<li>shift + g ：跳转到文件末尾</li>
+</ul>
+<h2 id="多行注释">4、多行注释</h2>
+<p><code>:20,30 s/^/#/g</code> ：20-30行 用 #
+注释掉。（python是用#注释地～～～）</p>
+<p><code>:20,30 s/^#//g</code> ：20-30行 取消注释</p>
+<ul>
+<li><p>注释：</p>
+<p>​ Ctrl + v ：vim中的视图模式，把要注释的内容选上 ​ shift + i ：插入字符
+​shift + # ：把#插入到要注释的行前面（在第一行有显示） ​ Esc
+：按至少2次Esc，则会把所有选中的行都在其前面加#</p></li>
+<li><p>取消注释：</p>
+<p>​ Ctrl+v：进入视图模式 ​
+上下方向键选中要注释的行，左右键选择要删除的字符# ​ 按d删除</p></li>
+</ul>
+<h2 id="vim的搜索功能">5、vim的搜索功能</h2>
+<p>在 normal 模式下按下 <code>/</code>
+即可进入查找模式，输入要查找的字符串并按下回车。 Vim
+会跳转到第一个匹配。按下 <code>n</code> 查找下一个，按下 <code>N</code>
+查找上一个。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[在 Vim 中优雅地查找和替换 | Harttle Land](https://harttle.land/2016/08/08/vim-search-in-file.html)
+">[3]</span></a></sup></p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zh.m.wikibooks.org/zh-hans/Vim/%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F">Vim/三种模式
+- 维基教科书，自由的教学读本
+(wikibooks.org)</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="http://c.biancheng.net/view/6355.html">Linux
+Vim可视化模式及其用法
+(biancheng.net)</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:3">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://harttle.land/2016/08/08/vim-search-in-file.html">在
+Vim 中优雅地查找和替换 | Harttle
+Land</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Vim</tag>
       </tags>
   </entry>
   <entry>
@@ -510,180 +684,6 @@ paste 命令 | 菜鸟教程
       </tags>
   </entry>
   <entry>
-    <title>Linux-vim</title>
-    <url>/Linux-vim/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一vim有四种模式">一、Vim有四种模式</h1>
-<h2
-id="命令模式正常模式command-mode">1、<strong>命令模式/正常模式</strong>（Command
-mode）</h2>
-<p>敲击键盘动作会被Vim识别为命令，而非输入字符。启动Vim默认进入命令模式。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Vim/三种模式 - 维基教科书，自由的教学读本 (wikibooks.org)](https://zh.m.wikibooks.org/zh-hans/Vim/三种模式)
-">[1]</span></a></sup></p>
-<ul>
-<li><code>i</code>：切换到插入模式<br />
-</li>
-<li><code>：</code>：切换到底线命令模式</li>
-<li><code>v</code>：进入可视化模式(小写V、大写V、Ctrl+V均可进入该模式下)</li>
-<li><code>U</code>：撤销上一步操作</li>
-<li><code>yy</code> - 复制当前行，包括换行符</li>
-<li><code>dd</code> - 剪切当前行，包括换行符</li>
-<li><code>p</code>键可以将内容粘贴到当前光标后面</li>
-</ul>
-<h2 id="插入模式insert-mode">2、<strong>插入模式</strong>（Insert
-mode）</h2>
-<p>编辑文本，需进入该模式</p>
-<ul>
-<li><code>Esc</code>：退出插入模式，进入命令模式</li>
-</ul>
-<h2
-id="底线命令模式last-line-mode">3、<strong>底线命令模式</strong>（Last
-line mode）</h2>
-<ul>
-<li><code>Esc</code>：退出底线命令模式，进入命令模式</li>
-<li><code>q!</code>：不保存，强制退出vim</li>
-<li><code>wq</code>：保存，退出vim</li>
-<li><code>q</code>：不保存，退出vim</li>
-<li><code>w</code>：保存，不退出vim</li>
-</ul>
-<h2
-id="可视化模式visual-mode">4、<strong>可视化模式</strong>(Visual-mode)：</h2>
-<ul>
-<li><p>文本选择：小写V进入（选择是以字符为单位的）、大写V进入（选择是以行为单位的）、Ctrl+V进入（矩形区域作为目标文本，以按下
-Ctrl+v
-位置作为矩形的一角，光标移动的终点位置作为它的对角）<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Linux Vim可视化模式及其用法 (biancheng.net)](http://c.biancheng.net/view/6355.html)
-">[2]</span></a></sup></p></li>
-<li><p>可视化命令：</p>
-<table>
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 85%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;"><strong>命令</strong></th>
-<th style="text-align: left;"><strong>命令</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">d</td>
-<td style="text-align: left;">删除选中的部分文本。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">D</td>
-<td style="text-align: left;">删除选中部分所在的行，和 d
-不同之处在于，即使选中文本中有些字符所在的行没有都选中，删除时也会一并删除。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">y</td>
-<td style="text-align: left;">将选中部分复制到剪贴板中。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">p（小写）</td>
-<td style="text-align: left;">将剪贴板中的内容粘贴到光标之后。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">P（大写）</td>
-<td style="text-align: left;">将剪贴板中的内容粘贴到光标之前。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">u（小写）</td>
-<td
-style="text-align: left;">将选中部分中的大写字符全部改为小写字符。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">U（大写）</td>
-<td
-style="text-align: left;">将选中部分中的小写字符全部改为大写字符。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">&gt;</td>
-<td style="text-align: left;">将选中部分右移（缩进）一个 tab
-键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
-个空白字符的长度）。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">&lt;</td>
-<td style="text-align: left;">将选中部分左移一个 tab
-键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
-个空白字符的长度）。</td>
-</tr>
-</tbody>
-</table></li>
-</ul>
-<h1 id="二小技巧">二、小技巧</h1>
-<h2 id="设置行号">1、设置行号</h2>
-<p>vim ~/.vimrc 写入：set number</p>
-<h2 id="设置粘贴模式">2、设置粘贴模式</h2>
-<p><code>:set paste</code> + 回车 + <code>i</code></p>
-<h2 id="快速到达首尾">3、快速到达首尾</h2>
-<ul>
-<li><code>gg</code>：跳转到文件头</li>
-<li>行数 +<code>gg</code>：跳转到指定行</li>
-<li>shift + g ：跳转到文件末尾</li>
-</ul>
-<h2 id="多行注释">4、多行注释</h2>
-<p><code>:20,30 s/^/#/g</code> ：20-30行 用 #
-注释掉。（python是用#注释地～～～）</p>
-<p><code>:20,30 s/^#//g</code> ：20-30行 取消注释</p>
-<ul>
-<li><p>注释：</p>
-<p>​ Ctrl + v ：vim中的视图模式，把要注释的内容选上 ​ shift + i ：插入字符
-​shift + # ：把#插入到要注释的行前面（在第一行有显示） ​ Esc
-：按至少2次Esc，则会把所有选中的行都在其前面加#</p></li>
-<li><p>取消注释：</p>
-<p>​ Ctrl+v：进入视图模式 ​
-上下方向键选中要注释的行，左右键选择要删除的字符# ​ 按d删除</p></li>
-</ul>
-<h2 id="vim的搜索功能">5、vim的搜索功能</h2>
-<p>在 normal 模式下按下 <code>/</code>
-即可进入查找模式，输入要查找的字符串并按下回车。 Vim
-会跳转到第一个匹配。按下 <code>n</code> 查找下一个，按下 <code>N</code>
-查找上一个。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[在 Vim 中优雅地查找和替换 | Harttle Land](https://harttle.land/2016/08/08/vim-search-in-file.html)
-">[3]</span></a></sup></p>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zh.m.wikibooks.org/zh-hans/Vim/%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F">Vim/三种模式
-- 维基教科书，自由的教学读本
-(wikibooks.org)</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="http://c.biancheng.net/view/6355.html">Linux
-Vim可视化模式及其用法
-(biancheng.net)</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:3">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://harttle.land/2016/08/08/vim-search-in-file.html">在
-Vim 中优雅地查找和替换 | Harttle
-Land</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown Tips</title>
     <url>/Markdown-Tips/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="题注">题注</h4>
@@ -1056,6 +1056,45 @@ href="https://www.cnblogs.com/renping/p/7441494.html">环境</a></li>
       </tags>
   </entry>
   <entry>
+    <title>connecting to kernel：python</title>
+    <url>/connecting-to-kernel%EF%BC%9Apython/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>使用环境：Vscode 和Jupyter Notebook 相关插件</p>
+<h5 id="问题">问题</h5>
+<p>Vscode连接python环境时右下角始终显示connecting to
+kernel，无法执行基本代码功能。</p>
+<span id="more"></span>
+<h5 id="解决方法">解决方法</h5>
+<p>1、删除多余的python版本</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301182151530.png" /></p>
+<p>需要删除的版本，我已删除，这里用保留版本的python做演示；
+注意，用该方法卸载之后，要去python的安装目录下检查，一定要删除干净，否则重启之后，修改过的环境变量可能会复原为原来的设置；</p>
+<p>python默认安装路径：<code>C:\Users\你的用户名\AppData\Local\Programs\Python</code>
+将你要删除的python版本的整个文件夹删除</p>
+<p>2、配置好环境变量
+右键此电脑--&gt;属性--&gt;高级系统设置--&gt;环境变量</p>
+<figure>
+<img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301182156852.png"
+alt="image-20230118215647728" />
+<figcaption aria-hidden="true">image-20230118215647728</figcaption>
+</figure>
+<p>将删除的python版本的环境变量也删除，用户变量和系统变量都需删除（点击相应环境变量，删除，确定即可）；</p>
+<p>将保留的python版本的两个目录都添加到path里（点击新建，粘贴目录，点击确定即可），用户变量和系统变量都添加进去；
+<code>C:\Users\你的用户名\AppData\Local\Programs\Python\Python310</code>
+<code>C:\Users\你的用户名\AppData\Local\Programs\Python\Python310\Scripts</code></p>
+<p>3、重启电脑，查看环境变量是否发生改变，若与上两步设置一致，则完成；若环境变量改变，可能是python没有删除干净，确保第一步完成；</p>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Vscode</tag>
+        <tag>Python</tag>
+        <tag>Jupyter Notebook</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows 超赞软件 &amp; 扩展 &amp; 网站</title>
     <url>/Windows%20%E8%B6%85%E8%B5%9E%E8%BD%AF%E4%BB%B6%20&amp;%20%E6%89%A9%E5%B1%95%20&amp;%20%E7%BD%91%E7%AB%99/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="软件">软件:</h4>
@@ -1116,45 +1155,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">编辑器
       </categories>
       <tags>
         <tag>Software</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>connecting to kernel：python</title>
-    <url>/connecting-to-kernel%EF%BC%9Apython/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>使用环境：Vscode 和Jupyter Notebook 相关插件</p>
-<h5 id="问题">问题</h5>
-<p>Vscode连接python环境时右下角始终显示connecting to
-kernel，无法执行基本代码功能。</p>
-<span id="more"></span>
-<h5 id="解决方法">解决方法</h5>
-<p>1、删除多余的python版本</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301182151530.png" /></p>
-<p>需要删除的版本，我已删除，这里用保留版本的python做演示；
-注意，用该方法卸载之后，要去python的安装目录下检查，一定要删除干净，否则重启之后，修改过的环境变量可能会复原为原来的设置；</p>
-<p>python默认安装路径：<code>C:\Users\你的用户名\AppData\Local\Programs\Python</code>
-将你要删除的python版本的整个文件夹删除</p>
-<p>2、配置好环境变量
-右键此电脑--&gt;属性--&gt;高级系统设置--&gt;环境变量</p>
-<figure>
-<img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301182156852.png"
-alt="image-20230118215647728" />
-<figcaption aria-hidden="true">image-20230118215647728</figcaption>
-</figure>
-<p>将删除的python版本的环境变量也删除，用户变量和系统变量都需删除（点击相应环境变量，删除，确定即可）；</p>
-<p>将保留的python版本的两个目录都添加到path里（点击新建，粘贴目录，点击确定即可），用户变量和系统变量都添加进去；
-<code>C:\Users\你的用户名\AppData\Local\Programs\Python\Python310</code>
-<code>C:\Users\你的用户名\AppData\Local\Programs\Python\Python310\Scripts</code></p>
-<p>3、重启电脑，查看环境变量是否发生改变，若与上两步设置一致，则完成；若环境变量改变，可能是python没有删除干净，确保第一步完成；</p>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>Vscode</tag>
-        <tag>Python</tag>
-        <tag>Jupyter Notebook</tag>
       </tags>
   </entry>
   <entry>
@@ -2359,49 +2359,6 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/20230
       </tags>
   </entry>
   <entry>
-    <title>Zotero搭配Sci-Hub</title>
-    <url>/zotero%E6%90%AD%E9%85%8Dsci-hub/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="实现功能">实现功能</h3>
-<p>Zotero右键条目实现自动下载pdf</p>
-<h3 id="设置sci-hub作为pdf解析器">设置Sci-Hub作为PDF解析器</h3>
-<p>打开Zotero的首选项，进入<code>Advanced--&gt;Config Editor</code></p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302250911205.png" /></p>
-<p>搜索<code>extensions.zotero.findPDFs.resolvers</code></p>
-<p>双击<code>extensions.zotero.findPDFs.resolvers</code>，默认情况下是只有一对
-<code>[]</code>。</p>
-<p>删除<code>[]</code>，并将以下代码粘贴进去。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[更新版｜Zotero搭配Sci-Hub，真香！](https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg)
-">[1]</span></a></sup></p>
-<span id="more"></span>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&#123;  </span><br><span class="line"><span class="string">&quot;name&quot;</span>:<span class="string">&quot;Sci-Hub&quot;</span>,  </span><br><span class="line"><span class="string">&quot;method&quot;</span>:<span class="string">&quot;GET&quot;</span>,  </span><br><span class="line"><span class="string">&quot;url&quot;</span>:<span class="string">&quot;https://sci-hub.se/&#123;doi&#125;&quot;</span>,  </span><br><span class="line"><span class="string">&quot;mode&quot;</span>:<span class="string">&quot;html&quot;</span>,  </span><br><span class="line"><span class="string">&quot;selector&quot;</span>:<span class="string">&quot;#pdf&quot;</span>,  </span><br><span class="line"><span class="string">&quot;attribute&quot;</span>:<span class="string">&quot;src&quot;</span>,  </span><br><span class="line"><span class="string">&quot;automatic&quot;</span>:true  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>到此就成功将Sci-Hub配置为PDF解析器了，也就是说替代了默认的Unpaywall。</p>
-<p>现在即可右键条目下载pdf了（前提是条目包含doi）</p>
-<p>查找文件doi：https://github.com/bwiernik/zotero-shortdoi/releases</p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg">更新版｜Zotero搭配Sci-Hub，真香！</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>tool software</category>
-      </categories>
-      <tags>
-        <tag>Zotero</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Vscode的Jupyter的change presentation</title>
     <url>/vscode%E7%9A%84jupyter%E7%9A%84change-presentation/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：每次使用绘图，都是需要手动切换Change presentations
@@ -2447,6 +2404,49 @@ ouput</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
       <tags>
         <tag>Vscode</tag>
         <tag>Jupyter Notebook</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Zotero搭配Sci-Hub</title>
+    <url>/zotero%E6%90%AD%E9%85%8Dsci-hub/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="实现功能">实现功能</h3>
+<p>Zotero右键条目实现自动下载pdf</p>
+<h3 id="设置sci-hub作为pdf解析器">设置Sci-Hub作为PDF解析器</h3>
+<p>打开Zotero的首选项，进入<code>Advanced--&gt;Config Editor</code></p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302250911205.png" /></p>
+<p>搜索<code>extensions.zotero.findPDFs.resolvers</code></p>
+<p>双击<code>extensions.zotero.findPDFs.resolvers</code>，默认情况下是只有一对
+<code>[]</code>。</p>
+<p>删除<code>[]</code>，并将以下代码粘贴进去。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[更新版｜Zotero搭配Sci-Hub，真香！](https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg)
+">[1]</span></a></sup></p>
+<span id="more"></span>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&#123;  </span><br><span class="line"><span class="string">&quot;name&quot;</span>:<span class="string">&quot;Sci-Hub&quot;</span>,  </span><br><span class="line"><span class="string">&quot;method&quot;</span>:<span class="string">&quot;GET&quot;</span>,  </span><br><span class="line"><span class="string">&quot;url&quot;</span>:<span class="string">&quot;https://sci-hub.se/&#123;doi&#125;&quot;</span>,  </span><br><span class="line"><span class="string">&quot;mode&quot;</span>:<span class="string">&quot;html&quot;</span>,  </span><br><span class="line"><span class="string">&quot;selector&quot;</span>:<span class="string">&quot;#pdf&quot;</span>,  </span><br><span class="line"><span class="string">&quot;attribute&quot;</span>:<span class="string">&quot;src&quot;</span>,  </span><br><span class="line"><span class="string">&quot;automatic&quot;</span>:true  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>到此就成功将Sci-Hub配置为PDF解析器了，也就是说替代了默认的Unpaywall。</p>
+<p>现在即可右键条目下载pdf了（前提是条目包含doi）</p>
+<p>查找文件doi：https://github.com/bwiernik/zotero-shortdoi/releases</p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg">更新版｜Zotero搭配Sci-Hub，真香！</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>tool software</category>
+      </categories>
+      <tags>
+        <tag>Zotero</tag>
       </tags>
   </entry>
   <entry>
@@ -2609,21 +2609,6 @@ Another Python Encoding Tutorial</a></p>
       </tags>
   </entry>
   <entry>
-    <title>文献管理</title>
-    <url>/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、本地文献以一个字母开头（与课题相关）数字文献名作为文件名。（eg：k1、my
-literature）</p>
-<p>2、本地文献与Endnote相一致，ID为字母与数字，Label填写细分类或关键词，方便定位，Rating打分。</p>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>文献管理</tag>
-        <tag>Endnote</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>期刊、出版社、索引数据库</title>
     <url>/%E6%9C%9F%E5%88%8A%E3%80%81%E5%87%BA%E7%89%88%E7%A4%BE%E3%80%81%E7%B4%A2%E5%BC%95%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img
@@ -2691,6 +2676,21 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       <categories>
         <category>Other</category>
       </categories>
+  </entry>
+  <entry>
+    <title>文献管理</title>
+    <url>/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、本地文献以一个字母开头（与课题相关）数字文献名作为文件名。（eg：k1、my
+literature）</p>
+<p>2、本地文献与Endnote相一致，ID为字母与数字，Label填写细分类或关键词，方便定位，Rating打分。</p>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>文献管理</tag>
+        <tag>Endnote</tag>
+      </tags>
   </entry>
   <entry>
     <title>正则表达式（视频笔记）</title>
@@ -3534,6 +3534,80 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
+    <title>类，模块，包，库区别？</title>
+    <url>/%E7%B1%BB%EF%BC%8C%E6%A8%A1%E5%9D%97%EF%BC%8C%E5%8C%85%EF%BC%8C%E5%BA%93%E5%8C%BA%E5%88%AB%EF%BC%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="一模块包库">一、模块，包，库</h4>
+<p><strong>模块</strong>，英文为Modules，本质上是一个Python程序，以.py作为文件后缀。任何py文件都可以作为一个模块。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="python中的模块、库、包有什么区别？ - 风影忍着的回答 - 知乎 &lt;https://www.zhihu.com/question/30082392/answer/2030353759&gt;
+">[1]</span></a></sup></p>
+<p>大型项目需要多个模块，用<strong>包(package)</strong>
+来管理模块。Python包，就是里面装了一个.py文件的文件夹。</p>
+<p>Python包具有下面3个性质: 1.它实质上是一个文件夹;
+2.该文件夹里面一定有_init_.py模块，其他的模块可以有也可以没有;
+3.它的本质依然是模块，因此一个包里面还可以装其他的包；</p>
+<p>严格来说Python中是没有<strong>库(library)</strong>
+的，模块（module）和包（package）都是Python语法中有的概念，而库只是一个通俗的说法。平时说的<strong>库既可以是一个模块也可以是一个包</strong>。证据就是我们可以打开Python的安装目录，里面有一个叫做Lib的文件夹，打开这个文件夹之后就会发现很多“标准库”都在里面，我们常用的os库、random库、re库都在里面，这些“库”都是一个个的python文件即模块；而json、collections、sqlite3还有tkinter这些“库”又是一个一个的文件夹（里面都有__init__.py)也就是包</p>
+<h4 id="二从类到包">二、从类到包</h4>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">People</span>:</span><br><span class="line">	<span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,n</span>):    <span class="comment"># 定义了一个方法__init__ </span></span><br><span class="line">		self.name = n</span><br><span class="line">	<span class="keyword">def</span> <span class="title function_">speak</span>(<span class="params">self</span>):         <span class="comment"># 定义了一个方法speak</span></span><br><span class="line">		<span class="built_in">print</span>(<span class="string">&quot;hello&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>描述一个真实的对象一般有两种方式，他可以做什么（行为），他是什么样的（属性或特征）
+Python中一个对象的特征也称为属性（attribute）。它所具有的行为也称为方法（method）。类是一个模板，具有相同的属性和行为。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 简单理解，不是很严谨</span></span><br><span class="line">我是XXX    <span class="comment"># 这是一个类</span></span><br><span class="line"></span><br><span class="line">我是周杰伦  <span class="comment"># 这是创建了一个实例（对象）周杰伦</span></span><br><span class="line">我是昆凌   <span class="comment"># 这是创建了另一个实例（对象）昆凌</span></span><br><span class="line"><span class="comment"># 两个对象具有相同的一般行为和特征</span></span><br></pre></td></tr></table></figure>
+<p>我是周杰伦，self.name= JayChou
+我和self是一样的，它是一个指向实例本身的引用，所以方法的定义必须包含形参self。self为前缀的变量可供类中所有方法使用。</p>
+<p>首字母大写的是类，类中的函数称为方法
+函数和方法本质是一样的，差别在于调用方法
+<code>_init_</code>是特殊的方法，用类创建实例时，都会自动运行它</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Restaurant</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name,<span class="built_in">type</span></span>):</span><br><span class="line">        self.restaurant_name = name</span><br><span class="line">        self.cuisine_type = <span class="built_in">type</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">describe_restaurant</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;self.restaurant_name&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;self.cuisine_type&#125;</span>&quot;</span>)</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">open_restaurant</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;the restaurant is opening&quot;</span>)</span><br><span class="line"></span><br><span class="line">restaurant = Restaurant(<span class="string">&quot;尚丹佳&quot;</span>,<span class="string">&quot;饭店&quot;</span>) <span class="comment"># 创建了一个restaurant的实例</span></span><br><span class="line">restaurant.describe_restaurant()</span><br><span class="line">restaurant.open_restaurant()</span><br></pre></td></tr></table></figure>
+<p>一个模块（一个.py文件）中存储多个类
+一个文件夹有一个mycar.py文件(一个模块)，该py文件中包含Car类和Battery类</p>
+<p>导入模块中的一部分类： from 模块 import 类 form mycar import
+Car，Battery</p>
+<p>导入整个模块： import 模块</p>
+<p>包（库）包含多个模块。</p>
+<p>下载了一个gapminder包（库）：包里有如下内容：</p>
+<p><img
+src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120223939.png" /></p>
+<p>导入包后，要使用包的类或函数，都是直接<code>包名.函数</code>或者<code>包名.类</code>
+也可以用 <code>import  包  as  别名</code> 去简化包名，方便一些。</p>
+<p>比如这个包有3个模块（3个py文件）</p>
+<p>init模块（该模块定义了一个属性）：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> .data <span class="keyword">import</span> _load_gapminder</span><br><span class="line"><span class="keyword">from</span> .version <span class="keyword">import</span> __version__</span><br><span class="line">gapminder = _load_gapminder()</span><br></pre></td></tr></table></figure>
+<p>data模块(该模块定义了一个函数)：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pkg_resources</span><br><span class="line"><span class="keyword">from</span> io <span class="keyword">import</span> StringIO</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_load_gapminder</span>():</span><br><span class="line">    content = pkg_resources.resource_string(<span class="string">&#x27;gapminder&#x27;</span>, <span class="string">&#x27;gapminder.csv&#x27;</span>).decode()</span><br><span class="line">    <span class="keyword">return</span> pd.read_csv(StringIO(content))</span><br></pre></td></tr></table></figure>
+<p>version模块（该模块定义了一个属性）：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">__version__ = <span class="number">0.1</span></span><br></pre></td></tr></table></figure>
+<p>包的使用： 导入包后，包内的属性和函数就可以使用了</p>
+<p><img
+src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225544.png" /></p>
+<p><img
+src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225259.png" /></p>
+<p><img
+src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225615.png" /></p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">python中的模块、库、包有什么区别？
+- 风影忍着的回答 - 知乎
+<a href="https://www.zhihu.com/question/30082392/answer/2030353759">https://www.zhihu.com/question/30082392/answer/2030353759</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>简谈array,reshape,dataframe</title>
     <url>/%E7%AE%80%E8%B0%88array-reshape-dataframe/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="array">array</h3>
@@ -3608,80 +3682,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
 <span
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
 style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.jianshu.com/p/fc2fe026f002">python基础之numpy.reshape详解</a><a href="#fnref:3" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>类，模块，包，库区别？</title>
-    <url>/%E7%B1%BB%EF%BC%8C%E6%A8%A1%E5%9D%97%EF%BC%8C%E5%8C%85%EF%BC%8C%E5%BA%93%E5%8C%BA%E5%88%AB%EF%BC%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="一模块包库">一、模块，包，库</h4>
-<p><strong>模块</strong>，英文为Modules，本质上是一个Python程序，以.py作为文件后缀。任何py文件都可以作为一个模块。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="python中的模块、库、包有什么区别？ - 风影忍着的回答 - 知乎 &lt;https://www.zhihu.com/question/30082392/answer/2030353759&gt;
-">[1]</span></a></sup></p>
-<p>大型项目需要多个模块，用<strong>包(package)</strong>
-来管理模块。Python包，就是里面装了一个.py文件的文件夹。</p>
-<p>Python包具有下面3个性质: 1.它实质上是一个文件夹;
-2.该文件夹里面一定有_init_.py模块，其他的模块可以有也可以没有;
-3.它的本质依然是模块，因此一个包里面还可以装其他的包；</p>
-<p>严格来说Python中是没有<strong>库(library)</strong>
-的，模块（module）和包（package）都是Python语法中有的概念，而库只是一个通俗的说法。平时说的<strong>库既可以是一个模块也可以是一个包</strong>。证据就是我们可以打开Python的安装目录，里面有一个叫做Lib的文件夹，打开这个文件夹之后就会发现很多“标准库”都在里面，我们常用的os库、random库、re库都在里面，这些“库”都是一个个的python文件即模块；而json、collections、sqlite3还有tkinter这些“库”又是一个一个的文件夹（里面都有__init__.py)也就是包</p>
-<h4 id="二从类到包">二、从类到包</h4>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">People</span>:</span><br><span class="line">	<span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,n</span>):    <span class="comment"># 定义了一个方法__init__ </span></span><br><span class="line">		self.name = n</span><br><span class="line">	<span class="keyword">def</span> <span class="title function_">speak</span>(<span class="params">self</span>):         <span class="comment"># 定义了一个方法speak</span></span><br><span class="line">		<span class="built_in">print</span>(<span class="string">&quot;hello&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>描述一个真实的对象一般有两种方式，他可以做什么（行为），他是什么样的（属性或特征）
-Python中一个对象的特征也称为属性（attribute）。它所具有的行为也称为方法（method）。类是一个模板，具有相同的属性和行为。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 简单理解，不是很严谨</span></span><br><span class="line">我是XXX    <span class="comment"># 这是一个类</span></span><br><span class="line"></span><br><span class="line">我是周杰伦  <span class="comment"># 这是创建了一个实例（对象）周杰伦</span></span><br><span class="line">我是昆凌   <span class="comment"># 这是创建了另一个实例（对象）昆凌</span></span><br><span class="line"><span class="comment"># 两个对象具有相同的一般行为和特征</span></span><br></pre></td></tr></table></figure>
-<p>我是周杰伦，self.name= JayChou
-我和self是一样的，它是一个指向实例本身的引用，所以方法的定义必须包含形参self。self为前缀的变量可供类中所有方法使用。</p>
-<p>首字母大写的是类，类中的函数称为方法
-函数和方法本质是一样的，差别在于调用方法
-<code>_init_</code>是特殊的方法，用类创建实例时，都会自动运行它</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Restaurant</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name,<span class="built_in">type</span></span>):</span><br><span class="line">        self.restaurant_name = name</span><br><span class="line">        self.cuisine_type = <span class="built_in">type</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">describe_restaurant</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;self.restaurant_name&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;self.cuisine_type&#125;</span>&quot;</span>)</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">open_restaurant</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;the restaurant is opening&quot;</span>)</span><br><span class="line"></span><br><span class="line">restaurant = Restaurant(<span class="string">&quot;尚丹佳&quot;</span>,<span class="string">&quot;饭店&quot;</span>) <span class="comment"># 创建了一个restaurant的实例</span></span><br><span class="line">restaurant.describe_restaurant()</span><br><span class="line">restaurant.open_restaurant()</span><br></pre></td></tr></table></figure>
-<p>一个模块（一个.py文件）中存储多个类
-一个文件夹有一个mycar.py文件(一个模块)，该py文件中包含Car类和Battery类</p>
-<p>导入模块中的一部分类： from 模块 import 类 form mycar import
-Car，Battery</p>
-<p>导入整个模块： import 模块</p>
-<p>包（库）包含多个模块。</p>
-<p>下载了一个gapminder包（库）：包里有如下内容：</p>
-<p><img
-src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120223939.png" /></p>
-<p>导入包后，要使用包的类或函数，都是直接<code>包名.函数</code>或者<code>包名.类</code>
-也可以用 <code>import  包  as  别名</code> 去简化包名，方便一些。</p>
-<p>比如这个包有3个模块（3个py文件）</p>
-<p>init模块（该模块定义了一个属性）：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> .data <span class="keyword">import</span> _load_gapminder</span><br><span class="line"><span class="keyword">from</span> .version <span class="keyword">import</span> __version__</span><br><span class="line">gapminder = _load_gapminder()</span><br></pre></td></tr></table></figure>
-<p>data模块(该模块定义了一个函数)：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pkg_resources</span><br><span class="line"><span class="keyword">from</span> io <span class="keyword">import</span> StringIO</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_load_gapminder</span>():</span><br><span class="line">    content = pkg_resources.resource_string(<span class="string">&#x27;gapminder&#x27;</span>, <span class="string">&#x27;gapminder.csv&#x27;</span>).decode()</span><br><span class="line">    <span class="keyword">return</span> pd.read_csv(StringIO(content))</span><br></pre></td></tr></table></figure>
-<p>version模块（该模块定义了一个属性）：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">__version__ = <span class="number">0.1</span></span><br></pre></td></tr></table></figure>
-<p>包的使用： 导入包后，包内的属性和函数就可以使用了</p>
-<p><img
-src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225544.png" /></p>
-<p><img
-src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225259.png" /></p>
-<p><img
-src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225615.png" /></p>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">python中的模块、库、包有什么区别？
-- 风影忍着的回答 - 知乎
-<a href="https://www.zhihu.com/question/30082392/answer/2030353759">https://www.zhihu.com/question/30082392/answer/2030353759</a><a href="#fnref:1" rev="footnote">
 ↩︎</a></span>
 </li>
 </ol>
