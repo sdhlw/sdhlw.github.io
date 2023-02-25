@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Vscode 的使用</title>
+    <url>/2022-09-01-10-33-44-Vscode%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>setting.json文件配置：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">&#123;            //有自己添加的内容都要放到这个花括号里</span><br><span class="line"></span><br><span class="line">//配置a</span><br><span class="line">adfadfd,     //如果后面还有内容，前面的语句一定要有一个英文逗号</span><br><span class="line">// 配置b</span><br><span class="line">adfadff</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Vscode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>面向对象VS面向过程</title>
     <url>/2022-08-30-15-11-00-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1VS%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为转载，原文为：http://zhidao.baidu.com/question/2089034/answer/9637033</p>
@@ -22,19 +35,6 @@
       </categories>
       <tags>
         <tag>计算机基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vscode 的使用</title>
-    <url>/2022-09-01-10-33-44-Vscode%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>setting.json文件配置：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">&#123;            //有自己添加的内容都要放到这个花括号里</span><br><span class="line"></span><br><span class="line">//配置a</span><br><span class="line">adfadfd,     //如果后面还有内容，前面的语句一定要有一个英文逗号</span><br><span class="line">// 配置b</span><br><span class="line">adfadff</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>Vscode</tag>
       </tags>
   </entry>
   <entry>
@@ -2359,6 +2359,49 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/20230
       </tags>
   </entry>
   <entry>
+    <title>Zotero搭配Sci-Hub</title>
+    <url>/zotero%E6%90%AD%E9%85%8Dsci-hub/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="实现功能">实现功能</h3>
+<p>Zotero右键条目实现自动下载pdf</p>
+<h3 id="设置sci-hub作为pdf解析器">设置Sci-Hub作为PDF解析器</h3>
+<p>打开Zotero的首选项，进入<code>Advanced--&gt;Config Editor</code></p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302250911205.png" /></p>
+<p>搜索<code>extensions.zotero.findPDFs.resolvers</code></p>
+<p>双击<code>extensions.zotero.findPDFs.resolvers</code>，默认情况下是只有一对
+<code>[]</code>。</p>
+<p>删除<code>[]</code>，并将以下代码粘贴进去。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[更新版｜Zotero搭配Sci-Hub，真香！](https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg)
+">[1]</span></a></sup></p>
+<span id="more"></span>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&#123;  </span><br><span class="line"><span class="string">&quot;name&quot;</span>:<span class="string">&quot;Sci-Hub&quot;</span>,  </span><br><span class="line"><span class="string">&quot;method&quot;</span>:<span class="string">&quot;GET&quot;</span>,  </span><br><span class="line"><span class="string">&quot;url&quot;</span>:<span class="string">&quot;https://sci-hub.se/&#123;doi&#125;&quot;</span>,  </span><br><span class="line"><span class="string">&quot;mode&quot;</span>:<span class="string">&quot;html&quot;</span>,  </span><br><span class="line"><span class="string">&quot;selector&quot;</span>:<span class="string">&quot;#pdf&quot;</span>,  </span><br><span class="line"><span class="string">&quot;attribute&quot;</span>:<span class="string">&quot;src&quot;</span>,  </span><br><span class="line"><span class="string">&quot;automatic&quot;</span>:true  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>到此就成功将Sci-Hub配置为PDF解析器了，也就是说替代了默认的Unpaywall。</p>
+<p>现在即可右键条目下载pdf了（前提是条目包含doi）</p>
+<p>查找文件doi：https://github.com/bwiernik/zotero-shortdoi/releases</p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg">更新版｜Zotero搭配Sci-Hub，真香！</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>tool software</category>
+      </categories>
+      <tags>
+        <tag>Zotero</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Vscode的Jupyter的change presentation</title>
     <url>/vscode%E7%9A%84jupyter%E7%9A%84change-presentation/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：每次使用绘图，都是需要手动切换Change presentations
@@ -2404,49 +2447,6 @@ ouput</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
       <tags>
         <tag>Vscode</tag>
         <tag>Jupyter Notebook</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Zotero搭配Sci-Hub</title>
-    <url>/zotero%E6%90%AD%E9%85%8Dsci-hub/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="实现功能">实现功能</h3>
-<p>Zotero右键条目实现自动下载pdf</p>
-<h3 id="设置sci-hub作为pdf解析器">设置Sci-Hub作为PDF解析器</h3>
-<p>打开Zotero的首选项，进入<code>Advanced--&gt;Config Editor</code></p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302250911205.png" /></p>
-<p>搜索<code>extensions.zotero.findPDFs.resolvers</code></p>
-<p>双击<code>extensions.zotero.findPDFs.resolvers</code>，默认情况下是只有一对
-<code>[]</code>。</p>
-<p>删除<code>[]</code>，并将以下代码粘贴进去。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[更新版｜Zotero搭配Sci-Hub，真香！](https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg)
-">[1]</span></a></sup></p>
-<span id="more"></span>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&#123;  </span><br><span class="line"><span class="string">&quot;name&quot;</span>:<span class="string">&quot;Sci-Hub&quot;</span>,  </span><br><span class="line"><span class="string">&quot;method&quot;</span>:<span class="string">&quot;GET&quot;</span>,  </span><br><span class="line"><span class="string">&quot;url&quot;</span>:<span class="string">&quot;https://sci-hub.se/&#123;doi&#125;&quot;</span>,  </span><br><span class="line"><span class="string">&quot;mode&quot;</span>:<span class="string">&quot;html&quot;</span>,  </span><br><span class="line"><span class="string">&quot;selector&quot;</span>:<span class="string">&quot;#pdf&quot;</span>,  </span><br><span class="line"><span class="string">&quot;attribute&quot;</span>:<span class="string">&quot;src&quot;</span>,  </span><br><span class="line"><span class="string">&quot;automatic&quot;</span>:true  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>到此就成功将Sci-Hub配置为PDF解析器了，也就是说替代了默认的Unpaywall。</p>
-<p>现在即可右键条目下载pdf了（前提是条目包含doi）</p>
-<p>查找文件doi：https://github.com/bwiernik/zotero-shortdoi/releases</p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg">更新版｜Zotero搭配Sci-Hub，真香！</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>tool software</category>
-      </categories>
-      <tags>
-        <tag>Zotero</tag>
       </tags>
   </entry>
   <entry>
@@ -2628,17 +2628,18 @@ literature）</p>
     <url>/%E6%9C%9F%E5%88%8A%E3%80%81%E5%87%BA%E7%89%88%E7%A4%BE%E3%80%81%E7%B4%A2%E5%BC%95%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img
 src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302222118363.png" /></p>
-<p>1、研究人员向期刊或者会议投稿，交注册费和相应的审稿费等相关费用<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+<ul>
+<li><p>研究人员向期刊或者会议投稿，交注册费和相应的审稿费等相关费用<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
 class="hint--top hint--error hint--medium hint--rounded hint--bounce"
 aria-label="[会议期刊、出版社、索引工具之间的关系](https://cactusii.github.io/post/ke-yan-xiao-bai/)
-">[1]</span></a></sup>； 2、会议组织者和期刊联系出版社，交出版费用；
-3、出版社将论文更新到自己的数据库中，然后将数据库卖给全世界各大高校或企业；
-4、其他开源数据库抓取出版社数据库的论文题目、摘要、参考文献等信息。</p>
-<ul>
-<li><p>1、会议组织者：一般由某个学校、组织，为了学术/利益举办会议，负责征集科研工作者的论文并决定是否录用，然后联系出版社进行出版发表，因此要征收科研工作者相应的费用，同时需要向出版社交相应的出版费用。</p></li>
-<li><p>2、期刊：期刊论文是科研工作者针对某学术期刊投稿，审稿专家审稿并返回修改意见，最终由期刊编辑部决定是否录用。</p></li>
-<li><p>3、出版社：一般具有一定声望，像IEEE、Springer、ACM，它们旗下有一些会议、期刊，向会议期刊收取出版费，拿取版权，扩充自己的数据库，向其他企业、高校出售来盈利。其实有的出版社即组织学术会议，也出版学术期刊，比如IEEE。</p></li>
+">[1]</span></a></sup>；</p></li>
+<li><p>会议组织者和期刊联系出版社，交出版费用；</p></li>
+<li><p>出版社将论文更新到自己的数据库中，然后将数据库卖给全世界各大高校或企业；</p></li>
+<li><p>其他开源数据库抓取出版社数据库的论文题目、摘要、参考文献等信息。</p></li>
 </ul>
+<p>1、<strong>会议组织者</strong>：一般由某个学校、组织，为了学术/利益举办会议，负责征集科研工作者的论文并决定是否录用，然后联系出版社进行出版发表，因此要征收科研工作者相应的费用，同时需要向出版社交相应的出版费用。</p>
+<p>2、<strong>期刊</strong>：期刊论文是科研工作者针对某学术期刊投稿，审稿专家审稿并返回修改意见，最终由期刊编辑部决定是否录用。</p>
+<p>3、<strong>出版社</strong>：一般具有一定声望，像IEEE、Springer、ACM，它们旗下有一些会议、期刊，向会议期刊收取出版费，拿取版权，扩充自己的数据库，向其他企业、高校出售来盈利。其实有的出版社即组织学术会议，也出版学术期刊，比如IEEE。</p>
 <span id="more"></span>
 <p>四大出版社（publisher）：</p>
 <ul>
@@ -2651,18 +2652,14 @@ aria-label="[会议期刊、出版社、索引工具之间的关系](https://cac
 class="hint--top hint--error hint--medium hint--rounded hint--bounce"
 aria-label="[全球重要的学术期刊出版社和学术协会介绍](https://zhuanlan.zhihu.com/p/394099449)
 ">[2]</span></a></sup></p>
-<ul>
-<li>4、出版社数据库：出版社通常维护自己的数据库，比如IEEE的IEEE
-Xplore就是查询该出版社数据库的入口，这些数据库都是可以下载到原文章的。</li>
-</ul>
+<p>4、<strong>出版社数据库</strong>：出版社通常维护自己的数据库，比如IEEE的IEEE
+Xplore就是查询该出版社数据库的入口，这些数据库都是可以下载到原文章的。</p>
 <p>IEEE：https://ieeexplore.ieee.org/</p>
 <p>Springer：https://link.springer.com/</p>
 <p>Elsevier：https://www.elsevier.com/solutions/sciencedirect</p>
 <p>Taylor &amp; Francis：https://www.tandfonline.com/。</p>
-<ul>
-<li>5、索引数据库：像<strong>SCI、EI、CPCI-S</strong>等这些数据库其实没有论文的版权，与其说数据库不如说是一个检索工具，类似google/google
-scholar，可以综合检索到各大出版社的数据库中的文献，但只能在这上面检索到论文的题目，摘要，参考文献等，和它们自己可以会有一个分类，添加一些附加信息，比如影响因子等。比如<strong>SCI只收录一些高质量的文章</strong>，而EI可能就收录的会多一些。</li>
-</ul>
+<p>5、<strong>索引数据库</strong>：像<strong>SCI、EI、CPCI-S</strong>等这些数据库其实没有论文的版权，与其说数据库不如说是一个检索工具，类似google/google
+scholar，可以综合检索到各大出版社的数据库中的文献，但只能在这上面检索到论文的题目，摘要，参考文献等，和它们自己可以会有一个分类，添加一些附加信息，比如影响因子等。比如<strong>SCI只收录一些高质量的文章</strong>，而EI可能就收录的会多一些。</p>
 <p>SCI科学引文索引(web of science)：http://webofknowledge.com</p>
 <p>EI工程索引：https://www.engineeringvillage.com</p>
 <p>ISTP科技会议录索引：http://webofknowledge.com</p>
