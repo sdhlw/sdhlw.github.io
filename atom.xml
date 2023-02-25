@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2023-02-25T07:04:45.685Z</updated>
+  <updated>2023-02-25T07:15:42.365Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://www.sdhlw.top/zotero%E6%8F%92%E4%BB%B6%E4%B9%8Bjasminum%EF%BC%88%E8%8C%89%E8%8E%89%E8%8A%B1%EF%BC%89/"/>
     <id>https://www.sdhlw.top/zotero%E6%8F%92%E4%BB%B6%E4%B9%8Bjasminum%EF%BC%88%E8%8C%89%E8%8E%89%E8%8A%B1%EF%BC%89/</id>
     <published>2023-02-25T06:37:37.000Z</published>
-    <updated>2023-02-25T07:04:45.685Z</updated>
+    <updated>2023-02-25T07:15:42.365Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：根据中文pdf，自动抓取条目信息</p><p>实现：</p><p><ahref="https://github.com/l0o0/jasminum">官网</a>下载xpi，打开附加组件，文件拖拽到组件页面安装即可</p><p><imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302232120735.png" /></p><p>右键pdf即可抓取中文文献条目信息：</p><p><imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302232120148.png" /></p><span id="more"></span><p>插件目前支持的功能：</p><ul><li>拆分或合并 Zotero 中条目作者姓和名</li><li>根据知网上下载的文献文件来抓取引用信息（就是根据文件名）</li><li>添加中文PDF/CAJ时，自动拉取知网数据，该功能默认关闭。需要到设置中开启，注意添加的文件名需要含有中文，全英文没有效果（还是根据文件名）</li><li>为知网的学位论文 PDF 添加书签</li><li>更新中文 translators</li><li>拉取文献引用次数，是否核心期刊</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：根据中文pdf，自动抓取条目信息</p><p>实现：</p><p><ahref="https://github.com/l0o0/jasminum">官网</a>下载xpi，打开附加组件，文件拖拽到组件页面安装即可</p><p><imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302251511232.png" /></p><p>右键pdf即可抓取中文文献条目信息：</p><p><imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302251511409.png" /></p><span id="more"></span><p>也可添加pdf时自动抓取条目信息：</p><p><imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302251511533.png" /></p><p>插件目前支持的功能：</p><ul><li>拆分或合并 Zotero 中条目作者姓和名</li><li>根据知网上下载的文献文件来抓取引用信息（就是根据文件名）</li><li>添加中文PDF/CAJ时，自动拉取知网数据，该功能默认关闭。需要到设置中开启，注意添加的文件名需要含有中文，全英文没有效果（还是根据文件名）</li><li>为知网的学位论文 PDF 添加书签</li><li>更新中文 translators</li><li>拉取文献引用次数，是否核心期刊</li></ul>]]></content>
     
     
     <summary type="html">&lt;p&gt;需求：根据中文pdf，自动抓取条目信息&lt;/p&gt;
@@ -31,10 +31,10 @@
 &lt;p&gt;&lt;a
 href=&quot;https://github.com/l0o0/jasminum&quot;&gt;官网&lt;/a&gt;下载xpi，打开附加组件，文件拖拽到组件页面安装即可&lt;/p&gt;
 &lt;p&gt;&lt;img
-src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302232120735.png&quot; /&gt;&lt;/p&gt;
+src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302251511232.png&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;右键pdf即可抓取中文文献条目信息：&lt;/p&gt;
 &lt;p&gt;&lt;img
-src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302232120148.png&quot; /&gt;&lt;/p&gt;</summary>
+src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302251511409.png&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
