@@ -300,6 +300,23 @@ Land</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
       </tags>
   </entry>
   <entry>
+    <title>Markdown Tips</title>
+    <url>/Markdown-Tips/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="题注">题注</h4>
+<p><a
+href="https://www.zhihu.com/question/42802592/answer/383110578">来源</a></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">style</span>=<span class="string">&quot;border-radius: 0.3125em;</span></span></span><br><span class="line"><span class="string"><span class="tag">    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&quot;</span> </span></span><br><span class="line"><span class="tag">    <span class="attr">src</span>=<span class="string">&quot;这里输入图片地址&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;color:orange; border-bottom: 1px solid #d9d9d9;</span></span></span><br><span class="line"><span class="string"><span class="tag">    display: inline-block;</span></span></span><br><span class="line"><span class="string"><span class="tag">    color: #999;</span></span></span><br><span class="line"><span class="string"><span class="tag">    padding: 2px;&quot;</span>&gt;</span>这里输入题注<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>更喜欢这种，图片还可以缩放：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;center&gt;题注&lt;/center&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux-base</title>
     <url>/Linux-base/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="base">1、Base</h1>
@@ -684,23 +701,6 @@ paste 命令 | 菜鸟教程
       </tags>
   </entry>
   <entry>
-    <title>Markdown Tips</title>
-    <url>/Markdown-Tips/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="题注">题注</h4>
-<p><a
-href="https://www.zhihu.com/question/42802592/answer/383110578">来源</a></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">style</span>=<span class="string">&quot;border-radius: 0.3125em;</span></span></span><br><span class="line"><span class="string"><span class="tag">    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&quot;</span> </span></span><br><span class="line"><span class="tag">    <span class="attr">src</span>=<span class="string">&quot;这里输入图片地址&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;color:orange; border-bottom: 1px solid #d9d9d9;</span></span></span><br><span class="line"><span class="string"><span class="tag">    display: inline-block;</span></span></span><br><span class="line"><span class="string"><span class="tag">    color: #999;</span></span></span><br><span class="line"><span class="string"><span class="tag">    padding: 2px;&quot;</span>&gt;</span>这里输入题注<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>更喜欢这种，图片还可以缩放：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;center&gt;题注&lt;/center&gt;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python-base</title>
     <url>/Python-base/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1
@@ -1015,6 +1015,69 @@ href="https://www.bilibili.com/video/BV1nK4y1v7uv?share_source=copy_web&amp;vd_s
       </tags>
   </entry>
   <entry>
+    <title>Windows 超赞软件 &amp; 扩展 &amp; 网站</title>
+    <url>/Windows%20%E8%B6%85%E8%B5%9E%E8%BD%AF%E4%BB%B6%20&amp;%20%E6%89%A9%E5%B1%95%20&amp;%20%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="软件">软件:</h4>
+<ul>
+<li><p>Edge浏览器（已换谷歌内核，且扩展丰富，无需翻墙即可添加多数Google扩展），Chrome浏览器、360极速浏览器、</p></li>
+<li><p>Foxmail（邮箱）、Bandizip（解压软件）、LICEcap（录屏GIF）、Snipaste（截图，贴图）</p></li>
+<li><p>Typora（Markdown编辑器）、Listary（快速搜索文件文件夹）、百度网盘、PanDownload（百度云解除）、Xmind(思维导图)</p></li>
+<li><p>ripgrep(命令行搜索软件，用于搜索纯文本文件内容)、<a
+href="https://chocolatey.org/install">Chocolatey</a>(软件管理，下载一些Windows的命令行工具)、rga(ripgrep-all，可搜pdf等其他格式)</p></li>
+<li><p>QQ OCR(没错，qq自带OCR!!!)、天若OCR、Quicker（快捷面板）、Utools
+(和quicker有些像)、手心输入法（最后还是换回搜狗，不得不承认搜狗的强大）、(PDF-XChange
+Editor、文电通pdf阅读器)、</p></li>
+<li><p>One
+commander(文件资源管理器)、Clover（文件资源管理器标签化）、DeskPins1.3（窗口置顶）、Spacesniff(直观地看到文件和文件夹的磁盘空间占用情况)、Coodesker(桌面管理软件)、Files
+uwp preview(文件资源管理器)</p></li>
+<li><p>MobaXterm
+(ssh客户端，最推荐，功能很多，不止ssh)、Putty(ssh客户端，比较mini)、Xshell（ssh客户端，朋友用过，自己木有）Windows
+Terminal（终端）</p></li>
+<li><p>IDE&amp;编辑器<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="编辑器就是纯编辑文本的编辑器、IDE是带有软件开发功能的“集成开发环境”。目前的编辑器功能强大，基本可以算作是IDE。简单点说自称IDE的IDE能做的活，自称编辑器的IDE未必能做，自称编辑器的IDE能做的活，自称IDE的IDE基本能做。
+">[1]</span></a></sup>：Vscode(Python、Markdown、LaTex等我都行，牛不牛)、Sublime
+Text、Thonny（Python）</p></li>
+</ul>
+<h4 id="edge扩展">Edge扩展</h4>
+<ul>
+<li>Adblock （广告拦截）</li>
+<li>Dark Reader (暗黑模式)</li>
+<li>Fireshot-capture page(截图)</li>
+<li>Infinity pro （好看好用的标签页）</li>
+<li>IGG谷歌学术助手</li>
+<li>沙拉查词</li>
+<li>壹伴（公众号助手）</li>
+</ul>
+<h4 id="网址">网址</h4>
+<ul>
+<li><p>软件下载：https://en.softonic.com/</p></li>
+<li><p>135编辑器（公众号排版）：https://www.135editor.com/</p></li>
+<li><p>创客贴（公众号封面）：https://www.chuangkit.com/</p></li>
+<li><p>LaTex在线：https://www.overleaf.com/</p></li>
+</ul>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">编辑器就是纯编辑文本的编辑器、IDE是带有软件开发功能的“集成开发环境”。目前的编辑器功能强大，基本可以算作是IDE。简单点说自称IDE的IDE能做的活，自称编辑器的IDE未必能做，自称编辑器的IDE能做的活，自称IDE的IDE基本能做。<a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Software</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SGE作业调度系统</title>
     <url>/SGE%E4%BD%9C%E4%B8%9A%E8%B0%83%E5%BA%A6%E7%B3%BB%E7%BB%9F/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>不要在登录节点（管理节点）上运行大型<a
@@ -1092,69 +1155,6 @@ alt="image-20230118215647728" />
         <tag>Vscode</tag>
         <tag>Python</tag>
         <tag>Jupyter Notebook</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows 超赞软件 &amp; 扩展 &amp; 网站</title>
-    <url>/Windows%20%E8%B6%85%E8%B5%9E%E8%BD%AF%E4%BB%B6%20&amp;%20%E6%89%A9%E5%B1%95%20&amp;%20%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="软件">软件:</h4>
-<ul>
-<li><p>Edge浏览器（已换谷歌内核，且扩展丰富，无需翻墙即可添加多数Google扩展），Chrome浏览器、360极速浏览器、</p></li>
-<li><p>Foxmail（邮箱）、Bandizip（解压软件）、LICEcap（录屏GIF）、Snipaste（截图，贴图）</p></li>
-<li><p>Typora（Markdown编辑器）、Listary（快速搜索文件文件夹）、百度网盘、PanDownload（百度云解除）、Xmind(思维导图)</p></li>
-<li><p>ripgrep(命令行搜索软件，用于搜索纯文本文件内容)、<a
-href="https://chocolatey.org/install">Chocolatey</a>(软件管理，下载一些Windows的命令行工具)、rga(ripgrep-all，可搜pdf等其他格式)</p></li>
-<li><p>QQ OCR(没错，qq自带OCR!!!)、天若OCR、Quicker（快捷面板）、Utools
-(和quicker有些像)、手心输入法（最后还是换回搜狗，不得不承认搜狗的强大）、(PDF-XChange
-Editor、文电通pdf阅读器)、</p></li>
-<li><p>One
-commander(文件资源管理器)、Clover（文件资源管理器标签化）、DeskPins1.3（窗口置顶）、Spacesniff(直观地看到文件和文件夹的磁盘空间占用情况)、Coodesker(桌面管理软件)、Files
-uwp preview(文件资源管理器)</p></li>
-<li><p>MobaXterm
-(ssh客户端，最推荐，功能很多，不止ssh)、Putty(ssh客户端，比较mini)、Xshell（ssh客户端，朋友用过，自己木有）Windows
-Terminal（终端）</p></li>
-<li><p>IDE&amp;编辑器<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="编辑器就是纯编辑文本的编辑器、IDE是带有软件开发功能的“集成开发环境”。目前的编辑器功能强大，基本可以算作是IDE。简单点说自称IDE的IDE能做的活，自称编辑器的IDE未必能做，自称编辑器的IDE能做的活，自称IDE的IDE基本能做。
-">[1]</span></a></sup>：Vscode(Python、Markdown、LaTex等我都行，牛不牛)、Sublime
-Text、Thonny（Python）</p></li>
-</ul>
-<h4 id="edge扩展">Edge扩展</h4>
-<ul>
-<li>Adblock （广告拦截）</li>
-<li>Dark Reader (暗黑模式)</li>
-<li>Fireshot-capture page(截图)</li>
-<li>Infinity pro （好看好用的标签页）</li>
-<li>IGG谷歌学术助手</li>
-<li>沙拉查词</li>
-<li>壹伴（公众号助手）</li>
-</ul>
-<h4 id="网址">网址</h4>
-<ul>
-<li><p>软件下载：https://en.softonic.com/</p></li>
-<li><p>135编辑器（公众号排版）：https://www.135editor.com/</p></li>
-<li><p>创客贴（公众号封面）：https://www.chuangkit.com/</p></li>
-<li><p>LaTex在线：https://www.overleaf.com/</p></li>
-</ul>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">编辑器就是纯编辑文本的编辑器、IDE是带有软件开发功能的“集成开发环境”。目前的编辑器功能强大，基本可以算作是IDE。简单点说自称IDE的IDE能做的活，自称编辑器的IDE未必能做，自称编辑器的IDE能做的活，自称IDE的IDE基本能做。<a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>Software</tag>
       </tags>
   </entry>
   <entry>
@@ -2407,6 +2407,36 @@ ouput</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
       </tags>
   </entry>
   <entry>
+    <title>Zotero插件之Jasminum（茉莉花）</title>
+    <url>/zotero%E6%8F%92%E4%BB%B6%E4%B9%8Bjasminum%EF%BC%88%E8%8C%89%E8%8E%89%E8%8A%B1%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：根据中文pdf，自动抓取条目信息</p>
+<p>实现：</p>
+<p><a
+href="https://github.com/l0o0/jasminum">官网</a>下载xpi，打开附加组件，文件拖拽到组件页面安装即可</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302232120735.png" /></p>
+<p>右键pdf即可抓取中文文献条目信息：</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302232120148.png" /></p>
+<span id="more"></span>
+<p>插件目前支持的功能：</p>
+<ul>
+<li>拆分或合并 Zotero 中条目作者姓和名</li>
+<li>根据知网上下载的文献文件来抓取引用信息（就是根据文件名）</li>
+<li>添加中文PDF/CAJ时，自动拉取知网数据，该功能默认关闭。需要到设置中开启，注意添加的文件名需要含有中文，全英文没有效果（还是根据文件名）</li>
+<li>为知网的学位论文 PDF 添加书签</li>
+<li>更新中文 translators</li>
+<li>拉取文献引用次数，是否核心期刊</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tool Software</category>
+      </categories>
+      <tags>
+        <tag>Zotero</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Zotero搭配Sci-Hub</title>
     <url>/zotero%E6%90%AD%E9%85%8Dsci-hub/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="实现功能">实现功能</h3>
@@ -2443,7 +2473,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
 </div>
 ]]></content>
       <categories>
-        <category>tool software</category>
+        <category>Tool Software</category>
       </categories>
       <tags>
         <tag>Zotero</tag>
@@ -2609,6 +2639,21 @@ Another Python Encoding Tutorial</a></p>
       </tags>
   </entry>
   <entry>
+    <title>文献管理</title>
+    <url>/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、本地文献以一个字母开头（与课题相关）数字文献名作为文件名。（eg：k1、my
+literature）</p>
+<p>2、本地文献与Endnote相一致，ID为字母与数字，Label填写细分类或关键词，方便定位，Rating打分。</p>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>文献管理</tag>
+        <tag>Endnote</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>期刊、出版社、索引数据库</title>
     <url>/%E6%9C%9F%E5%88%8A%E3%80%81%E5%87%BA%E7%89%88%E7%A4%BE%E3%80%81%E7%B4%A2%E5%BC%95%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img
@@ -2676,21 +2721,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       <categories>
         <category>Other</category>
       </categories>
-  </entry>
-  <entry>
-    <title>文献管理</title>
-    <url>/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、本地文献以一个字母开头（与课题相关）数字文献名作为文件名。（eg：k1、my
-literature）</p>
-<p>2、本地文献与Endnote相一致，ID为字母与数字，Label填写细分类或关键词，方便定位，Rating打分。</p>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>文献管理</tag>
-        <tag>Endnote</tag>
-      </tags>
   </entry>
   <entry>
     <title>正则表达式（视频笔记）</title>
@@ -3534,80 +3564,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>类，模块，包，库区别？</title>
-    <url>/%E7%B1%BB%EF%BC%8C%E6%A8%A1%E5%9D%97%EF%BC%8C%E5%8C%85%EF%BC%8C%E5%BA%93%E5%8C%BA%E5%88%AB%EF%BC%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="一模块包库">一、模块，包，库</h4>
-<p><strong>模块</strong>，英文为Modules，本质上是一个Python程序，以.py作为文件后缀。任何py文件都可以作为一个模块。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="python中的模块、库、包有什么区别？ - 风影忍着的回答 - 知乎 &lt;https://www.zhihu.com/question/30082392/answer/2030353759&gt;
-">[1]</span></a></sup></p>
-<p>大型项目需要多个模块，用<strong>包(package)</strong>
-来管理模块。Python包，就是里面装了一个.py文件的文件夹。</p>
-<p>Python包具有下面3个性质: 1.它实质上是一个文件夹;
-2.该文件夹里面一定有_init_.py模块，其他的模块可以有也可以没有;
-3.它的本质依然是模块，因此一个包里面还可以装其他的包；</p>
-<p>严格来说Python中是没有<strong>库(library)</strong>
-的，模块（module）和包（package）都是Python语法中有的概念，而库只是一个通俗的说法。平时说的<strong>库既可以是一个模块也可以是一个包</strong>。证据就是我们可以打开Python的安装目录，里面有一个叫做Lib的文件夹，打开这个文件夹之后就会发现很多“标准库”都在里面，我们常用的os库、random库、re库都在里面，这些“库”都是一个个的python文件即模块；而json、collections、sqlite3还有tkinter这些“库”又是一个一个的文件夹（里面都有__init__.py)也就是包</p>
-<h4 id="二从类到包">二、从类到包</h4>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">People</span>:</span><br><span class="line">	<span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,n</span>):    <span class="comment"># 定义了一个方法__init__ </span></span><br><span class="line">		self.name = n</span><br><span class="line">	<span class="keyword">def</span> <span class="title function_">speak</span>(<span class="params">self</span>):         <span class="comment"># 定义了一个方法speak</span></span><br><span class="line">		<span class="built_in">print</span>(<span class="string">&quot;hello&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>描述一个真实的对象一般有两种方式，他可以做什么（行为），他是什么样的（属性或特征）
-Python中一个对象的特征也称为属性（attribute）。它所具有的行为也称为方法（method）。类是一个模板，具有相同的属性和行为。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 简单理解，不是很严谨</span></span><br><span class="line">我是XXX    <span class="comment"># 这是一个类</span></span><br><span class="line"></span><br><span class="line">我是周杰伦  <span class="comment"># 这是创建了一个实例（对象）周杰伦</span></span><br><span class="line">我是昆凌   <span class="comment"># 这是创建了另一个实例（对象）昆凌</span></span><br><span class="line"><span class="comment"># 两个对象具有相同的一般行为和特征</span></span><br></pre></td></tr></table></figure>
-<p>我是周杰伦，self.name= JayChou
-我和self是一样的，它是一个指向实例本身的引用，所以方法的定义必须包含形参self。self为前缀的变量可供类中所有方法使用。</p>
-<p>首字母大写的是类，类中的函数称为方法
-函数和方法本质是一样的，差别在于调用方法
-<code>_init_</code>是特殊的方法，用类创建实例时，都会自动运行它</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Restaurant</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name,<span class="built_in">type</span></span>):</span><br><span class="line">        self.restaurant_name = name</span><br><span class="line">        self.cuisine_type = <span class="built_in">type</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">describe_restaurant</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;self.restaurant_name&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;self.cuisine_type&#125;</span>&quot;</span>)</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">open_restaurant</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;the restaurant is opening&quot;</span>)</span><br><span class="line"></span><br><span class="line">restaurant = Restaurant(<span class="string">&quot;尚丹佳&quot;</span>,<span class="string">&quot;饭店&quot;</span>) <span class="comment"># 创建了一个restaurant的实例</span></span><br><span class="line">restaurant.describe_restaurant()</span><br><span class="line">restaurant.open_restaurant()</span><br></pre></td></tr></table></figure>
-<p>一个模块（一个.py文件）中存储多个类
-一个文件夹有一个mycar.py文件(一个模块)，该py文件中包含Car类和Battery类</p>
-<p>导入模块中的一部分类： from 模块 import 类 form mycar import
-Car，Battery</p>
-<p>导入整个模块： import 模块</p>
-<p>包（库）包含多个模块。</p>
-<p>下载了一个gapminder包（库）：包里有如下内容：</p>
-<p><img
-src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120223939.png" /></p>
-<p>导入包后，要使用包的类或函数，都是直接<code>包名.函数</code>或者<code>包名.类</code>
-也可以用 <code>import  包  as  别名</code> 去简化包名，方便一些。</p>
-<p>比如这个包有3个模块（3个py文件）</p>
-<p>init模块（该模块定义了一个属性）：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> .data <span class="keyword">import</span> _load_gapminder</span><br><span class="line"><span class="keyword">from</span> .version <span class="keyword">import</span> __version__</span><br><span class="line">gapminder = _load_gapminder()</span><br></pre></td></tr></table></figure>
-<p>data模块(该模块定义了一个函数)：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pkg_resources</span><br><span class="line"><span class="keyword">from</span> io <span class="keyword">import</span> StringIO</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_load_gapminder</span>():</span><br><span class="line">    content = pkg_resources.resource_string(<span class="string">&#x27;gapminder&#x27;</span>, <span class="string">&#x27;gapminder.csv&#x27;</span>).decode()</span><br><span class="line">    <span class="keyword">return</span> pd.read_csv(StringIO(content))</span><br></pre></td></tr></table></figure>
-<p>version模块（该模块定义了一个属性）：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">__version__ = <span class="number">0.1</span></span><br></pre></td></tr></table></figure>
-<p>包的使用： 导入包后，包内的属性和函数就可以使用了</p>
-<p><img
-src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225544.png" /></p>
-<p><img
-src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225259.png" /></p>
-<p><img
-src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225615.png" /></p>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">python中的模块、库、包有什么区别？
-- 风影忍着的回答 - 知乎
-<a href="https://www.zhihu.com/question/30082392/answer/2030353759">https://www.zhihu.com/question/30082392/answer/2030353759</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>简谈array,reshape,dataframe</title>
     <url>/%E7%AE%80%E8%B0%88array-reshape-dataframe/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="array">array</h3>
@@ -3682,6 +3638,80 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
 <span
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
 style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.jianshu.com/p/fc2fe026f002">python基础之numpy.reshape详解</a><a href="#fnref:3" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>类，模块，包，库区别？</title>
+    <url>/%E7%B1%BB%EF%BC%8C%E6%A8%A1%E5%9D%97%EF%BC%8C%E5%8C%85%EF%BC%8C%E5%BA%93%E5%8C%BA%E5%88%AB%EF%BC%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="一模块包库">一、模块，包，库</h4>
+<p><strong>模块</strong>，英文为Modules，本质上是一个Python程序，以.py作为文件后缀。任何py文件都可以作为一个模块。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="python中的模块、库、包有什么区别？ - 风影忍着的回答 - 知乎 &lt;https://www.zhihu.com/question/30082392/answer/2030353759&gt;
+">[1]</span></a></sup></p>
+<p>大型项目需要多个模块，用<strong>包(package)</strong>
+来管理模块。Python包，就是里面装了一个.py文件的文件夹。</p>
+<p>Python包具有下面3个性质: 1.它实质上是一个文件夹;
+2.该文件夹里面一定有_init_.py模块，其他的模块可以有也可以没有;
+3.它的本质依然是模块，因此一个包里面还可以装其他的包；</p>
+<p>严格来说Python中是没有<strong>库(library)</strong>
+的，模块（module）和包（package）都是Python语法中有的概念，而库只是一个通俗的说法。平时说的<strong>库既可以是一个模块也可以是一个包</strong>。证据就是我们可以打开Python的安装目录，里面有一个叫做Lib的文件夹，打开这个文件夹之后就会发现很多“标准库”都在里面，我们常用的os库、random库、re库都在里面，这些“库”都是一个个的python文件即模块；而json、collections、sqlite3还有tkinter这些“库”又是一个一个的文件夹（里面都有__init__.py)也就是包</p>
+<h4 id="二从类到包">二、从类到包</h4>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">People</span>:</span><br><span class="line">	<span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,n</span>):    <span class="comment"># 定义了一个方法__init__ </span></span><br><span class="line">		self.name = n</span><br><span class="line">	<span class="keyword">def</span> <span class="title function_">speak</span>(<span class="params">self</span>):         <span class="comment"># 定义了一个方法speak</span></span><br><span class="line">		<span class="built_in">print</span>(<span class="string">&quot;hello&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>描述一个真实的对象一般有两种方式，他可以做什么（行为），他是什么样的（属性或特征）
+Python中一个对象的特征也称为属性（attribute）。它所具有的行为也称为方法（method）。类是一个模板，具有相同的属性和行为。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 简单理解，不是很严谨</span></span><br><span class="line">我是XXX    <span class="comment"># 这是一个类</span></span><br><span class="line"></span><br><span class="line">我是周杰伦  <span class="comment"># 这是创建了一个实例（对象）周杰伦</span></span><br><span class="line">我是昆凌   <span class="comment"># 这是创建了另一个实例（对象）昆凌</span></span><br><span class="line"><span class="comment"># 两个对象具有相同的一般行为和特征</span></span><br></pre></td></tr></table></figure>
+<p>我是周杰伦，self.name= JayChou
+我和self是一样的，它是一个指向实例本身的引用，所以方法的定义必须包含形参self。self为前缀的变量可供类中所有方法使用。</p>
+<p>首字母大写的是类，类中的函数称为方法
+函数和方法本质是一样的，差别在于调用方法
+<code>_init_</code>是特殊的方法，用类创建实例时，都会自动运行它</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Restaurant</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name,<span class="built_in">type</span></span>):</span><br><span class="line">        self.restaurant_name = name</span><br><span class="line">        self.cuisine_type = <span class="built_in">type</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">describe_restaurant</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;self.restaurant_name&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;self.cuisine_type&#125;</span>&quot;</span>)</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">open_restaurant</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;the restaurant is opening&quot;</span>)</span><br><span class="line"></span><br><span class="line">restaurant = Restaurant(<span class="string">&quot;尚丹佳&quot;</span>,<span class="string">&quot;饭店&quot;</span>) <span class="comment"># 创建了一个restaurant的实例</span></span><br><span class="line">restaurant.describe_restaurant()</span><br><span class="line">restaurant.open_restaurant()</span><br></pre></td></tr></table></figure>
+<p>一个模块（一个.py文件）中存储多个类
+一个文件夹有一个mycar.py文件(一个模块)，该py文件中包含Car类和Battery类</p>
+<p>导入模块中的一部分类： from 模块 import 类 form mycar import
+Car，Battery</p>
+<p>导入整个模块： import 模块</p>
+<p>包（库）包含多个模块。</p>
+<p>下载了一个gapminder包（库）：包里有如下内容：</p>
+<p><img
+src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120223939.png" /></p>
+<p>导入包后，要使用包的类或函数，都是直接<code>包名.函数</code>或者<code>包名.类</code>
+也可以用 <code>import  包  as  别名</code> 去简化包名，方便一些。</p>
+<p>比如这个包有3个模块（3个py文件）</p>
+<p>init模块（该模块定义了一个属性）：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> .data <span class="keyword">import</span> _load_gapminder</span><br><span class="line"><span class="keyword">from</span> .version <span class="keyword">import</span> __version__</span><br><span class="line">gapminder = _load_gapminder()</span><br></pre></td></tr></table></figure>
+<p>data模块(该模块定义了一个函数)：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pkg_resources</span><br><span class="line"><span class="keyword">from</span> io <span class="keyword">import</span> StringIO</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_load_gapminder</span>():</span><br><span class="line">    content = pkg_resources.resource_string(<span class="string">&#x27;gapminder&#x27;</span>, <span class="string">&#x27;gapminder.csv&#x27;</span>).decode()</span><br><span class="line">    <span class="keyword">return</span> pd.read_csv(StringIO(content))</span><br></pre></td></tr></table></figure>
+<p>version模块（该模块定义了一个属性）：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">__version__ = <span class="number">0.1</span></span><br></pre></td></tr></table></figure>
+<p>包的使用： 导入包后，包内的属性和函数就可以使用了</p>
+<p><img
+src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225544.png" /></p>
+<p><img
+src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225259.png" /></p>
+<p><img
+src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225615.png" /></p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">python中的模块、库、包有什么区别？
+- 风影忍着的回答 - 知乎
+<a href="https://www.zhihu.com/question/30082392/answer/2030353759">https://www.zhihu.com/question/30082392/answer/2030353759</a><a href="#fnref:1" rev="footnote">
 ↩︎</a></span>
 </li>
 </ol>
