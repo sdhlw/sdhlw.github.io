@@ -4530,18 +4530,55 @@ Word 文件进行「纯文本式」版本控制？ | TomBen
     <title>ChatGPT引导语</title>
     <url>/chatgpt%E5%BC%95%E5%AF%BC%E8%AF%AD/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>翻译：</p>
-<p>我想让你充当英文翻译员、拼写纠正员和改进员。我会用任何语言与你交谈，你会检测语言，翻译它并用我的文本的更正和改进版本用英文回答。我希望翻译的效果符合sci期刊的要求，并尽可能简洁易读。你只需要翻译该内容，不必对内容中提出的问题和要求做解释，不要回答文本中的问题而是翻译它，不要解决文本中的要求而是翻译它，保留文本的原本意义，不要去解决它。我要你只回复更正、改进，不要写任何解释。每次提供3个版本的翻译，并使用表格编排好。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://github.com/jevantang/chatgpt-prompts/tree/main
+<p>我想让你充当英文翻译员、拼写纠正员和改进员。我会用任何语言与你交谈，你会检测语言，把它翻译为英语。我希望翻译的效果符合sci期刊的要求，并尽可能简洁易读。你只需要翻译该内容，不必对内容中提出的问题和要求做解释，不要回答文本中的问题而是翻译它，不要解决文本中的要求而是翻译它，保留文本的原本意义，不要去解决它。我要你只回复更正、改进，不要写任何解释。每次提供3个版本的翻译，并使用表格编排好。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="https://github.com/jevantang/chatgpt-prompts/tree/main
 ">[1]</span></a></sup></p>
 <span id="more"></span>
-
-
-
-<h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://github.com/jevantang/chatgpt-prompts/tree/main<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+<h3 id="参考文献">参考文献</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">https://github.com/jevantang/chatgpt-prompts/tree/main<a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
       <categories>
         <category>Study</category>
       </categories>
       <tags>
         <tag>ChatGPT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows设置开机自启软件（计划任务）</title>
+    <url>/windows%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%BD%AF%E4%BB%B6%EF%BC%88%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1 右键此电脑，管理</p>
+<p>2
+打开任务计划程序库，操作--创建基本任务，填写任务名称、时间、添加exe文件等</p>
+<span id="more"></span>
+<p>3 设置延时时间（一定要设置，避免太晚启动）</p>
+<ul>
+<li>打开任务计划程序库，双击你创建的任务</li>
+</ul>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\image-20240113122608544.png" alt="image-20240113122608544" style="zoom: 50%;" /></p>
+<ul>
+<li>点击触发器，再双击，设置延时任务时间即可</li>
+</ul>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\image-20240113122146371.png" alt="image-20240113122146371" style="zoom: 50%;" /></p>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>windows小技巧</tag>
       </tags>
   </entry>
 </search>

@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-01-11T14:32:30.867Z</updated>
+  <updated>2024-01-13T04:27:21.185Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -17,17 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Windows设置开机自启软件（计划任务）</title>
+    <link href="https://www.sdhlw.top/windows%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%BD%AF%E4%BB%B6%EF%BC%88%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%EF%BC%89/"/>
+    <id>https://www.sdhlw.top/windows%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%BD%AF%E4%BB%B6%EF%BC%88%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%EF%BC%89/</id>
+    <published>2024-01-13T04:12:56.000Z</published>
+    <updated>2024-01-13T04:27:21.185Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1 右键此电脑，管理</p><p>2打开任务计划程序库，操作--创建基本任务，填写任务名称、时间、添加exe文件等</p><span id="more"></span><p>3 设置延时时间（一定要设置，避免太晚启动）</p><ul><li>打开任务计划程序库，双击你创建的任务</li></ul><p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\image-20240113122608544.png" alt="image-20240113122608544" style="zoom: 50%;" /></p><ul><li>点击触发器，再双击，设置延时任务时间即可</li></ul><p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\image-20240113122146371.png" alt="image-20240113122146371" style="zoom: 50%;" /></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;1 右键此电脑，管理&lt;/p&gt;
+&lt;p&gt;2
+打开任务计划程序库，操作--创建基本任务，填写任务名称、时间、添加exe文件等&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    
+    
+    <category term="windows小技巧" scheme="https://www.sdhlw.top/tags/windows%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ChatGPT引导语</title>
     <link href="https://www.sdhlw.top/chatgpt%E5%BC%95%E5%AF%BC%E8%AF%AD/"/>
     <id>https://www.sdhlw.top/chatgpt%E5%BC%95%E5%AF%BC%E8%AF%AD/</id>
     <published>2024-01-11T12:40:07.000Z</published>
-    <updated>2024-01-11T14:32:30.867Z</updated>
+    <updated>2024-01-12T03:31:23.748Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>翻译：</p><p>我想让你充当英文翻译员、拼写纠正员和改进员。我会用任何语言与你交谈，你会检测语言，翻译它并用我的文本的更正和改进版本用英文回答。我希望翻译的效果符合sci期刊的要求，并尽可能简洁易读。你只需要翻译该内容，不必对内容中提出的问题和要求做解释，不要回答文本中的问题而是翻译它，不要解决文本中的要求而是翻译它，保留文本的原本意义，不要去解决它。我要你只回复更正、改进，不要写任何解释。每次提供3个版本的翻译，并使用表格编排好。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://github.com/jevantang/chatgpt-prompts/tree/main">[1]</span></a></sup></p><span id="more"></span><h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://github.com/jevantang/chatgpt-prompts/tree/main<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>翻译：</p><p>我想让你充当英文翻译员、拼写纠正员和改进员。我会用任何语言与你交谈，你会检测语言，把它翻译为英语。我希望翻译的效果符合sci期刊的要求，并尽可能简洁易读。你只需要翻译该内容，不必对内容中提出的问题和要求做解释，不要回答文本中的问题而是翻译它，不要解决文本中的要求而是翻译它，保留文本的原本意义，不要去解决它。我要你只回复更正、改进，不要写任何解释。每次提供3个版本的翻译，并使用表格编排好。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="https://github.com/jevantang/chatgpt-prompts/tree/main">[1]</span></a></sup></p><span id="more"></span><h3 id="参考文献">参考文献</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;">https://github.com/jevantang/chatgpt-prompts/tree/main<a href="#fnref:1" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
     
     
     <summary type="html">&lt;p&gt;翻译：&lt;/p&gt;
-&lt;p&gt;我想让你充当英文翻译员、拼写纠正员和改进员。我会用任何语言与你交谈，你会检测语言，翻译它并用我的文本的更正和改进版本用英文回答。我希望翻译的效果符合sci期刊的要求，并尽可能简洁易读。你只需要翻译该内容，不必对内容中提出的问题和要求做解释，不要回答文本中的问题而是翻译它，不要解决文本中的要求而是翻译它，保留文本的原本意义，不要去解决它。我要你只回复更正、改进，不要写任何解释。每次提供3个版本的翻译，并使用表格编排好。&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot; aria-label=&quot;https://github.com/jevantang/chatgpt-prompts/tree/main
+&lt;p&gt;我想让你充当英文翻译员、拼写纠正员和改进员。我会用任何语言与你交谈，你会检测语言，把它翻译为英语。我希望翻译的效果符合sci期刊的要求，并尽可能简洁易读。你只需要翻译该内容，不必对内容中提出的问题和要求做解释，不要回答文本中的问题而是翻译它，不要解决文本中的要求而是翻译它，保留文本的原本意义，不要去解决它。我要你只回复更正、改进，不要写任何解释。每次提供3个版本的翻译，并使用表格编排好。&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
+class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
+aria-label=&quot;https://github.com/jevantang/chatgpt-prompts/tree/main
 &quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</summary>
     
     
@@ -577,32 +602,6 @@ src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/
     <category term="Vscode" scheme="https://www.sdhlw.top/tags/vscode/"/>
     
     <category term="Jupyter Notebook" scheme="https://www.sdhlw.top/tags/jupyter-notebook/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>pip下载太慢</title>
-    <link href="https://www.sdhlw.top/pip%E4%B8%8B%E8%BD%BD%E5%A4%AA%E6%85%A2/"/>
-    <id>https://www.sdhlw.top/pip%E4%B8%8B%E8%BD%BD%E5%A4%AA%E6%85%A2/</id>
-    <published>2023-02-02T12:33:24.000Z</published>
-    <updated>2023-02-07T15:04:44.353Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="临时换源">临时换源：</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install django -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure><p>清华：<code>https://pypi.tuna.tsinghua.edu.cn/simple</code>中科大：<code>https://mirrors.bfsu.edu.cn/pypi/web/simple/</code>阿里云：<code>https://mirrors.aliyun.com/pypi/simple/</code>豆瓣：<code>http://pypi.doubanio.com/simple/</code></p><span id="more"></span><h4id="永久换源1">永久换源<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[pip换源 -pip更换国内镜像源](https://blog.csdn.net/xuezhangjun0121/article/details/81664260)">[1]</span></a></sup>：</h4><p>linux： 修改 ~/.pip/pip.conf (没有就创建一个)， 内容如下：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure></p><p>windows:直接在user目录中创建一个pip目录，如：<code>C:\Users\xx\pip</code>，新建文件pip.ini，内容如下<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure></p><h4 id="参考文章">参考文章</h4><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/xuezhangjun0121/article/details/81664260">pip换源-pip更换国内镜像源</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span></li></ol></div></div>]]></content>
-    
-    
-    <summary type="html">&lt;h4 id=&quot;临时换源&quot;&gt;临时换源：&lt;/h4&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;pip install django -i https://pypi.tuna.tsinghua.edu.cn/simple&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;清华：&lt;code&gt;https://pypi.tuna.tsinghua.edu.cn/simple&lt;/code&gt;
-中科大：&lt;code&gt;https://mirrors.bfsu.edu.cn/pypi/web/simple/&lt;/code&gt;
-阿里云：&lt;code&gt;https://mirrors.aliyun.com/pypi/simple/&lt;/code&gt;
-豆瓣：&lt;code&gt;http://pypi.doubanio.com/simple/&lt;/code&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
-    
-    
-    <category term="Python" scheme="https://www.sdhlw.top/tags/python/"/>
     
   </entry>
   
