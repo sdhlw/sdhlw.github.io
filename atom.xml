@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-01-13T04:27:21.185Z</updated>
+  <updated>2024-01-13T08:24:08.072Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -17,13 +17,65 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>图片类型</title>
+    <link href="https://www.sdhlw.top/%E5%9B%BE%E7%89%87%E7%B1%BB%E5%9E%8B/"/>
+    <id>https://www.sdhlw.top/%E5%9B%BE%E7%89%87%E7%B1%BB%E5%9E%8B/</id>
+    <published>2024-01-13T07:56:14.000Z</published>
+    <updated>2024-01-13T08:24:08.072Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401131555210.png" style="zoom:67%;" /></p><p>位图放大后会出现马赛克（图像变模糊），矢量图放大不会出现马赛克。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[【4. 论文作图之图片的大小：像素数目、分辨率的正确调整方法】](https://www.bilibili.com/video/BV1Ke4y1e7Ve/?share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9)">[1]</span></a></sup> 论文提交时一般要求图片格式为. jpg 或. tif 或.eps，可使用相关软件来转换格式。</p><p>科研工作中，位图：矢量图≈7:3，即用到的位图多一些。一矢量图转化为位图一一容易，效果好一位图转化为矢量图一一比较难，效果不好 科研工作中常用的矢量图主要有：一示意图 -数据图 (excel等数据处理软件做的图) -化学结构式</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401131555273.png" style="zoom:67%;" /></p><h4 id="图片的格式转换">图片的格式转换</h4><p>论文提交时，一般要求上传图片的格式为 jpg 或 tif 或 eps,参考杂志的投稿说明。 图片的格式转换方法</p><ul><li>方法 1: PowerPoint 中的“图片另存为”</li><li>方法 2: Photoshop 中的“另存为”</li><li>方法 3: Windowsi 画图程序中的“另存为”</li></ul><p>矢量pdf转emf：https://convert2.cn/pdf-to-emf</p><h4 id="图片的大小">图片的大小</h4><p>像素的概念 像素 Pixel一位图的基本单位。</p><p>图片大小的 4 个容易混淆的概念</p><ul><li>像素数目 (Pixels): 宽 1024 px, 768 px</li><li>实际尺寸 (Print Size): 厘米，英尺 Inch</li><li>分辨率 (Resolution): DPI (dots per inch)</li><li>占用磁盘空间：几兆 M, 几 k</li></ul><p>像素数目（垂直或水平）=分辨率×实际尺寸 Pixels=Resolution (DPI) XPrint size (in inches)</p><p>图片质量取决于：1 像素数目；2 颜色种类（位深度）。</p><p>平时所说的屏幕分辨率、相机分辨率，其实指的是像素数目</p><p>Elsevier's limits on 图片实际尺寸</p><ul><li>A 4 纸：21 cm×29.7 cm</li><li>最小图片：3.0 cm</li><li>单栏图片：9.0 cm</li><li>1.5 栏图片：14.0 cm</li><li>双栏图片：19.0 cm</li></ul><h4 id="elsevier-s-limits-on-占用磁盘空间">Elsevier 's limits on占用磁盘空间</h4><ul><li>The size of your figures will also affect if they can be uploadedsuccessfully. We recommend that figures are not larger than 2 MBeach.</li><li>If your figures are larger you may need to reduce the resolution orsave them in a different format.（两种解决方法）</li><li>Often journals have an individual limit on file size</li></ul><p>图片大小的调整方法 图片大小调整应遵守的原则</p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1Ke4y1e7Ve/?share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9">【4.论文作图之图片的大小：像素数目、分辨率的正确调整方法】</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;&lt;img src=&quot;htt</summary>
+      
+    
+    
+    
+    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    
+    
+    <category term="矢量图" scheme="https://www.sdhlw.top/tags/%E7%9F%A2%E9%87%8F%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>word支持的插入图片格式</title>
+    <link href="https://www.sdhlw.top/word%E6%94%AF%E6%8C%81%E7%9A%84%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F/"/>
+    <id>https://www.sdhlw.top/word%E6%94%AF%E6%8C%81%E7%9A%84%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F/</id>
+    <published>2024-01-13T06:28:33.000Z</published>
+    <updated>2024-01-13T06:30:18.318Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span><figure><imgsrc="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\image-20240113143016946.png"alt="image-20240113143016946" /><figcaption aria-hidden="true">image-20240113143016946</figcaption></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;figure&gt;
+&lt;img
+</summary>
+      
+    
+    
+    
+    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    
+    
+    <category term="word" scheme="https://www.sdhlw.top/tags/word/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Windows设置开机自启软件（计划任务）</title>
     <link href="https://www.sdhlw.top/windows%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%BD%AF%E4%BB%B6%EF%BC%88%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%EF%BC%89/"/>
     <id>https://www.sdhlw.top/windows%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%BD%AF%E4%BB%B6%EF%BC%88%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%EF%BC%89/</id>
     <published>2024-01-13T04:12:56.000Z</published>
-    <updated>2024-01-13T04:27:21.185Z</updated>
+    <updated>2024-01-13T07:50:51.036Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1 右键此电脑，管理</p><p>2打开任务计划程序库，操作--创建基本任务，填写任务名称、时间、添加exe文件等</p><span id="more"></span><p>3 设置延时时间（一定要设置，避免太晚启动）</p><ul><li>打开任务计划程序库，双击你创建的任务</li></ul><p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\image-20240113122608544.png" alt="image-20240113122608544" style="zoom: 50%;" /></p><ul><li>点击触发器，再双击，设置延时任务时间即可</li></ul><p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\image-20240113122146371.png" alt="image-20240113122146371" style="zoom: 50%;" /></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1 右键此电脑，管理</p><p>2打开任务计划程序库，操作--创建基本任务，填写任务名称、时间、添加exe文件等</p><span id="more"></span><p>3 设置延时时间（一定要设置，避免太晚启动）</p><ul><li>打开任务计划程序库，双击你创建的任务</li></ul><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401131550280.png" alt="image-20240113122608544" style="zoom: 50%;" /></p><ul><li>点击触发器，再双击，设置延时任务时间即可</li></ul><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401131550679.png" alt="image-20240113122146371" style="zoom: 50%;" /></p>]]></content>
     
     
     <summary type="html">&lt;p&gt;1 右键此电脑，管理&lt;/p&gt;
@@ -551,57 +603,6 @@ alt=&quot;img&quot; /&gt;&lt;/p&gt;</summary>
     <category term="Python" scheme="https://www.sdhlw.top/tags/python/"/>
     
     <category term="Numpy" scheme="https://www.sdhlw.top/tags/numpy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vscode &amp; Jupyter-Notebook：Output exceeds the size limit</title>
-    <link href="https://www.sdhlw.top/vscode-jupyter-notebook%EF%BC%9Aoutput-exceeds-the-size-limit/"/>
-    <id>https://www.sdhlw.top/vscode-jupyter-notebook%EF%BC%9Aoutput-exceeds-the-size-limit/</id>
-    <published>2023-02-05T16:48:05.000Z</published>
-    <updated>2023-02-07T07:10:20.530Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Output exceeds the size limit. Open the full output data in a texteditor</p><p>每次报错信息过多就要用文本编辑器打开，可是打开之后都是没编译的，乱码看起来很难受。</p><span id="more"></span><p>参考了这篇<ahref="https://stackoverflow.com/questions/72823258/vscode-interactive-python-output-exceeds-size-limit">回答</a>，找到以下解决方案，我修改为1000：</p><p><imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302060049102.png" /></p><p>修改之后，重启Vscode即可。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Output exceeds the size limit. Open the full output data in a text
-editor&lt;/p&gt;
-&lt;p&gt;每次报错信息过多就要用文本编辑器打开，可是打开之后都是没编译的，乱码看起来很难受。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
-    
-    
-    <category term="Vscode" scheme="https://www.sdhlw.top/tags/vscode/"/>
-    
-    <category term="Jupyter Notebook" scheme="https://www.sdhlw.top/tags/jupyter-notebook/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vscode的Jupyter的change presentation</title>
-    <link href="https://www.sdhlw.top/vscode%E7%9A%84jupyter%E7%9A%84change-presentation/"/>
-    <id>https://www.sdhlw.top/vscode%E7%9A%84jupyter%E7%9A%84change-presentation/</id>
-    <published>2023-02-05T16:41:09.000Z</published>
-    <updated>2023-02-05T16:43:13.845Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：每次使用绘图，都是需要手动切换Change presentations来看到绘图结果，想要把image设置为默认显示，而不是txt。</p><p><imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247820.png" /></p><span id="more"></span><p>解决方法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Change mimetype for VSC Jupyter Notebook ouput](https://stackoverflow.com/questions/68555264/change-mimetype-for-vsc-jupyter-notebook-ouput)">[1]</span></a></sup>：</p><p>1、打开 <code>settings.json</code> 文件</p><p><imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247208.png" /></p><p><imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247352.png" /></p><p>2、搜索notebook，找到notebook设置部分，加入这句：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&quot;notebook.displayOrder&quot;: [&quot;image/png&quot;, &quot;text/plain&quot;]</span><br></pre></td></tr></table></figure><p>如果已经存在该句，把 <code>"image/png"</code>放在前面；放进去注意格式，放在中间记得末尾加逗号，放在最后，前面一句记得加逗号；</p><p>我的设置：</p><p><imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247432.png" /></p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://stackoverflow.com/questions/68555264/change-mimetype-for-vsc-jupyter-notebook-ouput">Changemimetype for VSC Jupyter Notebookouput</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span></li></ol></div></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;需求：每次使用绘图，都是需要手动切换Change presentations
-来看到绘图结果，想要把image设置为默认显示，而不是txt。&lt;/p&gt;
-&lt;p&gt;&lt;img
-src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247820.png&quot; /&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
-    
-    
-    <category term="Vscode" scheme="https://www.sdhlw.top/tags/vscode/"/>
-    
-    <category term="Jupyter Notebook" scheme="https://www.sdhlw.top/tags/jupyter-notebook/"/>
     
   </entry>
   
