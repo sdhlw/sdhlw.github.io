@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-01-13T12:00:22.192Z</updated>
+  <updated>2024-01-14T14:45:53.740Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>P2七校巡回演讲002图像基础知识和规范</title>
+    <link href="https://www.sdhlw.top/p2%E4%B8%83%E6%A0%A1%E5%B7%A1%E5%9B%9E%E6%BC%94%E8%AE%B2002%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%92%8C%E8%A7%84%E8%8C%83/"/>
+    <id>https://www.sdhlw.top/p2%E4%B8%83%E6%A0%A1%E5%B7%A1%E5%9B%9E%E6%BC%94%E8%AE%B2002%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%92%8C%E8%A7%84%E8%8C%83/</id>
+    <published>2024-01-14T14:45:53.000Z</published>
+    <updated>2024-01-14T14:45:53.740Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141655230.png" alt="image-20240114165454219" style="zoom:20%;" /><p>ppt绘制的图片，可导出位图、矢量图（emf、wmf）</p><!--more--><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142211627.png" alt="image-20240114215700935" style="zoom:20%;" /><p>颜色种类对应位深度</p><p>查看图片信息：</p><ul><li><p>windows：右键–属性–详细信息</p></li><li><p>Photoshop：</p><ul><li><p>图像–图像大小：看dpi、实际尺寸</p></li><li><p>图像–模式（勾选rgb,8位通道），三种通道，每个通道有<code>2^8</code>种颜色，总的颜色种类有（<code>2^8</code>）×（<code>2^8</code>）×（<code>2^8</code>）&#x3D;<code>2^24</code></p></li><li><p>文件–存储为tiff：lzw压缩投稿</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142223031.png" alt="image-20240114221227959" style="zoom:25%;" /></li></ul></li></ul><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142218219.png" alt="image-20240114221820943" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142223062.png" alt="image-20240114222122722" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142223967.png" alt="image-20240114222258469" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142228198.png" alt="image-20240114222825173" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142232244.png" alt="image-20240114223159718" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142235076.png" alt="image-20240114223450999" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142236595.png" alt="image-20240114223554710" style="zoom:20%;" /><center>300dpi对最小图片要求像素354</center><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142238968.png" alt="image-20240114223804301" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142240705.png" alt="image-20240114224017027" style="zoom:20%;" /><p>等宽字体：</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142242708.png" alt="image-20240114224216948" style="zoom:25%;" /><p>第三种字体symbol:</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142244649.png" alt="image-20240114224358396" style="zoom:20%;" />]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+
+&lt;img src=&quot;https</summary>
+      
+    
+    
+    
+    
+    <category term="科研绘图" scheme="https://www.sdhlw.top/tags/%E7%A7%91%E7%A0%94%E7%BB%98%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>P1科研四部曲：论文作图、数据处理、大学技巧、实验图等</title>
+    <link href="https://www.sdhlw.top/p1%E7%A7%91%E7%A0%94%E5%9B%9B%E9%83%A8%E6%9B%B2%EF%BC%9A%E8%AE%BA%E6%96%87%E4%BD%9C%E5%9B%BE%E3%80%81%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E3%80%81%E5%A4%A7%E5%AD%A6%E6%8A%80%E5%B7%A7%E3%80%81%E5%AE%9E%E9%AA%8C%E5%9B%BE%E7%AD%89/"/>
+    <id>https://www.sdhlw.top/p1%E7%A7%91%E7%A0%94%E5%9B%9B%E9%83%A8%E6%9B%B2%EF%BC%9A%E8%AE%BA%E6%96%87%E4%BD%9C%E5%9B%BE%E3%80%81%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E3%80%81%E5%A4%A7%E5%AD%A6%E6%8A%80%E5%B7%A7%E3%80%81%E5%AE%9E%E9%AA%8C%E5%9B%BE%E7%AD%89/</id>
+    <published>2024-01-14T13:46:12.000Z</published>
+    <updated>2024-01-14T13:46:12.296Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span><p>笔记来源：<a href="https://www.bilibili.com/video/BV1F4411e7nw?p=1&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">https://www.bilibili.com/video/BV1F4411e7nw?p=1&amp;vd_source=9f04b059fdee5024fd04678f53de10ad</a></p><!--more--><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651883.png" alt="image-20240114164521901" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651824.png" alt="image-20240114164659967" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651577.png" alt="image-20240114164755545" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651140.png" alt="image-20240114164934168" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651451.png" alt="image-20240114165013621" style="zoom:20%;" />]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+
+&lt;p&gt;笔记来源：&lt;a href</summary>
+      
+    
+    
+    
+    
+    <category term="科研绘图" scheme="https://www.sdhlw.top/tags/%E7%A7%91%E7%A0%94%E7%BB%98%E5%9B%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>word支持的插入图片格式</title>
@@ -553,54 +603,6 @@ alt=&quot;img&quot; /&gt;&lt;/p&gt;</summary>
     <category term="专业书笔记" scheme="https://www.sdhlw.top/tags/%E4%B8%93%E4%B8%9A%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
     <category term="Machine Learning" scheme="https://www.sdhlw.top/tags/machine-learning/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Numpy不用省略号和科学计数法</title>
-    <link href="https://www.sdhlw.top/numpy%E4%B8%8D%E7%94%A8%E7%9C%81%E7%95%A5%E5%8F%B7%E5%92%8C%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/"/>
-    <id>https://www.sdhlw.top/numpy%E4%B8%8D%E7%94%A8%E7%9C%81%E7%95%A5%E5%8F%B7%E5%92%8C%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</id>
-    <published>2023-02-07T06:33:00.000Z</published>
-    <updated>2023-02-07T06:35:22.979Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">np.set_printoptions(threshold = np.inf) <span class="comment"># 不使用省略号表示</span></span><br><span class="line">np.set_printoptions(suppress = <span class="literal">True</span>) <span class="comment"># 不使用科学计数显示</span></span><br></pre></td></tr></table></figure><span id="more"></span>]]></content>
-    
-    
-    <summary type="html">&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; numpy &lt;span class=&quot;keyword&quot;&gt;as&lt;/span&gt; np&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;np.set_printoptions(threshold = np.inf) &lt;span class=&quot;comment&quot;&gt;# 不使用省略号表示&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;np.set_printoptions(suppress = &lt;span class=&quot;literal&quot;&gt;True&lt;/span&gt;) &lt;span class=&quot;comment&quot;&gt;# 不使用科学计数显示&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
-    
-    
-    <category term="Python" scheme="https://www.sdhlw.top/tags/python/"/>
-    
-    <category term="Numpy" scheme="https://www.sdhlw.top/tags/numpy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vscode &amp; Jupyter-Notebook：Output exceeds the size limit</title>
-    <link href="https://www.sdhlw.top/vscode-jupyter-notebook%EF%BC%9Aoutput-exceeds-the-size-limit/"/>
-    <id>https://www.sdhlw.top/vscode-jupyter-notebook%EF%BC%9Aoutput-exceeds-the-size-limit/</id>
-    <published>2023-02-05T16:48:05.000Z</published>
-    <updated>2023-02-07T07:10:20.530Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Output exceeds the size limit. Open the full output data in a texteditor</p><p>每次报错信息过多就要用文本编辑器打开，可是打开之后都是没编译的，乱码看起来很难受。</p><span id="more"></span><p>参考了这篇<ahref="https://stackoverflow.com/questions/72823258/vscode-interactive-python-output-exceeds-size-limit">回答</a>，找到以下解决方案，我修改为1000：</p><p><imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302060049102.png" /></p><p>修改之后，重启Vscode即可。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Output exceeds the size limit. Open the full output data in a text
-editor&lt;/p&gt;
-&lt;p&gt;每次报错信息过多就要用文本编辑器打开，可是打开之后都是没编译的，乱码看起来很难受。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
-    
-    
-    <category term="Vscode" scheme="https://www.sdhlw.top/tags/vscode/"/>
-    
-    <category term="Jupyter Notebook" scheme="https://www.sdhlw.top/tags/jupyter-notebook/"/>
     
   </entry>
   
