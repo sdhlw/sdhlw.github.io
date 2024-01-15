@@ -947,7 +947,8 @@ href="https://stackoverflow.com/questions/55289288/change-ipython-stream-encodin
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="软件">软件:</h4>
 <ul>
 <li><p>Edge浏览器（已换谷歌内核，且扩展丰富，无需翻墙即可添加多数Google扩展），Chrome浏览器、360极速浏览器、</p></li>
-<li><p>Foxmail（邮箱）、Bandizip（解压软件）、LICEcap（录屏GIF）、Snipaste（截图，贴图）</p></li>
+<li><p>Foxmail（邮箱）、Bandizip（解压软件）、LICEcap（录屏GIF）、Snipaste（截图，贴图）、FastStone
+Image Viewer（图片查看器）</p></li>
 <li><p>Typora（Markdown编辑器）、Listary（快速搜索文件文件夹）、百度网盘、PanDownload（百度云解除）、Xmind(思维导图)</p></li>
 <li><p>ripgrep(命令行搜索软件，用于搜索纯文本文件内容)、<a
 href="https://chocolatey.org/install">Chocolatey</a>(软件管理，下载一些Windows的命令行工具)、rga(ripgrep-all，可搜pdf等其他格式)</p></li>
@@ -4650,19 +4651,19 @@ Word 文件进行「纯文本式」版本控制？ | TomBen
       </tags>
   </entry>
   <entry>
-    <title>关于图片</title>
+    <title>图片基本概念</title>
     <url>/%E5%85%B3%E4%BA%8E%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
-<h3 id="图片基本概念">图片基本概念</h3>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="图片基本概念">图片基本概念</h3>
 <h4 id="位图与矢量图">位图与矢量图</h4>
 <p>图片格式主要分为位图（Bitmap）和矢量图（Vector）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
 class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://mp.weixin.qq.com/s?__biz=MzIyODA4NDE1OA==&amp;mid=2247487677&amp;idx=1&amp;sn=25d77ffdd7e7787b292e0c6bb037f493&amp;chksm=e856006cdf21897a7c35607978634b635b4452ae6c8b955d095352a84f7892f83a021242c703&amp;scene=21#wechat_redirect
+aria-label="[【果断收藏】SCI期刊的图片接收要求！](https://mp.weixin.qq.com/s?__biz=MzIyODA4NDE1OA==&amp;mid=2247487677&amp;idx=1&amp;sn=25d77ffdd7e7787b292e0c6bb037f493&amp;chksm=e856006cdf21897a7c35607978634b635b4452ae6c8b955d095352a84f7892f83a021242c703&amp;scene=21#wechat_redirect)
 ">[1]</span></a></sup>。</p>
 <ul>
 <li><p><strong>位图</strong>：（也可叫栅格图、点阵图）由像素点构成，放大之后可见如马赛克般的像素小点。位图常为.psd、.tiff、.jpg、.png、.bmp。处理位图时，输出图像的质量取决于处理过程开始时设置的分辨率高低。</p></li>
 <li><p><strong>矢量图</strong>：任意放大但清晰度不变，拥有无限的分辨率。矢量图常为.wmf、.emf、.cdx、.ai、.eps、.svg、.pdf、文档。</p></li>
 </ul>
+<span id="more"></span>
 <p>目前多数期刊要求图片格式为TIFF位图或者EPS矢量图，并且通常要求形成独立文档。因此，建议科研图片保存为TIFF位图或者EPS矢量图。</p>
 <p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\image-20240114151328331.png" alt="" style="zoom: 25%;" /></p>
 <p>Tip1：建议大家保存图形、表、示意图或其他线图为矢量图。保存照片、复杂的插图为位图。</p>
@@ -4675,7 +4676,7 @@ Illustrator转存成TIFF文档才指定分辨率，而使用Photoshop打开PDF�
 <h4 id="像素pxpixel">像素px（Pixel）</h4>
 <p>它就是一个点，一个像素点，是屏幕上显示数据的最基本的点，单个像素没有具体的尺寸概念。相同尺寸的显示器下，像素越多，单个像素的尺寸就越小，屏幕越清晰；像素越少，单个像素的尺寸就越大，屏幕越模糊。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
 class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://zhuanlan.zhihu.com/p/434250550
+aria-label="[【知识点】不明白px、pt、ppi、dpi、位图、矢量图？该收藏这篇文章了！](https://zhuanlan.zhihu.com/p/434250550)
 ">[2]</span></a></sup>比如某张图片像素数目 (Pixels)：宽 1024 px, 768
 px</p>
 <h4 id="ptpoint">pt（Point）</h4>
@@ -4685,7 +4686,8 @@ px</p>
 <h4 id="dpidots-per-inch">dpi（Dots per inch）</h4>
 <p>打印分辨率，一个密度单位，指每英寸点数，是一个量度单位，用于点阵数码影像，指每一英寸长度中，取样、可显示或输出点的数目。「dot」一般也翻译为「点」，但此点（dot）非彼点（point）。dot
 是用在打印设备上，所以它描绘的是打印精度，1英寸所能打印的墨点数量，值越大，印刷越精细。大部分期刊要求的是300dpi及以上的分辨率，之所以这样要求，是因为最后文章是要用于出版的，而杂志的出版方式以纸质要求为准。dpi是打印机通过墨粉成滴将图像呈现在纸张上的一种表述方式。当杂志只有在线形式时，一般要求的就是ppi，而大多杂志都是有纸质刊物的，所以都要求的是dpi。</p>
-<p><strong>实际尺寸 (Print Size)</strong>: 厘米 cm，英尺 inch</p>
+<p><strong>实际尺寸 (Print Size)</strong>: 厘米 cm，英尺
+inch。1英寸为2.54 厘米</p>
 <p>占用磁盘空间：几兆 M, 几 k</p>
 <p>常见换算：</p>
 <ul>
@@ -4712,7 +4714,6 @@ inches)</p></li>
 <li>方法 3: Windowsi 画图程序中的“另存为”</li>
 </ul>
 <p>矢量pdf转emf：https://convert2.cn/pdf-to-emf</p>
-<h4 id="section"></h4>
 <h3 id="参考文章">参考文章</h3>
 <div id="footnotes">
 <hr>
@@ -4720,13 +4721,14 @@ inches)</p></li>
 <ol style="list-style: none; padding-left: 0; margin-left: 40px">
 <li id="fn:1">
 <span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://mp.weixin.qq.com/s?__biz=MzIyODA4NDE1OA==&amp;mid=2247487677&amp;idx=1&amp;sn=25d77ffdd7e7787b292e0c6bb037f493&amp;chksm=e856006cdf21897a7c35607978634b635b4452ae6c8b955d095352a84f7892f83a021242c703&amp;scene=21#wechat_redirect<a href="#fnref:1" rev="footnote">
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://mp.weixin.qq.com/s?__biz=MzIyODA4NDE1OA==&amp;mid=2247487677&amp;idx=1&amp;sn=25d77ffdd7e7787b292e0c6bb037f493&amp;chksm=e856006cdf21897a7c35607978634b635b4452ae6c8b955d095352a84f7892f83a021242c703&amp;scene=21#wechat_redirect">【果断收藏】SCI期刊的图片接收要求！</a><a href="#fnref:1" rev="footnote">
 ↩︎</a></span>
 </li>
 <li id="fn:2">
 <span
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://zhuanlan.zhihu.com/p/434250550<a href="#fnref:2" rev="footnote">
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/434250550">【知识点】不明白px、pt、ppi、dpi、位图、矢量图？该收藏这篇文章了！</a><a href="#fnref:2" rev="footnote">
 ↩︎</a></span>
 </li>
 <li id="fn:3">
@@ -4740,9 +4742,12 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
 </div>
 </div>
 ]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
       <tags>
         <tag>矢量图</tag>
-        <tag>科研</tag>
+        <tag>科研绘图</tag>
       </tags>
   </entry>
 </search>
