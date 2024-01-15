@@ -4652,9 +4652,8 @@ Word 文件进行「纯文本式」版本控制？ | TomBen
   </entry>
   <entry>
     <title>图片基本概念</title>
-    <url>/%E5%85%B3%E4%BA%8E%E5%9B%BE%E7%89%87/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="图片基本概念">图片基本概念</h3>
-<h4 id="位图与矢量图">位图与矢量图</h4>
+    <url>/%E5%9B%BE%E7%89%87%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="位图与矢量图">位图与矢量图</h4>
 <p>图片格式主要分为位图（Bitmap）和矢量图（Vector）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
 class="hint--top hint--error hint--medium hint--rounded hint--bounce"
 aria-label="[【果断收藏】SCI期刊的图片接收要求！](https://mp.weixin.qq.com/s?__biz=MzIyODA4NDE1OA==&amp;mid=2247487677&amp;idx=1&amp;sn=25d77ffdd7e7787b292e0c6bb037f493&amp;chksm=e856006cdf21897a7c35607978634b635b4452ae6c8b955d095352a84f7892f83a021242c703&amp;scene=21#wechat_redirect)
@@ -4665,7 +4664,7 @@ aria-label="[【果断收藏】SCI期刊的图片接收要求！](https://mp.wei
 </ul>
 <span id="more"></span>
 <p>目前多数期刊要求图片格式为TIFF位图或者EPS矢量图，并且通常要求形成独立文档。因此，建议科研图片保存为TIFF位图或者EPS矢量图。</p>
-<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\image-20240114151328331.png" alt="" style="zoom: 25%;" /></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401152247808.png" alt="" style="zoom: 25%;" /></p>
 <p>Tip1：建议大家保存图形、表、示意图或其他线图为矢量图。保存照片、复杂的插图为位图。</p>
 <p>Tip
 2：在图表转换成图片时，将图片格式设定为TIFF格式的位图或EPS的矢量图形式。</p>
@@ -4700,11 +4699,11 @@ inches)</p></li>
 </ul>
 <h4 id="图片大小">图片大小</h4>
 <p>期刊对图片的物理大小会有明确的说明，一般只会规定图片的宽度，图片可设定为单栏、1.5栏或双栏图片。</p>
-<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\image-20240113215842956.png" alt="" style="zoom:22%;" /></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401152246978.png" alt="" style="zoom:22%;" /></p>
 <h4 id="颜色模式">颜色模式</h4>
 <p>彩色图片的颜色模式一般分为两种：RGB和CMYK。简单来说，RGB用于显示屏上，CMYK用于印刷中，RGB图比CMYK图色彩更亮丽，表现效果更好。根据以上整理的各期刊的要求来看，绝大多数期刊要求提供RGB模式的图片，这大概是因为图片由RGB转变为CMYK模式较易，但反过来转变的话，图像的表现力会下降。</p>
 <p>使用绘图软件“新建文档”时就选择RGB模式，软件默认的8位/信道足够达到大多期刊的要求了，图片另存时也优先选择RGB模式。如果杂志特别要求提供CMYK模式的图片，RGB模式也很方便转换为CMYK模式！</p>
-<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\image-20240114152234971.png" alt="" style="zoom:67%;" /></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401152248364.png" alt="" style="zoom:67%;" /></p>
 <h4 id="图片的格式转换">图片的格式转换</h4>
 <p>论文提交时，一般要求上传图片的格式为 jpg 或 tif 或 eps,
 参考杂志的投稿说明。 图片的格式转换方法</p>
