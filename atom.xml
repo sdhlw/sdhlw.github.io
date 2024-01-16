@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-01-15T07:31:26.862Z</updated>
+  <updated>2024-01-16T07:51:50.290Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>等比例缩小pdf的尺寸大小</title>
+    <link href="https://www.sdhlw.top/%E7%AD%89%E6%AF%94%E4%BE%8B%E7%BC%A9%E5%B0%8Fpdf%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F/"/>
+    <id>https://www.sdhlw.top/%E7%AD%89%E6%AF%94%E4%BE%8B%E7%BC%A9%E5%B0%8Fpdf%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F/</id>
+    <published>2024-01-16T07:51:50.000Z</published>
+    <updated>2024-01-16T07:51:50.290Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span><p>软件：Adobe Acrobat Pro DC</p><p>使用软件打开相应pdf：</p><ul><li><p>文件--打印--自定义比例：调整相应比例，导出即可</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401161543556.png" alt="" style="zoom:50%;" /></p><p>导出之后，pdf中的图片变小，但是画布不变，对画布进行裁剪即可。</p><p>裁剪步骤：打开pdf--工具--编辑pdf（打开）--裁剪页面：绘制裁剪框，双击裁剪框中的内容，确定即可。</p></li></ul><!--more-->]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;软件：Adobe Acro</summary>
+      
+    
+    
+    
+    
+    <category term="科研绘图" scheme="https://www.sdhlw.top/tags/%E7%A7%91%E7%A0%94%E7%BB%98%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>adobe illustrator修改画布大小</title>
+    <link href="https://www.sdhlw.top/adobe-illustrator%E4%BF%AE%E6%94%B9%E7%94%BB%E5%B8%83%E5%A4%A7%E5%B0%8F/"/>
+    <id>https://www.sdhlw.top/adobe-illustrator%E4%BF%AE%E6%94%B9%E7%94%BB%E5%B8%83%E5%A4%A7%E5%B0%8F/</id>
+    <published>2024-01-16T07:03:15.000Z</published>
+    <updated>2024-01-16T07:03:15.483Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span><p>1、创建页面时设置大小</p><p>2、已经创建完页面，需要设置大小</p><ul><li><p>文件--文档设置--弹出窗口--编辑面板：</p><ul><li><p>1拖动虚线框上的锚点改变大小<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[ai怎么调整画布尺寸? ai设置画布大小的两种方法](https://www.jb51.net/illustrator/454077.html)">[1]</span></a></sup></p></li><li><p>2点击左上角，直接替换固定格式，或点击右上角更改尺寸大小<sup id="fnref:2"><a href="#fn:2" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[如何在Adobe Illustrator中调整画布的大小](https://hownav.com/1359.html)">[2]</span></a></sup>：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401161451959.png" alt="" style="zoom:50%;" /></p></li></ul></li></ul><!--more--><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.jb51.net/illustrator/454077.html">ai怎么调整画布尺寸?ai设置画布大小的两种方法</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li><li id="fn:2"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://hownav.com/1359.html">如何在AdobeIllustrator中调整画布的大小</a><a href="#fnref:2" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;1、创建页面时设置大小&lt;/</summary>
+      
+    
+    
+    
+    
+    <category term="adobe illustrator" scheme="https://www.sdhlw.top/tags/adobe-illustrator/"/>
+    
+  </entry>
   
   <entry>
     <title>P2七校巡回演讲002图像基础知识和规范</title>
@@ -542,59 +588,6 @@ src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/
     <category term="Python" scheme="https://www.sdhlw.top/tags/python/"/>
     
     <category term="plt" scheme="https://www.sdhlw.top/tags/plt/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决npm下载慢问题</title>
-    <link href="https://www.sdhlw.top/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/"/>
-    <id>https://www.sdhlw.top/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/</id>
-    <published>2023-02-07T14:57:33.000Z</published>
-    <updated>2023-02-07T15:14:52.640Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h5 id="npm镜像">npm镜像：</h5><p>淘宝：<code>http://registry.npm.taobao.org</code></p><p>腾讯云：<code>http://mirrors.cloud.tencent.com/npm/</code></p><p>华为云：<code>https://mirrors.huaweicloud.com/repository/npm/</code></p><span id="more"></span><h5 id="下载时临时使用淘宝镜像">下载时临时使用淘宝镜像</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install xxx --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><hr /><h5 id="永久更改镜像">永久更改镜像</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><p>再执行 <code>npm config get registry</code> 返回<code>http://registry.npm.taobao.org</code> 则设置成功</p><hr /><h5 id="通过使用淘宝定制的cnpm安装">通过使用淘宝定制的cnpm安装：</h5><ul><li>安装cnpm</li></ul><p><code>npm install -g cnpm --registry=https://registry.npmmirror.com</code></p><ul><li>使用cnpm</li></ul><p><code>cnpm install xxx</code></p>]]></content>
-    
-    
-    <summary type="html">&lt;h5 id=&quot;npm镜像&quot;&gt;npm镜像：&lt;/h5&gt;
-&lt;p&gt;淘宝：&lt;code&gt;http://registry.npm.taobao.org&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;腾讯云：&lt;code&gt;http://mirrors.cloud.tencent.com/npm/&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;华为云：&lt;code&gt;https://mirrors.huaweicloud.com/repository/npm/&lt;/code&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
-    
-    
-    <category term="NPM" scheme="https://www.sdhlw.top/tags/npm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>设置 Next 主题支持 Latex 渲染</title>
-    <link href="https://www.sdhlw.top/%E8%AE%BE%E7%BD%AE-next-%E4%B8%BB%E9%A2%98%E6%94%AF%E6%8C%81-latex-%E6%B8%B2%E6%9F%93/"/>
-    <id>https://www.sdhlw.top/%E8%AE%BE%E7%BD%AE-next-%E4%B8%BB%E9%A2%98%E6%94%AF%E6%8C%81-latex-%E6%B8%B2%E6%9F%93/</id>
-    <published>2023-02-07T14:57:07.000Z</published>
-    <updated>2023-02-07T15:15:58.219Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：让 hexo 的 next 主题支持渲染 LaTeX 语法的数学公式。</p><p>环境： <code>hexo version</code>即可查看hexo版本； <imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237479.png"alt="img" /></p><p>查看<code>theme/next/package.json</code>即可查看next版本； <imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237584.png"alt="img" /></p><span id="more"></span><p>步骤：</p><p>1、Powershell :</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-rendered-marked</span><br><span class="line">npm install hexo-<span class="built_in">filter</span>-mathjax --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><p>2、修改next主题配置文件，搜索math，找到mathjax，修改为true；</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mathjax:</span><br><span class="line">enable: true</span><br></pre></td></tr></table></figure><p>3、在文章的 front-matter 中添加 <code>mathjax: true</code>，该文章即可渲染[<ahref="app://obsidian.md/index.html#fn-1-66fd1567c623a948">1]</a>；建议将<code>mathjax: true</code> 写入 <code>\scaffolds</code> 的 post.md文件中的 front-matter，以后每篇文章都会自动添加，自动渲染。</p><h3 id="参考文章">参考文章</h3><hr /><ol type="1"><li><ahref="https://roro4ever.github.io/2019/12/01/hexo-Next主题渲染-latex-公式的配置方法/hexo-next主题渲染-latex-公式的配置方法/">HexoNext主题渲染 Latex 公式的配置方法</a><ahref="app://obsidian.md/index.html#fnref-1-66fd1567c623a948">↩︎</a></li></ol>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;需求：让 hexo 的 next 主题支持渲染 LaTeX 语法的数学公式。&lt;/p&gt;
-&lt;p&gt;环境： &lt;code&gt;hexo version&lt;/code&gt;即可查看hexo版本； &lt;img
-src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237479.png&quot;
-alt=&quot;img&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;查看&lt;code&gt;theme/next/package.json&lt;/code&gt;即可查看next版本； &lt;img
-src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237584.png&quot;
-alt=&quot;img&quot; /&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
-    
-    
-    <category term="Hexo" scheme="https://www.sdhlw.top/tags/hexo/"/>
-    
-    <category term="Latex" scheme="https://www.sdhlw.top/tags/latex/"/>
     
   </entry>
   

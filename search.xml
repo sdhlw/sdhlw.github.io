@@ -4749,4 +4749,72 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
         <tag>科研绘图</tag>
       </tags>
   </entry>
+  <entry>
+    <title>adobe illustrator修改画布大小</title>
+    <url>/adobe-illustrator%E4%BF%AE%E6%94%B9%E7%94%BB%E5%B8%83%E5%A4%A7%E5%B0%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
+<p>1、创建页面时设置大小</p>
+<p>2、已经创建完页面，需要设置大小</p>
+<ul>
+<li><p>文件--文档设置--弹出窗口--编辑面板：</p>
+<ul>
+<li><p>1
+拖动虚线框上的锚点改变大小<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[ai怎么调整画布尺寸? ai设置画布大小的两种方法](https://www.jb51.net/illustrator/454077.html)
+">[1]</span></a></sup></p></li>
+<li><p>2
+点击左上角，直接替换固定格式，或点击右上角更改尺寸大小<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[如何在Adobe Illustrator中调整画布的大小](https://hownav.com/1359.html)
+">[2]</span></a></sup>：</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401161451959.png" alt="" style="zoom:50%;" /></p></li>
+</ul></li>
+</ul>
+<!--more-->
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.jb51.net/illustrator/454077.html">ai怎么调整画布尺寸?
+ai设置画布大小的两种方法</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://hownav.com/1359.html">如何在Adobe
+Illustrator中调整画布的大小</a><a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <tags>
+        <tag>adobe illustrator</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>等比例缩小pdf的尺寸大小</title>
+    <url>/%E7%AD%89%E6%AF%94%E4%BE%8B%E7%BC%A9%E5%B0%8Fpdf%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
+<p>软件：Adobe Acrobat Pro DC</p>
+<p>使用软件打开相应pdf：</p>
+<ul>
+<li><p>文件--打印--自定义比例：调整相应比例，导出即可</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401161543556.png" alt="" style="zoom:50%;" /></p>
+<p>导出之后，pdf中的图片变小，但是画布不变，对画布进行裁剪即可。</p>
+<p>裁剪步骤：打开pdf--工具--编辑pdf（打开）--裁剪页面：绘制裁剪框，双击裁剪框中的内容，确定即可。</p></li>
+</ul>
+<!--more-->
+]]></content>
+      <tags>
+        <tag>科研绘图</tag>
+      </tags>
+  </entry>
 </search>
