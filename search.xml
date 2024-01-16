@@ -3223,4 +3223,40 @@ https://zhuanlan.zhihu.com/p/376055263 )
         <tag>Pandoc</tag>
       </tags>
   </entry>
+  <entry>
+    <title>hexo部署时报错SSL/TLS connection failed</title>
+    <url>/hexo%E9%83%A8%E7%BD%B2%E6%97%B6%E6%8A%A5%E9%94%99ssl-tls-connection-failed/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
+<p>两种情况：</p>
+<ul>
+<li><p>一种是你给git配置了vpn，vpn断掉了就会出现该提示，恢复本地vpn即可</p></li>
+<li><p>另一转给你没有配置vpn，可以尝试这种方法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[解决git操作fatal: unable to access &#39;xxx&#39;: schannel: failed to receive handshake, SSL/TLS connection](https://www.jianshu.com/p/6773edf6b064)
+">[1]</span></a></sup>：</p>
+<p>找到 .gitconfig 文档（一般位于 `<code>C:/Users/xxx/</code>
+<code>目录下）,修改</code>[http]<code>中的</code>sslbackend` 如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[http]</span><br><span class="line">    sslbackend = openssl</span><br></pre></td></tr></table></figure></li>
+</ul>
+<!--more-->
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.jianshu.com/p/6773edf6b064">解决git操作fatal:
+unable to access 'xxx': schannel: failed to receive handshake, SSL/TLS
+connection</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
 </search>
