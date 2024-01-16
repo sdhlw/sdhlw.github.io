@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-01-16T14:00:54.849Z</updated>
+  <updated>2024-01-16T14:14:55.462Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://www.sdhlw.top/hexo%E9%83%A8%E7%BD%B2%E6%97%B6%E6%8A%A5%E9%94%99ssl-tls-connection-failed/"/>
     <id>https://www.sdhlw.top/hexo%E9%83%A8%E7%BD%B2%E6%97%B6%E6%8A%A5%E9%94%99ssl-tls-connection-failed/</id>
     <published>2024-01-16T13:40:12.000Z</published>
-    <updated>2024-01-16T14:00:54.849Z</updated>
+    <updated>2024-01-16T14:14:55.462Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span><p>两种情况：</p><ul><li><p>一种是你给git配置了vpn，vpn断掉了就会出现该提示，恢复本地vpn即可</p></li><li><p>另一转给你没有配置vpn，可以尝试这种方法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[解决git操作fatal: unable to access &#39;xxx&#39;: schannel: failed to receive handshake, SSL/TLS connection](https://www.jianshu.com/p/6773edf6b064)">[1]</span></a></sup>：</p><p>找到 .gitconfig 文档（一般位于 <code>C:/Users/xxx/</code>目录下）,修改 <code>[http]</code> 中的 <code>sslbackend</code>如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[http]</span><br><span class="line">    sslbackend = openssl</span><br></pre></td></tr></table></figure></li></ul><!--more--><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.jianshu.com/p/6773edf6b064">解决git操作fatal:unable to access 'xxx': schannel: failed to receive handshake, SSL/TLSconnection</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span></li></ol></div></div>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span><p>两种情况：</p><ul><li><p>一种是你给git配置了vpn，vpn断掉了就会出现该提示，恢复本地vpn即可</p></li><li><p>另一种是你没有配置vpn，可以尝试这种方法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[解决git操作fatal: unable to access &#39;xxx&#39;: schannel: failed to receive handshake, SSL/TLS connection](https://www.jianshu.com/p/6773edf6b064)">[1]</span></a></sup>：</p><p>找到 .gitconfig 文档（一般位于 <code>C:/Users/xxx/</code>目录下）,修改 <code>[http]</code> 中的 <code>sslbackend</code>如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[http]</span><br><span class="line">    sslbackend = openssl</span><br></pre></td></tr></table></figure></li></ul><!--more--><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.jianshu.com/p/6773edf6b064">解决git操作fatal:unable to access 'xxx': schannel: failed to receive handshake, SSL/TLSconnection</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span></li></ol></div></div>]]></content>
     
     
       
@@ -34,6 +34,8 @@
       
     
     
+    
+    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
     
     
     <category term="Hexo" scheme="https://www.sdhlw.top/tags/hexo/"/>
@@ -68,7 +70,7 @@
     <link href="https://www.sdhlw.top/adobe-illustrator%E4%BF%AE%E6%94%B9%E7%94%BB%E5%B8%83%E5%A4%A7%E5%B0%8F/"/>
     <id>https://www.sdhlw.top/adobe-illustrator%E4%BF%AE%E6%94%B9%E7%94%BB%E5%B8%83%E5%A4%A7%E5%B0%8F/</id>
     <published>2024-01-16T07:03:15.000Z</published>
-    <updated>2024-01-16T14:03:30.947Z</updated>
+    <updated>2024-01-16T14:05:14.352Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span><p>1、创建页面时设置大小</p><p>2、已经创建完页面，需要设置大小</p><ul><li><p>文件--文档设置--弹出窗口--编辑面板：</p><ul><li><p>1拖动虚线框上的锚点改变大小<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[ai怎么调整画布尺寸? ai设置画布大小的两种方法](https://www.jb51.net/illustrator/454077.html)">[1]</span></a></sup></p></li><li><p>2点击左上角，直接替换固定格式，或点击右上角更改尺寸大小<sup id="fnref:2"><a href="#fn:2" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[如何在Adobe Illustrator中调整画布的大小](https://hownav.com/1359.html)">[2]</span></a></sup>：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401161451959.png" alt="" style="zoom:50%;" /></p></li></ul></li></ul><!--more--><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.jb51.net/illustrator/454077.html">ai怎么调整画布尺寸?ai设置画布大小的两种方法</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li><li id="fn:2"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://hownav.com/1359.html">如何在AdobeIllustrator中调整画布的大小</a><a href="#fnref:2" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
     
