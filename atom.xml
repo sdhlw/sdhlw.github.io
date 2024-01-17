@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-01-16T14:14:55.462Z</updated>
+  <updated>2024-01-17T13:25:46.741Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>论文投稿之贡献者角色分类法（CRediT）</title>
+    <link href="https://www.sdhlw.top/%E8%AE%BA%E6%96%87%E6%8A%95%E7%A8%BF%E4%B9%8B%E8%B4%A1%E7%8C%AE%E8%80%85%E8%A7%92%E8%89%B2%E5%88%86%E7%B1%BB%E6%B3%95%EF%BC%88credit%EF%BC%89/"/>
+    <id>https://www.sdhlw.top/%E8%AE%BA%E6%96%87%E6%8A%95%E7%A8%BF%E4%B9%8B%E8%B4%A1%E7%8C%AE%E8%80%85%E8%A7%92%E8%89%B2%E5%88%86%E7%B1%BB%E6%B3%95%EF%BC%88credit%EF%BC%89/</id>
+    <published>2024-01-17T13:25:12.010Z</published>
+    <updated>2024-01-17T13:25:46.741Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>对于具有多个作者的论文，如果光看作者列表，是看不到每位作者的贡献的。从2012年起，设计贡献者角色分类法（ContributorRoleTaxonomy，简称CRediT）的专家们便开始讨论并创建一个评价体系，试图解决这个问题<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[你了解作者中的贡献者角色分类法（CRediT）吗？](https://blog.wordvice.cn/what-is-the-credit-for-authors/)">[1]</span></a></sup>。</p><p>CRediT系统从2014年开始推广使用，并演绎到今天的这14类标准，如下表所示。</p><p>2020年4月23日，美国国家信息标准组织（NISO）宣布正式启动贡献者角色分类法工作，将该方法正式发展为ANSI/NISO标准。</p><p>该方法将作者的贡献划分为14个类别，并对每个类别的角色详细精确地定义了作者的贡献。</p><span id="more"></span><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401171637445.png" alt="" style="zoom: 50%;" /></p><p>在投稿论文中呈报作者角色时，每位作者可以承担多个角色。然而，在这14类角色中，并不是每一类角色都必须有人来承担。</p><p>CRediT的实施能够进一步严格完善衡量作者的投入和影响的评价方法，不仅能够采用一个统一正规的标准来公平地评价作者贡献，减少作者纠纷、虚报或不公平感，而且可以确保整个学术出版领域的透明度。CRediT系统对于作者、出版商、大学、资助者都有好处。</p><ul><li>对于作者来讲，在投稿时明确填写贡献者角色，能够表达对合作者给予应得的功劳，避免由于被忽视或感觉不公平而产生作者之间的争论，并且能够为将来的合作提供明确的档案记录作为参考。</li><li>对于期刊出版机构来讲，在论文中公布贡献者角色，能够为读者提供更为详细的信息，并能够依据所填报的贡献内容更好地为其他论文选择同行评议专家。</li><li>对于大学来讲，在评价作者的晋级请求和学术能力时，论文中明确记载的贡献者角色便于形成更为科学公正的审议结果。对于基金资助者来讲，了解每位作者的具体贡献，能够便于选择未来的资助对象和寻找同行评议专家。</li></ul><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.wordvice.cn/what-is-the-credit-for-authors/">你了解作者中的贡献者角色分类法（CRediT）吗？</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;对于具有多个作者的论文，如果光看作者列表，是看不到每位作者的贡献的。从2012年起，设计贡献者角色分类法（Contributor
+Role
+Taxonomy，简称CRediT）的专家们便开始讨论并创建一个评价体系，试图解决这个问题&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
+class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
+aria-label=&quot;[你了解作者中的贡献者角色分类法（CRediT）吗？](https://blog.wordvice.cn/what-is-the-credit-for-authors/)
+&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;p&gt;CRediT系统从2014年开始推广使用，并演绎到今天的这14类标准，如下表所示。&lt;/p&gt;
+&lt;p&gt;2020年4月23日，美国国家信息标准组织（NISO）宣布正式启动贡献者角色分类法工作，将该方法正式发展为ANSI/NISO标准。&lt;/p&gt;
+&lt;p&gt;该方法将作者的贡献划分为14个类别，并对每个类别的角色详细精确地定义了作者的贡献。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    
+    
+    <category term="论文投稿" scheme="https://www.sdhlw.top/tags/%E8%AE%BA%E6%96%87%E6%8A%95%E7%A8%BF/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo部署时报错SSL/TLS connection failed</title>
@@ -541,49 +570,6 @@ aria-label=&quot;[NumPy中的ndarray与Pandas的Series和DataFrame之间的区�
     
     
     <category term="Python" scheme="https://www.sdhlw.top/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Python (matplotlib)保存矢量图</title>
-    <link href="https://www.sdhlw.top/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/"/>
-    <id>https://www.sdhlw.top/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/</id>
-    <published>2023-02-10T19:54:42.000Z</published>
-    <updated>2023-02-10T20:07:44.093Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="保存矢量图">保存矢量图</h3><p>语法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Python中Matplotlib Savefig()不同参数的使用](https://blog.csdn.net/wilbeok/article/details/111194473)">[1]</span></a></sup>：</p><p><code>savefig(fname, dpi=None, facecolor=’w’, edgecolor=’w’, orientation=’portrait’, papertype=None, format=None, transparent=False, bbox_inches=None, pad_inches=0.1, frameon=None, metadata=None)</code></p><p>简单使用：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">plt.savefig(<span class="string">&#x27;C:\\Users\\Lenovo\\Pictures\\test03.svg&#x27;</span>, <span class="built_in">format</span>=<span class="string">&#x27;svg&#x27;</span>,dpi = <span class="number">600</span>,transparent=<span class="literal">False</span>,bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure><ul><li>fname即<code>test03.svg</code>，<code>format='svg'</code>，<code>dpi = 600</code>为导出矢量图的三个参数</li><li><code>transparent=False</code> ：照片背景不要透明</li><li><code>bbox_inches='tight'</code>：使未保存到图中的图例（或其他部分）包含进来，避免图片保存下来不全。bbox_inches的作用是调整图的bbox,即boundingbox(边界框)<sup id="fnref:2"><a href="#fn:2" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Python_matplotlib图例放在外侧保存时显示不完整问题解决](https://blog.csdn.net/Poul_henry/article/details/88311964)">[2]</span></a></sup></li></ul><span id="more"></span><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/wilbeok/article/details/111194473">Python中MatplotlibSavefig()不同参数的使用</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li><li id="fn:2"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/Poul_henry/article/details/88311964">Python_matplotlib图例放在外侧保存时显示不完整问题解决</a><a href="#fnref:2" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;保存矢量图&quot;&gt;保存矢量图&lt;/h3&gt;
-&lt;p&gt;语法&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
-class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
-aria-label=&quot;[Python中Matplotlib Savefig()不同参数的使用](https://blog.csdn.net/wilbeok/article/details/111194473)
-&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;savefig(fname, dpi=None, facecolor=’w’, edgecolor=’w’, orientation=’portrait’, papertype=None, format=None, transparent=False, bbox_inches=None, pad_inches=0.1, frameon=None, metadata=None)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;简单使用：&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;plt.savefig(&lt;span class=&quot;string&quot;&gt;&amp;#x27;C:\\Users\\Lenovo\\Pictures\\test03.svg&amp;#x27;&lt;/span&gt;, &lt;span class=&quot;built_in&quot;&gt;format&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&amp;#x27;svg&amp;#x27;&lt;/span&gt;,dpi = &lt;span class=&quot;number&quot;&gt;600&lt;/span&gt;,transparent=&lt;span class=&quot;literal&quot;&gt;False&lt;/span&gt;,bbox_inches=&lt;span class=&quot;string&quot;&gt;&amp;#x27;tight&amp;#x27;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;plt.show()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ul&gt;
-&lt;li&gt;fname即
-&lt;code&gt;test03.svg&lt;/code&gt;，&lt;code&gt;format=&#39;svg&#39;&lt;/code&gt;，&lt;code&gt;dpi = 600&lt;/code&gt;
-为导出矢量图的三个参数&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;transparent=False&lt;/code&gt; ：照片背景不要透明&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;bbox_inches=&#39;tight&#39;&lt;/code&gt;
-：使未保存到图中的图例（或其他部分）包含进来，避免图片保存下来不全。bbox_inches的作用是调整图的bbox,
-即bounding
-box(边界框)&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; rel=&quot;footnote&quot;&gt;&lt;span
-class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
-aria-label=&quot;[Python_matplotlib图例放在外侧保存时显示不完整问题解决](https://blog.csdn.net/Poul_henry/article/details/88311964)
-&quot;&gt;[2]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
-    
-    
-    <category term="Python" scheme="https://www.sdhlw.top/tags/python/"/>
-    
-    <category term="Matplotlib" scheme="https://www.sdhlw.top/tags/matplotlib/"/>
     
   </entry>
   
