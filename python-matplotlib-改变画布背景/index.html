@@ -22,22 +22,19 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="起因：为了设置画布不透明效果 对象形式：[1] 1234567891011121314import matplotlib.pyplot as pltfig &#x3D; plt.figure()fig.patch.set_facecolor(&amp;#x27;white&amp;#x27;)  # 设置画布白色不透明（坐标轴外），再画图fig.patch.set_alpha(1)ax &#x3D; fig.add_subplot(">
+  <meta name="description" content="起因：为了设置画布不透明效果 对象形式：[1] 1234567891011121314import matplotlib.pyplot as pltfig &#x3D; plt.figure()fig.patch.set_facecolor(&amp;#x27;white&amp;#x27;)  # 设置画布白色不透明（坐标轴外），再画图fig.patch.set_alpha(1)ax &#x3D; fig.add_subplo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python(matplotlib) 改变画布背景">
 <meta property="og:url" content="https://www.sdhlw.top/python-matplotlib-%E6%94%B9%E5%8F%98%E7%94%BB%E5%B8%83%E8%83%8C%E6%99%AF/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="起因：为了设置画布不透明效果 对象形式：[1] 1234567891011121314import matplotlib.pyplot as pltfig &#x3D; plt.figure()fig.patch.set_facecolor(&amp;#x27;white&amp;#x27;)  # 设置画布白色不透明（坐标轴外），再画图fig.patch.set_alpha(1)ax &#x3D; fig.add_subplot(">
+<meta property="og:description" content="起因：为了设置画布不透明效果 对象形式：[1] 1234567891011121314import matplotlib.pyplot as pltfig &#x3D; plt.figure()fig.patch.set_facecolor(&amp;#x27;white&amp;#x27;)  # 设置画布白色不透明（坐标轴外），再画图fig.patch.set_alpha(1)ax &#x3D; fig.add_subplo">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302110342899.png">
-<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302110342978.svg">
 <meta property="article:published_time" content="2023-02-10T19:31:23.000Z">
 <meta property="article:modified_time" content="2023-02-12T09:05:22.094Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="plt">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302110342899.png">
 
 <link rel="canonical" href="https://www.sdhlw.top/python-matplotlib-%E6%94%B9%E5%8F%98%E7%94%BB%E5%B8%83%E8%83%8C%E6%99%AF/">
 
@@ -269,24 +266,60 @@
 
       
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>起因：为了设置画布不透明效果</p>
-<p>对象形式：<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[How to set opacity of background colour of graph with Matplotlib](https://stackoverflow.com/questions/4581504/how-to-set-opacity-of-background-colour-of-graph-with-matplotlib)
+<p>对象形式：<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[How to set opacity of background colour of graph with Matplotlib](https://stackoverflow.com/questions/4581504/how-to-set-opacity-of-background-colour-of-graph-with-matplotlib)
 ">[1]</span></a></sup></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">fig = plt.figure()</span><br><span class="line">fig.patch.set_facecolor(<span class="string">&#x27;white&#x27;</span>)  <span class="comment"># 设置画布白色不透明（坐标轴外），再画图</span></span><br><span class="line">fig.patch.set_alpha(<span class="number">1</span>)</span><br><span class="line">ax = fig.add_subplot(<span class="number">111</span>)  <span class="comment"># 创建1*1的网格，并添加第一个网格</span></span><br><span class="line">ax.patch.set_facecolor(<span class="string">&#x27;white&#x27;</span>) <span class="comment"># 设置白色不透明（坐标轴内）</span></span><br><span class="line">ax.patch.set_alpha(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">ax.plot(<span class="built_in">range</span>(<span class="number">10</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># If we don&#x27;t specify the edgecolor and facecolor for the figure when</span></span><br><span class="line"><span class="comment"># saving with savefig, it will override the value we set earlier!</span></span><br><span class="line">fig.savefig(<span class="string">&#x27;test01.png&#x27;</span>, facecolor=fig.get_facecolor(), edgecolor=<span class="string">&#x27;none&#x27;</span>)  <span class="comment"># 一定要加这俩个参数，否则保存后会被改掉参数</span></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302110342899.png"></p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302110342899.png" /></p>
 <span id="more"></span>
-
-<p>形式<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[python绘图背景透明_如何在 Matplotlib 中更改绘图背景](https://blog.csdn.net/weixin_39568889/article/details/113313559?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22113313559%22%2C%22source%22%3A%22unlogin%22%7D)
+<p>形式<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[python绘图背景透明_如何在 Matplotlib 中更改绘图背景](https://blog.csdn.net/weixin_39568889/article/details/113313559?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22113313559%22%2C%22source%22%3A%22unlogin%22%7D)
 ">[2]</span></a></sup></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">plt.rcParams.update(&#123;</span><br><span class="line">    <span class="string">&quot;figure.facecolor&quot;</span>:  (<span class="string">&#x27;#FFFFFF&#x27;</span>),  <span class="comment"># 白色 坐标轴外</span></span><br><span class="line">    <span class="string">&quot;axes.facecolor&quot;</span>:    (<span class="string">&#x27;#FFFFFF&#x27;</span>),  <span class="comment"># 白色 坐标轴内</span></span><br><span class="line">    <span class="string">&quot;savefig.facecolor&quot;</span>: (<span class="string">&#x27;#FFFFFF&#x27;</span>),  <span class="comment"># 白色 保存图片时</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">plt.plot(<span class="built_in">range</span>(<span class="number">1000</span>))</span><br><span class="line"></span><br><span class="line">plt.savefig(<span class="string">&#x27;test02.svg&#x27;</span>, facecolor=fig.get_facecolor(), edgecolor=<span class="string">&#x27;none&#x27;</span>,<span class="built_in">format</span>=<span class="string">&#x27;svg&#x27;</span>,dpi = <span class="number">600</span>, bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-
 <ul>
-<li><code>bbox_inches=&#39;tight&#39;</code> : 解决导出图片时，坐标轴外内容过多没保存下来<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Python_matplotlib图例放在外侧保存时显示不完整问题解决](https://blog.csdn.net/Poul_henry/article/details/88311964)
+<li><code>bbox_inches='tight'</code> :
+解决导出图片时，坐标轴外内容过多没保存下来<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Python_matplotlib图例放在外侧保存时显示不完整问题解决](https://blog.csdn.net/Poul_henry/article/details/88311964)
 ">[3]</span></a></sup></li>
-<li>fname即 <code>test02.svg</code>，<code>format=&#39;svg&#39;</code>，<code>dpi = 600</code> 为导出矢量图的三个参数</li>
+<li>fname即
+<code>test02.svg</code>，<code>format='svg'</code>，<code>dpi = 600</code>
+为导出矢量图的三个参数</li>
 </ul>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302110342978.svg"></p>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/4581504/how-to-set-opacity-of-background-colour-of-graph-with-matplotlib">How to set opacity of background colour of graph with Matplotlib</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_39568889/article/details/113313559?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22113313559%22%2C%22source%22%3A%22unlogin%22%7D">python绘图背景透明_如何在 Matplotlib 中更改绘图背景</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/Poul_henry/article/details/88311964">Python_matplotlib图例放在外侧保存时显示不完整问题解决</a><a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302110342978.svg" /></p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/4581504/how-to-set-opacity-of-background-colour-of-graph-with-matplotlib">How
+to set opacity of background colour of graph with
+Matplotlib</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_39568889/article/details/113313559?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22113313559%22%2C%22source%22%3A%22unlogin%22%7D">python绘图背景透明_如何在
+Matplotlib 中更改绘图背景</a><a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:3">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/Poul_henry/article/details/88311964">Python_matplotlib图例放在外侧保存时显示不完整问题解决</a><a href="#fnref:3" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
     </div>
 
     
@@ -405,7 +438,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">58</span>
+          <span class="site-state-item-count">60</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -469,13 +502,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">96k</span>
+    <span title="Symbols count total">100k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:27</span>
+    <span title="Reading time total">1:31</span>
 </div>
 
 <!-- 网站运行时间的设置 -->

@@ -22,15 +22,13 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="需求波士顿房价数据集在scikit-learn1.2版本以后被移除了。目前自己用的刚好是1.2版本，但是需要复现书中的一些代码（Python机器学习基础教程），所以需要从其他途径获取波士顿房价数据集，主要是获得data(506, 104)和相关的target。">
+  <meta name="description" content="需求 波士顿房价数据集在scikit-learn1.2版本以后被移除了。 目前自己用的刚好是1.2版本，但是需要复现书中的一些代码（Python机器学习基础教程），所以需要从其他途径获取波士顿房价数据集，主要是获得data(506, 104)和相关的target。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="波士顿房价数据集的处理">
 <meta property="og:url" content="https://www.sdhlw.top/%E6%B3%A2%E5%A3%AB%E9%A1%BF%E6%88%BF%E4%BB%B7%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E5%A4%84%E7%90%86/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="需求波士顿房价数据集在scikit-learn1.2版本以后被移除了。目前自己用的刚好是1.2版本，但是需要复现书中的一些代码（Python机器学习基础教程），所以需要从其他途径获取波士顿房价数据集，主要是获得data(506, 104)和相关的target。">
+<meta property="og:description" content="需求 波士顿房价数据集在scikit-learn1.2版本以后被移除了。 目前自己用的刚好是1.2版本，但是需要复现书中的一些代码（Python机器学习基础教程），所以需要从其他途径获取波士顿房价数据集，主要是获得data(506, 104)和相关的target。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302071417095.png">
-<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302071417617.png">
 <meta property="article:published_time" content="2023-02-07T06:33:34.000Z">
 <meta property="article:modified_time" content="2023-02-08T04:33:20.464Z">
 <meta property="article:author" content="Jay Chou">
@@ -38,7 +36,6 @@
 <meta property="article:tag" content="专业书笔记">
 <meta property="article:tag" content="Machine Learning">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302071417095.png">
 
 <link rel="canonical" href="https://www.sdhlw.top/%E6%B3%A2%E5%A3%AB%E9%A1%BF%E6%88%BF%E4%BB%B7%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E5%A4%84%E7%90%86/">
 
@@ -269,64 +266,134 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h3><p>波士顿房价数据集在scikit-learn1.2版本以后被移除了。<br>目前自己用的刚好是1.2版本，但是需要复现书中的一些代码（Python机器学习基础教程），所以需要从其他途径获取波士顿房价数据集，主要是获得data(506, 104)和相关的target。</p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="需求">需求</h3>
+<p>波士顿房价数据集在scikit-learn1.2版本以后被移除了。
+目前自己用的刚好是1.2版本，但是需要复现书中的一些代码（Python机器学习基础教程），所以需要从其他途径获取波士顿房价数据集，主要是获得data(506,
+104)和相关的target。</p>
 <span id="more"></span>
-
-<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p>1、获得data(506,104)：</p>
+<h3 id="实现">实现</h3>
+<p>1、获得data(506,104)：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">data_url = <span class="string">&quot;http://lib.stat.cmu.edu/datasets/boston&quot;</span></span><br><span class="line">raw_df = pd.read_csv(data_url, sep=<span class="string">&quot;\s+&quot;</span>, skiprows=<span class="number">22</span>, header=<span class="literal">None</span>)</span><br><span class="line">data = np.hstack([raw_df.values[::<span class="number">2</span>, :], raw_df.values[<span class="number">1</span>::<span class="number">2</span>, :<span class="number">2</span>]])</span><br><span class="line">target = raw_df.values[<span class="number">1</span>::<span class="number">2</span>, <span class="number">2</span>] <span class="comment"># 归一化和特征构造后都没有变化</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Data shape: &#123;&#125;&quot;</span>.<span class="built_in">format</span>(data.shape))</span><br><span class="line"></span><br><span class="line">X = MinMaxScaler().fit_transform(data)</span><br><span class="line">X = PolynomialFeatures(degree=<span class="number">2</span>, include_bias=<span class="literal">False</span>).fit_transform(X) <span class="comment"># X即为最后的data(506,104)</span></span><br><span class="line"><span class="built_in">print</span>(X.shape)</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># Data shape: (506, 13)  </span></span><br><span class="line"><span class="comment"># X shape: (506, 104)</span></span><br></pre></td></tr></table></figure>
-
 <p>2、获取target：</p>
 <p>对数据进行归一化和多项式构造，并没有改变行的布局，只是列发生变化，所以shape变化的前后，target不变。</p>
-<h3 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h3><h4 id="特征的由少变多"><a href="#特征的由少变多" class="headerlink" title="特征的由少变多"></a>特征的由少变多</h4><p>最初的 13 个特征加上这 13 个特征两两组合（有放回）得到的 91 个特征，一共有 104 个特征。</p>
-<p>两两组合计算：<br>思路1：</p>
+<h3 id="理解">理解</h3>
+<h4 id="特征的由少变多">特征的由少变多</h4>
+<p>最初的 13 个特征加上这 13 个特征两两组合（有放回）得到的 91
+个特征，一共有 104 个特征。</p>
+<p>两两组合计算： 思路1：</p>
 <blockquote>
 <p>共13个特征，第一次抽取1这个特征，再放回1，也就是1可以和13个特征组合，也就是允许1和1组合。</p>
 <p>第二次抽取2这个特征，再放回2，2也可以和13个特征组合，但是第一次抽取时1和2已经组合过了，所以需要去除这个1和2组合，即2只能和12个特征组合。</p>
 <p>第三次抽取3这个特征，再放回3，3也可以和13个特征组合，但是第一次3和1已经组合过了，第二次3和2已经组合过了，即3只能和11个特征组合。</p>
-<p>第 1 个特征可以与 13 个特征相乘，第 2 个可以与 12 个特征相乘（除了第 1 个），第 3 个可以与 11 个特征相乘……依次相加，13 + 12 + 11 + … + 1 &#x3D; 91。</p>
+<p>第 1 个特征可以与 13 个特征相乘，第 2 个可以与 12 个特征相乘（除了第
+1 个），第 3 个可以与 11 个特征相乘……依次相加，13 + 12 + 11 + … + 1 =
+91。</p>
 </blockquote>
 <p>思路2：当成两部分计算，之前自己算成78，就是忽略了有放回这个条件即忽略了绿色部分；</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302071417095.png"></p>
-<h4 id="MinMaxScaler"><a href="#MinMaxScaler" class="headerlink" title="MinMaxScaler()"></a>MinMaxScaler()</h4><p>Feature scaling，常见的提法有“特征归一化”、“标准化”，是数据预处理中的重要技术。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[为什么要做特征归一化/标准化？](https://blog.csdn.net/blogshinelee/article/details/102875044)
-">[3]</span></a></sup>本文将Feature scaling叫作特征标准化，归一化指代min-max normalization。</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302071417095.png" /></p>
+<h4 id="minmaxscaler">MinMaxScaler()</h4>
+<p>Feature
+scaling，常见的提法有“特征归一化”、“标准化”，是数据预处理中的重要技术。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[为什么要做特征归一化/标准化？](https://blog.csdn.net/blogshinelee/article/details/102875044)
+">[3]</span></a></sup>本文将Feature
+scaling叫作特征标准化，归一化指代min-max normalization。</p>
 <p>常用feature scaling（标准化）方法：</p>
 <ul>
-<li>Rescaling (min-max normalization、range scaling) &#x2F; 归一化</li>
+<li>Rescaling (min-max normalization、range scaling) / 归一化</li>
 <li>Mean normalization</li>
 <li>Standardization (Z-score Normalization)</li>
 <li>Scaling to unit length</li>
 </ul>
-<p>上述4种feature scaling方式，前3种为逐行操作，最后1种为逐列操作。本文只讨论min-max normalization这个方式。</p>
-<p>当数据(x)按照最小值中心化后，再按极差（最大值 - 最小值）缩放，数据移动了最小值个单位，并且会被收敛到 <code>[0,1]</code> 之间(默认)，而这个过程，就叫做数据归一化(Normalization，又称Min-Max Scaling)<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[preprocessing.MinMaxScaler用法](https://hg95.github.io/sklearn-notes/Chapter3/preprocessing.MinMaxScaler%E7%94%A8%E6%B3%95.html)">[1]</span></a></sup>。</p>
-<p>归一化其实就是标准化的一种方式，只不过归一化是将数据映射到了<code>[0,1]</code>这个区间中。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[使用sklearn进行对数据标准化、归一化以及将数据还原](https://blog.csdn.net/FrankieHello/article/details/79659111)">[2]</span></a></sup></p>
-<p>归一化之后的数据服从正态分布，公式如下： $$X^* &#x3D; \frac{x-min(x)}{max(x)-min(x)}$$ </p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302071417617.png" alt="归一化过程"></p>
-<p><a target="_blank" rel="noopener" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html?highlight=minmaxscaler#sklearn.preprocessing.MinMaxScaler">preprocessing.MinMaxScaler 官方文档</a></p>
+<p>上述4种feature
+scaling方式，前3种为逐行操作，最后1种为逐列操作。本文只讨论min-max
+normalization这个方式。</p>
+<p>当数据(x)按照最小值中心化后，再按极差（最大值 -
+最小值）缩放，数据移动了最小值个单位，并且会被收敛到 <code>[0,1]</code>
+之间(默认)，而这个过程，就叫做数据归一化(Normalization，又称Min-Max
+Scaling)<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[preprocessing.MinMaxScaler用法](https://hg95.github.io/sklearn-notes/Chapter3/preprocessing.MinMaxScaler%E7%94%A8%E6%B3%95.html)">[1]</span></a></sup>。</p>
+<p>归一化其实就是标准化的一种方式，只不过归一化是将数据映射到了<code>[0,1]</code>这个区间中。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[使用sklearn进行对数据标准化、归一化以及将数据还原](https://blog.csdn.net/FrankieHello/article/details/79659111)">[2]</span></a></sup></p>
+<p>归一化之后的数据服从正态分布，公式如下： <span
+class="math display">\[X^* = \frac{x-min(x)}{max(x)-min(x)}\]</span></p>
+<figure>
+<img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302071417617.png"
+alt="归一化过程" />
+<figcaption aria-hidden="true">归一化过程</figcaption>
+</figure>
+<p><a
+target="_blank" rel="noopener" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html?highlight=minmaxscaler#sklearn.preprocessing.MinMaxScaler">preprocessing.MinMaxScaler
+官方文档</a></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">sklearn</span>.preprocessing.MinMaxScaler(feature_range=(<span class="number">0</span>, <span class="number">1</span>), *, copy=<span class="literal">True</span>, clip=<span class="literal">False</span>)</span><br></pre></td></tr></table></figure>
-
 <p>默认数据归一到 <code>[ 0，1 ]</code></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> MinMaxScaler</span><br><span class="line">data = np.array([<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]).reshape(-<span class="number">1</span>, <span class="number">1</span>) </span><br><span class="line">mm = MinMaxScaler()   <span class="comment"># 实例化</span></span><br><span class="line">mm_data = mm.fit_transform(data)  <span class="comment">#与下面注释的两行一样</span></span><br><span class="line"><span class="comment"># mm = mm.fit(data)  # fit，在这里本质是生成min(x)和max(x)</span></span><br><span class="line"><span class="comment"># mm_data = mm.transform(data) # 通过接口导出结果</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;data：\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(data))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;归一化的data：\n&#123;&#125;&quot;</span>.<span class="built_in">format</span>(mm_data))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out：</span></span><br><span class="line"><span class="comment"># data：</span></span><br><span class="line"><span class="comment"># [[3]</span></span><br><span class="line"><span class="comment">#  [4]</span></span><br><span class="line"><span class="comment">#  [5]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 归一化的data：</span></span><br><span class="line"><span class="comment"># [[0. ]</span></span><br><span class="line"><span class="comment">#  [0.5]</span></span><br><span class="line"><span class="comment">#  [1. ]]</span></span><br></pre></td></tr></table></figure>
-
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">data = np.array([[<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>],[<span class="number">1</span>,<span class="number">78</span>,<span class="number">3</span>],[<span class="number">60</span>,<span class="number">56</span>,<span class="number">32</span>],[<span class="number">97</span>,<span class="number">43</span>,<span class="number">12</span>]])</span><br><span class="line">mm = MinMaxScaler()  </span><br><span class="line">mm_data = mm.fit_transform(data)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;data：\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(data))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;归一化的data：\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(mm_data))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;data的shape:&#123;&#125;&quot;</span>.<span class="built_in">format</span>(data.shape))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;最大值：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(mm.data_max_))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;最小值：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(mm.data_min_))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># data：</span></span><br><span class="line"><span class="comment"># [[ 3  4  5]</span></span><br><span class="line"><span class="comment">#  [ 1 78  3]</span></span><br><span class="line"><span class="comment">#  [60 56 32]</span></span><br><span class="line"><span class="comment">#  [97 43 12]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 归一化的data：</span></span><br><span class="line"><span class="comment"># [[0.02083333 0.         0.06896552]</span></span><br><span class="line"><span class="comment">#  [0.         1.         0.        ]</span></span><br><span class="line"><span class="comment">#  [0.61458333 0.7027027  1.        ]</span></span><br><span class="line"><span class="comment">#  [1.         0.52702703 0.31034483]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># data的shape:(4, 3)</span></span><br><span class="line"><span class="comment"># 最大值：[97. 78. 32.]</span></span><br><span class="line"><span class="comment"># 最小值：[1. 4. 3.]</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <p>列是特征，行是样本，所以这里的归一化都是以列为单位；</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> MinMaxScaler, PolynomialFeatures</span><br><span class="line"></span><br><span class="line">np.set_printoptions(threshold = np.inf) <span class="comment"># 不使用省略号表示</span></span><br><span class="line">np.set_printoptions(suppress = <span class="literal">True</span>) <span class="comment"># 不使用科学计数显示</span></span><br><span class="line"></span><br><span class="line">data_url = <span class="string">&quot;http://lib.stat.cmu.edu/datasets/boston&quot;</span></span><br><span class="line">raw_df = pd.read_csv(data_url, sep=<span class="string">&quot;\s+&quot;</span>, skiprows=<span class="number">22</span>, header=<span class="literal">None</span>)</span><br><span class="line">data = np.hstack([raw_df.values[::<span class="number">2</span>, :], raw_df.values[<span class="number">1</span>::<span class="number">2</span>, :<span class="number">2</span>]])</span><br><span class="line">target = raw_df.values[<span class="number">1</span>::<span class="number">2</span>, <span class="number">2</span>]</span><br><span class="line"></span><br><span class="line">mm = MinMaxScaler()  <span class="comment"># 实例化</span></span><br><span class="line">mm = mm.fit(data)   <span class="comment"># 得出最大值，最小值</span></span><br><span class="line">data_g = mm.transform(data) <span class="comment"># 导出归一化结果</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;data shape: &#123;&#125;&quot;</span>.<span class="built_in">format</span>(data.shape))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;X shape: &#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(data_g.shape)) <span class="comment"># 只做了归一化，前后特征维度没变</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;data前3行：\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(data[<span class="number">0</span>:<span class="number">3</span>,]))  <span class="comment"># 验证按列进行归一化</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;归一化后的data_g:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(data_g[<span class="number">0</span>:<span class="number">3</span>,]))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;最小值：&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(mm.data_min_))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;最大值：&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(mm.data_max_))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># data shape: (506, 13)</span></span><br><span class="line"><span class="comment"># X shape: (506, 13)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># data前3行：</span></span><br><span class="line"><span class="comment"># [[  0.00632  18.        2.31      0.        0.538     6.575    65.2</span></span><br><span class="line"><span class="comment">#     4.09      1.      296.       15.3     396.9       4.98   ]</span></span><br><span class="line"><span class="comment">#  [  0.02731   0.        7.07      0.        0.469     6.421    78.9</span></span><br><span class="line"><span class="comment">#     4.9671    2.      242.       17.8     396.9       9.14   ]</span></span><br><span class="line"><span class="comment">#  [  0.02729   0.        7.07      0.        0.469     7.185    61.1</span></span><br><span class="line"><span class="comment">#     4.9671    2.      242.       17.8     392.83      4.03   ]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 归一化后的data_g:</span></span><br><span class="line"><span class="comment"># [[0.         0.18       0.06781525 0.         0.31481481 0.57750527</span></span><br><span class="line"><span class="comment">#   0.64160659 0.26920314 0.         0.20801527 0.28723404 1.</span></span><br><span class="line"><span class="comment">#   0.08967991]</span></span><br><span class="line"><span class="comment">#  [0.00023592 0.         0.24230205 0.         0.17283951 0.5479977</span></span><br><span class="line"><span class="comment">#   0.78269825 0.34896198 0.04347826 0.10496183 0.55319149 1.</span></span><br><span class="line"><span class="comment">#   0.2044702 ]</span></span><br><span class="line"><span class="comment">#  [0.0002357  0.         0.24230205 0.         0.17283951 0.6943859</span></span><br><span class="line"><span class="comment">#   0.59938208 0.34896198 0.04347826 0.10496183 0.55319149 0.98973725</span></span><br><span class="line"><span class="comment">#   0.06346578]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 最小值：[  0.00632   0.        0.46      0.        0.385     3.561     2.9</span></span><br><span class="line"><span class="comment">#    1.1296    1.      187.       12.6       0.32      1.73   ]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 最大值：[ 88.9762 100.      27.74     1.       0.871    8.78   100.      12.1265</span></span><br><span class="line"><span class="comment">#   24.     711.      22.     396.9     37.97  ]</span></span><br></pre></td></tr></table></figure>
-
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>((<span class="number">0.00632</span>-<span class="number">0.00632</span>)/(<span class="number">88.9762</span>-<span class="number">0.00632</span>))</span><br><span class="line"><span class="built_in">print</span>((<span class="number">0.02731</span>-<span class="number">0.00632</span>)/(<span class="number">88.9762</span>-<span class="number">0.00632</span>))</span><br><span class="line"><span class="built_in">print</span>((<span class="number">0.02729</span>-<span class="number">0.00632</span>)/(<span class="number">88.9762</span>-<span class="number">0.00632</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># 0.0</span></span><br><span class="line"><span class="comment"># 0.00023592253917842758</span></span><br><span class="line"><span class="comment"># 0.00023569774400055386</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="PolynomialFeatures"><a href="#PolynomialFeatures" class="headerlink" title="PolynomialFeatures()"></a>PolynomialFeatures()</h4><p>再对波士顿数据进行归一化后，需要将13个特征两两相乘，添加更多的特征，需要用到多项式进行特征构造，即使用 PolynomialFeatures</p>
-<p><a target="_blank" rel="noopener" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html">PolynomialFeatures官方文档</a></p>
-<p>使用 sklearn.preprocessing.PolynomialFeatures 这个类可以进行特征的构造，构造的方式就是特征与特征相乘（自己与自己，自己与其他人），这种方式叫做使用多项式的方式。例如：有 a、b 两个特征，那么它的 2 次多项式的次数为 $[1,a,b,a^{2},ab,b^{2}]$  <sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[sklearn 的 PolynomialFeatures 的用法](https://www.cnblogs.com/liweiwei1419/p/9715702.html)
+<h4 id="polynomialfeatures">PolynomialFeatures()</h4>
+<p>再对波士顿数据进行归一化后，需要将13个特征两两相乘，添加更多的特征，需要用到多项式进行特征构造，即使用
+PolynomialFeatures</p>
+<p><a
+target="_blank" rel="noopener" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PolynomialFeatures.html">PolynomialFeatures官方文档</a></p>
+<p>使用 sklearn.preprocessing.PolynomialFeatures
+这个类可以进行特征的构造，构造的方式就是特征与特征相乘（自己与自己，自己与其他人），这种方式叫做使用多项式的方式。例如：有
+a、b 两个特征，那么它的 2 次多项式的次数为 <span
+class="math inline">\([1,a,b,a^{2},ab,b^{2}]\)</span>
+<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[sklearn 的 PolynomialFeatures 的用法](https://www.cnblogs.com/liweiwei1419/p/9715702.html)
 ">[4]</span></a></sup>。</p>
 <p>PolynomialFeatures 这个类有 3 个参数：</p>
 <ul>
 <li><code>degree</code>：控制多项式的次数；</li>
-<li><code>interaction_only</code>：默认为 False，如果指定为 True，那么就不会有特征自己和自己结合的项，组合的特征中没有 $a^2$ 和 $b^2$ ；</li>
-<li><code>include_bias</code>：默认为 True 。如果为 True 的话，那么结果中就会有 0 次幂项，即全为 1 这一列。</li>
+<li><code>interaction_only</code>：默认为 False，如果指定为
+True，那么就不会有特征自己和自己结合的项，组合的特征中没有 <span
+class="math inline">\(a^2\)</span> 和 <span
+class="math inline">\(b^2\)</span> ；</li>
+<li><code>include_bias</code>：默认为 True 。如果为 True
+的话，那么结果中就会有 0 次幂项，即全为 1 这一列。</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span>  PolynomialFeatures</span><br><span class="line"></span><br><span class="line">x = np.array([[<span class="number">2</span>,<span class="number">3</span>],[<span class="number">4</span>,<span class="number">5</span>]])</span><br><span class="line">poly = PolynomialFeatures(degree=<span class="number">2</span>, include_bias=<span class="literal">False</span>) <span class="comment"># 实例化，指定2次多项式，去除0次幂项</span></span><br><span class="line">x_d = poly.fit_transform(x)  <span class="comment"># 导出特征构造的结果</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;特征构造前：\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;特征构造后：\n&#123;&#125;&quot;</span>.<span class="built_in">format</span>(x_d))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out：</span></span><br><span class="line"><span class="comment"># 特征构造前：</span></span><br><span class="line"><span class="comment"># [[2 3]</span></span><br><span class="line"><span class="comment">#  [4 5]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 特征构造后：</span></span><br><span class="line"><span class="comment"># [[ 2.  3.  4.  6.  9.]</span></span><br><span class="line"><span class="comment">#  [ 4.  5. 16. 20. 25.]]</span></span><br></pre></td></tr></table></figure>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://hg95.github.io/sklearn-notes/Chapter3/preprocessing.MinMaxScaler%E7%94%A8%E6%B3%95.html">preprocessing.MinMaxScaler用法</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/FrankieHello/article/details/79659111">使用sklearn进行对数据标准化、归一化以及将数据还原</a><a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:3">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/blogshinelee/article/details/102875044">为什么要做特征归一化/标准化？</a><a href="#fnref:3" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:4">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.cnblogs.com/liweiwei1419/p/9715702.html">sklearn
+的 PolynomialFeatures 的用法</a><a href="#fnref:4" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
 
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://hg95.github.io/sklearn-notes/Chapter3/preprocessing.MinMaxScaler%E7%94%A8%E6%B3%95.html">preprocessing.MinMaxScaler用法</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/FrankieHello/article/details/79659111">使用sklearn进行对数据标准化、归一化以及将数据还原</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/blogshinelee/article/details/102875044">为什么要做特征归一化/标准化？</a><a href="#fnref:3" rev="footnote"> ↩</a></span></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.cnblogs.com/liweiwei1419/p/9715702.html">sklearn 的 PolynomialFeatures 的用法</a><a href="#fnref:4" rev="footnote"> ↩</a></span></li></ol></div></div>
     </div>
 
     
@@ -430,7 +497,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9C%80%E6%B1%82"><span class="nav-text">需求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0"><span class="nav-text">实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%90%86%E8%A7%A3"><span class="nav-text">理解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%B9%E5%BE%81%E7%9A%84%E7%94%B1%E5%B0%91%E5%8F%98%E5%A4%9A"><span class="nav-text">特征的由少变多</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#MinMaxScaler"><span class="nav-text">MinMaxScaler()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PolynomialFeatures"><span class="nav-text">PolynomialFeatures()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9C%80%E6%B1%82"><span class="nav-text">需求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0"><span class="nav-text">实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%90%86%E8%A7%A3"><span class="nav-text">理解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%B9%E5%BE%81%E7%9A%84%E7%94%B1%E5%B0%91%E5%8F%98%E5%A4%9A"><span class="nav-text">特征的由少变多</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#minmaxscaler"><span class="nav-text">MinMaxScaler()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#polynomialfeatures"><span class="nav-text">PolynomialFeatures()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -446,7 +513,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">58</span>
+          <span class="site-state-item-count">60</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -510,13 +577,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">96k</span>
+    <span title="Symbols count total">100k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:27</span>
+    <span title="Reading time total">1:31</span>
 </div>
 
 <!-- 网站运行时间的设置 -->

@@ -22,22 +22,19 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="npm（“Node 包管理器”）是 JavaScript 运行时 Node.js 的默认程序包管理器。[1] npm 由两个主要部分组成：  用于发布和下载程序包的 CLI（命令行界面）工具  托管 JavaScript 程序包的  在线存储库">
+  <meta name="description" content="npm（“Node 包管理器”）是 JavaScript 运行时 Node.js 的默认程序包管理器。[1] npm 由两个主要部分组成：  用于发布和下载程序包的 CLI（命令行界面）工具 托管 JavaScript 程序包的 在线存储库">
 <meta property="og:type" content="article">
 <meta property="og:title" content="NPM---Node 包管理器">
 <meta property="og:url" content="https://www.sdhlw.top/npm-node-%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="npm（“Node 包管理器”）是 JavaScript 运行时 Node.js 的默认程序包管理器。[1] npm 由两个主要部分组成：  用于发布和下载程序包的 CLI（命令行界面）工具  托管 JavaScript 程序包的  在线存储库">
+<meta property="og:description" content="npm（“Node 包管理器”）是 JavaScript 运行时 Node.js 的默认程序包管理器。[1] npm 由两个主要部分组成：  用于发布和下载程序包的 CLI（命令行界面）工具 托管 JavaScript 程序包的 在线存储库">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301222349448.png">
-<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301222349502.png">
 <meta property="article:published_time" content="2023-01-22T16:02:55.000Z">
 <meta property="article:modified_time" content="2023-01-22T16:19:45.391Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="NPM">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301222349448.png">
 
 <link rel="canonical" href="https://www.sdhlw.top/npm-node-%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/">
 
@@ -262,55 +259,129 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>npm（“Node 包管理器”）是 JavaScript 运行时 Node.js 的默认程序包管理器。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[什么是 npm —— 写给初学者的编程教程](https://www.freecodecamp.org/chinese/news/what-is-npm-a-node-package-manager-tutorial-for-beginners/)
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>npm（“Node 包管理器”）是 JavaScript 运行时 Node.js
+的默认程序包管理器。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[什么是 npm —— 写给初学者的编程教程](https://www.freecodecamp.org/chinese/news/what-is-npm-a-node-package-manager-tutorial-for-beginners/)
 ">[1]</span></a></sup></p>
 <p>npm 由两个主要部分组成：</p>
 <ul>
-<li><p>用于发布和下载程序包的 CLI（命令行界面）工具</p>
-</li>
-<li><p>托管 JavaScript 程序包的  在线存储库<span id="more"></span></p>
-</li>
+<li><p>用于发布和下载程序包的 CLI（命令行界面）工具</p></li>
+<li><p>托管 JavaScript 程序包的 在线存储库<span id="more"></span></p></li>
 </ul>
-<p>为了更直观地解释，我们可以将存储库  npmjs.com  视为一个物流集散中心，该中心从卖方（npm 包裹的作者）那里接收货物的包裹，并将这些货物分发给买方（npm 包裹的用户）。</p>
-<p>为了促进此过程，npmjs.com  物流集散中心雇用了一群勤劳的袋熊（npm CLI），他们将被分配给每个  npmjs.com  用户作为私人助理。 因此，dependencies（依赖项）会如下传递给 JavaScript 开发人员：</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301222349448.png"></p>
+<p>为了更直观地解释，我们可以将存储库 npmjs.com
+视为一个物流集散中心，该中心从卖方（npm
+包裹的作者）那里接收货物的包裹，并将这些货物分发给买方（npm
+包裹的用户）。</p>
+<p>为了促进此过程，npmjs.com 物流集散中心雇用了一群勤劳的袋熊（npm
+CLI），他们将被分配给每个 npmjs.com 用户作为私人助理。
+因此，dependencies（依赖项）会如下传递给 JavaScript 开发人员：</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301222349448.png" /></p>
 <p>发布 JS 软件包的过程如下：</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301222349502.png"></p>
-<h4 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h4><p>每个 JavaScript 项目（无论是 Node.js 还是浏览器应用程序）都可以被当作 npm 软件包，并且通过  package.json  来描述项目和软件包信息。</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301222349502.png" /></p>
+<h4 id="package.json">package.json</h4>
+<p>每个 JavaScript 项目（无论是 Node.js 还是浏览器应用程序）都可以被当作
+npm 软件包，并且通过 package.json 来描述项目和软件包信息。</p>
 <p>我们可以将 package.json 视为快递盒子上的运输信息。</p>
-<p>当运行  <code>npm init</code>  初始化 JavaScript&#x2F;Node.js 项目时，将生成 <code>package.json</code>文件，文件内的内容(基本元数据)由开发人员提供：</p>
+<p>当运行 <code>npm init</code> 初始化 JavaScript/Node.js 项目时，将生成
+<code>package.json</code>文件，文件内的内容(基本元数据)由开发人员提供：</p>
 <ul>
 <li><code>name</code>：JavaScript 项目或库的名称。</li>
 <li><code>version</code>：项目的版本。通常，在应用程序开发中，由于没有必要对开源库进行版本控制，因此经常忽略这一块。但是，仍可以用它来定义版本。</li>
 <li><code>description</code>：项目的描述。</li>
 <li><code>license</code>：项目的许可证。</li>
 </ul>
-<h4 id="npm-scripts"><a href="#npm-scripts" class="headerlink" title="npm scripts"></a>npm scripts</h4><p><code>package.json</code>  还支持一个  <code>scripts</code>  属性，可以把它当作在项目本地运行的命令行工具。例如，一个 npm 项目的  <code>scripts</code>部分可能看起来像这样：</p>
+<h4 id="npm-scripts">npm scripts</h4>
+<p><code>package.json</code> 还支持一个 <code>scripts</code>
+属性，可以把它当作在项目本地运行的命令行工具。例如，一个 npm 项目的
+<code>scripts</code>部分可能看起来像这样：</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;scripts&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;build&quot;</span><span class="punctuation">:</span> <span class="string">&quot;tsc&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;format&quot;</span><span class="punctuation">:</span> <span class="string">&quot;prettier --write **/*.ts&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;format-check&quot;</span><span class="punctuation">:</span> <span class="string">&quot;prettier --check **/*.ts&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;lint&quot;</span><span class="punctuation">:</span> <span class="string">&quot;eslint src/**/*.ts&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;pack&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ncc build&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;test&quot;</span><span class="punctuation">:</span> <span class="string">&quot;jest&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;all&quot;</span><span class="punctuation">:</span> <span class="string">&quot;npm run build &amp;&amp; npm run format &amp;&amp; npm run lint &amp;&amp; npm run pack &amp;&amp; npm test&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<p><code>eslint</code>，<code>prettier</code>，<code>ncc</code>，<code>jest</code>  不是安装为全局可执行文件，而是安装在项目本地的 <code>node_modules/.bin/</code> 中。</p>
-<p>最新引入的  <a target="_blank" rel="noopener" href="https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/">npx</a>  使我们可以像在全局安装程序一样运行这些  <code>node_modules</code>  项目作用域命令，方法是在其前面加上  <code>npx ...</code>（即<code>npx prettier --write ** / *。ts</code>）。</p>
-<h4 id="package-lock-json"><a href="#package-lock-json" class="headerlink" title="package-lock.json"></a>package-lock.json</h4><p>该文件描述了 npm JavaScript 项目中使用的依赖项的确切版本。如果  <code>package.json</code>  是通用的描述性标签，则  <code>package-lock.json</code>  是成分表。</p>
-<p>就像我们通常不会读取食品包装袋上的成分表（除非你太无聊或需要知道）一样，<code>package-lock.json</code>  并不会被开发人员一行一行进行读取。</p>
-<p><code>package-lock.json</code>  通常是由  <code>npm install</code>  命令生成的，也可以由我们的 NPM CLI 工具读取，以确保使用  <code>npm ci</code>  复制项目的构建环境。</p>
-<h4 id="dependencies-vs-devDependencies"><a href="#dependencies-vs-devDependencies" class="headerlink" title="dependencies vs devDependencies"></a>dependencies vs devDependencies</h4><p>devDependencies  里面的插件只用于开发环境，不用于生产环境，而 dependencies  是需要发布到生产环境的。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[npm -i 与npm install -s与-d的区别](https://www.cnblogs.com/cina33blogs/p/9210931.html)
+<p><code>eslint</code>，<code>prettier</code>，<code>ncc</code>，<code>jest</code>
+不是安装为全局可执行文件，而是安装在项目本地的
+<code>node_modules/.bin/</code> 中。</p>
+<p>最新引入的 <a
+target="_blank" rel="noopener" href="https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/">npx</a>
+使我们可以像在全局安装程序一样运行这些 <code>node_modules</code>
+项目作用域命令，方法是在其前面加上
+<code>npx ...</code>（即<code>npx prettier --write ** / *。ts</code>）。</p>
+<h4 id="package-lock.json">package-lock.json</h4>
+<p>该文件描述了 npm JavaScript 项目中使用的依赖项的确切版本。如果
+<code>package.json</code> 是通用的描述性标签，则
+<code>package-lock.json</code> 是成分表。</p>
+<p>就像我们通常不会读取食品包装袋上的成分表（除非你太无聊或需要知道）一样，<code>package-lock.json</code>
+并不会被开发人员一行一行进行读取。</p>
+<p><code>package-lock.json</code> 通常是由 <code>npm install</code>
+命令生成的，也可以由我们的 NPM CLI 工具读取，以确保使用
+<code>npm ci</code> 复制项目的构建环境。</p>
+<h4 id="dependencies-vs-devdependencies">dependencies vs
+devDependencies</h4>
+<p>devDependencies 里面的插件只用于开发环境，不用于生产环境，而
+dependencies
+是需要发布到生产环境的。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[npm -i 与npm install -s与-d的区别](https://www.cnblogs.com/cina33blogs/p/9210931.html)
 ">[2]</span></a></sup></p>
-<p>这两个以键值对象的形式出现，其中 npm 库的名称为键，其<a target="_blank" rel="noopener" href="https://semver.org/">语义格式</a>版本为值。 大家可以看看 <a target="_blank" rel="noopener" href="https://github.com/actions/typescript-action">Github 的 TypeScript 操作模板</a>中的示例：</p>
+<p>这两个以键值对象的形式出现，其中 npm 库的名称为键，其<a
+target="_blank" rel="noopener" href="https://semver.org/">语义格式</a>版本为值。 大家可以看看 <a
+target="_blank" rel="noopener" href="https://github.com/actions/typescript-action">Github 的 TypeScript
+操作模板</a>中的示例：</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;dependencies&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;@actions/core&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^1.2.3&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;@actions/github&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^2.1.1&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;devDependencies&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;@types/jest&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^25.1.4&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;@types/node&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^13.9.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;@typescript-eslint/parser&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^2.22.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;@zeit/ncc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^0.21.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;eslint&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^6.8.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;eslint-plugin-github&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^3.4.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;eslint-plugin-jest&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^23.8.2&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;jest&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^25.1.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;jest-circus&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^25.1.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;js-yaml&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^3.13.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;prettier&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^1.19.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;ts-jest&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^25.2.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;typescript&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^3.8.3&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<p>这些依赖通过带有  <code>--save</code>  或  <code>--save-dev</code>  标志的  <code>npm install</code>  命令安装。 它们分别用于生产和开发&#x2F;测试环境。 在下一节中，我们将更深入地研究这些软件包的安装。</p>
-<p>同时，理解语义版本前面的符号非常重要（假设你已经阅读 <a target="_blank" rel="noopener" href="https://semver.org/">semver</a> 的  <code>major.minor.patch</code>  模型）：</p>
+<p>这些依赖通过带有 <code>--save</code> 或 <code>--save-dev</code>
+标志的 <code>npm install</code> 命令安装。
+它们分别用于生产和开发/测试环境。
+在下一节中，我们将更深入地研究这些软件包的安装。</p>
+<p>同时，理解语义版本前面的符号非常重要（假设你已经阅读 <a
+target="_blank" rel="noopener" href="https://semver.org/">semver</a> 的 <code>major.minor.patch</code>
+模型）：</p>
 <ul>
-<li><code>^</code>：表示最新的次版本，例如， <code>^1.0.4</code>  可能会安装主版本系列  <code>1</code>  的最新次版本 <code>1.3.0</code>。</li>
-<li><code>〜</code>：表示最新的补丁程序版本，与  <code>^</code>  类似， <code>〜1.0.4</code>  可能会安装次版本系列 <code>1.0</code>  的最新次版本<code>1.0.7</code>。</li>
+<li><code>^</code>：表示最新的次版本，例如， <code>^1.0.4</code>
+可能会安装主版本系列 <code>1</code> 的最新次版本
+<code>1.3.0</code>。</li>
+<li><code>〜</code>：表示最新的补丁程序版本，与 <code>^</code> 类似，
+<code>〜1.0.4</code> 可能会安装次版本系列 <code>1.0</code>
+的最新次版本<code>1.0.7</code>。</li>
 </ul>
-<p>所有这些确切的软件包版本都将记录在  <code>package-lock.json</code>  文件中。</p>
-<h4 id="npm-install"><a href="#npm-install" class="headerlink" title="npm install"></a>npm install</h4><p>这是现在我们开发 JavaScript&#x2F;Node.js 应用程序时最常用的命令。</p>
-<p>默认情况下，<code>npm install &lt;package-name&gt;</code>  将安装带有  <code>^</code>  版本号的软件包的最新版本。npm 项目上下文中的  <code>npm install</code>  将根据  <code>package.json</code>  规范将软件包下载到项目的  <code>node_modules</code>  文件夹中，从而升级软件包的版本（并重新生成  <code>package-lock.json</code>  ）。 <code>npm install &lt;package-name&gt;</code>  可以基于  <code>^</code>  和  <code>〜</code>  版本匹配。</p>
-<p>如果要在全局上下文中安装程序包，可以在机器的任何地方使用它，则可以指定全局标志  <code>-g</code>（例如  <a target="_blank" rel="noopener" href="https://github.com/tapio/live-server">live-server</a>）。</p>
+<p>所有这些确切的软件包版本都将记录在 <code>package-lock.json</code>
+文件中。</p>
+<h4 id="npm-install">npm install</h4>
+<p>这是现在我们开发 JavaScript/Node.js 应用程序时最常用的命令。</p>
+<p>默认情况下，<code>npm install &lt;package-name&gt;</code> 将安装带有
+<code>^</code> 版本号的软件包的最新版本。npm 项目上下文中的
+<code>npm install</code> 将根据 <code>package.json</code>
+规范将软件包下载到项目的 <code>node_modules</code>
+文件夹中，从而升级软件包的版本（并重新生成
+<code>package-lock.json</code> ）。
+<code>npm install &lt;package-name&gt;</code> 可以基于 <code>^</code> 和
+<code>〜</code> 版本匹配。</p>
+<p>如果要在全局上下文中安装程序包，可以在机器的任何地方使用它，则可以指定全局标志
+<code>-g</code>（例如 <a
+target="_blank" rel="noopener" href="https://github.com/tapio/live-server">live-server</a>）。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm i module_name  -S  = &gt;  npm install module_name --save    写入到 dependencies 对象</span><br><span class="line"></span><br><span class="line">npm i module_name  -D  =&gt; npm install module_name --save-dev   写入到 devDependencies 对象</span><br><span class="line"></span><br><span class="line">npm i module_name  -g  全局安装</span><br></pre></td></tr></table></figure>
+<h4 id="参考文章">参考文章</h4>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.freecodecamp.org/chinese/news/what-is-npm-a-node-package-manager-tutorial-for-beginners/">什么是
+npm —— 写给初学者的编程教程</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.cnblogs.com/cina33blogs/p/9210931.html">npm
+-i 与npm install -s与-d的区别</a><a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
 
-<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.freecodecamp.org/chinese/news/what-is-npm-a-node-package-manager-tutorial-for-beginners/">什么是 npm —— 写给初学者的编程教程</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.cnblogs.com/cina33blogs/p/9210931.html">npm -i 与npm install -s与-d的区别</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div>
     </div>
 
     
@@ -413,7 +484,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#package-json"><span class="nav-text">package.json</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#npm-scripts"><span class="nav-text">npm scripts</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#package-lock-json"><span class="nav-text">package-lock.json</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#dependencies-vs-devDependencies"><span class="nav-text">dependencies vs devDependencies</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#npm-install"><span class="nav-text">npm install</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#package.json"><span class="nav-text">package.json</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#npm-scripts"><span class="nav-text">npm scripts</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#package-lock.json"><span class="nav-text">package-lock.json</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#dependencies-vs-devdependencies"><span class="nav-text">dependencies vs
+devDependencies</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#npm-install"><span class="nav-text">npm install</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -429,7 +501,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">58</span>
+          <span class="site-state-item-count">60</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -493,13 +565,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">96k</span>
+    <span title="Symbols count total">100k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:27</span>
+    <span title="Reading time total">1:31</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
