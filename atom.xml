@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-02-15T14:00:18.815Z</updated>
+  <updated>2024-02-16T15:36:54.142Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown超链接</title>
+    <link href="https://www.sdhlw.top/markdown%E8%B6%85%E9%93%BE%E6%8E%A5/"/>
+    <id>https://www.sdhlw.top/markdown%E8%B6%85%E9%93%BE%E6%8E%A5/</id>
+    <published>2024-02-16T15:36:21.000Z</published>
+    <updated>2024-02-16T15:36:54.142Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>行内形式<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Markdown超链接](https://m.imooc.com/wiki/markdownlesson-markdownlink)">[1]</span></a></sup>：<code>[百度](https://www.baidu.com/)</code></p><p>全局形式：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[百度][b]</span><br><span class="line">[b]:https://www.baidu.com/</span><br></pre></td></tr></table></figure><p>当一个超链接在文章中反复出现时，可以使用全局声明的形式，减少文章编写的工作量。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[天坛][tiantan]公园，是明清两代皇帝每年祭天和祈祷五谷丰收的地方。[天坛][tiantan]以严谨的建筑布局、奇特的建筑构造和瑰丽的建筑装饰着称于世。</span><br><span class="line">[tiantan]: http://www.tiantanpark.com</span><br></pre></td></tr></table></figure><span id="more"></span><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://m.imooc.com/wiki/markdownlesson-markdownlink">Markdown超链接</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;行内形式&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
+class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
+aria-label=&quot;[Markdown超链接](https://m.imooc.com/wiki/markdownlesson-markdownlink)
+&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;：&lt;code&gt;[百度](https://www.baidu.com/)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;全局形式：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[百度][b]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[b]:https://www.baidu.com/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;当一个超链接在文章中反复出现时，可以使用全局声明的形式，减少文章编写的工作量。&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[天坛][tiantan]公园，是明清两代皇帝每年祭天和祈祷五谷丰收的地方。[天坛][tiantan]以严谨的建筑布局、奇特的建筑构造和瑰丽的建筑装饰着称于世。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[tiantan]: http://www.tiantanpark.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>投稿期刊推荐</title>
@@ -537,43 +563,6 @@ aria-label=&quot;[会议期刊、出版社、索引工具之间的关系](https:
     
     <category term="Other" scheme="https://www.sdhlw.top/categories/other/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Obsidian插件之Dataview</title>
-    <link href="https://www.sdhlw.top/obsidian%E6%8F%92%E4%BB%B6%E4%B9%8Bdataview/"/>
-    <id>https://www.sdhlw.top/obsidian%E6%8F%92%E4%BB%B6%E4%B9%8Bdataview/</id>
-    <published>2023-02-21T11:49:09.000Z</published>
-    <updated>2023-02-21T12:16:42.191Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、下载并启用插件2、写相应代码块<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Obsidian 插件之 Dataview](https://sspai.com/post/68183)">[1]</span></a></sup></p><p><imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302211102135.png" /></p><ul><li>list：展现形式。创建列表，还有 table、task 可以选择</li><li>from：检索范围。从哪个文件夹（写在双引号里面），或者标签（写在#后面）</li><li>where：</li><li></li><li>聚合条件。contains(file.name,"Dataview") 就是匹配文件名为 “Dataview”的文件</li><li>sort：排序，根据什么做排序。 sort file.ctime就是根据文件的创建时间正序</li></ul><span id="more"></span><p>一些自带的元数据：</p><p><imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302211102234.png" /></p><p>yml标记语言：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title:</span><br><span class="line">author:</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure><p>title、author、tags这里都是yml语言的key，key可以自定义，也可支持中英文，dataview也是可以识别使用的；</p><p>例子：</p><p>前后加三个 ` ，前面的三个 ` 记得加上dataview，中间加入一下内容：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">table Title, Status</span><br><span class="line">from #test</span><br><span class="line">where</span><br><span class="line">contains(file.name,&quot;aa&quot;)</span><br><span class="line">sort file.ctime</span><br></pre></td></tr></table></figure><p>创建一个tab，文章从test标签中查找，且文件名含有aa的文章，表格表头为file,Title, Status。</p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://sspai.com/post/68183">Obsidian插件之 Dataview</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span></li></ol></div></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;1、下载并启用插件
-2、写相应代码块&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
-class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
-aria-label=&quot;[Obsidian 插件之 Dataview](https://sspai.com/post/68183)
-&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img
-src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302211102135.png&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;list：展现形式。创建列表，还有 table、task 可以选择&lt;/li&gt;
-&lt;li&gt;from：检索范围。从哪个文件夹（写在双引号里面），或者标签（写在#后面）&lt;/li&gt;
-&lt;li&gt;where：&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;li&gt;聚合条件。contains(file.name,&quot;Dataview&quot;) 就是匹配文件名为 “Dataview”
-的文件&lt;/li&gt;
-&lt;li&gt;sort：排序，根据什么做排序。 sort file.ctime
-就是根据文件的创建时间正序&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
-    
-    
-    <category term="Obsidian插件" scheme="https://www.sdhlw.top/tags/obsidian%E6%8F%92%E4%BB%B6/"/>
     
   </entry>
   
