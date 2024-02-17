@@ -80,7 +80,7 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Jay's Blog" type="application/atom+xml">
-</head>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
@@ -265,380 +265,206 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="base">1、Base</h1>
-<ul>
-<li><code>ls -lsh 目录名</code> <code>-l</code> 列出详细信息 (l: list)
-<code>-sh</code> 显示人类可读方式文件大小 (s: size; h: human
-readable)</li>
-<li><code>cd -</code> 回到刚才的目录<code>.</code> 当前目录
-<code>..</code>父目录</li>
-<li>wc命令 -l -c -w - c 统计字节数。 -l 统计行数。 -w 统计字数。</li>
-<li>which命令：在PATH变量指定的路径中，<strong>搜索某个系统命令的位置</strong>，并且返回第一个搜索结果。也就是说，使用which命令，就可以看到某个系统命令是否存在，以及执行的到底是哪一个位置的命令。
-<sup id="fnref:10"><a href="#fn:10" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[每天一个linux命令（16）：which命令 - peida - 博客园 (cnblogs.com)](https://www.cnblogs.com/peida/archive/2012/11/08/2759805.html)
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="1、Base"><a href="#1、Base" class="headerlink" title="1、Base"></a>1、Base</h1><ul>
+<li><code>ls -lsh 目录名</code><br><code>-l</code> 列出详细信息 (l: list)<br> <code>-sh</code> 显示人类可读方式文件大小 (s: size; h: human readable) </li>
+<li><code>cd - </code> 回到刚才的目录<code>.</code> 当前目录 <code>..</code>父目录</li>
+<li>wc命令    -l -c -w<br>- c 统计字节数。<br>-l 统计行数。<br>-w 统计字数。</li>
+<li>which命令：在PATH变量指定的路径中，<strong>搜索某个系统命令的位置</strong>，并且返回第一个搜索结果。也就是说，使用which命令，就可以看到某个系统命令是否存在，以及执行的到底是哪一个位置的命令。 <sup id="fnref:10"><a href="#fn:10" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[每天一个linux命令（16）：which命令 - peida - 博客园 (cnblogs.com)](https://www.cnblogs.com/peida/archive/2012/11/08/2759805.html)
 ">[10]</span></a></sup></li>
-<li>find命令：查找文件/文件夹<br />
-<code>find ~/ -name test -type -d</code>
-：查找家目录下，类型为目录的test <code>-type</code>
-类型参数<sup id="fnref:11"><a href="#fn:11" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[linux find 命令查找文件和文件夹 - jiftle - 博客园 (cnblogs.com)](https://www.cnblogs.com/jiftle/p/9707518.html)
-">[11]</span></a></sup> 类型参数列表： f 普通文件 l 符号连接 d 目录 c
-字符设备 b 块设备 s 套接字 p Fifo</li>
-<li>paste
-命令用于合并文件的列<sup id="fnref:13"><a href="#fn:13" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Linux paste 命令 | 菜鸟教程 (runoob.com)](https://www.runoob.com/linux/linux-comm-paste.html)
+<li>find命令：查找文件&#x2F;文件夹<br><code>find ~/ -name test -type -d </code> ：查找家目录下，类型为目录的test<br><code> -type</code> 类型参数<sup id="fnref:11"><a href="#fn:11" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[linux find 命令查找文件和文件夹 - jiftle - 博客园 (cnblogs.com)](https://www.cnblogs.com/jiftle/p/9707518.html)
+">[11]</span></a></sup><br>类型参数列表：<br>f 普通文件<br>l 符号连接<br>d 目录<br>c 字符设备<br>b 块设备<br>s 套接字<br>p Fifo</li>
+<li>paste 命令用于合并文件的列<sup id="fnref:13"><a href="#fn:13" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Linux paste 命令 | 菜鸟教程 (runoob.com)](https://www.runoob.com/linux/linux-comm-paste.html)
 ">[13]</span></a></sup></li>
-<li><code>alias name=value</code>
-设置的命令需要加参数或者是多个命令的组合，那么value需要加上''(单引号)或者""(双引号)。设置多个命令的组合时，还需要在不同命令间加上;(分号)，例如<code>cdlog='cd /var/log/server_log; ls'</code></li>
+<li><code>alias name=value</code> 设置的命令需要加参数或者是多个命令的组合，那么value需要加上’’(单引号)或者””(双引号)。设置多个命令的组合时，还需要在不同命令间加上;(分号)，例如<code>cdlog=&#39;cd /var/log/server_log; ls&#39;</code></li>
 <li></li>
 </ul>
-<h1 id="linux-文件颜色含义">2、Linux 文件颜色含义</h1>
-<p>Linux系统颜色默认表示的文件类型： 蓝色表示目录； 绿色表示可执行文件；
-红色表示压缩文件； 浅蓝色表示链接文件； 灰色表示其它文件；
-红色闪烁表示链接的文件有问题了； 黄色是设备文件，包括block, char, fifo。
-用dircolors
--p看到缺省的颜色设置，包括各种颜色和“粗体”，下划线，闪烁等定义。<sup id="fnref:12"><a href="#fn:12" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[(87条消息) linux软连接出现红色闪烁_Danker01的博客-CSDN博客_软连接红色](https://blog.csdn.net/weixin_42575020/article/details/105952464)
+<h1 id="2、Linux-文件颜色含义"><a href="#2、Linux-文件颜色含义" class="headerlink" title="2、Linux 文件颜色含义"></a>2、Linux 文件颜色含义</h1><p>Linux系统颜色默认表示的文件类型：<br>蓝色表示目录；<br>绿色表示可执行文件；<br>红色表示压缩文件；<br>浅蓝色表示链接文件；<br>灰色表示其它文件；<br>红色闪烁表示链接的文件有问题了；<br>黄色是设备文件，包括block, char, fifo。<br>用dircolors -p看到缺省的颜色设置，包括各种颜色和“粗体”，下划线，闪烁等定义。<sup id="fnref:12"><a href="#fn:12" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[(87条消息) linux软连接出现红色闪烁_Danker01的博客-CSDN博客_软连接红色](https://blog.csdn.net/weixin_42575020/article/details/105952464)
 ">[12]</span></a></sup></p>
-<h1 id="软链接-硬链接">3、软链接 &amp; 硬链接</h1>
-<p><code>ln -s  源文件（源目录） 目标文件（目标目录）</code>
-创建软链接（类似于快捷方式，大小较小）
-不填写目标文件或目标目录，默认在当前目录创建软链接，可填写目标目录/名称，即可重命令软链接名称。</p>
-<p><code>ln 源文件 目标文件</code> 创建硬链接（类似于cp -p 加 同步更新
-）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[(84条消息) 软链接和硬链接到底有啥作用和区别_明月几时有666的博客-CSDN博客_软连接和硬连接的优缺点](https://blog.csdn.net/gao_zhennan/article/details/79127232)
-">[1]</span></a></sup> <code>ln  -s  source/*  target/</code>
-把一个文件夹下的所有文件软连接到另一个文件夹下，即每个文件都有一个软链接。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[(84条消息) linux软连接多个文件 批量_dingdongkk的博客-CSDN博客_软链接多个文件](https://blog.csdn.net/sinat_29891353/article/details/69525388)
+<h1 id="3、软链接-amp-硬链接"><a href="#3、软链接-amp-硬链接" class="headerlink" title="3、软链接 &amp; 硬链接"></a>3、软链接 &amp; 硬链接</h1><p><code>ln -s  源文件（源目录） 目标文件（目标目录）</code>  创建软链接（类似于快捷方式，大小较小）<br>不填写目标文件或目标目录，默认在当前目录创建软链接，可填写目标目录&#x2F;名称，即可重命令软链接名称。</p>
+<p><code>ln 源文件 目标文件</code>  创建硬链接（类似于cp  -p 加 同步更新 ）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[(84条消息) 软链接和硬链接到底有啥作用和区别_明月几时有666的博客-CSDN博客_软连接和硬连接的优缺点](https://blog.csdn.net/gao_zhennan/article/details/79127232)
+">[1]</span></a></sup><br><code>ln  -s  source/*  target/</code> 把一个文件夹下的所有文件软连接到另一个文件夹下，即每个文件都有一个软链接。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[(84条消息) linux软连接多个文件 批量_dingdongkk的博客-CSDN博客_软链接多个文件](https://blog.csdn.net/sinat_29891353/article/details/69525388)
 ">[2]</span></a></sup></p>
-<p><code>wget -c -b</code> -c 断点续传 -b 后台运行</p>
-<h1 id="前后台命令">4、前后台命令 </h1>
-<p><code>nohup  命令   &gt; run.log 2&gt;&amp;1 &amp;</code>
-后台执行，不挂断，标准输出和错误输出都放到log文件里
-把标准错误（2）重定向到标准输出中（1），而标准输出又导入文件output里面。
-&gt;console.txt，实际是 1&gt;console.txt的省略用法；&lt; console.txt
-，实际是 0 &lt;
-console.txt的省略用法。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://blog.csdn.net/ianly123/article/details/85113539
+<p><code>wget -c -b</code>   -c 断点续传   -b 后台运行</p>
+<h1 id="4、前后台命令"><a href="#4、前后台命令" class="headerlink" title="4、前后台命令"></a>4、前后台命令</h1><p><code>nohup  命令   &gt; run.log 2&gt;&amp;1 &amp;</code>        后台执行，不挂断，标准输出和错误输出都放到log文件里<br>把标准错误（2）重定向到标准输出中（1），而标准输出又导入文件output里面。<br>&gt;console.txt，实际是 1&gt;console.txt的省略用法；&lt; console.txt ，实际是 0 &lt; console.txt的省略用法。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://blog.csdn.net/ianly123/article/details/85113539
 ">[3]</span></a></sup></p>
-<p>使用nohup关闭终端回来：用<code>ps -aux|grep 软件名</code>，前提是记住自己运行的软件名。<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[(85条消息) nohup使用笔记，后台运行，进程查看与终止_wanghua609的博客-CSDN博客_nohup进程](https://blog.csdn.net/weixin_38145317/article/details/124037568)
-">[4]</span></a></sup> 未关闭终端：<code>jobs</code>
-查看当前终端后台运行命令 ，终端关闭后无法查看。</p>
-<p>命令前后台切换<sup id="fnref:5"><a href="#fn:5" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Linux程序前台后台切换 - G先生 - 博客园 (cnblogs.com)](https://www.cnblogs.com/geogre123/p/10643152.html)
-">[5]</span></a></sup>： 后台执行命令：<code>命令 &amp;</code>
-程序正在前台运行： Ctrl+z 选项把程序暂停，在最后一行加上bg %number
-（number用<code>job -l</code> 查看） 程序正在后台运行：fg %number
-把程序掉到前台 终止后台运行的程序：kill %number</p>
-<h1 id="wsl-vmware">5、WSL &amp; VMware </h1>
-<p>WSL依赖于hyper-v必须开启，而VMware不依赖这个，必须关闭<sup id="fnref:7"><a href="#fn:7" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://blog.csdn.net/qq_34398519/article/details/114289586
-">[7]</span></a></sup> CMD管理员模式启动，输入bcdedit /set
-hypervisorlaunchtype auto开启，则可以使用WSL
-CMD管理员模式启动，输入bcdedit /set hypervisorlaunchtype
-off关闭，则可以使用VMware</p>
-<h1 id="解压缩">6、解压缩</h1>
-<p><code>tar zxvf  aaa.tar.gz</code><sup id="fnref:8"><a href="#fn:8" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[(87条消息) tar -zxvf是什么意思_ProLayman的博客-CSDN博客_tar –zxvf]:(https://blog.csdn.net/ProLayman/article/details/114577007)
+<p>使用nohup关闭终端回来：用<code>ps -aux|grep 软件名</code>，前提是记住自己运行的软件名。<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[(85条消息) nohup使用笔记，后台运行，进程查看与终止_wanghua609的博客-CSDN博客_nohup进程](https://blog.csdn.net/weixin_38145317/article/details/124037568)
+">[4]</span></a></sup><br>未关闭终端：<code>jobs</code> 查看当前终端后台运行命令 ，终端关闭后无法查看。</p>
+<p>命令前后台切换<sup id="fnref:5"><a href="#fn:5" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Linux程序前台后台切换 - G先生 - 博客园 (cnblogs.com)](https://www.cnblogs.com/geogre123/p/10643152.html)
+">[5]</span></a></sup>：<br>后台执行命令：<code>命令 &amp;</code><br>程序正在前台运行： Ctrl+z 选项把程序暂停，在最后一行加上bg %number  （number用<code>job -l</code> 查看）<br>程序正在后台运行：fg %number 把程序掉到前台<br>终止后台运行的程序：kill %number</p>
+<h1 id="5、WSL-amp-VMware"><a href="#5、WSL-amp-VMware" class="headerlink" title="5、WSL &amp; VMware"></a>5、WSL &amp; VMware</h1><p>WSL依赖于hyper-v必须开启，而VMware不依赖这个，必须关闭<sup id="fnref:7"><a href="#fn:7" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://blog.csdn.net/qq_34398519/article/details/114289586
+">[7]</span></a></sup><br>CMD管理员模式启动，输入bcdedit &#x2F;set hypervisorlaunchtype auto开启，则可以使用WSL<br>CMD管理员模式启动，输入bcdedit &#x2F;set hypervisorlaunchtype off关闭，则可以使用VMware</p>
+<h1 id="6、解压缩"><a href="#6、解压缩" class="headerlink" title="6、解压缩"></a>6、解压缩</h1><p><code>tar zxvf  aaa.tar.gz</code><sup id="fnref:8"><a href="#fn:8" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[(87条消息) tar -zxvf是什么意思_ProLayman的博客-CSDN博客_tar –zxvf]:(https://blog.csdn.net/ProLayman/article/details/114577007)
 ">[8]</span></a></sup></p>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>参数</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
+<tbody><tr>
 <td>tar</td>
-<td>Linux压缩/解压缩工具</td>
+<td>Linux压缩&#x2F;解压缩工具</td>
 </tr>
-<tr class="even">
+<tr>
 <td>-z</td>
 <td>代表gzip，使用gzip工具进行压缩或解压</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>-x</td>
 <td>代表extract，解压文件</td>
 </tr>
-<tr class="even">
+<tr>
 <td>-v</td>
 <td>代表verbose，显示解压过程（文件列表）</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>-f</td>
 <td>代表file，指定要解压的文件名（or 要压缩成的文件名）</td>
 </tr>
-<tr class="even">
+<tr>
 <td>-c</td>
 <td>代表create，创建一个新文件</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>-j</td>
 <td>通过 bzip2 过滤存档</td>
 </tr>
-<tr class="even">
+<tr>
 <td></td>
 <td></td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>tar 命令</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
+<tbody><tr>
 <td>tar -cvf xxx.tar file</td>
 <td>创建非压缩tar包</td>
 </tr>
-<tr class="even">
+<tr>
 <td>tar -cvf xxx.tar file1 file2 dir1</td>
 <td>将多个⽂件+⽬录打tar包</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>tar -tf xxx.tar</td>
 <td>查看tar包的内容</td>
 </tr>
-<tr class="even">
+<tr>
 <td>tar -xvf xxx.tar</td>
 <td>解压tar包</td>
 </tr>
-<tr class="odd">
-<td>tar -xvf xxx.tar -C /dir</td>
+<tr>
+<td>tar -xvf xxx.tar -C &#x2F;dir</td>
 <td>将tar包解压⾄指定⽬录</td>
 </tr>
-<tr class="even">
+<tr>
 <td>tar -cvfj xxx.tar.bz2 dir</td>
 <td>创建bz2压缩包</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>tar -jxvf xxx.tar.bz2</td>
 <td>解压bz2压缩包</td>
 </tr>
-<tr class="even">
+<tr>
 <td>tar -cvfz xxx.tar.gz dir</td>
 <td>创建gzip压缩包</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>tar -zxvf xxx.tar.gz</td>
 <td>解压gzip压缩包</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>命令</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
+<tbody><tr>
 <td>zip xxx.zip file</td>
 <td>压缩⾄zip包</td>
 </tr>
-<tr class="even">
+<tr>
 <td>zip -r xxx.zip file1 file2 dir1</td>
 <td>将多个⽂件+⽬录压成zip包</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>unzip xxx.zip</td>
 <td>解压zip包</td>
 </tr>
-<tr class="even">
+<tr>
 <td>bunzip2 xxx.bz2</td>
 <td>解压bz2压缩包</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>bzip2 filename</td>
 <td>压缩⽂件</td>
 </tr>
-<tr class="even">
+<tr>
 <td>gunzip xxx.gz</td>
 <td>解压gzip压缩包</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>gzip filename</td>
 <td>压缩⽂件</td>
 </tr>
-<tr class="even">
+<tr>
 <td>gzip -9 filename</td>
 <td>最⼤程度压缩</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>推荐阅读：</p>
-<p><a target="_blank" rel="noopener" href="https://linux.die.net/man/1/tar">tar(1): manual page for tar
-1.23 - Linux man page (die.net)</a>
-https://mp.weixin.qq.com/s/Kog6AfXYINIDwKMpJMkGFQ</p>
-<h1 id="添加环境变量">7、添加环境变量</h1>
-<p>临时：<code>export PATH=/usr/local/nginx/sbin/:$PATH</code>，将/usr/local/nginx/sbin/目录临时添加到环境变量中<sup id="fnref:9"><a href="#fn:9" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[linux添加环境变量 - ilovetesting - 博客园 (cnblogs.com)](https://www.cnblogs.com/yaoqingzhuan/p/10889718.html)
+<p><a target="_blank" rel="noopener" href="https://linux.die.net/man/1/tar">tar(1): manual page for tar 1.23 - Linux man page (die.net)</a><br><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/Kog6AfXYINIDwKMpJMkGFQ">https://mp.weixin.qq.com/s/Kog6AfXYINIDwKMpJMkGFQ</a></p>
+<h1 id="7、添加环境变量"><a href="#7、添加环境变量" class="headerlink" title="7、添加环境变量"></a>7、添加环境变量</h1><p>临时：<code>export PATH=/usr/local/nginx/sbin/:$PATH</code>，将&#x2F;usr&#x2F;local&#x2F;nginx&#x2F;sbin&#x2F;目录临时添加到环境变量中<sup id="fnref:9"><a href="#fn:9" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[linux添加环境变量 - ilovetesting - 博客园 (cnblogs.com)](https://www.cnblogs.com/yaoqingzhuan/p/10889718.html)
 ">[9]</span></a></sup></p>
 <p>当前用户永久：<code>vim ~/.bashrc</code>将一下内容添加进去：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment"># 注意等号后边要加引号，与临时添加有所差别；路径用绝对路径，不管是临时还是永久添加，不要~，用pwd去获得绝对路径</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="string">&quot;/usr/local/nginx/sbin/:<span class="variable">$PATH</span>&quot;</span> </span><br></pre></td></tr></table></figure>
-<h1 id="软件推荐">8、软件推荐</h1>
-<ul>
+
+
+
+<h1 id="8、软件推荐"><a href="#8、软件推荐" class="headerlink" title="8、软件推荐"></a>8、软件推荐</h1><ul>
 <li>bat 类似于cat ，比cat好用。</li>
 <li>fd 搜索文件，代替find (centos安装不便，放弃)</li>
-<li><a
-target="_blank" rel="noopener" href="https://bbs.deepin.org/post/135130">类似Windows的listary</a>：桌面的话推荐
-FSearch 和 ANGRYsearch，命令行的话推荐 fzf。</li>
+<li><a target="_blank" rel="noopener" href="https://bbs.deepin.org/post/135130">类似Windows的listary</a>：桌面的话推荐 FSearch 和 ANGRYsearch，命令行的话推荐 fzf。</li>
 </ul>
-<h1 id="查看系统版本">9、查看系统版本</h1>
-<p><a target="_blank" rel="noopener" href="https://linux.cn/article-9586-1.html">来源</a></p>
+<h1 id="9、查看系统版本"><a href="#9、查看系统版本" class="headerlink" title="9、查看系统版本"></a>9、查看系统版本</h1><p><a target="_blank" rel="noopener" href="https://linux.cn/article-9586-1.html">来源</a></p>
 <ul>
-<li><p><strong>lsb_release -a</strong>： (LSB（Linux 标准库Linux
-Standard
-Base）能够打印发行版的具体信息，包括发行版名称、版本号、代号等。)</p></li>
-<li><p>**/etc/*-release 文件**：release 文件通常被视为操作系统的标识。在
-/etc
-目录下放置了很多记录着发行版各种信息的文件，每个发行版都各自有一套这样记录着相关信息的文件。</p></li>
+<li><p><strong>lsb_release -a</strong>：   (LSB（Linux 标准库Linux Standard Base）能够打印发行版的具体信息，包括发行版名称、版本号、代号等。)</p>
+</li>
+<li><p><strong>&#x2F;etc&#x2F;*-release 文件</strong>：release 文件通常被视为操作系统的标识。在 &#x2F;etc 目录下放置了很多记录着发行版各种信息的文件，每个发行版都各自有一套这样记录着相关信息的文件。</p>
+</li>
 </ul>
-<p>Ubuntu/Debian 系统上：</p>
-<p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/issue</span><br><span class="line">cat /etc/issue.net</span><br><span class="line">cat /etc/lsb-release</span><br><span class="line">cat /etc/os-release</span><br><span class="line">cat /etc/debian_version</span><br></pre></td></tr></table></figure></p>
-<p>RHEL/CentOS/Fedora：</p>
-<p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/centos-release</span><br><span class="line">cat /etc/fedora-release</span><br><span class="line">cat /etc/os-release</span><br><span class="line">cat /etc/redhat-release</span><br><span class="line">cat /etc/system-release</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li><p><strong>uname -a</strong>：uname（unix name 的意思）
-是一个打印系统信息的工具，包括内核名称、版本号、系统详细信息以及所运行的操作系统等等。</p></li>
-<li><p><strong>cat /proc/version</strong>：这个文件记录了 Linux
-内核的版本、用于编译内核的 gcc
-的版本、内核编译的时间，以及内核编译者的用户名。</p></li>
-<li><p><strong>dmesg | grep "Linux"</strong>：dmesg（展示信息display
-message 或驱动程序信息driver message）是大多数类 Unix
-操作系统上的一个命令，用于打印内核的消息缓冲区的信息。</p></li>
-<li><p><strong>Yum/Dnf 命令</strong>：Yum（Yellowdog
-更新器修改版Yellowdog Updater Modified）是 Linux
-操作系统上的一个包管理工具，而 <code>yum</code> 命令被用于一些基于
-RedHat 的 Linux 发行版上安装、更新、查找、删除软件包。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum info nano</span><br><span class="line">yum repolist  #显示了 yum 的基础源仓库、额外源仓库、更新源仓库</span><br></pre></td></tr></table></figure>
-<p><code>dnf</code> 命令也同样可以查看发行版名称和版本号。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dnf info nano</span><br></pre></td></tr></table></figure></li>
-<li><p><strong>rpm -q nano</strong>：RPM（红帽包管理器RedHat Package
-Manager）是在 CentOS、Oracle Linux、Fedora 这些基于 RedHat
-的操作系统上的一个强大的命令行包管理工具，同样也可以帮助我们查看系统的版本信息。</p></li>
-<li><p><strong>apt-cache policy
-nano</strong>：Apt-Get（高级打包工具Advanced Packaging
-Tool）是一个强大的命令行工具，可以自动下载安装新软件包、更新已有的软件包、更新软件包列表索引，甚至更新整个
-Debian 系统。</p></li>
-</ul>
-<h1 id="参考文章">参考文章</h1>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/gao_zhennan/article/details/79127232">(84条消息)
-软链接和硬链接到底有啥作用和区别_明月几时有666的博客-CSDN博客_软连接和硬连接的优缺点</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_29891353/article/details/69525388">(84条消息)
-linux软连接多个文件
-批量_dingdongkk的博客-CSDN博客_软链接多个文件</a><a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:3">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://blog.csdn.net/ianly123/article/details/85113539<a href="#fnref:3" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:4">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_38145317/article/details/124037568">(85条消息)
-nohup使用笔记，后台运行，进程查看与终止_wanghua609的博客-CSDN博客_nohup进程</a><a href="#fnref:4" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:5">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">5.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.cnblogs.com/geogre123/p/10643152.html">Linux程序前台后台切换
-- G先生 - 博客园 (cnblogs.com)</a><a href="#fnref:5" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:6">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">6.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">无<a href="#fnref:6" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:7">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">7.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://blog.csdn.net/qq_34398519/article/details/114289586<a href="#fnref:7" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:8">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">8.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">[(87条消息)
-tar -zxvf是什么意思_ProLayman的博客-CSDN博客_tar
-–zxvf]:(https://blog.csdn.net/ProLayman/article/details/114577007)<a href="#fnref:8" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:9">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">9.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yaoqingzhuan/p/10889718.html">linux添加环境变量
-- ilovetesting - 博客园
-(cnblogs.com)</a><a href="#fnref:9" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:10">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">10.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.cnblogs.com/peida/archive/2012/11/08/2759805.html">每天一个linux命令（16）：which命令
-- peida - 博客园 (cnblogs.com)</a><a href="#fnref:10" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:11">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">11.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jiftle/p/9707518.html">linux
-find 命令查找文件和文件夹 - jiftle - 博客园
-(cnblogs.com)</a><a href="#fnref:11" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:12">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">12.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42575020/article/details/105952464">(87条消息)
-linux软连接出现红色闪烁_Danker01的博客-CSDN博客_软连接红色</a><a href="#fnref:12" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:13">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">13.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-paste.html">Linux
-paste 命令 | 菜鸟教程
-(runoob.com)</a><a href="#fnref:13" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
+<p>  Ubuntu&#x2F;Debian 系统上：</p>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/issue</span><br><span class="line">cat /etc/issue.net</span><br><span class="line">cat /etc/lsb-release</span><br><span class="line">cat /etc/os-release</span><br><span class="line">cat /etc/debian_version</span><br></pre></td></tr></table></figure>
 
+<p>  RHEL&#x2F;CentOS&#x2F;Fedora：</p>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/centos-release</span><br><span class="line">cat /etc/fedora-release</span><br><span class="line">cat /etc/os-release</span><br><span class="line">cat /etc/redhat-release</span><br><span class="line">cat /etc/system-release</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>uname -a</strong>：uname（unix name 的意思） 是一个打印系统信息的工具，包括内核名称、版本号、系统详细信息以及所运行的操作系统等等。</p>
+</li>
+<li><p><strong>cat &#x2F;proc&#x2F;version</strong>：这个文件记录了 Linux 内核的版本、用于编译内核的 gcc 的版本、内核编译的时间，以及内核编译者的用户名。</p>
+</li>
+<li><p>**dmesg | grep “Linux”**：dmesg（展示信息display message 或驱动程序信息driver message）是大多数类 Unix 操作系统上的一个命令，用于打印内核的消息缓冲区的信息。</p>
+</li>
+<li><p><strong>Yum&#x2F;Dnf 命令</strong>：Yum（Yellowdog 更新器修改版Yellowdog Updater Modified）是 Linux 操作系统上的一个包管理工具，而 <code>yum</code> 命令被用于一些基于 RedHat 的 Linux 发行版上安装、更新、查找、删除软件包。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum info nano</span><br><span class="line">yum repolist  #显示了 yum 的基础源仓库、额外源仓库、更新源仓库</span><br></pre></td></tr></table></figure>
+
+<p><code>dnf</code> 命令也同样可以查看发行版名称和版本号。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dnf info nano</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>rpm -q nano</strong>：RPM（红帽包管理器RedHat Package Manager）是在 CentOS、Oracle Linux、Fedora 这些基于 RedHat 的操作系统上的一个强大的命令行包管理工具，同样也可以帮助我们查看系统的版本信息。</p>
+</li>
+<li><p><strong>apt-cache policy nano</strong>：Apt-Get（高级打包工具Advanced Packaging Tool）是一个强大的命令行工具，可以自动下载安装新软件包、更新已有的软件包、更新软件包列表索引，甚至更新整个 Debian 系统。</p>
+</li>
+</ul>
+<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/gao_zhennan/article/details/79127232">(84条消息) 软链接和硬链接到底有啥作用和区别_明月几时有666的博客-CSDN博客_软连接和硬连接的优缺点</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_29891353/article/details/69525388">(84条消息) linux软连接多个文件 批量_dingdongkk的博客-CSDN博客_软链接多个文件</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://blog.csdn.net/ianly123/article/details/85113539<a href="#fnref:3" rev="footnote"> ↩</a></span></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_38145317/article/details/124037568">(85条消息) nohup使用笔记，后台运行，进程查看与终止_wanghua609的博客-CSDN博客_nohup进程</a><a href="#fnref:4" rev="footnote"> ↩</a></span></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">5.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.cnblogs.com/geogre123/p/10643152.html">Linux程序前台后台切换 - G先生 - 博客园 (cnblogs.com)</a><a href="#fnref:5" rev="footnote"> ↩</a></span></li><li id="fn:6"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">6.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">无<a href="#fnref:6" rev="footnote"> ↩</a></span></li><li id="fn:7"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">7.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://blog.csdn.net/qq_34398519/article/details/114289586<a href="#fnref:7" rev="footnote"> ↩</a></span></li><li id="fn:8"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">8.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">[(87条消息) tar -zxvf是什么意思_ProLayman的博客-CSDN博客_tar –zxvf]:(https://blog.csdn.net/ProLayman/article/details/114577007)<a href="#fnref:8" rev="footnote"> ↩</a></span></li><li id="fn:9"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">9.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yaoqingzhuan/p/10889718.html">linux添加环境变量 - ilovetesting - 博客园 (cnblogs.com)</a><a href="#fnref:9" rev="footnote"> ↩</a></span></li><li id="fn:10"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">10.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.cnblogs.com/peida/archive/2012/11/08/2759805.html">每天一个linux命令（16）：which命令 - peida - 博客园 (cnblogs.com)</a><a href="#fnref:10" rev="footnote"> ↩</a></span></li><li id="fn:11"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">11.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jiftle/p/9707518.html">linux find 命令查找文件和文件夹 - jiftle - 博客园 (cnblogs.com)</a><a href="#fnref:11" rev="footnote"> ↩</a></span></li><li id="fn:12"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">12.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42575020/article/details/105952464">(87条消息) linux软连接出现红色闪烁_Danker01的博客-CSDN博客_软连接红色</a><a href="#fnref:12" rev="footnote"> ↩</a></span></li><li id="fn:13"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">13.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-paste.html">Linux paste 命令 | 菜鸟教程 (runoob.com)</a><a href="#fnref:13" rev="footnote"> ↩</a></span></li></ol></div></div>
     </div>
 
     
@@ -740,7 +566,7 @@ paste 命令 | 菜鸟教程
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#base"><span class="nav-text">1、Base</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#linux-%E6%96%87%E4%BB%B6%E9%A2%9C%E8%89%B2%E5%90%AB%E4%B9%89"><span class="nav-text">2、Linux 文件颜色含义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AF%E9%93%BE%E6%8E%A5-%E7%A1%AC%E9%93%BE%E6%8E%A5"><span class="nav-text">3、软链接 &amp; 硬链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E5%90%8E%E5%8F%B0%E5%91%BD%E4%BB%A4"><span class="nav-text">4、前后台命令 </span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#wsl-vmware"><span class="nav-text">5、WSL &amp; VMware </span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A7%A3%E5%8E%8B%E7%BC%A9"><span class="nav-text">6、解压缩</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-text">7、添加环境变量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90"><span class="nav-text">8、软件推荐</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E7%89%88%E6%9C%AC"><span class="nav-text">9、查看系统版本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1%E3%80%81Base"><span class="nav-text">1、Base</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2%E3%80%81Linux-%E6%96%87%E4%BB%B6%E9%A2%9C%E8%89%B2%E5%90%AB%E4%B9%89"><span class="nav-text">2、Linux 文件颜色含义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3%E3%80%81%E8%BD%AF%E9%93%BE%E6%8E%A5-amp-%E7%A1%AC%E9%93%BE%E6%8E%A5"><span class="nav-text">3、软链接 &amp; 硬链接</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4%E3%80%81%E5%89%8D%E5%90%8E%E5%8F%B0%E5%91%BD%E4%BB%A4"><span class="nav-text">4、前后台命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5%E3%80%81WSL-amp-VMware"><span class="nav-text">5、WSL &amp; VMware</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6%E3%80%81%E8%A7%A3%E5%8E%8B%E7%BC%A9"><span class="nav-text">6、解压缩</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7%E3%80%81%E6%B7%BB%E5%8A%A0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="nav-text">7、添加环境变量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8%E3%80%81%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90"><span class="nav-text">8、软件推荐</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9%E3%80%81%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E7%89%88%E6%9C%AC"><span class="nav-text">9、查看系统版本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -756,7 +582,7 @@ paste 命令 | 菜鸟教程
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">62</span>
+          <span class="site-state-item-count">64</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -769,7 +595,7 @@ paste 命令 | 菜鸟教程
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">44</span>
+        <span class="site-state-item-count">45</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -820,13 +646,13 @@ paste 命令 | 菜鸟教程
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">100k</span>
+    <span title="Symbols count total">103k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:31</span>
+    <span title="Reading time total">1:34</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
@@ -866,6 +692,7 @@ setInterval("createtime()",250);
 
   
   <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
@@ -880,6 +707,65 @@ setInterval("createtime()",250);
 
 
 <script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
 
 
 
@@ -907,11 +793,32 @@ setInterval("createtime()",250);
 
 
 
+    <div id="pjax">
   
 
   
 
   
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '90px',
+  right: '100px',
+  left: 'unset',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '🌓',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
 
@@ -933,6 +840,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
 });
 </script>
 
+    </div>
 + 
 
   <script async src="/js/cursor/fireworks.js"></script>

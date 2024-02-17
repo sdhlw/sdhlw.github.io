@@ -22,12 +22,12 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="re库是Python关于正则表达式的一个内置模块，使用时无需下载，直接import即可。 这个模块提供与Perl语言中类似的正则表达式匹配操作，支持bytes和unicode两种格式的字符串，处理的字符串可以包含空字符以及超出ASCII码范围的字符(比如中文字符)。">
+  <meta name="description" content="re库是Python关于正则表达式的一个内置模块，使用时无需下载，直接import即可。 这个模块提供与Perl语言中类似的正则表达式匹配操作，支持bytes和unicode两种格式的字符串，处理的字符串可以包含空字符以及超出ASCII码范围的字符(比如中文字符)。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python的正则表达式">
 <meta property="og:url" content="https://www.sdhlw.top/Python%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="re库是Python关于正则表达式的一个内置模块，使用时无需下载，直接import即可。 这个模块提供与Perl语言中类似的正则表达式匹配操作，支持bytes和unicode两种格式的字符串，处理的字符串可以包含空字符以及超出ASCII码范围的字符(比如中文字符)。">
+<meta property="og:description" content="re库是Python关于正则表达式的一个内置模块，使用时无需下载，直接import即可。 这个模块提供与Perl语言中类似的正则表达式匹配操作，支持bytes和unicode两种格式的字符串，处理的字符串可以包含空字符以及超出ASCII码范围的字符(比如中文字符)。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-08-19T13:47:36.000Z">
 <meta property="article:modified_time" content="2023-01-17T09:38:15.746Z">
@@ -81,7 +81,7 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Jay's Blog" type="application/atom+xml">
-</head>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
@@ -246,7 +246,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>4.1k</span>
+              <span>4.2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -267,65 +267,70 @@
       
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>re库是Python关于正则表达式的一个内置模块，使用时无需下载，直接import即可。</p>
 <p>这个模块提供与Perl语言中类似的正则表达式匹配操作，支持bytes和unicode两种格式的字符串，处理的字符串可以包含空字符以及超出ASCII码范围的字符(比如中文字符)。</p>
-<p><span id="more"></span></p>
+ <span id="more"></span> 
+
 <p>本文主要来源是Python3.10.6 re库官方文档，提及的函数：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">re.match(),re.fullmatch(),re.search(),re.findall(),group(),groups()</span><br><span class="line">re.split()</span><br><span class="line">re.sub(),re.subn()</span><br><span class="line">re.compile(),re.finditer</span><br><span class="line">re.escape()</span><br><span class="line">re.purge()</span><br></pre></td></tr></table></figure>
-<h3 id="查找">1、查找</h3>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import re</span><br><span class="line">re.match(pattern, string, flags=0) # 从字符串的起始位置匹配一个模式，匹配返回一个对象，不匹配返回none</span><br><span class="line">re.fullmatch(pattern, string, flags=0) # 整个字符串与正则完全匹配，返回一个对象，不匹配返回none</span><br><span class="line">re.search(pattern, string, flags=0)   # 扫描整个字符串并返回第一个成功的匹配对象。</span><br><span class="line">re.findall(pattern, string, flags=0)  # 在字符串中找到匹配的所有子串，并返回一个列表，有多个匹配模式，则返回元组列表，如果没有找到匹配的，则返回空列表。</span><br></pre></td></tr></table></figure>
+
+<h3 id="1、查找"><a href="#1、查找" class="headerlink" title="1、查找"></a>1、查找</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">import re</span><br><span class="line">re.match(pattern, string, flags=0) # 从字符串的起始位置匹配一个模式，匹配返回一个对象，不匹配返回none</span><br><span class="line">re.fullmatch(pattern, string, flags=0) # 整个字符串与正则完全匹配，返回一个对象，不匹配返回none</span><br><span class="line">re.search(pattern, string, flags=0)   # 扫描整个字符串并返回第一个成功的匹配对象。</span><br><span class="line">re.findall(pattern, string, flags=0)  # 在字符串中找到匹配的所有子串，并返回一个列表，有多个匹配模式，则返回元组列表，如果没有找到匹配的，则返回空列表。</span><br></pre></td></tr></table></figure>
+
 <ul>
-<li>pattern：正则中的模式字符串。pattern形式：<code>r"正则"</code></li>
+<li>pattern：正则中的模式字符串。pattern形式：<code>r&quot;正则&quot;</code></li>
 <li>string：要被查找替换的原始字符串。</li>
-<li>flags：标志位，用于控制正则表达式的匹配方式
-<ul>
+<li>flags：标志位，用于控制正则表达式的匹配方式<ul>
 <li>re.I：不区分大小写</li>
 <li>re.M：多行匹配，影响 ^ 和 $</li>
 <li>re.S：使 <code>.</code> 匹配包括换行在内的所有字符</li>
-<li>re.U：根据Unicode字符集解析字符。这个标志影响 , , .</li>
+<li>re.U：根据Unicode字符集解析字符。这个标志影响 \w, \W, \b, \B.</li>
 <li>re.L：做本地化识别（locale-aware）匹配</li>
 <li>re.X：该标志通过给予你更灵活的格式以便你将正则表达式写得更易于理解。</li>
-</ul></li>
-<li><code>group(num)</code> 或 <code>groups()</code>是匹配对象（match
-object）的函数，可用来获取匹配到的内容(获取整体或括号的捕获内容)。<code>group（0）</code>和<code>group（）</code>效果相同，均为获取取得的字符串整体，<code>group(n)</code>返回第n组括号匹配的字符，groups()
-返回所有括号匹配的字符，以tuple格式。</li>
+</ul>
+</li>
+<li><code>group(num)</code> 或 <code>groups()</code>是匹配对象（match object）的函数，可用来获取匹配到的内容(获取整体或括号的捕获内容)。<code>group（0）</code>和<code>group（）</code>效果相同，均为获取取得的字符串整体，<code>group(n)</code>返回第n组括号匹配的字符，groups() 返回所有括号匹配的字符，以tuple格式。</li>
 </ul>
 <p>eg：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="built_in">str</span> = <span class="string">&quot;Hello World WoHe&quot;</span></span><br><span class="line"></span><br><span class="line">re.<span class="keyword">match</span>(<span class="string">r&quot;he&quot;</span>,<span class="built_in">str</span>,flags=re.I)</span><br><span class="line"><span class="comment"># out: &lt;re.Match object; span=(0, 2), match=&#x27;He&#x27;&gt;</span></span><br><span class="line">re.<span class="keyword">match</span>(<span class="string">r&quot;wo&quot;</span>,<span class="built_in">str</span>,flags=re.I)   <span class="comment"># match只查找字符串开头</span></span><br><span class="line"><span class="comment"># out: 空 </span></span><br><span class="line">re.fullmatch(<span class="string">r&quot;^H\w+\s\w+\s\w+&quot;</span>,<span class="built_in">str</span>)</span><br><span class="line"><span class="comment"># out：&lt;re.Match object; span=(0, 16), match=&#x27;Hello World WoHe&#x27;&gt;</span></span><br><span class="line"></span><br><span class="line">re.search(<span class="string">r&quot;wo&quot;</span>,<span class="built_in">str</span>,flags=re.I)  <span class="comment"># search只返回第一个成功匹配</span></span><br><span class="line"><span class="comment"># out：&lt;re.Match object; span=(6, 8), match=&#x27;Wo&#x27;&gt;</span></span><br></pre></td></tr></table></figure>
+
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">re.search(<span class="string">r&quot;([a-zA-Z]*)\s([a-zA-Z]*)\s([a-zA-Z]*)&quot;</span>,<span class="built_in">str</span>).group()</span><br><span class="line"><span class="comment"># out：&#x27;Hello World WoHe&#x27;</span></span><br><span class="line">re.search(<span class="string">r&quot;([a-zA-Z]*)\s([a-zA-Z]*)\s([a-zA-Z]*)&quot;</span>,<span class="built_in">str</span>).group(<span class="number">0</span>)  <span class="comment"># group（0）和group（）效果相同，取获得整体</span></span><br><span class="line"><span class="comment"># out：&#x27;Hello World WoHe&#x27;</span></span><br><span class="line"></span><br><span class="line">re.search(<span class="string">r&quot;([a-zA-Z]*)\s([a-zA-Z]*)\s([a-zA-Z]*)&quot;</span>,<span class="built_in">str</span>).group(<span class="number">1</span>)  <span class="comment"># 获得第一个括号捕获的内容</span></span><br><span class="line"><span class="comment"># out：&#x27;Hello&#x27;</span></span><br><span class="line">re.search(<span class="string">r&quot;([a-zA-Z]*)\s([a-zA-Z]*)\s([a-zA-Z]*)&quot;</span>,<span class="built_in">str</span>).group(<span class="number">2</span>)</span><br><span class="line"><span class="comment"># out：&#x27;World&#x27;</span></span><br><span class="line">re.search(<span class="string">r&quot;([a-zA-Z]*)\s([a-zA-Z]*)\s([a-zA-Z]*)&quot;</span>,<span class="built_in">str</span>).group(<span class="number">3</span>)</span><br><span class="line"><span class="comment"># out：&#x27;WoHe&#x27;</span></span><br><span class="line"></span><br><span class="line">re.search(<span class="string">r&quot;([a-zA-Z]*)\s([a-zA-Z]*)\s([a-zA-Z]*)&quot;</span>,<span class="built_in">str</span>).groups() <span class="comment"># 返回所有括号匹配的字符</span></span><br><span class="line"><span class="comment"># out：(&#x27;Hello&#x27;, &#x27;World&#x27;, &#x27;WoHe&#x27;)</span></span><br></pre></td></tr></table></figure>
+
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">str</span> = <span class="string">&quot;Apple Banana Pear App applet Bear&quot;</span></span><br><span class="line">re.findall(<span class="string">r&quot;\bA\w+&quot;</span>,<span class="built_in">str</span>,flags=re.I)</span><br><span class="line"><span class="comment"># out：[&#x27;Apple&#x27;, &#x27;App&#x27;, &#x27;applet&#x27;]</span></span><br></pre></td></tr></table></figure>
-<h3 id="替换">2、替换</h3>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line">re.sub(pattern, repl, string, count=<span class="number">0</span>, flags=<span class="number">0</span>) <span class="comment"># 将匹配的内容替换成其他内容</span></span><br><span class="line">re.subn(pattern, repl, string, count=<span class="number">0</span>, flags=<span class="number">0</span>) <span class="comment">#subn方法与sub()相同, 但返回一个元组, 其中包含新字符串和替换次数。 </span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2、替换"><a href="#2、替换" class="headerlink" title="2、替换"></a>2、替换</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line">re.sub(pattern, repl, string, count=<span class="number">0</span>, flags=<span class="number">0</span>) <span class="comment"># 将匹配的内容替换成其他内容</span></span><br><span class="line">re.subn(pattern, repl, string, count=<span class="number">0</span>, flags=<span class="number">0</span>) <span class="comment">#subn方法与sub()相同, 但返回一个元组, 其中包含新字符串和替换次数。 </span></span><br></pre></td></tr></table></figure>
+
 <ul>
-<li>pattern : 正则中的模式字符串。pattern形式：<code>r"正则"</code></li>
+<li>pattern : 正则中的模式字符串。pattern形式：<code>r&quot;正则&quot;</code></li>
 <li>repl : 替换的字符串，也可为一个函数。</li>
 <li>string : 要被查找替换的原始字符串。</li>
 <li>count : 模式匹配后替换的最大次数，默认 0 表示替换所有的匹配。</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">re.sub(<span class="string">r&quot;(?=9)&quot;</span>,<span class="string">&quot;,&quot;</span>,<span class="string">&quot;123456789&quot;</span>)  <span class="comment"># 在9前面插入一个逗号</span></span><br><span class="line"><span class="comment"># out：&#x27;12345678,9&#x27;</span></span><br><span class="line">re.sub(<span class="string">r&quot;(?=a)&quot;</span>,<span class="string">&quot;.&quot;</span>,<span class="string">&quot;AAAAAAAA&quot;</span>,count=<span class="number">3</span>,flags=re.I) <span class="comment"># 在三个A前面插入.</span></span><br><span class="line"><span class="comment"># out：&#x27;.A.A.AAAAAA&#x27;</span></span><br><span class="line">re.subn(<span class="string">r&quot;(?=a)&quot;</span>,<span class="string">&quot;.&quot;</span>,<span class="string">&quot;AAAAAAAA&quot;</span>,count=<span class="number">3</span>,flags=re.I)</span><br><span class="line"><span class="comment"># out：(&#x27;.A.A.AAAAAA&#x27;, 3)</span></span><br></pre></td></tr></table></figure>
-<h3 id="分隔">3、分隔</h3>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">re.split(pattern, string, maxsplit=<span class="number">0</span>, flags=<span class="number">0</span>) </span><br></pre></td></tr></table></figure>
+
+<h3 id="3、分隔"><a href="#3、分隔" class="headerlink" title="3、分隔"></a>3、分隔</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">re.split(pattern, string, maxsplit=<span class="number">0</span>, flags=<span class="number">0</span>) </span><br></pre></td></tr></table></figure>
+
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">str</span>=<span class="string">&quot;1a2b3c&quot;</span></span><br><span class="line">re.split(<span class="string">r&quot;\d&quot;</span>,<span class="built_in">str</span>,maxsplit=<span class="number">2</span>)</span><br><span class="line"><span class="comment"># out：[&#x27;&#x27;, &#x27;a&#x27;, &#x27;b3c&#x27;]</span></span><br></pre></td></tr></table></figure>
-<h3 id="正则表达式复用">4、正则表达式复用</h3>
-<p>一个脚本中，若多次使用到同一个正则表达式，为提高效率，可使用<code>re.compile()</code>生成一个正则表达式的对象，进行多次复用。</p>
+
+
+
+<h3 id="4、正则表达式复用"><a href="#4、正则表达式复用" class="headerlink" title="4、正则表达式复用"></a>4、正则表达式复用</h3><p>一个脚本中，若多次使用到同一个正则表达式，为提高效率，可使用<code>re.compile()</code>生成一个正则表达式的对象，进行多次复用。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">re.<span class="built_in">compile</span>(pattern,flags=<span class="number">0</span>)  <span class="comment"># 语法格式</span></span><br></pre></td></tr></table></figure>
+
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">str</span> = <span class="string">&#x27;ads456&#x27;</span></span><br><span class="line">fnum = re.<span class="built_in">compile</span>(<span class="string">r&quot;\d+&quot;</span>)</span><br><span class="line">fnum.search(<span class="built_in">str</span>)</span><br><span class="line"><span class="comment"># out：&lt;re.Match object; span=(3, 6), match=&#x27;456&#x27;&gt;</span></span><br><span class="line"></span><br><span class="line">str1 = <span class="string">&#x27;fadskgf&#x27;</span></span><br><span class="line">falp = re.<span class="built_in">compile</span>(<span class="string">r&quot;(AD)+&quot;</span>,flags=re.I)</span><br><span class="line">falp.search(str1)</span><br><span class="line"><span class="comment"># out：&lt;re.Match object; span=(1, 3), match=&#x27;ad&#x27;&gt;</span></span><br></pre></td></tr></table></figure>
+
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">str</span> = <span class="string">&quot;Apple Banana Pear App applet Bear&quot;</span></span><br><span class="line">fia = re.<span class="built_in">compile</span>(<span class="string">r&quot;\bA\w+&quot;</span>,flags=re.I)</span><br><span class="line">fia.findall(<span class="built_in">str</span>)</span><br><span class="line"><span class="comment"># out：[&#x27;Apple&#x27;, &#x27;App&#x27;, &#x27;applet&#x27;]</span></span><br></pre></td></tr></table></figure>
-<h3 id="迭代器">5、迭代器</h3>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">re.finditer(pattern, string, flags=<span class="number">0</span>) <span class="comment"># 在字符串中找到正则表达式所匹配的所有子串，并把它们作为一个匹配对象（match object）迭代器返回。</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5、迭代器"><a href="#5、迭代器" class="headerlink" title="5、迭代器"></a>5、迭代器</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">re.finditer(pattern, string, flags=<span class="number">0</span>) <span class="comment"># 在字符串中找到正则表达式所匹配的所有子串，并把它们作为一个匹配对象（match object）迭代器返回。</span></span><br></pre></td></tr></table></figure>
+
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">str</span>=<span class="string">&quot;1a2b3c&quot;</span></span><br><span class="line">it = re.finditer(<span class="string">r&quot;\d&quot;</span>,<span class="built_in">str</span>)</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> it:</span><br><span class="line">    <span class="built_in">print</span>(i.group())</span><br><span class="line"><span class="comment"># out：</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure>
-<h3 id="其他">6、其他</h3>
-<ul>
-<li><p><code>re.escape(pattern)</code>：转义 <code>pattern</code>
-中的特殊字符即转义正则表达式中的特殊字符，一般用于目标文本中含有正则表达式元字符的情况。</p></li>
-<li><p><code>re.purge()</code>：清除正则表达式缓存。编译正则表达式时，将对结果进行缓存，确保短期内如果再次编译相同的正则表达式，则可以直接检索结果，清空缓存可以节省开销。</p></li>
+
+<h3 id="6、其他"><a href="#6、其他" class="headerlink" title="6、其他"></a>6、其他</h3><ul>
+<li><p><code>re.escape(pattern)</code>：转义 <code>pattern</code> 中的特殊字符即转义正则表达式中的特殊字符，一般用于目标文本中含有正则表达式元字符的情况。</p>
+</li>
+<li><p><code>re.purge()</code>：清除正则表达式缓存。编译正则表达式时，将对结果进行缓存，确保短期内如果再次编译相同的正则表达式，则可以直接检索结果，清空缓存可以节省开销。</p>
+</li>
 </ul>
-<h3 id="推荐阅读">推荐阅读：</h3>
-<p>1、<a target="_blank" rel="noopener" href="https://docs.python.org/3/library/re.html">re — Regular
-expression operations — Python 3.10.6 documentation</a> 2、<a
-target="_blank" rel="noopener" href="https://www.runoob.com/python/python-reg-expressions.html">Python
-正则表达式 | 菜鸟教程 (runoob.com)</a> 3、<a
-target="_blank" rel="noopener" href="https://docs.python.org/3/howto/regex.html">Regular Expression
-HOWTO — Python 3.10.6 documentation</a>
-4、https://zhuanlan.zhihu.com/p/361601136</p>
+<h3 id="推荐阅读："><a href="#推荐阅读：" class="headerlink" title="推荐阅读："></a>推荐阅读：</h3><p>1、<a target="_blank" rel="noopener" href="https://docs.python.org/3/library/re.html">re — Regular expression operations — Python 3.10.6 documentation</a><br>2、<a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-reg-expressions.html">Python 正则表达式 | 菜鸟教程 (runoob.com)</a><br>3、<a target="_blank" rel="noopener" href="https://docs.python.org/3/howto/regex.html">Regular Expression HOWTO — Python 3.10.6 documentation</a><br>4、<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/361601136">https://zhuanlan.zhihu.com/p/361601136</a></p>
 
     </div>
 
@@ -429,7 +434,7 @@ HOWTO — Python 3.10.6 documentation</a>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E6%89%BE"><span class="nav-text">1、查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%BF%E6%8D%A2"><span class="nav-text">2、替换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E9%9A%94"><span class="nav-text">3、分隔</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%A4%8D%E7%94%A8"><span class="nav-text">4、正则表达式复用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8"><span class="nav-text">5、迭代器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">6、其他</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB"><span class="nav-text">推荐阅读：</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81%E6%9F%A5%E6%89%BE"><span class="nav-text">1、查找</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81%E6%9B%BF%E6%8D%A2"><span class="nav-text">2、替换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81%E5%88%86%E9%9A%94"><span class="nav-text">3、分隔</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4%E3%80%81%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%A4%8D%E7%94%A8"><span class="nav-text">4、正则表达式复用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5%E3%80%81%E8%BF%AD%E4%BB%A3%E5%99%A8"><span class="nav-text">5、迭代器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6%E3%80%81%E5%85%B6%E4%BB%96"><span class="nav-text">6、其他</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB%EF%BC%9A"><span class="nav-text">推荐阅读：</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -445,7 +450,7 @@ HOWTO — Python 3.10.6 documentation</a>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">62</span>
+          <span class="site-state-item-count">64</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -458,7 +463,7 @@ HOWTO — Python 3.10.6 documentation</a>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">44</span>
+        <span class="site-state-item-count">45</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -509,13 +514,13 @@ HOWTO — Python 3.10.6 documentation</a>
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">100k</span>
+    <span title="Symbols count total">103k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:31</span>
+    <span title="Reading time total">1:34</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
@@ -555,6 +560,7 @@ setInterval("createtime()",250);
 
   
   <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
@@ -569,6 +575,65 @@ setInterval("createtime()",250);
 
 
 <script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
 
 
 
@@ -596,11 +661,32 @@ setInterval("createtime()",250);
 
 
 
+    <div id="pjax">
   
 
   
 
   
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '90px',
+  right: '100px',
+  left: 'unset',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '🌓',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
 
@@ -622,6 +708,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
 });
 </script>
 
+    </div>
 + 
 
   <script async src="/js/cursor/fireworks.js"></script>

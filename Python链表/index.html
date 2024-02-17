@@ -22,18 +22,20 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="链表的基本结构：   image-20220831102428767   节点：每个节点有两个部分，左边部分称为值域，用来存放用户数据；右边部分称为指针域，用来存放指向下一个元素的指针。 head：head节点永远指向第一个节点 tail：tail永远指向最后一个节点 None：链表中最后一个节点的指针域为None值">
+  <meta name="description" content="链表的基本结构：   节点：每个节点有两个部分，左边部分称为值域，用来存放用户数据；右边部分称为指针域，用来存放指向下一个元素的指针。  head：head节点永远指向第一个节点  tail：tail永远指向最后一个节点  None：链表中最后一个节点的指针域为None值">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python 链表">
 <meta property="og:url" content="https://www.sdhlw.top/Python%E9%93%BE%E8%A1%A8/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="链表的基本结构：   image-20220831102428767   节点：每个节点有两个部分，左边部分称为值域，用来存放用户数据；右边部分称为指针域，用来存放指向下一个元素的指针。 head：head节点永远指向第一个节点 tail：tail永远指向最后一个节点 None：链表中最后一个节点的指针域为None值">
+<meta property="og:description" content="链表的基本结构：   节点：每个节点有两个部分，左边部分称为值域，用来存放用户数据；右边部分称为指针域，用来存放指向下一个元素的指针。  head：head节点永远指向第一个节点  tail：tail永远指向最后一个节点  None：链表中最后一个节点的指针域为None值">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208311024919.png">
 <meta property="article:published_time" content="2022-08-31T02:22:46.000Z">
 <meta property="article:modified_time" content="2023-01-18T15:03:55.707Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208311024919.png">
 
 <link rel="canonical" href="https://www.sdhlw.top/Python%E9%93%BE%E8%A1%A8/">
 
@@ -80,7 +82,7 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Jay's Blog" type="application/atom+xml">
-</head>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
@@ -245,7 +247,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>2.1k</span>
+              <span>2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -265,22 +267,20 @@
 
       
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>链表的基本结构：</p>
-<figure>
-<img
-src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208311024919.png"
-alt="image-20220831102428767" />
-<figcaption aria-hidden="true">image-20220831102428767</figcaption>
-</figure>
+<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208311024919.png" alt="image-20220831102428767"></p>
 <ul>
-<li><p>节点：每个节点有两个部分，左边部分称为值域，用来存放用户数据；右边部分称为指针域，用来存放指向下一个元素的指针。</p></li>
-<li><p>head：head节点永远指向第一个节点</p></li>
-<li><p>tail：tail永远指向最后一个节点</p></li>
+<li><p>节点：每个节点有两个部分，左边部分称为值域，用来存放用户数据；右边部分称为指针域，用来存放指向下一个元素的指针。</p>
+</li>
+<li><p>head：head节点永远指向第一个节点</p>
+</li>
+<li><p>tail：tail永远指向最后一个节点</p>
+</li>
 <li><p>None：链表中最后一个节点的指针域为None值</p>
 <span id="more"></span></li>
 </ul>
-<p>该代码来源：<a
-target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1nK4y1v7uv?share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9">Python数据结构与算法03——单链表、双链表、单项循环链表</a></p>
+<p>该代码来源：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1nK4y1v7uv?share_source=copy_web&vd_source=7f2a81e814313c699f856c2ec72be7d9">Python数据结构与算法03——单链表、双链表、单项循环链表</a> </p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Node</span>(<span class="title class_ inherited__">object</span>):  <span class="comment"># 定义节点类</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,elem</span>):</span><br><span class="line">        self.elem = elem </span><br><span class="line">        self.<span class="built_in">next</span> = <span class="literal">None</span></span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">SingleLinkList</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="comment"># 定义单链表类</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,node=<span class="literal">None</span></span>):</span><br><span class="line">        self._head = node</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">is_empty</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> self._head == <span class="literal">None</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">length</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="comment"># 链表长度</span></span><br><span class="line">        <span class="comment"># cur 游标，用于移动遍历节点</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        <span class="comment"># count 记录数量</span></span><br><span class="line">        count = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            count += <span class="number">1</span></span><br><span class="line">            cur = cur.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> count</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">travel</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="comment"># 遍历整个链表</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            <span class="built_in">print</span>(cur.elem,end=<span class="string">&quot; &quot;</span>)</span><br><span class="line">            cur = cur.<span class="built_in">next</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot; &quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">self,item</span>):</span><br><span class="line">        <span class="comment"># 链表头部添加元素，头插法</span></span><br><span class="line">        node = Node(item)</span><br><span class="line">        node.<span class="built_in">next</span> = self._head</span><br><span class="line">        self._head = node</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">append</span>(<span class="params">self,item</span>):</span><br><span class="line">        <span class="comment"># 链表尾部添加元素</span></span><br><span class="line">        node = Node(item)</span><br><span class="line">        <span class="keyword">if</span> self.is_empty():</span><br><span class="line">            self._head = node</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            cur = self._head</span><br><span class="line">            <span class="keyword">while</span> cur.<span class="built_in">next</span> != <span class="literal">None</span>:</span><br><span class="line">                cur = cur.<span class="built_in">next</span></span><br><span class="line">            cur.<span class="built_in">next</span> =node</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">insert</span>(<span class="params">self,pos,item</span>):</span><br><span class="line">        <span class="comment"># 指定位置添加元素</span></span><br><span class="line">        <span class="comment">#:param pos 从0开始</span></span><br><span class="line">        <span class="keyword">if</span> pos &lt;= <span class="number">0</span>:</span><br><span class="line">            self.add(item)</span><br><span class="line">        <span class="keyword">elif</span> pos &gt; (self.length()-<span class="number">1</span>):</span><br><span class="line">            self.append(item)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            pre = self._head</span><br><span class="line">            count = <span class="number">0</span></span><br><span class="line">            <span class="keyword">while</span> count &lt; (pos-<span class="number">1</span>):</span><br><span class="line">                count += <span class="number">1</span></span><br><span class="line">                pre = pre.<span class="built_in">next</span></span><br><span class="line">            <span class="comment"># 当循环退出后，pre指向pos-1位置</span></span><br><span class="line">            node = Node(item)</span><br><span class="line">            node.<span class="built_in">next</span> = pre.<span class="built_in">next</span></span><br><span class="line">            pre.<span class="built_in">next</span> = node</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">remove</span>(<span class="params">self, item</span>):</span><br><span class="line">        <span class="comment"># 删除节点</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        pre = <span class="literal">None</span></span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">if</span> cur.elem == item:</span><br><span class="line">                <span class="comment"># 先判断此节点是否是头节点</span></span><br><span class="line">                <span class="comment"># 头节点</span></span><br><span class="line">                <span class="keyword">if</span> cur == self._head:</span><br><span class="line">                    self._head = cur.<span class="built_in">next</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    pre.<span class="built_in">next</span> = cur.<span class="built_in">next</span></span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                pre = cur</span><br><span class="line">                cur = cur.<span class="built_in">next</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">search</span>(<span class="params">self,item</span>):</span><br><span class="line">        <span class="comment"># 查找节点是否存在</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">if</span> cur.elem == item:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                cur = cur.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">        ll = SingleLinkList()</span><br><span class="line">        <span class="built_in">print</span>(ll.is_empty())</span><br><span class="line">        <span class="built_in">print</span>(ll.length())</span><br><span class="line"></span><br><span class="line">        ll.append(<span class="number">1</span>)</span><br><span class="line">        <span class="built_in">print</span>(ll.is_empty())</span><br><span class="line">        <span class="built_in">print</span>(ll.length())</span><br><span class="line"></span><br><span class="line">        ll.append(<span class="number">2</span>)</span><br><span class="line">        ll.add(<span class="number">8</span>)</span><br><span class="line">        ll.append(<span class="number">3</span>)</span><br><span class="line">        ll.append(<span class="number">4</span>)</span><br><span class="line">        ll.append(<span class="number">5</span>)</span><br><span class="line">        ll.append(<span class="number">6</span>)</span><br><span class="line">        <span class="comment"># 8 1 2 3 4 5 6 </span></span><br><span class="line">        ll.insert(-<span class="number">1</span>,<span class="number">9</span>)  <span class="comment"># 9 8 1 23456</span></span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.insert(<span class="number">3</span>,<span class="number">100</span>) <span class="comment"># 9 8 1 100 2 3456</span></span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.insert(<span class="number">10</span>,<span class="number">200</span>) <span class="comment"># 9 8 1 100 23456 200</span></span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.remove(<span class="number">100</span>)</span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.remove(<span class="number">9</span>)</span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.remove(<span class="number">200</span>)</span><br><span class="line">        ll.travel()</span><br></pre></td></tr></table></figure>
+
 
     </div>
 
@@ -398,7 +398,7 @@ target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1nK4y1v7uv
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">62</span>
+          <span class="site-state-item-count">64</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -411,7 +411,7 @@ target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1nK4y1v7uv
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">44</span>
+        <span class="site-state-item-count">45</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -462,13 +462,13 @@ target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1nK4y1v7uv
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">100k</span>
+    <span title="Symbols count total">103k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:31</span>
+    <span title="Reading time total">1:34</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
@@ -508,6 +508,7 @@ setInterval("createtime()",250);
 
   
   <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
@@ -522,6 +523,65 @@ setInterval("createtime()",250);
 
 
 <script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
 
 
 
@@ -549,11 +609,32 @@ setInterval("createtime()",250);
 
 
 
+    <div id="pjax">
   
 
   
 
   
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '90px',
+  right: '100px',
+  left: 'unset',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '🌓',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
 
@@ -575,6 +656,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
 });
 </script>
 
+    </div>
 + 
 
   <script async src="/js/cursor/fireworks.js"></script>

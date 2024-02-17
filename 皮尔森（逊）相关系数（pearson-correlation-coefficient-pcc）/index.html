@@ -22,19 +22,22 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="介绍 皮尔森相关系数 皮尔森相关系数也称皮尔森积矩相关系数(Pearson product-moment correlation coefficient) ，是一种线性相关系数，是最常用的一种相关系数。记为r，用来反映变量X和变量Y的线性相关程度，r 值介于-1到1之间，绝对值越大表明相关性越强。[1] 适用连续变量。 相关系数 与相关程度一般划分为 - 0.8 - 1.0 极强相关">
+  <meta name="description" content="介绍皮尔森相关系数皮尔森相关系数也称皮尔森积矩相关系数(Pearson product-moment correlation coefficient) ，是一种线性相关系数，是最常用的一种相关系数。记为r，用来反映变量X和变量Y的线性相关程度，r 值介于-1到1之间，绝对值越大表明相关性越强。[1] 适用连续变量。 相关系数 与相关程度一般划分为  0.8 - 1.0 极强相关 0.6 - 0.8">
 <meta property="og:type" content="article">
 <meta property="og:title" content="皮尔森（逊）相关系数（Pearson Correlation Coefficient, PCC）">
 <meta property="og:url" content="https://www.sdhlw.top/%E7%9A%AE%E5%B0%94%E6%A3%AE%EF%BC%88%E9%80%8A%EF%BC%89%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%EF%BC%88pearson-correlation-coefficient-pcc%EF%BC%89/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="介绍 皮尔森相关系数 皮尔森相关系数也称皮尔森积矩相关系数(Pearson product-moment correlation coefficient) ，是一种线性相关系数，是最常用的一种相关系数。记为r，用来反映变量X和变量Y的线性相关程度，r 值介于-1到1之间，绝对值越大表明相关性越强。[1] 适用连续变量。 相关系数 与相关程度一般划分为 - 0.8 - 1.0 极强相关">
+<meta property="og:description" content="介绍皮尔森相关系数皮尔森相关系数也称皮尔森积矩相关系数(Pearson product-moment correlation coefficient) ，是一种线性相关系数，是最常用的一种相关系数。记为r，用来反映变量X和变量Y的线性相关程度，r 值介于-1到1之间，绝对值越大表明相关性越强。[1] 适用连续变量。 相关系数 与相关程度一般划分为  0.8 - 1.0 极强相关 0.6 - 0.8">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302221100116.png">
+<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302221100313.png">
 <meta property="article:published_time" content="2023-02-16T13:56:53.000Z">
 <meta property="article:modified_time" content="2023-02-22T03:11:18.920Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="Statistics">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302221100116.png">
 
 <link rel="canonical" href="https://www.sdhlw.top/%E7%9A%AE%E5%B0%94%E6%A3%AE%EF%BC%88%E9%80%8A%EF%BC%89%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%EF%BC%88pearson-correlation-coefficient-pcc%EF%BC%89/">
 
@@ -81,7 +84,7 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Jay's Blog" type="application/atom+xml">
-</head>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
@@ -265,51 +268,34 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="介绍">介绍</h3>
-<h4 id="皮尔森相关系数">皮尔森相关系数</h4>
-<p>皮尔森相关系数也称皮尔森积矩相关系数(Pearson product-moment
-correlation coefficient)
-，是一种线性相关系数，是最常用的一种相关系数。记为r，用来反映变量X和变量Y的线性相关程度，r
-值介于-1到1之间，绝对值越大表明相关性越强。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[python 皮尔森相关系数（Pearson）](https://blog.csdn.net/small__roc/article/details/123519616)
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><h4 id="皮尔森相关系数"><a href="#皮尔森相关系数" class="headerlink" title="皮尔森相关系数"></a>皮尔森相关系数</h4><p>皮尔森相关系数也称皮尔森积矩相关系数(Pearson product-moment correlation coefficient) ，是一种线性相关系数，是最常用的一种相关系数。记为r，用来反映变量X和变量Y的线性相关程度，r 值介于-1到1之间，绝对值越大表明相关性越强。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[python 皮尔森相关系数（Pearson）](https://blog.csdn.net/small__roc/article/details/123519616)
 ">[1]</span></a></sup></p>
 <p>适用连续变量。</p>
-<p>相关系数 与相关程度一般划分为 - 0.8 - 1.0 极强相关 - 0.6 - 0.8 强相关
-- 0.4 - 0.6 中等程度相关 - 0.2 - 0.4 弱相关 - 0.0 - 0.2
-极弱相关或无相关</p>
-<p>原假设：两者不存在相关性
-P值小，即我们观察的样本（不存在相关性）发生的概率小，存在相关性的概率大，如果原假设成立即不存在相关性，那么我们这个样本就很极端很显著。</p>
+<p>相关系数 与相关程度一般划分为</p>
+<ul>
+<li>0.8 - 1.0 极强相关</li>
+<li>0.6 - 0.8 强相关</li>
+<li>0.4 - 0.6 中等程度相关</li>
+<li>0.2 - 0.4 弱相关</li>
+<li>0.0 - 0.2 极弱相关或无相关</li>
+</ul>
+<p>原假设：两者不存在相关性<br>P值小，即我们观察的样本（不存在相关性）发生的概率小，存在相关性的概率大，如果原假设成立即不存在相关性，那么我们这个样本就很极端很显著。</p>
 <p><strong>相关系数绝对值越大，越相关，P值越小越相关。</strong></p>
 <span id="more"></span>
-<h4 id="线性回归的r平方">线性回归的R平方</h4>
-<p>线性回归后得到的r平方和使用皮尔森相关求得的r再平方数值上面是一样的。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[请问皮尔逊相关系数和r方是一种东西吗？](http://zhidao.baidu.com/question/493668152452206612/answer/2899388201)
+
+<h4 id="线性回归的R平方"><a href="#线性回归的R平方" class="headerlink" title="线性回归的R平方"></a>线性回归的R平方</h4><p>线性回归后得到的r平方和使用皮尔森相关求得的r再平方数值上面是一样的。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[请问皮尔逊相关系数和r方是一种东西吗？](http://zhidao.baidu.com/question/493668152452206612/answer/2899388201)
 ">[3]</span></a></sup></p>
-<p>R平方：决定系数，反应因变量的全部变异能通过回归关系被自变量解释的比例。<span
-class="math inline">\(R^2\)</span>
-值越接近1，吻合程度越高，越接近0，则吻合程度越低。<span
-class="math inline">\(R^2\)</span> 作为相关系数，一般机器默认的是<span
-class="math inline">\(R^2\)</span>
-&gt;0.99，这样才具有可行度和线性关系。<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[线性回归r2代表什么](https://worktile.com/kb/ask/6156.html)
+<p>R平方：决定系数，反应因变量的全部变异能通过回归关系被自变量解释的比例。$R^2$ 值越接近1，吻合程度越高，越接近0，则吻合程度越低。$R^2$ 作为相关系数，一般机器默认的是$R^2$ &gt;0.99，这样才具有可行度和线性关系。<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[线性回归r2代表什么](https://worktile.com/kb/ask/6156.html)
 ">[4]</span></a></sup></p>
-<h3 id="使用">使用</h3>
-<p><code>scipy.stats.pearsonr(x, y, *, alternative='two-sided')</code></p>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p><code>scipy.stats.pearsonr(x, y, *, alternative=&#39;two-sided&#39;)</code></p>
 <p><strong>Parameters</strong></p>
 <ul>
-<li>x(N,) array_like Input
-array.<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[scipy.stats.pearsonr](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html)
+<li>x(N,) array_like Input array.<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[scipy.stats.pearsonr](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html)
 ">[2]</span></a></sup></li>
 <li>y(N,) array_like Input array.</li>
 <li>alternative {‘two-sided’, ‘greater’, ‘less’}, optional</li>
 </ul>
-<p>Defines the alternative hypothesis. Default is ‘two-sided’. The
-following options are available:</p>
+<p>Defines the alternative hypothesis. Default is ‘two-sided’. The following options are available:</p>
 <ul>
 <li>‘two-sided’: the correlation(相关) is nonzero</li>
 <li>‘less’: the correlation is negative (less than zero)</li>
@@ -317,82 +303,32 @@ following options are available:</p>
 </ul>
 <p><strong>Attributes</strong></p>
 <ul>
-<li><code>statistic</code> ：float，Pearson product-moment
-<strong>correlation coefficient</strong>.</li>
-<li><code>pvalue</code> ：float，The p-value associated with the chosen
-alternative.</li>
+<li><code>statistic</code> ：float，Pearson product-moment <strong>correlation coefficient</strong>.</li>
+<li><code>pvalue</code> ：float，The p-value associated with the chosen alternative.</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Python实现</span></span><br><span class="line"><span class="keyword">from</span> scipy.stats <span class="keyword">import</span> pearsonr</span><br><span class="line"></span><br><span class="line">x = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line">y = [<span class="number">1.2</span>,<span class="number">2.2</span>,<span class="number">3.1</span>,<span class="number">4.1</span>]</span><br><span class="line">result = pearsonr(x,y)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;pearson相关系数: &#123;:.6f&#125;&quot;</span>.<span class="built_in">format</span>(result.statistic))  <span class="comment"># result[0]</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;P-Value: &#123;:.6f&#125;&quot;</span>.<span class="built_in">format</span>(result.pvalue))  <span class="comment"># result[1]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># pearson相关系数: 0.999783</span></span><br><span class="line"><span class="comment"># P-Value: 0.000217</span></span><br></pre></td></tr></table></figure>
+
+
+
 <p><code>numpy.corrcoef(x, y=None, rowvar=True, bias=&lt;no value&gt;, ddof=&lt;no value&gt;, *, dtype=None)</code></p>
-<p>Return Pearson product-moment correlation
-coefficients.<sup id="fnref:5"><a href="#fn:5" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[numpy.corrcoef](https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html)
+<p>Return Pearson product-moment correlation coefficients.<sup id="fnref:5"><a href="#fn:5" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[numpy.corrcoef](https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html)
 ">[5]</span></a></sup></p>
-<p>这里计算的是特征与特征（行与行/列与列）的相关系数。</p>
+<p>这里计算的是特征与特征（行与行&#x2F;列与列）的相关系数。</p>
 <p><strong>Parameters</strong></p>
 <ul>
-<li><code>x</code>：array_like，A 1-D or 2-D array containing multiple
-variables and observations.</li>
-<li><code>y</code>：array_like, optional，An additional set of variables
-and observations. y has the same shape as x.</li>
-<li><code>rowvar</code>：bool, optional，If rowvar is True (default),
-then <strong>each row represents a variable, with observations in the
-columns</strong>. Otherwise, the relationship is transposed: each column
-represents a variable, while the rows contain observations.
-默认行为特征，列为样本；</li>
-<li><code>dtype</code>：data-type, optional，Data-type of the result. By
-default, the return data-type will have at least numpy.float64
-precision.</li>
+<li><code>x</code>：array_like，A 1-D or 2-D array containing multiple variables and observations. </li>
+<li><code>y</code>：array_like, optional，An additional set of variables and observations. y has the same shape as x.</li>
+<li><code>rowvar</code>：bool, optional，If rowvar is True (default), then <strong>each row represents a variable, with observations in the columns</strong>. Otherwise, the relationship is transposed: each column represents a variable, while the rows contain observations. 默认行为特征，列为样本；</li>
+<li><code>dtype</code>：data-type, optional，Data-type of the result. By default, the return data-type will have at least numpy.float64 precision.</li>
 </ul>
-<p>Returns: R：ndarray，The correlation coefficient matrix of the
-variables.</p>
+<p>Returns: R：ndarray，The correlation coefficient matrix of the variables.</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">a = pd.Series([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>])</span><br><span class="line">b = pd.Series([<span class="number">2</span>,<span class="number">4</span>,<span class="number">1</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">2</span>,<span class="number">7</span>,<span class="number">0</span>])</span><br><span class="line">c = pd.Series([<span class="number">0</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">7</span>,<span class="number">1</span>,<span class="number">9</span>,<span class="number">6</span>,<span class="number">2</span>])</span><br><span class="line">x = np.vstack((a,b,c))</span><br><span class="line">r = np.corrcoef(x)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;r:\n&#123;&#125;&quot;</span>.<span class="built_in">format</span>(r))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x:</span></span><br><span class="line"><span class="comment"># [[ 1  2  3  4  5  6  7  8  9 10]</span></span><br><span class="line"><span class="comment">#  [ 2  4  1  5  1  3  6  2  7  0]</span></span><br><span class="line"><span class="comment">#  [ 0  3  2  1  4  7  1  9  6  2]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># r:</span></span><br><span class="line"><span class="comment"># [[1.         0.10233683 0.47840854]</span></span><br><span class="line"><span class="comment">#  [0.10233683 1.         0.0242104 ]</span></span><br><span class="line"><span class="comment">#  [0.47840854 0.0242104  1.        ]]</span></span><br></pre></td></tr></table></figure>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302221100116.png" /></p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">a = np.array([[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]])</span><br><span class="line">b = np.array([[<span class="number">11</span>, <span class="number">25</span>, <span class="number">346</span>], [<span class="number">734</span>, <span class="number">48</span>, <span class="number">49</span>]])</span><br><span class="line">r = np.corrcoef(a,b)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;a:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(a))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;b:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(b))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;r:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(r))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># a:</span></span><br><span class="line"><span class="comment"># [[1 2 3]</span></span><br><span class="line"><span class="comment">#  [4 5 6]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># b:</span></span><br><span class="line"><span class="comment"># [[ 11  25 346]</span></span><br><span class="line"><span class="comment">#  [734  48  49]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># r:</span></span><br><span class="line"><span class="comment"># [[ 1.          1.          0.88390399 -0.86539304]</span></span><br><span class="line"><span class="comment">#  [ 1.          1.          0.88390399 -0.86539304]</span></span><br><span class="line"><span class="comment">#  [ 0.88390399  0.88390399  1.         -0.53057867]</span></span><br><span class="line"><span class="comment">#  [-0.86539304 -0.86539304 -0.53057867  1.        ]]</span></span><br></pre></td></tr></table></figure>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302221100313.png" /></p>
-<h3 id="参考文献">参考文献</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/small__roc/article/details/123519616">python
-皮尔森相关系数（Pearson）</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html">scipy.stats.pearsonr</a><a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:3">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="http://zhidao.baidu.com/question/493668152452206612/answer/2899388201">请问皮尔逊相关系数和r方是一种东西吗？</a><a href="#fnref:3" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:4">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://worktile.com/kb/ask/6156.html">线性回归r2代表什么</a><a href="#fnref:4" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:5">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">5.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html">numpy.corrcoef</a><a href="#fnref:5" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
 
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302221100116.png"></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">a = np.array([[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]])</span><br><span class="line">b = np.array([[<span class="number">11</span>, <span class="number">25</span>, <span class="number">346</span>], [<span class="number">734</span>, <span class="number">48</span>, <span class="number">49</span>]])</span><br><span class="line">r = np.corrcoef(a,b)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;a:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(a))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;b:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(b))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;r:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(r))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># a:</span></span><br><span class="line"><span class="comment"># [[1 2 3]</span></span><br><span class="line"><span class="comment">#  [4 5 6]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># b:</span></span><br><span class="line"><span class="comment"># [[ 11  25 346]</span></span><br><span class="line"><span class="comment">#  [734  48  49]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># r:</span></span><br><span class="line"><span class="comment"># [[ 1.          1.          0.88390399 -0.86539304]</span></span><br><span class="line"><span class="comment">#  [ 1.          1.          0.88390399 -0.86539304]</span></span><br><span class="line"><span class="comment">#  [ 0.88390399  0.88390399  1.         -0.53057867]</span></span><br><span class="line"><span class="comment">#  [-0.86539304 -0.86539304 -0.53057867  1.        ]]</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302221100313.png"></p>
+<h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/small__roc/article/details/123519616">python 皮尔森相关系数（Pearson）</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html">scipy.stats.pearsonr</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="http://zhidao.baidu.com/question/493668152452206612/answer/2899388201">请问皮尔逊相关系数和r方是一种东西吗？</a><a href="#fnref:3" rev="footnote"> ↩</a></span></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://worktile.com/kb/ask/6156.html">线性回归r2代表什么</a><a href="#fnref:4" rev="footnote"> ↩</a></span></li><li id="fn:5"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">5.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html">numpy.corrcoef</a><a href="#fnref:5" rev="footnote"> ↩</a></span></li></ol></div></div>
     </div>
 
     
@@ -495,7 +431,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8B%E7%BB%8D"><span class="nav-text">介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9A%AE%E5%B0%94%E6%A3%AE%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0"><span class="nav-text">皮尔森相关系数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E7%9A%84r%E5%B9%B3%E6%96%B9"><span class="nav-text">线性回归的R平方</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8"><span class="nav-text">使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="nav-text">参考文献</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8B%E7%BB%8D"><span class="nav-text">介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%9A%AE%E5%B0%94%E6%A3%AE%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0"><span class="nav-text">皮尔森相关系数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E7%9A%84R%E5%B9%B3%E6%96%B9"><span class="nav-text">线性回归的R平方</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8"><span class="nav-text">使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="nav-text">参考文献</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -511,7 +447,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">62</span>
+          <span class="site-state-item-count">64</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -524,7 +460,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">44</span>
+        <span class="site-state-item-count">45</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -575,13 +511,13 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">100k</span>
+    <span title="Symbols count total">103k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:31</span>
+    <span title="Reading time total">1:34</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
@@ -621,6 +557,7 @@ setInterval("createtime()",250);
 
   
   <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
@@ -635,6 +572,65 @@ setInterval("createtime()",250);
 
 
 <script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
 
 
 
@@ -662,6 +658,7 @@ setInterval("createtime()",250);
 
 
 
+    <div id="pjax">
   
 
   
@@ -720,6 +717,26 @@ setInterval("createtime()",250);
     
 
   
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '90px',
+  right: '100px',
+  left: 'unset',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '🌓',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
 
@@ -741,6 +758,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
 });
 </script>
 
+    </div>
 + 
 
   <script async src="/js/cursor/fireworks.js"></script>

@@ -29,11 +29,13 @@
 <meta property="og:site_name" content="Jay&#39;s Blog">
 <meta property="og:description" content="记录优化Python运行速度的小技巧">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208122144160.png">
 <meta property="article:published_time" content="2022-08-11T13:25:42.000Z">
 <meta property="article:modified_time" content="2023-01-17T09:32:43.804Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208122144160.png">
 
 <link rel="canonical" href="https://www.sdhlw.top/%E4%BC%98%E5%8C%96Python%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6/">
 
@@ -80,7 +82,7 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Jay's Blog" type="application/atom+xml">
-</head>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
@@ -266,85 +268,44 @@
 
       
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>[TOC]</p>
-<h1 id="一一般流程">一、一般<a
-target="_blank" rel="noopener" href="https://blog.51cto.com/u_15353042/3746066">流程</a></h1>
-<p>第一, 寻找慢的问题点 第二, 针对比较慢的算法,
-要具体的深入的进行分析它慢的原因. 也可以采用计时的方法剖析, 庖丁解牛.
-第三步, 优化算法 第四步, 优化编译器和语言问题. 第五步, 上硬件.</p>
+<h1 id="一、一般流程"><a href="#一、一般流程" class="headerlink" title="一、一般流程"></a>一、一般<a target="_blank" rel="noopener" href="https://blog.51cto.com/u_15353042/3746066">流程</a></h1><p>第一, 寻找慢的问题点<br>第二, 针对比较慢的算法, 要具体的深入的进行分析它慢的原因. 也可以采用计时的方法剖析, 庖丁解牛.<br>第三步, 优化算法<br>第四步, 优化编译器和语言问题.<br>第五步, 上硬件.</p>
 <p>考虑哪个函数耗时比较长：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import time</span><br><span class="line">t1= time.time()</span><br><span class="line">  函数1()</span><br><span class="line">t2= time.time()</span><br><span class="line"></span><br><span class="line">print(&quot;耗时&quot;,t2-t1)  #多段打印, 多试几次, </span><br></pre></td></tr></table></figure>
-<hr />
-<p><strong>进程</strong>：一个在内存中运行的应用程序。每个进程都有自己独立的一块内存空间，一个进程可以有多个线程。
-<strong>线程</strong>：进程中的一个执行任务，负责当前进程中程序的<a
-target="_blank" rel="noopener" href="https://blog.csdn.net/ThinkWon/article/details/102021274">执行</a>。</p>
+
+<hr>
+<p><strong>进程</strong>：一个在内存中运行的应用程序。每个进程都有自己独立的一块内存空间，一个进程可以有多个线程。<br><strong>线程</strong>：进程中的一个执行任务，负责当前进程中程序的<a target="_blank" rel="noopener" href="https://blog.csdn.net/ThinkWon/article/details/102021274">执行</a>。</p>
 <p>1、全局解释器锁原因：如果你的程序只有单线程、单进程，代码的速度和性能不会受到全局解释器锁的影响。</p>
-<p>单进程中使用多线程实现并发，并且是 IO 密集型（例如网络 IO 或磁盘
-IO）的线程，GIL
-竞争的效果就很明显了。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[为什么 Python 这么慢？ - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/47795989)
+<p>单进程中使用多线程实现并发，并且是 IO 密集型（例如网络 IO 或磁盘 IO）的线程，GIL 竞争的效果就很明显了。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[为什么 Python 这么慢？ - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/47795989)
 ">[1]</span></a></sup></p>
 <ul>
 <li>PyPy 也是一种带有 GIL 的解释器</li>
 <li>PyPy 也是一种带有 GIL 的解释器</li>
 </ul>
-<h1 id="二for循环多进程多线程">二、For循环多进程&amp;多线程</h1>
-<figure>
-<img
-src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208122144160.png"
-alt="image-20220812213731617" />
-<figcaption aria-hidden="true">image-20220812213731617</figcaption>
-</figure>
-<center>
-任务管理器--性能
-</center>
-<h2 id="gil锁">1、GIL锁</h2>
-<p>python始于1991年，创立初期对运算的要求不高，为了解决多线程共享内存的数据安全问题，引入了GIL锁，全称为Global
-Interpreter Lock，也就是全局解释器锁。</p>
+<h1 id="二、For循环多进程-amp-多线程"><a href="#二、For循环多进程-amp-多线程" class="headerlink" title="二、For循环多进程&amp;多线程"></a>二、For循环多进程&amp;多线程</h1><p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208122144160.png" alt="image-20220812213731617"></p>
+<center>任务管理器--性能</center>
+
+
+
+<h2 id="1、GIL锁"><a href="#1、GIL锁" class="headerlink" title="1、GIL锁"></a>1、GIL锁</h2><p>python始于1991年，创立初期对运算的要求不高，为了解决多线程共享内存的数据安全问题，引入了GIL锁，全称为Global Interpreter Lock，也就是全局解释器锁。</p>
 <p><strong>GIL规定，在一个进程中每次只能有一个线程在运行。</strong>这个GIL锁相当于是线程运行的资格证，某个线程想要运行，首先要获得GIL锁，然后遇到IO或者超时的时候释放GIL锁，给其余的线程去竞争，竞争成功的线程获得GIL锁得到下一次运行的机会。</p>
-<p>正是因为有GIL的存在，python的多线程其实是假的，所以才有人说python的多线程非常鸡肋。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://blog.csdn.net/Victor2code/article/details/109005171
+<p>正是因为有GIL的存在，python的多线程其实是假的，所以才有人说python的多线程非常鸡肋。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://blog.csdn.net/Victor2code/article/details/109005171
 ">[2]</span></a></sup></p>
-<h2 id="多进程">2、多进程</h2>
-<p><a
-target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_35757704/article/details/118799165">来源1</a>、</p>
+<h2 id="2、多进程"><a href="#2、多进程" class="headerlink" title="2、多进程"></a>2、多进程</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_35757704/article/details/118799165">来源1</a>、</p>
 <p>进程的创建和停止都是消耗资源的所以进程绝不是越多越好。因为单个CPU核某时刻只能执行单个进程，所以最好的情况是将进程数量与CPU核数相等，这样可以最大化利用CPU。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 普通情况</span></span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">tes</span>(<span class="params">a</span>):               <span class="comment"># for循环里的东西先写成函数</span></span><br><span class="line">    a = <span class="number">2</span> ** a</span><br><span class="line">    time.sleep(<span class="number">0.2</span>)       <span class="comment"># time.sleep()推迟调用线程的运行，可通过参数secs指秒数</span></span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    t1=time.time()</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">20</span>):</span><br><span class="line">        tes(i)</span><br><span class="line">    t2=time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;普通耗时：&quot;</span>,t2-t1)</span><br><span class="line">    </span><br><span class="line"><span class="comment"># 普通耗时： 4.1959967613220215</span></span><br></pre></td></tr></table></figure>
-<h3 id="进程池">进程池</h3>
-<p>维持一个水位即进程数是恒定的，不够就补，并且保持在一个上限，不许超出上限。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> multiprocessing</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">tes</span>(<span class="params">a</span>):               <span class="comment"># for循环里的东西先写成函数</span></span><br><span class="line">    a = <span class="number">2</span> ** a</span><br><span class="line">    time.sleep(<span class="number">0.2</span>)</span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    t3=time.time()</span><br><span class="line">    pool = multiprocessing.Pool(<span class="number">2</span>)  <span class="comment"># 两个进程执行</span></span><br><span class="line">    <span class="comment"># pool = multiprocessing.Pool(multiprocessing.cpu_count()) # 全部cpu执行</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">20</span>):</span><br><span class="line">        pool.apply_async(func=tes,args=(i,))</span><br><span class="line">    pool.close()</span><br><span class="line">    pool.join()</span><br><span class="line">    t4=time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;多进程耗时：&quot;</span>,t4-t3)</span><br><span class="line">    </span><br><span class="line"><span class="comment"># 多进程耗时： 2.679999589920044    两进程</span></span><br><span class="line"><span class="comment"># 多进程耗时： 1.9049992561340332   全部CPU</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 多进程模板(进程池)</span></span><br><span class="line"><span class="keyword">import</span> multiprocessing</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">tes</span>():    <span class="comment"># 把for循环下的内容写成一个函数</span></span><br><span class="line">    代码</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    pool = multiprocessing.Pool(<span class="number">2</span>)  <span class="comment"># 两个进程执行</span></span><br><span class="line">    <span class="comment"># pool = multiprocessing.Pool(multiprocessing.cpu_count()) # 全部cpu执行</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">20</span>):</span><br><span class="line">        pool.apply_async(func=tes,args=(i,))  <span class="comment"># 填写定义的函数、参数</span></span><br><span class="line">    pool.close()     <span class="comment"># close()方法，进程池不再接受新的任务（注意不是进程）</span></span><br><span class="line">    pool.join()    <span class="comment"># join()方法，阻塞主进程，一定要在close()或者terminate()之后。</span></span><br></pre></td></tr></table></figure>
-<h2 id="多线程">3、多线程</h2>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/34004179">来源1</a>；<a
-target="_blank" rel="noopener" href="https://zyzypeter.github.io/2017/11/23/Python-thread-and-processing/">来源2</a></p>
-<p><a
-target="_blank" rel="noopener" href="https://blog.csdn.net/Victor2code/article/details/109005171">(96条消息)
-python多进程和多线程看这一篇就够了_T型人小付的博客-CSDN博客_python多进程和多线程</a></p>
-<h3 id="线程池">线程池</h3>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> concurrent.futures <span class="keyword">import</span> ThreadPoolExecutor, wait, ALL_COMPLETED</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">tes</span>(<span class="params">a</span>):               <span class="comment"># for循环里的东西先写成函数</span></span><br><span class="line">    a = <span class="number">2</span> ** a</span><br><span class="line">    time.sleep(<span class="number">0.2</span>)</span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    ti1=time.time()</span><br><span class="line">    executor = ThreadPoolExecutor(<span class="number">5</span>)</span><br><span class="line">    all_tasks = [executor.submit(tes, i) <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">20</span>)]</span><br><span class="line">    wait(all_tasks, return_when=ALL_COMPLETED)</span><br><span class="line">    ti2=time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;多线程耗费时间：&quot;</span>,ti2-ti1)</span><br><span class="line">    </span><br><span class="line">多线程耗费时间： <span class="number">0.8389759063720703</span></span><br></pre></td></tr></table></figure>
-<h1 id="脚注">脚注</h1>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/47795989">为什么
-Python 这么慢？ - 知乎 (zhihu.com)</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://blog.csdn.net/Victor2code/article/details/109005171<a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
 
+<h3 id="进程池"><a href="#进程池" class="headerlink" title="进程池"></a>进程池</h3><p>维持一个水位即进程数是恒定的，不够就补，并且保持在一个上限，不许超出上限。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> multiprocessing</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">tes</span>(<span class="params">a</span>):               <span class="comment"># for循环里的东西先写成函数</span></span><br><span class="line">    a = <span class="number">2</span> ** a</span><br><span class="line">    time.sleep(<span class="number">0.2</span>)</span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    t3=time.time()</span><br><span class="line">    pool = multiprocessing.Pool(<span class="number">2</span>)  <span class="comment"># 两个进程执行</span></span><br><span class="line">    <span class="comment"># pool = multiprocessing.Pool(multiprocessing.cpu_count()) # 全部cpu执行</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">20</span>):</span><br><span class="line">        pool.apply_async(func=tes,args=(i,))</span><br><span class="line">    pool.close()</span><br><span class="line">    pool.join()</span><br><span class="line">    t4=time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;多进程耗时：&quot;</span>,t4-t3)</span><br><span class="line">    </span><br><span class="line"><span class="comment"># 多进程耗时： 2.679999589920044    两进程</span></span><br><span class="line"><span class="comment"># 多进程耗时： 1.9049992561340332   全部CPU</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 多进程模板(进程池)</span></span><br><span class="line"><span class="keyword">import</span> multiprocessing</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">tes</span>():    <span class="comment"># 把for循环下的内容写成一个函数</span></span><br><span class="line">    代码</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    pool = multiprocessing.Pool(<span class="number">2</span>)  <span class="comment"># 两个进程执行</span></span><br><span class="line">    <span class="comment"># pool = multiprocessing.Pool(multiprocessing.cpu_count()) # 全部cpu执行</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">20</span>):</span><br><span class="line">        pool.apply_async(func=tes,args=(i,))  <span class="comment"># 填写定义的函数、参数</span></span><br><span class="line">    pool.close()     <span class="comment"># close()方法，进程池不再接受新的任务（注意不是进程）</span></span><br><span class="line">    pool.join()    <span class="comment"># join()方法，阻塞主进程，一定要在close()或者terminate()之后。</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3、多线程"><a href="#3、多线程" class="headerlink" title="3、多线程"></a>3、多线程</h2><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/34004179">来源1</a>；<a target="_blank" rel="noopener" href="https://zyzypeter.github.io/2017/11/23/Python-thread-and-processing/">来源2</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Victor2code/article/details/109005171">(96条消息) python多进程和多线程看这一篇就够了_T型人小付的博客-CSDN博客_python多进程和多线程</a></p>
+<h3 id="线程池"><a href="#线程池" class="headerlink" title="线程池"></a>线程池</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> concurrent.futures <span class="keyword">import</span> ThreadPoolExecutor, wait, ALL_COMPLETED</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">tes</span>(<span class="params">a</span>):               <span class="comment"># for循环里的东西先写成函数</span></span><br><span class="line">    a = <span class="number">2</span> ** a</span><br><span class="line">    time.sleep(<span class="number">0.2</span>)</span><br><span class="line">    <span class="built_in">print</span>(a)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    ti1=time.time()</span><br><span class="line">    executor = ThreadPoolExecutor(<span class="number">5</span>)</span><br><span class="line">    all_tasks = [executor.submit(tes, i) <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">20</span>)]</span><br><span class="line">    wait(all_tasks, return_when=ALL_COMPLETED)</span><br><span class="line">    ti2=time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;多线程耗费时间：&quot;</span>,ti2-ti1)</span><br><span class="line">    </span><br><span class="line">多线程耗费时间： <span class="number">0.8389759063720703</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h1><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/47795989">为什么 Python 这么慢？ - 知乎 (zhihu.com)</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://blog.csdn.net/Victor2code/article/details/109005171<a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div>
     </div>
 
     
@@ -446,7 +407,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://b
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E4%B8%80%E8%88%AC%E6%B5%81%E7%A8%8B"><span class="nav-text">一、一般流程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8Cfor%E5%BE%AA%E7%8E%AF%E5%A4%9A%E8%BF%9B%E7%A8%8B%E5%A4%9A%E7%BA%BF%E7%A8%8B"><span class="nav-text">二、For循环多进程&amp;多线程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#gil%E9%94%81"><span class="nav-text">1、GIL锁</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E8%BF%9B%E7%A8%8B"><span class="nav-text">2、多进程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E6%B1%A0"><span class="nav-text">进程池</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E7%BA%BF%E7%A8%8B"><span class="nav-text">3、多线程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E6%B1%A0"><span class="nav-text">线程池</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%84%9A%E6%B3%A8"><span class="nav-text">脚注</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E4%B8%80%E8%88%AC%E6%B5%81%E7%A8%8B"><span class="nav-text">一、一般流程</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81For%E5%BE%AA%E7%8E%AF%E5%A4%9A%E8%BF%9B%E7%A8%8B-amp-%E5%A4%9A%E7%BA%BF%E7%A8%8B"><span class="nav-text">二、For循环多进程&amp;多线程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81GIL%E9%94%81"><span class="nav-text">1、GIL锁</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81%E5%A4%9A%E8%BF%9B%E7%A8%8B"><span class="nav-text">2、多进程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E7%A8%8B%E6%B1%A0"><span class="nav-text">进程池</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E5%A4%9A%E7%BA%BF%E7%A8%8B"><span class="nav-text">3、多线程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BA%BF%E7%A8%8B%E6%B1%A0"><span class="nav-text">线程池</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%84%9A%E6%B3%A8"><span class="nav-text">脚注</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -462,7 +423,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://b
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">62</span>
+          <span class="site-state-item-count">64</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -475,7 +436,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://b
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">44</span>
+        <span class="site-state-item-count">45</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -526,13 +487,13 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://b
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">100k</span>
+    <span title="Symbols count total">103k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:31</span>
+    <span title="Reading time total">1:34</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
@@ -572,6 +533,7 @@ setInterval("createtime()",250);
 
   
   <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
@@ -586,6 +548,65 @@ setInterval("createtime()",250);
 
 
 <script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
 
 
 
@@ -613,11 +634,32 @@ setInterval("createtime()",250);
 
 
 
+    <div id="pjax">
   
 
   
 
   
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '90px',
+  right: '100px',
+  left: 'unset',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '🌓',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
 
@@ -639,6 +681,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
 });
 </script>
 
+    </div>
 + 
 
   <script async src="/js/cursor/fireworks.js"></script>

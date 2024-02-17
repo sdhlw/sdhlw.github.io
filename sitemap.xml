@@ -2,6 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.sdhlw.top/next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E5%88%87%E6%8D%A2%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F/</loc>
+    
+    <lastmod>2024-02-17T14:05:42.685Z</lastmod>
+    
+    <date>1708178668000</date>
+    <title>Next主题添加切换暗黑模式 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/</loc>
+    
+    <lastmod>2024-02-17T13:32:01.755Z</lastmod>
+    
+    <date>1675781853000</date>
+    <title>解决npm下载慢问题 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/meta%E5%88%86%E6%9E%90%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/</loc>
+    
+    <lastmod>2024-02-17T12:14:15.726Z</lastmod>
+    
+    <date>1708172034000</date>
+    <title>Meta分析基本知识 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://www.sdhlw.top/markdown%E8%B6%85%E9%93%BE%E6%8E%A5/</loc>
     
     <lastmod>2024-02-16T15:36:54.142Z</lastmod>
@@ -338,17 +371,6 @@
     
     <date>1675781827000</date>
     <title>设置 Next 主题支持 Latex 渲染 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/</loc>
-    
-    <lastmod>2023-02-07T15:14:52.640Z</lastmod>
-    
-    <date>1675781853000</date>
-    <title>解决npm下载慢问题 | Jay's Blog</title>
     
     <desc></desc>
   </url>

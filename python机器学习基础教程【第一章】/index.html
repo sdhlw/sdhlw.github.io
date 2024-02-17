@@ -22,13 +22,17 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="本书的附加代码可以在 GitHub 下载：introduction to ml with python 监督学习算法（supervised learning algorithm） 无监督学习算法（unsupervised learning algorithm） 在机器学习中，这里的每个实体或每一行被称为一个样本（sample）或数据点，而每一列（用来描述这些实体的属性）则被称为特征（fea">
+  <meta name="description" content="本书的附加代码可以在 GitHub 下载：introduction to ml with python 监督学习算法（supervised learning algorithm）无监督学习算法（unsupervised learning algorithm） 在机器学习中，这里的每个实体或每一行被称为一个样本（sample）或数据点，而每一列（用来描述这些实体的属性）则被称为特征（feature）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python机器学习基础教程【第一章】">
 <meta property="og:url" content="https://www.sdhlw.top/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E3%80%90%E7%AC%AC%E4%B8%80%E7%AB%A0%E3%80%91/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="本书的附加代码可以在 GitHub 下载：introduction to ml with python 监督学习算法（supervised learning algorithm） 无监督学习算法（unsupervised learning algorithm） 在机器学习中，这里的每个实体或每一行被称为一个样本（sample）或数据点，而每一列（用来描述这些实体的属性）则被称为特征（fea">
+<meta property="og:description" content="本书的附加代码可以在 GitHub 下载：introduction to ml with python 监督学习算法（supervised learning algorithm）无监督学习算法（unsupervised learning algorithm） 在机器学习中，这里的每个实体或每一行被称为一个样本（sample）或数据点，而每一列（用来描述这些实体的属性）则被称为特征（feature）">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528408.png">
+<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528467.png">
+<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528536.png">
+<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528610.png">
 <meta property="article:published_time" content="2023-02-02T09:43:19.000Z">
 <meta property="article:modified_time" content="2023-02-02T12:10:38.427Z">
 <meta property="article:author" content="Jay Chou">
@@ -36,6 +40,7 @@
 <meta property="article:tag" content="专业书笔记">
 <meta property="article:tag" content="Machine Learning">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528408.png">
 
 <link rel="canonical" href="https://www.sdhlw.top/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E3%80%90%E7%AC%AC%E4%B8%80%E7%AB%A0%E3%80%91/">
 
@@ -82,7 +87,7 @@
 </noscript>
 
 <link rel="alternate" href="/atom.xml" title="Jay's Blog" type="application/atom+xml">
-</head>
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
@@ -260,199 +265,114 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本书的附加代码可以在 GitHub 下载：<a
-target="_blank" rel="noopener" href="https://github.com/amueller/introduction_to_ml_with_python">introduction
-to ml with python</a></p>
-<p>监督学习算法（supervised learning algorithm）
-无监督学习算法（unsupervised learning algorithm）</p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本书的附加代码可以在 GitHub 下载：<a target="_blank" rel="noopener" href="https://github.com/amueller/introduction_to_ml_with_python">introduction to ml with python</a></p>
+<p>监督学习算法（supervised learning algorithm）<br>无监督学习算法（unsupervised learning algorithm）</p>
 <p>在机器学习中，这里的每个实体或每一行被称为一个样本（sample）或数据点，而每一列（用来描述这些实体的属性）则被称为特征（feature）。</p>
-<p>如何构建良好的数据表征，这被称为特征提取（feature
-extraction）或特征工程（feature engineering）</p>
-<p><strong>scikit-learn</strong> 依赖于另外两个 Python 包：NumPy
-（Python 科学计算的基础包之一）和 SciPy（ Python
-中用于科学计算的函数集合）。 算法详细文档：<a
-target="_blank" rel="noopener" href="https://scikit-learn.org/stable/index.html"
-class="uri">https://scikit-learn.org/stable/index.html</a> 用户指南：<a
-target="_blank" rel="noopener" href="http://scikit-learn.org/stable/user_guide.html"
-class="uri">http://scikit-learn.org/stable/user_guide.html</a></p>
+<p>如何构建良好的数据表征，这被称为特征提取（feature extraction）或特征工程（feature engineering）</p>
+<p><strong>scikit-learn</strong> 依赖于另外两个 Python 包：NumPy （Python 科学计算的基础包之一）和 SciPy（ Python 中用于科学计算的函数集合）。<br>算法详细文档：<a target="_blank" rel="noopener" href="https://scikit-learn.org/stable/index.html">https://scikit-learn.org/stable/index.html</a><br>用户指南：<a target="_blank" rel="noopener" href="http://scikit-learn.org/stable/user_guide.html">http://scikit-learn.org/stable/user_guide.html</a></p>
 <span id="more"></span>
-<p>若想绘图和进行交互式开发，还应该安装 matplotlib（Python
-主要的科学绘图库）、IPython 和 Jupyter
-Notebook（在浏览器中运行代码的交互环境）。</p>
-<p><strong>pandas</strong> 是用于处理和分析数据的 Python
-库。它基于一种叫作 DataFrame 的数据结构，这种数据结构模仿了 R 语言中的
-DataFrame。</p>
-<p><strong>mglearn</strong>
-库是我们为本书编写的实用函数库，以免将代码清单与绘图和数据加载的细节混在一起。</p>
-<h4 id="第一个应用">第一个应用</h4>
-<h5 id="了解数据">1、了解数据</h5>
-<p>in：</p>
+
+<p>若想绘图和进行交互式开发，还应该安装 matplotlib（Python 主要的科学绘图库）、IPython 和 Jupyter Notebook（在浏览器中运行代码的交互环境）。</p>
+<p><strong>pandas</strong> 是用于处理和分析数据的 Python 库。它基于一种叫作 DataFrame 的数据结构，这种数据结构模仿了 R 语言中的 DataFrame。</p>
+<p><strong>mglearn</strong> 库是我们为本书编写的实用函数库，以免将代码清单与绘图和数据加载的细节混在一起。</p>
+<h4 id="第一个应用"><a href="#第一个应用" class="headerlink" title="第一个应用"></a>第一个应用</h4><h5 id="1、了解数据"><a href="#1、了解数据" class="headerlink" title="1、了解数据"></a>1、了解数据</h5><p>in：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris</span><br><span class="line">iris_dataset = load_iris()</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Keys of iris_dataset: \n&#123;&#125;&quot;</span>.<span class="built_in">format</span>(iris_dataset.keys()))</span><br></pre></td></tr></table></figure>
+
 <p>out：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Keys of iris_dataset: dict_keys([<span class="string">&#x27;data&#x27;</span>, <span class="string">&#x27;target&#x27;</span>, <span class="string">&#x27;frame&#x27;</span>, <span class="string">&#x27;target_names&#x27;</span>, <span class="string">&#x27;DESCR&#x27;</span>, <span class="string">&#x27;feature_names&#x27;</span>, <span class="string">&#x27;filename&#x27;</span>, <span class="string">&#x27;data_module&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>DESCR 键对应的值是数据集的简要说明</li>
-<li>target_names
-键对应的值是一个字符串数组，里面包含我们要预测的花的品种</li>
-<li>feature_names
-键对应的值是一个字符串列表，对每一个特征进行了说明</li>
-<li>data 里面是花萼长度、花萼宽度、花瓣长度、花瓣宽度的测量数据，格式为
-NumPy 数组,data
-数组的每一行对应一朵花，列代表每朵花的四个测量数据，数组中包含 150
-朵不同的花的测量数据。</li>
-<li>target 是一维数组，每朵花对应其中一个数据，0 代表 setosa，1 代表
-versicolor，2 代表 virginica</li>
+<li>target_names 键对应的值是一个字符串数组，里面包含我们要预测的花的品种</li>
+<li>feature_names 键对应的值是一个字符串列表，对每一个特征进行了说明</li>
+<li>data 里面是花萼长度、花萼宽度、花瓣长度、花瓣宽度的测量数据，格式为 NumPy 数组,data 数组的每一行对应一朵花，列代表每朵花的四个测量数据，数组中包含 150 朵不同的花的测量数据。</li>
+<li>target 是一维数组，每朵花对应其中一个数据，0 代表 setosa，1 代表 versicolor，2 代表 virginica</li>
 </ul>
-<h5 id="划分训练集和测试集">2、划分训练集和测试集</h5>
-<p>机器学习中的个体叫作样本（sample），其属性叫作特征（feature）。data
-数组的形状（shape）是样本数乘以特征数。</p>
-<p>一部分数据用于构建机器学习模型，叫作训练数据（training data）或训练
-集（training set）。其余的数据用来评估模型性能，叫作测试数据（test
-data）、测试集（test set）或留出集（hold-out set）。</p>
+<h5 id="2、划分训练集和测试集"><a href="#2、划分训练集和测试集" class="headerlink" title="2、划分训练集和测试集"></a>2、划分训练集和测试集</h5><p>机器学习中的个体叫作样本（sample），其属性叫作特征（feature）。data 数组的形状（shape）是样本数乘以特征数。</p>
+<p>一部分数据用于构建机器学习模型，叫作训练数据（training data）或训练<br>集（training set）。其余的数据用来评估模型性能，叫作测试数据（test data）、测试集（test set）或留出集（hold-out set）。</p>
 <p><strong>train_test_split</strong> 函数可以打乱数据集并进行拆分。</p>
 <p>scikit-learn 中的数据通常用大写的 X 表示，而标签用小写的 y 表示。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 划分训练集和测试集</span></span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line"></span><br><span class="line">X_train, X_test, y_train, y_test = train_test_split(iris_dataset[<span class="string">&#x27;data&#x27;</span>], iris_dataset[<span class="string">&#x27;target&#x27;</span>], random_state=<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528408.png" /></p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528467.png" /></p>
+
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528408.png"></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528467.png"></p>
 <ul>
-<li>random_state
-参数指定了随机数生成器的种子，保证这行代码的输出始终相同；</li>
+<li>random_state 参数指定了随机数生成器的种子，保证这行代码的输出始终相同；</li>
 </ul>
-<h5 id="观察数据">3、观察数据</h5>
-<p>如果不用机器学习能不能轻松完成任务，或者需要的信息有没有包含在数据中？检查数据也是发现异常值和特殊值的好方法。</p>
+<h5 id="3、观察数据"><a href="#3、观察数据" class="headerlink" title="3、观察数据"></a>3、观察数据</h5><p>如果不用机器学习能不能轻松完成任务，或者需要的信息有没有包含在数据中？检查数据也是发现异常值和特殊值的好方法。</p>
 <p>检查数据的最佳方法之一就是将其可视化。</p>
-<p>一种可视化方法是绘制<strong>散点图（scatter
-plot）</strong>，用这种方法难以对多于 3 个特征的数据集作图。</p>
-<p>解决这个问题的一种方法是绘制<strong>散点图矩阵（pair
-plot）</strong>，从而可以两两查看所有的特征。散点图矩阵无法同时显示所有特征之间的关系，所以这种可视化方法可能无法展示数据的某些有趣内容。</p>
+<p>一种可视化方法是绘制<strong>散点图（scatter plot）</strong>，用这种方法难以对多于 3 个特征的数据集作图。</p>
+<p>解决这个问题的一种方法是绘制<strong>散点图矩阵（pair plot）</strong>，从而可以两两查看所有的特征。散点图矩阵无法同时显示所有特征之间的关系，所以这种可视化方法可能无法展示数据的某些有趣内容。</p>
 <p>训练集中特征的散点图矩阵：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 利用X_train中的数据创建DataFrame</span></span><br><span class="line"><span class="comment"># 利用iris_dataset.feature_names中的字符串对数据列进行标记</span></span><br><span class="line">iris_dataframe = pd.DataFrame(X_train, columns=iris_dataset.feature_names)</span><br><span class="line"><span class="comment"># 利用DataFrame创建散点图矩阵，按y_train着色</span></span><br><span class="line">grr = pd.scatter_matrix(iris_dataframe, c=y_train, figsize=(<span class="number">15</span>, <span class="number">15</span>), marker=<span class="string">&#x27;o&#x27;</span>,</span><br><span class="line"> hist_kwds=&#123;<span class="string">&#x27;bins&#x27;</span>: <span class="number">20</span>&#125;, s=<span class="number">60</span>, alpha=<span class="number">.8</span>)</span><br></pre></td></tr></table></figure>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528536.png" /></p>
-<p>绘制散点图矩阵函数： pandas的scatter_matrix。
-版本较新换成：pd.plotting.scatter_matrix</p>
+
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528536.png"></p>
+<p>绘制散点图矩阵函数： pandas的scatter_matrix。<br>版本较新换成：pd.plotting.scatter_matrix</p>
 <p><code>pandas.DataFrame( data, index, columns, dtype, copy)</code></p>
 <ul>
-<li>data：一组数据(ndarray、series, map, lists, dict
-等类型)<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Pandas 数据结构 - DataFrame](https://www.runoob.com/pandas/pandas-dataframe.html)
+<li>data：一组数据(ndarray、series, map, lists, dict 等类型)<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Pandas 数据结构 - DataFrame](https://www.runoob.com/pandas/pandas-dataframe.html)
 ">[1]</span></a></sup>。</li>
 <li>index：索引值，或者可以称为行标签。</li>
 <li>columns：列标签，默认为 RangeIndex (0, 1, 2, …, n) 。</li>
 <li>dtype：数据类型。</li>
 <li>copy：拷贝数据，默认为 False。</li>
 </ul>
-<p><code>scatter_matrix(frame, alpha=0.5, c,figsize=None, ax=None, diagonal='hist', marker='.', density_kwds=None,hist_kwds=None, range_padding=0.05, **kwds)</code></p>
+<p><code>scatter_matrix(frame, alpha=0.5, c,figsize=None, ax=None, diagonal=&#39;hist&#39;, marker=&#39;.&#39;, density_kwds=None,hist_kwds=None, range_padding=0.05, **kwds)</code></p>
 <ul>
-<li>frame，pandas
-dataframe对象<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[pandas库scatter_matrix绘图可视化参数详解](https://blog.csdn.net/wangxingfan316/article/details/80033557)
+<li>frame，pandas dataframe对象<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[pandas库scatter_matrix绘图可视化参数详解](https://blog.csdn.net/wangxingfan316/article/details/80033557)
 ">[3]</span></a></sup></li>
 <li>alpha， 图像透明度，一般取(0,1]</li>
-<li>figsize，以英寸为单位的图像大小，一般以元组 (width, height)
-形式设置</li>
+<li>figsize，以英寸为单位的图像大小，一般以元组 (width, height) 形式设置</li>
 <li>ax，可选一般为none</li>
-<li>diagonal，必须且只能在{‘hist’,
-‘kde’}中选择1个，’hist’表示直方图(Histogram
-plot),’kde’表示核密度估计(Kernel Density
-Estimation)；该参数是scatter_matrix函数的关键参数</li>
-<li>marker。Matplotlib可用的标记类型，如’.’，’,’，’o’等<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[绘图的线型、颜色、标记](https://www.sdhlw.top/%E7%BB%98%E5%9B%BE%E7%9A%84%E7%BA%BF%E5%9E%8B%E3%80%81%E9%A2%9C%E8%89%B2%E3%80%81%E6%A0%87%E8%AE%B0/)
+<li>diagonal，必须且只能在{‘hist’, ‘kde’}中选择1个，’hist’表示直方图(Histogram plot),’kde’表示核密度估计(Kernel Density Estimation)；该参数是scatter_matrix函数的关键参数</li>
+<li>marker。Matplotlib可用的标记类型，如’.’，’,’，’o’等<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[绘图的线型、颜色、标记](https://www.sdhlw.top/%E7%BB%98%E5%9B%BE%E7%9A%84%E7%BA%BF%E5%9E%8B%E3%80%81%E9%A2%9C%E8%89%B2%E3%80%81%E6%A0%87%E8%AE%B0/)
 ">[2]</span></a></sup></li>
-<li>density_kwds。(other plotting keyword
-arguments，可选)，与kde相关的字典参数</li>
+<li>density_kwds。(other plotting keyword arguments，可选)，与kde相关的字典参数</li>
 <li>hist_kwds。与hist相关的字典参数</li>
-<li>range_padding。(float,
-可选)，图像在x轴、y轴原点附近的留白(padding)，该值越大，留白距离越大，图像远离坐标原点</li>
+<li>range_padding。(float, 可选)，图像在x轴、y轴原点附近的留白(padding)，该值越大，留白距离越大，图像远离坐标原点</li>
 <li>kwds。与scatter_matrix函数本身相关的字典参数</li>
 <li>c。颜色</li>
 </ul>
-<h5 id="构建模型k近邻算法">4、构建模型：k近邻算法</h5>
-<p>k
-近邻分类器算法对一个新的数据点做出预测，算法会在训练集中寻找与这个新数据点距离最近的数据点，然后将找到的数据点的标签赋值给这个新数据点。</p>
-<p>k 近邻算法中 k 的含义是，我们可以考虑训练集中与新数据点最近的任意 k
-个邻居（比如说，距离最近的 3 个或 5
-个邻居），而不是只考虑最近的那一个。然后，我们可以用这些邻居中数量最多的类别做出预测。</p>
-<p>scikit-learn 中所有的机器学习模型都在各自的类中实现，这些类被称为
-Estimator类。k 近邻分类算法是在 neighbors 模块的KNeighborsClassifier
-类中实现的。</p>
+<h5 id="4、构建模型：k近邻算法"><a href="#4、构建模型：k近邻算法" class="headerlink" title="4、构建模型：k近邻算法"></a>4、构建模型：k近邻算法</h5><p>k 近邻分类器算法对一个新的数据点做出预测，算法会在训练集中寻找与这个新数据点距离最近的数据点，然后将找到的数据点的标签赋值给这个新数据点。</p>
+<p>k 近邻算法中 k 的含义是，我们可以考虑训练集中与新数据点最近的任意 k 个邻居（比如说，距离最近的 3 个或 5 个邻居），而不是只考虑最近的那一个。然后，我们可以用这些邻居中数量最多的类别做出预测。</p>
+<p>scikit-learn 中所有的机器学习模型都在各自的类中实现，这些类被称为 Estimator类。k 近邻分类算法是在 neighbors 模块的KNeighborsClassifier 类中实现的。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line">knn = KNeighborsClassifier(n_neighbors=<span class="number">1</span>)  <span class="comment"># 实例化</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 基于训练集来构建模型</span></span><br><span class="line">knn.fit(X_train, y_train)</span><br></pre></td></tr></table></figure>
-<p>fit 方法返回的是 knn
-对象本身并做原处修改，因此我们得到了分类器的字符串表示。</p>
-<h5 id="预测">5、预测</h5>
-<p>in：</p>
+
+<p>fit 方法返回的是 knn 对象本身并做原处修改，因此我们得到了分类器的字符串表示。</p>
+<h5 id="5、预测"><a href="#5、预测" class="headerlink" title="5、预测"></a>5、预测</h5><p>in：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">X_new = np.array([[<span class="number">5</span>, <span class="number">2.9</span>, <span class="number">1</span>, <span class="number">0.2</span>]])</span><br><span class="line">prediction = knn.predict(X_new)   </span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Prediction: &#123;&#125;&quot;</span>.<span class="built_in">format</span>(prediction))</span><br></pre></td></tr></table></figure>
+
 <p>out：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Prediction: [0]</span><br></pre></td></tr></table></figure>
-<p>们模型的预测，这朵新的鸢尾花属于类别 0，也就是说它属于 setosa
-品种。</p>
-<h5 id="评估模型">6、评估模型</h5>
-<p>计算精度（accuracy）来衡量模型的优劣，精度就是品种预
-测正确的花所占的比例。</p>
+
+<p>们模型的预测，这朵新的鸢尾花属于类别 0，也就是说它属于 setosa 品种。</p>
+<h5 id="6、评估模型"><a href="#6、评估模型" class="headerlink" title="6、评估模型"></a>6、评估模型</h5><p>计算精度（accuracy）来衡量模型的优劣，精度就是品种预<br>测正确的花所占的比例。</p>
 <p>in：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Test set score: &#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(np.mean(y_pred == y_test)))</span><br></pre></td></tr></table></figure>
+
 <p>out：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Test set score: 0.97</span><br></pre></td></tr></table></figure>
+
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Test set score: &#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(knn.score(X_test, y_test))) </span><br><span class="line"><span class="comment"># knn 对象的 score 方法来计算测试集的精度,结果是一致的</span></span><br></pre></td></tr></table></figure>
-<p>对于测试集中的鸢尾花，我们的预测有 97%
-是正确的。根据一些数学假设，对于新的鸢尾花，可以认为我们的模型预测结果有
-97% 都是正确的。</p>
-<h5 id="总结">7、总结</h5>
-<p>首先有150行样本，4列特征的鸢尾花（Iris）数据集。</p>
-<p>鸢尾花（Iris）一共有三个品种：setosa、versicolor 或
-virginica，因此这是一个三分类问题。在分类问题中，可能的品种被称为类别（class），每朵花的品种被称为它的标签（label）。</p>
+
+<p>对于测试集中的鸢尾花，我们的预测有 97% 是正确的。根据一些数学假设，对于新的鸢尾花，可以认为我们的模型预测结果有 97% 都是正确的。</p>
+<h5 id="7、总结"><a href="#7、总结" class="headerlink" title="7、总结"></a>7、总结</h5><p>首先有150行样本，4列特征的鸢尾花（Iris）数据集。</p>
+<p>鸢尾花（Iris）一共有三个品种：setosa、versicolor 或 virginica，因此这是一个三分类问题。在分类问题中，可能的品种被称为类别（class），每朵花的品种被称为它的标签（label）。</p>
 <ul>
 <li>划分训练集和测试集（train_test_split 函数）</li>
 <li>构建模型：k近邻算法（knn.fit 函数）</li>
 <li>预测测试集（knn.predict 函数）</li>
 <li>计算精度（knn.score 函数）</li>
 </ul>
-<h4 id="问题解决">问题解决</h4>
-<h5 id="name-null-is-not-defined">name 'null' is not defined</h5>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;d:\MyData\**\book-Python����ѧϰ�����̳�.ipynb&quot;, line 23, in &lt;module&gt;</span><br><span class="line">    &quot;execution_count&quot;: null,</span><br><span class="line">NameError: name &#x27;null&#x27; is not defined</span><br><span class="line"></span><br><span class="line">[Done] exited with code=1 in 0.198 seconds</span><br></pre></td></tr></table></figure>
-<p>重装Vscode中的jupyter插件</p>
-<h5 id="mglearn如何导入本地">mglearn如何导入本地</h5>
-<p>1、下载包：<a
-target="_blank" rel="noopener" href="https://github.com/amueller/introduction_to_ml_with_python"
-class="uri">https://github.com/amueller/introduction_to_ml_with_python</a></p>
-<p>2、查看包的存放位置 cell中输入：<code>%pip show pandas</code>
-,运行，查看包的位置（<code>c:\users\用户名\appdata\local\programs\python\python310\lib\site-packages</code>）</p>
-<p>3、把mglearn文件夹放到包的存放位置（<code>c:\users\用户名\appdata\local\programs\python\python310\lib\site-packages</code>）</p>
-<p>mylearn一些函数过时了，无法导入 ： <img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528610.png" /></p>
-<p>mylearn主要是用于美化的，所以在此先忽略掉</p>
-<h4 id="参考文章">参考文章</h4>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.runoob.com/pandas/pandas-dataframe.html">Pandas
-数据结构 - DataFrame</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.sdhlw.top/%E7%BB%98%E5%9B%BE%E7%9A%84%E7%BA%BF%E5%9E%8B%E3%80%81%E9%A2%9C%E8%89%B2%E3%80%81%E6%A0%87%E8%AE%B0/">绘图的线型、颜色、标记</a><a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:3">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/wangxingfan316/article/details/80033557">pandas库scatter_matrix绘图可视化参数详解</a><a href="#fnref:3" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
+<h4 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h4><h5 id="name-‘null’-is-not-defined"><a href="#name-‘null’-is-not-defined" class="headerlink" title="name ‘null’ is not defined"></a>name ‘null’ is not defined</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;d:\MyData\**\book-Python����ѧϰ�����̳�.ipynb&quot;, line 23, in &lt;module&gt;</span><br><span class="line">    &quot;execution_count&quot;: null,</span><br><span class="line">NameError: name &#x27;null&#x27; is not defined</span><br><span class="line"></span><br><span class="line">[Done] exited with code=1 in 0.198 seconds</span><br></pre></td></tr></table></figure>
 
+<p>重装Vscode中的jupyter插件</p>
+<h5 id="mglearn如何导入本地"><a href="#mglearn如何导入本地" class="headerlink" title="mglearn如何导入本地"></a>mglearn如何导入本地</h5><p>1、下载包：<a target="_blank" rel="noopener" href="https://github.com/amueller/introduction_to_ml_with_python">https://github.com/amueller/introduction_to_ml_with_python</a></p>
+<p>2、查看包的存放位置<br>cell中输入：<code>%pip show pandas</code> ,运行，查看包的位置（<code>c:\users\用户名\appdata\local\programs\python\python310\lib\site-packages</code>）</p>
+<p>3、把mglearn文件夹放到包的存放位置（<code>c:\users\用户名\appdata\local\programs\python\python310\lib\site-packages</code>）</p>
+<p>mylearn一些函数过时了，无法导入 ：<br><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302021528610.png"></p>
+<p>mylearn主要是用于美化的，所以在此先忽略掉</p>
+<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.runoob.com/pandas/pandas-dataframe.html">Pandas 数据结构 - DataFrame</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.sdhlw.top/%E7%BB%98%E5%9B%BE%E7%9A%84%E7%BA%BF%E5%9E%8B%E3%80%81%E9%A2%9C%E8%89%B2%E3%80%81%E6%A0%87%E8%AE%B0/">绘图的线型、颜色、标记</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/wangxingfan316/article/details/80033557">pandas库scatter_matrix绘图可视化参数详解</a><a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>
     </div>
 
     
@@ -556,7 +476,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%BA%94%E7%94%A8"><span class="nav-text">第一个应用</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BA%86%E8%A7%A3%E6%95%B0%E6%8D%AE"><span class="nav-text">1、了解数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%88%92%E5%88%86%E8%AE%AD%E7%BB%83%E9%9B%86%E5%92%8C%E6%B5%8B%E8%AF%95%E9%9B%86"><span class="nav-text">2、划分训练集和测试集</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%A7%82%E5%AF%9F%E6%95%B0%E6%8D%AE"><span class="nav-text">3、观察数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%9E%84%E5%BB%BA%E6%A8%A1%E5%9E%8Bk%E8%BF%91%E9%82%BB%E7%AE%97%E6%B3%95"><span class="nav-text">4、构建模型：k近邻算法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%A2%84%E6%B5%8B"><span class="nav-text">5、预测</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E8%AF%84%E4%BC%B0%E6%A8%A1%E5%9E%8B"><span class="nav-text">6、评估模型</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-text">7、总结</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3"><span class="nav-text">问题解决</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#name-null-is-not-defined"><span class="nav-text">name &#39;null&#39; is not defined</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#mglearn%E5%A6%82%E4%BD%95%E5%AF%BC%E5%85%A5%E6%9C%AC%E5%9C%B0"><span class="nav-text">mglearn如何导入本地</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%BA%94%E7%94%A8"><span class="nav-text">第一个应用</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1%E3%80%81%E4%BA%86%E8%A7%A3%E6%95%B0%E6%8D%AE"><span class="nav-text">1、了解数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2%E3%80%81%E5%88%92%E5%88%86%E8%AE%AD%E7%BB%83%E9%9B%86%E5%92%8C%E6%B5%8B%E8%AF%95%E9%9B%86"><span class="nav-text">2、划分训练集和测试集</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3%E3%80%81%E8%A7%82%E5%AF%9F%E6%95%B0%E6%8D%AE"><span class="nav-text">3、观察数据</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4%E3%80%81%E6%9E%84%E5%BB%BA%E6%A8%A1%E5%9E%8B%EF%BC%9Ak%E8%BF%91%E9%82%BB%E7%AE%97%E6%B3%95"><span class="nav-text">4、构建模型：k近邻算法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5%E3%80%81%E9%A2%84%E6%B5%8B"><span class="nav-text">5、预测</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6%E3%80%81%E8%AF%84%E4%BC%B0%E6%A8%A1%E5%9E%8B"><span class="nav-text">6、评估模型</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7%E3%80%81%E6%80%BB%E7%BB%93"><span class="nav-text">7、总结</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3"><span class="nav-text">问题解决</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#name-%E2%80%98null%E2%80%99-is-not-defined"><span class="nav-text">name ‘null’ is not defined</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#mglearn%E5%A6%82%E4%BD%95%E5%AF%BC%E5%85%A5%E6%9C%AC%E5%9C%B0"><span class="nav-text">mglearn如何导入本地</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -572,7 +492,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">62</span>
+          <span class="site-state-item-count">64</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -585,7 +505,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">44</span>
+        <span class="site-state-item-count">45</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -636,13 +556,13 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">100k</span>
+    <span title="Symbols count total">103k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:31</span>
+    <span title="Reading time total">1:34</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
@@ -682,6 +602,7 @@ setInterval("createtime()",250);
 
   
   <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
@@ -696,6 +617,65 @@ setInterval("createtime()",250);
 
 
 <script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
 
 
 
@@ -723,11 +703,32 @@ setInterval("createtime()",250);
 
 
 
+    <div id="pjax">
   
 
   
 
   
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
+<script>
+var options = {
+  bottom: '90px',
+  right: '100px',
+  left: 'unset',
+  time: '0.5s',
+  mixColor: 'transparent',
+  backgroundColor: 'transparent',
+  buttonColorDark: '#100f2c',
+  buttonColorLight: '#fff',
+  saveInCookies: true,
+  label: '🌓',
+  autoMatchOsTheme: true
+}
+const darkmode = new Darkmode(options);
+window.darkmode = darkmode;
+darkmode.showWidget();
+</script>
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
 
@@ -749,6 +750,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
 });
 </script>
 
+    </div>
 + 
 
   <script async src="/js/cursor/fireworks.js"></script>
