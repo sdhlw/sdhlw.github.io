@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-02-17T14:05:42.685Z</updated>
+  <updated>2024-02-18T02:15:45.769Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>博客文章分类与标签</title>
+    <link href="https://www.sdhlw.top/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E4%B8%8E%E6%A0%87%E7%AD%BE/"/>
+    <id>https://www.sdhlw.top/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E4%B8%8E%E6%A0%87%E7%AD%BE/</id>
+    <published>2024-02-18T02:15:08.000Z</published>
+    <updated>2024-02-18T02:15:45.769Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="categories-应为博客主分类"><a href="#categories-应为博客主分类" class="headerlink" title="categories 应为博客主分类"></a>categories 应为博客主分类</h3><p>我们日常生活中的分类都是树状分类（也可以说是有阶级性的，有“父”与“子”的关系），比如知识的分类、技术的分类、甚至国家公务员和公司的职员的分类。而我们博客写的文章，肯定不能脱离日常生活，故写的文章的分类也逃不了这种树状的分类，也就是 categories，<strong>因此 categories 应为博客的主分类</strong>。另外各种文档浏览器主要分类方式也是 categories 式的树状分类，而不是 tags 。</p><span id="more"></span><h3 id="用-tags-修复-categories-的-“bug”"><a href="#用-tags-修复-categories-的-“bug”" class="headerlink" title="用 tags 修复 categories 的 “bug”"></a>用 tags 修复 categories 的 “bug”</h3><p>但是树状分类有个缺陷，比如你的 Windows 电脑按文档类型有视频、音乐、文档三个文档夹，但是如果这三个文档夹中各有些你很喜欢的，而你想把它们放到一起咋办，再创建个「我喜欢」文档夹，然后把它们复制到「我喜欢」文档夹？但是这样「我喜欢」文档夹就有视频、音乐、文档三种文档类型了，又乱了……那再在「我喜欢」文档夹创建视频、音乐、文档文档夹？可以，但是如果某天你突然不喜欢了，咋办，你要把这个文档从两个目录都删除。那开始时移动到「我喜欢」文档夹不就行了，而不是复制，但是这样你视频、音乐、文档的所有文档就不在一个目录了。</p><p>为啥会这么麻烦？因为文档类型是一种分类维度，而「我喜欢」是另一种分类维度，在树状分类的<br>Windows 文档浏览器中，无法实现不同分类维度的共存，树状分类只能有一种分类维度。</p><p>而 tags 就可以弥补 categories 式的树状分类的缺陷，毕竟 tags 是一种并行分类，一个 tag 就是一种分类维度，因此可以解决这个问题。在上面的例子中，如果 Windows 文档浏览器可以在你喜欢的文档上加上「我喜欢」的 tag ，然后有个” tags 浏览器“，就 OK 了。什么？Windows 上的文档浏览器没有这个功能？哈哈哈，NexT 就有啊！</p><h3 id="博客文章分类的正确姿势"><a href="#博客文章分类的正确姿势" class="headerlink" title="博客文章分类的正确姿势"></a>博客文章分类的正确姿势</h3><p>Linux 安装软件，Linux 系统安装好，一些目录就已经存在，然后你安装一个软件，文档就会存放在这些已有的相应目录下。而写博客和 Linux 中安装软件也是类似的，最好搭建好博客后写文章前就想好博客的分类，然后写一篇文章就“移动”到相应”目录“。写完文章后，再通过加 tags 补categories 的 ”bug“ <sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[文章页的标签在文章的结尾显示了，而不是和时间、分类一起显示](https://github.com/iissnan/hexo-theme-next/issues/1901)">[1]</span></a></sup>。</p><p>目前的文章分类：</p><ul><li><p>博客运营</p><ul><li>markdown</li></ul></li><li><p>科研学习</p><ul><li>理论知识</li><li>代码相关（含Linux和代码理论知识）</li><li>软件使用</li></ul></li><li><p>生活随笔</p></li></ul><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://github.com/iissnan/hexo-theme-next/issues/1901">文章页的标签在文章的结尾显示了，而不是和时间、分类一起显示</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;categories-应为博客主分类&quot;&gt;&lt;a href=&quot;#categories-应为博客主分类&quot; class=&quot;headerlink&quot; title=&quot;categories 应为博客主分类&quot;&gt;&lt;/a&gt;categories 应为博客主分类&lt;/h3&gt;&lt;p&gt;我们日常生活中的分类都是树状分类（也可以说是有阶级性的，有“父”与“子”的关系），比如知识的分类、技术的分类、甚至国家公务员和公司的职员的分类。而我们博客写的文章，肯定不能脱离日常生活，故写的文章的分类也逃不了这种树状的分类，也就是 categories，&lt;strong&gt;因此 categories 应为博客的主分类&lt;/strong&gt;。另外各种文档浏览器主要分类方式也是 categories 式的树状分类，而不是 tags 。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="博客运营" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/"/>
+    
+    <category term="其它" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/%E5%85%B6%E5%AE%83/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Next主题添加切换暗黑模式</title>
     <link href="https://www.sdhlw.top/next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E5%88%87%E6%8D%A2%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F/"/>
     <id>https://www.sdhlw.top/next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E5%88%87%E6%8D%A2%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F/</id>
     <published>2024-02-17T14:04:28.000Z</published>
-    <updated>2024-02-17T14:05:42.685Z</updated>
+    <updated>2024-02-18T02:06:59.206Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>安装 <code>hexo-next-darkmode</code> <a href="https://github.com/rqh656418510/hexo-next-darkmode/blob/main/README_CN.md">插件</a><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Hexo Next 8.x 主题添加可切换的暗黑模式](https://www.techgrow.cn/posts/abf4aee1.html#Next-7-x-%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%8F%AF%E5%88%87%E6%8D%A2%E7%9A%84%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F)">[1]</span></a></sup></p><p>windows管理员打开powershell，运行一下命令：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-next-darkmode --save --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure><span id="more"></span><h3 id="配置-Hexo-插件"><a href="#配置-Hexo-插件" class="headerlink" title="配置 Hexo 插件"></a>配置 Hexo 插件</h3><p>在 Next 主题的 <code>_config.yml</code> 配置文档里添加以下内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># Darkmode JS</span><br><span class="line"># For more information: https://github.com/rqh656418510/hexo-next-darkmode, https://github.com/sandoche/Darkmode.js</span><br><span class="line">darkmode_js:</span><br><span class="line">  enable: true</span><br><span class="line">  bottom: &#x27;64px&#x27; # default: &#x27;32px&#x27;</span><br><span class="line">  right: &#x27;unset&#x27; # default: &#x27;32px&#x27;</span><br><span class="line">  left: &#x27;32px&#x27; # default: &#x27;unset&#x27;</span><br><span class="line">  time: &#x27;0.5s&#x27; # default: &#x27;0.3s&#x27;</span><br><span class="line">  mixColor: &#x27;transparent&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  backgroundColor: &#x27;transparent&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  buttonColorDark: &#x27;#100f2c&#x27; # default: &#x27;#100f2c&#x27;</span><br><span class="line">  buttonColorLight: &#x27;#fff&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  isActivated: false # default false</span><br><span class="line">  saveInCookies: true # default: true</span><br><span class="line">  label: &#x27;🌓&#x27; # default: &#x27;&#x27;</span><br><span class="line">  autoMatchOsTheme: true # default: true</span><br><span class="line">  libUrl: # Set custom library cdn url for Darkmode.js</span><br></pre></td></tr></table></figure><ul><li><code>isActivated: true</code>：默认激活暗黑 &#x2F; 夜间模式，请始终与 <code>saveInCookies: false</code>、<code>autoMatchOsTheme: false</code> 一起使用；同时需要在 NexT 主题的 <code>_config.yml</code> 配置文档里设置 <code>pjax: true</code>，即启用 Pjax。</li></ul><h3 id="关闭原生的暗黑模式"><a href="#关闭原生的暗黑模式" class="headerlink" title="关闭原生的暗黑模式"></a>关闭原生的暗黑模式</h3><p>确保 Next 原生的 <code>darkmode</code> 选项设置为 <code>false</code>，在 Next 的 <code>_config.yml</code> 配置文档中更改以下内容：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">darkmode: false</span><br></pre></td></tr></table></figure><p>Hexo 重新构建生成静态资源文档后，点击页面上的按钮即可切换暗黑模式：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.techgrow.cn/posts/abf4aee1.html#Next-7-x-%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%8F%AF%E5%88%87%E6%8D%A2%E7%9A%84%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F">Hexo Next 8.x 主题添加可切换的暗黑模式</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
     
@@ -33,10 +54,10 @@
     
     
     
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    <category term="博客运营" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/"/>
     
+    <category term="其它" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/%E5%85%B6%E5%AE%83/"/>
     
-    <category term="博客运营" scheme="https://www.sdhlw.top/tags/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/"/>
     
   </entry>
   
@@ -45,7 +66,7 @@
     <link href="https://www.sdhlw.top/meta%E5%88%86%E6%9E%90%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/"/>
     <id>https://www.sdhlw.top/meta%E5%88%86%E6%9E%90%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/</id>
     <published>2024-02-17T12:13:54.000Z</published>
-    <updated>2024-02-17T12:14:15.726Z</updated>
+    <updated>2024-02-18T01:51:24.455Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>“Meta分析是一种对单独的研究结果进行统计分析的方法，对研究结果间差异的来源进行检验，并对具有足够相似性的结果进行定量合成。”<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[零基础完成一篇Meta分析SCI](https://www.bilibili.com/video/BV1Jp4y1C7kc/?spm_id_from=333.337.search-card.all.click&vd_source=9f04b059fdee5024fd04678f53de10ad)">[1]</span></a></sup></p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161510111.png" alt="" style="zoom: 25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161511104.png" alt="" style="zoom:25%;" /><p>需要掌握的技能：<br>文献检索、文献管理、数据提取、软件操作、写作成稿</p><span id="more"></span><h3 id="1-文献检索"><a href="#1-文献检索" class="headerlink" title="1.文献检索"></a>1.文献检索</h3><p>检索哪些数据库？<br>英文：Medline(Pubmed),Embase,WOS,Cochrane Library…<br>中文：知网、万方、维普、CBM..<br>其他：ClinicalTrials.gov、CCTR CINAHL….</p><p>怎么检索？</p><ul><li><p>六步法</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161518053.png" alt="" style="zoom:25%;" /></li><li><p>PICOS原则</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161520760.png" alt="" style="zoom:25%;" /></li><li><p>主题词+自由词</p></li></ul><p>主题词：通过数据库官方的主题词表，如</p><ul><li>Pubmed:Medical Subject Headings,简称MeSH</li><li>Embase:Emtree</li></ul><p>自由词：</p><p>①使用各学科在国家上通用、文献中出现过的术语：<br>②从专业词典、手册、分类表及期刊中选择检索词或者参考现有的原始文献：<br>③同义词、近义词、上位词、下位词；<br>④缩略语及英文的不同拼写形式：<br>⑤选用动植物药名的中文、英文和拉丁文；<br>⑥同一概念的几种表达方式对于词根相同者可用截词符解决。</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161524314.png" alt="" style="zoom:25%;" /><h3 id="2-文献管理"><a href="#2-文献管理" class="headerlink" title="2.文献管理"></a>2.文献管理</h3><p>筛选文献<br>阅读笔记<br>写作编辑</p><p>工具：</p><ul><li>Endnote</li><li>NoteExpress</li><li><a href="http://refer.medlive.cn/">医学文献王</a></li></ul><h3 id="3-数据提取"><a href="#3-数据提取" class="headerlink" title="3.数据提取"></a>3.数据提取</h3><p>提取内容：<br>1.基本信息：题目、原始研究作者、发表年份等<br>2.纳入研究的合格数据：研究对象特征、干预措施、结局指标、研究设计等<br>3.方法学部分：设计方案、研究期期限、随机方案、盲法、其他偏倚等<br>4.其他信息：资助来源、关键性结论、混杂因素和是否校正</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161531552.png" alt="" style="zoom:80%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161532352.png" alt="" style="zoom:80%;" /><p>结局指标数据</p><p>统计常识：Mean,SD,SE,P,Cl,OR,RR,HR,特异度，敏感度等。</p><p>获取方法：</p><ul><li>直接从文献中获取</li><li>数据转换获取：Excel数据换算表、丁香园循证医学版、百度</li><li>提取工具获取：VebPlotDigitizer(WPD),Engauge Digitizer(ED)</li><li>找作者获取：发邮件</li><li>都获取不了：定性分析、剔别除（在文献筛选部分说明原因）</li></ul><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161537979.png" alt="" style="zoom:30%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161537541.png" alt="" style="zoom:30%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161540524.png" alt="" style="zoom:30%;" /><h3 id="4-软件操作"><a href="#4-软件操作" class="headerlink" title="4.软件操作"></a>4.软件操作</h3><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161541894.png" alt="" style="zoom:33%;" /><p><a href="https://training.cochrane.org/online-learning/core-software/revman">RevMan Web</a> 也适用于非 Cochrane 的系统评价，而 RevMan 5 只能用于 Cochrane 的系统评价<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[手柄手教你meta分析](https://www.bilibili.com/video/BV1A64y1q7gc/?spm_id_from=333.337.search-card.all.click&vd_source=9f04b059fdee5024fd04678f53de10ad)">[2]</span></a></sup>。</p><p>工具：</p><h3 id="5-写作投稿"><a href="#5-写作投稿" class="headerlink" title="5.写作投稿"></a>5.写作投稿</h3><p>PRISMA声明:27条</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161544010.png" alt="" style="zoom:33%;" /><h3 id="如何架构一篇Meta分析"><a href="#如何架构一篇Meta分析" class="headerlink" title="如何架构一篇Meta分析"></a>如何架构一篇Meta分析</h3><p>PRISMA中文版已放至：<a href="https://github.com/sdhlw/OA"></a></p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161548470.png" alt="" style="zoom:23%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161549521.png" alt="" style="zoom:23%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161550132.png" alt="" style="zoom:33%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161551937.png" alt="" style="zoom:33%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161552407.png" alt="" style="zoom:25%;" /><h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402162247254.png" alt="" style="zoom:25%;" /><h4 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h4><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402162312052.png" alt="" style="zoom:25%;" /><h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402162321769.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171630916.png" alt="" style="zoom: 28%;" /><h4 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h4><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171628238.png" alt="" style="zoom:33%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171632222.png" alt="" style="zoom:33%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171632175.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171633412.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171634756.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171635266.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171637960.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171639896.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171641901.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171642910.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171642318.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171643847.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171644034.png" alt="" style="zoom:25%;" /><h4 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h4><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171645732.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171646956.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171647726.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171648832.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171649552.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171649219.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171650490.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171651630.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171652055.png" alt="" style="zoom:25%;" /><h4 id="讨论"><a href="#讨论" class="headerlink" title="讨论"></a>讨论</h4><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171653693.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171654795.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171654670.png" alt="" style="zoom:25%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171655427.png" alt="" style="zoom:25%;" /><h4 id="资金支持"><a href="#资金支持" class="headerlink" title="资金支持"></a>资金支持</h4><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171657125.png" alt="" style="zoom:25%;" /><h4 id="Stata实例演示制作森林图"><a href="#Stata实例演示制作森林图" class="headerlink" title="Stata实例演示制作森林图"></a>Stata实例演示制作森林图</h4><p>此部分略</p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1Jp4y1C7kc/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">零基础完成一篇Meta分析SCI</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1A64y1q7gc/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">手柄手教你meta分析</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
     
@@ -60,8 +81,12 @@
     
     
     
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
     
+    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="Meta分析" scheme="https://www.sdhlw.top/tags/meta%E5%88%86%E6%9E%90/"/>
     
   </entry>
   
@@ -70,7 +95,7 @@
     <link href="https://www.sdhlw.top/markdown%E8%B6%85%E9%93%BE%E6%8E%A5/"/>
     <id>https://www.sdhlw.top/markdown%E8%B6%85%E9%93%BE%E6%8E%A5/</id>
     <published>2024-02-16T15:36:21.000Z</published>
-    <updated>2024-02-16T15:36:54.142Z</updated>
+    <updated>2024-02-18T01:50:06.394Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>行内形式<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Markdown超链接](https://m.imooc.com/wiki/markdownlesson-markdownlink)">[1]</span></a></sup>：<code>[百度](https://www.baidu.com/)</code></p><p>全局形式：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[百度][b]</span><br><span class="line">[b]:https://www.baidu.com/</span><br></pre></td></tr></table></figure><p>当一个超链接在文章中反复出现时，可以使用全局声明的形式，减少文章编写的工作量。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[天坛][tiantan]公园，是明清两代皇帝每年祭天和祈祷五谷丰收的地方。[天坛][tiantan]以严谨的建筑布局、奇特的建筑构造和瑰丽的建筑装饰着称于世。</span><br><span class="line">[tiantan]: http://www.tiantanpark.com</span><br></pre></td></tr></table></figure><span id="more"></span><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://m.imooc.com/wiki/markdownlesson-markdownlink">Markdown超链接</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
     
@@ -85,7 +110,9 @@
     
     
     
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    <category term="博客运营" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/"/>
+    
+    <category term="markdown" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/markdown/"/>
     
     
   </entry>
@@ -95,7 +122,7 @@
     <link href="https://www.sdhlw.top/%E6%8A%95%E7%A8%BF%E6%9C%9F%E5%88%8A%E6%8E%A8%E8%8D%90/"/>
     <id>https://www.sdhlw.top/%E6%8A%95%E7%A8%BF%E6%9C%9F%E5%88%8A%E6%8E%A8%E8%8D%90/</id>
     <published>2024-02-15T13:48:50.000Z</published>
-    <updated>2024-02-15T14:00:18.815Z</updated>
+    <updated>2024-02-18T01:49:38.925Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、查看自己参考文献的期刊</p><p>2、专业定点期刊，比如做生信，就可以投<em>Bioinformatics</em>、<em>Briefings in Bioinformatics</em>、<em>BMC Bioinformatics</em> ，也可以直接谷歌生信相关期刊。</p><span id="more"></span><p>3、使用专业网站选刊<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[5 个网站帮你精准选到 SCI 投稿期刊！（附好用的期刊查找网址）](https://zhuanlan.zhihu.com/p/382157070)">[1]</span></a></sup></p><p>Journal Finder：出版商开发的选刊工具</p><ul><li><a href="https://journalfinder.wiley.com/search?type=match">wiley</a></li><li><a href="https://journalfinder.elsevier.com/">elsevier</a></li></ul><p>Journal Suggester：出版商开发的选刊工具</p><ul><li><p><a href="https://journalsuggester.springer.com/">springer</a>：已经无法使用</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402152157438.png" alt="image-20240215215728650" style="zoom:33%;" /></li></ul><p>其他网址：<a href="https://www.journalguide.com/">journalguide</a></p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/382157070">5 个网站帮你精准选到 SCI 投稿期刊！（附好用的期刊查找网址）</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
     
@@ -105,7 +132,9 @@
     
     
     
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
     
     
     <category term="论文投稿" scheme="https://www.sdhlw.top/tags/%E8%AE%BA%E6%96%87%E6%8A%95%E7%A8%BF/"/>
@@ -117,17 +146,22 @@
     <link href="https://www.sdhlw.top/%E5%9B%BE%E7%89%87%E7%89%88%E6%9D%83/"/>
     <id>https://www.sdhlw.top/%E5%9B%BE%E7%89%87%E7%89%88%E6%9D%83/</id>
     <published>2024-02-15T13:10:04.000Z</published>
-    <updated>2024-02-15T13:10:04.886Z</updated>
+    <updated>2024-02-18T01:49:17.796Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>a</p><span id="more"></span><p>b</p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p>无</p><p>谷歌图片：</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212051986.png" alt="" style="zoom:80%;" /><!--more--><p>创用CC授权：</p><p>知识共享许可协议（英语：Creative Commons license，或创用CC授权）是一种公共版权授权条款，其允许按照多种需求分发受版权保护的作品<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[知识共享许可协议--维基百科](https://zh.wikipedia.org/wiki/%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE)">[1]</span></a></sup>。</p><p>四项权利</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212059253.png" alt="image-20240121205712056" style="zoom: 67%;" /><p>4种基本权利的组合有16种，即每项权利是否授权，即有$2\times2\times2\times2&#x3D;16 $ 种权利，4种组合是同时包括“<strong>ND</strong>”和“<strong>SA</strong>”的条款，相互排斥，无法使用；还有一种没有包括任何条款（即4种权利都不授权），因此有5个组合无效。11种有效组合中，因为98%的特许人要求署名，五种缺乏“<strong>BY</strong>”的条款不再使用。</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212201746.png" alt="" style="zoom:67%;" /><h3 id="参考文章-1"><a href="#参考文章-1" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zh.wikipedia.org/wiki/%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE">知识共享许可协议--维基百科</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;a&lt;/p&gt;</summary>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>谷歌图片：</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212051986.png" alt="" style="zoom:80%;" /><span id="more"></span><p>创用CC授权：</p><p>知识共享许可协议（英语：Creative Commons license，或创用CC授权）是一种公共版权授权条款，其允许按照多种需求分发受版权保护的作品<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[知识共享许可协议--维基百科](https://zh.wikipedia.org/wiki/%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE)">[1]</span></a></sup>。</p><p>四项权利</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212059253.png" alt="image-20240121205712056" style="zoom: 67%;" /><p>4种基本权利的组合有16种，即每项权利是否授权，即有$2\times2\times2\times2&#x3D;16 $ 种权利，4种组合是同时包括“<strong>ND</strong>”和“<strong>SA</strong>”的条款，相互排斥，无法使用；还有一种没有包括任何条款（即4种权利都不授权），因此有5个组合无效。11种有效组合中，因为98%的特许人要求署名，五种缺乏“<strong>BY</strong>”的条款不再使用。</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212201746.png" alt="" style="zoom:67%;" /><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zh.wikipedia.org/wiki/%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE">知识共享许可协议--维基百科</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
     
     
+    <summary type="html">&lt;p&gt;谷歌图片：&lt;/p&gt;
+&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212051986.png&quot; alt=&quot;&quot; style=&quot;zoom:80%;&quot; /&gt;</summary>
     
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
     
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="论文投稿" scheme="https://www.sdhlw.top/tags/%E8%AE%BA%E6%96%87%E6%8A%95%E7%A8%BF/"/>
     
   </entry>
   
@@ -136,7 +170,7 @@
     <link href="https://www.sdhlw.top/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>https://www.sdhlw.top/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
     <published>2024-02-15T13:05:19.000Z</published>
-    <updated>2024-02-15T13:42:11.512Z</updated>
+    <updated>2024-02-18T02:06:46.240Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul><li><p><code>hexo clean</code> : 清除缓存</p></li><li><p><code>hexo g</code> : generate 生成页面</p></li><li><p><code>hexo s</code>: server  启动本地服务预览, 将给出的链接复制粘贴到浏览器地址栏即可预览</p></li><li><p><code>hexo d</code>: deploy 部署发布</p><span id="more"></span></li></ul><p>创建文章：layout有三种：post(会发布)、draft(草稿)、page(首页标签页)。三种文章的模板文档在根文档夹的scaffolds里。命令：<code>hexo n [layout] 文档名</code></p><ul><li><code>hexo n 第一篇文章</code>: 添加名为第一篇文章的发布文章（不加layout, 默认layout是post）</li><li><code>hexo n draft 第二篇文章</code>: 添加名为第二篇文章的草稿文章，不发布</li><li><code>hexo P 第二篇文章</code>: 草稿文章发布，即将文章从 <code>source/_drafts</code> 移动到 <code>source/_posts</code> </li><li><code>hexo n page 测试页</code>：添加名为测试页的页面，页面不会出现在首页文章列表和归档中，也不支持分类和标签<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Hexo的常用命令](https://blog.csdn.net/sinat_37529938/article/details/111782829)">[1]</span></a></sup>，访问地址为：<code>主页地址/测试页</code></li></ul><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/sinat_37529938/article/details/111782829">Hexo的常用命令</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
     
@@ -152,7 +186,9 @@
     
     
     
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    <category term="博客运营" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/"/>
+    
+    <category term="其它" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/%E5%85%B6%E5%AE%83/"/>
     
     
   </entry>
@@ -162,7 +198,7 @@
     <link href="https://www.sdhlw.top/%E8%AE%BA%E6%96%87%E6%8A%95%E7%A8%BF%E4%B9%8B%E8%B4%A1%E7%8C%AE%E8%80%85%E8%A7%92%E8%89%B2%E5%88%86%E7%B1%BB%E6%B3%95%EF%BC%88credit%EF%BC%89/"/>
     <id>https://www.sdhlw.top/%E8%AE%BA%E6%96%87%E6%8A%95%E7%A8%BF%E4%B9%8B%E8%B4%A1%E7%8C%AE%E8%80%85%E8%A7%92%E8%89%B2%E5%88%86%E7%B1%BB%E6%B3%95%EF%BC%88credit%EF%BC%89/</id>
     <published>2024-01-17T13:25:12.010Z</published>
-    <updated>2024-01-17T14:27:44.307Z</updated>
+    <updated>2024-02-18T01:48:31.113Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>对于具有多个作者的论文，如果光看作者列表，是看不到每位作者的贡献的。从2012年起，设计贡献者角色分类法（Contributor Role Taxonomy，简称CRediT）的专家们便开始讨论并创建一个评价体系，试图解决这个问题<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[你了解作者中的贡献者角色分类法（CRediT）吗？](https://blog.wordvice.cn/what-is-the-credit-for-authors/)">[1]</span></a></sup>。</p><p>CRediT系统从2014年开始推广使用，并演绎到今天的这14类标准，如下表所示。</p><p>2020年4月23日，美国国家信息标准组织（NISO）宣布正式启动贡献者角色分类法工作，将该方法正式发展为ANSI&#x2F;NISO标准。</p><p>该方法将作者的贡献划分为14个类别，<a href="https://credit.niso.org/">官网</a>，并对每个类别的角色详细精确地定义了作者的贡献。</p><span id="more"></span><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401171637445.png" alt="" style="zoom: 50%;" /><p>在投稿论文中呈报作者角色时，每位作者可以承担多个角色。然而，在这14类角色中，并不是每一类角色都必须有人来承担。</p><p>CRediT的实施能够进一步严格完善衡量作者的投入和影响的评价方法，不仅能够采用一个统一正规的标准来公平地评价作者贡献，减少作者纠纷、虚报或不公平感，而且可以确保整个学术出版领域的透明度。CRediT系统对于作者、出版商、大学、资助者都有好处。</p><ul><li>对于作者来讲，在投稿时明确填写贡献者角色，能够表达对合作者给予应得的功劳，避免由于被忽视或感觉不公平而产生作者之间的争论，并且能够为将来的合作提供明确的档案记录作为参考。</li><li>对于期刊出版机构来讲，在论文中公布贡献者角色，能够为读者提供更为详细的信息，并能够依据所填报的贡献内容更好地为其他论文选择同行评议专家。</li><li>对于大学来讲，在评价作者的晋级请求和学术能力时，论文中明确记载的贡献者角色便于形成更为科学公正的审议结果。对于基金资助者来讲，了解每位作者的具体贡献，能够便于选择未来的资助对象和寻找同行评议专家。</li></ul><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.wordvice.cn/what-is-the-credit-for-authors/">你了解作者中的贡献者角色分类法（CRediT）吗？</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
     
@@ -175,7 +211,9 @@
     
     
     
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
     
     
     <category term="论文投稿" scheme="https://www.sdhlw.top/tags/%E8%AE%BA%E6%96%87%E6%8A%95%E7%A8%BF/"/>
@@ -187,7 +225,7 @@
     <link href="https://www.sdhlw.top/hexo%E9%83%A8%E7%BD%B2%E6%97%B6%E6%8A%A5%E9%94%99ssl-tls-connection-failed/"/>
     <id>https://www.sdhlw.top/hexo%E9%83%A8%E7%BD%B2%E6%97%B6%E6%8A%A5%E9%94%99ssl-tls-connection-failed/</id>
     <published>2024-01-16T13:40:12.000Z</published>
-    <updated>2024-01-16T14:14:55.462Z</updated>
+    <updated>2024-02-18T02:11:28.787Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span><p>两种情况：</p><ul><li><p>一种是你给git配置了vpn，vpn断掉了就会出现该提示，恢复本地vpn即可</p></li><li><p>另一种是你没有配置vpn，可以尝试这种方法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[解决git操作fatal: unable to access 'xxx': schannel: failed to receive handshake, SSL/TLS connection](https://www.jianshu.com/p/6773edf6b064)">[1]</span></a></sup>：</p><p>找到 .gitconfig 文档（一般位于 <code>C:/Users/xxx/</code> 目录下）,修改 <code>[http]</code> 中的 <code>sslbackend</code> 如下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[http]</span><br><span class="line">    sslbackend = openssl</span><br></pre></td></tr></table></figure></li></ul><!--more--><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.jianshu.com/p/6773edf6b064">解决git操作fatal: unable to access 'xxx': schannel: failed to receive handshake, SSL/TLS connection</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
     
@@ -203,10 +241,10 @@
     
     
     
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    <category term="博客运营" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/"/>
     
+    <category term="其它" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/%E5%85%B6%E5%AE%83/"/>
     
-    <category term="Hexo" scheme="https://www.sdhlw.top/tags/hexo/"/>
     
   </entry>
   
@@ -215,7 +253,7 @@
     <link href="https://www.sdhlw.top/%E7%AD%89%E6%AF%94%E4%BE%8B%E7%BC%A9%E5%B0%8Fpdf%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F/"/>
     <id>https://www.sdhlw.top/%E7%AD%89%E6%AF%94%E4%BE%8B%E7%BC%A9%E5%B0%8Fpdf%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F/</id>
     <published>2024-01-16T07:51:50.000Z</published>
-    <updated>2024-01-16T07:51:50.290Z</updated>
+    <updated>2024-02-18T01:47:38.884Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span><p>软件：Adobe Acrobat Pro DC</p><p>使用软件打开相应pdf：</p><ul><li><p>文件–打印–自定义比例：调整相应比例，导出即可</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401161543556.png" alt="" style="zoom:50%;" /><p>导出之后，pdf中的图片变小，但是画布不变，对画布进行裁剪即可。</p><p>裁剪步骤：打开pdf–工具–编辑pdf（打开）–裁剪页面：绘制裁剪框，双击裁剪框中的内容，确定即可。</p></li></ul><!--more-->]]></content>
     
@@ -230,6 +268,10 @@
     
     
     
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+    
     
     <category term="科研绘图" scheme="https://www.sdhlw.top/tags/%E7%A7%91%E7%A0%94%E7%BB%98%E5%9B%BE/"/>
     
@@ -240,7 +282,7 @@
     <link href="https://www.sdhlw.top/adobe-illustrator%E4%BF%AE%E6%94%B9%E7%94%BB%E5%B8%83%E5%A4%A7%E5%B0%8F/"/>
     <id>https://www.sdhlw.top/adobe-illustrator%E4%BF%AE%E6%94%B9%E7%94%BB%E5%B8%83%E5%A4%A7%E5%B0%8F/</id>
     <published>2024-01-16T07:03:15.000Z</published>
-    <updated>2024-01-16T14:05:14.352Z</updated>
+    <updated>2024-02-18T01:47:22.990Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span><p>1、创建页面时设置大小</p><p>2、已经创建完页面，需要设置大小</p><ul><li><p>文件–文档设置–弹出窗口–编辑面板：</p><ul><li>1 拖动虚线框上的锚点改变大小<sup id="fnref:1"><a href="#fn:1" rel="footnote">&lt;span class&#x3D;”hint–top hint–error hint–medium hint–rounded hint–bounce” aria-label&#x3D;”<a href="https://www.jb51.net/illustrator/454077.html">ai怎么调整画布尺寸? ai设置画布大小的两种方法</a></li></ul></li></ul><p>“&gt;[1]</span></a></sup></p><ul><li><p>2 点击左上角，直接替换固定格式，或点击右上角更改尺寸大小<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[如何在Adobe Illustrator中调整画布的大小](https://hownav.com/1359.html)">[2]</span></a></sup>：</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401161451959.png" alt="" style="zoom:50%;" /></li></ul><!--more--><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.jb51.net/illustrator/454077.html">ai怎么调整画布尺寸? ai设置画布大小的两种方法</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://hownav.com/1359.html">如何在Adobe Illustrator中调整画布的大小</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
     
@@ -255,6 +297,10 @@
     
     
     
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+    
     
     <category term="adobe illustrator" scheme="https://www.sdhlw.top/tags/adobe-illustrator/"/>
     
@@ -265,7 +311,7 @@
     <link href="https://www.sdhlw.top/p2%E4%B8%83%E6%A0%A1%E5%B7%A1%E5%9B%9E%E6%BC%94%E8%AE%B2002%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%92%8C%E8%A7%84%E8%8C%83/"/>
     <id>https://www.sdhlw.top/p2%E4%B8%83%E6%A0%A1%E5%B7%A1%E5%9B%9E%E6%BC%94%E8%AE%B2002%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%92%8C%E8%A7%84%E8%8C%83/</id>
     <published>2024-01-14T14:45:53.000Z</published>
-    <updated>2024-01-15T07:31:26.862Z</updated>
+    <updated>2024-02-18T01:47:04.286Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141655230.png" alt="" style="zoom:20%;" /><p>ppt绘制的图片，可导出位图、矢量图（emf、wmf）</p><span id="more"></span><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142211627.png" alt="" style="zoom:20%;" /><p>颜色种类对应位深度</p><p>查看图片信息：</p><ul><li><p>windows：右键–属性–详细信息</p></li><li><p>Photoshop：</p><ul><li><p>图像–图像大小：看dpi、实际尺寸</p></li><li><p>图像–模式（勾选rgb,8位通道），三种通道，每个通道有<code>2^8</code>种颜色，总的颜色种类有（<code>2^8</code>）×（<code>2^8</code>）×（<code>2^8</code>）&#x3D;<code>2^24</code></p></li><li><p>文件–存储为tiff：lzw压缩投稿</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142223031.png" alt="" style="zoom:25%;" /></li></ul></li></ul><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142218219.png" alt="" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142223062.png" alt="" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142223967.png" alt="" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142228198.png" alt="" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142232244.png" alt="" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142235076.png" alt="" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142236595.png" alt="" style="zoom:20%;" /><center>300dpi对最小图片要求像素354</center><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142238968.png" alt="" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142240705.png" alt="" style="zoom:20%;" /><p>等宽字体：</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142242708.png" alt="" style="zoom:25%;" /><p>第三种字体symbol:</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142244649.png" alt="" style="zoom:20%;" />]]></content>
     
@@ -275,6 +321,10 @@
 &lt;p&gt;ppt绘制的图片，可导出位图、矢量图（emf、wmf）&lt;/p&gt;</summary>
     
     
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
     
     
     <category term="科研绘图" scheme="https://www.sdhlw.top/tags/%E7%A7%91%E7%A0%94%E7%BB%98%E5%9B%BE/"/>
@@ -286,7 +336,7 @@
     <link href="https://www.sdhlw.top/p1%E7%A7%91%E7%A0%94%E5%9B%9B%E9%83%A8%E6%9B%B2%EF%BC%9A%E8%AE%BA%E6%96%87%E4%BD%9C%E5%9B%BE%E3%80%81%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E3%80%81%E5%A4%A7%E5%AD%A6%E6%8A%80%E5%B7%A7%E3%80%81%E5%AE%9E%E9%AA%8C%E5%9B%BE%E7%AD%89/"/>
     <id>https://www.sdhlw.top/p1%E7%A7%91%E7%A0%94%E5%9B%9B%E9%83%A8%E6%9B%B2%EF%BC%9A%E8%AE%BA%E6%96%87%E4%BD%9C%E5%9B%BE%E3%80%81%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E3%80%81%E5%A4%A7%E5%AD%A6%E6%8A%80%E5%B7%A7%E3%80%81%E5%AE%9E%E9%AA%8C%E5%9B%BE%E7%AD%89/</id>
     <published>2024-01-14T13:46:12.000Z</published>
-    <updated>2024-01-15T07:29:32.320Z</updated>
+    <updated>2024-02-18T01:36:44.876Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>笔记来源：<a href="https://www.bilibili.com/video/BV1F4411e7nw?p=1&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">https://www.bilibili.com/video/BV1F4411e7nw?p=1&amp;vd_source=9f04b059fdee5024fd04678f53de10ad</a></p><span id="more"></span><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651883.png" alt="" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651824.png" alt="" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651577.png" alt="" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651140.png" alt="" style="zoom:20%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651451.png" alt="" style="zoom:20%;" />]]></content>
     
@@ -294,6 +344,10 @@
     <summary type="html">&lt;p&gt;笔记来源：&lt;a href=&quot;https://www.bilibili.com/video/BV1F4411e7nw?p=1&amp;amp;vd_source=9f04b059fdee5024fd04678f53de10ad&quot;&gt;https://www.bilibili.com/video/BV1F4411e7nw?p=1&amp;amp;vd_source=9f04b059fdee5024fd04678f53de10ad&lt;/a&gt;&lt;/p&gt;</summary>
     
     
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
     
     
     <category term="科研绘图" scheme="https://www.sdhlw.top/tags/%E7%A7%91%E7%A0%94%E7%BB%98%E5%9B%BE/"/>
@@ -305,7 +359,7 @@
     <link href="https://www.sdhlw.top/%E5%9B%BE%E7%89%87%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
     <id>https://www.sdhlw.top/%E5%9B%BE%E7%89%87%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
     <published>2024-01-13T07:56:14.000Z</published>
-    <updated>2024-01-16T14:31:27.023Z</updated>
+    <updated>2024-02-18T01:47:11.385Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="位图与矢量图"><a href="#位图与矢量图" class="headerlink" title="位图与矢量图"></a>位图与矢量图</h4><p>图片格式主要分为位图（Bitmap）和矢量图（Vector）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[【果断收藏】SCI期刊的图片接收要求！](https://mp.weixin.qq.com/s?__biz=MzIyODA4NDE1OA==&mid=2247487677&idx=1&sn=25d77ffdd7e7787b292e0c6bb037f493&chksm=e856006cdf21897a7c35607978634b635b4452ae6c8b955d095352a84f7892f83a021242c703&scene=21#wechat_redirect)">[1]</span></a></sup>。</p><ul><li><p><strong>位图</strong>：（也可叫栅格图、点阵图）由像素点构成，放大之后可见如马赛克般的像素小点。位图常为.psd、.tiff、.jpg、.png、.bmp。处理位图时，输出图像的质量取决于处理过程开始时设置的分辨率高低。</p></li><li><p><strong>矢量图</strong>：任意放大但清晰度不变，拥有无限的分辨率。矢量图常为.wmf、.emf、.cdx、.ai、.eps、.svg、.pdf、文档。</p></li></ul><span id="more"></span><p>目前多数期刊要求图片格式为TIFF位图或者EPS矢量图，并且通常要求形成独立文档。因此，建议科研图片保存为TIFF位图或者EPS矢量图。</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401152247808.png" alt="" style="zoom: 25%;" /><p>Tip1：建议大家保存图形、表、示意图或其他线图为矢量图。保存照片、复杂的插图为位图。</p><p>Tip 2：在图表转换成图片时，将图片格式设定为TIFF格式的位图或EPS的矢量图形式。</p><p>Tip 3：如何将Excel中的图表转成高清晰度的位图呢？<br>将Excel图表转存为PDF文档，PDF文档可以通过Adobe Illustrator或Photoshop打开后再转存为TIFF文档，稍微不同的是，使用Adobe Illustrator转存成TIFF文档才指定分辨率，而使用Photoshop打开PDF文档时就会询问选择什么分辨率。</p><h4 id="像素px（Pixel）"><a href="#像素px（Pixel）" class="headerlink" title="像素px（Pixel）"></a>像素px（Pixel）</h4><p>它就是一个点，一个像素点，是屏幕上显示数据的最基本的点，单个像素没有具体的尺寸概念。相同尺寸的显示器下，像素越多，单个像素的尺寸就越小，屏幕越清晰；像素越少，单个像素的尺寸就越大，屏幕越模糊。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[【知识点】不明白px、pt、ppi、dpi、位图、矢量图？该收藏这篇文章了！](https://zhuanlan.zhihu.com/p/434250550)">[2]</span></a></sup>比如某张图片像素数目 (Pixels)：宽 1024 px, 768 px</p><h4 id="pt（Point）"><a href="#pt（Point）" class="headerlink" title="pt（Point）"></a>pt（Point）</h4><p>是一个点，一个专用的印刷单位“磅”，大小为1&#x2F;72英寸&#x3D;0.35mm，大小固定。</p><h4 id="ppi（Pixels-per-inch）"><a href="#ppi（Pixels-per-inch）" class="headerlink" title="ppi（Pixels per inch）"></a>ppi（Pixels per inch）</h4><p>图像分辨率，一个密度单位，指每英寸所包含的像素数目,ppi越大，像素越多，图片显示越清晰。</p><h4 id="dpi（Dots-per-inch）"><a href="#dpi（Dots-per-inch）" class="headerlink" title="dpi（Dots per inch）"></a>dpi（Dots per inch）</h4><p>打印分辨率，一个密度单位，指每英寸点数，是一个量度单位，用于点阵数码影像，指每一英寸长度中，取样、可显示或输出点的数目。「dot」一般也翻译为「点」，但此点（dot）非彼点（point）。dot 是用在打印设备上，所以它描绘的是打印精度，1英寸所能打印的墨点数量，值越大，印刷越精细。大部分期刊要求的是300dpi及以上的分辨率，之所以这样要求，是因为最后文章是要用于出版的，而杂志的出版方式以纸质要求为准。dpi是打印机通过墨粉成滴将图像呈现在纸张上的一种表述方式。当杂志只有在线形式时，一般要求的就是ppi，而大多杂志都是有纸质刊物的，所以都要求的是dpi。</p><p><strong>实际尺寸 (Print Size)</strong>: 厘米 cm，英尺 inch。1英寸为2.54 厘米</p><p>占用磁盘空间：几兆 M, 几 k</p><p>常见换算：</p><ul><li><p>屏幕上的显示：像素量px&#x3D;像素密度ppi*屏幕尺寸inch</p></li><li><p>纸张上的打印：像素数目（垂直或水平）&#x3D;分辨率×实际尺寸<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[【4. 论文作图之图片的大小：像素数目、分辨率的正确调整方法】](https://www.bilibili.com/video/BV1Ke4y1e7Ve/?share_source=copy_web&vd_source=7f2a81e814313c699f856c2ec72be7d9) ↩">[3]</span></a></sup><br>Pixels&#x3D;Resolution (DPI) X Print size (in inches)</p></li></ul><h4 id="图片大小"><a href="#图片大小" class="headerlink" title="图片大小"></a>图片大小</h4><p>期刊对图片的物理大小会有明确的说明，一般只会规定图片的宽度，图片可设定为单栏、1.5栏或双栏图片。</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401152246978.png" alt="" style="zoom:22%;" /><h4 id="颜色模式"><a href="#颜色模式" class="headerlink" title="颜色模式"></a>颜色模式</h4><p>彩色图片的颜色模式一般分为两种：RGB和CMYK。简单来说，RGB用于显示屏上，CMYK用于印刷中，RGB图比CMYK图色彩更亮丽，表现效果更好。根据以上整理的各期刊的要求来看，绝大多数期刊要求提供RGB模式的图片，这大概是因为图片由RGB转变为CMYK模式较易，但反过来转变的话，图像的表现力会下降。</p><p>使用绘图软件“新建文档”时就选择RGB模式，软件默认的8位&#x2F;信道足够达到大多期刊的要求了，图片另存时也优先选择RGB模式。如果杂志特别要求提供CMYK模式的图片，RGB模式也很方便转换为CMYK模式！</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401152248364.png" alt="" style="zoom:67%;" /><h4 id="图片的格式转换"><a href="#图片的格式转换" class="headerlink" title="图片的格式转换"></a>图片的格式转换</h4><p>论文提交时，一般要求上传图片的格式为 jpg 或 tif 或 eps, 参考杂志的投稿说明。<br>图片的格式转换方法</p><ul><li>方法 1: PowerPoint 中的“图片另存为”</li><li>方法 2: Photoshop 中的“另存为”</li><li>方法 3: Windowsi 画图程序中的“另存为”</li></ul><p>矢量pdf转emf：<a href="https://convert2.cn/pdf-to-emf">https://convert2.cn/pdf-to-emf</a></p><h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://mp.weixin.qq.com/s?__biz=MzIyODA4NDE1OA==&amp;mid=2247487677&amp;idx=1&amp;sn=25d77ffdd7e7787b292e0c6bb037f493&amp;chksm=e856006cdf21897a7c35607978634b635b4452ae6c8b955d095352a84f7892f83a021242c703&amp;scene=21#wechat_redirect">【果断收藏】SCI期刊的图片接收要求！</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/434250550">【知识点】不明白px、pt、ppi、dpi、位图、矢量图？该收藏这篇文章了！</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1Ke4y1e7Ve/?share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9">【4. 论文作图之图片的大小：像素数目、分辨率的正确调整方法】</a> ↩<a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
     
@@ -321,7 +375,9 @@
     
     
     
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
     
     
     <category term="科研绘图" scheme="https://www.sdhlw.top/tags/%E7%A7%91%E7%A0%94%E7%BB%98%E5%9B%BE/"/>
@@ -335,7 +391,7 @@
     <link href="https://www.sdhlw.top/word%E6%94%AF%E6%8C%81%E7%9A%84%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F/"/>
     <id>https://www.sdhlw.top/word%E6%94%AF%E6%8C%81%E7%9A%84%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F/</id>
     <published>2024-01-13T06:28:33.000Z</published>
-    <updated>2024-01-13T12:00:22.192Z</updated>
+    <updated>2024-02-18T01:36:20.190Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401132000313.png" alt="image-20240113143016946" style="zoom:67%;" />]]></content>
     
@@ -349,7 +405,9 @@
     
     
     
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
     
     
     <category term="word" scheme="https://www.sdhlw.top/tags/word/"/>
@@ -361,7 +419,7 @@
     <link href="https://www.sdhlw.top/windows%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%BD%AF%E4%BB%B6%EF%BC%88%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%EF%BC%89/"/>
     <id>https://www.sdhlw.top/windows%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%BD%AF%E4%BB%B6%EF%BC%88%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%EF%BC%89/</id>
     <published>2024-01-13T04:12:56.000Z</published>
-    <updated>2024-01-13T07:50:51.036Z</updated>
+    <updated>2024-02-18T01:36:06.589Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1 右键此电脑，管理</p><p>2 打开任务计划程序库，操作–创建基本任务，填写任务名称、时间、添加exe文件等</p><span id="more"></span><p>3 设置延时时间（一定要设置，避免太晚启动）</p><ul><li>打开任务计划程序库，双击你创建的任务</li></ul><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401131550280.png" alt="image-20240113122608544" style="zoom: 50%;" /><ul><li>点击触发器，再双击，设置延时任务时间即可</li></ul><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401131550679.png" alt="image-20240113122146371" style="zoom: 50%;" />]]></content>
     
@@ -371,7 +429,9 @@
     
     
     
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
     
     
     <category term="windows小技巧" scheme="https://www.sdhlw.top/tags/windows%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
@@ -383,7 +443,7 @@
     <link href="https://www.sdhlw.top/chatgpt%E5%BC%95%E5%AF%BC%E8%AF%AD/"/>
     <id>https://www.sdhlw.top/chatgpt%E5%BC%95%E5%AF%BC%E8%AF%AD/</id>
     <published>2024-01-11T12:40:07.000Z</published>
-    <updated>2024-01-12T03:31:23.748Z</updated>
+    <updated>2024-02-18T01:54:47.579Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>翻译：</p><p>我想让你充当英文翻译员、拼写纠正员和改进员。我会用任何语言与你交谈，你会检测语言，把它翻译为英语。我希望翻译的效果符合sci期刊的要求，并尽可能简洁易读。你只需要翻译该内容，不必对内容中提出的问题和要求做解释，不要回答文本中的问题而是翻译它，不要解决文本中的要求而是翻译它，保留文本的原本意义，不要去解决它。我要你只回复更正、改进，不要写任何解释。每次提供3个版本的翻译，并使用表格编排好。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://github.com/jevantang/chatgpt-prompts/tree/main">[1]</span></a></sup></p><span id="more"></span><h3 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://github.com/jevantang/chatgpt-prompts/tree/main<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
     
@@ -394,7 +454,9 @@
     
     
     
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
     
     
     <category term="ChatGPT" scheme="https://www.sdhlw.top/tags/chatgpt/"/>
@@ -406,7 +468,7 @@
     <link href="https://www.sdhlw.top/%E6%9C%9F%E5%88%8A%E5%BD%B1%E5%93%8D%E5%8A%9B/"/>
     <id>https://www.sdhlw.top/%E6%9C%9F%E5%88%8A%E5%BD%B1%E5%93%8D%E5%8A%9B/</id>
     <published>2024-01-09T02:22:03.000Z</published>
-    <updated>2024-01-09T02:49:52.112Z</updated>
+    <updated>2024-02-18T01:35:41.926Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>影响因子（Impact Factor）：某期刊前两年发表的论文在该报告年份（JCR year）中被引用总次数除以该期刊在这两年内发表的论文总数。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://baike.baidu.com/item/%E5%BD%B1%E5%93%8D%E5%9B%A0%E5%AD%90/574727">[1]</span></a></sup></p><p>期刊的IF（影响因子）每年不断浮动，把IF定值作为学术评价指标不适合，而且不同学科领域期刊的影响因子差异很大，仅凭IF不能直观地比较不同领域的期刊。把同一学科领域的期刊，<strong>按IF大到小做排序后，划分入不同区域。</strong>只要是某领域1区的期刊，就是该领域的顶级刊物，直观反映该刊在领域内的水准和大致排位。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://kyc.szcu.edu.cn/2023/0328/c2593a50685/page.htm">[2]</span></a></sup></p><span id="more"></span><ul><li><p>JCR分区：汤森路透公司制定的JCR分区(原来是汤森路透，后来易主科睿唯安)，一般简称为JCR 分区(Journal Citation Reports，简称JCR)。</p><p>JCR将收录期刊分为176个不同学科类别。每个学科分类按期刊的影响因子高低，平均分为Q1、Q2、Q3和Q4四个区：</p><ul><li><p>影响因子前25%(含25%)期刊划分为Q1区；</p></li><li><p>影响因子前25%～50% 为Q2区；</p></li><li><p>影响因子前50%～75% 为Q3区；</p></li><li><p>影响因子75%之后为Q4区。</p></li></ul></li><li><p>中科院分区：中国科学院国家科学图书馆制定的JCR分区，一般简称为「中科院分区」。</p><p>中科院分区目前分为基础版和升级版（试行）</p><p>中科院分区（基础版）先将JCR中所有期刊分为数学、物理、化学、生物、地学、天文、工程技术、医学、环境科学、农林科学、社会科学、管理科学及综合性期刊13 大类。每个学科分类按照期刊的3年平均影响因子高低，分为4四个区：</p><ul><li><p>影响因子前5%为该类1 区；</p></li><li><p>影响因子前6% ～ 20% 为2 区；</p></li><li><p>影响因子前21% ～ 50% 为3 区；</p></li><li><p>影响因子后50%为4区。</p></li></ul><p>中科院分区升级版在2020年1月公布，在基础版的基础上做了以下调整。</p><ul><li>针对期刊收录范围，升级版由基础版的只收录SCI期刊，扩展为收录SCI期刊和SSCI期刊。</li><li>针对学科分类，升级版将期刊由基础版的13个学科扩展至18个。针对分区标准，升级版由基础版的按照影响因子分区，改为了按照期刊超越指数分区。</li><li>值得一提的是，中科院分区目前属于过渡期，基础版和升级版均在更新和发布。2022年起，将只公布升级版。</li></ul></li></ul><p><strong>JCR分区 PK 中科院分区</strong></p><ul><li><p>01 学科划分不同</p><p>科睿唯安JCR的Journal Ranking没有设置大类学科，只分为176个具体学科，也就是中科院分区表中所指的小类学科。</p></li><li><p>02 分区方法不同</p><p>JCR是按照<strong>“平均主义”思想</strong>，根据刊物IF的高至低平均划分4个区，每个区含有该领域总量25%的期刊；中科院的分区如同<strong>社会阶层的金字塔结构</strong>，1区只有5%的顶级期刊，2~4区期刊数量也逐层增加。于是，采用中科院分区后往往出现<strong>“掉区”</strong>的情况。</p></li></ul><p>　　显然中科院的1区和2区杂志很少，杂志质量相对也高，基本都是本领域的顶级期刊。所以有的人发表的论文按JCR分区标准算一区，而按中科院分区算2区甚至三区。</p><ul><li><p>03 指标取值不同</p><p>JCR是按当期（1年）的IF进行分区，中科院是按刊物前3年IF平均值进行分区。</p></li><li><p>04 写法不同</p><p>一般的，JCR中1区的期刊写作“Q1”，中科院1区的期刊写作“1区”，如此类推。最后的重点——我们到底该看哪个分区？<br>　　其实两种分区方式都比较权威，具体怎么看，最直接的方法是看你们学校&#x2F;单位认哪个。</p></li></ul><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://baike.baidu.com/item/%E5%BD%B1%E5%93%8D%E5%9B%A0%E5%AD%90/574727<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://kyc.szcu.edu.cn/2023/0328/c2593a50685/page.htm<a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
     
@@ -418,10 +480,12 @@
     
     
     
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="期刊" scheme="https://www.sdhlw.top/tags/%E6%9C%9F%E5%88%8A/"/>
+    <category term="论文投稿" scheme="https://www.sdhlw.top/tags/%E8%AE%BA%E6%96%87%E6%8A%95%E7%A8%BF/"/>
     
   </entry>
   
@@ -430,7 +494,7 @@
     <link href="https://www.sdhlw.top/cover-letter/"/>
     <id>https://www.sdhlw.top/cover-letter/</id>
     <published>2024-01-05T08:17:33.000Z</published>
-    <updated>2024-01-19T06:14:09.366Z</updated>
+    <updated>2024-02-18T01:35:19.362Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Cover letter，即投稿信，就是在我们提交论文稿件的时候，一并发送给编辑的一封信。Cover letter 是编辑对论文的第一印象，也是初步评判你论文是否可以被期刊接收的重要依据<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://www.x-mol.com/groups/yfluo/positions/15292">[1]</span></a></sup>。</p><p>大家都知道期刊编辑的日常是被海量的投稿论文所淹没，而匆忙写出只包含论文题目、期刊名称、通讯作者联系方式等基本信息的英文投稿信对投稿并没有什么价值，因此如何让期刊编辑对你的文章留下深刻的第一印象非常关键！</p><p>Cover letter通常是简单概括文章的内核内容，主要发现，创新点以及意义，以及对稿件的处理是否有特殊的要求。此外还要附上主要作者的通讯信息，有的杂志会要求推荐审稿人。</p><p>各个杂志的具体要求是不一样的，下笔之前最好在杂志的guide for authors上去找找有无相关要求。如果没有具体的，就按照通用的要求进行处理就行。</p><p>完整的Cover letter 一般包括以下内容：<br>A. <strong>期刊编辑的姓名</strong>（不知道编辑是谁的情况下直接用 Dear editor）;<br>B. <strong>投稿文章的标题</strong><br>C. <strong>投稿文章的类型</strong>（Letter, communications, article, review 还是 comments）<br>D. <strong>文章简介</strong>，包括：(1)研究背景；(2)论文的重要发现；(3)论文可以发表在期刊上的原因：引发读者兴趣的地方，与期刊的契合之处等等<br>E. <strong>稿件出版道德规范的免责说明</strong>（这个部分很多期刊在网站上投稿时会进行确认，cover letter 里面可以不出现）以及对稿件有无特殊处理要求（一般指屏蔽某些竞争者成为审稿人）<br>F. <strong>作者信息</strong>：一般为通讯作者姓名，所属机构，通讯地址，联系电话，邮箱等<br>G. <strong>推荐审稿人名单</strong>（注：目前很多杂志社已经将这一部分挪到了投稿网站系统上，Cover letter中可以不再列出）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Dear Dr./Ms./Mr. [编辑姓名],</span><br><span class="line">I would like to request you to consider the attached manuscript entitled [论文题目] for publication in [期刊名称] as an [文章类型].</span><br><span class="line">While many studies have investigated the [简短叙述该主题下的既有知识], I have not come across a paper that deals with [你的研究所属领域/主题]. We conducted [简短叙述研究方法] and came up with [概述研究结果]. I feel that [你的研究何以重要，未来的发展方向为何].</span><br><span class="line">I believe that the findings of this study are relevant to the scope of your journal and will be of interest to its readership. I have provided tables summarizing the findings. [如果有才需要这句：If required, the entire data can be made available as supplementary information.] Do let me know if you wish to have a look at them.</span><br><span class="line">This manuscript has not been published or presented elsewhere in part or in entirety, and is not under consideration by another journal. There are no conflicts of interest to declare. [注：如果有任何利益冲突，要写在这里].</span><br><span class="line">I look forward to hearing from you.</span><br><span class="line">Sincerely,</span><br><span class="line">[你的名字]</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Dr. XX YY （批注1: Name of Editor-in-chief or Editor (First name, Last name)This is much desirable as it makes your letter more personal.）Editor-in-Chief</span><br><span class="line">[Insert target Journal name]</span><br><span class="line">[Journal address, e.g., 123 ABC Street, City, State, zip code, Country.]</span><br><span class="line">May xx, 2021（批注2: Date of submission.）</span><br><span class="line">Dear Dr. YY,（批注 3: Or say Dear Editor if you don’t know his/her name）</span><br><span class="line">We are submitting the attached original manuscript entitled “[Insert manuscript title]” to be considered for publication in the [Insert target Journal name] as anoriginal research article.（批注4: Include this if you know the category.）</span><br><span class="line">[Insert research summary（批注5: Do not copy any content directly from the abstract. Research summary should be &lt;350 words.） according to the following questions – please provide brief answers (1-2 sentences) per question: 1. What is the overarching background of this research topic? 2. What does this study attempt to achieve (aim)? 3. What are the key findings (novelty)? Followed by a statement something as follows “As [Insert target Journal name] has a long-standing interest in publishing research related to the [ABCD] field, we feel your readership will be interested in this study that contributes to further understanding […](impact)”</span><br><span class="line">We declare that none of the work contained in this manuscript is published in any language or currently under consideration at any other journal, and there are no conflicts of interest to declare. All authors have contributed to, read, and approved this submitted manuscript in its current form. Our manuscript has also been edited by a native English-speaking expert to ensure its English is good enough for publication（文章经过润色的话申明已润色很有必要，很多期刊不送审会直接要求润色，推荐合作公司）.</span><br><span class="line">Please find recommended referees as follows:(批注6: Optional, but recommended – journal editors will appreciate your efforts in making their life easier. )ABC, Professor</span><br><span class="line">[Insert full address of ABC professor].[Insert Phone no of ABC professor],[Insert E-mail address of ABC professor] (批注7: Insert referees information (Optional -- depends on Journal requirement.)</span><br><span class="line">We hope you find our manuscript of interest and look forward to hearing from you soon. Thank you very much.(批注8: Example of last paragraph.)</span><br><span class="line">Sincerely,</span><br><span class="line">[Name of Corresponding Author, Title]</span><br><span class="line">[Insert corresponding address, contact and fax number, email]</span><br></pre></td></tr></table></figure><p>Cover Letter主要包括以下几方面<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://blog.sciencenet.cn/blog-909908-682912.html">[2]</span></a></sup>：</p><ol><li><p>右上角日期</p></li><li><p>左上角（日期下一行）是抬头，如果没有熟悉的编辑Editor，就写给editor-in-chief主编，然后写上杂志的名字和地址。</p></li><li><p>Dear Prof. 或者Dr.开头。第一段写投稿到你们杂志，我们觉得这篇文章很适合在你们杂志发表之类的。</p></li><li><p>第二段开始简介下文章内容，着重讲意义significance，或者创新性innovation.尽量简短明了。有时候可以写两段。如果有十分重大发现或者有意义发现，着重指出来。</p></li><li><p>一般要做些statement陈述，比如没有在其他杂志发表，所有作者都同意提交，没有经济利益冲突等等。有的杂志要求列上项目经费来源。</p></li><li><p>最后就是客气下结尾了。然后通讯作者的名字签字和地址等联系方式。</p></li><li><p>信纸要用有单位logo和抬头的信纸，然后扫描，也可以电子签名然后生成PDF。</p><span id="more"></span></li></ol><h3 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h3><h4 id="1-第一次投稿"><a href="#1-第一次投稿" class="headerlink" title="1 第一次投稿"></a>1 第一次投稿</h4><p>主要任务是介绍文章主要创新以及声明没有一稿多投。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://zhuanlan.zhihu.com/p/121473271">[3]</span></a></sup></p><p>Dear Editors:</p><p>We would like to submit the enclosed manuscript entitled “Paper Title”, which we wish to be considered for publication in “Journal Name”. No conflict of interest exits in the submission of this manuscript, and manuscript is approved by all authors for publication. I would like to declare on behalf of my co-authors that the work described was original research that has not been published previously, and not under consideration for publication elsewhere, in whole or in part. All the authors listed have approved the manuscript that is enclosed.</p><p>In this work, we evaluated …… (简要介绍一下论文的创新性). I hope this paper is suitable for “Journal Name”.</p><p>The following is a list of possible reviewers for your consideration:</p><ol><li><p>Name A E-mail: ××××@××××</p></li><li><p>Name B E-mail: ××××@××××</p></li></ol><p>We deeply appreciate your consideration of our manuscript, and we look forward to receiving comments from the reviewers. If you have any queries, please don’t hesitate to contact me at the address below.</p><p>Thank you and best regards.</p><p>Yours sincerely,</p><p>××××××</p><p>Corresponding author:</p><p>Name: ×××</p><p>E-mail: ××××@××××</p><h4 id="2-催稿信"><a href="#2-催稿信" class="headerlink" title="2 催稿信"></a>2 催稿信</h4><p>询问稿件处理到声明步骤</p><p>Dear Prof. ×××:</p><p>Sorry for disturbing you. I am not sure if it is the right time to contact you to inquire about the status of my submitted manuscript titled “Paper Title”. (ID: 文章稿号), although the status of “With Editor” has been lasting for more than two months, since submitted to journal three months ago. I am just wondering that my manuscript has been sent to reviewers or not?</p><p>I would be greatly appreciated if you could spend some of your time check the status for us. I am very pleased to hear from you on the reviewer’s comments.</p><p>Thank you very much for your consideration.</p><p>Best regards!</p><p>Yours sincerely,</p><p>××××××</p><p>Corresponding author:</p><p>Name: ×××</p><p>E-mail: ××××@××××</p><h4 id="3-修改稿"><a href="#3-修改稿" class="headerlink" title="3 修改稿"></a>3 修改稿</h4><p>Dear Dr&#x2F; Prof..（写上负责你文章编辑的姓名，显得尊重，因为第一次的投稿不知道具体负责的编辑，只能用通用的Editors）:</p><p>On behalf of my co-authors, we thank you very much for giving us an opportunity to revise our manuscript, we appreciate editor and reviewers very much for their positive and constructive comments and suggestions on our manuscript entitled “Paper Title”. (ID: 文章稿号).</p><p>We have studied reviewer’s comments carefully and have made revision which marked in red in the paper. We have tried our best to revise our manuscript according to the comments. Attached please find the revised version, which we would like to submit for your kind consideration.</p><p>We would like to express our great appreciation to you and reviewers for comments on our paper. Looking forward to hearing from you.</p><p>Thank you and best regards.</p><p>Yours sincerely,</p><p>××××××</p><p>Corresponding author:</p><p>Name: ×××</p><p>E-mail: ××××@××××</p><h4 id="4-修改稿回答审稿人的意见（最重要的部分）"><a href="#4-修改稿回答审稿人的意见（最重要的部分）" class="headerlink" title="4 修改稿回答审稿人的意见（最重要的部分）"></a>4 修改稿回答审稿人的意见（最重要的部分）</h4><p>List of Responses</p><p>Dear Editors and Reviewers:</p><p>Thank you for your letter and for the reviewers’ comments concerning our manuscript entitled “Paper Title” (ID: 文章稿号). Those comments are all valuable and very helpful for revising and improving our paper, as well as the important guiding significance to our researches. We have studied comments carefully and have made correction which we hope meet with approval. Revised portion are marked in red in the paper. The main corrections in the paper and the responds to the reviewer’s comments are as flowing:</p><p>Responds to the reviewer’s comments:</p><p>Reviewer #1:</p><ol><li>Response to comment: (……简要列出意见……)</li></ol><p>Response: ××××××</p><ol start="2"><li>Response to comment: (……简要列出意见……)</li></ol><p>Response: ××××××</p><p>。。。。。。</p><p>逐条意见回答，切忌一定不能有遗漏</p><p>针对不同的问题有下列几个礼貌术语可适当用用：</p><p>We are very sorry for our negligence of ………</p><p>We are very sorry for our incorrect writing ………</p><p>It is really true as Reviewer suggested that……</p><p>We have made correction according to the Reviewer’s comments.</p><p>We have re-written this part according to the Reviewer’s suggestion</p><p>As Reviewer suggested that……</p><p>Considering the Reviewer’s suggestion, we have ……</p><p>最后特意感谢一下这个审稿人的意见：</p><p>Special thanks to you for your good comments.</p><p>Reviewer #2:</p><p>同上述</p><p>Reviewer #3:</p><p>××××××</p><p>Other changes:</p><ol><li><p>Line 60-61, the statements of “……” were corrected as “…………”</p></li><li><p>Line 107, “……” was added</p></li><li><p>Line 129, “……” was deleted</p></li></ol><p>××××××</p><p>We tried our best to improve the manuscript and made some changes in the manuscript. These changes will not influence the content and framework of the paper. And here we did not list the changes but marked in red in revised paper.</p><p>We appreciate for Editors&#x2F;Reviewers’ warm work earnestly, and hope that the correction will meet with approval.</p><p>Once again, thank you very much for your comments and suggestions.</p><h4 id="5-文章接受后可以考虑感谢一下负责你文章的编辑或主编（根据需要）"><a href="#5-文章接受后可以考虑感谢一下负责你文章的编辑或主编（根据需要）" class="headerlink" title="5 文章接受后可以考虑感谢一下负责你文章的编辑或主编（根据需要）"></a>5 文章接受后可以考虑感谢一下负责你文章的编辑或主编（根据需要）</h4><p>Dear Prof. ××××××:</p><p>Thanks very much for your kind work and consideration on publication of our paper. On behalf of my co-authors, we would like to express our great appreciation to editor and reviewers.</p><p>Thank you and best regards.</p><p>Yours sincerely,</p><p>××××××</p><p>Corresponding author:</p><p>Name: ×××</p><p>E-mail: ××××@××××</p><h4 id="6-询问校稿信件（如果文章接受后时间较长）"><a href="#6-询问校稿信件（如果文章接受后时间较长）" class="headerlink" title="6 询问校稿信件（如果文章接受后时间较长）"></a>6 询问校稿信件（如果文章接受后时间较长）</h4><p>Dear ×××:</p><p>Sorry for disturbing you. I am not sure if it is the right time to contact you to inquire about the status of our accepted manuscript titled “Paper Title” (ID: 文章稿号), since the copyright agreement for publication has been sent to you two months ago. I am just wondering that how long I can receive the proof of our manuscript from you?</p><p>I would be greatly appreciated if you could spend some of your time for a reply. I am very pleased to hear from you.</p><p>Thank you very much for your consideration.</p><p>Yours sincerely,</p><p>××××××</p><p>Corresponding author:</p><p>Name: ×××</p><p>E-mail: ××××@××××</p><h4 id="7-文章校稿信件"><a href="#7-文章校稿信件" class="headerlink" title="7 文章校稿信件"></a>7 文章校稿信件</h4><p>Dear Mr. ×××:</p><p>Thanks very much for your kind letter about the proof of our paper titled “Paper Title” (ID: 文章稿号) for publication in “Journal Name”. We have finished the proof reading and checking carefully, and some corrections about the proof and the answers to the queries are provided below.</p><p>Corrections:</p><ol><li><p>In ****** should be **** (Page <em><strong>, Right column, line</strong></em>)</p></li><li><p>In **** the “*<strong><strong>” should be “</strong></strong>” (Page <strong><strong>, Right column, line</strong></strong>)</p></li></ol><p>Answers for “author queries”:</p><ol><li><p>*********************.</p></li><li><hr></li><li><hr></li></ol><p>We greatly appreciate the efficient, professional and rapid processing of our paper by your team. If there is anything else we should do, please do not hesitate to let us know.</p><p>Thank you and best regards.</p><p>Yours sincerely,</p><p>××××××</p><p>Corresponding author:</p><p>Name: ×××</p><p>E-mail: ××××@××××</p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://www.x-mol.com/groups/yfluo/positions/15292<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://blog.sciencenet.cn/blog-909908-682912.html<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://zhuanlan.zhihu.com/p/121473271<a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
     
@@ -466,7 +530,9 @@
     
     
     
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
     
     
     <category term="论文投稿" scheme="https://www.sdhlw.top/tags/%E8%AE%BA%E6%96%87%E6%8A%95%E7%A8%BF/"/>
@@ -478,7 +544,7 @@
     <link href="https://www.sdhlw.top/%E5%B0%8F%E6%8F%90%E7%90%B4%E5%9B%BE%E5%92%8C%E7%AE%B1%E7%BA%BF%E5%9B%BE/"/>
     <id>https://www.sdhlw.top/%E5%B0%8F%E6%8F%90%E7%90%B4%E5%9B%BE%E5%92%8C%E7%AE%B1%E7%BA%BF%E5%9B%BE/</id>
     <published>2023-04-15T08:02:58.000Z</published>
-    <updated>2023-04-15T08:07:06.682Z</updated>
+    <updated>2024-02-18T01:35:02.119Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>小提琴图（violin plot）是一种用于可视化数据分布的图表。它结合了箱线图和核密度图的优点，可以更直观地展示数据的分布情况和中位数、四分位数等统计量的位置。</p><p>小提琴图通常由两部分组成：中间的白点表示中位数，黑色的厚线表示四分位数范围，而外部的形状则是核密度估计的结果，类似于概率密度函数。不同小提琴之间的比较可以更好地呈现数据之间的差异和相似性。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="ChatGPT">[1]</span></a></sup></p><span id="more"></span><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151452788.png"></p><p>outside points：离群点<br>Upper Adjacent Value：上边界值<br>Third Quartile：第三四分位数<br>Median：中位数，第二四分位数<br>First Quartile ：第一四分位数<br>Lower Adjacent Value：下边界值</p><hr><p>第一四分位数（Q 1）：又称较小四分位数，等于该样本中所有数值由小到大排列后第25%的数字。<br>第二四分位数（Q 2）：又称中位数，等于该样本中所有数值由小到大排列后第50%的数字。<br>第三四分位数（Q 3）：又称较大四分位数，等于该样本中所有数值由小到大排列后第75%的数字。</p><p>第三四分位数与第一四分位数的差距又称四分位距（InterQuartile Range, IQR）<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[四分位数-维基百科](https://zh.wikipedia.org/zh-hans/%E5%9B%9B%E5%88%86%E4%BD%8D%E6%95%B0) ">[2]</span></a></sup></p><p>当有数值与第1与第3四分位数的范围差距1.5×IQR 以上时，该值为离群值（outlier）。<br>数值位于范围外1.5×IQR 到3×IQR 范围的数值，称作适度离群值（mild outlier）。<br>数值位于范围外3×IQR 以上的数值，称作极端离群值（extreme outlier）。</p><p>小提琴图除了显示上述的统计数据外，它还显示了数据的整体分布。</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151452814.png"></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151452831.png"></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151452846.png"></p><p>如果数据的四分位数保持不变，箱形图就不会改变。那么，我们可以对数据进行修改，使四分位数不发生变化，但分布的形状会发生很大的变化。下面的 GIF 图说明了这一点。</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151455052.webp"></p><ul><li>在直方图中，我们看到分布的对称形状</li><li>我们可以在箱形图和小提琴图中看到前面提到的指标（中位数、IQR）。</li><li>用于创建小提琴图的核密度图与添加在直方图上的核密度图是一样的。小提琴图中较宽的部分代表观测值取值的概率较高，较窄的部分则对应于较低的概率。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[如何通俗的理解小提琴图 - jinzhao 的文章 - 知乎](https://zhuanlan.zhihu.com/p/376055263 )">[3]</span></a></sup></li></ul><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">ChatGPT<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zh.wikipedia.org/zh-hans/%E5%9B%9B%E5%88%86%E4%BD%8D%E6%95%B0">四分位数-维基百科</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/376055263">如何通俗的理解小提琴图 - jinzhao 的文章 - 知乎</a><a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
     
@@ -489,36 +555,12 @@
     
     
     
-    <category term="Study" scheme="https://www.sdhlw.top/categories/study/"/>
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
     
     
     <category term="箱线图" scheme="https://www.sdhlw.top/tags/%E7%AE%B1%E7%BA%BF%E5%9B%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Zotero插件之Jasminum（茉莉花）</title>
-    <link href="https://www.sdhlw.top/zotero%E6%8F%92%E4%BB%B6%E4%B9%8Bjasminum%EF%BC%88%E8%8C%89%E8%8E%89%E8%8A%B1%EF%BC%89/"/>
-    <id>https://www.sdhlw.top/zotero%E6%8F%92%E4%BB%B6%E4%B9%8Bjasminum%EF%BC%88%E8%8C%89%E8%8E%89%E8%8A%B1%EF%BC%89/</id>
-    <published>2023-02-25T06:37:37.000Z</published>
-    <updated>2023-02-25T07:15:42.365Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：根据中文pdf，自动抓取条目信息</p><p>实现：</p><p><a href="https://github.com/l0o0/jasminum">官网</a>下载xpi，打开附加组件，文件拖拽到组件页面安装即可</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302251511232.png"></p><p>右键pdf即可抓取中文文献条目信息：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302251511409.png"></p><span id="more"></span><p>也可添加pdf时自动抓取条目信息：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302251511533.png"></p><p>插件目前支持的功能：</p><ul><li>拆分或合并 Zotero 中条目作者姓和名</li><li>根据知网上下载的文献文件来抓取引用信息（就是根据文件名）</li><li>添加中文PDF&#x2F;CAJ时，自动拉取知网数据，该功能默认关闭。需要到设置中开启，注意添加的文件名需要含有中文，全英文没有效果（还是根据文件名）</li><li>为知网的学位论文 PDF 添加书签</li><li>更新中文 translators</li><li>拉取文献引用次数，是否核心期刊</li></ul>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;需求：根据中文pdf，自动抓取条目信息&lt;/p&gt;
-&lt;p&gt;实现：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/l0o0/jasminum&quot;&gt;官网&lt;/a&gt;下载xpi，打开附加组件，文件拖拽到组件页面安装即可&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302251511232.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;右键pdf即可抓取中文文献条目信息：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302251511409.png&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Tool Software" scheme="https://www.sdhlw.top/categories/tool-software/"/>
-    
-    
-    <category term="Zotero" scheme="https://www.sdhlw.top/tags/zotero/"/>
     
   </entry>
   

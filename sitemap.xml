@@ -2,9 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.sdhlw.top/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E4%B8%8E%E6%A0%87%E7%AD%BE/</loc>
+    
+    <lastmod>2024-02-18T02:15:45.769Z</lastmod>
+    
+    <date>1708222508000</date>
+    <title>博客文章分类与标签 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/hexo%E9%83%A8%E7%BD%B2%E6%97%B6%E6%8A%A5%E9%94%99ssl-tls-connection-failed/</loc>
+    
+    <lastmod>2024-02-18T02:11:28.787Z</lastmod>
+    
+    <date>1705412412000</date>
+    <title>hexo部署时报错SSL/TLS connection failed | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E8%AE%BE%E7%BD%AE-next-%E4%B8%BB%E9%A2%98%E6%94%AF%E6%8C%81-latex-%E6%B8%B2%E6%9F%93/</loc>
+    
+    <lastmod>2024-02-18T02:09:48.523Z</lastmod>
+    
+    <date>1675781827000</date>
+    <title>设置 Next 主题支持 Latex 渲染 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://www.sdhlw.top/next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E5%88%87%E6%8D%A2%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F/</loc>
     
-    <lastmod>2024-02-17T14:05:42.685Z</lastmod>
+    <lastmod>2024-02-18T02:06:59.206Z</lastmod>
     
     <date>1708178668000</date>
     <title>Next主题添加切换暗黑模式 | Jay's Blog</title>
@@ -13,20 +46,86 @@
   </url>
   
   <url>
-    <loc>https://www.sdhlw.top/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/</loc>
+    <loc>https://www.sdhlw.top/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
     
-    <lastmod>2024-02-17T13:32:01.755Z</lastmod>
+    <lastmod>2024-02-18T02:06:46.240Z</lastmod>
     
-    <date>1675781853000</date>
-    <title>解决npm下载慢问题 | Jay's Blog</title>
+    <date>1708002319000</date>
+    <title>Hexo常用命令 | Jay's Blog</title>
     
     <desc></desc>
   </url>
   
   <url>
+    <loc>https://www.sdhlw.top/hexo%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0%EF%BC%9Agitalk/</loc>
+    
+    <lastmod>2024-02-18T02:05:57.221Z</lastmod>
+    
+    <date>1674402620000</date>
+    <title>Hexo评论功能的实现：Gitalk | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
+    
+    <lastmod>2024-02-18T02:05:49.913Z</lastmod>
+    
+    <date>1659152995000</date>
+    <title>Hexo的使用 | Jay's Blog</title>
+    
+    <desc>【不定时更新】用于记录Hexo的配置和命令的使用。</desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/hexo%E4%BB%A3%E7%A0%81%E5%9D%97%E6%8A%98%E5%8F%A0%E5%8A%9F%E8%83%BD/</loc>
+    
+    <lastmod>2024-02-18T02:05:30.502Z</lastmod>
+    
+    <date>1674657342000</date>
+    <title>Hexo代码块折叠功能 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/chatgpt%E5%BC%95%E5%AF%BC%E8%AF%AD/</loc>
+    
+    <lastmod>2024-02-18T01:54:47.579Z</lastmod>
+    
+    <date>1704976807000</date>
+    <title>ChatGPT引导语 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E7%9A%AE%E5%B0%94%E6%A3%AE%EF%BC%88%E9%80%8A%EF%BC%89%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%EF%BC%88pearson-correlation-coefficient-pcc%EF%BC%89/</loc>
+    
+    <lastmod>2024-02-18T01:54:12.694Z</lastmod>
+    
+    <date>1676555813000</date>
+    <title>皮尔森（逊）相关系数（Pearson Correlation Coefficient, PCC） | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E9%85%8D%E7%BD%AEword%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</loc>
+    
+    <lastmod>2024-02-18T01:53:26.416Z</lastmod>
+    
+    <date>1659771435000</date>
+    <title>配置word版本控制 | Jay's Blog</title>
+    
+    <desc>采用Git和Pandoc软件对Word进行版本控制</desc>
+  </url>
+  
+  <url>
     <loc>https://www.sdhlw.top/meta%E5%88%86%E6%9E%90%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/</loc>
     
-    <lastmod>2024-02-17T12:14:15.726Z</lastmod>
+    <lastmod>2024-02-18T01:51:24.455Z</lastmod>
     
     <date>1708172034000</date>
     <title>Meta分析基本知识 | Jay's Blog</title>
@@ -37,10 +136,582 @@
   <url>
     <loc>https://www.sdhlw.top/markdown%E8%B6%85%E9%93%BE%E6%8E%A5/</loc>
     
-    <lastmod>2024-02-16T15:36:54.142Z</lastmod>
+    <lastmod>2024-02-18T01:50:06.394Z</lastmod>
     
     <date>1708097781000</date>
     <title>Markdown超链接 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E6%8A%95%E7%A8%BF%E6%9C%9F%E5%88%8A%E6%8E%A8%E8%8D%90/</loc>
+    
+    <lastmod>2024-02-18T01:49:38.925Z</lastmod>
+    
+    <date>1708004930000</date>
+    <title>投稿期刊推荐 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E5%9B%BE%E7%89%87%E7%89%88%E6%9D%83/</loc>
+    
+    <lastmod>2024-02-18T01:49:17.796Z</lastmod>
+    
+    <date>1708002604000</date>
+    <title>图片版权 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E8%AE%BA%E6%96%87%E6%8A%95%E7%A8%BF%E4%B9%8B%E8%B4%A1%E7%8C%AE%E8%80%85%E8%A7%92%E8%89%B2%E5%88%86%E7%B1%BB%E6%B3%95%EF%BC%88credit%EF%BC%89/</loc>
+    
+    <lastmod>2024-02-18T01:48:31.113Z</lastmod>
+    
+    <date>1705497912010</date>
+    <title>论文投稿之贡献者角色分类法（CRediT） | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E7%AD%89%E6%AF%94%E4%BE%8B%E7%BC%A9%E5%B0%8Fpdf%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F/</loc>
+    
+    <lastmod>2024-02-18T01:47:38.884Z</lastmod>
+    
+    <date>1705391510000</date>
+    <title>等比例缩小pdf的尺寸大小 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/adobe-illustrator%E4%BF%AE%E6%94%B9%E7%94%BB%E5%B8%83%E5%A4%A7%E5%B0%8F/</loc>
+    
+    <lastmod>2024-02-18T01:47:22.990Z</lastmod>
+    
+    <date>1705388595000</date>
+    <title>adobe illustrator修改画布大小 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E5%9B%BE%E7%89%87%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</loc>
+    
+    <lastmod>2024-02-18T01:47:11.385Z</lastmod>
+    
+    <date>1705132574000</date>
+    <title>图片基本概念 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/p2%E4%B8%83%E6%A0%A1%E5%B7%A1%E5%9B%9E%E6%BC%94%E8%AE%B2002%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%92%8C%E8%A7%84%E8%8C%83/</loc>
+    
+    <lastmod>2024-02-18T01:47:04.286Z</lastmod>
+    
+    <date>1705243553000</date>
+    <title>P2七校巡回演讲002图像基础知识和规范 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/p1%E7%A7%91%E7%A0%94%E5%9B%9B%E9%83%A8%E6%9B%B2%EF%BC%9A%E8%AE%BA%E6%96%87%E4%BD%9C%E5%9B%BE%E3%80%81%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E3%80%81%E5%A4%A7%E5%AD%A6%E6%8A%80%E5%B7%A7%E3%80%81%E5%AE%9E%E9%AA%8C%E5%9B%BE%E7%AD%89/</loc>
+    
+    <lastmod>2024-02-18T01:36:44.876Z</lastmod>
+    
+    <date>1705239972000</date>
+    <title>P1科研四部曲：论文作图、数据处理、大学技巧、实验图等 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/word%E6%94%AF%E6%8C%81%E7%9A%84%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F/</loc>
+    
+    <lastmod>2024-02-18T01:36:20.190Z</lastmod>
+    
+    <date>1705127313000</date>
+    <title>word支持的插入图片格式 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/windows%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%BD%AF%E4%BB%B6%EF%BC%88%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%EF%BC%89/</loc>
+    
+    <lastmod>2024-02-18T01:36:06.589Z</lastmod>
+    
+    <date>1705119176000</date>
+    <title>Windows设置开机自启软件（计划任务） | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E6%9C%9F%E5%88%8A%E5%BD%B1%E5%93%8D%E5%8A%9B/</loc>
+    
+    <lastmod>2024-02-18T01:35:41.926Z</lastmod>
+    
+    <date>1704766923000</date>
+    <title>期刊影响力 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/cover-letter/</loc>
+    
+    <lastmod>2024-02-18T01:35:19.362Z</lastmod>
+    
+    <date>1704442653000</date>
+    <title>论文投稿之cover letter | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E5%B0%8F%E6%8F%90%E7%90%B4%E5%9B%BE%E5%92%8C%E7%AE%B1%E7%BA%BF%E5%9B%BE/</loc>
+    
+    <lastmod>2024-02-18T01:35:02.119Z</lastmod>
+    
+    <date>1681545778000</date>
+    <title>小提琴图和箱线图 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/</loc>
+    
+    <lastmod>2024-02-18T01:33:42.733Z</lastmod>
+    
+    <date>1675781853000</date>
+    <title>解决npm下载慢问题 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E7%BB%98%E5%9B%BE%E7%9A%84%E7%BA%BF%E5%9E%8B%E3%80%81%E9%A2%9C%E8%89%B2%E3%80%81%E6%A0%87%E8%AE%B0/</loc>
+    
+    <lastmod>2024-02-18T01:33:25.295Z</lastmod>
+    
+    <date>1674141495000</date>
+    <title>绘图的线型、颜色、标记 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E7%B1%BB%EF%BC%8C%E6%A8%A1%E5%9D%97%EF%BC%8C%E5%8C%85%EF%BC%8C%E5%BA%93%E5%8C%BA%E5%88%AB%EF%BC%9F/</loc>
+    
+    <lastmod>2024-02-18T01:33:18.579Z</lastmod>
+    
+    <date>1659360308000</date>
+    <title>类，模块，包，库区别？ | Jay's Blog</title>
+    
+    <desc>类，模块，包，库的差别？</desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E7%AE%80%E8%B0%88array-reshape-dataframe/</loc>
+    
+    <lastmod>2024-02-18T01:33:12.642Z</lastmod>
+    
+    <date>1676449099000</date>
+    <title>简谈array,reshape,dataframe | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E7%AE%80%E8%B0%88-python-yield/</loc>
+    
+    <lastmod>2024-02-18T01:33:04.989Z</lastmod>
+    
+    <date>1676511384000</date>
+    <title>简谈 Python yield | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E6%B3%A2%E5%A3%AB%E9%A1%BF%E6%88%BF%E4%BB%B7%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E5%A4%84%E7%90%86/</loc>
+    
+    <lastmod>2024-02-18T01:32:44.741Z</lastmod>
+    
+    <date>1675751614000</date>
+    <title>波士顿房价数据集的处理 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%9F%BA%E7%A1%80/</loc>
+    
+    <lastmod>2024-02-18T01:32:32.981Z</lastmod>
+    
+    <date>1660789904000</date>
+    <title>正则表达式基础 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F(%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0)/</loc>
+    
+    <lastmod>2024-02-18T01:32:20.185Z</lastmod>
+    
+    <date>1660637484000</date>
+    <title>正则表达式（视频笔记） | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E6%9C%9F%E5%88%8A%E3%80%81%E5%87%BA%E7%89%88%E7%A4%BE%E3%80%81%E7%B4%A2%E5%BC%95%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    
+    <lastmod>2024-02-18T01:31:43.618Z</lastmod>
+    
+    <date>1677137562000</date>
+    <title>期刊、出版社、索引数据库 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</loc>
+    
+    <lastmod>2024-02-18T01:31:07.518Z</lastmod>
+    
+    <date>1659881334000</date>
+    <title>文献管理 | Jay's Blog</title>
+    
+    <desc>记录自己文献管理的技巧</desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E5%A5%BD%E6%96%87%E6%8E%A8%E8%8D%90/</loc>
+    
+    <lastmod>2024-02-18T01:30:27.996Z</lastmod>
+    
+    <date>1659770833000</date>
+    <title>好文推荐 | Jay's Blog</title>
+    
+    <desc>记录写的不错的文章</desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E4%BC%98%E5%8C%96Python%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6/</loc>
+    
+    <lastmod>2024-02-18T01:30:13.576Z</lastmod>
+    
+    <date>1660224342000</date>
+    <title>优化Python运行速度 | Jay's Blog</title>
+    
+    <desc>记录优化Python运行速度的小技巧</desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E3%80%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%91Cross-Validation%EF%BC%88%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%EF%BC%89/</loc>
+    
+    <lastmod>2024-02-18T01:30:02.926Z</lastmod>
+    
+    <date>1659344644000</date>
+    <title>【机器学习】Cross-Validation（交叉验证） | Jay's Blog</title>
+    
+    <desc>简单介绍交叉验证的基本原理</desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/zotero%E6%90%AD%E9%85%8Dsci-hub/</loc>
+    
+    <lastmod>2024-02-18T01:29:38.257Z</lastmod>
+    
+    <date>1677287420000</date>
+    <title>Zotero搭配Sci-Hub | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/zotero%E6%8F%92%E4%BB%B6%E4%B9%8Bjasminum%EF%BC%88%E8%8C%89%E8%8E%89%E8%8A%B1%EF%BC%89/</loc>
+    
+    <lastmod>2024-02-18T01:29:26.504Z</lastmod>
+    
+    <date>1677307057000</date>
+    <title>Zotero插件之Jasminum（茉莉花） | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/Windows%20%E8%B6%85%E8%B5%9E%E8%BD%AF%E4%BB%B6%20&%20%E6%89%A9%E5%B1%95%20&%20%E7%BD%91%E7%AB%99/</loc>
+    
+    <lastmod>2024-02-18T01:29:10.799Z</lastmod>
+    
+    <date>1659257778000</date>
+    <title>Windows 超赞软件 & 扩展 & 网站 | Jay's Blog</title>
+    
+    <desc>【不定时更新】用于记录Windows比较不错的软件和浏览器扩展。</desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/vscode%E7%9A%84jupyter%E7%9A%84change-presentation/</loc>
+    
+    <lastmod>2024-02-18T01:28:39.331Z</lastmod>
+    
+    <date>1675615269000</date>
+    <title>Vscode的Jupyter的change presentation | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/vscode-jupyter-notebook%EF%BC%9Aoutput-exceeds-the-size-limit/</loc>
+    
+    <lastmod>2024-02-18T01:28:26.000Z</lastmod>
+    
+    <date>1675615685000</date>
+    <title>Vscode & Jupyter-Notebook：Output exceeds the size limit | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/SGE%E4%BD%9C%E4%B8%9A%E8%B0%83%E5%BA%A6%E7%B3%BB%E7%BB%9F/</loc>
+    
+    <lastmod>2024-02-18T01:27:57.332Z</lastmod>
+    
+    <date>1660204123000</date>
+    <title>SGE作业调度系统 | Jay's Blog</title>
+    
+    <desc>不要在登录节点（管理节点）上运行大型程序</desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/Python%E9%93%BE%E8%A1%A8/</loc>
+    
+    <lastmod>2024-02-18T01:27:48.130Z</lastmod>
+    
+    <date>1661912566000</date>
+    <title>Python 链表 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/Python%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
+    
+    <lastmod>2024-02-18T01:27:41.776Z</lastmod>
+    
+    <date>1660916856000</date>
+    <title>Python的正则表达式 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E3%80%90%E7%AC%AC%E4%B8%80%E7%AB%A0%E3%80%91/</loc>
+    
+    <lastmod>2024-02-18T01:27:33.454Z</lastmod>
+    
+    <date>1675330999000</date>
+    <title>Python机器学习基础教程【第一章】 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/python-matplotlib-%E6%94%B9%E5%8F%98%E7%94%BB%E5%B8%83%E8%83%8C%E6%99%AF/</loc>
+    
+    <lastmod>2024-02-18T01:27:14.991Z</lastmod>
+    
+    <date>1676057483000</date>
+    <title>Python(matplotlib) 改变画布背景 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/</loc>
+    
+    <lastmod>2024-02-18T01:26:50.364Z</lastmod>
+    
+    <date>1676058882000</date>
+    <title>Python (matplotlib)保存矢量图 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/Python-base/</loc>
+    
+    <lastmod>2024-02-18T01:26:29.155Z</lastmod>
+    
+    <date>1660050931000</date>
+    <title>Python-base | Jay's Blog</title>
+    
+    <desc>记录Python的基本使用</desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/pip%E4%B8%8B%E8%BD%BD%E5%A4%AA%E6%85%A2/</loc>
+    
+    <lastmod>2024-02-18T01:25:55.164Z</lastmod>
+    
+    <date>1675341204000</date>
+    <title>pip下载太慢 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/obsidian%E6%8F%92%E4%BB%B6%E4%B9%8Bdataview/</loc>
+    
+    <lastmod>2024-02-18T01:25:30.049Z</lastmod>
+    
+    <date>1676980149000</date>
+    <title>Obsidian插件之Dataview | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/obsidian%E5%9B%BE%E5%BA%8A%EF%BC%9A%E8%85%BE%E8%AE%AF%E4%BA%91cos-picgo/</loc>
+    
+    <lastmod>2024-02-18T01:24:57.010Z</lastmod>
+    
+    <date>1674030232000</date>
+    <title>Obsidian/Typora图床：腾讯云COS+Picgo | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/numpy%E4%B8%8D%E7%94%A8%E7%9C%81%E7%95%A5%E5%8F%B7%E5%92%8C%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</loc>
+    
+    <lastmod>2024-02-18T01:24:01.548Z</lastmod>
+    
+    <date>1675751580000</date>
+    <title>Numpy不用省略号和科学计数法 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/npm-node-%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/</loc>
+    
+    <lastmod>2024-02-18T01:23:39.725Z</lastmod>
+    
+    <date>1674403375000</date>
+    <title>NPM---Node 包管理器 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/Markdown-Tips/</loc>
+    
+    <lastmod>2024-02-18T01:22:04.753Z</lastmod>
+    
+    <date>1659861761000</date>
+    <title>Markdown Tips | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/Linux-vim/</loc>
+    
+    <lastmod>2024-02-18T01:21:28.261Z</lastmod>
+    
+    <date>1659325719000</date>
+    <title>Linux-vim | Jay's Blog</title>
+    
+    <desc>【不定时更新】记录Vim编辑器的使用</desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/Linux-base/</loc>
+    
+    <lastmod>2024-02-18T01:21:06.476Z</lastmod>
+    
+    <date>1659360308000</date>
+    <title>Linux-base | Jay's Blog</title>
+    
+    <desc>【不定时更新】记录Linux的基本命令</desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/jupyter-notebook-%E4%BD%BF%E7%94%A8/</loc>
+    
+    <lastmod>2024-02-18T01:20:13.220Z</lastmod>
+    
+    <date>1661693748000</date>
+    <title>Jupyter Notebook 使用 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/Git-use/</loc>
+    
+    <lastmod>2024-02-18T01:19:02.327Z</lastmod>
+    
+    <date>1659774155000</date>
+    <title>Git-use | Jay's Blog</title>
+    
+    <desc>记录Git Bash的基本使用</desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/Endnote-X9%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</loc>
+    
+    <lastmod>2024-02-18T01:18:40.334Z</lastmod>
+    
+    <date>1659842677000</date>
+    <title>Endnote X9 Tips | Jay's Blog</title>
+    
+    <desc>【不定时更新】记录自己使用Endnote X9管理文献的一些小技巧</desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/connecting-to-kernel%EF%BC%9Apython/</loc>
+    
+    <lastmod>2024-02-18T01:18:21.205Z</lastmod>
+    
+    <date>1673965805000</date>
+    <title>connecting to kernel：python | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/Vscode%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
+    
+    <lastmod>2024-02-18T01:16:09.842Z</lastmod>
+    
+    <date>1661999649000</date>
+    <title>Vscode的使用 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1VS%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/</loc>
+    
+    <lastmod>2024-02-18T01:12:52.961Z</lastmod>
+    
+    <date>1661843496000</date>
+    <title>面向对象VS面向过程 | Jay's Blog</title>
     
     <desc></desc>
   </url>
@@ -57,39 +728,6 @@
   </url>
   
   <url>
-    <loc>https://www.sdhlw.top/%E6%8A%95%E7%A8%BF%E6%9C%9F%E5%88%8A%E6%8E%A8%E8%8D%90/</loc>
-    
-    <lastmod>2024-02-15T14:00:18.815Z</lastmod>
-    
-    <date>1708004930000</date>
-    <title>投稿期刊推荐 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
-    
-    <lastmod>2024-02-15T13:42:11.512Z</lastmod>
-    
-    <date>1708002319000</date>
-    <title>Hexo常用命令 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E5%9B%BE%E7%89%87%E7%89%88%E6%9D%83/</loc>
-    
-    <lastmod>2024-02-15T13:10:04.886Z</lastmod>
-    
-    <date>1708002604000</date>
-    <title>图片版权 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
     <loc>https://www.sdhlw.top/%E6%B5%8B%E8%AF%95%E9%A1%B5/index.html</loc>
     
     <lastmod>2024-02-15T12:53:01.491Z</lastmod>
@@ -98,633 +736,6 @@
     <title>测试页 | Jay's Blog</title>
     
     <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/Windows%20%E8%B6%85%E8%B5%9E%E8%BD%AF%E4%BB%B6%20&%20%E6%89%A9%E5%B1%95%20&%20%E7%BD%91%E7%AB%99/</loc>
-    
-    <lastmod>2024-01-22T06:25:21.253Z</lastmod>
-    
-    <date>1659257778000</date>
-    <title>Windows 超赞软件 & 扩展 & 网站 | Jay's Blog</title>
-    
-    <desc>【不定时更新】用于记录Windows比较不错的软件和浏览器扩展。</desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/cover-letter/</loc>
-    
-    <lastmod>2024-01-19T06:14:09.366Z</lastmod>
-    
-    <date>1704442653000</date>
-    <title>论文投稿之cover letter | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E8%AE%BA%E6%96%87%E6%8A%95%E7%A8%BF%E4%B9%8B%E8%B4%A1%E7%8C%AE%E8%80%85%E8%A7%92%E8%89%B2%E5%88%86%E7%B1%BB%E6%B3%95%EF%BC%88credit%EF%BC%89/</loc>
-    
-    <lastmod>2024-01-17T14:27:44.307Z</lastmod>
-    
-    <date>1705497912010</date>
-    <title>论文投稿之贡献者角色分类法（CRediT） | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E5%9B%BE%E7%89%87%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</loc>
-    
-    <lastmod>2024-01-16T14:31:27.023Z</lastmod>
-    
-    <date>1705132574000</date>
-    <title>图片基本概念 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/hexo%E9%83%A8%E7%BD%B2%E6%97%B6%E6%8A%A5%E9%94%99ssl-tls-connection-failed/</loc>
-    
-    <lastmod>2024-01-16T14:14:55.462Z</lastmod>
-    
-    <date>1705412412000</date>
-    <title>hexo部署时报错SSL/TLS connection failed | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/adobe-illustrator%E4%BF%AE%E6%94%B9%E7%94%BB%E5%B8%83%E5%A4%A7%E5%B0%8F/</loc>
-    
-    <lastmod>2024-01-16T14:05:14.352Z</lastmod>
-    
-    <date>1705388595000</date>
-    <title>adobe illustrator修改画布大小 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E7%AD%89%E6%AF%94%E4%BE%8B%E7%BC%A9%E5%B0%8Fpdf%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F/</loc>
-    
-    <lastmod>2024-01-16T07:51:50.290Z</lastmod>
-    
-    <date>1705391510000</date>
-    <title>等比例缩小pdf的尺寸大小 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/p2%E4%B8%83%E6%A0%A1%E5%B7%A1%E5%9B%9E%E6%BC%94%E8%AE%B2002%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%92%8C%E8%A7%84%E8%8C%83/</loc>
-    
-    <lastmod>2024-01-15T07:31:26.862Z</lastmod>
-    
-    <date>1705243553000</date>
-    <title>P2七校巡回演讲002图像基础知识和规范 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/p1%E7%A7%91%E7%A0%94%E5%9B%9B%E9%83%A8%E6%9B%B2%EF%BC%9A%E8%AE%BA%E6%96%87%E4%BD%9C%E5%9B%BE%E3%80%81%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E3%80%81%E5%A4%A7%E5%AD%A6%E6%8A%80%E5%B7%A7%E3%80%81%E5%AE%9E%E9%AA%8C%E5%9B%BE%E7%AD%89/</loc>
-    
-    <lastmod>2024-01-15T07:29:32.320Z</lastmod>
-    
-    <date>1705239972000</date>
-    <title>P1科研四部曲：论文作图、数据处理、大学技巧、实验图等 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/word%E6%94%AF%E6%8C%81%E7%9A%84%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F/</loc>
-    
-    <lastmod>2024-01-13T12:00:22.192Z</lastmod>
-    
-    <date>1705127313000</date>
-    <title>word支持的插入图片格式 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/windows%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%BD%AF%E4%BB%B6%EF%BC%88%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%EF%BC%89/</loc>
-    
-    <lastmod>2024-01-13T07:50:51.036Z</lastmod>
-    
-    <date>1705119176000</date>
-    <title>Windows设置开机自启软件（计划任务） | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/chatgpt%E5%BC%95%E5%AF%BC%E8%AF%AD/</loc>
-    
-    <lastmod>2024-01-12T03:31:23.748Z</lastmod>
-    
-    <date>1704976807000</date>
-    <title>ChatGPT引导语 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E6%9C%9F%E5%88%8A%E5%BD%B1%E5%93%8D%E5%8A%9B/</loc>
-    
-    <lastmod>2024-01-09T02:49:52.112Z</lastmod>
-    
-    <date>1704766923000</date>
-    <title>期刊影响力 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E5%B0%8F%E6%8F%90%E7%90%B4%E5%9B%BE%E5%92%8C%E7%AE%B1%E7%BA%BF%E5%9B%BE/</loc>
-    
-    <lastmod>2023-04-15T08:07:06.682Z</lastmod>
-    
-    <date>1681545778000</date>
-    <title>小提琴图和箱线图 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/zotero%E6%8F%92%E4%BB%B6%E4%B9%8Bjasminum%EF%BC%88%E8%8C%89%E8%8E%89%E8%8A%B1%EF%BC%89/</loc>
-    
-    <lastmod>2023-02-25T07:15:42.365Z</lastmod>
-    
-    <date>1677307057000</date>
-    <title>Zotero插件之Jasminum（茉莉花） | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/zotero%E6%90%AD%E9%85%8Dsci-hub/</loc>
-    
-    <lastmod>2023-02-25T07:03:45.581Z</lastmod>
-    
-    <date>1677287420000</date>
-    <title>Zotero搭配Sci-Hub | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E6%9C%9F%E5%88%8A%E3%80%81%E5%87%BA%E7%89%88%E7%A4%BE%E3%80%81%E7%B4%A2%E5%BC%95%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    
-    <lastmod>2023-02-25T01:29:37.838Z</lastmod>
-    
-    <date>1677137562000</date>
-    <title>期刊、出版社、索引数据库 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E7%9A%AE%E5%B0%94%E6%A3%AE%EF%BC%88%E9%80%8A%EF%BC%89%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%EF%BC%88pearson-correlation-coefficient-pcc%EF%BC%89/</loc>
-    
-    <lastmod>2023-02-22T03:11:18.920Z</lastmod>
-    
-    <date>1676555813000</date>
-    <title>皮尔森（逊）相关系数（Pearson Correlation Coefficient, PCC） | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/obsidian%E6%8F%92%E4%BB%B6%E4%B9%8Bdataview/</loc>
-    
-    <lastmod>2023-02-21T12:16:42.191Z</lastmod>
-    
-    <date>1676980149000</date>
-    <title>Obsidian插件之Dataview | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E7%AE%80%E8%B0%88array-reshape-dataframe/</loc>
-    
-    <lastmod>2023-02-17T09:20:09.212Z</lastmod>
-    
-    <date>1676449099000</date>
-    <title>简谈array,reshape,dataframe | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E7%AE%80%E8%B0%88-python-yield/</loc>
-    
-    <lastmod>2023-02-16T01:38:12.036Z</lastmod>
-    
-    <date>1676511384000</date>
-    <title>简谈 Python yield | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/python-matplotlib-%E6%94%B9%E5%8F%98%E7%94%BB%E5%B8%83%E8%83%8C%E6%99%AF/</loc>
-    
-    <lastmod>2023-02-12T09:05:22.094Z</lastmod>
-    
-    <date>1676057483000</date>
-    <title>Python(matplotlib) 改变画布背景 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/</loc>
-    
-    <lastmod>2023-02-10T20:07:44.093Z</lastmod>
-    
-    <date>1676058882000</date>
-    <title>Python (matplotlib)保存矢量图 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E6%B3%A2%E5%A3%AB%E9%A1%BF%E6%88%BF%E4%BB%B7%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E5%A4%84%E7%90%86/</loc>
-    
-    <lastmod>2023-02-08T04:33:20.464Z</lastmod>
-    
-    <date>1675751614000</date>
-    <title>波士顿房价数据集的处理 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E8%AE%BE%E7%BD%AE-next-%E4%B8%BB%E9%A2%98%E6%94%AF%E6%8C%81-latex-%E6%B8%B2%E6%9F%93/</loc>
-    
-    <lastmod>2023-02-07T15:15:58.219Z</lastmod>
-    
-    <date>1675781827000</date>
-    <title>设置 Next 主题支持 Latex 渲染 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/pip%E4%B8%8B%E8%BD%BD%E5%A4%AA%E6%85%A2/</loc>
-    
-    <lastmod>2023-02-07T15:04:44.353Z</lastmod>
-    
-    <date>1675341204000</date>
-    <title>pip下载太慢 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2023-02-07T09:49:20.620Z</lastmod>
-    
-    <date>1659152995000</date>
-    <title>Hexo的使用 | Jay's Blog</title>
-    
-    <desc>【不定时更新】用于记录Hexo的配置和命令的使用。</desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/Linux-vim/</loc>
-    
-    <lastmod>2023-02-07T09:48:34.688Z</lastmod>
-    
-    <date>1659325719000</date>
-    <title>Linux-vim | Jay's Blog</title>
-    
-    <desc>【不定时更新】记录Vim编辑器的使用</desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/Git-use/</loc>
-    
-    <lastmod>2023-02-07T09:48:08.854Z</lastmod>
-    
-    <date>1659774155000</date>
-    <title>Git-use | Jay's Blog</title>
-    
-    <desc>记录Git Bash的基本使用</desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/Endnote-X9%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</loc>
-    
-    <lastmod>2023-02-07T09:47:21.793Z</lastmod>
-    
-    <date>1659842677000</date>
-    <title>Endnote X9 Tips | Jay's Blog</title>
-    
-    <desc>【不定时更新】记录自己使用Endnote X9管理文献的一些小技巧</desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/jupyter-notebook-%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2023-02-07T09:45:23.291Z</lastmod>
-    
-    <date>1661693748000</date>
-    <title>Jupyter Notebook 使用 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/2022-09-01-10-33-44-Vscode%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2023-02-07T09:44:24.325Z</lastmod>
-    
-    <date>1661999649000</date>
-    <title>Vscode 的使用 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/hexo%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0%EF%BC%9Agitalk/</loc>
-    
-    <lastmod>2023-02-07T09:43:06.921Z</lastmod>
-    
-    <date>1674402620000</date>
-    <title>Hexo评论功能的实现：Gitalk | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/hexo%E4%BB%A3%E7%A0%81%E5%9D%97%E6%8A%98%E5%8F%A0%E5%8A%9F%E8%83%BD/</loc>
-    
-    <lastmod>2023-02-07T09:42:35.456Z</lastmod>
-    
-    <date>1674657342000</date>
-    <title>Hexo代码块折叠功能 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/vscode-jupyter-notebook%EF%BC%9Aoutput-exceeds-the-size-limit/</loc>
-    
-    <lastmod>2023-02-07T07:10:20.530Z</lastmod>
-    
-    <date>1675615685000</date>
-    <title>Vscode & Jupyter-Notebook：Output exceeds the size limit | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/numpy%E4%B8%8D%E7%94%A8%E7%9C%81%E7%95%A5%E5%8F%B7%E5%92%8C%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</loc>
-    
-    <lastmod>2023-02-07T06:35:22.979Z</lastmod>
-    
-    <date>1675751580000</date>
-    <title>Numpy不用省略号和科学计数法 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/vscode%E7%9A%84jupyter%E7%9A%84change-presentation/</loc>
-    
-    <lastmod>2023-02-05T16:43:13.845Z</lastmod>
-    
-    <date>1675615269000</date>
-    <title>Vscode的Jupyter的change presentation | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E3%80%90%E7%AC%AC%E4%B8%80%E7%AB%A0%E3%80%91/</loc>
-    
-    <lastmod>2023-02-02T12:10:38.427Z</lastmod>
-    
-    <date>1675330999000</date>
-    <title>Python机器学习基础教程【第一章】 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/npm-node-%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/</loc>
-    
-    <lastmod>2023-01-22T16:19:45.391Z</lastmod>
-    
-    <date>1674403375000</date>
-    <title>NPM---Node 包管理器 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E7%BB%98%E5%9B%BE%E7%9A%84%E7%BA%BF%E5%9E%8B%E3%80%81%E9%A2%9C%E8%89%B2%E3%80%81%E6%A0%87%E8%AE%B0/</loc>
-    
-    <lastmod>2023-01-20T03:41:17.583Z</lastmod>
-    
-    <date>1674141495000</date>
-    <title>绘图的线型、颜色、标记 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/Python%E9%93%BE%E8%A1%A8/</loc>
-    
-    <lastmod>2023-01-18T15:03:55.707Z</lastmod>
-    
-    <date>1661912566000</date>
-    <title>Python 链表 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/connecting-to-kernel%EF%BC%9Apython/</loc>
-    
-    <lastmod>2023-01-18T14:49:45.799Z</lastmod>
-    
-    <date>1673965805000</date>
-    <title>connecting to kernel：python | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/obsidian%E5%9B%BE%E5%BA%8A%EF%BC%9A%E8%85%BE%E8%AE%AF%E4%BA%91cos-picgo/</loc>
-    
-    <lastmod>2023-01-18T14:47:24.010Z</lastmod>
-    
-    <date>1674030232000</date>
-    <title>Obsidian/Typora图床：腾讯云COS+Picgo | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/2022-08-30-15-11-00-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1VS%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/</loc>
-    
-    <lastmod>2023-01-17T10:07:05.868Z</lastmod>
-    
-    <date>1661843496000</date>
-    <title>面向对象VS面向过程 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E3%80%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%91Cross-Validation%EF%BC%88%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%EF%BC%89/</loc>
-    
-    <lastmod>2023-01-17T10:03:53.876Z</lastmod>
-    
-    <date>1659344644000</date>
-    <title>【机器学习】Cross-Validation（交叉验证） | Jay's Blog</title>
-    
-    <desc>简单介绍交叉验证的基本原理</desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</loc>
-    
-    <lastmod>2023-01-17T10:01:55.254Z</lastmod>
-    
-    <date>1659881334000</date>
-    <title>文献管理 | Jay's Blog</title>
-    
-    <desc>记录自己文献管理的技巧</desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E5%A5%BD%E6%96%87%E6%8E%A8%E8%8D%90/</loc>
-    
-    <lastmod>2023-01-17T10:01:00.939Z</lastmod>
-    
-    <date>1659770833000</date>
-    <title>好文推荐 | Jay's Blog</title>
-    
-    <desc>记录写的不错的文章</desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F(%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0)/</loc>
-    
-    <lastmod>2023-01-17T09:48:32.677Z</lastmod>
-    
-    <date>1660637484000</date>
-    <title>正则表达式（视频笔记） | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%9F%BA%E7%A1%80/</loc>
-    
-    <lastmod>2023-01-17T09:43:20.999Z</lastmod>
-    
-    <date>1660789904000</date>
-    <title>正则表达式基础 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/Python%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</loc>
-    
-    <lastmod>2023-01-17T09:38:15.746Z</lastmod>
-    
-    <date>1660916856000</date>
-    <title>Python的正则表达式 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E4%BC%98%E5%8C%96Python%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6/</loc>
-    
-    <lastmod>2023-01-17T09:32:43.804Z</lastmod>
-    
-    <date>1660224342000</date>
-    <title>优化Python运行速度 | Jay's Blog</title>
-    
-    <desc>记录优化Python运行速度的小技巧</desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/Python-base/</loc>
-    
-    <lastmod>2023-01-17T09:31:42.430Z</lastmod>
-    
-    <date>1660050931000</date>
-    <title>Python-base | Jay's Blog</title>
-    
-    <desc>记录Python的基本使用</desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E7%B1%BB%EF%BC%8C%E6%A8%A1%E5%9D%97%EF%BC%8C%E5%8C%85%EF%BC%8C%E5%BA%93%E5%8C%BA%E5%88%AB%EF%BC%9F/</loc>
-    
-    <lastmod>2023-01-17T09:30:04.253Z</lastmod>
-    
-    <date>1659360308000</date>
-    <title>类，模块，包，库区别？ | Jay's Blog</title>
-    
-    <desc>类，模块，包，库的差别？</desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/Markdown-Tips/</loc>
-    
-    <lastmod>2023-01-17T09:28:45.277Z</lastmod>
-    
-    <date>1659861761000</date>
-    <title>Markdown Tips | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/SGE%E4%BD%9C%E4%B8%9A%E8%B0%83%E5%BA%A6%E7%B3%BB%E7%BB%9F/</loc>
-    
-    <lastmod>2023-01-17T09:14:43.346Z</lastmod>
-    
-    <date>1660204123000</date>
-    <title>SGE作业调度系统 | Jay's Blog</title>
-    
-    <desc>不要在登录节点（管理节点）上运行大型程序</desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/Linux-base/</loc>
-    
-    <lastmod>2023-01-17T09:13:56.915Z</lastmod>
-    
-    <date>1659360308000</date>
-    <title>Linux-base | Jay's Blog</title>
-    
-    <desc>【不定时更新】记录Linux的基本命令</desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E9%85%8D%E7%BD%AEword%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</loc>
-    
-    <lastmod>2022-08-06T08:55:04.762Z</lastmod>
-    
-    <date>1659771435000</date>
-    <title>配置word版本控制 | Jay's Blog</title>
-    
-    <desc>采用Git和Pandoc软件对Word进行版本控制</desc>
   </url>
   
   <url>

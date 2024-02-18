@@ -193,6 +193,118 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/%E7%BB%98%E5%9B%BE%E7%9A%84%E7%BA%BF%E5%9E%8B%E3%80%81%E9%A2%9C%E8%89%B2%E3%80%81%E6%A0%87%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/jay.jpg">
+      <meta itemprop="name" content="Jay Chou">
+      <meta itemprop="description" content="a solitary spark and wars begin">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jay's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/%E7%BB%98%E5%9B%BE%E7%9A%84%E7%BA%BF%E5%9E%8B%E3%80%81%E9%A2%9C%E8%89%B2%E3%80%81%E6%A0%87%E8%AE%B0/" class="post-title-link" itemprop="url">绘图的线型、颜色、标记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2023-01-19 23:18:15" itemprop="dateCreated datePublished" datetime="2023-01-19T23:18:15+08:00">2023-01-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-02-18 09:33:25" itemprop="dateModified" datetime="2024-02-18T09:33:25+08:00">2024-02-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">科研学习</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">代码相关</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>1.7k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>2 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h5 id="绘图：-plot"><a href="#绘图：-plot" class="headerlink" title="绘图：.plot()"></a>绘图：.plot()</h5><p><code>plt.plot()</code>：绘制点和线<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[matplotlib.pyplot.plot](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot)
+">[1]</span></a></sup></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> numpy.random <span class="keyword">import</span> randn</span><br><span class="line">plt.plot(randn(<span class="number">50</span>).cumsum(),<span class="string">&#x27;k--&#x27;</span>)   <span class="comment"># 生成50个正态分布的数</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>randn函数返回一个或一组样本，具有标准正态分布；</li>
+<li>cumsum函数计算各行的累加值<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="<https://blog.csdn.net/banana1006034246/article/details/78841461>
+">[2]</span></a></sup>；</li>
+<li>in：</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">a = np.array([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>])</span><br><span class="line">a.cumsum()</span><br></pre></td></tr></table></figure>
+
+<p>out：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">array([ <span class="number">1</span>, <span class="number">3</span>, <span class="number">6</span>, <span class="number">10</span>, <span class="number">15</span>, <span class="number">21</span>])</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/%E7%BB%98%E5%9B%BE%E7%9A%84%E7%BA%BF%E5%9E%8B%E3%80%81%E9%A2%9C%E8%89%B2%E3%80%81%E6%A0%87%E8%AE%B0/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/obsidian%E5%9B%BE%E5%BA%8A%EF%BC%9A%E8%85%BE%E8%AE%AF%E4%BA%91cos-picgo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -216,17 +328,27 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2023-01-18 16:23:52 / Modified: 22:47:24" itemprop="dateCreated datePublished" datetime="2023-01-18T16:23:52+08:00">2023-01-18</time>
+              <time title="Created: 2023-01-18 16:23:52" itemprop="dateCreated datePublished" datetime="2023-01-18T16:23:52+08:00">2023-01-18</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-02-18 09:24:57" itemprop="dateModified" datetime="2024-02-18T09:24:57+08:00">2024-02-18</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">Study</span></a>
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/" itemprop="url" rel="index"><span itemprop="name">博客运营</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/markdown/" itemprop="url" rel="index"><span itemprop="name">markdown</span></a>
                 </span>
             </span>
 
@@ -319,7 +441,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-01-18 22:49:45" itemprop="dateModified" datetime="2023-01-18T22:49:45+08:00">2023-01-18</time>
+                <time title="Modified: 2024-02-18 09:18:21" itemprop="dateModified" datetime="2024-02-18T09:18:21+08:00">2024-02-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -327,7 +449,11 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">Study</span></a>
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">科研学习</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" itemprop="url" rel="index"><span itemprop="name">软件使用</span></a>
                 </span>
             </span>
 
@@ -384,7 +510,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/2022-09-01-10-33-44-Vscode%E7%9A%84%E4%BD%BF%E7%94%A8/">
+    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/Vscode%E7%9A%84%E4%BD%BF%E7%94%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/jay.jpg">
@@ -398,7 +524,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022-09-01-10-33-44-Vscode%E7%9A%84%E4%BD%BF%E7%94%A8/" class="post-title-link" itemprop="url">Vscode 的使用</a>
+            <a href="/Vscode%E7%9A%84%E4%BD%BF%E7%94%A8/" class="post-title-link" itemprop="url">Vscode的使用</a>
         </h2>
 
         <div class="post-meta">
@@ -415,7 +541,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-07 17:44:24" itemprop="dateModified" datetime="2023-02-07T17:44:24+08:00">2023-02-07</time>
+                <time title="Modified: 2024-02-18 09:16:09" itemprop="dateModified" datetime="2024-02-18T09:16:09+08:00">2024-02-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -423,7 +549,11 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">Study</span></a>
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">科研学习</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" itemprop="url" rel="index"><span itemprop="name">软件使用</span></a>
                 </span>
             </span>
 
@@ -505,7 +635,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-01-18 23:03:55" itemprop="dateModified" datetime="2023-01-18T23:03:55+08:00">2023-01-18</time>
+                <time title="Modified: 2024-02-18 09:27:48" itemprop="dateModified" datetime="2024-02-18T09:27:48+08:00">2024-02-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -513,7 +643,11 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">Study</span></a>
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">科研学习</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">代码相关</span></a>
                 </span>
             </span>
 
@@ -578,7 +712,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/2022-08-30-15-11-00-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1VS%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/">
+    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1VS%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/jay.jpg">
@@ -592,7 +726,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022-08-30-15-11-00-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1VS%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/" class="post-title-link" itemprop="url">面向对象VS面向过程</a>
+            <a href="/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1VS%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/" class="post-title-link" itemprop="url">面向对象VS面向过程</a>
         </h2>
 
         <div class="post-meta">
@@ -609,7 +743,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-01-17 18:07:05" itemprop="dateModified" datetime="2023-01-17T18:07:05+08:00">2023-01-17</time>
+                <time title="Modified: 2024-02-18 09:12:52" itemprop="dateModified" datetime="2024-02-18T09:12:52+08:00">2024-02-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -617,7 +751,11 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">Study</span></a>
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">科研学习</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">代码相关</span></a>
                 </span>
             </span>
 
@@ -651,7 +789,7 @@
 <p>面向对象是把构成问题事务分解成各个<strong>对象</strong>，建立对象的目的不是为了完成一个步骤，而是为了描叙某个事物在整个解决问题的步骤中的行为。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2022-08-30-15-11-00-%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1VS%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/#more" rel="contents">
+              <a class="btn" href="/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1VS%E9%9D%A2%E5%90%91%E8%BF%87%E7%A8%8B/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -706,7 +844,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-02-07 17:45:23" itemprop="dateModified" datetime="2023-02-07T17:45:23+08:00">2023-02-07</time>
+                <time title="Modified: 2024-02-18 09:20:13" itemprop="dateModified" datetime="2024-02-18T09:20:13+08:00">2024-02-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -714,7 +852,11 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">Study</span></a>
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">科研学习</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" itemprop="url" rel="index"><span itemprop="name">软件使用</span></a>
                 </span>
             </span>
 
@@ -804,7 +946,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-01-17 17:38:15" itemprop="dateModified" datetime="2023-01-17T17:38:15+08:00">2023-01-17</time>
+                <time title="Modified: 2024-02-18 09:27:41" itemprop="dateModified" datetime="2024-02-18T09:27:41+08:00">2024-02-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -812,7 +954,11 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">Study</span></a>
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">科研学习</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">代码相关</span></a>
                 </span>
             </span>
 
@@ -900,7 +1046,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-01-17 17:43:20" itemprop="dateModified" datetime="2023-01-17T17:43:20+08:00">2023-01-17</time>
+                <time title="Modified: 2024-02-18 09:32:32" itemprop="dateModified" datetime="2024-02-18T09:32:32+08:00">2024-02-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -908,7 +1054,11 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">Study</span></a>
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">科研学习</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">代码相关</span></a>
                 </span>
             </span>
 
@@ -1015,7 +1165,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-01-17 17:48:32" itemprop="dateModified" datetime="2023-01-17T17:48:32+08:00">2023-01-17</time>
+                <time title="Modified: 2024-02-18 09:32:20" itemprop="dateModified" datetime="2024-02-18T09:32:20+08:00">2024-02-18</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1023,7 +1173,11 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">Study</span></a>
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">科研学习</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">代码相关</span></a>
                 </span>
             </span>
 
@@ -1062,101 +1216,6 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F(%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0)/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/%E4%BC%98%E5%8C%96Python%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/jay.jpg">
-      <meta itemprop="name" content="Jay Chou">
-      <meta itemprop="description" content="a solitary spark and wars begin">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jay's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/%E4%BC%98%E5%8C%96Python%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6/" class="post-title-link" itemprop="url">优化Python运行速度</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-08-11 21:25:42" itemprop="dateCreated datePublished" datetime="2022-08-11T21:25:42+08:00">2022-08-11</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-01-17 17:32:43" itemprop="dateModified" datetime="2023-01-17T17:32:43+08:00">2023-01-17</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/study/" itemprop="url" rel="index"><span itemprop="name">Study</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="Symbols count in article">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>2.5k</span>
-            </span>
-            <span class="post-meta-item" title="Reading time">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>2 mins.</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>记录优化Python运行速度的小技巧</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/%E4%BC%98%E5%8C%96Python%E8%BF%90%E8%A1%8C%E9%80%9F%E5%BA%A6/">
                 Read more &raquo;
               </a>
             </div>
@@ -1247,20 +1306,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">64</span>
+          <span class="site-state-item-count">65</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">45</span>
+        <span class="site-state-item-count">42</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -1311,13 +1370,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">103k</span>
+    <span title="Symbols count total">104k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:34</span>
+    <span title="Reading time total">1:35</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
