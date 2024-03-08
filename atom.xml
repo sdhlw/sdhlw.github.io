@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-02-19T03:52:24.074Z</updated>
+  <updated>2024-03-08T11:17:33.927Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python环境的配置</title>
+    <link href="https://www.sdhlw.top/python%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE/"/>
+    <id>https://www.sdhlw.top/python%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE/</id>
+    <published>2024-03-08T09:11:11.000Z</published>
+    <updated>2024-03-08T11:17:33.927Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：在使用 pycharm 或 vscode 时，对切换 python的版本，以及安装的包的位置等环境问题，比较模糊。</p><p>该文章解决一下问题： - 如何使用 conda创建环境，如何下载指定版本的包到指定的环境 - 下载的包在本地的哪个目录 -pycharm 和 vscode 如何使用 conda 的环境</p><span id="more"></span><p>解决：</p><p>1、环境的配置，使用 conda 软件， ### miniconda 安装 miniconda官网的下载方式： 命令行执行一下三行命令： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe -o miniconda.exe</span><br><span class="line">start /wait &quot;&quot; miniconda.exe /S</span><br><span class="line">del miniconda.exe</span><br></pre></td></tr></table></figure></p><p>有一个问题，它默认安装位置在 C 盘，而想换安装位置怎么办？</p><p>第一行下载 exe 文件 第二行执行 exe 文件，安装软件 第三行删除 exe文件</p><p>最简单的是执行第一行之后，找到 exe双击，可视化安装即可选择安装位置，可勾选添加到环境变量，没勾选，可手动将三个目录添加到环境目录（目的:任意位置可以调用miniconda）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1）C:\Users\Administrator\Miniconda3；   </span><br><span class="line">2）C:\Users\Administrator\Miniconda3\Scripts；   </span><br><span class="line">3）C:\Users\Administrator\Miniconda3\Library\bin</span><br></pre></td></tr></table></figure><p><code>C:\Users\Administrator\</code> 需要更换为你的安装目录。</p><h3 id="conda-的基本使用">conda 的基本使用：</h3><p>打开 Anaconda Powershell Prompt，执行基本命令，实现相关功能：</p><p><code>conda -V</code> ：获取 conda 版本号 <code>conda env list</code>：列举当前所有环境 <code>conda -n test python=3.10</code> ：创建新的环境(test)，并指定环境中使用的 python 版本，意味着 python 直接通过 conda安装，不需要单纯去 python 官网安装 python。<code>conda activate your_env_name</code> ：激活某个环境</p><p>重命名环境，先克隆，后删除： 把环境 rcnn 重命名成 tf<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda create -n tf --clone rcnn</span><br><span class="line">conda remove -n rcnn --all</span><br></pre></td></tr></table></figure></p><p>下载指定的包到指定的环境：使用 conda，激活指定的环境，使用<code>pip install 包名</code> 下载相应的包</p><p>pip 下载指定存在版本的包：1、使用命令查看包（pandas）有哪些版本：<code>pip install pandas==</code>2、使用命令下载指定版本的包：<code>pip install pandas==2.1.1</code></p><p>下载的包的位置就在 miniconda的安装目录中（<code>...\miniconda\envs</code>）</p><p>临时使用指定镜像下载包名：<code>pip install pandas -i https://pypi.tuna.tsinghua.edu.cn/simple</code></p><p>conda 添加镜像源：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud//pytorch/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/</span><br><span class="line">conda config --add channels https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">清华：https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line">阿里云：http://mirrors.aliyun.com/pypi/simple/</span><br><span class="line">中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/</span><br></pre></td></tr></table></figure><p>去除镜像源，恢复默认配置<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="https://www.cnblogs.com/fireblackman/p/16422750.html">[1]</span></a></sup>：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 全部删除  </span><br><span class="line">conda config --remove-key channels </span><br><span class="line"># 指定删除</span><br><span class="line">conda config --remove channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --remove channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config --remove channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud//pytorch/</span><br><span class="line">conda config --remove channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/</span><br></pre></td></tr></table></figure><h3 id="pycharm-如何调用-conda-环境">pycharm 如何调用 conda 环境：</h3><p>首先新建工程，打开工程，再进行设置：<code>file--setting--project</code>的 <code>Python Interpreter</code> 的 <code>add Interpreter</code>,然后选择 miniconda 安装目录的 envs 的环境名称目录里的<code>python.exe</code> 即可</p><p><imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202403081740750.png" /></p><h3 id="vscode-调用相应-conda-环境">vscode 调用相应 conda 环境：</h3><p>vscode 如果已经安装了 python 插件，那么 python插件就可以管理环境了</p><p><imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202403081740814.png" /></p><p>如果在 vscode 使用了 jupyter notebook 可以选择 conda 环境</p><p><imgsrc="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202403081740880.png" /></p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;">https://www.cnblogs.com/fireblackman/p/16422750.html<a href="#fnref:1" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;需求：在使用 pycharm 或 vscode 时，对切换 python
+的版本，以及安装的包的位置等环境问题，比较模糊。&lt;/p&gt;
+&lt;p&gt;该文章解决一下问题： - 如何使用 conda
+创建环境，如何下载指定版本的包到指定的环境 - 下载的包在本地的哪个目录 -
+pycharm 和 vscode 如何使用 conda 的环境&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="代码相关" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/"/>
+    
+    
+    <category term="Pycharm" scheme="https://www.sdhlw.top/tags/pycharm/"/>
+    
+    <category term="Vscode" scheme="https://www.sdhlw.top/tags/vscode/"/>
+    
+    <category term="Conda" scheme="https://www.sdhlw.top/tags/conda/"/>
+    
+  </entry>
   
   <entry>
     <title>2中国北方地区小麦覆盖栽培增产效应的荟萃（Meta）分析</title>
@@ -111,7 +142,7 @@ metafor 包进行 Meta 分析；利用GraphPad Prism 作图。&lt;/li&gt;
     <link href="https://www.sdhlw.top/mata%E5%88%86%E6%9E%90%E6%A3%AE%E6%9E%97%E5%9B%BE/"/>
     <id>https://www.sdhlw.top/mata%E5%88%86%E6%9E%90%E6%A3%AE%E6%9E%97%E5%9B%BE/</id>
     <published>2024-02-18T13:40:32.000Z</published>
-    <updated>2024-02-18T13:41:58.192Z</updated>
+    <updated>2024-03-08T11:08:25.880Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>森林图是以统计指标和统计分析方法为基础，用数值运算结果绘制出的图型。用以综合展示每个被纳入研究的效应量以及汇总的合并效应量<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[5分钟教您快速解读meta分析的森林图](https://www.bilibili.com/video/BV1wY4y1C7t2/?spm_id_from=333.788&amp;vd_source=9f04b059fdee5024fd04678f53de10ad)">[1]</span></a></sup>。</p><h3 id="连续变量">连续变量</h3><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182055153.png" alt="" style="zoom:67%;" /></p><span id="more"></span><p>异质性<spanclass="math inline">\(I^2\)</span>,它的数值代表这三篇RCT有没有明显差异，差异越小说明得出综合效应的结果越可靠，小于20%说明异质性小，大于50%说明异质性较大。</p><p>favours代表菱形框往哪边偏倚支持那边就是更好的方法。</p><p>综合效应如果贴到无效线，则无显著差异：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182134793.png" alt="" style="zoom:23%;" /></p><p>森林图：</p><ul><li>随机效应模型(Random)：随机效应模型是把每一篇RCT的影响力对等，不按它的样本量，把每一篇RCT平均影响综合效应表示出来。</li><li>固定效应模型(Fixed)：固定效应模型是按它的样本量将样本量大的RCT影响权重加大，纳入人群更多的RCT的结果将更影响综合效应。</li></ul><p>一般我们推荐用随机效应模型，因为每一篇RCT都是独立个体，都应均等地影响综合效应，但是一种情况除外那就是其中一个RCT样本量非常大，而其他RCT样本量寥寥无几，那么显然这个样本量大的RCT结果更可靠，更应该权重放大，这就选择固定效应模型。其实不管选择什么模型，做好必要解释就行。</p><h3 id="二分类变量">二分类变量</h3><p>刚刚的图是连续变量，就是用平均值和标准差做比较。而有些结果是通过二分类变量展示的，比如说治愈率，就是总的人数(Tota)和治愈的人数(Events)。软件会自动将Events.定义为不良事件，所以事件发生次数越少，越偏向有利。但是像治愈这种良性事件，我们就需要把下边这个标记换个顺序即可。</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182125244.png" alt="" style="zoom:50%;" /></p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1wY4y1C7t2/?spm_id_from=333.788&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">5分钟教您快速解读meta分析的森林图</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
     
@@ -535,31 +566,6 @@ aria-label=&quot;[【果断收藏】SCI期刊的图片接收要求！](https://m
     
     
     <category term="word" scheme="https://www.sdhlw.top/tags/word/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows设置开机自启软件（计划任务）</title>
-    <link href="https://www.sdhlw.top/windows%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%BD%AF%E4%BB%B6%EF%BC%88%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%EF%BC%89/"/>
-    <id>https://www.sdhlw.top/windows%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%BD%AF%E4%BB%B6%EF%BC%88%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%EF%BC%89/</id>
-    <published>2024-01-13T04:12:56.000Z</published>
-    <updated>2024-02-18T01:36:06.589Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1 右键此电脑，管理</p><p>2打开任务计划程序库，操作--创建基本任务，填写任务名称、时间、添加exe文件等</p><span id="more"></span><p>3 设置延时时间（一定要设置，避免太晚启动）</p><ul><li>打开任务计划程序库，双击你创建的任务</li></ul><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401131550280.png" alt="image-20240113122608544" style="zoom: 50%;" /></p><ul><li>点击触发器，再双击，设置延时任务时间即可</li></ul><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401131550679.png" alt="image-20240113122146371" style="zoom: 50%;" /></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;1 右键此电脑，管理&lt;/p&gt;
-&lt;p&gt;2
-打开任务计划程序库，操作--创建基本任务，填写任务名称、时间、添加exe文件等&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
-    
-    
-    <category term="windows小技巧" scheme="https://www.sdhlw.top/tags/windows%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   
