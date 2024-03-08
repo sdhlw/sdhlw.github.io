@@ -22,12 +22,12 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="安装 hexo-next-darkmode 插件[1] windows管理员打开powershell，运行一下命令： 1$ npm install hexo-next-darkmode --save --registry&#x3D;http:&#x2F;&#x2F;registry.npm.taobao.org">
+  <meta name="description" content="安装 hexo-next-darkmode 插件[1] windows管理员打开powershell，运行一下命令： 1$ npm install hexo-next-darkmode --save --registry&#x3D;http:&#x2F;&#x2F;registry.npm.taobao.org">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Next主题添加切换暗黑模式">
 <meta property="og:url" content="https://www.sdhlw.top/next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E5%88%87%E6%8D%A2%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="安装 hexo-next-darkmode 插件[1] windows管理员打开powershell，运行一下命令： 1$ npm install hexo-next-darkmode --save --registry&#x3D;http:&#x2F;&#x2F;registry.npm.taobao.org">
+<meta property="og:description" content="安装 hexo-next-darkmode 插件[1] windows管理员打开powershell，运行一下命令： 1$ npm install hexo-next-darkmode --save --registry&#x3D;http:&#x2F;&#x2F;registry.npm.taobao.org">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-02-17T14:04:28.000Z">
 <meta property="article:modified_time" content="2024-02-18T02:06:59.206Z">
@@ -274,47 +274,28 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>安装 <code>hexo-next-darkmode</code> <a
-target="_blank" rel="noopener" href="https://github.com/rqh656418510/hexo-next-darkmode/blob/main/README_CN.md">插件</a><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Hexo Next 8.x 主题添加可切换的暗黑模式](https://www.techgrow.cn/posts/abf4aee1.html#Next-7-x-%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%8F%AF%E5%88%87%E6%8D%A2%E7%9A%84%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F)
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>安装 <code>hexo-next-darkmode</code> <a target="_blank" rel="noopener" href="https://github.com/rqh656418510/hexo-next-darkmode/blob/main/README_CN.md">插件</a><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Hexo Next 8.x 主题添加可切换的暗黑模式](https://www.techgrow.cn/posts/abf4aee1.html#Next-7-x-%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%8F%AF%E5%88%87%E6%8D%A2%E7%9A%84%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F)
 ">[1]</span></a></sup></p>
 <p>windows管理员打开powershell，运行一下命令：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-next-darkmode --save --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<h3 id="配置-hexo-插件">配置 Hexo 插件</h3>
-<p>在 Next 主题的 <code>_config.yml</code> 配置文档里添加以下内容</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># Darkmode JS</span><br><span class="line"># For more information: https://github.com/rqh656418510/hexo-next-darkmode, https://github.com/sandoche/Darkmode.js</span><br><span class="line">darkmode_js:</span><br><span class="line">  enable: true</span><br><span class="line">  bottom: &#x27;64px&#x27; # default: &#x27;32px&#x27;</span><br><span class="line">  right: &#x27;unset&#x27; # default: &#x27;32px&#x27;</span><br><span class="line">  left: &#x27;32px&#x27; # default: &#x27;unset&#x27;</span><br><span class="line">  time: &#x27;0.5s&#x27; # default: &#x27;0.3s&#x27;</span><br><span class="line">  mixColor: &#x27;transparent&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  backgroundColor: &#x27;transparent&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  buttonColorDark: &#x27;#100f2c&#x27; # default: &#x27;#100f2c&#x27;</span><br><span class="line">  buttonColorLight: &#x27;#fff&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  isActivated: false # default false</span><br><span class="line">  saveInCookies: true # default: true</span><br><span class="line">  label: &#x27;🌓&#x27; # default: &#x27;&#x27;</span><br><span class="line">  autoMatchOsTheme: true # default: true</span><br><span class="line">  libUrl: # Set custom library cdn url for Darkmode.js</span><br></pre></td></tr></table></figure>
-<ul>
-<li><code>isActivated: true</code>：默认激活暗黑 / 夜间模式，请始终与
-<code>saveInCookies: false</code>、<code>autoMatchOsTheme: false</code>
-一起使用；同时需要在 NexT 主题的 <code>_config.yml</code> 配置文档里设置
-<code>pjax: true</code>，即启用 Pjax。</li>
-</ul>
-<h3 id="关闭原生的暗黑模式">关闭原生的暗黑模式</h3>
-<p>确保 Next 原生的 <code>darkmode</code> 选项设置为
-<code>false</code>，在 Next 的 <code>_config.yml</code>
-配置文档中更改以下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">darkmode: false</span><br></pre></td></tr></table></figure>
-<p>Hexo
-重新构建生成静态资源文档后，点击页面上的按钮即可切换暗黑模式：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.techgrow.cn/posts/abf4aee1.html#Next-7-x-%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%8F%AF%E5%88%87%E6%8D%A2%E7%9A%84%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F">Hexo
-Next 8.x 主题添加可切换的暗黑模式</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
 
+<span id="more"></span>
+
+<h3 id="配置-Hexo-插件"><a href="#配置-Hexo-插件" class="headerlink" title="配置 Hexo 插件"></a>配置 Hexo 插件</h3><p>在 Next 主题的 <code>_config.yml</code> 配置文档里添加以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># Darkmode JS</span><br><span class="line"># For more information: https://github.com/rqh656418510/hexo-next-darkmode, https://github.com/sandoche/Darkmode.js</span><br><span class="line">darkmode_js:</span><br><span class="line">  enable: true</span><br><span class="line">  bottom: &#x27;64px&#x27; # default: &#x27;32px&#x27;</span><br><span class="line">  right: &#x27;unset&#x27; # default: &#x27;32px&#x27;</span><br><span class="line">  left: &#x27;32px&#x27; # default: &#x27;unset&#x27;</span><br><span class="line">  time: &#x27;0.5s&#x27; # default: &#x27;0.3s&#x27;</span><br><span class="line">  mixColor: &#x27;transparent&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  backgroundColor: &#x27;transparent&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  buttonColorDark: &#x27;#100f2c&#x27; # default: &#x27;#100f2c&#x27;</span><br><span class="line">  buttonColorLight: &#x27;#fff&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  isActivated: false # default false</span><br><span class="line">  saveInCookies: true # default: true</span><br><span class="line">  label: &#x27;🌓&#x27; # default: &#x27;&#x27;</span><br><span class="line">  autoMatchOsTheme: true # default: true</span><br><span class="line">  libUrl: # Set custom library cdn url for Darkmode.js</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>isActivated: true</code>：默认激活暗黑 &#x2F; 夜间模式，请始终与 <code>saveInCookies: false</code>、<code>autoMatchOsTheme: false</code> 一起使用；同时需要在 NexT 主题的 <code>_config.yml</code> 配置文档里设置 <code>pjax: true</code>，即启用 Pjax。</li>
+</ul>
+<h3 id="关闭原生的暗黑模式"><a href="#关闭原生的暗黑模式" class="headerlink" title="关闭原生的暗黑模式"></a>关闭原生的暗黑模式</h3><p>确保 Next 原生的 <code>darkmode</code> 选项设置为 <code>false</code>，在 Next 的 <code>_config.yml</code> 配置文档中更改以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">darkmode: false</span><br></pre></td></tr></table></figure>
+
+<p>Hexo 重新构建生成静态资源文档后，点击页面上的按钮即可切换暗黑模式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.techgrow.cn/posts/abf4aee1.html#Next-7-x-%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%8F%AF%E5%88%87%E6%8D%A2%E7%9A%84%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F">Hexo Next 8.x 主题添加可切换的暗黑模式</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
     </div>
 
     
@@ -412,7 +393,7 @@ Next 8.x 主题添加可切换的暗黑模式</a><a href="#fnref:1" rev="footnot
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-hexo-%E6%8F%92%E4%BB%B6"><span class="nav-text">配置 Hexo 插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%97%AD%E5%8E%9F%E7%94%9F%E7%9A%84%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F"><span class="nav-text">关闭原生的暗黑模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-Hexo-%E6%8F%92%E4%BB%B6"><span class="nav-text">配置 Hexo 插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E9%97%AD%E5%8E%9F%E7%94%9F%E7%9A%84%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F"><span class="nav-text">关闭原生的暗黑模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
