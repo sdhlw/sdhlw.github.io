@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-03-08T11:28:27.390Z</updated>
+  <updated>2024-03-08T11:43:43.964Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客访问速度提升（双线部署coding &amp; github）</title>
+    <link href="https://www.sdhlw.top/%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E6%8F%90%E5%8D%87%EF%BC%88%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2coding-github%EF%BC%89/"/>
+    <id>https://www.sdhlw.top/%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E6%8F%90%E5%8D%87%EF%BC%88%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2coding-github%EF%BC%89/</id>
+    <published>2024-03-08T11:36:13.000Z</published>
+    <updated>2024-03-08T11:43:43.964Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>实现大陆访问，使用coding（大家可以理解为中国版的github），国外访问，使用github，以及可以提交百度收录（GitHub禁止了百度的爬取）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Hexo 双线部署到 Coding 和 GitHub 提升访问速度](https://zhuanlan.zhihu.com/p/111796666)">[1]</span></a></sup></p><span id="more"></span><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/111796666">Hexo双线部署到 Coding 和 GitHub提升访问速度</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span></li></ol></div></div>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;实现大陆访问，使用coding（大家可以理解为中国版的github），国外访问，使用github，以及可以提交百度收录（GitHub
+禁止了百度的爬取）&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
+class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
+aria-label=&quot;[Hexo 双线部署到 Coding 和 GitHub 提升访问速度](https://zhuanlan.zhihu.com/p/111796666)
+&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="博客运营" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/"/>
+    
+    <category term="其它" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/%E5%85%B6%E5%AE%83/"/>
+    
+    
+    <category term="Coding" scheme="https://www.sdhlw.top/tags/coding/"/>
+    
+    <category term="Github" scheme="https://www.sdhlw.top/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>Python环境的配置</title>
@@ -542,33 +571,6 @@ aria-label=&quot;[【果断收藏】SCI期刊的图片接收要求！](https://m
     <category term="科研绘图" scheme="https://www.sdhlw.top/tags/%E7%A7%91%E7%A0%94%E7%BB%98%E5%9B%BE/"/>
     
     <category term="矢量图" scheme="https://www.sdhlw.top/tags/%E7%9F%A2%E9%87%8F%E5%9B%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>word支持的插入图片格式</title>
-    <link href="https://www.sdhlw.top/word%E6%94%AF%E6%8C%81%E7%9A%84%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F/"/>
-    <id>https://www.sdhlw.top/word%E6%94%AF%E6%8C%81%E7%9A%84%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F/</id>
-    <published>2024-01-13T06:28:33.000Z</published>
-    <updated>2024-02-18T01:36:20.190Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401132000313.png" alt="image-20240113143016946" style="zoom:67%;" /></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-&lt;p&gt;&lt;img src=&quot;htt</summary>
-      
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
-    
-    
-    <category term="word" scheme="https://www.sdhlw.top/tags/word/"/>
     
   </entry>
   
