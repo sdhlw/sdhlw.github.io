@@ -22,14 +22,15 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="实现大陆访问，使用coding（大家可以理解为中国版的github），国外访问，使用github，以及可以提交百度收录（GitHub 禁止了百度的爬取）[1] 暂时停止折腾了，coding 代码迁移是可以，但是静态网站功能的实现不好搞，coding停掉，需要借助腾讯云搭建。很久之前也尝试过gitee，那段时间直接停掉静态网站的搭建功能，目前不清楚。。。">
+  <meta name="description" content="实现大陆访问，使用coding（大家可以理解为中国版的github），国外访问，使用github，以及可以提交百度收录（GitHub 禁止了百度的爬取）[1] 暂时停止折腾了，coding 代码迁移是可以，但是静态网站功能的实现不好搞，coding停掉，需要借助腾讯云搭建。很久之前也尝试过gitee，那段时间直接停掉静态网站的搭建功能，目前不清楚。。。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="博客访问速度提升（双线部署coding &amp; github）">
 <meta property="og:url" content="https://www.sdhlw.top/%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E6%8F%90%E5%8D%87%EF%BC%88%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2coding-github%EF%BC%89/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="实现大陆访问，使用coding（大家可以理解为中国版的github），国外访问，使用github，以及可以提交百度收录（GitHub 禁止了百度的爬取）[1] 暂时停止折腾了，coding 代码迁移是可以，但是静态网站功能的实现不好搞，coding停掉，需要借助腾讯云搭建。很久之前也尝试过gitee，那段时间直接停掉静态网站的搭建功能，目前不清楚。。。">
+<meta property="og:description" content="实现大陆访问，使用coding（大家可以理解为中国版的github），国外访问，使用github，以及可以提交百度收录（GitHub 禁止了百度的爬取）[1] 暂时停止折腾了，coding 代码迁移是可以，但是静态网站功能的实现不好搞，coding停掉，需要借助腾讯云搭建。很久之前也尝试过gitee，那段时间直接停掉静态网站的搭建功能，目前不清楚。。。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403082221225.png">
+<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403082218690.png">
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403082305099.png">
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403091231291.png">
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403091230463.png">
@@ -263,7 +264,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>746</span>
+              <span>720</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -282,72 +283,40 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>实现大陆访问，使用coding（大家可以理解为中国版的github），国外访问，使用github，以及可以提交百度收录（GitHub
-禁止了百度的爬取）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Hexo 双线部署到 Coding 和 GitHub 提升访问速度](https://zhuanlan.zhihu.com/p/111796666)
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>实现大陆访问，使用coding（大家可以理解为中国版的github），国外访问，使用github，以及可以提交百度收录（GitHub 禁止了百度的爬取）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Hexo 双线部署到 Coding 和 GitHub 提升访问速度](https://zhuanlan.zhihu.com/p/111796666)
 ">[1]</span></a></sup></p>
-<p>暂时停止折腾了，coding
-代码迁移是可以，但是静态网站功能的实现不好搞，coding停掉，需要借助腾讯云搭建。很久之前也尝试过gitee，那段时间直接停掉静态网站的搭建功能，目前不清楚。。。</p>
+<p>暂时停止折腾了，coding 代码迁移是可以，但是静态网站功能的实现不好搞，coding停掉，需要借助腾讯云搭建。很久之前也尝试过gitee，那段时间直接停掉静态网站的搭建功能，目前不清楚。。。</p>
 <span id="more"></span>
-<h2 id="创建项目">1.创建项目</h2>
-<p>去coding官网，新建账号，并登录，创建项目。</p>
-<h2 id="配置-_config.yml">2.配置 _config.yml</h2>
-<p>去博客根目录，添加coding链接，如果要同时推送到GitHub和Coding，type前面加
--：</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403082221225.png" alt="image-20240308222139508" style="zoom: 50%;" /></p>
-<h2 id="将代码推送到coding">3.将代码推送到Coding</h2>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean </span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<figure>
-<img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403082218690.png"
-alt="image-20240308202731574" />
-<figcaption aria-hidden="true">image-20240308202731574</figcaption>
-</figure>
+
+<h2 id="1-创建项目"><a href="#1-创建项目" class="headerlink" title="1.创建项目"></a>1.创建项目</h2><p>去coding官网，新建账号，并登录，创建项目。</p>
+<h2 id="2-配置-config-yml"><a href="#2-配置-config-yml" class="headerlink" title="2.配置 _config.yml"></a>2.配置 _config.yml</h2><p>去博客根目录，添加coding链接，如果要同时推送到GitHub和Coding，type前面加 -：</p>
+<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403082221225.png" alt="image-20240308222139508" style="zoom: 50%;" />
+
+<h2 id="3-将代码推送到Coding"><a href="#3-将代码推送到Coding" class="headerlink" title="3.将代码推送到Coding"></a>3.将代码推送到Coding</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean </span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403082218690.png" alt="image-20240308202731574"></p>
 <p>搞了快一个晚上。。。服了，coding验证的用户名是手机号码！！！！，不是个人信息里的用户名，刚注册coding的小伙伴在部署前，先绑定手机号码，再部署。</p>
-<h2 id="开启-coding-pages还未解决">4.开启 Coding Pages（还未解决）</h2>
-<p>项目这里并没有看到静态部署页面，应该是更改了方式，这里也可能是项目创建时没选对模板，但是创建项目时并没有如其他博客<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[2021使用Coding和Github来实现双线部署](https://cloud.tencent.com/developer/article/1834005)
+<h2 id="4-开启-Coding-Pages（还未解决）"><a href="#4-开启-Coding-Pages（还未解决）" class="headerlink" title="4.开启 Coding Pages（还未解决）"></a>4.开启 Coding Pages（还未解决）</h2><p>项目这里并没有看到静态部署页面，应该是更改了方式，这里也可能是项目创建时没选对模板，但是创建项目时并没有如其他博客<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[2021使用Coding和Github来实现双线部署](https://cloud.tencent.com/developer/article/1834005)
 ">[3]</span></a></sup>有可选模板选择，也没找到更改项目类型的设置。。。</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403082305099.png" alt="以往" style="zoom:33%;" /></p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403091231291.png" alt="现在" style="zoom:33%;" /></p>
-<p>查了一下，果然<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[自建静态网站](https://coding.net/help/docs/devops/ci/practice/static-website-paas.html)
+<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403082305099.png" alt="以往" style="zoom:33%;" />
+
+
+
+<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403091231291.png" alt="现在" style="zoom:33%;" />
+
+
+
+<p>查了一下，果然<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[自建静态网站](https://coding.net/help/docs/devops/ci/practice/static-website-paas.html)
 ">[2]</span></a></sup>，代码放coding, 使用任务把代码又转到腾讯云？：</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403091230463.png" alt="" style="zoom: 33%;" /></p>
+<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403091230463.png" alt="" style="zoom: 33%;" />
+
 <p>也就是现在需要从第二步开始跟着操作即可。</p>
 <p>第三步出现问题，现在只有构建计划，没有构建任务选项，进入构建计划时，jenkinsfile无法直接填充，需要提前在代码仓库构建，但是在设置环境变量时卡住了，这里的环境变量在jenkinsfile好像已经指定了。</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403091230342.png" alt="" style="zoom: 33%;" /></p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111796666">Hexo
-双线部署到 Coding 和 GitHub
-提升访问速度</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://coding.net/help/docs/devops/ci/practice/static-website-paas.html">自建静态网站</a><a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:3">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1834005">2021使用Coding和Github来实现双线部署</a><a href="#fnref:3" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
+<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403091230342.png" alt="" style="zoom: 33%;" />
 
+
+
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/111796666">Hexo 双线部署到 Coding 和 GitHub 提升访问速度</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://coding.net/help/docs/devops/ci/practice/static-website-paas.html">自建静态网站</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1834005">2021使用Coding和Github来实现双线部署</a><a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>
     </div>
 
     
@@ -450,7 +419,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE"><span class="nav-text">1.创建项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-_config.yml"><span class="nav-text">2.配置 _config.yml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%86%E4%BB%A3%E7%A0%81%E6%8E%A8%E9%80%81%E5%88%B0coding"><span class="nav-text">3.将代码推送到Coding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E5%90%AF-coding-pages%E8%BF%98%E6%9C%AA%E8%A7%A3%E5%86%B3"><span class="nav-text">4.开启 Coding Pages（还未解决）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE"><span class="nav-text">1.创建项目</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E9%85%8D%E7%BD%AE-config-yml"><span class="nav-text">2.配置 _config.yml</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%B0%86%E4%BB%A3%E7%A0%81%E6%8E%A8%E9%80%81%E5%88%B0Coding"><span class="nav-text">3.将代码推送到Coding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%BC%80%E5%90%AF-Coding-Pages%EF%BC%88%E8%BF%98%E6%9C%AA%E8%A7%A3%E5%86%B3%EF%BC%89"><span class="nav-text">4.开启 Coding Pages（还未解决）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -466,14 +435,14 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">73</span>
+          <span class="site-state-item-count">72</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
