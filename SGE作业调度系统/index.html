@@ -256,7 +256,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>697</span>
+              <span>658</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -276,31 +276,36 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>不要在登录节点（管理节点）上运行大型[程序](<a target="_blank" rel="noopener" href="https://github.com/hnnd/bcl">hnnd&#x2F;bcl (github.com)</a>)</p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>不要在登录节点（管理节点）上运行大型<a
+href="%5Bhnnd/bcl%20(github.com)%5D(https://github.com/hnnd/bcl)">程序</a></p>
 <ul>
-<li><p>qrsh登录计算节点</p>
-</li>
+<li><p>qrsh登录计算节点</p></li>
 <li><p>qsub递交批量任务</p>
 <p>创建<code>work.sh</code>文件：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">#$ -S /bin/bash</span><br><span class="line">#$ -N JobName</span><br><span class="line">#$ -cwd</span><br><span class="line">#$ -j y</span><br><span class="line">#$ -pe smp 5</span><br><span class="line">#$ -l mem_free=6G,h_vmem=6G</span><br><span class="line">需要执行的任务命令</span><br></pre></td></tr></table></figure>
-
 <p>提交任务：<code>qsub work.sh</code></p>
 <p>查看任务运行情况：<code>qstat</code></p>
-<p>删除任务：<code>qdel 139</code></p>
-</li>
+<p>删除任务：<code>qdel 139</code></p></li>
 </ul>
 <p>详解：</p>
-<ol>
-<li>Use the <code>-pe local K</code> option to request K slots on a single cluster node.</li>
+<ol type="1">
+<li>Use the <code>-pe local K</code> option to request K slots on a
+single cluster node.</li>
 <li>use the <code>-R y</code> option to turn on slot reservation.</li>
-<li>Use the <code>mem_free=NG</code> option to specify N Gigabytes of memory your job(指定作业多少G内存).</li>
-<li>Use <code>h_vmem= nG</code> to set the hard memory limit for your job. Important: the value, <code>n</code>, you set in <code>h_vmem</code> is the total memory you set via <code>mem_free</code> divided by the number of slots specified for <code>-pe</code>. In other words n&#x3D;N&#x2F;K.</li>
-<li><code>-S shell_path</code>：指定运行Shell<a target="_blank" rel="noopener" href="https://www.cnblogs.com/renping/p/7441494.html">环境</a></li>
+<li>Use the <code>mem_free=NG</code> option to specify N Gigabytes of
+memory your job(指定作业多少G内存).</li>
+<li>Use <code>h_vmem= nG</code> to set the hard memory limit for your
+job. Important: the value, <code>n</code>, you set in
+<code>h_vmem</code> is the total memory you set via
+<code>mem_free</code> divided by the number of slots specified for
+<code>-pe</code>. In other words n=N/K.</li>
+<li><code>-S shell_path</code>：指定运行Shell<a
+target="_blank" rel="noopener" href="https://www.cnblogs.com/renping/p/7441494.html">环境</a></li>
 <li><code>-N job_name</code>：重命名作业名</li>
-<li><code>-cwd </code>：从当前工作路径运行作业</li>
+<li><code>-cwd</code>：从当前工作路径运行作业</li>
 <li><code>-j y[es]|n[o]</code>：定义作业的标准错误输出是否写入到输出文件中</li>
 </ol>
-<p>推荐阅读：<a target="_blank" rel="noopener" href="https://qpeng.org/prog/sge.htm">https://qpeng.org/prog/sge.htm</a></p>
+<p>推荐阅读：https://qpeng.org/prog/sge.htm</p>
 
     </div>
 
@@ -418,14 +423,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">72</span>
+          <span class="site-state-item-count">73</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
