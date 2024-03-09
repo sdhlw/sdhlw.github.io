@@ -29,12 +29,16 @@
 <meta property="og:site_name" content="Jay&#39;s Blog">
 <meta property="og:description" content="记录Python的基本使用">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208101115765.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208101115636.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208101115390.png">
 <meta property="article:published_time" content="2022-08-09T13:15:31.000Z">
 <meta property="article:modified_time" content="2024-02-18T01:26:29.155Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="Pycharm">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208101115765.png">
 
 <link rel="canonical" href="https://www.sdhlw.top/Python-base/">
 
@@ -80,8 +84,8 @@
   </style>
 </noscript>
 
-<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style><link rel="alternate" href="/atom.xml" title="Jay's Blog" type="application/atom+xml">
-</head>
+<link rel="alternate" href="/atom.xml" title="Jay's Blog" type="application/atom+xml">
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
   <div class="container use-motion">
@@ -277,205 +281,166 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1
-id="设置双击.py文件打开的软件">1、设置双击<code>.py</code>文件打开的软件</h1>
-<p>找到一个<code>.py</code>文件，右键点击属性，常规--打开方式--更改，选择打开<code>.py</code>文件的应用。</p>
-<h1 id="pycharm下载包">2、Pycharm<a
-target="_blank" rel="noopener" href="https://blog.csdn.net/qiannianguji01/article/details/50397046">下载包</a></h1>
-<ul>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="1、设置双击-py文件打开的软件"><a href="#1、设置双击-py文件打开的软件" class="headerlink" title="1、设置双击.py文件打开的软件"></a>1、设置双击<code>.py</code>文件打开的软件</h1><p>找到一个<code>.py</code>文件，右键点击属性，常规–打开方式–更改，选择打开<code>.py</code>文件的应用。</p>
+<h1 id="2、Pycharm下载包"><a href="#2、Pycharm下载包" class="headerlink" title="2、Pycharm下载包"></a>2、Pycharm<a target="_blank" rel="noopener" href="https://blog.csdn.net/qiannianguji01/article/details/50397046">下载包</a></h1><ul>
 <li>打开Pycharm，点击File,再点击settings</li>
 <li>点击settings之后再点击project下面的project Interpreter</li>
-<li>接下来点击上面界面右上角的“+”将会出现如下界面：然后在搜索框中搜索需要安装的第三方库（此处搜索requests）然后点击界面左下角的Install
-Package进行安装即可。</li>
+<li>接下来点击上面界面右上角的“+”将会出现如下界面：然后在搜索框中搜索需要安装的第三方库（此处搜索requests）然后点击界面左下角的Install Package进行安装即可。</li>
 </ul>
-<h1
-id="pycharm已下载包但是提示找不到">3、Pycharm已下载包，但是提示找不到</h1>
-<p>Pycharm已下载包，但是终端的Python却找不到包：有多个Python环境，解释器路径<a
-target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41088475/article/details/103984400">不一样</a>。</p>
+<h1 id="3、Pycharm已下载包，但是提示找不到"><a href="#3、Pycharm已下载包，但是提示找不到" class="headerlink" title="3、Pycharm已下载包，但是提示找不到"></a>3、Pycharm已下载包，但是提示找不到</h1><p>Pycharm已下载包，但是终端的Python却找不到包：有多个Python环境，解释器路径<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41088475/article/details/103984400">不一样</a>。</p>
 <p>查看自己项目大概位置：</p>
-<figure>
-<img
-src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208101115765.png"
-alt="image-20220810111358060" />
-<figcaption aria-hidden="true">image-20220810111358060</figcaption>
-</figure>
+<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208101115765.png" alt="image-20220810111358060"></p>
 <p>不同项目的解释器可能不一样，打开解释器选择界面：</p>
-<figure>
-<img
-src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208101115636.png"
-alt="image-20220810111051813" />
-<figcaption aria-hidden="true">image-20220810111051813</figcaption>
-</figure>
+<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208101115636.png" alt="image-20220810111051813"></p>
 <p>选择自己项目相关的解释器，点击Apply，OK：</p>
-<figure>
-<img
-src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208101115390.png"
-alt="image-20220810111247989" />
-<figcaption aria-hidden="true">image-20220810111247989</figcaption>
-</figure>
+<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208101115390.png" alt="image-20220810111247989"></p>
 <p>再回到终端，包即可使用。</p>
-<h1 id="f-string">4、f-string</h1>
-<p>f-string，亦称为格式化字符串常量（formatted string
-literals），是Python3.6新引入的一种字符串格式化方法。f-string在形式上是以
-<code>f</code> 或 <code>F</code> 修饰符引领的字符串（<code>f'xxx'</code>
-或 <code>F'xxx'</code>），以大括号 <code>&#123;&#125;</code>
-标明被替换的字段；f-string在本质上并不是字符串常量，而是一个在运行时运算求值的表达式。<a
-target="_blank" rel="noopener" href="https://blog.csdn.net/sunxb10/article/details/81036693">来源</a></p>
+<h1 id="4、f-string"><a href="#4、f-string" class="headerlink" title="4、f-string"></a>4、f-string</h1><p>f-string，亦称为格式化字符串常量（formatted string literals），是Python3.6新引入的一种字符串格式化方法。f-string在形式上是以 <code>f</code> 或 <code>F</code> 修饰符引领的字符串（<code>f&#39;xxx&#39;</code> 或 <code>F&#39;xxx&#39;</code>），以大括号 <code>&#123;&#125;</code> 标明被替换的字段；f-string在本质上并不是字符串常量，而是一个在运行时运算求值的表达式。<a target="_blank" rel="noopener" href="https://blog.csdn.net/sunxb10/article/details/81036693">来源</a></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; i=<span class="string">&#x27;a.tsv&#x27;</span></span>  </span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; <span class="built_in">dd</span> = pd.read_csv(f<span class="string">&#x27;D:/mydata/&#123;i&#125;&#x27;</span>)</span></span><br></pre></td></tr></table></figure>
+
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; name = <span class="string">&#x27;Eric&#x27;</span></span></span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; f<span class="string">&#x27;Hello, my name is &#123;name&#125;&#x27;</span></span></span><br><span class="line">&#x27;Hello, my name is Eric&#x27;</span><br></pre></td></tr></table></figure>
-<p>Python 中的字符串格式<a
-target="_blank" rel="noopener" href="https://geek-docs.com/python/python-tutorial/python-fstring.html">设置</a>：</p>
+
+<p>Python 中的字符串格式<a target="_blank" rel="noopener" href="https://geek-docs.com/python/python-tutorial/python-fstring.html">设置</a>：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line"></span><br><span class="line">name = <span class="string">&#x27;Peter&#x27;</span></span><br><span class="line">age = <span class="number">23</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;%s is %d years old&#x27;</span> % (name, age))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;&#123;&#125; is &#123;&#125; years old&#x27;</span>.<span class="built_in">format</span>(name, age))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&#x27;<span class="subst">&#123;name&#125;</span> is <span class="subst">&#123;age&#125;</span> years old&#x27;</span>)</span><br></pre></td></tr></table></figure>
-<h1 id="从字符串中提取数字">5、从字符串中提取数字</h1>
-<p><a
-target="_blank" rel="noopener" href="https://blog.csdn.net/qq_38486203/article/details/80309478">来源</a></p>
+
+
+
+<h1 id="5、从字符串中提取数字"><a href="#5、从字符串中提取数字" class="headerlink" title="5、从字符串中提取数字"></a>5、从字符串中提取数字</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_38486203/article/details/80309478">来源</a></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: cp936 -*-</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"> </span><br><span class="line">string=<span class="string">&quot;A1.45，b5，6.45，8.82&quot;</span></span><br><span class="line"><span class="built_in">print</span> re.findall(<span class="string">r&quot;\d+\.?\d*&quot;</span>,string)</span><br><span class="line"> </span><br><span class="line"><span class="comment"># [&#x27;1.45&#x27;, &#x27;5&#x27;, &#x27;6.45&#x27;, &#x27;8.82&#x27;]</span></span><br></pre></td></tr></table></figure>
-<p>正则：<code>"\d+.?\d*"</code></p>
+
+<p>正则：<code>&quot;\d+.?\d*&quot;</code></p>
 <ul>
-<li><code>\d+</code>
-匹配1次或者多次数字，注意这里不要写成<code>*</code>，因为即便是小数，小数点之前也得有一个数字；</li>
+<li><code>\d+</code> 匹配1次或者多次数字，注意这里不要写成<code>*</code>，因为即便是小数，小数点之前也得有一个数字；</li>
 <li><code>\.?</code> 这个是匹配小数点的，可能有，也可能没有；</li>
-<li><code>\d*</code>
-这个是匹配小数点之后的数字的，所以是0个或者多个；</li>
+<li><code>\d*</code> 这个是匹配小数点之后的数字的，所以是0个或者多个；</li>
 </ul>
-<h1 id="列表中的字符串转换为整数">6、列表中的字符串转换为整数</h1>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">results = [1, 2, 3]</span><br><span class="line">results = list(map(int, results))</span><br><span class="line">nums=[int(num) for num in results]</span><br></pre></td></tr></table></figure>
-<h1 id="sort-与-sorted-区别">7、sort 与 sorted 区别</h1>
-<ul>
-<li>sort 是应用在 list 上的方法，属于列表的成员方法，sorted
-可以对所有可迭代的对象进行排序操作。</li>
-<li>list 的 sort 方法返回的是对已经存在的列表进行操作，而内建函数 sorted
-方法返回的是一个新的 list，而不是在原来的基础上进行的操作。</li>
+<h1 id="6、列表中的字符串转换为整数"><a href="#6、列表中的字符串转换为整数" class="headerlink" title="6、列表中的字符串转换为整数"></a>6、列表中的字符串转换为整数</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">results = [1, 2, 3]</span><br><span class="line">results = list(map(int, results))</span><br><span class="line">nums=[int(num) for num in results]</span><br></pre></td></tr></table></figure>
+
+<h1 id="7、sort-与-sorted-区别"><a href="#7、sort-与-sorted-区别" class="headerlink" title="7、sort 与 sorted 区别"></a>7、sort 与 sorted 区别</h1><ul>
+<li>sort 是应用在 list 上的方法，属于列表的成员方法，sorted 可以对所有可迭代的对象进行排序操作。</li>
+<li>list 的 sort 方法返回的是对已经存在的列表进行操作，而内建函数 sorted 方法返回的是一个新的 list，而不是在原来的基础上进行的操作。</li>
 <li>sort使用方法为ls.sort()，而sorted使用方法为sorted(ls)</li>
 </ul>
-<p>reverse = True 降序 ， reverse = False 升序（sort和sorted默认）</p>
-<h1 id="pycharm-多行注释取消注释">8、Pycharm 多行注释（取消注释）</h1>
-<p>Ctrl + /</p>
-<h1 id="带if条件语句的lambda函数">9、带if条件语句的lambda函数</h1>
-<p><code>lambda x: 返回值1 if 条件 else (返回值2 if 条件 else 返回值3)</code></p>
-<p>[if符合返回值] <strong>if</strong> 条件 <strong>else</strong>
-[else符合返回值] <a
-href="%5B如何在Python的Lambda函数中使用if，else和elif%20-%200x资讯%20(0xzx.com)%5D(https://0xzx.com/202002080939501826.html)">来源</a></p>
+<p>reverse &#x3D; True 降序 ， reverse &#x3D; False 升序（sort和sorted默认）</p>
+<h1 id="8、Pycharm-多行注释（取消注释）"><a href="#8、Pycharm-多行注释（取消注释）" class="headerlink" title="8、Pycharm 多行注释（取消注释）"></a>8、Pycharm 多行注释（取消注释）</h1><p>Ctrl + &#x2F;</p>
+<h1 id="9、带if条件语句的lambda函数"><a href="#9、带if条件语句的lambda函数" class="headerlink" title="9、带if条件语句的lambda函数"></a>9、带if条件语句的lambda函数</h1><p><code>lambda x: 返回值1 if 条件 else (返回值2 if 条件 else 返回值3)</code></p>
+<p>[if符合返回值] <strong>if</strong> 条件 <strong>else</strong> [else符合返回值] [来源](<a target="_blank" rel="noopener" href="https://0xzx.com/202002080939501826.html">如何在Python的Lambda函数中使用if，else和elif - 0x资讯 (0xzx.com)</a>)</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">verify = lambda x: True if (x &gt; 11 and x &lt; 22) else False</span><br><span class="line">converter = lambda x : x*2 if x &lt; 11 else (x*3 if x &lt; 22 else x)</span><br></pre></td></tr></table></figure>
-<h1 id="asscii值">10、ASSCII值</h1>
-<p><a target="_blank" rel="noopener" href="https://tool.oschina.net/commons?type=4">来源</a></p>
+
+<h1 id="10、ASSCII值"><a href="#10、ASSCII值" class="headerlink" title="10、ASSCII值"></a>10、ASSCII值</h1><p><a target="_blank" rel="noopener" href="https://tool.oschina.net/commons?type=4">来源</a></p>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>ASSCII值</th>
 <th>控制字符</th>
 </tr>
 </thead>
-<tbody>
-<tr class="odd">
+<tbody><tr>
 <td>48</td>
 <td>0</td>
 </tr>
-<tr class="even">
+<tr>
 <td>49</td>
 <td>1</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>50</td>
 <td>2</td>
 </tr>
-<tr class="even">
-<td>...</td>
-<td>...</td>
+<tr>
+<td>…</td>
+<td>…</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>57</td>
 <td>9</td>
 </tr>
-<tr class="even">
+<tr>
 <td></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>65</td>
 <td>A</td>
 </tr>
-<tr class="even">
+<tr>
 <td>66</td>
 <td>B</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>67</td>
 <td>C</td>
 </tr>
-<tr class="even">
-<td>...</td>
-<td>...</td>
+<tr>
+<td>…</td>
+<td>…</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>90</td>
 <td>Z</td>
 </tr>
-<tr class="even">
+<tr>
 <td></td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>97</td>
 <td>a</td>
 </tr>
-<tr class="even">
+<tr>
 <td>98</td>
 <td>b</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>99</td>
 <td>c</td>
 </tr>
-<tr class="even">
-<td>...</td>
-<td>...</td>
+<tr>
+<td>…</td>
+<td>…</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>122</td>
 <td>z</td>
 </tr>
-</tbody>
-</table>
-<h1
-id="列表中嵌套列表变字符为数字排序">11、列表中嵌套列表，变字符为数字排序</h1>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">num=[[&#x27;3&#x27;],[&#x27;9&#x27;],[&#x27;1&#x27;],[&#x27;20&#x27;]]</span><br><span class="line">num2 = []</span><br><span class="line">for j in num:</span><br><span class="line">    num2.append(int(j[0]))</span><br><span class="line">num2 = sorted(num2)</span><br><span class="line">print(num2)</span><br><span class="line"></span><br><span class="line">[1, 3, 9, 20]</span><br></pre></td></tr></table></figure>
-<h1 id="if-name-main">12、if <strong>name</strong> ==
-'<strong>main</strong>'</h1>
-<p><a
-target="_blank" rel="noopener" href="https://www.zhihu.com/question/49136398/answer/1654722335">来源</a></p>
-<p><code>if __name__ == '__main__' :</code>后面缩进的内容（代称为A），如果是该python文件被执行，那么该A内容会被执行，如果该文件被导入到另一个文件中，执行另一个文件，A内容不会被执行。</p>
-<p><code>_name_</code>是一个属性，在自己文件中值为main，在其他文件中值为文件名（模块名）。if
-<strong>name</strong> ==
-'<strong>main</strong>'表示是不是本文件，是的话，执行冒号后面缩进的内容。</p>
-<h1 id="字符串是否是正整数">13、字符串是否是正整数</h1>
-<p><code>string.isdigit()</code>：如果是正整数，返回True；反之，返回False。</p>
-<h1 id="文件的创建和写入">14、文件的创建和写入</h1>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;a.txt&quot;</span>,<span class="string">&#x27;w&#x27;</span>)  <span class="keyword">as</span> f:</span><br><span class="line">    f.write(<span class="string">&quot;hello &#123;&#125;,hello &#123;&#125;&quot;</span>.<span class="built_in">format</span>(a, b))</span><br><span class="line"><span class="comment"># w：只写，文件存在覆盖，文件不存在创建</span></span><br><span class="line"><span class="comment"># a：追加，文件存在追加，文件不存在创建</span></span><br><span class="line"><span class="comment"># r：只读，文件存在读，文件不存在返回异常</span></span><br><span class="line"><span class="comment"># x：只写，文件存在返回异常，文件不存在创建</span></span><br><span class="line"><span class="comment"># b：以二进制打开</span></span><br><span class="line"><span class="comment"># t：以文本文件方式打开，默认值</span></span><br><span class="line"><span class="comment"># +：与以上同时使用，以增加功能</span></span><br></pre></td></tr></table></figure>
-<h1 id="局部变量和全局变量">15、局部变量和全局变量</h1>
-<p><a target="_blank" rel="noopener" href="http://c.biancheng.net/view/2259.html">来源</a></p>
-<p>1、局部变量（Local
-Variable）：在函数内部定义的变量（只能在函数内部使用）</p>
+</tbody></table>
+<h1 id="11、列表中嵌套列表，变字符为数字排序"><a href="#11、列表中嵌套列表，变字符为数字排序" class="headerlink" title="11、列表中嵌套列表，变字符为数字排序"></a>11、列表中嵌套列表，变字符为数字排序</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">num=[[&#x27;3&#x27;],[&#x27;9&#x27;],[&#x27;1&#x27;],[&#x27;20&#x27;]]</span><br><span class="line">num2 = []</span><br><span class="line">for j in num:</span><br><span class="line">    num2.append(int(j[0]))</span><br><span class="line">num2 = sorted(num2)</span><br><span class="line">print(num2)</span><br><span class="line"></span><br><span class="line">[1, 3, 9, 20]</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="12、if-name-x3D-x3D-‘main‘"><a href="#12、if-name-x3D-x3D-‘main‘" class="headerlink" title="12、if name &#x3D;&#x3D; ‘main‘"></a>12、if <strong>name</strong> &#x3D;&#x3D; ‘<strong>main</strong>‘</h1><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/49136398/answer/1654722335">来源</a></p>
+<p><code>if __name__ == &#39;__main__&#39; :</code>后面缩进的内容（代称为A），如果是该python文件被执行，那么该A内容会被执行，如果该文件被导入到另一个文件中，执行另一个文件，A内容不会被执行。</p>
+<p><code>_name_</code>是一个属性，在自己文件中值为main，在其他文件中值为文件名（模块名）。if <strong>name</strong> &#x3D;&#x3D; ‘<strong>main</strong>‘表示是不是本文件，是的话，执行冒号后面缩进的内容。 </p>
+<h1 id="13、字符串是否是正整数"><a href="#13、字符串是否是正整数" class="headerlink" title="13、字符串是否是正整数"></a>13、字符串是否是正整数</h1><p><code>string.isdigit()</code>：如果是正整数，返回True；反之，返回False。</p>
+<h1 id="14、文件的创建和写入"><a href="#14、文件的创建和写入" class="headerlink" title="14、文件的创建和写入"></a>14、文件的创建和写入</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;a.txt&quot;</span>,<span class="string">&#x27;w&#x27;</span>)  <span class="keyword">as</span> f:</span><br><span class="line">    f.write(<span class="string">&quot;hello &#123;&#125;,hello &#123;&#125;&quot;</span>.<span class="built_in">format</span>(a, b))</span><br><span class="line"><span class="comment"># w：只写，文件存在覆盖，文件不存在创建</span></span><br><span class="line"><span class="comment"># a：追加，文件存在追加，文件不存在创建</span></span><br><span class="line"><span class="comment"># r：只读，文件存在读，文件不存在返回异常</span></span><br><span class="line"><span class="comment"># x：只写，文件存在返回异常，文件不存在创建</span></span><br><span class="line"><span class="comment"># b：以二进制打开</span></span><br><span class="line"><span class="comment"># t：以文本文件方式打开，默认值</span></span><br><span class="line"><span class="comment"># +：与以上同时使用，以增加功能</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="15、局部变量和全局变量"><a href="#15、局部变量和全局变量" class="headerlink" title="15、局部变量和全局变量"></a>15、局部变量和全局变量</h1><p><a target="_blank" rel="noopener" href="http://c.biancheng.net/view/2259.html">来源</a></p>
+<p>1、局部变量（Local Variable）：在函数内部定义的变量（只能在函数内部使用）</p>
 <ul>
 <li><code>local()</code>：返回局部变量组成的字典，可以访问变量，但是无法修改变量的值</li>
 </ul>
 <p>2、全局变量（Global Variable）：在所有函数的外部定义的变量</p>
 <ul>
-<li><p>在函数外部定义</p></li>
+<li><p>在函数外部定义</p>
+</li>
 <li><p>在函数内部使用global关键词定义</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">text</span>():</span><br><span class="line">    <span class="keyword">global</span> add</span><br><span class="line">    add = <span class="string">&quot;https://adf.com&quot;</span></span><br><span class="line"><span class="comment"># 使用 global 关键字修饰变量名时，不能直接给变量赋初值，否则会引发语法错误。</span></span><br></pre></td></tr></table></figure></li>
-<li><p><code>globals()</code>：返回一个所有全局变量的字典，该字典中的每个键值对，键为变量名，值为该变量的值。变量可访问，也可修改。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">text</span>():</span><br><span class="line">    <span class="keyword">global</span> add</span><br><span class="line">    add = <span class="string">&quot;https://adf.com&quot;</span></span><br><span class="line"><span class="comment"># 使用 global 关键字修饰变量名时，不能直接给变量赋初值，否则会引发语法错误。</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>globals() </code>：返回一个所有全局变量的字典，该字典中的每个键值对，键为变量名，值为该变量的值。变量可访问，也可修改。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Pyname = <span class="string">&quot;Python教程&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">globals</span>()[<span class="string">&#x27;Pyname&#x27;</span>])   <span class="comment"># 输出为Python教程</span></span><br><span class="line"><span class="keyword">global</span>()[<span class="string">&#x27;Pyname&#x27;</span>] = <span class="string">&quot;Python入门教程&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">globals</span>()[<span class="string">&#x27;Pyname&#x27;</span>])   <span class="comment"># 输出为Python入门教程</span></span><br></pre></td></tr></table></figure>
-<h1 id="查看python解释器类型">16、查看python解释器类型：</h1>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import os </span><br><span class="line">import sys</span><br><span class="line"></span><br><span class="line">sys.version  # 内有PyPy即为PyPy解释器</span><br><span class="line">os.name   # 返回有Java，即为Jython解释器</span><br><span class="line">sys.version.startswith</span><br></pre></td></tr></table></figure>
-<h1 id="编码方式">16、编码方式</h1>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import sys</span><br><span class="line">sys.getdefaultencoding()</span><br><span class="line"></span><br><span class="line">from IPython.utils.encoding import get_stream_enc; import sys</span><br><span class="line">get_stream_enc(sys.stdout)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>iPython is getting the encoding from the <a
-target="_blank" rel="noopener" href="https://stackoverflow.com/questions/55289288/change-ipython-stream-encoding">environment</a>
-(<code>$LANG</code> etc).</p>
+
+<h1 id="16、查看python解释器类型："><a href="#16、查看python解释器类型：" class="headerlink" title="16、查看python解释器类型："></a>16、查看python解释器类型：</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import os </span><br><span class="line">import sys</span><br><span class="line"></span><br><span class="line">sys.version  # 内有PyPy即为PyPy解释器</span><br><span class="line">os.name   # 返回有Java，即为Jython解释器</span><br><span class="line">sys.version.startswith</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="16、编码方式"><a href="#16、编码方式" class="headerlink" title="16、编码方式"></a>16、编码方式</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import sys</span><br><span class="line">sys.getdefaultencoding()</span><br><span class="line"></span><br><span class="line">from IPython.utils.encoding import get_stream_enc; import sys</span><br><span class="line">get_stream_enc(sys.stdout)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>iPython is getting the encoding from the <a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/55289288/change-ipython-stream-encoding">environment</a> (<code>$LANG</code> etc). </p>
 <p>iPython是从环境中获得编码方式的，目前iPython用的是GBK方式编码</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">get_stream_enc(sys.stdout)</span><br><span class="line">Out[21]: &#x27;gbk&#x27;</span><br></pre></td></tr></table></figure>
-<p>换成utf-8的方式是，</p></li>
+
+<p>换成utf-8的方式是，</p>
+</li>
 </ul>
 <p>17、类、函数，方法，库</p>
 
@@ -581,8 +546,7 @@ target="_blank" rel="noopener" href="https://stackoverflow.com/questions/5528928
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%8F%8C%E5%87%BB.py%E6%96%87%E4%BB%B6%E6%89%93%E5%BC%80%E7%9A%84%E8%BD%AF%E4%BB%B6"><span class="nav-text">1、设置双击.py文件打开的软件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pycharm%E4%B8%8B%E8%BD%BD%E5%8C%85"><span class="nav-text">2、Pycharm下载包</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pycharm%E5%B7%B2%E4%B8%8B%E8%BD%BD%E5%8C%85%E4%BD%86%E6%98%AF%E6%8F%90%E7%A4%BA%E6%89%BE%E4%B8%8D%E5%88%B0"><span class="nav-text">3、Pycharm已下载包，但是提示找不到</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#f-string"><span class="nav-text">4、f-string</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%8E%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E6%8F%90%E5%8F%96%E6%95%B0%E5%AD%97"><span class="nav-text">5、从字符串中提取数字</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E4%B8%BA%E6%95%B4%E6%95%B0"><span class="nav-text">6、列表中的字符串转换为整数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#sort-%E4%B8%8E-sorted-%E5%8C%BA%E5%88%AB"><span class="nav-text">7、sort 与 sorted 区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pycharm-%E5%A4%9A%E8%A1%8C%E6%B3%A8%E9%87%8A%E5%8F%96%E6%B6%88%E6%B3%A8%E9%87%8A"><span class="nav-text">8、Pycharm 多行注释（取消注释）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%A6if%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%E7%9A%84lambda%E5%87%BD%E6%95%B0"><span class="nav-text">9、带if条件语句的lambda函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#asscii%E5%80%BC"><span class="nav-text">10、ASSCII值</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%97%E8%A1%A8%E4%B8%AD%E5%B5%8C%E5%A5%97%E5%88%97%E8%A1%A8%E5%8F%98%E5%AD%97%E7%AC%A6%E4%B8%BA%E6%95%B0%E5%AD%97%E6%8E%92%E5%BA%8F"><span class="nav-text">11、列表中嵌套列表，变字符为数字排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#if-name-main"><span class="nav-text">12、if name &#x3D;&#x3D;
-&#39;main&#39;</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%98%AF%E5%90%A6%E6%98%AF%E6%AD%A3%E6%95%B4%E6%95%B0"><span class="nav-text">13、字符串是否是正整数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E5%86%99%E5%85%A5"><span class="nav-text">14、文件的创建和写入</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F%E5%92%8C%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F"><span class="nav-text">15、局部变量和全局变量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%9F%A5%E7%9C%8Bpython%E8%A7%A3%E9%87%8A%E5%99%A8%E7%B1%BB%E5%9E%8B"><span class="nav-text">16、查看python解释器类型：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F"><span class="nav-text">16、编码方式</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1%E3%80%81%E8%AE%BE%E7%BD%AE%E5%8F%8C%E5%87%BB-py%E6%96%87%E4%BB%B6%E6%89%93%E5%BC%80%E7%9A%84%E8%BD%AF%E4%BB%B6"><span class="nav-text">1、设置双击.py文件打开的软件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2%E3%80%81Pycharm%E4%B8%8B%E8%BD%BD%E5%8C%85"><span class="nav-text">2、Pycharm下载包</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3%E3%80%81Pycharm%E5%B7%B2%E4%B8%8B%E8%BD%BD%E5%8C%85%EF%BC%8C%E4%BD%86%E6%98%AF%E6%8F%90%E7%A4%BA%E6%89%BE%E4%B8%8D%E5%88%B0"><span class="nav-text">3、Pycharm已下载包，但是提示找不到</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4%E3%80%81f-string"><span class="nav-text">4、f-string</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5%E3%80%81%E4%BB%8E%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E6%8F%90%E5%8F%96%E6%95%B0%E5%AD%97"><span class="nav-text">5、从字符串中提取数字</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6%E3%80%81%E5%88%97%E8%A1%A8%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E4%B8%BA%E6%95%B4%E6%95%B0"><span class="nav-text">6、列表中的字符串转换为整数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7%E3%80%81sort-%E4%B8%8E-sorted-%E5%8C%BA%E5%88%AB"><span class="nav-text">7、sort 与 sorted 区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8%E3%80%81Pycharm-%E5%A4%9A%E8%A1%8C%E6%B3%A8%E9%87%8A%EF%BC%88%E5%8F%96%E6%B6%88%E6%B3%A8%E9%87%8A%EF%BC%89"><span class="nav-text">8、Pycharm 多行注释（取消注释）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9%E3%80%81%E5%B8%A6if%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%E7%9A%84lambda%E5%87%BD%E6%95%B0"><span class="nav-text">9、带if条件语句的lambda函数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#10%E3%80%81ASSCII%E5%80%BC"><span class="nav-text">10、ASSCII值</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11%E3%80%81%E5%88%97%E8%A1%A8%E4%B8%AD%E5%B5%8C%E5%A5%97%E5%88%97%E8%A1%A8%EF%BC%8C%E5%8F%98%E5%AD%97%E7%AC%A6%E4%B8%BA%E6%95%B0%E5%AD%97%E6%8E%92%E5%BA%8F"><span class="nav-text">11、列表中嵌套列表，变字符为数字排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#12%E3%80%81if-name-x3D-x3D-%E2%80%98main%E2%80%98"><span class="nav-text">12、if name &#x3D;&#x3D; ‘main‘</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#13%E3%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%98%AF%E5%90%A6%E6%98%AF%E6%AD%A3%E6%95%B4%E6%95%B0"><span class="nav-text">13、字符串是否是正整数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#14%E3%80%81%E6%96%87%E4%BB%B6%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E5%86%99%E5%85%A5"><span class="nav-text">14、文件的创建和写入</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#15%E3%80%81%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F%E5%92%8C%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F"><span class="nav-text">15、局部变量和全局变量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#16%E3%80%81%E6%9F%A5%E7%9C%8Bpython%E8%A7%A3%E9%87%8A%E5%99%A8%E7%B1%BB%E5%9E%8B%EF%BC%9A"><span class="nav-text">16、查看python解释器类型：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#16%E3%80%81%E7%BC%96%E7%A0%81%E6%96%B9%E5%BC%8F"><span class="nav-text">16、编码方式</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -662,13 +626,13 @@ target="_blank" rel="noopener" href="https://stackoverflow.com/questions/5528928
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">109k</span>
+    <span title="Symbols count total">110k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:39</span>
+    <span title="Reading time total">1:40</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
