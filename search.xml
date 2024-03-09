@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>1中国马铃薯地膜覆盖增产效应及其影响因素的Meta分析</title>
+    <url>/1%E4%B8%AD%E5%9B%BD%E9%A9%AC%E9%93%83%E8%96%AF%E5%9C%B0%E8%86%9C%E8%A6%86%E7%9B%96%E5%A2%9E%E4%BA%A7%E6%95%88%E5%BA%94%E5%8F%8A%E5%85%B6%E5%BD%B1%E5%93%8D%E5%9B%A0%E7%B4%A0%E7%9A%84meta%E5%88%86%E6%9E%90/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>目的：量化地膜对马铃薯的产量和水分利用效率的影响，分析其中的影响因素</p>
+<p>方法：</p>
+<ul>
+<li>1981—2021 年，Web of Science/知网，291
+篇中国马铃薯地膜覆盖大田试验文献</li>
+<li>用 Meta 分析方法量化影响</li>
+<li>不同区域、不同自然条件等，研究地膜覆盖对马铃薯产量和水分利用效率的影响</li>
+<li>利用 NoteExpress 和 EndNote 进行中英文文献管理；利用 Microsoft
+Office 2010 进行数据收集、数据库建立和一些基础计算；利用 R 语言中的
+metafor 包进行 Meta 分析；利用GraphPad Prism 作图。</li>
+</ul>
+<span id="more"></span>
+<p>结果：</p>
+<ul>
+<li>地膜覆盖使马铃薯产量和水分利用效率分别提高 24.9%和 28.3%</li>
+<li>不同区域地膜增产与提升水分利用效率的效果不同</li>
+<li>种植密度与栽培方式在各区域的响应一致，即低密度种植与垄作条件下，地膜增
+产效应最好。</li>
+</ul>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182139000.png" alt="" style="zoom:45%;" /></p>
+<h3 id="参考文章">参考文章</h3>
+<p>徐菊祯, 张梦璐, 何文清, 隋鹏, 陈源泉, 崔吉晓, 2023.
+中国马铃薯地膜覆盖增产效应及其影响因素的Meta分析. 中国农业科学 56,
+2895–2906.</p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>理论知识</category>
+        <category>文献泛读</category>
+      </categories>
+      <tags>
+        <tag>Meta分析</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2中国北方地区小麦覆盖栽培增产效应的荟萃（Meta）分析</title>
     <url>/2%E4%B8%AD%E5%9B%BD%E5%8C%97%E6%96%B9%E5%9C%B0%E5%8C%BA%E5%B0%8F%E9%BA%A6%E8%A6%86%E7%9B%96%E6%A0%BD%E5%9F%B9%E5%A2%9E%E4%BA%A7%E6%95%88%E5%BA%94%E7%9A%84%E8%8D%9F%E8%90%83%EF%BC%88meta%EF%BC%89%E5%88%86%E6%9E%90/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>目的：明确中国北方地区秸秆覆盖和地膜覆盖技术对小麦生产的影响，探索两种覆盖体系的适宜推广区域。</p>
@@ -46,215 +83,31 @@
       </tags>
   </entry>
   <entry>
-    <title>1中国马铃薯地膜覆盖增产效应及其影响因素的Meta分析</title>
-    <url>/1%E4%B8%AD%E5%9B%BD%E9%A9%AC%E9%93%83%E8%96%AF%E5%9C%B0%E8%86%9C%E8%A6%86%E7%9B%96%E5%A2%9E%E4%BA%A7%E6%95%88%E5%BA%94%E5%8F%8A%E5%85%B6%E5%BD%B1%E5%93%8D%E5%9B%A0%E7%B4%A0%E7%9A%84meta%E5%88%86%E6%9E%90/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>目的：量化地膜对马铃薯的产量和水分利用效率的影响，分析其中的影响因素</p>
-<p>方法：</p>
-<ul>
-<li>1981—2021 年，Web of Science/知网，291
-篇中国马铃薯地膜覆盖大田试验文献</li>
-<li>用 Meta 分析方法量化影响</li>
-<li>不同区域、不同自然条件等，研究地膜覆盖对马铃薯产量和水分利用效率的影响</li>
-<li>利用 NoteExpress 和 EndNote 进行中英文文献管理；利用 Microsoft
-Office 2010 进行数据收集、数据库建立和一些基础计算；利用 R 语言中的
-metafor 包进行 Meta 分析；利用GraphPad Prism 作图。</li>
-</ul>
-<span id="more"></span>
-<p>结果：</p>
-<ul>
-<li>地膜覆盖使马铃薯产量和水分利用效率分别提高 24.9%和 28.3%</li>
-<li>不同区域地膜增产与提升水分利用效率的效果不同</li>
-<li>种植密度与栽培方式在各区域的响应一致，即低密度种植与垄作条件下，地膜增
-产效应最好。</li>
-</ul>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182139000.png" alt="" style="zoom:45%;" /></p>
-<h3 id="参考文章">参考文章</h3>
-<p>徐菊祯, 张梦璐, 何文清, 隋鹏, 陈源泉, 崔吉晓, 2023.
-中国马铃薯地膜覆盖增产效应及其影响因素的Meta分析. 中国农业科学 56,
-2895–2906.</p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-        <category>文献泛读</category>
-      </categories>
-      <tags>
-        <tag>Meta分析</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux-vim</title>
-    <url>/Linux-vim/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一vim有四种模式">一、Vim有四种模式</h1>
-<h2
-id="命令模式正常模式command-mode">1、<strong>命令模式/正常模式</strong>（Command
-mode）</h2>
-<p>敲击键盘动作会被Vim识别为命令，而非输入字符。启动Vim默认进入命令模式。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Vim/三种模式 - 维基教科书，自由的教学读本 (wikibooks.org)](https://zh.m.wikibooks.org/zh-hans/Vim/三种模式)
-">[1]</span></a></sup></p>
-<ul>
-<li><code>i</code>：切换到插入模式<br />
-</li>
-<li><code>：</code>：切换到底线命令模式</li>
-<li><code>v</code>：进入可视化模式(小写V、大写V、Ctrl+V均可进入该模式下)</li>
-<li><code>U</code>：撤销上一步操作</li>
-<li><code>yy</code> - 复制当前行，包括换行符</li>
-<li><code>dd</code> - 剪切当前行，包括换行符</li>
-<li><code>p</code>键可以将内容粘贴到当前光标后面</li>
-</ul>
-<h2 id="插入模式insert-mode">2、<strong>插入模式</strong>（Insert
-mode）</h2>
-<p>编辑文本，需进入该模式</p>
-<ul>
-<li><code>Esc</code>：退出插入模式，进入命令模式</li>
-</ul>
-<h2
-id="底线命令模式last-line-mode">3、<strong>底线命令模式</strong>（Last
-line mode）</h2>
-<ul>
-<li><code>Esc</code>：退出底线命令模式，进入命令模式</li>
-<li><code>q!</code>：不保存，强制退出vim</li>
-<li><code>wq</code>：保存，退出vim</li>
-<li><code>q</code>：不保存，退出vim</li>
-<li><code>w</code>：保存，不退出vim</li>
-</ul>
-<h2
-id="可视化模式visual-mode">4、<strong>可视化模式</strong>(Visual-mode)：</h2>
-<ul>
-<li><p>文本选择：小写V进入（选择是以字符为单位的）、大写V进入（选择是以行为单位的）、Ctrl+V进入（矩形区域作为目标文本，以按下
-Ctrl+v
-位置作为矩形的一角，光标移动的终点位置作为它的对角）<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Linux Vim可视化模式及其用法 (biancheng.net)](http://c.biancheng.net/view/6355.html)
-">[2]</span></a></sup></p></li>
-<li><p>可视化命令：</p>
-<table>
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 85%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;"><strong>命令</strong></th>
-<th style="text-align: left;"><strong>命令</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">d</td>
-<td style="text-align: left;">删除选中的部分文本。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">D</td>
-<td style="text-align: left;">删除选中部分所在的行，和 d
-不同之处在于，即使选中文本中有些字符所在的行没有都选中，删除时也会一并删除。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">y</td>
-<td style="text-align: left;">将选中部分复制到剪贴板中。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">p（小写）</td>
-<td style="text-align: left;">将剪贴板中的内容粘贴到光标之后。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">P（大写）</td>
-<td style="text-align: left;">将剪贴板中的内容粘贴到光标之前。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">u（小写）</td>
-<td
-style="text-align: left;">将选中部分中的大写字符全部改为小写字符。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">U（大写）</td>
-<td
-style="text-align: left;">将选中部分中的小写字符全部改为大写字符。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">&gt;</td>
-<td style="text-align: left;">将选中部分右移（缩进）一个 tab
-键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
-个空白字符的长度）。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">&lt;</td>
-<td style="text-align: left;">将选中部分左移一个 tab
-键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
-个空白字符的长度）。</td>
-</tr>
-</tbody>
-</table></li>
-</ul>
-<h1 id="二小技巧">二、小技巧</h1>
-<h2 id="设置行号">1、设置行号</h2>
-<p>vim ~/.vimrc 写入：set number</p>
-<h2 id="设置粘贴模式">2、设置粘贴模式</h2>
-<p><code>:set paste</code> + 回车 + <code>i</code></p>
-<h2 id="快速到达首尾">3、快速到达首尾</h2>
-<ul>
-<li><code>gg</code>：跳转到文件头</li>
-<li>行数 +<code>gg</code>：跳转到指定行</li>
-<li>shift + g ：跳转到文件末尾</li>
-</ul>
-<h2 id="多行注释">4、多行注释</h2>
-<p><code>:20,30 s/^/#/g</code> ：20-30行 用 #
-注释掉。（python是用#注释地～～～）</p>
-<p><code>:20,30 s/^#//g</code> ：20-30行 取消注释</p>
-<ul>
-<li><p>注释：</p>
-<p>​ Ctrl + v ：vim中的视图模式，把要注释的内容选上 ​ shift + i ：插入字符
-​shift + # ：把#插入到要注释的行前面（在第一行有显示） ​ Esc
-：按至少2次Esc，则会把所有选中的行都在其前面加#</p></li>
-<li><p>取消注释：</p>
-<p>​ Ctrl+v：进入视图模式 ​
-上下方向键选中要注释的行，左右键选择要删除的字符# ​ 按d删除</p></li>
-</ul>
-<h2 id="vim的搜索功能">5、vim的搜索功能</h2>
-<p>在 normal 模式下按下 <code>/</code>
-即可进入查找模式，输入要查找的字符串并按下回车。 Vim
-会跳转到第一个匹配。按下 <code>n</code> 查找下一个，按下 <code>N</code>
-查找上一个。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[在 Vim 中优雅地查找和替换 | Harttle Land](https://harttle.land/2016/08/08/vim-search-in-file.html)
-">[3]</span></a></sup></p>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zh.m.wikibooks.org/zh-hans/Vim/%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F">Vim/三种模式
-- 维基教科书，自由的教学读本
-(wikibooks.org)</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="http://c.biancheng.net/view/6355.html">Linux
-Vim可视化模式及其用法
-(biancheng.net)</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:3">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://harttle.land/2016/08/08/vim-search-in-file.html">在
-Vim 中优雅地查找和替换 | Harttle
-Land</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
+    <title>Endnote X9 Tips</title>
+    <url>/Endnote-X9%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><strong>Endnote X9
+添加标签</strong>：在题录列表区，右键选择label打钩即可，如果为灰色表示10个field都用完了，需要取消其中至少一个field，才可以添加label。</p>
+<p><img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208071606734.png" /></p>
+<p>EndNote的文献题录列表区最多可以展示10个field，大家可按需求进行选择。选择展示的field的方法，共<a
+href="https://zhuanlan.zhihu.com/p/110516363">两种</a>：</p>
+<p><strong>方法1：</strong>右击任意Field→对Field进行勾选/取消勾选</p>
+<figure>
+<img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208072217926.png"
+alt="image-20220807221756570" />
+<figcaption aria-hidden="true">image-20220807221756570</figcaption>
+</figure>
+<p><strong>方法2：</strong>Edit→Preferences→Display
+Fields。此方法可以同时调整顺序及Field在文献题录列表区的列名。</p>
 ]]></content>
       <categories>
         <category>科研学习</category>
         <category>软件使用</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
-        <tag>Vim</tag>
+        <tag>文献管理</tag>
+        <tag>Endnote</tag>
       </tags>
   </entry>
   <entry>
@@ -317,248 +170,6 @@ rebase之abort、continue、skip</a></p>
       </categories>
       <tags>
         <tag>Git</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Endnote X9 Tips</title>
-    <url>/Endnote-X9%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><strong>Endnote X9
-添加标签</strong>：在题录列表区，右键选择label打钩即可，如果为灰色表示10个field都用完了，需要取消其中至少一个field，才可以添加label。</p>
-<p><img
-src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208071606734.png" /></p>
-<p>EndNote的文献题录列表区最多可以展示10个field，大家可按需求进行选择。选择展示的field的方法，共<a
-href="https://zhuanlan.zhihu.com/p/110516363">两种</a>：</p>
-<p><strong>方法1：</strong>右击任意Field→对Field进行勾选/取消勾选</p>
-<figure>
-<img
-src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208072217926.png"
-alt="image-20220807221756570" />
-<figcaption aria-hidden="true">image-20220807221756570</figcaption>
-</figure>
-<p><strong>方法2：</strong>Edit→Preferences→Display
-Fields。此方法可以同时调整顺序及Field在文献题录列表区的列名。</p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>软件使用</category>
-      </categories>
-      <tags>
-        <tag>文献管理</tag>
-        <tag>Endnote</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python-base</title>
-    <url>/Python-base/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1
-id="设置双击.py文件打开的软件">1、设置双击<code>.py</code>文件打开的软件</h1>
-<p>找到一个<code>.py</code>文件，右键点击属性，常规--打开方式--更改，选择打开<code>.py</code>文件的应用。</p>
-<h1 id="pycharm下载包">2、Pycharm<a
-href="https://blog.csdn.net/qiannianguji01/article/details/50397046">下载包</a></h1>
-<ul>
-<li>打开Pycharm，点击File,再点击settings</li>
-<li>点击settings之后再点击project下面的project Interpreter</li>
-<li>接下来点击上面界面右上角的“+”将会出现如下界面：然后在搜索框中搜索需要安装的第三方库（此处搜索requests）然后点击界面左下角的Install
-Package进行安装即可。</li>
-</ul>
-<h1
-id="pycharm已下载包但是提示找不到">3、Pycharm已下载包，但是提示找不到</h1>
-<p>Pycharm已下载包，但是终端的Python却找不到包：有多个Python环境，解释器路径<a
-href="https://blog.csdn.net/qq_41088475/article/details/103984400">不一样</a>。</p>
-<p>查看自己项目大概位置：</p>
-<figure>
-<img
-src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208101115765.png"
-alt="image-20220810111358060" />
-<figcaption aria-hidden="true">image-20220810111358060</figcaption>
-</figure>
-<p>不同项目的解释器可能不一样，打开解释器选择界面：</p>
-<figure>
-<img
-src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208101115636.png"
-alt="image-20220810111051813" />
-<figcaption aria-hidden="true">image-20220810111051813</figcaption>
-</figure>
-<p>选择自己项目相关的解释器，点击Apply，OK：</p>
-<figure>
-<img
-src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208101115390.png"
-alt="image-20220810111247989" />
-<figcaption aria-hidden="true">image-20220810111247989</figcaption>
-</figure>
-<p>再回到终端，包即可使用。</p>
-<h1 id="f-string">4、f-string</h1>
-<p>f-string，亦称为格式化字符串常量（formatted string
-literals），是Python3.6新引入的一种字符串格式化方法。f-string在形式上是以
-<code>f</code> 或 <code>F</code> 修饰符引领的字符串（<code>f'xxx'</code>
-或 <code>F'xxx'</code>），以大括号 <code>&#123;&#125;</code>
-标明被替换的字段；f-string在本质上并不是字符串常量，而是一个在运行时运算求值的表达式。<a
-href="https://blog.csdn.net/sunxb10/article/details/81036693">来源</a></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; i=<span class="string">&#x27;a.tsv&#x27;</span></span>  </span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; <span class="built_in">dd</span> = pd.read_csv(f<span class="string">&#x27;D:/mydata/&#123;i&#125;&#x27;</span>)</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; name = <span class="string">&#x27;Eric&#x27;</span></span></span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; f<span class="string">&#x27;Hello, my name is &#123;name&#125;&#x27;</span></span></span><br><span class="line">&#x27;Hello, my name is Eric&#x27;</span><br></pre></td></tr></table></figure>
-<p>Python 中的字符串格式<a
-href="https://geek-docs.com/python/python-tutorial/python-fstring.html">设置</a>：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line"></span><br><span class="line">name = <span class="string">&#x27;Peter&#x27;</span></span><br><span class="line">age = <span class="number">23</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;%s is %d years old&#x27;</span> % (name, age))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;&#123;&#125; is &#123;&#125; years old&#x27;</span>.<span class="built_in">format</span>(name, age))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&#x27;<span class="subst">&#123;name&#125;</span> is <span class="subst">&#123;age&#125;</span> years old&#x27;</span>)</span><br></pre></td></tr></table></figure>
-<h1 id="从字符串中提取数字">5、从字符串中提取数字</h1>
-<p><a
-href="https://blog.csdn.net/qq_38486203/article/details/80309478">来源</a></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: cp936 -*-</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"> </span><br><span class="line">string=<span class="string">&quot;A1.45，b5，6.45，8.82&quot;</span></span><br><span class="line"><span class="built_in">print</span> re.findall(<span class="string">r&quot;\d+\.?\d*&quot;</span>,string)</span><br><span class="line"> </span><br><span class="line"><span class="comment"># [&#x27;1.45&#x27;, &#x27;5&#x27;, &#x27;6.45&#x27;, &#x27;8.82&#x27;]</span></span><br></pre></td></tr></table></figure>
-<p>正则：<code>"\d+.?\d*"</code></p>
-<ul>
-<li><code>\d+</code>
-匹配1次或者多次数字，注意这里不要写成<code>*</code>，因为即便是小数，小数点之前也得有一个数字；</li>
-<li><code>\.?</code> 这个是匹配小数点的，可能有，也可能没有；</li>
-<li><code>\d*</code>
-这个是匹配小数点之后的数字的，所以是0个或者多个；</li>
-</ul>
-<h1 id="列表中的字符串转换为整数">6、列表中的字符串转换为整数</h1>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">results = [1, 2, 3]</span><br><span class="line">results = list(map(int, results))</span><br><span class="line">nums=[int(num) for num in results]</span><br></pre></td></tr></table></figure>
-<h1 id="sort-与-sorted-区别">7、sort 与 sorted 区别</h1>
-<ul>
-<li>sort 是应用在 list 上的方法，属于列表的成员方法，sorted
-可以对所有可迭代的对象进行排序操作。</li>
-<li>list 的 sort 方法返回的是对已经存在的列表进行操作，而内建函数 sorted
-方法返回的是一个新的 list，而不是在原来的基础上进行的操作。</li>
-<li>sort使用方法为ls.sort()，而sorted使用方法为sorted(ls)</li>
-</ul>
-<p>reverse = True 降序 ， reverse = False 升序（sort和sorted默认）</p>
-<h1 id="pycharm-多行注释取消注释">8、Pycharm 多行注释（取消注释）</h1>
-<p>Ctrl + /</p>
-<h1 id="带if条件语句的lambda函数">9、带if条件语句的lambda函数</h1>
-<p><code>lambda x: 返回值1 if 条件 else (返回值2 if 条件 else 返回值3)</code></p>
-<p>[if符合返回值] <strong>if</strong> 条件 <strong>else</strong>
-[else符合返回值] <a
-href="%5B如何在Python的Lambda函数中使用if，else和elif%20-%200x资讯%20(0xzx.com)%5D(https://0xzx.com/202002080939501826.html)">来源</a></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">verify = lambda x: True if (x &gt; 11 and x &lt; 22) else False</span><br><span class="line">converter = lambda x : x*2 if x &lt; 11 else (x*3 if x &lt; 22 else x)</span><br></pre></td></tr></table></figure>
-<h1 id="asscii值">10、ASSCII值</h1>
-<p><a href="https://tool.oschina.net/commons?type=4">来源</a></p>
-<table>
-<thead>
-<tr class="header">
-<th>ASSCII值</th>
-<th>控制字符</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>48</td>
-<td>0</td>
-</tr>
-<tr class="even">
-<td>49</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td>50</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>...</td>
-<td>...</td>
-</tr>
-<tr class="odd">
-<td>57</td>
-<td>9</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>65</td>
-<td>A</td>
-</tr>
-<tr class="even">
-<td>66</td>
-<td>B</td>
-</tr>
-<tr class="odd">
-<td>67</td>
-<td>C</td>
-</tr>
-<tr class="even">
-<td>...</td>
-<td>...</td>
-</tr>
-<tr class="odd">
-<td>90</td>
-<td>Z</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>97</td>
-<td>a</td>
-</tr>
-<tr class="even">
-<td>98</td>
-<td>b</td>
-</tr>
-<tr class="odd">
-<td>99</td>
-<td>c</td>
-</tr>
-<tr class="even">
-<td>...</td>
-<td>...</td>
-</tr>
-<tr class="odd">
-<td>122</td>
-<td>z</td>
-</tr>
-</tbody>
-</table>
-<h1
-id="列表中嵌套列表变字符为数字排序">11、列表中嵌套列表，变字符为数字排序</h1>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">num=[[&#x27;3&#x27;],[&#x27;9&#x27;],[&#x27;1&#x27;],[&#x27;20&#x27;]]</span><br><span class="line">num2 = []</span><br><span class="line">for j in num:</span><br><span class="line">    num2.append(int(j[0]))</span><br><span class="line">num2 = sorted(num2)</span><br><span class="line">print(num2)</span><br><span class="line"></span><br><span class="line">[1, 3, 9, 20]</span><br></pre></td></tr></table></figure>
-<h1 id="if-name-main">12、if <strong>name</strong> ==
-'<strong>main</strong>'</h1>
-<p><a
-href="https://www.zhihu.com/question/49136398/answer/1654722335">来源</a></p>
-<p><code>if __name__ == '__main__' :</code>后面缩进的内容（代称为A），如果是该python文件被执行，那么该A内容会被执行，如果该文件被导入到另一个文件中，执行另一个文件，A内容不会被执行。</p>
-<p><code>_name_</code>是一个属性，在自己文件中值为main，在其他文件中值为文件名（模块名）。if
-<strong>name</strong> ==
-'<strong>main</strong>'表示是不是本文件，是的话，执行冒号后面缩进的内容。</p>
-<h1 id="字符串是否是正整数">13、字符串是否是正整数</h1>
-<p><code>string.isdigit()</code>：如果是正整数，返回True；反之，返回False。</p>
-<h1 id="文件的创建和写入">14、文件的创建和写入</h1>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;a.txt&quot;</span>,<span class="string">&#x27;w&#x27;</span>)  <span class="keyword">as</span> f:</span><br><span class="line">    f.write(<span class="string">&quot;hello &#123;&#125;,hello &#123;&#125;&quot;</span>.<span class="built_in">format</span>(a, b))</span><br><span class="line"><span class="comment"># w：只写，文件存在覆盖，文件不存在创建</span></span><br><span class="line"><span class="comment"># a：追加，文件存在追加，文件不存在创建</span></span><br><span class="line"><span class="comment"># r：只读，文件存在读，文件不存在返回异常</span></span><br><span class="line"><span class="comment"># x：只写，文件存在返回异常，文件不存在创建</span></span><br><span class="line"><span class="comment"># b：以二进制打开</span></span><br><span class="line"><span class="comment"># t：以文本文件方式打开，默认值</span></span><br><span class="line"><span class="comment"># +：与以上同时使用，以增加功能</span></span><br></pre></td></tr></table></figure>
-<h1 id="局部变量和全局变量">15、局部变量和全局变量</h1>
-<p><a href="http://c.biancheng.net/view/2259.html">来源</a></p>
-<p>1、局部变量（Local
-Variable）：在函数内部定义的变量（只能在函数内部使用）</p>
-<ul>
-<li><code>local()</code>：返回局部变量组成的字典，可以访问变量，但是无法修改变量的值</li>
-</ul>
-<p>2、全局变量（Global Variable）：在所有函数的外部定义的变量</p>
-<ul>
-<li><p>在函数外部定义</p></li>
-<li><p>在函数内部使用global关键词定义</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">text</span>():</span><br><span class="line">    <span class="keyword">global</span> add</span><br><span class="line">    add = <span class="string">&quot;https://adf.com&quot;</span></span><br><span class="line"><span class="comment"># 使用 global 关键字修饰变量名时，不能直接给变量赋初值，否则会引发语法错误。</span></span><br></pre></td></tr></table></figure></li>
-<li><p><code>globals()</code>：返回一个所有全局变量的字典，该字典中的每个键值对，键为变量名，值为该变量的值。变量可访问，也可修改。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Pyname = <span class="string">&quot;Python教程&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">globals</span>()[<span class="string">&#x27;Pyname&#x27;</span>])   <span class="comment"># 输出为Python教程</span></span><br><span class="line"><span class="keyword">global</span>()[<span class="string">&#x27;Pyname&#x27;</span>] = <span class="string">&quot;Python入门教程&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">globals</span>()[<span class="string">&#x27;Pyname&#x27;</span>])   <span class="comment"># 输出为Python入门教程</span></span><br></pre></td></tr></table></figure>
-<h1 id="查看python解释器类型">16、查看python解释器类型：</h1>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import os </span><br><span class="line">import sys</span><br><span class="line"></span><br><span class="line">sys.version  # 内有PyPy即为PyPy解释器</span><br><span class="line">os.name   # 返回有Java，即为Jython解释器</span><br><span class="line">sys.version.startswith</span><br></pre></td></tr></table></figure>
-<h1 id="编码方式">16、编码方式</h1>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import sys</span><br><span class="line">sys.getdefaultencoding()</span><br><span class="line"></span><br><span class="line">from IPython.utils.encoding import get_stream_enc; import sys</span><br><span class="line">get_stream_enc(sys.stdout)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>iPython is getting the encoding from the <a
-href="https://stackoverflow.com/questions/55289288/change-ipython-stream-encoding">environment</a>
-(<code>$LANG</code> etc).</p>
-<p>iPython是从环境中获得编码方式的，目前iPython用的是GBK方式编码</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">get_stream_enc(sys.stdout)</span><br><span class="line">Out[21]: &#x27;gbk&#x27;</span><br></pre></td></tr></table></figure>
-<p>换成utf-8的方式是，</p></li>
-</ul>
-<p>17、类、函数，方法，库</p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>代码相关</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>Pycharm</tag>
       </tags>
   </entry>
   <entry>
@@ -947,25 +558,402 @@ paste 命令 | 菜鸟教程
       </tags>
   </entry>
   <entry>
-    <title>Python 链表</title>
-    <url>/Python%E9%93%BE%E8%A1%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>链表的基本结构：</p>
+    <title>Linux-vim</title>
+    <url>/Linux-vim/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一vim有四种模式">一、Vim有四种模式</h1>
+<h2
+id="命令模式正常模式command-mode">1、<strong>命令模式/正常模式</strong>（Command
+mode）</h2>
+<p>敲击键盘动作会被Vim识别为命令，而非输入字符。启动Vim默认进入命令模式。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Vim/三种模式 - 维基教科书，自由的教学读本 (wikibooks.org)](https://zh.m.wikibooks.org/zh-hans/Vim/三种模式)
+">[1]</span></a></sup></p>
+<ul>
+<li><code>i</code>：切换到插入模式<br />
+</li>
+<li><code>：</code>：切换到底线命令模式</li>
+<li><code>v</code>：进入可视化模式(小写V、大写V、Ctrl+V均可进入该模式下)</li>
+<li><code>U</code>：撤销上一步操作</li>
+<li><code>yy</code> - 复制当前行，包括换行符</li>
+<li><code>dd</code> - 剪切当前行，包括换行符</li>
+<li><code>p</code>键可以将内容粘贴到当前光标后面</li>
+</ul>
+<h2 id="插入模式insert-mode">2、<strong>插入模式</strong>（Insert
+mode）</h2>
+<p>编辑文本，需进入该模式</p>
+<ul>
+<li><code>Esc</code>：退出插入模式，进入命令模式</li>
+</ul>
+<h2
+id="底线命令模式last-line-mode">3、<strong>底线命令模式</strong>（Last
+line mode）</h2>
+<ul>
+<li><code>Esc</code>：退出底线命令模式，进入命令模式</li>
+<li><code>q!</code>：不保存，强制退出vim</li>
+<li><code>wq</code>：保存，退出vim</li>
+<li><code>q</code>：不保存，退出vim</li>
+<li><code>w</code>：保存，不退出vim</li>
+</ul>
+<h2
+id="可视化模式visual-mode">4、<strong>可视化模式</strong>(Visual-mode)：</h2>
+<ul>
+<li><p>文本选择：小写V进入（选择是以字符为单位的）、大写V进入（选择是以行为单位的）、Ctrl+V进入（矩形区域作为目标文本，以按下
+Ctrl+v
+位置作为矩形的一角，光标移动的终点位置作为它的对角）<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Linux Vim可视化模式及其用法 (biancheng.net)](http://c.biancheng.net/view/6355.html)
+">[2]</span></a></sup></p></li>
+<li><p>可视化命令：</p>
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 85%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>命令</strong></th>
+<th style="text-align: left;"><strong>命令</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">d</td>
+<td style="text-align: left;">删除选中的部分文本。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">D</td>
+<td style="text-align: left;">删除选中部分所在的行，和 d
+不同之处在于，即使选中文本中有些字符所在的行没有都选中，删除时也会一并删除。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">将选中部分复制到剪贴板中。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">p（小写）</td>
+<td style="text-align: left;">将剪贴板中的内容粘贴到光标之后。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">P（大写）</td>
+<td style="text-align: left;">将剪贴板中的内容粘贴到光标之前。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">u（小写）</td>
+<td
+style="text-align: left;">将选中部分中的大写字符全部改为小写字符。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">U（大写）</td>
+<td
+style="text-align: left;">将选中部分中的小写字符全部改为大写字符。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&gt;</td>
+<td style="text-align: left;">将选中部分右移（缩进）一个 tab
+键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
+个空白字符的长度）。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&lt;</td>
+<td style="text-align: left;">将选中部分左移一个 tab
+键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
+个空白字符的长度）。</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<h1 id="二小技巧">二、小技巧</h1>
+<h2 id="设置行号">1、设置行号</h2>
+<p>vim ~/.vimrc 写入：set number</p>
+<h2 id="设置粘贴模式">2、设置粘贴模式</h2>
+<p><code>:set paste</code> + 回车 + <code>i</code></p>
+<h2 id="快速到达首尾">3、快速到达首尾</h2>
+<ul>
+<li><code>gg</code>：跳转到文件头</li>
+<li>行数 +<code>gg</code>：跳转到指定行</li>
+<li>shift + g ：跳转到文件末尾</li>
+</ul>
+<h2 id="多行注释">4、多行注释</h2>
+<p><code>:20,30 s/^/#/g</code> ：20-30行 用 #
+注释掉。（python是用#注释地～～～）</p>
+<p><code>:20,30 s/^#//g</code> ：20-30行 取消注释</p>
+<ul>
+<li><p>注释：</p>
+<p>​ Ctrl + v ：vim中的视图模式，把要注释的内容选上 ​ shift + i ：插入字符
+​shift + # ：把#插入到要注释的行前面（在第一行有显示） ​ Esc
+：按至少2次Esc，则会把所有选中的行都在其前面加#</p></li>
+<li><p>取消注释：</p>
+<p>​ Ctrl+v：进入视图模式 ​
+上下方向键选中要注释的行，左右键选择要删除的字符# ​ 按d删除</p></li>
+</ul>
+<h2 id="vim的搜索功能">5、vim的搜索功能</h2>
+<p>在 normal 模式下按下 <code>/</code>
+即可进入查找模式，输入要查找的字符串并按下回车。 Vim
+会跳转到第一个匹配。按下 <code>n</code> 查找下一个，按下 <code>N</code>
+查找上一个。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[在 Vim 中优雅地查找和替换 | Harttle Land](https://harttle.land/2016/08/08/vim-search-in-file.html)
+">[3]</span></a></sup></p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zh.m.wikibooks.org/zh-hans/Vim/%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F">Vim/三种模式
+- 维基教科书，自由的教学读本
+(wikibooks.org)</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="http://c.biancheng.net/view/6355.html">Linux
+Vim可视化模式及其用法
+(biancheng.net)</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:3">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://harttle.land/2016/08/08/vim-search-in-file.html">在
+Vim 中优雅地查找和替换 | Harttle
+Land</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>软件使用</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown Tips</title>
+    <url>/Markdown-Tips/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="题注">题注</h4>
+<p><a
+href="https://www.zhihu.com/question/42802592/answer/383110578">来源</a></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">style</span>=<span class="string">&quot;border-radius: 0.3125em;</span></span></span><br><span class="line"><span class="string"><span class="tag">    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&quot;</span> </span></span><br><span class="line"><span class="tag">    <span class="attr">src</span>=<span class="string">&quot;这里输入图片地址&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;color:orange; border-bottom: 1px solid #d9d9d9;</span></span></span><br><span class="line"><span class="string"><span class="tag">    display: inline-block;</span></span></span><br><span class="line"><span class="string"><span class="tag">    color: #999;</span></span></span><br><span class="line"><span class="string"><span class="tag">    padding: 2px;&quot;</span>&gt;</span>这里输入题注<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>更喜欢这种，图片还可以缩放：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;center&gt;题注&lt;/center&gt;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>博客运营</category>
+        <category>markdown</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python-base</title>
+    <url>/Python-base/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1
+id="设置双击.py文件打开的软件">1、设置双击<code>.py</code>文件打开的软件</h1>
+<p>找到一个<code>.py</code>文件，右键点击属性，常规--打开方式--更改，选择打开<code>.py</code>文件的应用。</p>
+<h1 id="pycharm下载包">2、Pycharm<a
+href="https://blog.csdn.net/qiannianguji01/article/details/50397046">下载包</a></h1>
+<ul>
+<li>打开Pycharm，点击File,再点击settings</li>
+<li>点击settings之后再点击project下面的project Interpreter</li>
+<li>接下来点击上面界面右上角的“+”将会出现如下界面：然后在搜索框中搜索需要安装的第三方库（此处搜索requests）然后点击界面左下角的Install
+Package进行安装即可。</li>
+</ul>
+<h1
+id="pycharm已下载包但是提示找不到">3、Pycharm已下载包，但是提示找不到</h1>
+<p>Pycharm已下载包，但是终端的Python却找不到包：有多个Python环境，解释器路径<a
+href="https://blog.csdn.net/qq_41088475/article/details/103984400">不一样</a>。</p>
+<p>查看自己项目大概位置：</p>
 <figure>
 <img
-src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208311024919.png"
-alt="image-20220831102428767" />
-<figcaption aria-hidden="true">image-20220831102428767</figcaption>
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208101115765.png"
+alt="image-20220810111358060" />
+<figcaption aria-hidden="true">image-20220810111358060</figcaption>
 </figure>
+<p>不同项目的解释器可能不一样，打开解释器选择界面：</p>
+<figure>
+<img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208101115636.png"
+alt="image-20220810111051813" />
+<figcaption aria-hidden="true">image-20220810111051813</figcaption>
+</figure>
+<p>选择自己项目相关的解释器，点击Apply，OK：</p>
+<figure>
+<img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208101115390.png"
+alt="image-20220810111247989" />
+<figcaption aria-hidden="true">image-20220810111247989</figcaption>
+</figure>
+<p>再回到终端，包即可使用。</p>
+<h1 id="f-string">4、f-string</h1>
+<p>f-string，亦称为格式化字符串常量（formatted string
+literals），是Python3.6新引入的一种字符串格式化方法。f-string在形式上是以
+<code>f</code> 或 <code>F</code> 修饰符引领的字符串（<code>f'xxx'</code>
+或 <code>F'xxx'</code>），以大括号 <code>&#123;&#125;</code>
+标明被替换的字段；f-string在本质上并不是字符串常量，而是一个在运行时运算求值的表达式。<a
+href="https://blog.csdn.net/sunxb10/article/details/81036693">来源</a></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; i=<span class="string">&#x27;a.tsv&#x27;</span></span>  </span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; <span class="built_in">dd</span> = pd.read_csv(f<span class="string">&#x27;D:/mydata/&#123;i&#125;&#x27;</span>)</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; name = <span class="string">&#x27;Eric&#x27;</span></span></span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; f<span class="string">&#x27;Hello, my name is &#123;name&#125;&#x27;</span></span></span><br><span class="line">&#x27;Hello, my name is Eric&#x27;</span><br></pre></td></tr></table></figure>
+<p>Python 中的字符串格式<a
+href="https://geek-docs.com/python/python-tutorial/python-fstring.html">设置</a>：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line"></span><br><span class="line">name = <span class="string">&#x27;Peter&#x27;</span></span><br><span class="line">age = <span class="number">23</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;%s is %d years old&#x27;</span> % (name, age))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;&#123;&#125; is &#123;&#125; years old&#x27;</span>.<span class="built_in">format</span>(name, age))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&#x27;<span class="subst">&#123;name&#125;</span> is <span class="subst">&#123;age&#125;</span> years old&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<h1 id="从字符串中提取数字">5、从字符串中提取数字</h1>
+<p><a
+href="https://blog.csdn.net/qq_38486203/article/details/80309478">来源</a></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: cp936 -*-</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"> </span><br><span class="line">string=<span class="string">&quot;A1.45，b5，6.45，8.82&quot;</span></span><br><span class="line"><span class="built_in">print</span> re.findall(<span class="string">r&quot;\d+\.?\d*&quot;</span>,string)</span><br><span class="line"> </span><br><span class="line"><span class="comment"># [&#x27;1.45&#x27;, &#x27;5&#x27;, &#x27;6.45&#x27;, &#x27;8.82&#x27;]</span></span><br></pre></td></tr></table></figure>
+<p>正则：<code>"\d+.?\d*"</code></p>
 <ul>
-<li><p>节点：每个节点有两个部分，左边部分称为值域，用来存放用户数据；右边部分称为指针域，用来存放指向下一个元素的指针。</p></li>
-<li><p>head：head节点永远指向第一个节点</p></li>
-<li><p>tail：tail永远指向最后一个节点</p></li>
-<li><p>None：链表中最后一个节点的指针域为None值</p>
-<span id="more"></span></li>
+<li><code>\d+</code>
+匹配1次或者多次数字，注意这里不要写成<code>*</code>，因为即便是小数，小数点之前也得有一个数字；</li>
+<li><code>\.?</code> 这个是匹配小数点的，可能有，也可能没有；</li>
+<li><code>\d*</code>
+这个是匹配小数点之后的数字的，所以是0个或者多个；</li>
 </ul>
-<p>该代码来源：<a
-href="https://www.bilibili.com/video/BV1nK4y1v7uv?share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9">Python数据结构与算法03——单链表、双链表、单项循环链表</a></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Node</span>(<span class="title class_ inherited__">object</span>):  <span class="comment"># 定义节点类</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,elem</span>):</span><br><span class="line">        self.elem = elem </span><br><span class="line">        self.<span class="built_in">next</span> = <span class="literal">None</span></span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">SingleLinkList</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="comment"># 定义单链表类</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,node=<span class="literal">None</span></span>):</span><br><span class="line">        self._head = node</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">is_empty</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> self._head == <span class="literal">None</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">length</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="comment"># 链表长度</span></span><br><span class="line">        <span class="comment"># cur 游标，用于移动遍历节点</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        <span class="comment"># count 记录数量</span></span><br><span class="line">        count = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            count += <span class="number">1</span></span><br><span class="line">            cur = cur.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> count</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">travel</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="comment"># 遍历整个链表</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            <span class="built_in">print</span>(cur.elem,end=<span class="string">&quot; &quot;</span>)</span><br><span class="line">            cur = cur.<span class="built_in">next</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot; &quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">self,item</span>):</span><br><span class="line">        <span class="comment"># 链表头部添加元素，头插法</span></span><br><span class="line">        node = Node(item)</span><br><span class="line">        node.<span class="built_in">next</span> = self._head</span><br><span class="line">        self._head = node</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">append</span>(<span class="params">self,item</span>):</span><br><span class="line">        <span class="comment"># 链表尾部添加元素</span></span><br><span class="line">        node = Node(item)</span><br><span class="line">        <span class="keyword">if</span> self.is_empty():</span><br><span class="line">            self._head = node</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            cur = self._head</span><br><span class="line">            <span class="keyword">while</span> cur.<span class="built_in">next</span> != <span class="literal">None</span>:</span><br><span class="line">                cur = cur.<span class="built_in">next</span></span><br><span class="line">            cur.<span class="built_in">next</span> =node</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">insert</span>(<span class="params">self,pos,item</span>):</span><br><span class="line">        <span class="comment"># 指定位置添加元素</span></span><br><span class="line">        <span class="comment">#:param pos 从0开始</span></span><br><span class="line">        <span class="keyword">if</span> pos &lt;= <span class="number">0</span>:</span><br><span class="line">            self.add(item)</span><br><span class="line">        <span class="keyword">elif</span> pos &gt; (self.length()-<span class="number">1</span>):</span><br><span class="line">            self.append(item)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            pre = self._head</span><br><span class="line">            count = <span class="number">0</span></span><br><span class="line">            <span class="keyword">while</span> count &lt; (pos-<span class="number">1</span>):</span><br><span class="line">                count += <span class="number">1</span></span><br><span class="line">                pre = pre.<span class="built_in">next</span></span><br><span class="line">            <span class="comment"># 当循环退出后，pre指向pos-1位置</span></span><br><span class="line">            node = Node(item)</span><br><span class="line">            node.<span class="built_in">next</span> = pre.<span class="built_in">next</span></span><br><span class="line">            pre.<span class="built_in">next</span> = node</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">remove</span>(<span class="params">self, item</span>):</span><br><span class="line">        <span class="comment"># 删除节点</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        pre = <span class="literal">None</span></span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">if</span> cur.elem == item:</span><br><span class="line">                <span class="comment"># 先判断此节点是否是头节点</span></span><br><span class="line">                <span class="comment"># 头节点</span></span><br><span class="line">                <span class="keyword">if</span> cur == self._head:</span><br><span class="line">                    self._head = cur.<span class="built_in">next</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    pre.<span class="built_in">next</span> = cur.<span class="built_in">next</span></span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                pre = cur</span><br><span class="line">                cur = cur.<span class="built_in">next</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">search</span>(<span class="params">self,item</span>):</span><br><span class="line">        <span class="comment"># 查找节点是否存在</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">if</span> cur.elem == item:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                cur = cur.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">        ll = SingleLinkList()</span><br><span class="line">        <span class="built_in">print</span>(ll.is_empty())</span><br><span class="line">        <span class="built_in">print</span>(ll.length())</span><br><span class="line"></span><br><span class="line">        ll.append(<span class="number">1</span>)</span><br><span class="line">        <span class="built_in">print</span>(ll.is_empty())</span><br><span class="line">        <span class="built_in">print</span>(ll.length())</span><br><span class="line"></span><br><span class="line">        ll.append(<span class="number">2</span>)</span><br><span class="line">        ll.add(<span class="number">8</span>)</span><br><span class="line">        ll.append(<span class="number">3</span>)</span><br><span class="line">        ll.append(<span class="number">4</span>)</span><br><span class="line">        ll.append(<span class="number">5</span>)</span><br><span class="line">        ll.append(<span class="number">6</span>)</span><br><span class="line">        <span class="comment"># 8 1 2 3 4 5 6 </span></span><br><span class="line">        ll.insert(-<span class="number">1</span>,<span class="number">9</span>)  <span class="comment"># 9 8 1 23456</span></span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.insert(<span class="number">3</span>,<span class="number">100</span>) <span class="comment"># 9 8 1 100 2 3456</span></span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.insert(<span class="number">10</span>,<span class="number">200</span>) <span class="comment"># 9 8 1 100 23456 200</span></span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.remove(<span class="number">100</span>)</span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.remove(<span class="number">9</span>)</span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.remove(<span class="number">200</span>)</span><br><span class="line">        ll.travel()</span><br></pre></td></tr></table></figure>
+<h1 id="列表中的字符串转换为整数">6、列表中的字符串转换为整数</h1>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">results = [1, 2, 3]</span><br><span class="line">results = list(map(int, results))</span><br><span class="line">nums=[int(num) for num in results]</span><br></pre></td></tr></table></figure>
+<h1 id="sort-与-sorted-区别">7、sort 与 sorted 区别</h1>
+<ul>
+<li>sort 是应用在 list 上的方法，属于列表的成员方法，sorted
+可以对所有可迭代的对象进行排序操作。</li>
+<li>list 的 sort 方法返回的是对已经存在的列表进行操作，而内建函数 sorted
+方法返回的是一个新的 list，而不是在原来的基础上进行的操作。</li>
+<li>sort使用方法为ls.sort()，而sorted使用方法为sorted(ls)</li>
+</ul>
+<p>reverse = True 降序 ， reverse = False 升序（sort和sorted默认）</p>
+<h1 id="pycharm-多行注释取消注释">8、Pycharm 多行注释（取消注释）</h1>
+<p>Ctrl + /</p>
+<h1 id="带if条件语句的lambda函数">9、带if条件语句的lambda函数</h1>
+<p><code>lambda x: 返回值1 if 条件 else (返回值2 if 条件 else 返回值3)</code></p>
+<p>[if符合返回值] <strong>if</strong> 条件 <strong>else</strong>
+[else符合返回值] <a
+href="%5B如何在Python的Lambda函数中使用if，else和elif%20-%200x资讯%20(0xzx.com)%5D(https://0xzx.com/202002080939501826.html)">来源</a></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">verify = lambda x: True if (x &gt; 11 and x &lt; 22) else False</span><br><span class="line">converter = lambda x : x*2 if x &lt; 11 else (x*3 if x &lt; 22 else x)</span><br></pre></td></tr></table></figure>
+<h1 id="asscii值">10、ASSCII值</h1>
+<p><a href="https://tool.oschina.net/commons?type=4">来源</a></p>
+<table>
+<thead>
+<tr class="header">
+<th>ASSCII值</th>
+<th>控制字符</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>48</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>49</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>50</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td>57</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>65</td>
+<td>A</td>
+</tr>
+<tr class="even">
+<td>66</td>
+<td>B</td>
+</tr>
+<tr class="odd">
+<td>67</td>
+<td>C</td>
+</tr>
+<tr class="even">
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td>90</td>
+<td>Z</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>97</td>
+<td>a</td>
+</tr>
+<tr class="even">
+<td>98</td>
+<td>b</td>
+</tr>
+<tr class="odd">
+<td>99</td>
+<td>c</td>
+</tr>
+<tr class="even">
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td>122</td>
+<td>z</td>
+</tr>
+</tbody>
+</table>
+<h1
+id="列表中嵌套列表变字符为数字排序">11、列表中嵌套列表，变字符为数字排序</h1>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">num=[[&#x27;3&#x27;],[&#x27;9&#x27;],[&#x27;1&#x27;],[&#x27;20&#x27;]]</span><br><span class="line">num2 = []</span><br><span class="line">for j in num:</span><br><span class="line">    num2.append(int(j[0]))</span><br><span class="line">num2 = sorted(num2)</span><br><span class="line">print(num2)</span><br><span class="line"></span><br><span class="line">[1, 3, 9, 20]</span><br></pre></td></tr></table></figure>
+<h1 id="if-name-main">12、if <strong>name</strong> ==
+'<strong>main</strong>'</h1>
+<p><a
+href="https://www.zhihu.com/question/49136398/answer/1654722335">来源</a></p>
+<p><code>if __name__ == '__main__' :</code>后面缩进的内容（代称为A），如果是该python文件被执行，那么该A内容会被执行，如果该文件被导入到另一个文件中，执行另一个文件，A内容不会被执行。</p>
+<p><code>_name_</code>是一个属性，在自己文件中值为main，在其他文件中值为文件名（模块名）。if
+<strong>name</strong> ==
+'<strong>main</strong>'表示是不是本文件，是的话，执行冒号后面缩进的内容。</p>
+<h1 id="字符串是否是正整数">13、字符串是否是正整数</h1>
+<p><code>string.isdigit()</code>：如果是正整数，返回True；反之，返回False。</p>
+<h1 id="文件的创建和写入">14、文件的创建和写入</h1>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;a.txt&quot;</span>,<span class="string">&#x27;w&#x27;</span>)  <span class="keyword">as</span> f:</span><br><span class="line">    f.write(<span class="string">&quot;hello &#123;&#125;,hello &#123;&#125;&quot;</span>.<span class="built_in">format</span>(a, b))</span><br><span class="line"><span class="comment"># w：只写，文件存在覆盖，文件不存在创建</span></span><br><span class="line"><span class="comment"># a：追加，文件存在追加，文件不存在创建</span></span><br><span class="line"><span class="comment"># r：只读，文件存在读，文件不存在返回异常</span></span><br><span class="line"><span class="comment"># x：只写，文件存在返回异常，文件不存在创建</span></span><br><span class="line"><span class="comment"># b：以二进制打开</span></span><br><span class="line"><span class="comment"># t：以文本文件方式打开，默认值</span></span><br><span class="line"><span class="comment"># +：与以上同时使用，以增加功能</span></span><br></pre></td></tr></table></figure>
+<h1 id="局部变量和全局变量">15、局部变量和全局变量</h1>
+<p><a href="http://c.biancheng.net/view/2259.html">来源</a></p>
+<p>1、局部变量（Local
+Variable）：在函数内部定义的变量（只能在函数内部使用）</p>
+<ul>
+<li><code>local()</code>：返回局部变量组成的字典，可以访问变量，但是无法修改变量的值</li>
+</ul>
+<p>2、全局变量（Global Variable）：在所有函数的外部定义的变量</p>
+<ul>
+<li><p>在函数外部定义</p></li>
+<li><p>在函数内部使用global关键词定义</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">text</span>():</span><br><span class="line">    <span class="keyword">global</span> add</span><br><span class="line">    add = <span class="string">&quot;https://adf.com&quot;</span></span><br><span class="line"><span class="comment"># 使用 global 关键字修饰变量名时，不能直接给变量赋初值，否则会引发语法错误。</span></span><br></pre></td></tr></table></figure></li>
+<li><p><code>globals()</code>：返回一个所有全局变量的字典，该字典中的每个键值对，键为变量名，值为该变量的值。变量可访问，也可修改。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Pyname = <span class="string">&quot;Python教程&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">globals</span>()[<span class="string">&#x27;Pyname&#x27;</span>])   <span class="comment"># 输出为Python教程</span></span><br><span class="line"><span class="keyword">global</span>()[<span class="string">&#x27;Pyname&#x27;</span>] = <span class="string">&quot;Python入门教程&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">globals</span>()[<span class="string">&#x27;Pyname&#x27;</span>])   <span class="comment"># 输出为Python入门教程</span></span><br></pre></td></tr></table></figure>
+<h1 id="查看python解释器类型">16、查看python解释器类型：</h1>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import os </span><br><span class="line">import sys</span><br><span class="line"></span><br><span class="line">sys.version  # 内有PyPy即为PyPy解释器</span><br><span class="line">os.name   # 返回有Java，即为Jython解释器</span><br><span class="line">sys.version.startswith</span><br></pre></td></tr></table></figure>
+<h1 id="编码方式">16、编码方式</h1>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import sys</span><br><span class="line">sys.getdefaultencoding()</span><br><span class="line"></span><br><span class="line">from IPython.utils.encoding import get_stream_enc; import sys</span><br><span class="line">get_stream_enc(sys.stdout)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>iPython is getting the encoding from the <a
+href="https://stackoverflow.com/questions/55289288/change-ipython-stream-encoding">environment</a>
+(<code>$LANG</code> etc).</p>
+<p>iPython是从环境中获得编码方式的，目前iPython用的是GBK方式编码</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">get_stream_enc(sys.stdout)</span><br><span class="line">Out[21]: &#x27;gbk&#x27;</span><br></pre></td></tr></table></figure>
+<p>换成utf-8的方式是，</p></li>
+</ul>
+<p>17、类、函数，方法，库</p>
 ]]></content>
       <categories>
         <category>科研学习</category>
@@ -973,6 +961,7 @@ href="https://www.bilibili.com/video/BV1nK4y1v7uv?share_source=copy_web&amp;vd_s
       </categories>
       <tags>
         <tag>Python</tag>
+        <tag>Pycharm</tag>
       </tags>
   </entry>
   <entry>
@@ -1047,6 +1036,35 @@ HOWTO — Python 3.10.6 documentation</a>
       <tags>
         <tag>Python</tag>
         <tag>Regex</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python 链表</title>
+    <url>/Python%E9%93%BE%E8%A1%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>链表的基本结构：</p>
+<figure>
+<img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208311024919.png"
+alt="image-20220831102428767" />
+<figcaption aria-hidden="true">image-20220831102428767</figcaption>
+</figure>
+<ul>
+<li><p>节点：每个节点有两个部分，左边部分称为值域，用来存放用户数据；右边部分称为指针域，用来存放指向下一个元素的指针。</p></li>
+<li><p>head：head节点永远指向第一个节点</p></li>
+<li><p>tail：tail永远指向最后一个节点</p></li>
+<li><p>None：链表中最后一个节点的指针域为None值</p>
+<span id="more"></span></li>
+</ul>
+<p>该代码来源：<a
+href="https://www.bilibili.com/video/BV1nK4y1v7uv?share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9">Python数据结构与算法03——单链表、双链表、单项循环链表</a></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Node</span>(<span class="title class_ inherited__">object</span>):  <span class="comment"># 定义节点类</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,elem</span>):</span><br><span class="line">        self.elem = elem </span><br><span class="line">        self.<span class="built_in">next</span> = <span class="literal">None</span></span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">SingleLinkList</span>(<span class="title class_ inherited__">object</span>):</span><br><span class="line">    <span class="comment"># 定义单链表类</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,node=<span class="literal">None</span></span>):</span><br><span class="line">        self._head = node</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">is_empty</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">return</span> self._head == <span class="literal">None</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">length</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="comment"># 链表长度</span></span><br><span class="line">        <span class="comment"># cur 游标，用于移动遍历节点</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        <span class="comment"># count 记录数量</span></span><br><span class="line">        count = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            count += <span class="number">1</span></span><br><span class="line">            cur = cur.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> count</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">travel</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="comment"># 遍历整个链表</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            <span class="built_in">print</span>(cur.elem,end=<span class="string">&quot; &quot;</span>)</span><br><span class="line">            cur = cur.<span class="built_in">next</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot; &quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">add</span>(<span class="params">self,item</span>):</span><br><span class="line">        <span class="comment"># 链表头部添加元素，头插法</span></span><br><span class="line">        node = Node(item)</span><br><span class="line">        node.<span class="built_in">next</span> = self._head</span><br><span class="line">        self._head = node</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">append</span>(<span class="params">self,item</span>):</span><br><span class="line">        <span class="comment"># 链表尾部添加元素</span></span><br><span class="line">        node = Node(item)</span><br><span class="line">        <span class="keyword">if</span> self.is_empty():</span><br><span class="line">            self._head = node</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            cur = self._head</span><br><span class="line">            <span class="keyword">while</span> cur.<span class="built_in">next</span> != <span class="literal">None</span>:</span><br><span class="line">                cur = cur.<span class="built_in">next</span></span><br><span class="line">            cur.<span class="built_in">next</span> =node</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">insert</span>(<span class="params">self,pos,item</span>):</span><br><span class="line">        <span class="comment"># 指定位置添加元素</span></span><br><span class="line">        <span class="comment">#:param pos 从0开始</span></span><br><span class="line">        <span class="keyword">if</span> pos &lt;= <span class="number">0</span>:</span><br><span class="line">            self.add(item)</span><br><span class="line">        <span class="keyword">elif</span> pos &gt; (self.length()-<span class="number">1</span>):</span><br><span class="line">            self.append(item)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            pre = self._head</span><br><span class="line">            count = <span class="number">0</span></span><br><span class="line">            <span class="keyword">while</span> count &lt; (pos-<span class="number">1</span>):</span><br><span class="line">                count += <span class="number">1</span></span><br><span class="line">                pre = pre.<span class="built_in">next</span></span><br><span class="line">            <span class="comment"># 当循环退出后，pre指向pos-1位置</span></span><br><span class="line">            node = Node(item)</span><br><span class="line">            node.<span class="built_in">next</span> = pre.<span class="built_in">next</span></span><br><span class="line">            pre.<span class="built_in">next</span> = node</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">remove</span>(<span class="params">self, item</span>):</span><br><span class="line">        <span class="comment"># 删除节点</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        pre = <span class="literal">None</span></span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">if</span> cur.elem == item:</span><br><span class="line">                <span class="comment"># 先判断此节点是否是头节点</span></span><br><span class="line">                <span class="comment"># 头节点</span></span><br><span class="line">                <span class="keyword">if</span> cur == self._head:</span><br><span class="line">                    self._head = cur.<span class="built_in">next</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    pre.<span class="built_in">next</span> = cur.<span class="built_in">next</span></span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                pre = cur</span><br><span class="line">                cur = cur.<span class="built_in">next</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">search</span>(<span class="params">self,item</span>):</span><br><span class="line">        <span class="comment"># 查找节点是否存在</span></span><br><span class="line">        cur = self._head</span><br><span class="line">        <span class="keyword">while</span> cur != <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">if</span> cur.elem == item:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                cur = cur.<span class="built_in">next</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">        ll = SingleLinkList()</span><br><span class="line">        <span class="built_in">print</span>(ll.is_empty())</span><br><span class="line">        <span class="built_in">print</span>(ll.length())</span><br><span class="line"></span><br><span class="line">        ll.append(<span class="number">1</span>)</span><br><span class="line">        <span class="built_in">print</span>(ll.is_empty())</span><br><span class="line">        <span class="built_in">print</span>(ll.length())</span><br><span class="line"></span><br><span class="line">        ll.append(<span class="number">2</span>)</span><br><span class="line">        ll.add(<span class="number">8</span>)</span><br><span class="line">        ll.append(<span class="number">3</span>)</span><br><span class="line">        ll.append(<span class="number">4</span>)</span><br><span class="line">        ll.append(<span class="number">5</span>)</span><br><span class="line">        ll.append(<span class="number">6</span>)</span><br><span class="line">        <span class="comment"># 8 1 2 3 4 5 6 </span></span><br><span class="line">        ll.insert(-<span class="number">1</span>,<span class="number">9</span>)  <span class="comment"># 9 8 1 23456</span></span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.insert(<span class="number">3</span>,<span class="number">100</span>) <span class="comment"># 9 8 1 100 2 3456</span></span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.insert(<span class="number">10</span>,<span class="number">200</span>) <span class="comment"># 9 8 1 100 23456 200</span></span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.remove(<span class="number">100</span>)</span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.remove(<span class="number">9</span>)</span><br><span class="line">        ll.travel()</span><br><span class="line">        ll.remove(<span class="number">200</span>)</span><br><span class="line">        ll.travel()</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>代码相关</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -1385,50 +1403,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </categories>
   </entry>
   <entry>
-    <title>Hexo常用命令</title>
-    <url>/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li><p><code>hexo clean</code> : 清除缓存</p></li>
-<li><p><code>hexo g</code> : generate 生成页面</p></li>
-<li><p><code>hexo s</code>: server 启动本地服务预览,
-将给出的链接复制粘贴到浏览器地址栏即可预览</p></li>
-<li><p><code>hexo d</code>: deploy 部署发布</p>
-<span id="more"></span></li>
-</ul>
-<p>创建文章：layout有三种：post(会发布)、draft(草稿)、page(首页标签页)。三种文章的模板文档在根文档夹的scaffolds里。命令：<code>hexo n [layout] 文档名</code></p>
-<ul>
-<li><code>hexo n 第一篇文章</code>:
-添加名为第一篇文章的发布文章（不加layout, 默认layout是post）</li>
-<li><code>hexo n draft 第二篇文章</code>:
-添加名为第二篇文章的草稿文章，不发布</li>
-<li><code>hexo P 第二篇文章</code>: 草稿文章发布，即将文章从
-<code>source/_drafts</code> 移动到 <code>source/_posts</code></li>
-<li><code>hexo n page 测试页</code>：添加名为测试页的页面，页面不会出现在首页文章列表和归档中，也不支持分类和标签<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Hexo的常用命令](https://blog.csdn.net/sinat_37529938/article/details/111782829)
-">[1]</span></a></sup>，访问地址为：<code>主页地址/测试页</code></li>
-</ul>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/sinat_37529938/article/details/111782829">Hexo的常用命令</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>博客运营</category>
-        <category>其它</category>
-      </categories>
-  </entry>
-  <entry>
     <title>论文投稿之cover letter</title>
     <url>/cover-letter/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Cover
@@ -1694,6 +1668,50 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://z
       </tags>
   </entry>
   <entry>
+    <title>Hexo常用命令</title>
+    <url>/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li><p><code>hexo clean</code> : 清除缓存</p></li>
+<li><p><code>hexo g</code> : generate 生成页面</p></li>
+<li><p><code>hexo s</code>: server 启动本地服务预览,
+将给出的链接复制粘贴到浏览器地址栏即可预览</p></li>
+<li><p><code>hexo d</code>: deploy 部署发布</p>
+<span id="more"></span></li>
+</ul>
+<p>创建文章：layout有三种：post(会发布)、draft(草稿)、page(首页标签页)。三种文章的模板文档在根文档夹的scaffolds里。命令：<code>hexo n [layout] 文档名</code></p>
+<ul>
+<li><code>hexo n 第一篇文章</code>:
+添加名为第一篇文章的发布文章（不加layout, 默认layout是post）</li>
+<li><code>hexo n draft 第二篇文章</code>:
+添加名为第二篇文章的草稿文章，不发布</li>
+<li><code>hexo P 第二篇文章</code>: 草稿文章发布，即将文章从
+<code>source/_drafts</code> 移动到 <code>source/_posts</code></li>
+<li><code>hexo n page 测试页</code>：添加名为测试页的页面，页面不会出现在首页文章列表和归档中，也不支持分类和标签<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Hexo的常用命令](https://blog.csdn.net/sinat_37529938/article/details/111782829)
+">[1]</span></a></sup>，访问地址为：<code>主页地址/测试页</code></li>
+</ul>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/sinat_37529938/article/details/111782829">Hexo的常用命令</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>博客运营</category>
+        <category>其它</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hexo的使用</title>
     <url>/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="一配置参考">一、配置参考</h4>
@@ -1841,62 +1859,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
 style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.vgtiger.com/2021/05/20/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8D%E6%98%BE%E7%A4%BA%E5%9B%BE%E5%BA%8A%E5%9B%BE%E7%89%87%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">Hexo博客不显示图床图片的解决方法
 · vgtiger's Studio</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>博客运营</category>
-        <category>其它</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Markdown Tips</title>
-    <url>/Markdown-Tips/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="题注">题注</h4>
-<p><a
-href="https://www.zhihu.com/question/42802592/answer/383110578">来源</a></p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">style</span>=<span class="string">&quot;border-radius: 0.3125em;</span></span></span><br><span class="line"><span class="string"><span class="tag">    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&quot;</span> </span></span><br><span class="line"><span class="tag">    <span class="attr">src</span>=<span class="string">&quot;这里输入图片地址&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;color:orange; border-bottom: 1px solid #d9d9d9;</span></span></span><br><span class="line"><span class="string"><span class="tag">    display: inline-block;</span></span></span><br><span class="line"><span class="string"><span class="tag">    color: #999;</span></span></span><br><span class="line"><span class="string"><span class="tag">    padding: 2px;&quot;</span>&gt;</span>这里输入题注<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>更喜欢这种，图片还可以缩放：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;center&gt;题注&lt;/center&gt;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>博客运营</category>
-        <category>markdown</category>
-      </categories>
-      <tags>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo部署时报错SSL/TLS connection failed</title>
-    <url>/hexo%E9%83%A8%E7%BD%B2%E6%97%B6%E6%8A%A5%E9%94%99ssl-tls-connection-failed/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
-<p>两种情况：</p>
-<ul>
-<li><p>一种是你给git配置了vpn，vpn断掉了就会出现该提示，恢复本地vpn即可</p></li>
-<li><p>另一种是你没有配置vpn，可以尝试这种方法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[解决git操作fatal: unable to access &#39;xxx&#39;: schannel: failed to receive handshake, SSL/TLS connection](https://www.jianshu.com/p/6773edf6b064)
-">[1]</span></a></sup>：</p>
-<p>找到 .gitconfig 文档（一般位于 <code>C:/Users/xxx/</code>
-目录下）,修改 <code>[http]</code> 中的 <code>sslbackend</code>
-如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[http]</span><br><span class="line">    sslbackend = openssl</span><br></pre></td></tr></table></figure></li>
-</ul>
-<!--more-->
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.jianshu.com/p/6773edf6b064">解决git操作fatal:
-unable to access 'xxx': schannel: failed to receive handshake, SSL/TLS
-connection</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
 </li>
 </ol>
 </div>
@@ -2115,38 +2077,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>Markdown超链接</title>
-    <url>/markdown%E8%B6%85%E9%93%BE%E6%8E%A5/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>行内形式<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Markdown超链接](https://m.imooc.com/wiki/markdownlesson-markdownlink)
-">[1]</span></a></sup>：<code>[百度](https://www.baidu.com/)</code></p>
-<p>全局形式：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[百度][b]</span><br><span class="line">[b]:https://www.baidu.com/</span><br></pre></td></tr></table></figure>
-<p>当一个超链接在文章中反复出现时，可以使用全局声明的形式，减少文章编写的工作量。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[天坛][tiantan]公园，是明清两代皇帝每年祭天和祈祷五谷丰收的地方。[天坛][tiantan]以严谨的建筑布局、奇特的建筑构造和瑰丽的建筑装饰着称于世。</span><br><span class="line">[tiantan]: http://www.tiantanpark.com</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://m.imooc.com/wiki/markdownlesson-markdownlink">Markdown超链接</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>博客运营</category>
-        <category>markdown</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Jupyter Notebook 使用</title>
     <url>/jupyter-notebook-%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="改变默认路径">1、改变默认路径</h3>
@@ -2211,6 +2141,76 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://w
       </tags>
   </entry>
   <entry>
+    <title>hexo部署时报错SSL/TLS connection failed</title>
+    <url>/hexo%E9%83%A8%E7%BD%B2%E6%97%B6%E6%8A%A5%E9%94%99ssl-tls-connection-failed/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
+<p>两种情况：</p>
+<ul>
+<li><p>一种是你给git配置了vpn，vpn断掉了就会出现该提示，恢复本地vpn即可</p></li>
+<li><p>另一种是你没有配置vpn，可以尝试这种方法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[解决git操作fatal: unable to access &#39;xxx&#39;: schannel: failed to receive handshake, SSL/TLS connection](https://www.jianshu.com/p/6773edf6b064)
+">[1]</span></a></sup>：</p>
+<p>找到 .gitconfig 文档（一般位于 <code>C:/Users/xxx/</code>
+目录下）,修改 <code>[http]</code> 中的 <code>sslbackend</code>
+如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[http]</span><br><span class="line">    sslbackend = openssl</span><br></pre></td></tr></table></figure></li>
+</ul>
+<!--more-->
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.jianshu.com/p/6773edf6b064">解决git操作fatal:
+unable to access 'xxx': schannel: failed to receive handshake, SSL/TLS
+connection</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>博客运营</category>
+        <category>其它</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Markdown超链接</title>
+    <url>/markdown%E8%B6%85%E9%93%BE%E6%8E%A5/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>行内形式<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Markdown超链接](https://m.imooc.com/wiki/markdownlesson-markdownlink)
+">[1]</span></a></sup>：<code>[百度](https://www.baidu.com/)</code></p>
+<p>全局形式：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[百度][b]</span><br><span class="line">[b]:https://www.baidu.com/</span><br></pre></td></tr></table></figure>
+<p>当一个超链接在文章中反复出现时，可以使用全局声明的形式，减少文章编写的工作量。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[天坛][tiantan]公园，是明清两代皇帝每年祭天和祈祷五谷丰收的地方。[天坛][tiantan]以严谨的建筑布局、奇特的建筑构造和瑰丽的建筑装饰着称于世。</span><br><span class="line">[tiantan]: http://www.tiantanpark.com</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://m.imooc.com/wiki/markdownlesson-markdownlink">Markdown超链接</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>博客运营</category>
+        <category>markdown</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Mata分析森林图</title>
     <url>/mata%E5%88%86%E6%9E%90%E6%A3%AE%E6%9E%97%E5%9B%BE/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>森林图是以统计指标和统计分析方法为基础，用数值运算结果绘制出的图型。用以综合展示每个被纳入研究的效应量以及汇总的合并效应量<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
@@ -2255,6 +2255,141 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </categories>
       <tags>
         <tag>Meta分析</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NPM---Node 包管理器</title>
+    <url>/npm-node-%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>npm（“Node 包管理器”）是 JavaScript 运行时 Node.js
+的默认程序包管理器。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[什么是 npm —— 写给初学者的编程教程](https://www.freecodecamp.org/chinese/news/what-is-npm-a-node-package-manager-tutorial-for-beginners/)
+">[1]</span></a></sup></p>
+<p>npm 由两个主要部分组成：</p>
+<ul>
+<li><p>用于发布和下载程序包的 CLI（命令行界面）工具</p></li>
+<li><p>托管 JavaScript 程序包的 在线存储库<span id="more"></span></p></li>
+</ul>
+<p>为了更直观地解释，我们可以将存储库 npmjs.com
+视为一个物流集散中心，该中心从卖方（npm
+包裹的作者）那里接收货物的包裹，并将这些货物分发给买方（npm
+包裹的用户）。</p>
+<p>为了促进此过程，npmjs.com 物流集散中心雇用了一群勤劳的袋熊（npm
+CLI），他们将被分配给每个 npmjs.com 用户作为私人助理。
+因此，dependencies（依赖项）会如下传递给 JavaScript 开发人员：</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301222349448.png" /></p>
+<p>发布 JS 软件包的过程如下：</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301222349502.png" /></p>
+<h4 id="package.json">package.json</h4>
+<p>每个 JavaScript 项目（无论是 Node.js 还是浏览器应用程序）都可以被当作
+npm 软件包，并且通过 package.json 来描述项目和软件包信息。</p>
+<p>我们可以将 package.json 视为快递盒子上的运输信息。</p>
+<p>当运行 <code>npm init</code> 初始化 JavaScript/Node.js 项目时，将生成
+<code>package.json</code>文件，文件内的内容(基本元数据)由开发人员提供：</p>
+<ul>
+<li><code>name</code>：JavaScript 项目或库的名称。</li>
+<li><code>version</code>：项目的版本。通常，在应用程序开发中，由于没有必要对开源库进行版本控制，因此经常忽略这一块。但是，仍可以用它来定义版本。</li>
+<li><code>description</code>：项目的描述。</li>
+<li><code>license</code>：项目的许可证。</li>
+</ul>
+<h4 id="npm-scripts">npm scripts</h4>
+<p><code>package.json</code> 还支持一个 <code>scripts</code>
+属性，可以把它当作在项目本地运行的命令行工具。例如，一个 npm 项目的
+<code>scripts</code>部分可能看起来像这样：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;scripts&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;build&quot;</span><span class="punctuation">:</span> <span class="string">&quot;tsc&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;format&quot;</span><span class="punctuation">:</span> <span class="string">&quot;prettier --write **/*.ts&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;format-check&quot;</span><span class="punctuation">:</span> <span class="string">&quot;prettier --check **/*.ts&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;lint&quot;</span><span class="punctuation">:</span> <span class="string">&quot;eslint src/**/*.ts&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;pack&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ncc build&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;test&quot;</span><span class="punctuation">:</span> <span class="string">&quot;jest&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;all&quot;</span><span class="punctuation">:</span> <span class="string">&quot;npm run build &amp;&amp; npm run format &amp;&amp; npm run lint &amp;&amp; npm run pack &amp;&amp; npm test&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<p><code>eslint</code>，<code>prettier</code>，<code>ncc</code>，<code>jest</code>
+不是安装为全局可执行文件，而是安装在项目本地的
+<code>node_modules/.bin/</code> 中。</p>
+<p>最新引入的 <a
+href="https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/">npx</a>
+使我们可以像在全局安装程序一样运行这些 <code>node_modules</code>
+项目作用域命令，方法是在其前面加上
+<code>npx ...</code>（即<code>npx prettier --write ** / *。ts</code>）。</p>
+<h4 id="package-lock.json">package-lock.json</h4>
+<p>该文件描述了 npm JavaScript 项目中使用的依赖项的确切版本。如果
+<code>package.json</code> 是通用的描述性标签，则
+<code>package-lock.json</code> 是成分表。</p>
+<p>就像我们通常不会读取食品包装袋上的成分表（除非你太无聊或需要知道）一样，<code>package-lock.json</code>
+并不会被开发人员一行一行进行读取。</p>
+<p><code>package-lock.json</code> 通常是由 <code>npm install</code>
+命令生成的，也可以由我们的 NPM CLI 工具读取，以确保使用
+<code>npm ci</code> 复制项目的构建环境。</p>
+<h4 id="dependencies-vs-devdependencies">dependencies vs
+devDependencies</h4>
+<p>devDependencies 里面的插件只用于开发环境，不用于生产环境，而
+dependencies
+是需要发布到生产环境的。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[npm -i 与npm install -s与-d的区别](https://www.cnblogs.com/cina33blogs/p/9210931.html)
+">[2]</span></a></sup></p>
+<p>这两个以键值对象的形式出现，其中 npm 库的名称为键，其<a
+href="https://semver.org/">语义格式</a>版本为值。 大家可以看看 <a
+href="https://github.com/actions/typescript-action">Github 的 TypeScript
+操作模板</a>中的示例：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;dependencies&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;@actions/core&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^1.2.3&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;@actions/github&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^2.1.1&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;devDependencies&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;@types/jest&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^25.1.4&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;@types/node&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^13.9.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;@typescript-eslint/parser&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^2.22.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;@zeit/ncc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^0.21.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;eslint&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^6.8.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;eslint-plugin-github&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^3.4.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;eslint-plugin-jest&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^23.8.2&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;jest&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^25.1.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;jest-circus&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^25.1.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;js-yaml&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^3.13.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;prettier&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^1.19.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;ts-jest&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^25.2.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;typescript&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^3.8.3&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>这些依赖通过带有 <code>--save</code> 或 <code>--save-dev</code>
+标志的 <code>npm install</code> 命令安装。
+它们分别用于生产和开发/测试环境。
+在下一节中，我们将更深入地研究这些软件包的安装。</p>
+<p>同时，理解语义版本前面的符号非常重要（假设你已经阅读 <a
+href="https://semver.org/">semver</a> 的 <code>major.minor.patch</code>
+模型）：</p>
+<ul>
+<li><code>^</code>：表示最新的次版本，例如， <code>^1.0.4</code>
+可能会安装主版本系列 <code>1</code> 的最新次版本
+<code>1.3.0</code>。</li>
+<li><code>〜</code>：表示最新的补丁程序版本，与 <code>^</code> 类似，
+<code>〜1.0.4</code> 可能会安装次版本系列 <code>1.0</code>
+的最新次版本<code>1.0.7</code>。</li>
+</ul>
+<p>所有这些确切的软件包版本都将记录在 <code>package-lock.json</code>
+文件中。</p>
+<h4 id="npm-install">npm install</h4>
+<p>这是现在我们开发 JavaScript/Node.js 应用程序时最常用的命令。</p>
+<p>默认情况下，<code>npm install &lt;package-name&gt;</code> 将安装带有
+<code>^</code> 版本号的软件包的最新版本。npm 项目上下文中的
+<code>npm install</code> 将根据 <code>package.json</code>
+规范将软件包下载到项目的 <code>node_modules</code>
+文件夹中，从而升级软件包的版本（并重新生成
+<code>package-lock.json</code> ）。
+<code>npm install &lt;package-name&gt;</code> 可以基于 <code>^</code> 和
+<code>〜</code> 版本匹配。</p>
+<p>如果要在全局上下文中安装程序包，可以在机器的任何地方使用它，则可以指定全局标志
+<code>-g</code>（例如 <a
+href="https://github.com/tapio/live-server">live-server</a>）。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i module_name  -S  = &gt;  npm install module_name --save    写入到 dependencies 对象</span><br><span class="line"></span><br><span class="line">npm i module_name  -D  =&gt; npm install module_name --save-dev   写入到 devDependencies 对象</span><br><span class="line"></span><br><span class="line">npm i module_name  -g  全局安装</span><br></pre></td></tr></table></figure>
+<h4 id="参考文章">参考文章</h4>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.freecodecamp.org/chinese/news/what-is-npm-a-node-package-manager-tutorial-for-beginners/">什么是
+npm —— 写给初学者的编程教程</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.cnblogs.com/cina33blogs/p/9210931.html">npm
+-i 与npm install -s与-d的区别</a><a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>代码相关</category>
+      </categories>
+      <tags>
+        <tag>NPM</tag>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -2459,138 +2594,18 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>NPM---Node 包管理器</title>
-    <url>/npm-node-%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>npm（“Node 包管理器”）是 JavaScript 运行时 Node.js
-的默认程序包管理器。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[什么是 npm —— 写给初学者的编程教程](https://www.freecodecamp.org/chinese/news/what-is-npm-a-node-package-manager-tutorial-for-beginners/)
-">[1]</span></a></sup></p>
-<p>npm 由两个主要部分组成：</p>
-<ul>
-<li><p>用于发布和下载程序包的 CLI（命令行界面）工具</p></li>
-<li><p>托管 JavaScript 程序包的 在线存储库<span id="more"></span></p></li>
-</ul>
-<p>为了更直观地解释，我们可以将存储库 npmjs.com
-视为一个物流集散中心，该中心从卖方（npm
-包裹的作者）那里接收货物的包裹，并将这些货物分发给买方（npm
-包裹的用户）。</p>
-<p>为了促进此过程，npmjs.com 物流集散中心雇用了一群勤劳的袋熊（npm
-CLI），他们将被分配给每个 npmjs.com 用户作为私人助理。
-因此，dependencies（依赖项）会如下传递给 JavaScript 开发人员：</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301222349448.png" /></p>
-<p>发布 JS 软件包的过程如下：</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301222349502.png" /></p>
-<h4 id="package.json">package.json</h4>
-<p>每个 JavaScript 项目（无论是 Node.js 还是浏览器应用程序）都可以被当作
-npm 软件包，并且通过 package.json 来描述项目和软件包信息。</p>
-<p>我们可以将 package.json 视为快递盒子上的运输信息。</p>
-<p>当运行 <code>npm init</code> 初始化 JavaScript/Node.js 项目时，将生成
-<code>package.json</code>文件，文件内的内容(基本元数据)由开发人员提供：</p>
-<ul>
-<li><code>name</code>：JavaScript 项目或库的名称。</li>
-<li><code>version</code>：项目的版本。通常，在应用程序开发中，由于没有必要对开源库进行版本控制，因此经常忽略这一块。但是，仍可以用它来定义版本。</li>
-<li><code>description</code>：项目的描述。</li>
-<li><code>license</code>：项目的许可证。</li>
-</ul>
-<h4 id="npm-scripts">npm scripts</h4>
-<p><code>package.json</code> 还支持一个 <code>scripts</code>
-属性，可以把它当作在项目本地运行的命令行工具。例如，一个 npm 项目的
-<code>scripts</code>部分可能看起来像这样：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;scripts&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;build&quot;</span><span class="punctuation">:</span> <span class="string">&quot;tsc&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;format&quot;</span><span class="punctuation">:</span> <span class="string">&quot;prettier --write **/*.ts&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;format-check&quot;</span><span class="punctuation">:</span> <span class="string">&quot;prettier --check **/*.ts&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;lint&quot;</span><span class="punctuation">:</span> <span class="string">&quot;eslint src/**/*.ts&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;pack&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ncc build&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;test&quot;</span><span class="punctuation">:</span> <span class="string">&quot;jest&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;all&quot;</span><span class="punctuation">:</span> <span class="string">&quot;npm run build &amp;&amp; npm run format &amp;&amp; npm run lint &amp;&amp; npm run pack &amp;&amp; npm test&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-<p><code>eslint</code>，<code>prettier</code>，<code>ncc</code>，<code>jest</code>
-不是安装为全局可执行文件，而是安装在项目本地的
-<code>node_modules/.bin/</code> 中。</p>
-<p>最新引入的 <a
-href="https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/">npx</a>
-使我们可以像在全局安装程序一样运行这些 <code>node_modules</code>
-项目作用域命令，方法是在其前面加上
-<code>npx ...</code>（即<code>npx prettier --write ** / *。ts</code>）。</p>
-<h4 id="package-lock.json">package-lock.json</h4>
-<p>该文件描述了 npm JavaScript 项目中使用的依赖项的确切版本。如果
-<code>package.json</code> 是通用的描述性标签，则
-<code>package-lock.json</code> 是成分表。</p>
-<p>就像我们通常不会读取食品包装袋上的成分表（除非你太无聊或需要知道）一样，<code>package-lock.json</code>
-并不会被开发人员一行一行进行读取。</p>
-<p><code>package-lock.json</code> 通常是由 <code>npm install</code>
-命令生成的，也可以由我们的 NPM CLI 工具读取，以确保使用
-<code>npm ci</code> 复制项目的构建环境。</p>
-<h4 id="dependencies-vs-devdependencies">dependencies vs
-devDependencies</h4>
-<p>devDependencies 里面的插件只用于开发环境，不用于生产环境，而
-dependencies
-是需要发布到生产环境的。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[npm -i 与npm install -s与-d的区别](https://www.cnblogs.com/cina33blogs/p/9210931.html)
-">[2]</span></a></sup></p>
-<p>这两个以键值对象的形式出现，其中 npm 库的名称为键，其<a
-href="https://semver.org/">语义格式</a>版本为值。 大家可以看看 <a
-href="https://github.com/actions/typescript-action">Github 的 TypeScript
-操作模板</a>中的示例：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;dependencies&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;@actions/core&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^1.2.3&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;@actions/github&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^2.1.1&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;devDependencies&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;@types/jest&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^25.1.4&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;@types/node&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^13.9.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;@typescript-eslint/parser&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^2.22.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;@zeit/ncc&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^0.21.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;eslint&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^6.8.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;eslint-plugin-github&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^3.4.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;eslint-plugin-jest&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^23.8.2&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;jest&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^25.1.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;jest-circus&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^25.1.0&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;js-yaml&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^3.13.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;prettier&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^1.19.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;ts-jest&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^25.2.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;typescript&quot;</span><span class="punctuation">:</span> <span class="string">&quot;^3.8.3&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-<p>这些依赖通过带有 <code>--save</code> 或 <code>--save-dev</code>
-标志的 <code>npm install</code> 命令安装。
-它们分别用于生产和开发/测试环境。
-在下一节中，我们将更深入地研究这些软件包的安装。</p>
-<p>同时，理解语义版本前面的符号非常重要（假设你已经阅读 <a
-href="https://semver.org/">semver</a> 的 <code>major.minor.patch</code>
-模型）：</p>
-<ul>
-<li><code>^</code>：表示最新的次版本，例如， <code>^1.0.4</code>
-可能会安装主版本系列 <code>1</code> 的最新次版本
-<code>1.3.0</code>。</li>
-<li><code>〜</code>：表示最新的补丁程序版本，与 <code>^</code> 类似，
-<code>〜1.0.4</code> 可能会安装次版本系列 <code>1.0</code>
-的最新次版本<code>1.0.7</code>。</li>
-</ul>
-<p>所有这些确切的软件包版本都将记录在 <code>package-lock.json</code>
-文件中。</p>
-<h4 id="npm-install">npm install</h4>
-<p>这是现在我们开发 JavaScript/Node.js 应用程序时最常用的命令。</p>
-<p>默认情况下，<code>npm install &lt;package-name&gt;</code> 将安装带有
-<code>^</code> 版本号的软件包的最新版本。npm 项目上下文中的
-<code>npm install</code> 将根据 <code>package.json</code>
-规范将软件包下载到项目的 <code>node_modules</code>
-文件夹中，从而升级软件包的版本（并重新生成
-<code>package-lock.json</code> ）。
-<code>npm install &lt;package-name&gt;</code> 可以基于 <code>^</code> 和
-<code>〜</code> 版本匹配。</p>
-<p>如果要在全局上下文中安装程序包，可以在机器的任何地方使用它，则可以指定全局标志
-<code>-g</code>（例如 <a
-href="https://github.com/tapio/live-server">live-server</a>）。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i module_name  -S  = &gt;  npm install module_name --save    写入到 dependencies 对象</span><br><span class="line"></span><br><span class="line">npm i module_name  -D  =&gt; npm install module_name --save-dev   写入到 devDependencies 对象</span><br><span class="line"></span><br><span class="line">npm i module_name  -g  全局安装</span><br></pre></td></tr></table></figure>
-<h4 id="参考文章">参考文章</h4>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.freecodecamp.org/chinese/news/what-is-npm-a-node-package-manager-tutorial-for-beginners/">什么是
-npm —— 写给初学者的编程教程</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.cnblogs.com/cina33blogs/p/9210931.html">npm
--i 与npm install -s与-d的区别</a><a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
+    <title>Numpy不用省略号和科学计数法</title>
+    <url>/numpy%E4%B8%8D%E7%94%A8%E7%9C%81%E7%95%A5%E5%8F%B7%E5%92%8C%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">np.set_printoptions(threshold = np.inf) <span class="comment"># 不使用省略号表示</span></span><br><span class="line">np.set_printoptions(suppress = <span class="literal">True</span>) <span class="comment"># 不使用科学计数显示</span></span><br></pre></td></tr></table></figure>
+<span id="more"></span>
 ]]></content>
       <categories>
         <category>科研学习</category>
         <category>代码相关</category>
       </categories>
       <tags>
-        <tag>NPM</tag>
-        <tag>Java</tag>
+        <tag>Python</tag>
+        <tag>Numpy</tag>
       </tags>
   </entry>
   <entry>
@@ -2763,10 +2778,39 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>Numpy不用省略号和科学计数法</title>
-    <url>/numpy%E4%B8%8D%E7%94%A8%E7%9C%81%E7%95%A5%E5%8F%B7%E5%92%8C%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">np.set_printoptions(threshold = np.inf) <span class="comment"># 不使用省略号表示</span></span><br><span class="line">np.set_printoptions(suppress = <span class="literal">True</span>) <span class="comment"># 不使用科学计数显示</span></span><br></pre></td></tr></table></figure>
+    <title>pip下载太慢</title>
+    <url>/pip%E4%B8%8B%E8%BD%BD%E5%A4%AA%E6%85%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="临时换源">临时换源：</h4>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install django -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+<p>清华：<code>https://pypi.tuna.tsinghua.edu.cn/simple</code>
+中科大：<code>https://mirrors.bfsu.edu.cn/pypi/web/simple/</code>
+阿里云：<code>https://mirrors.aliyun.com/pypi/simple/</code>
+豆瓣：<code>http://pypi.doubanio.com/simple/</code></p>
 <span id="more"></span>
+<h4
+id="永久换源1">永久换源<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[pip换源 -pip更换国内镜像源](https://blog.csdn.net/xuezhangjun0121/article/details/81664260)
+">[1]</span></a></sup>：</h4>
+<p>linux： 修改 ~/.pip/pip.conf (没有就创建一个)， 内容如下：
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure></p>
+<p>windows:
+直接在user目录中创建一个pip目录，如：<code>C:\Users\xx\pip</code>，新建文件pip.ini，内容如下
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure></p>
+<h4 id="参考文章">参考文章</h4>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/xuezhangjun0121/article/details/81664260">pip换源
+-pip更换国内镜像源</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
 ]]></content>
       <categories>
         <category>科研学习</category>
@@ -2774,7 +2818,106 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </categories>
       <tags>
         <tag>Python</tag>
-        <tag>Numpy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>P2七校巡回演讲002图像基础知识和规范</title>
+    <url>/p2%E4%B8%83%E6%A0%A1%E5%B7%A1%E5%9B%9E%E6%BC%94%E8%AE%B2002%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%92%8C%E8%A7%84%E8%8C%83/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141655230.png" alt="" style="zoom:20%;" /></p>
+<p>ppt绘制的图片，可导出位图、矢量图（emf、wmf）</p>
+<span id="more"></span>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142211627.png" alt="" style="zoom:20%;" /></p>
+<p>颜色种类对应位深度</p>
+<p>查看图片信息：</p>
+<ul>
+<li><p>windows：右键--属性--详细信息</p></li>
+<li><p>Photoshop：</p>
+<ul>
+<li><p>图像--图像大小：看dpi、实际尺寸</p></li>
+<li><p>图像--模式（勾选rgb,8位通道），三种通道，每个通道有<code>2^8</code>种颜色，总的颜色种类有（<code>2^8</code>）×（<code>2^8</code>）×（<code>2^8</code>）=<code>2^24</code></p></li>
+<li><p>文件--存储为tiff：lzw压缩投稿</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142223031.png" alt="" style="zoom:25%;" /></p></li>
+</ul></li>
+</ul>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142218219.png" alt="" style="zoom:20%;" /></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142223062.png" alt="" style="zoom:20%;" /></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142223967.png" alt="" style="zoom:20%;" /></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142228198.png" alt="" style="zoom:20%;" /></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142232244.png" alt="" style="zoom:20%;" /></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142235076.png" alt="" style="zoom:20%;" /></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142236595.png" alt="" style="zoom:20%;" /></p>
+<center>
+300dpi对最小图片要求像素354
+</center>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142238968.png" alt="" style="zoom:20%;" /></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142240705.png" alt="" style="zoom:20%;" /></p>
+<p>等宽字体：</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142242708.png" alt="" style="zoom:25%;" /></p>
+<p>第三种字体symbol:</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142244649.png" alt="" style="zoom:20%;" /></p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>理论知识</category>
+      </categories>
+      <tags>
+        <tag>科研绘图</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python (matplotlib)保存矢量图</title>
+    <url>/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="保存矢量图">保存矢量图</h3>
+<p>语法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Python中Matplotlib Savefig()不同参数的使用](https://blog.csdn.net/wilbeok/article/details/111194473)
+">[1]</span></a></sup>：</p>
+<p><code>savefig(fname, dpi=None, facecolor=’w’, edgecolor=’w’, orientation=’portrait’, papertype=None, format=None, transparent=False, bbox_inches=None, pad_inches=0.1, frameon=None, metadata=None)</code></p>
+<p>简单使用：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.savefig(<span class="string">&#x27;C:\\Users\\Lenovo\\Pictures\\test03.svg&#x27;</span>, <span class="built_in">format</span>=<span class="string">&#x27;svg&#x27;</span>,dpi = <span class="number">600</span>,transparent=<span class="literal">False</span>,bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<ul>
+<li>fname即
+<code>test03.svg</code>，<code>format='svg'</code>，<code>dpi = 600</code>
+为导出矢量图的三个参数</li>
+<li><code>transparent=False</code> ：照片背景不要透明</li>
+<li><code>bbox_inches='tight'</code>
+：使未保存到图中的图例（或其他部分）包含进来，避免图片保存下来不全。bbox_inches的作用是调整图的bbox,
+即bounding
+box(边界框)<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Python_matplotlib图例放在外侧保存时显示不完整问题解决](https://blog.csdn.net/Poul_henry/article/details/88311964)
+">[2]</span></a></sup></li>
+</ul>
+<span id="more"></span>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/wilbeok/article/details/111194473">Python中Matplotlib
+Savefig()不同参数的使用</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/Poul_henry/article/details/88311964">Python_matplotlib图例放在外侧保存时显示不完整问题解决</a><a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>代码相关</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>Matplotlib</tag>
       </tags>
   </entry>
   <entry>
@@ -2984,93 +3127,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>P2七校巡回演讲002图像基础知识和规范</title>
-    <url>/p2%E4%B8%83%E6%A0%A1%E5%B7%A1%E5%9B%9E%E6%BC%94%E8%AE%B2002%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%92%8C%E8%A7%84%E8%8C%83/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141655230.png" alt="" style="zoom:20%;" /></p>
-<p>ppt绘制的图片，可导出位图、矢量图（emf、wmf）</p>
-<span id="more"></span>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142211627.png" alt="" style="zoom:20%;" /></p>
-<p>颜色种类对应位深度</p>
-<p>查看图片信息：</p>
-<ul>
-<li><p>windows：右键--属性--详细信息</p></li>
-<li><p>Photoshop：</p>
-<ul>
-<li><p>图像--图像大小：看dpi、实际尺寸</p></li>
-<li><p>图像--模式（勾选rgb,8位通道），三种通道，每个通道有<code>2^8</code>种颜色，总的颜色种类有（<code>2^8</code>）×（<code>2^8</code>）×（<code>2^8</code>）=<code>2^24</code></p></li>
-<li><p>文件--存储为tiff：lzw压缩投稿</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142223031.png" alt="" style="zoom:25%;" /></p></li>
-</ul></li>
-</ul>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142218219.png" alt="" style="zoom:20%;" /></p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142223062.png" alt="" style="zoom:20%;" /></p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142223967.png" alt="" style="zoom:20%;" /></p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142228198.png" alt="" style="zoom:20%;" /></p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142232244.png" alt="" style="zoom:20%;" /></p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142235076.png" alt="" style="zoom:20%;" /></p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142236595.png" alt="" style="zoom:20%;" /></p>
-<center>
-300dpi对最小图片要求像素354
-</center>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142238968.png" alt="" style="zoom:20%;" /></p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142240705.png" alt="" style="zoom:20%;" /></p>
-<p>等宽字体：</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142242708.png" alt="" style="zoom:25%;" /></p>
-<p>第三种字体symbol:</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142244649.png" alt="" style="zoom:20%;" /></p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-      </categories>
-      <tags>
-        <tag>科研绘图</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>pip下载太慢</title>
-    <url>/pip%E4%B8%8B%E8%BD%BD%E5%A4%AA%E6%85%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="临时换源">临时换源：</h4>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">pip install django -i https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
-<p>清华：<code>https://pypi.tuna.tsinghua.edu.cn/simple</code>
-中科大：<code>https://mirrors.bfsu.edu.cn/pypi/web/simple/</code>
-阿里云：<code>https://mirrors.aliyun.com/pypi/simple/</code>
-豆瓣：<code>http://pypi.doubanio.com/simple/</code></p>
-<span id="more"></span>
-<h4
-id="永久换源1">永久换源<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[pip换源 -pip更换国内镜像源](https://blog.csdn.net/xuezhangjun0121/article/details/81664260)
-">[1]</span></a></sup>：</h4>
-<p>linux： 修改 ~/.pip/pip.conf (没有就创建一个)， 内容如下：
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure></p>
-<p>windows:
-直接在user目录中创建一个pip目录，如：<code>C:\Users\xx\pip</code>，新建文件pip.ini，内容如下
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url = https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure></p>
-<h4 id="参考文章">参考文章</h4>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/xuezhangjun0121/article/details/81664260">pip换源
--pip更换国内镜像源</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>代码相关</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python(matplotlib) 改变画布背景</title>
     <url>/python-matplotlib-%E6%94%B9%E5%8F%98%E7%94%BB%E5%B8%83%E8%83%8C%E6%99%AF/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>起因：为了设置画布不透明效果</p>
@@ -3135,133 +3191,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       <tags>
         <tag>Python</tag>
         <tag>plt</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python (matplotlib)保存矢量图</title>
-    <url>/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="保存矢量图">保存矢量图</h3>
-<p>语法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Python中Matplotlib Savefig()不同参数的使用](https://blog.csdn.net/wilbeok/article/details/111194473)
-">[1]</span></a></sup>：</p>
-<p><code>savefig(fname, dpi=None, facecolor=’w’, edgecolor=’w’, orientation=’portrait’, papertype=None, format=None, transparent=False, bbox_inches=None, pad_inches=0.1, frameon=None, metadata=None)</code></p>
-<p>简单使用：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.savefig(<span class="string">&#x27;C:\\Users\\Lenovo\\Pictures\\test03.svg&#x27;</span>, <span class="built_in">format</span>=<span class="string">&#x27;svg&#x27;</span>,dpi = <span class="number">600</span>,transparent=<span class="literal">False</span>,bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-<ul>
-<li>fname即
-<code>test03.svg</code>，<code>format='svg'</code>，<code>dpi = 600</code>
-为导出矢量图的三个参数</li>
-<li><code>transparent=False</code> ：照片背景不要透明</li>
-<li><code>bbox_inches='tight'</code>
-：使未保存到图中的图例（或其他部分）包含进来，避免图片保存下来不全。bbox_inches的作用是调整图的bbox,
-即bounding
-box(边界框)<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Python_matplotlib图例放在外侧保存时显示不完整问题解决](https://blog.csdn.net/Poul_henry/article/details/88311964)
-">[2]</span></a></sup></li>
-</ul>
-<span id="more"></span>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/wilbeok/article/details/111194473">Python中Matplotlib
-Savefig()不同参数的使用</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/Poul_henry/article/details/88311964">Python_matplotlib图例放在外侧保存时显示不完整问题解决</a><a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>代码相关</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>Matplotlib</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vscode的Jupyter的change presentation</title>
-    <url>/vscode%E7%9A%84jupyter%E7%9A%84change-presentation/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：每次使用绘图，都是需要手动切换Change presentations
-来看到绘图结果，想要把image设置为默认显示，而不是txt。</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247820.png" /></p>
-<span id="more"></span>
-<p>解决方法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Change mimetype for VSC Jupyter Notebook ouput](https://stackoverflow.com/questions/68555264/change-mimetype-for-vsc-jupyter-notebook-ouput)
-">[1]</span></a></sup>：</p>
-<p>1、打开 <code>settings.json</code> 文件</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247208.png" /></p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247352.png" /></p>
-<p>2、搜索notebook，找到notebook设置部分，加入这句：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&quot;notebook.displayOrder&quot;: [&quot;image/png&quot;, &quot;text/plain&quot;]</span><br></pre></td></tr></table></figure>
-<p>如果已经存在该句，把 <code>"image/png"</code>
-放在前面；放进去注意格式，放在中间记得末尾加逗号，放在最后，前面一句记得加逗号；</p>
-<p>我的设置：</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247432.png" /></p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://stackoverflow.com/questions/68555264/change-mimetype-for-vsc-jupyter-notebook-ouput">Change
-mimetype for VSC Jupyter Notebook
-ouput</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>软件使用</category>
-      </categories>
-      <tags>
-        <tag>Vscode</tag>
-        <tag>Jupyter Notebook</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vscode &amp; Jupyter-Notebook：Output exceeds the size limit</title>
-    <url>/vscode-jupyter-notebook%EF%BC%9Aoutput-exceeds-the-size-limit/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Output exceeds the size limit. Open the full output data in a text
-editor</p>
-<p>每次报错信息过多就要用文本编辑器打开，可是打开之后都是没编译的，乱码看起来很难受。</p>
-<span id="more"></span>
-<p>参考了这篇<a
-href="https://stackoverflow.com/questions/72823258/vscode-interactive-python-output-exceeds-size-limit">回答</a>，找到以下解决方案，我修改为1000：</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302060049102.png" /></p>
-<p>修改之后，重启Vscode即可。</p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>软件使用</category>
-      </categories>
-      <tags>
-        <tag>Vscode</tag>
-        <tag>Jupyter Notebook</tag>
       </tags>
   </entry>
   <entry>
@@ -3352,6 +3281,77 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://w
       </tags>
   </entry>
   <entry>
+    <title>Vscode &amp; Jupyter-Notebook：Output exceeds the size limit</title>
+    <url>/vscode-jupyter-notebook%EF%BC%9Aoutput-exceeds-the-size-limit/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Output exceeds the size limit. Open the full output data in a text
+editor</p>
+<p>每次报错信息过多就要用文本编辑器打开，可是打开之后都是没编译的，乱码看起来很难受。</p>
+<span id="more"></span>
+<p>参考了这篇<a
+href="https://stackoverflow.com/questions/72823258/vscode-interactive-python-output-exceeds-size-limit">回答</a>，找到以下解决方案，我修改为1000：</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302060049102.png" /></p>
+<p>修改之后，重启Vscode即可。</p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>软件使用</category>
+      </categories>
+      <tags>
+        <tag>Vscode</tag>
+        <tag>Jupyter Notebook</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vscode的Jupyter的change presentation</title>
+    <url>/vscode%E7%9A%84jupyter%E7%9A%84change-presentation/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：每次使用绘图，都是需要手动切换Change presentations
+来看到绘图结果，想要把image设置为默认显示，而不是txt。</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247820.png" /></p>
+<span id="more"></span>
+<p>解决方法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Change mimetype for VSC Jupyter Notebook ouput](https://stackoverflow.com/questions/68555264/change-mimetype-for-vsc-jupyter-notebook-ouput)
+">[1]</span></a></sup>：</p>
+<p>1、打开 <code>settings.json</code> 文件</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247208.png" /></p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247352.png" /></p>
+<p>2、搜索notebook，找到notebook设置部分，加入这句：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&quot;notebook.displayOrder&quot;: [&quot;image/png&quot;, &quot;text/plain&quot;]</span><br></pre></td></tr></table></figure>
+<p>如果已经存在该句，把 <code>"image/png"</code>
+放在前面；放进去注意格式，放在中间记得末尾加逗号，放在最后，前面一句记得加逗号；</p>
+<p>我的设置：</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247432.png" /></p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://stackoverflow.com/questions/68555264/change-mimetype-for-vsc-jupyter-notebook-ouput">Change
+mimetype for VSC Jupyter Notebook
+ouput</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>软件使用</category>
+      </categories>
+      <tags>
+        <tag>Vscode</tag>
+        <tag>Jupyter Notebook</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows设置开机自启软件（计划任务）</title>
     <url>/windows%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%BD%AF%E4%BB%B6%EF%BC%88%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1 右键此电脑，管理</p>
@@ -3425,6 +3425,50 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/20230
       </tags>
   </entry>
   <entry>
+    <title>Zotero搭配Sci-Hub</title>
+    <url>/zotero%E6%90%AD%E9%85%8Dsci-hub/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="实现功能">实现功能</h3>
+<p>Zotero右键条目实现自动下载pdf</p>
+<h3 id="设置sci-hub作为pdf解析器">设置Sci-Hub作为PDF解析器</h3>
+<p>打开Zotero的首选项，进入<code>Advanced--&gt;Config Editor</code></p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302250911205.png" /></p>
+<p>搜索<code>extensions.zotero.findPDFs.resolvers</code></p>
+<p>双击<code>extensions.zotero.findPDFs.resolvers</code>，默认情况下是只有一对
+<code>[]</code>。</p>
+<p>删除<code>[]</code>，并将以下代码粘贴进去。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[更新版｜Zotero搭配Sci-Hub，真香！](https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg)
+">[1]</span></a></sup></p>
+<span id="more"></span>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&#123;  </span><br><span class="line"><span class="string">&quot;name&quot;</span>:<span class="string">&quot;Sci-Hub&quot;</span>,  </span><br><span class="line"><span class="string">&quot;method&quot;</span>:<span class="string">&quot;GET&quot;</span>,  </span><br><span class="line"><span class="string">&quot;url&quot;</span>:<span class="string">&quot;https://sci-hub.se/&#123;doi&#125;&quot;</span>,  </span><br><span class="line"><span class="string">&quot;mode&quot;</span>:<span class="string">&quot;html&quot;</span>,  </span><br><span class="line"><span class="string">&quot;selector&quot;</span>:<span class="string">&quot;#pdf&quot;</span>,  </span><br><span class="line"><span class="string">&quot;attribute&quot;</span>:<span class="string">&quot;src&quot;</span>,  </span><br><span class="line"><span class="string">&quot;automatic&quot;</span>:true  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>到此就成功将Sci-Hub配置为PDF解析器了，也就是说替代了默认的Unpaywall。</p>
+<p>现在即可右键条目下载pdf了（前提是条目包含doi）</p>
+<p>查找文件doi：https://github.com/bwiernik/zotero-shortdoi/releases</p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg">更新版｜Zotero搭配Sci-Hub，真香！</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>软件使用</category>
+      </categories>
+      <tags>
+        <tag>Zotero</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【机器学习】Cross-Validation（交叉验证）</title>
     <url>/%E3%80%90%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%91Cross-Validation%EF%BC%88%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><figure>
@@ -3471,116 +3515,6 @@ href="https://zhuanlan.zhihu.com/p/24825503">【机器学习】Cross-Validation�
         <tag>Machine Learning</tag>
         <tag>交叉验证</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Zotero搭配Sci-Hub</title>
-    <url>/zotero%E6%90%AD%E9%85%8Dsci-hub/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="实现功能">实现功能</h3>
-<p>Zotero右键条目实现自动下载pdf</p>
-<h3 id="设置sci-hub作为pdf解析器">设置Sci-Hub作为PDF解析器</h3>
-<p>打开Zotero的首选项，进入<code>Advanced--&gt;Config Editor</code></p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302250911205.png" /></p>
-<p>搜索<code>extensions.zotero.findPDFs.resolvers</code></p>
-<p>双击<code>extensions.zotero.findPDFs.resolvers</code>，默认情况下是只有一对
-<code>[]</code>。</p>
-<p>删除<code>[]</code>，并将以下代码粘贴进去。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[更新版｜Zotero搭配Sci-Hub，真香！](https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg)
-">[1]</span></a></sup></p>
-<span id="more"></span>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&#123;  </span><br><span class="line"><span class="string">&quot;name&quot;</span>:<span class="string">&quot;Sci-Hub&quot;</span>,  </span><br><span class="line"><span class="string">&quot;method&quot;</span>:<span class="string">&quot;GET&quot;</span>,  </span><br><span class="line"><span class="string">&quot;url&quot;</span>:<span class="string">&quot;https://sci-hub.se/&#123;doi&#125;&quot;</span>,  </span><br><span class="line"><span class="string">&quot;mode&quot;</span>:<span class="string">&quot;html&quot;</span>,  </span><br><span class="line"><span class="string">&quot;selector&quot;</span>:<span class="string">&quot;#pdf&quot;</span>,  </span><br><span class="line"><span class="string">&quot;attribute&quot;</span>:<span class="string">&quot;src&quot;</span>,  </span><br><span class="line"><span class="string">&quot;automatic&quot;</span>:true  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>到此就成功将Sci-Hub配置为PDF解析器了，也就是说替代了默认的Unpaywall。</p>
-<p>现在即可右键条目下载pdf了（前提是条目包含doi）</p>
-<p>查找文件doi：https://github.com/bwiernik/zotero-shortdoi/releases</p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg">更新版｜Zotero搭配Sci-Hub，真香！</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>软件使用</category>
-      </categories>
-      <tags>
-        <tag>Zotero</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客文章分类与标签</title>
-    <url>/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E4%B8%8E%E6%A0%87%E7%AD%BE/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="categories-应为博客主分类">categories 应为博客主分类</h3>
-<p>我们日常生活中的分类都是树状分类（也可以说是有阶级性的，有“父”与“子”的关系），比如知识的分类、技术的分类、甚至国家公务员和公司的职员的分类。而我们博客写的文章，肯定不能脱离日常生活，故写的文章的分类也逃不了这种树状的分类，也就是
-categories，因此 categories
-应为博客的主分类。另外各种文档浏览器主要分类方式也是 categories
-式的树状分类，而不是 tags 。</p>
-<span id="more"></span>
-<h3 id="用-tags-修复-categories-的-bug">用 tags 修复 categories 的
-“bug”</h3>
-<p>但是树状分类有个缺陷，比如你的 Windows
-电脑按文档类型有视频、音乐、文档三个文档夹，但是如果这三个文档夹中各有些你很喜欢的，而你想把它们放到一起咋办，再创建个「我喜欢」文档夹，然后把它们复制到「我喜欢」文档夹？但是这样「我喜欢」文档夹就有视频、音乐、文档三种文档类型了，又乱了……那再在「我喜欢」文档夹创建视频、音乐、文档文档夹？可以，但是如果某天你突然不喜欢了，咋办，你要把这个文档从两个目录都删除。那开始时移动到「我喜欢」文档夹不就行了，而不是复制，但是这样你视频、音乐、文档的所有文档就不在一个目录了。</p>
-<p>为啥会这么麻烦？因为文档类型是一种分类维度，而「我喜欢」是另一种分类维度，在树状分类的
-Windows
-文档浏览器中，无法实现不同分类维度的共存，树状分类只能有一种分类维度。</p>
-<p>而 tags 就可以弥补 categories 式的树状分类的缺陷，毕竟 tags
-是一种并行分类，一个 tag
-就是一种分类维度，因此可以解决这个问题。在上面的例子中，如果 Windows
-文档浏览器可以在你喜欢的文档上加上「我喜欢」的 tag ，然后有个” tags
-浏览器“，就 OK 了。什么？Windows
-上的文档浏览器没有这个功能？哈哈哈，NexT 就有啊！</p>
-<h3 id="博客文章分类的正确姿势">博客文章分类的正确姿势</h3>
-<p>Linux 安装软件，Linux
-系统安装好，一些目录就已经存在，然后你安装一个软件，文档就会存放在这些已有的相应目录下。而写博客和
-Linux
-中安装软件也是类似的，最好搭建好博客后写文章前就想好博客的分类，然后写一篇文章就“移动”到相应”目录“。写完文章后，再通过加
-tags 补categories 的 ”bug“
-<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[文章页的标签在文章的结尾显示了，而不是和时间、分类一起显示](https://github.com/iissnan/hexo-theme-next/issues/1901)
-">[1]</span></a></sup>。</p>
-<p>目前的文章分类：</p>
-<ul>
-<li>博客运营
-<ul>
-<li>markdown</li>
-</ul></li>
-<li>科研学习
-<ul>
-<li>理论知识</li>
-<li>代码相关（含Linux和代码理论知识）</li>
-<li>软件使用</li>
-</ul></li>
-<li>生活随笔</li>
-</ul>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://github.com/iissnan/hexo-theme-next/issues/1901">文章页的标签在文章的结尾显示了，而不是和时间、分类一起显示</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>博客运营</category>
-        <category>其它</category>
-      </categories>
   </entry>
   <entry>
     <title>优化Python运行速度</title>
@@ -3672,6 +3606,72 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://b
       <tags>
         <tag>Python</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>博客文章分类与标签</title>
+    <url>/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E5%88%86%E7%B1%BB%E4%B8%8E%E6%A0%87%E7%AD%BE/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="categories-应为博客主分类">categories 应为博客主分类</h3>
+<p>我们日常生活中的分类都是树状分类（也可以说是有阶级性的，有“父”与“子”的关系），比如知识的分类、技术的分类、甚至国家公务员和公司的职员的分类。而我们博客写的文章，肯定不能脱离日常生活，故写的文章的分类也逃不了这种树状的分类，也就是
+categories，因此 categories
+应为博客的主分类。另外各种文档浏览器主要分类方式也是 categories
+式的树状分类，而不是 tags 。</p>
+<span id="more"></span>
+<h3 id="用-tags-修复-categories-的-bug">用 tags 修复 categories 的
+“bug”</h3>
+<p>但是树状分类有个缺陷，比如你的 Windows
+电脑按文档类型有视频、音乐、文档三个文档夹，但是如果这三个文档夹中各有些你很喜欢的，而你想把它们放到一起咋办，再创建个「我喜欢」文档夹，然后把它们复制到「我喜欢」文档夹？但是这样「我喜欢」文档夹就有视频、音乐、文档三种文档类型了，又乱了……那再在「我喜欢」文档夹创建视频、音乐、文档文档夹？可以，但是如果某天你突然不喜欢了，咋办，你要把这个文档从两个目录都删除。那开始时移动到「我喜欢」文档夹不就行了，而不是复制，但是这样你视频、音乐、文档的所有文档就不在一个目录了。</p>
+<p>为啥会这么麻烦？因为文档类型是一种分类维度，而「我喜欢」是另一种分类维度，在树状分类的
+Windows
+文档浏览器中，无法实现不同分类维度的共存，树状分类只能有一种分类维度。</p>
+<p>而 tags 就可以弥补 categories 式的树状分类的缺陷，毕竟 tags
+是一种并行分类，一个 tag
+就是一种分类维度，因此可以解决这个问题。在上面的例子中，如果 Windows
+文档浏览器可以在你喜欢的文档上加上「我喜欢」的 tag ，然后有个” tags
+浏览器“，就 OK 了。什么？Windows
+上的文档浏览器没有这个功能？哈哈哈，NexT 就有啊！</p>
+<h3 id="博客文章分类的正确姿势">博客文章分类的正确姿势</h3>
+<p>Linux 安装软件，Linux
+系统安装好，一些目录就已经存在，然后你安装一个软件，文档就会存放在这些已有的相应目录下。而写博客和
+Linux
+中安装软件也是类似的，最好搭建好博客后写文章前就想好博客的分类，然后写一篇文章就“移动”到相应”目录“。写完文章后，再通过加
+tags 补categories 的 ”bug“
+<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[文章页的标签在文章的结尾显示了，而不是和时间、分类一起显示](https://github.com/iissnan/hexo-theme-next/issues/1901)
+">[1]</span></a></sup>。</p>
+<p>目前的文章分类：</p>
+<ul>
+<li>博客运营
+<ul>
+<li>markdown</li>
+</ul></li>
+<li>科研学习
+<ul>
+<li>理论知识</li>
+<li>代码相关（含Linux和代码理论知识）</li>
+<li>软件使用</li>
+</ul></li>
+<li>生活随笔</li>
+</ul>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://github.com/iissnan/hexo-theme-next/issues/1901">文章页的标签在文章的结尾显示了，而不是和时间、分类一起显示</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>博客运营</category>
+        <category>其它</category>
+      </categories>
   </entry>
   <entry>
     <title>Hexo博客Next主题添加统计文章阅读量功能</title>
@@ -3821,26 +3821,43 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>好文推荐</title>
-    <url>/%E5%A5%BD%E6%96%87%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、<a
-href="https://retompi.com/archived-blog/posts/2020/01/16/version-control-for-word-files-like-plain-text.html#git-pandoc">如何对
-Word 文件进行「纯文本式」版本控制？ | TomBen (retompi.com)</a></p>
-<p>2、<a
-href="https://backlog.com/git-tutorial/cn/stepup/stepup1_1.html">什么是分支？【分支
-(branch)】| 猴子都能懂的GIT入门| 贝格乐（Backlog）</a></p>
-<p>3、<a
-href="https://blog.51cto.com/yttitan/2409618">Shell脚本中的多任务并发执行_一壶浊酒的技术博客_51CTO博客</a></p>
-<p>4、<a
-href="https://notebook.community/gmonce/datascience/src/1%20-%20Yet%20Another%20Python%20Encoding%20Tutorial">Yet
-Another Python Encoding Tutorial</a></p>
+    <title>图片版权</title>
+    <url>/%E5%9B%BE%E7%89%87%E7%89%88%E6%9D%83/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>谷歌图片：</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212051986.png" alt="" style="zoom:80%;" /></p>
+<span id="more"></span>
+<p>创用CC授权：</p>
+<p>知识共享许可协议（英语：Creative Commons
+license，或创用CC授权）是一种公共版权授权条款，其允许按照多种需求分发受版权保护的作品<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[知识共享许可协议--维基百科](https://zh.wikipedia.org/wiki/%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE)
+">[1]</span></a></sup>。</p>
+<p>四项权利</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212059253.png" alt="image-20240121205712056" style="zoom: 67%;" /></p>
+<p>4种基本权利的组合有16种，即每项权利是否授权，即有$2=16 $
+种权利，4种组合是同时包括“<strong>ND</strong>”和“<strong>SA</strong>”的条款，相互排斥，无法使用；还有一种没有包括任何条款（即4种权利都不授权），因此有5个组合无效。11种有效组合中，因为98%的特许人要求署名，五种缺乏“<strong>BY</strong>”的条款不再使用。</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212201746.png" alt="" style="zoom:67%;" /></p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zh.wikipedia.org/wiki/%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE">知识共享许可协议--维基百科</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
 ]]></content>
       <categories>
         <category>科研学习</category>
         <category>理论知识</category>
       </categories>
       <tags>
-        <tag>好文推荐</tag>
+        <tag>论文投稿</tag>
       </tags>
   </entry>
   <entry>
@@ -3917,46 +3934,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       <tags>
         <tag>Coding</tag>
         <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>图片版权</title>
-    <url>/%E5%9B%BE%E7%89%87%E7%89%88%E6%9D%83/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>谷歌图片：</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212051986.png" alt="" style="zoom:80%;" /></p>
-<span id="more"></span>
-<p>创用CC授权：</p>
-<p>知识共享许可协议（英语：Creative Commons
-license，或创用CC授权）是一种公共版权授权条款，其允许按照多种需求分发受版权保护的作品<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[知识共享许可协议--维基百科](https://zh.wikipedia.org/wiki/%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE)
-">[1]</span></a></sup>。</p>
-<p>四项权利</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212059253.png" alt="image-20240121205712056" style="zoom: 67%;" /></p>
-<p>4种基本权利的组合有16种，即每项权利是否授权，即有$2=16 $
-种权利，4种组合是同时包括“<strong>ND</strong>”和“<strong>SA</strong>”的条款，相互排斥，无法使用；还有一种没有包括任何条款（即4种权利都不授权），因此有5个组合无效。11种有效组合中，因为98%的特许人要求署名，五种缺乏“<strong>BY</strong>”的条款不再使用。</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212201746.png" alt="" style="zoom:67%;" /></p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zh.wikipedia.org/wiki/%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE">知识共享许可协议--维基百科</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-      </categories>
-      <tags>
-        <tag>论文投稿</tag>
       </tags>
   </entry>
   <entry>
@@ -4096,6 +4073,45 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
+    <title>文献管理</title>
+    <url>/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、本地文献以一个字母开头（与课题相关）数字文献名作为文件名。（eg：k1、my
+literature）</p>
+<p>2、本地文献与Endnote相一致，ID为字母与数字，Label填写细分类或关键词，方便定位，Rating打分。</p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>理论知识</category>
+      </categories>
+      <tags>
+        <tag>文献管理</tag>
+        <tag>Endnote</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>好文推荐</title>
+    <url>/%E5%A5%BD%E6%96%87%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、<a
+href="https://retompi.com/archived-blog/posts/2020/01/16/version-control-for-word-files-like-plain-text.html#git-pandoc">如何对
+Word 文件进行「纯文本式」版本控制？ | TomBen (retompi.com)</a></p>
+<p>2、<a
+href="https://backlog.com/git-tutorial/cn/stepup/stepup1_1.html">什么是分支？【分支
+(branch)】| 猴子都能懂的GIT入门| 贝格乐（Backlog）</a></p>
+<p>3、<a
+href="https://blog.51cto.com/yttitan/2409618">Shell脚本中的多任务并发执行_一壶浊酒的技术博客_51CTO博客</a></p>
+<p>4、<a
+href="https://notebook.community/gmonce/datascience/src/1%20-%20Yet%20Another%20Python%20Encoding%20Tutorial">Yet
+Another Python Encoding Tutorial</a></p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>理论知识</category>
+      </categories>
+      <tags>
+        <tag>好文推荐</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>期刊、出版社、索引数据库</title>
     <url>/%E6%9C%9F%E5%88%8A%E3%80%81%E5%87%BA%E7%89%88%E7%A4%BE%E3%80%81%E7%B4%A2%E5%BC%95%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img
@@ -4169,19 +4185,88 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>文献管理</title>
-    <url>/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、本地文献以一个字母开头（与课题相关）数字文献名作为文件名。（eg：k1、my
-literature）</p>
-<p>2、本地文献与Endnote相一致，ID为字母与数字，Label填写细分类或关键词，方便定位，Rating打分。</p>
+    <title>期刊影响力</title>
+    <url>/%E6%9C%9F%E5%88%8A%E5%BD%B1%E5%93%8D%E5%8A%9B/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>影响因子（Impact Factor）：某期刊前两年发表的论文在该报告年份（JCR
+year）中被引用总次数除以该期刊在这两年内发表的论文总数。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="https://baike.baidu.com/item/%E5%BD%B1%E5%93%8D%E5%9B%A0%E5%AD%90/574727
+">[1]</span></a></sup></p>
+<p>期刊的IF（影响因子）每年不断浮动，把IF定值作为学术评价指标不适合，而且不同学科领域期刊的影响因子差异很大，仅凭IF不能直观地比较不同领域的期刊。把同一学科领域的期刊，<strong>按IF大到小做排序后，划分入不同区域。</strong>只要是某领域1区的期刊，就是该领域的顶级刊物，直观反映该刊在领域内的水准和大致排位。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="https://kyc.szcu.edu.cn/2023/0328/c2593a50685/page.htm
+">[2]</span></a></sup></p>
+<span id="more"></span>
+<ul>
+<li><p>JCR分区：汤森路透公司制定的JCR分区(原来是汤森路透，后来易主科睿唯安)，一般简称为JCR
+分区(Journal Citation Reports，简称JCR)。</p>
+<p>JCR将收录期刊分为176个不同学科类别。每个学科分类按期刊的影响因子高低，平均分为Q1、Q2、Q3和Q4四个区：</p>
+<ul>
+<li><p>影响因子前25%(含25%)期刊划分为Q1区；</p></li>
+<li><p>影响因子前25%～50% 为Q2区；</p></li>
+<li><p>影响因子前50%～75% 为Q3区；</p></li>
+<li><p>影响因子75%之后为Q4区。</p></li>
+</ul></li>
+<li><p>中科院分区：中国科学院国家科学图书馆制定的JCR分区，一般简称为「中科院分区」。</p>
+<p>中科院分区目前分为基础版和升级版（试行）</p>
+<p>中科院分区（基础版）先将JCR中所有期刊分为数学、物理、化学、生物、地学、天文、工程技术、医学、环境科学、农林科学、社会科学、管理科学及综合性期刊13
+大类。每个学科分类按照期刊的3年平均影响因子高低，分为4四个区：</p>
+<ul>
+<li><p>影响因子前5%为该类1 区；</p></li>
+<li><p>影响因子前6% ～ 20% 为2 区；</p></li>
+<li><p>影响因子前21% ～ 50% 为3 区；</p></li>
+<li><p>影响因子后50%为4区。</p></li>
+</ul>
+<p>中科院分区升级版在2020年1月公布，在基础版的基础上做了以下调整。</p>
+<ul>
+<li>针对期刊收录范围，升级版由基础版的只收录SCI期刊，扩展为收录SCI期刊和SSCI期刊。</li>
+<li>针对学科分类，升级版将期刊由基础版的13个学科扩展至18个。针对分区标准，升级版由基础版的按照影响因子分区，改为了按照期刊超越指数分区。</li>
+<li>值得一提的是，中科院分区目前属于过渡期，基础版和升级版均在更新和发布。2022年起，将只公布升级版。</li>
+</ul></li>
+</ul>
+<p><strong>JCR分区 PK 中科院分区</strong></p>
+<ul>
+<li><p>01 学科划分不同</p>
+<p>科睿唯安JCR的Journal
+Ranking没有设置大类学科，只分为176个具体学科，也就是中科院分区表中所指的小类学科。</p></li>
+<li><p>02 分区方法不同</p>
+<p>JCR是按照<strong>“平均主义”思想</strong>，根据刊物IF的高至低平均划分4个区，每个区含有该领域总量25%的期刊；中科院的分区如同<strong>社会阶层的金字塔结构</strong>，1区只有5%的顶级期刊，2~4区期刊数量也逐层增加。于是，采用中科院分区后往往出现<strong>“掉区”</strong>的情况。</p></li>
+</ul>
+<p>　　显然中科院的1区和2区杂志很少，杂志质量相对也高，基本都是本领域的顶级期刊。所以有的人发表的论文按JCR分区标准算一区，而按中科院分区算2区甚至三区。</p>
+<ul>
+<li><p>03 指标取值不同</p>
+<p>JCR是按当期（1年）的IF进行分区，中科院是按刊物前3年IF平均值进行分区。</p></li>
+<li><p>04 写法不同</p>
+<p>一般的，JCR中1区的期刊写作“Q1”，中科院1区的期刊写作“1区”，如此类推。最后的重点——我们到底该看哪个分区？
+　　其实两种分区方式都比较权威，具体怎么看，最直接的方法是看你们学校/单位认哪个。</p></li>
+</ul>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">https://baike.baidu.com/item/%E5%BD%B1%E5%93%8D%E5%9B%A0%E5%AD%90/574727<a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">https://kyc.szcu.edu.cn/2023/0328/c2593a50685/page.htm<a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
 ]]></content>
       <categories>
         <category>科研学习</category>
         <category>理论知识</category>
       </categories>
       <tags>
-        <tag>文献管理</tag>
-        <tag>Endnote</tag>
+        <tag>论文投稿</tag>
       </tags>
   </entry>
   <entry>
@@ -4482,91 +4567,6 @@ utf-8(大部分情况没问题)，如果出现问题修改字符集为：<code>e
       </tags>
   </entry>
   <entry>
-    <title>期刊影响力</title>
-    <url>/%E6%9C%9F%E5%88%8A%E5%BD%B1%E5%93%8D%E5%8A%9B/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>影响因子（Impact Factor）：某期刊前两年发表的论文在该报告年份（JCR
-year）中被引用总次数除以该期刊在这两年内发表的论文总数。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://baike.baidu.com/item/%E5%BD%B1%E5%93%8D%E5%9B%A0%E5%AD%90/574727
-">[1]</span></a></sup></p>
-<p>期刊的IF（影响因子）每年不断浮动，把IF定值作为学术评价指标不适合，而且不同学科领域期刊的影响因子差异很大，仅凭IF不能直观地比较不同领域的期刊。把同一学科领域的期刊，<strong>按IF大到小做排序后，划分入不同区域。</strong>只要是某领域1区的期刊，就是该领域的顶级刊物，直观反映该刊在领域内的水准和大致排位。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://kyc.szcu.edu.cn/2023/0328/c2593a50685/page.htm
-">[2]</span></a></sup></p>
-<span id="more"></span>
-<ul>
-<li><p>JCR分区：汤森路透公司制定的JCR分区(原来是汤森路透，后来易主科睿唯安)，一般简称为JCR
-分区(Journal Citation Reports，简称JCR)。</p>
-<p>JCR将收录期刊分为176个不同学科类别。每个学科分类按期刊的影响因子高低，平均分为Q1、Q2、Q3和Q4四个区：</p>
-<ul>
-<li><p>影响因子前25%(含25%)期刊划分为Q1区；</p></li>
-<li><p>影响因子前25%～50% 为Q2区；</p></li>
-<li><p>影响因子前50%～75% 为Q3区；</p></li>
-<li><p>影响因子75%之后为Q4区。</p></li>
-</ul></li>
-<li><p>中科院分区：中国科学院国家科学图书馆制定的JCR分区，一般简称为「中科院分区」。</p>
-<p>中科院分区目前分为基础版和升级版（试行）</p>
-<p>中科院分区（基础版）先将JCR中所有期刊分为数学、物理、化学、生物、地学、天文、工程技术、医学、环境科学、农林科学、社会科学、管理科学及综合性期刊13
-大类。每个学科分类按照期刊的3年平均影响因子高低，分为4四个区：</p>
-<ul>
-<li><p>影响因子前5%为该类1 区；</p></li>
-<li><p>影响因子前6% ～ 20% 为2 区；</p></li>
-<li><p>影响因子前21% ～ 50% 为3 区；</p></li>
-<li><p>影响因子后50%为4区。</p></li>
-</ul>
-<p>中科院分区升级版在2020年1月公布，在基础版的基础上做了以下调整。</p>
-<ul>
-<li>针对期刊收录范围，升级版由基础版的只收录SCI期刊，扩展为收录SCI期刊和SSCI期刊。</li>
-<li>针对学科分类，升级版将期刊由基础版的13个学科扩展至18个。针对分区标准，升级版由基础版的按照影响因子分区，改为了按照期刊超越指数分区。</li>
-<li>值得一提的是，中科院分区目前属于过渡期，基础版和升级版均在更新和发布。2022年起，将只公布升级版。</li>
-</ul></li>
-</ul>
-<p><strong>JCR分区 PK 中科院分区</strong></p>
-<ul>
-<li><p>01 学科划分不同</p>
-<p>科睿唯安JCR的Journal
-Ranking没有设置大类学科，只分为176个具体学科，也就是中科院分区表中所指的小类学科。</p></li>
-<li><p>02 分区方法不同</p>
-<p>JCR是按照<strong>“平均主义”思想</strong>，根据刊物IF的高至低平均划分4个区，每个区含有该领域总量25%的期刊；中科院的分区如同<strong>社会阶层的金字塔结构</strong>，1区只有5%的顶级期刊，2~4区期刊数量也逐层增加。于是，采用中科院分区后往往出现<strong>“掉区”</strong>的情况。</p></li>
-</ul>
-<p>　　显然中科院的1区和2区杂志很少，杂志质量相对也高，基本都是本领域的顶级期刊。所以有的人发表的论文按JCR分区标准算一区，而按中科院分区算2区甚至三区。</p>
-<ul>
-<li><p>03 指标取值不同</p>
-<p>JCR是按当期（1年）的IF进行分区，中科院是按刊物前3年IF平均值进行分区。</p></li>
-<li><p>04 写法不同</p>
-<p>一般的，JCR中1区的期刊写作“Q1”，中科院1区的期刊写作“1区”，如此类推。最后的重点——我们到底该看哪个分区？
-　　其实两种分区方式都比较权威，具体怎么看，最直接的方法是看你们学校/单位认哪个。</p></li>
-</ul>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://baike.baidu.com/item/%E5%BD%B1%E5%93%8D%E5%9B%A0%E5%AD%90/574727<a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://kyc.szcu.edu.cn/2023/0328/c2593a50685/page.htm<a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-      </categories>
-      <tags>
-        <tag>论文投稿</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>正则表达式基础</title>
     <url>/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="元字符">元字符</h1>
@@ -4800,28 +4800,6 @@ href="https://deerchao.cn/tutorials/regex/regex.htm">正则表达式30分钟入�
       </tags>
   </entry>
   <entry>
-    <title>等比例缩小pdf的尺寸大小</title>
-    <url>/%E7%AD%89%E6%AF%94%E4%BE%8B%E7%BC%A9%E5%B0%8Fpdf%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
-<p>软件：Adobe Acrobat Pro DC</p>
-<p>使用软件打开相应pdf：</p>
-<ul>
-<li><p>文件--打印--自定义比例：调整相应比例，导出即可</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401161543556.png" alt="" style="zoom:50%;" /></p>
-<p>导出之后，pdf中的图片变小，但是画布不变，对画布进行裁剪即可。</p>
-<p>裁剪步骤：打开pdf--工具--编辑pdf（打开）--裁剪页面：绘制裁剪框，双击裁剪框中的内容，确定即可。</p></li>
-</ul>
-<!--more-->
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>软件使用</category>
-      </categories>
-      <tags>
-        <tag>科研绘图</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>皮尔森（逊）相关系数（Pearson Correlation Coefficient, PCC）</title>
     <url>/%E7%9A%AE%E5%B0%94%E6%A3%AE%EF%BC%88%E9%80%8A%EF%BC%89%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%EF%BC%88pearson-correlation-coefficient-pcc%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="介绍">介绍</h3>
@@ -4959,6 +4937,28 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       <tags>
         <tag>Python</tag>
         <tag>Statistics</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>等比例缩小pdf的尺寸大小</title>
+    <url>/%E7%AD%89%E6%AF%94%E4%BE%8B%E7%BC%A9%E5%B0%8Fpdf%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
+<p>软件：Adobe Acrobat Pro DC</p>
+<p>使用软件打开相应pdf：</p>
+<ul>
+<li><p>文件--打印--自定义比例：调整相应比例，导出即可</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401161543556.png" alt="" style="zoom:50%;" /></p>
+<p>导出之后，pdf中的图片变小，但是画布不变，对画布进行裁剪即可。</p>
+<p>裁剪步骤：打开pdf--工具--编辑pdf（打开）--裁剪页面：绘制裁剪框，双击裁剪框中的内容，确定即可。</p></li>
+</ul>
+<!--more-->
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>软件使用</category>
+      </categories>
+      <tags>
+        <tag>科研绘图</tag>
       </tags>
   </entry>
   <entry>
@@ -5138,6 +5138,81 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
+    <title>类，模块，包，库区别？</title>
+    <url>/%E7%B1%BB%EF%BC%8C%E6%A8%A1%E5%9D%97%EF%BC%8C%E5%8C%85%EF%BC%8C%E5%BA%93%E5%8C%BA%E5%88%AB%EF%BC%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="一模块包库">一、模块，包，库</h4>
+<p><strong>模块</strong>，英文为Modules，本质上是一个Python程序，以.py作为文件后缀。任何py文件都可以作为一个模块。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="python中的模块、库、包有什么区别？ - 风影忍着的回答 - 知乎 &lt;https://www.zhihu.com/question/30082392/answer/2030353759&gt;
+">[1]</span></a></sup></p>
+<p>大型项目需要多个模块，用<strong>包(package)</strong>
+来管理模块。Python包，就是里面装了一个.py文件的文件夹。</p>
+<p>Python包具有下面3个性质: 1.它实质上是一个文件夹;
+2.该文件夹里面一定有_init_.py模块，其他的模块可以有也可以没有;
+3.它的本质依然是模块，因此一个包里面还可以装其他的包；</p>
+<p>严格来说Python中是没有<strong>库(library)</strong>
+的，模块（module）和包（package）都是Python语法中有的概念，而库只是一个通俗的说法。平时说的<strong>库既可以是一个模块也可以是一个包</strong>。证据就是我们可以打开Python的安装目录，里面有一个叫做Lib的文件夹，打开这个文件夹之后就会发现很多“标准库”都在里面，我们常用的os库、random库、re库都在里面，这些“库”都是一个个的python文件即模块；而json、collections、sqlite3还有tkinter这些“库”又是一个一个的文件夹（里面都有__init__.py)也就是包</p>
+<h4 id="二从类到包">二、从类到包</h4>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">People</span>:</span><br><span class="line">	<span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,n</span>):    <span class="comment"># 定义了一个方法__init__ </span></span><br><span class="line">		self.name = n</span><br><span class="line">	<span class="keyword">def</span> <span class="title function_">speak</span>(<span class="params">self</span>):         <span class="comment"># 定义了一个方法speak</span></span><br><span class="line">		<span class="built_in">print</span>(<span class="string">&quot;hello&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>描述一个真实的对象一般有两种方式，他可以做什么（行为），他是什么样的（属性或特征）
+Python中一个对象的特征也称为属性（attribute）。它所具有的行为也称为方法（method）。类是一个模板，具有相同的属性和行为。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 简单理解，不是很严谨</span></span><br><span class="line">我是XXX    <span class="comment"># 这是一个类</span></span><br><span class="line"></span><br><span class="line">我是周杰伦  <span class="comment"># 这是创建了一个实例（对象）周杰伦</span></span><br><span class="line">我是昆凌   <span class="comment"># 这是创建了另一个实例（对象）昆凌</span></span><br><span class="line"><span class="comment"># 两个对象具有相同的一般行为和特征</span></span><br></pre></td></tr></table></figure>
+<p>我是周杰伦，self.name= JayChou
+我和self是一样的，它是一个指向实例本身的引用，所以方法的定义必须包含形参self。self为前缀的变量可供类中所有方法使用。</p>
+<p>首字母大写的是类，类中的函数称为方法
+函数和方法本质是一样的，差别在于调用方法
+<code>_init_</code>是特殊的方法，用类创建实例时，都会自动运行它</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Restaurant</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name,<span class="built_in">type</span></span>):</span><br><span class="line">        self.restaurant_name = name</span><br><span class="line">        self.cuisine_type = <span class="built_in">type</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">describe_restaurant</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;self.restaurant_name&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;self.cuisine_type&#125;</span>&quot;</span>)</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">open_restaurant</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;the restaurant is opening&quot;</span>)</span><br><span class="line"></span><br><span class="line">restaurant = Restaurant(<span class="string">&quot;尚丹佳&quot;</span>,<span class="string">&quot;饭店&quot;</span>) <span class="comment"># 创建了一个restaurant的实例</span></span><br><span class="line">restaurant.describe_restaurant()</span><br><span class="line">restaurant.open_restaurant()</span><br></pre></td></tr></table></figure>
+<p>一个模块（一个.py文件）中存储多个类
+一个文件夹有一个mycar.py文件(一个模块)，该py文件中包含Car类和Battery类</p>
+<p>导入模块中的一部分类： from 模块 import 类 form mycar import
+Car，Battery</p>
+<p>导入整个模块： import 模块</p>
+<p>包（库）包含多个模块。</p>
+<p>下载了一个gapminder包（库）：包里有如下内容：</p>
+<p><img
+src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120223939.png" /></p>
+<p>导入包后，要使用包的类或函数，都是直接<code>包名.函数</code>或者<code>包名.类</code>
+也可以用 <code>import  包  as  别名</code> 去简化包名，方便一些。</p>
+<p>比如这个包有3个模块（3个py文件）</p>
+<p>init模块（该模块定义了一个属性）：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> .data <span class="keyword">import</span> _load_gapminder</span><br><span class="line"><span class="keyword">from</span> .version <span class="keyword">import</span> __version__</span><br><span class="line">gapminder = _load_gapminder()</span><br></pre></td></tr></table></figure>
+<p>data模块(该模块定义了一个函数)：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pkg_resources</span><br><span class="line"><span class="keyword">from</span> io <span class="keyword">import</span> StringIO</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_load_gapminder</span>():</span><br><span class="line">    content = pkg_resources.resource_string(<span class="string">&#x27;gapminder&#x27;</span>, <span class="string">&#x27;gapminder.csv&#x27;</span>).decode()</span><br><span class="line">    <span class="keyword">return</span> pd.read_csv(StringIO(content))</span><br></pre></td></tr></table></figure>
+<p>version模块（该模块定义了一个属性）：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">__version__ = <span class="number">0.1</span></span><br></pre></td></tr></table></figure>
+<p>包的使用： 导入包后，包内的属性和函数就可以使用了</p>
+<p><img
+src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225544.png" /></p>
+<p><img
+src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225259.png" /></p>
+<p><img
+src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225615.png" /></p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">python中的模块、库、包有什么区别？
+- 风影忍着的回答 - 知乎
+<a href="https://www.zhihu.com/question/30082392/answer/2030353759">https://www.zhihu.com/question/30082392/answer/2030353759</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>代码相关</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>简谈array,reshape,dataframe</title>
     <url>/%E7%AE%80%E8%B0%88array-reshape-dataframe/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="array">array</h3>
@@ -5224,116 +5299,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </categories>
       <tags>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>类，模块，包，库区别？</title>
-    <url>/%E7%B1%BB%EF%BC%8C%E6%A8%A1%E5%9D%97%EF%BC%8C%E5%8C%85%EF%BC%8C%E5%BA%93%E5%8C%BA%E5%88%AB%EF%BC%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="一模块包库">一、模块，包，库</h4>
-<p><strong>模块</strong>，英文为Modules，本质上是一个Python程序，以.py作为文件后缀。任何py文件都可以作为一个模块。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="python中的模块、库、包有什么区别？ - 风影忍着的回答 - 知乎 &lt;https://www.zhihu.com/question/30082392/answer/2030353759&gt;
-">[1]</span></a></sup></p>
-<p>大型项目需要多个模块，用<strong>包(package)</strong>
-来管理模块。Python包，就是里面装了一个.py文件的文件夹。</p>
-<p>Python包具有下面3个性质: 1.它实质上是一个文件夹;
-2.该文件夹里面一定有_init_.py模块，其他的模块可以有也可以没有;
-3.它的本质依然是模块，因此一个包里面还可以装其他的包；</p>
-<p>严格来说Python中是没有<strong>库(library)</strong>
-的，模块（module）和包（package）都是Python语法中有的概念，而库只是一个通俗的说法。平时说的<strong>库既可以是一个模块也可以是一个包</strong>。证据就是我们可以打开Python的安装目录，里面有一个叫做Lib的文件夹，打开这个文件夹之后就会发现很多“标准库”都在里面，我们常用的os库、random库、re库都在里面，这些“库”都是一个个的python文件即模块；而json、collections、sqlite3还有tkinter这些“库”又是一个一个的文件夹（里面都有__init__.py)也就是包</p>
-<h4 id="二从类到包">二、从类到包</h4>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">People</span>:</span><br><span class="line">	<span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,n</span>):    <span class="comment"># 定义了一个方法__init__ </span></span><br><span class="line">		self.name = n</span><br><span class="line">	<span class="keyword">def</span> <span class="title function_">speak</span>(<span class="params">self</span>):         <span class="comment"># 定义了一个方法speak</span></span><br><span class="line">		<span class="built_in">print</span>(<span class="string">&quot;hello&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>描述一个真实的对象一般有两种方式，他可以做什么（行为），他是什么样的（属性或特征）
-Python中一个对象的特征也称为属性（attribute）。它所具有的行为也称为方法（method）。类是一个模板，具有相同的属性和行为。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 简单理解，不是很严谨</span></span><br><span class="line">我是XXX    <span class="comment"># 这是一个类</span></span><br><span class="line"></span><br><span class="line">我是周杰伦  <span class="comment"># 这是创建了一个实例（对象）周杰伦</span></span><br><span class="line">我是昆凌   <span class="comment"># 这是创建了另一个实例（对象）昆凌</span></span><br><span class="line"><span class="comment"># 两个对象具有相同的一般行为和特征</span></span><br></pre></td></tr></table></figure>
-<p>我是周杰伦，self.name= JayChou
-我和self是一样的，它是一个指向实例本身的引用，所以方法的定义必须包含形参self。self为前缀的变量可供类中所有方法使用。</p>
-<p>首字母大写的是类，类中的函数称为方法
-函数和方法本质是一样的，差别在于调用方法
-<code>_init_</code>是特殊的方法，用类创建实例时，都会自动运行它</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Restaurant</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self,name,<span class="built_in">type</span></span>):</span><br><span class="line">        self.restaurant_name = name</span><br><span class="line">        self.cuisine_type = <span class="built_in">type</span></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">describe_restaurant</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;self.restaurant_name&#125;</span>&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;self.cuisine_type&#125;</span>&quot;</span>)</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">open_restaurant</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;the restaurant is opening&quot;</span>)</span><br><span class="line"></span><br><span class="line">restaurant = Restaurant(<span class="string">&quot;尚丹佳&quot;</span>,<span class="string">&quot;饭店&quot;</span>) <span class="comment"># 创建了一个restaurant的实例</span></span><br><span class="line">restaurant.describe_restaurant()</span><br><span class="line">restaurant.open_restaurant()</span><br></pre></td></tr></table></figure>
-<p>一个模块（一个.py文件）中存储多个类
-一个文件夹有一个mycar.py文件(一个模块)，该py文件中包含Car类和Battery类</p>
-<p>导入模块中的一部分类： from 模块 import 类 form mycar import
-Car，Battery</p>
-<p>导入整个模块： import 模块</p>
-<p>包（库）包含多个模块。</p>
-<p>下载了一个gapminder包（库）：包里有如下内容：</p>
-<p><img
-src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120223939.png" /></p>
-<p>导入包后，要使用包的类或函数，都是直接<code>包名.函数</code>或者<code>包名.类</code>
-也可以用 <code>import  包  as  别名</code> 去简化包名，方便一些。</p>
-<p>比如这个包有3个模块（3个py文件）</p>
-<p>init模块（该模块定义了一个属性）：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> .data <span class="keyword">import</span> _load_gapminder</span><br><span class="line"><span class="keyword">from</span> .version <span class="keyword">import</span> __version__</span><br><span class="line">gapminder = _load_gapminder()</span><br></pre></td></tr></table></figure>
-<p>data模块(该模块定义了一个函数)：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pkg_resources</span><br><span class="line"><span class="keyword">from</span> io <span class="keyword">import</span> StringIO</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_load_gapminder</span>():</span><br><span class="line">    content = pkg_resources.resource_string(<span class="string">&#x27;gapminder&#x27;</span>, <span class="string">&#x27;gapminder.csv&#x27;</span>).decode()</span><br><span class="line">    <span class="keyword">return</span> pd.read_csv(StringIO(content))</span><br></pre></td></tr></table></figure>
-<p>version模块（该模块定义了一个属性）：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">__version__ = <span class="number">0.1</span></span><br></pre></td></tr></table></figure>
-<p>包的使用： 导入包后，包内的属性和函数就可以使用了</p>
-<p><img
-src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225544.png" /></p>
-<p><img
-src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225259.png" /></p>
-<p><img
-src="https://gitee.com/starmus/image_typora/raw/master/Pasted%20image%2020221120225615.png" /></p>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">python中的模块、库、包有什么区别？
-- 风影忍着的回答 - 知乎
-<a href="https://www.zhihu.com/question/30082392/answer/2030353759">https://www.zhihu.com/question/30082392/answer/2030353759</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>代码相关</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决npm下载慢问题</title>
-    <url>/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h5 id="npm镜像">npm镜像：</h5>
-<p>淘宝：<code>http://registry.npm.taobao.org</code></p>
-<p>腾讯云：<code>http://mirrors.cloud.tencent.com/npm/</code></p>
-<p>华为云：<code>https://mirrors.huaweicloud.com/repository/npm/</code></p>
-<span id="more"></span>
-<h5 id="下载时临时使用淘宝镜像">下载时临时使用淘宝镜像</h5>
-<p>Windows使用powershell管理员打开，输入一下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install xxx --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<hr />
-<h5 id="永久更改镜像">永久更改镜像</h5>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<p>再执行 <code>npm config get registry</code> 返回
-<code>http://registry.npm.taobao.org</code> 则设置成功</p>
-<hr />
-<h5 id="通过使用淘宝定制的cnpm安装">通过使用淘宝定制的cnpm安装：</h5>
-<ul>
-<li>安装cnpm</li>
-</ul>
-<p><code>npm install -g cnpm --registry=https://registry.npmmirror.com</code></p>
-<ul>
-<li>使用cnpm</li>
-</ul>
-<p><code>cnpm install xxx</code></p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>代码相关</category>
-      </categories>
-      <tags>
-        <tag>NPM</tag>
       </tags>
   </entry>
   <entry>
@@ -5625,6 +5590,41 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       <tags>
         <tag>Python</tag>
         <tag>Matplotlib</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决npm下载慢问题</title>
+    <url>/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h5 id="npm镜像">npm镜像：</h5>
+<p>淘宝：<code>http://registry.npm.taobao.org</code></p>
+<p>腾讯云：<code>http://mirrors.cloud.tencent.com/npm/</code></p>
+<p>华为云：<code>https://mirrors.huaweicloud.com/repository/npm/</code></p>
+<span id="more"></span>
+<h5 id="下载时临时使用淘宝镜像">下载时临时使用淘宝镜像</h5>
+<p>Windows使用powershell管理员打开，输入一下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install xxx --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<hr />
+<h5 id="永久更改镜像">永久更改镜像</h5>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p>再执行 <code>npm config get registry</code> 返回
+<code>http://registry.npm.taobao.org</code> 则设置成功</p>
+<hr />
+<h5 id="通过使用淘宝定制的cnpm安装">通过使用淘宝定制的cnpm安装：</h5>
+<ul>
+<li>安装cnpm</li>
+</ul>
+<p><code>npm install -g cnpm --registry=https://registry.npmmirror.com</code></p>
+<ul>
+<li>使用cnpm</li>
+</ul>
+<p><code>cnpm install xxx</code></p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>代码相关</category>
+      </categories>
+      <tags>
+        <tag>NPM</tag>
       </tags>
   </entry>
   <entry>
