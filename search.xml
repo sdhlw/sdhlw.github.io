@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>1中国马铃薯地膜覆盖增产效应及其影响因素的Meta分析</title>
+    <url>/1%E4%B8%AD%E5%9B%BD%E9%A9%AC%E9%93%83%E8%96%AF%E5%9C%B0%E8%86%9C%E8%A6%86%E7%9B%96%E5%A2%9E%E4%BA%A7%E6%95%88%E5%BA%94%E5%8F%8A%E5%85%B6%E5%BD%B1%E5%93%8D%E5%9B%A0%E7%B4%A0%E7%9A%84meta%E5%88%86%E6%9E%90/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>目的：量化地膜对马铃薯的产量和水分利用效率的影响，分析其中的影响因素</p>
+<p>方法：</p>
+<ul>
+<li>1981—2021 年，Web of Science/知网，291
+篇中国马铃薯地膜覆盖大田试验文献</li>
+<li>用 Meta 分析方法量化影响</li>
+<li>不同区域、不同自然条件等，研究地膜覆盖对马铃薯产量和水分利用效率的影响</li>
+<li>利用 NoteExpress 和 EndNote 进行中英文文献管理；利用 Microsoft
+Office 2010 进行数据收集、数据库建立和一些基础计算；利用 R 语言中的
+metafor 包进行 Meta 分析；利用GraphPad Prism 作图。</li>
+</ul>
+<span id="more"></span>
+<p>结果：</p>
+<ul>
+<li>地膜覆盖使马铃薯产量和水分利用效率分别提高 24.9%和 28.3%</li>
+<li>不同区域地膜增产与提升水分利用效率的效果不同</li>
+<li>种植密度与栽培方式在各区域的响应一致，即低密度种植与垄作条件下，地膜增
+产效应最好。</li>
+</ul>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182139000.png" alt="" style="zoom:45%;" /></p>
+<h3 id="参考文章">参考文章</h3>
+<p>徐菊祯, 张梦璐, 何文清, 隋鹏, 陈源泉, 崔吉晓, 2023.
+中国马铃薯地膜覆盖增产效应及其影响因素的Meta分析. 中国农业科学 56,
+2895–2906.</p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>理论知识</category>
+        <category>文献泛读</category>
+      </categories>
+      <tags>
+        <tag>Meta分析</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2中国北方地区小麦覆盖栽培增产效应的荟萃（Meta）分析</title>
     <url>/2%E4%B8%AD%E5%9B%BD%E5%8C%97%E6%96%B9%E5%9C%B0%E5%8C%BA%E5%B0%8F%E9%BA%A6%E8%A6%86%E7%9B%96%E6%A0%BD%E5%9F%B9%E5%A2%9E%E4%BA%A7%E6%95%88%E5%BA%94%E7%9A%84%E8%8D%9F%E8%90%83%EF%BC%88meta%EF%BC%89%E5%88%86%E6%9E%90/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>目的：明确中国北方地区秸秆覆盖和地膜覆盖技术对小麦生产的影响，探索两种覆盖体系的适宜推广区域。</p>
@@ -133,6 +170,181 @@ rebase之abort、continue、skip</a></p>
       </categories>
       <tags>
         <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux-vim</title>
+    <url>/Linux-vim/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一vim有四种模式">一、Vim有四种模式</h1>
+<h2
+id="命令模式正常模式command-mode">1、<strong>命令模式/正常模式</strong>（Command
+mode）</h2>
+<p>敲击键盘动作会被Vim识别为命令，而非输入字符。启动Vim默认进入命令模式。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Vim/三种模式 - 维基教科书，自由的教学读本 (wikibooks.org)](https://zh.m.wikibooks.org/zh-hans/Vim/三种模式)
+">[1]</span></a></sup></p>
+<ul>
+<li><code>i</code>：切换到插入模式<br />
+</li>
+<li><code>：</code>：切换到底线命令模式</li>
+<li><code>v</code>：进入可视化模式(小写V、大写V、Ctrl+V均可进入该模式下)</li>
+<li><code>U</code>：撤销上一步操作</li>
+<li><code>yy</code> - 复制当前行，包括换行符</li>
+<li><code>dd</code> - 剪切当前行，包括换行符</li>
+<li><code>p</code>键可以将内容粘贴到当前光标后面</li>
+</ul>
+<h2 id="插入模式insert-mode">2、<strong>插入模式</strong>（Insert
+mode）</h2>
+<p>编辑文本，需进入该模式</p>
+<ul>
+<li><code>Esc</code>：退出插入模式，进入命令模式</li>
+</ul>
+<h2
+id="底线命令模式last-line-mode">3、<strong>底线命令模式</strong>（Last
+line mode）</h2>
+<ul>
+<li><code>Esc</code>：退出底线命令模式，进入命令模式</li>
+<li><code>q!</code>：不保存，强制退出vim</li>
+<li><code>wq</code>：保存，退出vim</li>
+<li><code>q</code>：不保存，退出vim</li>
+<li><code>w</code>：保存，不退出vim</li>
+</ul>
+<h2
+id="可视化模式visual-mode">4、<strong>可视化模式</strong>(Visual-mode)：</h2>
+<ul>
+<li><p>文本选择：小写V进入（选择是以字符为单位的）、大写V进入（选择是以行为单位的）、Ctrl+V进入（矩形区域作为目标文本，以按下
+Ctrl+v
+位置作为矩形的一角，光标移动的终点位置作为它的对角）<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Linux Vim可视化模式及其用法 (biancheng.net)](http://c.biancheng.net/view/6355.html)
+">[2]</span></a></sup></p></li>
+<li><p>可视化命令：</p>
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 85%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>命令</strong></th>
+<th style="text-align: left;"><strong>命令</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">d</td>
+<td style="text-align: left;">删除选中的部分文本。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">D</td>
+<td style="text-align: left;">删除选中部分所在的行，和 d
+不同之处在于，即使选中文本中有些字符所在的行没有都选中，删除时也会一并删除。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">将选中部分复制到剪贴板中。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">p（小写）</td>
+<td style="text-align: left;">将剪贴板中的内容粘贴到光标之后。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">P（大写）</td>
+<td style="text-align: left;">将剪贴板中的内容粘贴到光标之前。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">u（小写）</td>
+<td
+style="text-align: left;">将选中部分中的大写字符全部改为小写字符。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">U（大写）</td>
+<td
+style="text-align: left;">将选中部分中的小写字符全部改为大写字符。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&gt;</td>
+<td style="text-align: left;">将选中部分右移（缩进）一个 tab
+键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
+个空白字符的长度）。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&lt;</td>
+<td style="text-align: left;">将选中部分左移一个 tab
+键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
+个空白字符的长度）。</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<h1 id="二小技巧">二、小技巧</h1>
+<h2 id="设置行号">1、设置行号</h2>
+<p>vim ~/.vimrc 写入：set number</p>
+<h2 id="设置粘贴模式">2、设置粘贴模式</h2>
+<p><code>:set paste</code> + 回车 + <code>i</code></p>
+<h2 id="快速到达首尾">3、快速到达首尾</h2>
+<ul>
+<li><code>gg</code>：跳转到文件头</li>
+<li>行数 +<code>gg</code>：跳转到指定行</li>
+<li>shift + g ：跳转到文件末尾</li>
+</ul>
+<h2 id="多行注释">4、多行注释</h2>
+<p><code>:20,30 s/^/#/g</code> ：20-30行 用 #
+注释掉。（python是用#注释地～～～）</p>
+<p><code>:20,30 s/^#//g</code> ：20-30行 取消注释</p>
+<ul>
+<li><p>注释：</p>
+<p>​ Ctrl + v ：vim中的视图模式，把要注释的内容选上 ​ shift + i ：插入字符
+​shift + # ：把#插入到要注释的行前面（在第一行有显示） ​ Esc
+：按至少2次Esc，则会把所有选中的行都在其前面加#</p></li>
+<li><p>取消注释：</p>
+<p>​ Ctrl+v：进入视图模式 ​
+上下方向键选中要注释的行，左右键选择要删除的字符# ​ 按d删除</p></li>
+</ul>
+<h2 id="vim的搜索功能">5、vim的搜索功能</h2>
+<p>在 normal 模式下按下 <code>/</code>
+即可进入查找模式，输入要查找的字符串并按下回车。 Vim
+会跳转到第一个匹配。按下 <code>n</code> 查找下一个，按下 <code>N</code>
+查找上一个。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[在 Vim 中优雅地查找和替换 | Harttle Land](https://harttle.land/2016/08/08/vim-search-in-file.html)
+">[3]</span></a></sup></p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zh.m.wikibooks.org/zh-hans/Vim/%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F">Vim/三种模式
+- 维基教科书，自由的教学读本
+(wikibooks.org)</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="http://c.biancheng.net/view/6355.html">Linux
+Vim可视化模式及其用法
+(biancheng.net)</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:3">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://harttle.land/2016/08/08/vim-search-in-file.html">在
+Vim 中优雅地查找和替换 | Harttle
+Land</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>软件使用</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Vim</tag>
       </tags>
   </entry>
   <entry>
@@ -753,181 +965,6 @@ href="https://stackoverflow.com/questions/55289288/change-ipython-stream-encodin
       </tags>
   </entry>
   <entry>
-    <title>Linux-vim</title>
-    <url>/Linux-vim/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一vim有四种模式">一、Vim有四种模式</h1>
-<h2
-id="命令模式正常模式command-mode">1、<strong>命令模式/正常模式</strong>（Command
-mode）</h2>
-<p>敲击键盘动作会被Vim识别为命令，而非输入字符。启动Vim默认进入命令模式。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Vim/三种模式 - 维基教科书，自由的教学读本 (wikibooks.org)](https://zh.m.wikibooks.org/zh-hans/Vim/三种模式)
-">[1]</span></a></sup></p>
-<ul>
-<li><code>i</code>：切换到插入模式<br />
-</li>
-<li><code>：</code>：切换到底线命令模式</li>
-<li><code>v</code>：进入可视化模式(小写V、大写V、Ctrl+V均可进入该模式下)</li>
-<li><code>U</code>：撤销上一步操作</li>
-<li><code>yy</code> - 复制当前行，包括换行符</li>
-<li><code>dd</code> - 剪切当前行，包括换行符</li>
-<li><code>p</code>键可以将内容粘贴到当前光标后面</li>
-</ul>
-<h2 id="插入模式insert-mode">2、<strong>插入模式</strong>（Insert
-mode）</h2>
-<p>编辑文本，需进入该模式</p>
-<ul>
-<li><code>Esc</code>：退出插入模式，进入命令模式</li>
-</ul>
-<h2
-id="底线命令模式last-line-mode">3、<strong>底线命令模式</strong>（Last
-line mode）</h2>
-<ul>
-<li><code>Esc</code>：退出底线命令模式，进入命令模式</li>
-<li><code>q!</code>：不保存，强制退出vim</li>
-<li><code>wq</code>：保存，退出vim</li>
-<li><code>q</code>：不保存，退出vim</li>
-<li><code>w</code>：保存，不退出vim</li>
-</ul>
-<h2
-id="可视化模式visual-mode">4、<strong>可视化模式</strong>(Visual-mode)：</h2>
-<ul>
-<li><p>文本选择：小写V进入（选择是以字符为单位的）、大写V进入（选择是以行为单位的）、Ctrl+V进入（矩形区域作为目标文本，以按下
-Ctrl+v
-位置作为矩形的一角，光标移动的终点位置作为它的对角）<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Linux Vim可视化模式及其用法 (biancheng.net)](http://c.biancheng.net/view/6355.html)
-">[2]</span></a></sup></p></li>
-<li><p>可视化命令：</p>
-<table>
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 85%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;"><strong>命令</strong></th>
-<th style="text-align: left;"><strong>命令</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">d</td>
-<td style="text-align: left;">删除选中的部分文本。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">D</td>
-<td style="text-align: left;">删除选中部分所在的行，和 d
-不同之处在于，即使选中文本中有些字符所在的行没有都选中，删除时也会一并删除。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">y</td>
-<td style="text-align: left;">将选中部分复制到剪贴板中。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">p（小写）</td>
-<td style="text-align: left;">将剪贴板中的内容粘贴到光标之后。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">P（大写）</td>
-<td style="text-align: left;">将剪贴板中的内容粘贴到光标之前。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">u（小写）</td>
-<td
-style="text-align: left;">将选中部分中的大写字符全部改为小写字符。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">U（大写）</td>
-<td
-style="text-align: left;">将选中部分中的小写字符全部改为大写字符。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">&gt;</td>
-<td style="text-align: left;">将选中部分右移（缩进）一个 tab
-键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
-个空白字符的长度）。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">&lt;</td>
-<td style="text-align: left;">将选中部分左移一个 tab
-键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
-个空白字符的长度）。</td>
-</tr>
-</tbody>
-</table></li>
-</ul>
-<h1 id="二小技巧">二、小技巧</h1>
-<h2 id="设置行号">1、设置行号</h2>
-<p>vim ~/.vimrc 写入：set number</p>
-<h2 id="设置粘贴模式">2、设置粘贴模式</h2>
-<p><code>:set paste</code> + 回车 + <code>i</code></p>
-<h2 id="快速到达首尾">3、快速到达首尾</h2>
-<ul>
-<li><code>gg</code>：跳转到文件头</li>
-<li>行数 +<code>gg</code>：跳转到指定行</li>
-<li>shift + g ：跳转到文件末尾</li>
-</ul>
-<h2 id="多行注释">4、多行注释</h2>
-<p><code>:20,30 s/^/#/g</code> ：20-30行 用 #
-注释掉。（python是用#注释地～～～）</p>
-<p><code>:20,30 s/^#//g</code> ：20-30行 取消注释</p>
-<ul>
-<li><p>注释：</p>
-<p>​ Ctrl + v ：vim中的视图模式，把要注释的内容选上 ​ shift + i ：插入字符
-​shift + # ：把#插入到要注释的行前面（在第一行有显示） ​ Esc
-：按至少2次Esc，则会把所有选中的行都在其前面加#</p></li>
-<li><p>取消注释：</p>
-<p>​ Ctrl+v：进入视图模式 ​
-上下方向键选中要注释的行，左右键选择要删除的字符# ​ 按d删除</p></li>
-</ul>
-<h2 id="vim的搜索功能">5、vim的搜索功能</h2>
-<p>在 normal 模式下按下 <code>/</code>
-即可进入查找模式，输入要查找的字符串并按下回车。 Vim
-会跳转到第一个匹配。按下 <code>n</code> 查找下一个，按下 <code>N</code>
-查找上一个。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[在 Vim 中优雅地查找和替换 | Harttle Land](https://harttle.land/2016/08/08/vim-search-in-file.html)
-">[3]</span></a></sup></p>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zh.m.wikibooks.org/zh-hans/Vim/%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F">Vim/三种模式
-- 维基教科书，自由的教学读本
-(wikibooks.org)</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="http://c.biancheng.net/view/6355.html">Linux
-Vim可视化模式及其用法
-(biancheng.net)</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:3">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://harttle.land/2016/08/08/vim-search-in-file.html">在
-Vim 中优雅地查找和替换 | Harttle
-Land</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>软件使用</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python的正则表达式</title>
     <url>/Python%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>re库是Python关于正则表达式的一个内置模块，使用时无需下载，直接import即可。</p>
@@ -1141,6 +1178,76 @@ Illustrator中调整画布的大小</a><a href="#fnref:2" rev="footnote">
       </tags>
   </entry>
   <entry>
+    <title>Windows 超赞软件 &amp; 扩展 &amp; 网站</title>
+    <url>/Windows%20%E8%B6%85%E8%B5%9E%E8%BD%AF%E4%BB%B6%20&amp;%20%E6%89%A9%E5%B1%95%20&amp;%20%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="软件">软件:</h4>
+<ul>
+<li><p>Edge浏览器（已换谷歌内核，且扩展丰富，无需翻墙即可添加多数Google扩展），Chrome浏览器、360极速浏览器、</p></li>
+<li><p>Foxmail（邮箱）、Bandizip（解压软件）、LICEcap（录屏GIF）、Snipaste（截图，贴图）、FastStone
+Image Viewer（图片查看器）</p></li>
+<li><p>Typora（Markdown编辑器）、Listary（快速搜索文件文件夹）、百度网盘、PanDownload（百度云解除）、Xmind(思维导图)</p></li>
+<li><p>ripgrep(命令行搜索软件，用于搜索纯文本文件内容)、<a
+href="https://chocolatey.org/install">Chocolatey</a>(软件管理，下载一些Windows的命令行工具)、rga(ripgrep-all，可搜pdf等其他格式)</p></li>
+<li><p>QQ OCR(没错，qq自带OCR!!!)、天若OCR、Quicker（快捷面板）、Utools
+(和quicker有些像)、手心输入法（最后还是换回搜狗，不得不承认搜狗的强大）、(PDF-XChange
+Editor、文电通pdf阅读器)、</p></li>
+<li><p>One
+commander(文件资源管理器)、Clover（文件资源管理器标签化）、DeskPins1.3（窗口置顶）、Spacesniff(直观地看到文件和文件夹的磁盘空间占用情况)、Coodesker(桌面管理软件)、Files
+uwp preview(文件资源管理器)</p></li>
+<li><p>MobaXterm
+(ssh客户端，最推荐，功能很多，不止ssh)、Putty(ssh客户端，比较mini)、Xshell（ssh客户端，朋友用过，自己木有）Windows
+Terminal（终端）</p></li>
+<li><p>IDE&amp;编辑器<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="编辑器就是纯编辑文本的编辑器、IDE是带有软件开发功能的“集成开发环境”。目前的编辑器功能强大，基本可以算作是IDE。简单点说自称IDE的IDE能做的活，自称编辑器的IDE未必能做，自称编辑器的IDE能做的活，自称IDE的IDE基本能做。
+">[1]</span></a></sup>：Vscode(Python、Markdown、LaTex等我都行，牛不牛)、Sublime
+Text、Thonny（Python）</p></li>
+<li><p>科研绘图：</p>
+<ul>
+<li>软件：origin、Photoshop、Adobe Illustrator</li>
+<li>网址：BioRender（生物类绘图）、Scidraw（专为SCI写作插图提供素材）、</li>
+</ul></li>
+</ul>
+<h4 id="edge扩展">Edge扩展</h4>
+<ul>
+<li>Adblock （广告拦截）</li>
+<li>Dark Reader (暗黑模式)</li>
+<li>Fireshot-capture page(截图)</li>
+<li>Infinity pro （好看好用的标签页）</li>
+<li>IGG谷歌学术助手</li>
+<li>沙拉查词</li>
+<li>壹伴（公众号助手）</li>
+</ul>
+<h4 id="网址">网址</h4>
+<ul>
+<li><p>软件下载：https://en.softonic.com/</p></li>
+<li><p>135编辑器（公众号排版）：https://www.135editor.com/</p></li>
+<li><p>创客贴（公众号封面）：https://www.chuangkit.com/</p></li>
+<li><p>LaTex在线：https://www.overleaf.com/</p></li>
+</ul>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">编辑器就是纯编辑文本的编辑器、IDE是带有软件开发功能的“集成开发环境”。目前的编辑器功能强大，基本可以算作是IDE。简单点说自称IDE的IDE能做的活，自称编辑器的IDE未必能做，自称编辑器的IDE能做的活，自称IDE的IDE基本能做。<a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>理论知识</category>
+      </categories>
+      <tags>
+        <tag>Software</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ChatGPT引导语</title>
     <url>/chatgpt%E5%BC%95%E5%AF%BC%E8%AF%AD/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>翻译：</p>
@@ -1210,76 +1317,6 @@ alt="image-20230118215647728" />
         <tag>Python</tag>
         <tag>Vscode</tag>
         <tag>Jupyter Notebook</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows 超赞软件 &amp; 扩展 &amp; 网站</title>
-    <url>/Windows%20%E8%B6%85%E8%B5%9E%E8%BD%AF%E4%BB%B6%20&amp;%20%E6%89%A9%E5%B1%95%20&amp;%20%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="软件">软件:</h4>
-<ul>
-<li><p>Edge浏览器（已换谷歌内核，且扩展丰富，无需翻墙即可添加多数Google扩展），Chrome浏览器、360极速浏览器、</p></li>
-<li><p>Foxmail（邮箱）、Bandizip（解压软件）、LICEcap（录屏GIF）、Snipaste（截图，贴图）、FastStone
-Image Viewer（图片查看器）</p></li>
-<li><p>Typora（Markdown编辑器）、Listary（快速搜索文件文件夹）、百度网盘、PanDownload（百度云解除）、Xmind(思维导图)</p></li>
-<li><p>ripgrep(命令行搜索软件，用于搜索纯文本文件内容)、<a
-href="https://chocolatey.org/install">Chocolatey</a>(软件管理，下载一些Windows的命令行工具)、rga(ripgrep-all，可搜pdf等其他格式)</p></li>
-<li><p>QQ OCR(没错，qq自带OCR!!!)、天若OCR、Quicker（快捷面板）、Utools
-(和quicker有些像)、手心输入法（最后还是换回搜狗，不得不承认搜狗的强大）、(PDF-XChange
-Editor、文电通pdf阅读器)、</p></li>
-<li><p>One
-commander(文件资源管理器)、Clover（文件资源管理器标签化）、DeskPins1.3（窗口置顶）、Spacesniff(直观地看到文件和文件夹的磁盘空间占用情况)、Coodesker(桌面管理软件)、Files
-uwp preview(文件资源管理器)</p></li>
-<li><p>MobaXterm
-(ssh客户端，最推荐，功能很多，不止ssh)、Putty(ssh客户端，比较mini)、Xshell（ssh客户端，朋友用过，自己木有）Windows
-Terminal（终端）</p></li>
-<li><p>IDE&amp;编辑器<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="编辑器就是纯编辑文本的编辑器、IDE是带有软件开发功能的“集成开发环境”。目前的编辑器功能强大，基本可以算作是IDE。简单点说自称IDE的IDE能做的活，自称编辑器的IDE未必能做，自称编辑器的IDE能做的活，自称IDE的IDE基本能做。
-">[1]</span></a></sup>：Vscode(Python、Markdown、LaTex等我都行，牛不牛)、Sublime
-Text、Thonny（Python）</p></li>
-<li><p>科研绘图：</p>
-<ul>
-<li>软件：origin、Photoshop、Adobe Illustrator</li>
-<li>网址：BioRender（生物类绘图）、Scidraw（专为SCI写作插图提供素材）、</li>
-</ul></li>
-</ul>
-<h4 id="edge扩展">Edge扩展</h4>
-<ul>
-<li>Adblock （广告拦截）</li>
-<li>Dark Reader (暗黑模式)</li>
-<li>Fireshot-capture page(截图)</li>
-<li>Infinity pro （好看好用的标签页）</li>
-<li>IGG谷歌学术助手</li>
-<li>沙拉查词</li>
-<li>壹伴（公众号助手）</li>
-</ul>
-<h4 id="网址">网址</h4>
-<ul>
-<li><p>软件下载：https://en.softonic.com/</p></li>
-<li><p>135编辑器（公众号排版）：https://www.135editor.com/</p></li>
-<li><p>创客贴（公众号封面）：https://www.chuangkit.com/</p></li>
-<li><p>LaTex在线：https://www.overleaf.com/</p></li>
-</ul>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">编辑器就是纯编辑文本的编辑器、IDE是带有软件开发功能的“集成开发环境”。目前的编辑器功能强大，基本可以算作是IDE。简单点说自称IDE的IDE能做的活，自称编辑器的IDE未必能做，自称编辑器的IDE能做的活，自称IDE的IDE基本能做。<a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-      </categories>
-      <tags>
-        <tag>Software</tag>
       </tags>
   </entry>
   <entry>
@@ -1548,43 +1585,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://z
       </tags>
   </entry>
   <entry>
-    <title>1中国马铃薯地膜覆盖增产效应及其影响因素的Meta分析</title>
-    <url>/1%E4%B8%AD%E5%9B%BD%E9%A9%AC%E9%93%83%E8%96%AF%E5%9C%B0%E8%86%9C%E8%A6%86%E7%9B%96%E5%A2%9E%E4%BA%A7%E6%95%88%E5%BA%94%E5%8F%8A%E5%85%B6%E5%BD%B1%E5%93%8D%E5%9B%A0%E7%B4%A0%E7%9A%84meta%E5%88%86%E6%9E%90/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>目的：量化地膜对马铃薯的产量和水分利用效率的影响，分析其中的影响因素</p>
-<p>方法：</p>
-<ul>
-<li>1981—2021 年，Web of Science/知网，291
-篇中国马铃薯地膜覆盖大田试验文献</li>
-<li>用 Meta 分析方法量化影响</li>
-<li>不同区域、不同自然条件等，研究地膜覆盖对马铃薯产量和水分利用效率的影响</li>
-<li>利用 NoteExpress 和 EndNote 进行中英文文献管理；利用 Microsoft
-Office 2010 进行数据收集、数据库建立和一些基础计算；利用 R 语言中的
-metafor 包进行 Meta 分析；利用GraphPad Prism 作图。</li>
-</ul>
-<span id="more"></span>
-<p>结果：</p>
-<ul>
-<li>地膜覆盖使马铃薯产量和水分利用效率分别提高 24.9%和 28.3%</li>
-<li>不同区域地膜增产与提升水分利用效率的效果不同</li>
-<li>种植密度与栽培方式在各区域的响应一致，即低密度种植与垄作条件下，地膜增
-产效应最好。</li>
-</ul>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182139000.png" alt="" style="zoom:45%;" /></p>
-<h3 id="参考文章">参考文章</h3>
-<p>徐菊祯, 张梦璐, 何文清, 隋鹏, 陈源泉, 崔吉晓, 2023.
-中国马铃薯地膜覆盖增产效应及其影响因素的Meta分析. 中国农业科学 56,
-2895–2906.</p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-        <category>文献泛读</category>
-      </categories>
-      <tags>
-        <tag>Meta分析</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo代码块折叠功能</title>
     <url>/hexo%E4%BB%A3%E7%A0%81%E5%9D%97%E6%8A%98%E5%8F%A0%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="说明">说明</h3>
@@ -1656,6 +1656,50 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
 style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.imczw.com/post/tech/hexo5-next8-updated.html#more">Hexo-5.x
 与 NexT-8.x 跨版本升级</a><a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>博客运营</category>
+        <category>其它</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hexo常用命令</title>
+    <url>/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li><p><code>hexo clean</code> : 清除缓存</p></li>
+<li><p><code>hexo g</code> : generate 生成页面</p></li>
+<li><p><code>hexo s</code>: server 启动本地服务预览,
+将给出的链接复制粘贴到浏览器地址栏即可预览</p></li>
+<li><p><code>hexo d</code>: deploy 部署发布</p>
+<span id="more"></span></li>
+</ul>
+<p>创建文章：layout有三种：post(会发布)、draft(草稿)、page(首页标签页)。三种文章的模板文档在根文档夹的scaffolds里。命令：<code>hexo n [layout] 文档名</code></p>
+<ul>
+<li><code>hexo n 第一篇文章</code>:
+添加名为第一篇文章的发布文章（不加layout, 默认layout是post）</li>
+<li><code>hexo n draft 第二篇文章</code>:
+添加名为第二篇文章的草稿文章，不发布</li>
+<li><code>hexo P 第二篇文章</code>: 草稿文章发布，即将文章从
+<code>source/_drafts</code> 移动到 <code>source/_posts</code></li>
+<li><code>hexo n page 测试页</code>：添加名为测试页的页面，页面不会出现在首页文章列表和归档中，也不支持分类和标签<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Hexo的常用命令](https://blog.csdn.net/sinat_37529938/article/details/111782829)
+">[1]</span></a></sup>，访问地址为：<code>主页地址/测试页</code></li>
+</ul>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/sinat_37529938/article/details/111782829">Hexo的常用命令</a><a href="#fnref:1" rev="footnote">
 ↩︎</a></span>
 </li>
 </ol>
@@ -1815,50 +1859,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
 style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.vgtiger.com/2021/05/20/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8D%E6%98%BE%E7%A4%BA%E5%9B%BE%E5%BA%8A%E5%9B%BE%E7%89%87%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">Hexo博客不显示图床图片的解决方法
 · vgtiger's Studio</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>博客运营</category>
-        <category>其它</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Hexo常用命令</title>
-    <url>/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li><p><code>hexo clean</code> : 清除缓存</p></li>
-<li><p><code>hexo g</code> : generate 生成页面</p></li>
-<li><p><code>hexo s</code>: server 启动本地服务预览,
-将给出的链接复制粘贴到浏览器地址栏即可预览</p></li>
-<li><p><code>hexo d</code>: deploy 部署发布</p>
-<span id="more"></span></li>
-</ul>
-<p>创建文章：layout有三种：post(会发布)、draft(草稿)、page(首页标签页)。三种文章的模板文档在根文档夹的scaffolds里。命令：<code>hexo n [layout] 文档名</code></p>
-<ul>
-<li><code>hexo n 第一篇文章</code>:
-添加名为第一篇文章的发布文章（不加layout, 默认layout是post）</li>
-<li><code>hexo n draft 第二篇文章</code>:
-添加名为第二篇文章的草稿文章，不发布</li>
-<li><code>hexo P 第二篇文章</code>: 草稿文章发布，即将文章从
-<code>source/_drafts</code> 移动到 <code>source/_posts</code></li>
-<li><code>hexo n page 测试页</code>：添加名为测试页的页面，页面不会出现在首页文章列表和归档中，也不支持分类和标签<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Hexo的常用命令](https://blog.csdn.net/sinat_37529938/article/details/111782829)
-">[1]</span></a></sup>，访问地址为：<code>主页地址/测试页</code></li>
-</ul>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/sinat_37529938/article/details/111782829">Hexo的常用命令</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
 </li>
 </ol>
 </div>
@@ -2077,6 +2077,44 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
+    <title>hexo部署时报错SSL/TLS connection failed</title>
+    <url>/hexo%E9%83%A8%E7%BD%B2%E6%97%B6%E6%8A%A5%E9%94%99ssl-tls-connection-failed/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
+<p>两种情况：</p>
+<ul>
+<li><p>一种是你给git配置了vpn，vpn断掉了就会出现该提示，恢复本地vpn即可</p></li>
+<li><p>另一种是你没有配置vpn，可以尝试这种方法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[解决git操作fatal: unable to access &#39;xxx&#39;: schannel: failed to receive handshake, SSL/TLS connection](https://www.jianshu.com/p/6773edf6b064)
+">[1]</span></a></sup>：</p>
+<p>找到 .gitconfig 文档（一般位于 <code>C:/Users/xxx/</code>
+目录下）,修改 <code>[http]</code> 中的 <code>sslbackend</code>
+如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[http]</span><br><span class="line">    sslbackend = openssl</span><br></pre></td></tr></table></figure></li>
+</ul>
+<!--more-->
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.jianshu.com/p/6773edf6b064">解决git操作fatal:
+unable to access 'xxx': schannel: failed to receive handshake, SSL/TLS
+connection</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>博客运营</category>
+        <category>其它</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Jupyter Notebook 使用</title>
     <url>/jupyter-notebook-%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="改变默认路径">1、改变默认路径</h3>
@@ -2139,44 +2177,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://w
         <tag>Python</tag>
         <tag>Jupyter Notebook</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>hexo部署时报错SSL/TLS connection failed</title>
-    <url>/hexo%E9%83%A8%E7%BD%B2%E6%97%B6%E6%8A%A5%E9%94%99ssl-tls-connection-failed/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
-<p>两种情况：</p>
-<ul>
-<li><p>一种是你给git配置了vpn，vpn断掉了就会出现该提示，恢复本地vpn即可</p></li>
-<li><p>另一种是你没有配置vpn，可以尝试这种方法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[解决git操作fatal: unable to access &#39;xxx&#39;: schannel: failed to receive handshake, SSL/TLS connection](https://www.jianshu.com/p/6773edf6b064)
-">[1]</span></a></sup>：</p>
-<p>找到 .gitconfig 文档（一般位于 <code>C:/Users/xxx/</code>
-目录下）,修改 <code>[http]</code> 中的 <code>sslbackend</code>
-如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[http]</span><br><span class="line">    sslbackend = openssl</span><br></pre></td></tr></table></figure></li>
-</ul>
-<!--more-->
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.jianshu.com/p/6773edf6b064">解决git操作fatal:
-unable to access 'xxx': schannel: failed to receive handshake, SSL/TLS
-connection</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>博客运营</category>
-        <category>其它</category>
-      </categories>
   </entry>
   <entry>
     <title>Markdown超链接</title>
@@ -2256,6 +2256,55 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       <tags>
         <tag>Meta分析</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Next主题添加切换暗黑模式</title>
+    <url>/next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E5%88%87%E6%8D%A2%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>安装 <code>hexo-next-darkmode</code> <a
+href="https://github.com/rqh656418510/hexo-next-darkmode/blob/main/README_CN.md">插件</a><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Hexo Next 8.x 主题添加可切换的暗黑模式](https://www.techgrow.cn/posts/abf4aee1.html#Next-7-x-%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%8F%AF%E5%88%87%E6%8D%A2%E7%9A%84%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F)
+">[1]</span></a></sup></p>
+<p>windows管理员打开powershell，运行一下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-next-darkmode --save --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h3 id="配置-hexo-插件">配置 Hexo 插件</h3>
+<p>在 Next 主题的 <code>_config.yml</code> 配置文档里添加以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Darkmode JS</span><br><span class="line"># For more information: https://github.com/rqh656418510/hexo-next-darkmode, https://github.com/sandoche/Darkmode.js</span><br><span class="line">darkmode_js:</span><br><span class="line">  enable: true</span><br><span class="line">  bottom: &#x27;64px&#x27; # default: &#x27;32px&#x27;</span><br><span class="line">  right: &#x27;unset&#x27; # default: &#x27;32px&#x27;</span><br><span class="line">  left: &#x27;32px&#x27; # default: &#x27;unset&#x27;</span><br><span class="line">  time: &#x27;0.5s&#x27; # default: &#x27;0.3s&#x27;</span><br><span class="line">  mixColor: &#x27;transparent&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  backgroundColor: &#x27;transparent&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  buttonColorDark: &#x27;#100f2c&#x27; # default: &#x27;#100f2c&#x27;</span><br><span class="line">  buttonColorLight: &#x27;#fff&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  isActivated: false # default false</span><br><span class="line">  saveInCookies: true # default: true</span><br><span class="line">  label: &#x27;🌓&#x27; # default: &#x27;&#x27;</span><br><span class="line">  autoMatchOsTheme: true # default: true</span><br><span class="line">  libUrl: # Set custom library cdn url for Darkmode.js</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>isActivated: true</code>：默认激活暗黑 / 夜间模式，请始终与
+<code>saveInCookies: false</code>、<code>autoMatchOsTheme: false</code>
+一起使用；同时需要在 NexT 主题的 <code>_config.yml</code> 配置文档里设置
+<code>pjax: true</code>，即启用 Pjax。</li>
+</ul>
+<h3 id="关闭原生的暗黑模式">关闭原生的暗黑模式</h3>
+<p>确保 Next 原生的 <code>darkmode</code> 选项设置为
+<code>false</code>，在 Next 的 <code>_config.yml</code>
+配置文档中更改以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">darkmode: false</span><br></pre></td></tr></table></figure>
+<p>Hexo
+重新构建生成静态资源文档后，点击页面上的按钮即可切换暗黑模式：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.techgrow.cn/posts/abf4aee1.html#Next-7-x-%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%8F%AF%E5%88%87%E6%8D%A2%E7%9A%84%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F">Hexo
+Next 8.x 主题添加可切换的暗黑模式</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>博客运营</category>
+        <category>其它</category>
+      </categories>
   </entry>
   <entry>
     <title>Meta分析基本知识</title>
@@ -2410,70 +2459,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>Next主题添加切换暗黑模式</title>
-    <url>/next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E5%88%87%E6%8D%A2%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>安装 <code>hexo-next-darkmode</code> <a
-href="https://github.com/rqh656418510/hexo-next-darkmode/blob/main/README_CN.md">插件</a><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Hexo Next 8.x 主题添加可切换的暗黑模式](https://www.techgrow.cn/posts/abf4aee1.html#Next-7-x-%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%8F%AF%E5%88%87%E6%8D%A2%E7%9A%84%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F)
-">[1]</span></a></sup></p>
-<p>windows管理员打开powershell，运行一下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-next-darkmode --save --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<h3 id="配置-hexo-插件">配置 Hexo 插件</h3>
-<p>在 Next 主题的 <code>_config.yml</code> 配置文档里添加以下内容</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Darkmode JS</span><br><span class="line"># For more information: https://github.com/rqh656418510/hexo-next-darkmode, https://github.com/sandoche/Darkmode.js</span><br><span class="line">darkmode_js:</span><br><span class="line">  enable: true</span><br><span class="line">  bottom: &#x27;64px&#x27; # default: &#x27;32px&#x27;</span><br><span class="line">  right: &#x27;unset&#x27; # default: &#x27;32px&#x27;</span><br><span class="line">  left: &#x27;32px&#x27; # default: &#x27;unset&#x27;</span><br><span class="line">  time: &#x27;0.5s&#x27; # default: &#x27;0.3s&#x27;</span><br><span class="line">  mixColor: &#x27;transparent&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  backgroundColor: &#x27;transparent&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  buttonColorDark: &#x27;#100f2c&#x27; # default: &#x27;#100f2c&#x27;</span><br><span class="line">  buttonColorLight: &#x27;#fff&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  isActivated: false # default false</span><br><span class="line">  saveInCookies: true # default: true</span><br><span class="line">  label: &#x27;🌓&#x27; # default: &#x27;&#x27;</span><br><span class="line">  autoMatchOsTheme: true # default: true</span><br><span class="line">  libUrl: # Set custom library cdn url for Darkmode.js</span><br></pre></td></tr></table></figure>
-<ul>
-<li><code>isActivated: true</code>：默认激活暗黑 / 夜间模式，请始终与
-<code>saveInCookies: false</code>、<code>autoMatchOsTheme: false</code>
-一起使用；同时需要在 NexT 主题的 <code>_config.yml</code> 配置文档里设置
-<code>pjax: true</code>，即启用 Pjax。</li>
-</ul>
-<h3 id="关闭原生的暗黑模式">关闭原生的暗黑模式</h3>
-<p>确保 Next 原生的 <code>darkmode</code> 选项设置为
-<code>false</code>，在 Next 的 <code>_config.yml</code>
-配置文档中更改以下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">darkmode: false</span><br></pre></td></tr></table></figure>
-<p>Hexo
-重新构建生成静态资源文档后，点击页面上的按钮即可切换暗黑模式：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.techgrow.cn/posts/abf4aee1.html#Next-7-x-%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%8F%AF%E5%88%87%E6%8D%A2%E7%9A%84%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F">Hexo
-Next 8.x 主题添加可切换的暗黑模式</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>博客运营</category>
-        <category>其它</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Numpy不用省略号和科学计数法</title>
-    <url>/numpy%E4%B8%8D%E7%94%A8%E7%9C%81%E7%95%A5%E5%8F%B7%E5%92%8C%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">np.set_printoptions(threshold = np.inf) <span class="comment"># 不使用省略号表示</span></span><br><span class="line">np.set_printoptions(suppress = <span class="literal">True</span>) <span class="comment"># 不使用科学计数显示</span></span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>代码相关</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>Numpy</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>NPM---Node 包管理器</title>
     <url>/npm-node-%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>npm（“Node 包管理器”）是 JavaScript 运行时 Node.js
@@ -2606,6 +2591,21 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       <tags>
         <tag>NPM</tag>
         <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Numpy不用省略号和科学计数法</title>
+    <url>/numpy%E4%B8%8D%E7%94%A8%E7%9C%81%E7%95%A5%E5%8F%B7%E5%92%8C%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">np.set_printoptions(threshold = np.inf) <span class="comment"># 不使用省略号表示</span></span><br><span class="line">np.set_printoptions(suppress = <span class="literal">True</span>) <span class="comment"># 不使用科学计数显示</span></span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>代码相关</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>Numpy</tag>
       </tags>
   </entry>
   <entry>
@@ -2822,6 +2822,62 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
+    <title>Python (matplotlib)保存矢量图</title>
+    <url>/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="保存矢量图">保存矢量图</h3>
+<p>语法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Python中Matplotlib Savefig()不同参数的使用](https://blog.csdn.net/wilbeok/article/details/111194473)
+">[1]</span></a></sup>：</p>
+<p><code>savefig(fname, dpi=None, facecolor=’w’, edgecolor=’w’, orientation=’portrait’, papertype=None, format=None, transparent=False, bbox_inches=None, pad_inches=0.1, frameon=None, metadata=None)</code></p>
+<p>简单使用：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.savefig(<span class="string">&#x27;C:\\Users\\Lenovo\\Pictures\\test03.svg&#x27;</span>, <span class="built_in">format</span>=<span class="string">&#x27;svg&#x27;</span>,dpi = <span class="number">600</span>,transparent=<span class="literal">False</span>,bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<ul>
+<li>fname即
+<code>test03.svg</code>，<code>format='svg'</code>，<code>dpi = 600</code>
+为导出矢量图的三个参数</li>
+<li><code>transparent=False</code> ：照片背景不要透明</li>
+<li><code>bbox_inches='tight'</code>
+：使未保存到图中的图例（或其他部分）包含进来，避免图片保存下来不全。bbox_inches的作用是调整图的bbox,
+即bounding
+box(边界框)<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Python_matplotlib图例放在外侧保存时显示不完整问题解决](https://blog.csdn.net/Poul_henry/article/details/88311964)
+">[2]</span></a></sup></li>
+</ul>
+<span id="more"></span>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/wilbeok/article/details/111194473">Python中Matplotlib
+Savefig()不同参数的使用</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/Poul_henry/article/details/88311964">Python_matplotlib图例放在外侧保存时显示不完整问题解决</a><a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>代码相关</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>Matplotlib</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>pip下载太慢</title>
     <url>/pip%E4%B8%8B%E8%BD%BD%E5%A4%AA%E6%85%A2/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="临时换源">临时换源：</h4>
@@ -2932,84 +2988,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>Vscode &amp; Jupyter-Notebook：Output exceeds the size limit</title>
-    <url>/vscode-jupyter-notebook%EF%BC%9Aoutput-exceeds-the-size-limit/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Output exceeds the size limit. Open the full output data in a text
-editor</p>
-<p>每次报错信息过多就要用文本编辑器打开，可是打开之后都是没编译的，乱码看起来很难受。</p>
-<span id="more"></span>
-<p>参考了这篇<a
-href="https://stackoverflow.com/questions/72823258/vscode-interactive-python-output-exceeds-size-limit">回答</a>，找到以下解决方案，我修改为1000：</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302060049102.png" /></p>
-<p>修改之后，重启Vscode即可。</p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>软件使用</category>
-      </categories>
-      <tags>
-        <tag>Vscode</tag>
-        <tag>Jupyter Notebook</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python (matplotlib)保存矢量图</title>
-    <url>/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="保存矢量图">保存矢量图</h3>
-<p>语法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Python中Matplotlib Savefig()不同参数的使用](https://blog.csdn.net/wilbeok/article/details/111194473)
-">[1]</span></a></sup>：</p>
-<p><code>savefig(fname, dpi=None, facecolor=’w’, edgecolor=’w’, orientation=’portrait’, papertype=None, format=None, transparent=False, bbox_inches=None, pad_inches=0.1, frameon=None, metadata=None)</code></p>
-<p>简单使用：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.savefig(<span class="string">&#x27;C:\\Users\\Lenovo\\Pictures\\test03.svg&#x27;</span>, <span class="built_in">format</span>=<span class="string">&#x27;svg&#x27;</span>,dpi = <span class="number">600</span>,transparent=<span class="literal">False</span>,bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-<ul>
-<li>fname即
-<code>test03.svg</code>，<code>format='svg'</code>，<code>dpi = 600</code>
-为导出矢量图的三个参数</li>
-<li><code>transparent=False</code> ：照片背景不要透明</li>
-<li><code>bbox_inches='tight'</code>
-：使未保存到图中的图例（或其他部分）包含进来，避免图片保存下来不全。bbox_inches的作用是调整图的bbox,
-即bounding
-box(边界框)<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Python_matplotlib图例放在外侧保存时显示不完整问题解决](https://blog.csdn.net/Poul_henry/article/details/88311964)
-">[2]</span></a></sup></li>
-</ul>
-<span id="more"></span>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/wilbeok/article/details/111194473">Python中Matplotlib
-Savefig()不同参数的使用</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/Poul_henry/article/details/88311964">Python_matplotlib图例放在外侧保存时显示不完整问题解决</a><a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>代码相关</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>Matplotlib</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Vscode的Jupyter的change presentation</title>
     <url>/vscode%E7%9A%84jupyter%E7%9A%84change-presentation/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：每次使用绘图，都是需要手动切换Change presentations
@@ -3048,6 +3026,28 @@ ouput</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
 </ol>
 </div>
 </div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>软件使用</category>
+      </categories>
+      <tags>
+        <tag>Vscode</tag>
+        <tag>Jupyter Notebook</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vscode &amp; Jupyter-Notebook：Output exceeds the size limit</title>
+    <url>/vscode-jupyter-notebook%EF%BC%9Aoutput-exceeds-the-size-limit/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Output exceeds the size limit. Open the full output data in a text
+editor</p>
+<p>每次报错信息过多就要用文本编辑器打开，可是打开之后都是没编译的，乱码看起来很难受。</p>
+<span id="more"></span>
+<p>参考了这篇<a
+href="https://stackoverflow.com/questions/72823258/vscode-interactive-python-output-exceeds-size-limit">回答</a>，找到以下解决方案，我修改为1000：</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302060049102.png" /></p>
+<p>修改之后，重启Vscode即可。</p>
 ]]></content>
       <categories>
         <category>科研学习</category>
@@ -3265,31 +3265,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>Windows设置开机自启软件（计划任务）</title>
-    <url>/windows%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%BD%AF%E4%BB%B6%EF%BC%88%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1 右键此电脑，管理</p>
-<p>2
-打开任务计划程序库，操作--创建基本任务，填写任务名称、时间、添加exe文件等</p>
-<span id="more"></span>
-<p>3 设置延时时间（一定要设置，避免太晚启动）</p>
-<ul>
-<li>打开任务计划程序库，双击你创建的任务</li>
-</ul>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401131550280.png" alt="image-20240113122608544" style="zoom: 50%;" /></p>
-<ul>
-<li>点击触发器，再双击，设置延时任务时间即可</li>
-</ul>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401131550679.png" alt="image-20240113122146371" style="zoom: 50%;" /></p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-      </categories>
-      <tags>
-        <tag>windows小技巧</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python环境的配置</title>
     <url>/python%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：在使用 pycharm 或 vscode 时，对切换 python
@@ -3377,17 +3352,28 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://w
       </tags>
   </entry>
   <entry>
-    <title>word支持的插入图片格式</title>
-    <url>/word%E6%94%AF%E6%8C%81%E7%9A%84%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401132000313.png" alt="image-20240113143016946" style="zoom:67%;" /></p>
+    <title>Windows设置开机自启软件（计划任务）</title>
+    <url>/windows%E8%AE%BE%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF%E8%BD%AF%E4%BB%B6%EF%BC%88%E8%AE%A1%E5%88%92%E4%BB%BB%E5%8A%A1%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1 右键此电脑，管理</p>
+<p>2
+打开任务计划程序库，操作--创建基本任务，填写任务名称、时间、添加exe文件等</p>
+<span id="more"></span>
+<p>3 设置延时时间（一定要设置，避免太晚启动）</p>
+<ul>
+<li>打开任务计划程序库，双击你创建的任务</li>
+</ul>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401131550280.png" alt="image-20240113122608544" style="zoom: 50%;" /></p>
+<ul>
+<li>点击触发器，再双击，设置延时任务时间即可</li>
+</ul>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401131550679.png" alt="image-20240113122146371" style="zoom: 50%;" /></p>
 ]]></content>
       <categories>
         <category>科研学习</category>
-        <category>软件使用</category>
+        <category>理论知识</category>
       </categories>
       <tags>
-        <tag>word</tag>
+        <tag>windows小技巧</tag>
       </tags>
   </entry>
   <entry>
@@ -3415,6 +3401,50 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/20230
 <li>更新中文 translators</li>
 <li>拉取文献引用次数，是否核心期刊</li>
 </ul>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>软件使用</category>
+      </categories>
+      <tags>
+        <tag>Zotero</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Zotero搭配Sci-Hub</title>
+    <url>/zotero%E6%90%AD%E9%85%8Dsci-hub/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="实现功能">实现功能</h3>
+<p>Zotero右键条目实现自动下载pdf</p>
+<h3 id="设置sci-hub作为pdf解析器">设置Sci-Hub作为PDF解析器</h3>
+<p>打开Zotero的首选项，进入<code>Advanced--&gt;Config Editor</code></p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302250911205.png" /></p>
+<p>搜索<code>extensions.zotero.findPDFs.resolvers</code></p>
+<p>双击<code>extensions.zotero.findPDFs.resolvers</code>，默认情况下是只有一对
+<code>[]</code>。</p>
+<p>删除<code>[]</code>，并将以下代码粘贴进去。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[更新版｜Zotero搭配Sci-Hub，真香！](https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg)
+">[1]</span></a></sup></p>
+<span id="more"></span>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&#123;  </span><br><span class="line"><span class="string">&quot;name&quot;</span>:<span class="string">&quot;Sci-Hub&quot;</span>,  </span><br><span class="line"><span class="string">&quot;method&quot;</span>:<span class="string">&quot;GET&quot;</span>,  </span><br><span class="line"><span class="string">&quot;url&quot;</span>:<span class="string">&quot;https://sci-hub.se/&#123;doi&#125;&quot;</span>,  </span><br><span class="line"><span class="string">&quot;mode&quot;</span>:<span class="string">&quot;html&quot;</span>,  </span><br><span class="line"><span class="string">&quot;selector&quot;</span>:<span class="string">&quot;#pdf&quot;</span>,  </span><br><span class="line"><span class="string">&quot;attribute&quot;</span>:<span class="string">&quot;src&quot;</span>,  </span><br><span class="line"><span class="string">&quot;automatic&quot;</span>:true  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>到此就成功将Sci-Hub配置为PDF解析器了，也就是说替代了默认的Unpaywall。</p>
+<p>现在即可右键条目下载pdf了（前提是条目包含doi）</p>
+<p>查找文件doi：https://github.com/bwiernik/zotero-shortdoi/releases</p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg">更新版｜Zotero搭配Sci-Hub，真香！</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
 ]]></content>
       <categories>
         <category>科研学习</category>
@@ -3470,50 +3500,6 @@ href="https://zhuanlan.zhihu.com/p/24825503">【机器学习】Cross-Validation�
       <tags>
         <tag>Machine Learning</tag>
         <tag>交叉验证</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Zotero搭配Sci-Hub</title>
-    <url>/zotero%E6%90%AD%E9%85%8Dsci-hub/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="实现功能">实现功能</h3>
-<p>Zotero右键条目实现自动下载pdf</p>
-<h3 id="设置sci-hub作为pdf解析器">设置Sci-Hub作为PDF解析器</h3>
-<p>打开Zotero的首选项，进入<code>Advanced--&gt;Config Editor</code></p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302250911205.png" /></p>
-<p>搜索<code>extensions.zotero.findPDFs.resolvers</code></p>
-<p>双击<code>extensions.zotero.findPDFs.resolvers</code>，默认情况下是只有一对
-<code>[]</code>。</p>
-<p>删除<code>[]</code>，并将以下代码粘贴进去。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[更新版｜Zotero搭配Sci-Hub，真香！](https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg)
-">[1]</span></a></sup></p>
-<span id="more"></span>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&#123;  </span><br><span class="line"><span class="string">&quot;name&quot;</span>:<span class="string">&quot;Sci-Hub&quot;</span>,  </span><br><span class="line"><span class="string">&quot;method&quot;</span>:<span class="string">&quot;GET&quot;</span>,  </span><br><span class="line"><span class="string">&quot;url&quot;</span>:<span class="string">&quot;https://sci-hub.se/&#123;doi&#125;&quot;</span>,  </span><br><span class="line"><span class="string">&quot;mode&quot;</span>:<span class="string">&quot;html&quot;</span>,  </span><br><span class="line"><span class="string">&quot;selector&quot;</span>:<span class="string">&quot;#pdf&quot;</span>,  </span><br><span class="line"><span class="string">&quot;attribute&quot;</span>:<span class="string">&quot;src&quot;</span>,  </span><br><span class="line"><span class="string">&quot;automatic&quot;</span>:true  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>到此就成功将Sci-Hub配置为PDF解析器了，也就是说替代了默认的Unpaywall。</p>
-<p>现在即可右键条目下载pdf了（前提是条目包含doi）</p>
-<p>查找文件doi：https://github.com/bwiernik/zotero-shortdoi/releases</p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg">更新版｜Zotero搭配Sci-Hub，真香！</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>软件使用</category>
-      </categories>
-      <tags>
-        <tag>Zotero</tag>
       </tags>
   </entry>
   <entry>
@@ -3721,29 +3707,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">Hexo博�
       </categories>
   </entry>
   <entry>
-    <title>好文推荐</title>
-    <url>/%E5%A5%BD%E6%96%87%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、<a
-href="https://retompi.com/archived-blog/posts/2020/01/16/version-control-for-word-files-like-plain-text.html#git-pandoc">如何对
-Word 文件进行「纯文本式」版本控制？ | TomBen (retompi.com)</a></p>
-<p>2、<a
-href="https://backlog.com/git-tutorial/cn/stepup/stepup1_1.html">什么是分支？【分支
-(branch)】| 猴子都能懂的GIT入门| 贝格乐（Backlog）</a></p>
-<p>3、<a
-href="https://blog.51cto.com/yttitan/2409618">Shell脚本中的多任务并发执行_一壶浊酒的技术博客_51CTO博客</a></p>
-<p>4、<a
-href="https://notebook.community/gmonce/datascience/src/1%20-%20Yet%20Another%20Python%20Encoding%20Tutorial">Yet
-Another Python Encoding Tutorial</a></p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-      </categories>
-      <tags>
-        <tag>好文推荐</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博客访问速度提升（双线部署coding &amp; github）</title>
     <url>/%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E6%8F%90%E5%8D%87%EF%BC%88%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2coding-github%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>实现大陆访问，使用coding（大家可以理解为中国版的github），国外访问，使用github，以及可以提交百度收录（GitHub
@@ -3817,198 +3780,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       <tags>
         <tag>Coding</tag>
         <tag>Github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>图片版权</title>
-    <url>/%E5%9B%BE%E7%89%87%E7%89%88%E6%9D%83/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>谷歌图片：</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212051986.png" alt="" style="zoom:80%;" /></p>
-<span id="more"></span>
-<p>创用CC授权：</p>
-<p>知识共享许可协议（英语：Creative Commons
-license，或创用CC授权）是一种公共版权授权条款，其允许按照多种需求分发受版权保护的作品<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[知识共享许可协议--维基百科](https://zh.wikipedia.org/wiki/%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE)
-">[1]</span></a></sup>。</p>
-<p>四项权利</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212059253.png" alt="image-20240121205712056" style="zoom: 67%;" /></p>
-<p>4种基本权利的组合有16种，即每项权利是否授权，即有$2=16 $
-种权利，4种组合是同时包括“<strong>ND</strong>”和“<strong>SA</strong>”的条款，相互排斥，无法使用；还有一种没有包括任何条款（即4种权利都不授权），因此有5个组合无效。11种有效组合中，因为98%的特许人要求署名，五种缺乏“<strong>BY</strong>”的条款不再使用。</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212201746.png" alt="" style="zoom:67%;" /></p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zh.wikipedia.org/wiki/%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE">知识共享许可协议--维基百科</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-      </categories>
-      <tags>
-        <tag>论文投稿</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文献管理</title>
-    <url>/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、本地文献以一个字母开头（与课题相关）数字文献名作为文件名。（eg：k1、my
-literature）</p>
-<p>2、本地文献与Endnote相一致，ID为字母与数字，Label填写细分类或关键词，方便定位，Rating打分。</p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-      </categories>
-      <tags>
-        <tag>文献管理</tag>
-        <tag>Endnote</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>期刊影响力</title>
-    <url>/%E6%9C%9F%E5%88%8A%E5%BD%B1%E5%93%8D%E5%8A%9B/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>影响因子（Impact Factor）：某期刊前两年发表的论文在该报告年份（JCR
-year）中被引用总次数除以该期刊在这两年内发表的论文总数。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://baike.baidu.com/item/%E5%BD%B1%E5%93%8D%E5%9B%A0%E5%AD%90/574727
-">[1]</span></a></sup></p>
-<p>期刊的IF（影响因子）每年不断浮动，把IF定值作为学术评价指标不适合，而且不同学科领域期刊的影响因子差异很大，仅凭IF不能直观地比较不同领域的期刊。把同一学科领域的期刊，<strong>按IF大到小做排序后，划分入不同区域。</strong>只要是某领域1区的期刊，就是该领域的顶级刊物，直观反映该刊在领域内的水准和大致排位。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://kyc.szcu.edu.cn/2023/0328/c2593a50685/page.htm
-">[2]</span></a></sup></p>
-<span id="more"></span>
-<ul>
-<li><p>JCR分区：汤森路透公司制定的JCR分区(原来是汤森路透，后来易主科睿唯安)，一般简称为JCR
-分区(Journal Citation Reports，简称JCR)。</p>
-<p>JCR将收录期刊分为176个不同学科类别。每个学科分类按期刊的影响因子高低，平均分为Q1、Q2、Q3和Q4四个区：</p>
-<ul>
-<li><p>影响因子前25%(含25%)期刊划分为Q1区；</p></li>
-<li><p>影响因子前25%～50% 为Q2区；</p></li>
-<li><p>影响因子前50%～75% 为Q3区；</p></li>
-<li><p>影响因子75%之后为Q4区。</p></li>
-</ul></li>
-<li><p>中科院分区：中国科学院国家科学图书馆制定的JCR分区，一般简称为「中科院分区」。</p>
-<p>中科院分区目前分为基础版和升级版（试行）</p>
-<p>中科院分区（基础版）先将JCR中所有期刊分为数学、物理、化学、生物、地学、天文、工程技术、医学、环境科学、农林科学、社会科学、管理科学及综合性期刊13
-大类。每个学科分类按照期刊的3年平均影响因子高低，分为4四个区：</p>
-<ul>
-<li><p>影响因子前5%为该类1 区；</p></li>
-<li><p>影响因子前6% ～ 20% 为2 区；</p></li>
-<li><p>影响因子前21% ～ 50% 为3 区；</p></li>
-<li><p>影响因子后50%为4区。</p></li>
-</ul>
-<p>中科院分区升级版在2020年1月公布，在基础版的基础上做了以下调整。</p>
-<ul>
-<li>针对期刊收录范围，升级版由基础版的只收录SCI期刊，扩展为收录SCI期刊和SSCI期刊。</li>
-<li>针对学科分类，升级版将期刊由基础版的13个学科扩展至18个。针对分区标准，升级版由基础版的按照影响因子分区，改为了按照期刊超越指数分区。</li>
-<li>值得一提的是，中科院分区目前属于过渡期，基础版和升级版均在更新和发布。2022年起，将只公布升级版。</li>
-</ul></li>
-</ul>
-<p><strong>JCR分区 PK 中科院分区</strong></p>
-<ul>
-<li><p>01 学科划分不同</p>
-<p>科睿唯安JCR的Journal
-Ranking没有设置大类学科，只分为176个具体学科，也就是中科院分区表中所指的小类学科。</p></li>
-<li><p>02 分区方法不同</p>
-<p>JCR是按照<strong>“平均主义”思想</strong>，根据刊物IF的高至低平均划分4个区，每个区含有该领域总量25%的期刊；中科院的分区如同<strong>社会阶层的金字塔结构</strong>，1区只有5%的顶级期刊，2~4区期刊数量也逐层增加。于是，采用中科院分区后往往出现<strong>“掉区”</strong>的情况。</p></li>
-</ul>
-<p>　　显然中科院的1区和2区杂志很少，杂志质量相对也高，基本都是本领域的顶级期刊。所以有的人发表的论文按JCR分区标准算一区，而按中科院分区算2区甚至三区。</p>
-<ul>
-<li><p>03 指标取值不同</p>
-<p>JCR是按当期（1年）的IF进行分区，中科院是按刊物前3年IF平均值进行分区。</p></li>
-<li><p>04 写法不同</p>
-<p>一般的，JCR中1区的期刊写作“Q1”，中科院1区的期刊写作“1区”，如此类推。最后的重点——我们到底该看哪个分区？
-　　其实两种分区方式都比较权威，具体怎么看，最直接的方法是看你们学校/单位认哪个。</p></li>
-</ul>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://baike.baidu.com/item/%E5%BD%B1%E5%93%8D%E5%9B%A0%E5%AD%90/574727<a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://kyc.szcu.edu.cn/2023/0328/c2593a50685/page.htm<a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-      </categories>
-      <tags>
-        <tag>论文投稿</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>投稿期刊推荐</title>
-    <url>/%E6%8A%95%E7%A8%BF%E6%9C%9F%E5%88%8A%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、查看自己参考文献的期刊</p>
-<p>2、专业定点期刊，比如做生信，就可以投<em>Bioinformatics</em>、<em>Briefings
-in Bioinformatics</em>、<em>BMC Bioinformatics</em>
-，也可以直接谷歌生信相关期刊。</p>
-<span id="more"></span>
-<p>3、使用专业网站选刊<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[5 个网站帮你精准选到 SCI 投稿期刊！（附好用的期刊查找网址）](https://zhuanlan.zhihu.com/p/382157070)
-">[1]</span></a></sup></p>
-<p>Journal Finder：出版商开发的选刊工具</p>
-<ul>
-<li><a
-href="https://journalfinder.wiley.com/search?type=match">wiley</a></li>
-<li><a href="https://journalfinder.elsevier.com/">elsevier</a></li>
-</ul>
-<p>Journal Suggester：出版商开发的选刊工具</p>
-<ul>
-<li><p><a
-href="https://journalsuggester.springer.com/">springer</a>：已经无法使用</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402152157438.png" alt="image-20240215215728650" style="zoom:33%;" /></p></li>
-</ul>
-<p>其他网址：<a
-href="https://www.journalguide.com/">journalguide</a></p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/382157070">5
-个网站帮你精准选到 SCI
-投稿期刊！（附好用的期刊查找网址）</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-      </categories>
-      <tags>
-        <tag>论文投稿</tag>
       </tags>
   </entry>
   <entry>
@@ -4112,6 +3883,134 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
+    <title>图片版权</title>
+    <url>/%E5%9B%BE%E7%89%87%E7%89%88%E6%9D%83/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>谷歌图片：</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212051986.png" alt="" style="zoom:80%;" /></p>
+<span id="more"></span>
+<p>创用CC授权：</p>
+<p>知识共享许可协议（英语：Creative Commons
+license，或创用CC授权）是一种公共版权授权条款，其允许按照多种需求分发受版权保护的作品<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[知识共享许可协议--维基百科](https://zh.wikipedia.org/wiki/%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE)
+">[1]</span></a></sup>。</p>
+<p>四项权利</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212059253.png" alt="image-20240121205712056" style="zoom: 67%;" /></p>
+<p>4种基本权利的组合有16种，即每项权利是否授权，即有$2=16 $
+种权利，4种组合是同时包括“<strong>ND</strong>”和“<strong>SA</strong>”的条款，相互排斥，无法使用；还有一种没有包括任何条款（即4种权利都不授权），因此有5个组合无效。11种有效组合中，因为98%的特许人要求署名，五种缺乏“<strong>BY</strong>”的条款不再使用。</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401212201746.png" alt="" style="zoom:67%;" /></p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zh.wikipedia.org/wiki/%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE">知识共享许可协议--维基百科</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>理论知识</category>
+      </categories>
+      <tags>
+        <tag>论文投稿</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>好文推荐</title>
+    <url>/%E5%A5%BD%E6%96%87%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、<a
+href="https://retompi.com/archived-blog/posts/2020/01/16/version-control-for-word-files-like-plain-text.html#git-pandoc">如何对
+Word 文件进行「纯文本式」版本控制？ | TomBen (retompi.com)</a></p>
+<p>2、<a
+href="https://backlog.com/git-tutorial/cn/stepup/stepup1_1.html">什么是分支？【分支
+(branch)】| 猴子都能懂的GIT入门| 贝格乐（Backlog）</a></p>
+<p>3、<a
+href="https://blog.51cto.com/yttitan/2409618">Shell脚本中的多任务并发执行_一壶浊酒的技术博客_51CTO博客</a></p>
+<p>4、<a
+href="https://notebook.community/gmonce/datascience/src/1%20-%20Yet%20Another%20Python%20Encoding%20Tutorial">Yet
+Another Python Encoding Tutorial</a></p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>理论知识</category>
+      </categories>
+      <tags>
+        <tag>好文推荐</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>word支持的插入图片格式</title>
+    <url>/word%E6%94%AF%E6%8C%81%E7%9A%84%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401132000313.png" alt="image-20240113143016946" style="zoom:67%;" /></p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>软件使用</category>
+      </categories>
+      <tags>
+        <tag>word</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>投稿期刊推荐</title>
+    <url>/%E6%8A%95%E7%A8%BF%E6%9C%9F%E5%88%8A%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、查看自己参考文献的期刊</p>
+<p>2、专业定点期刊，比如做生信，就可以投<em>Bioinformatics</em>、<em>Briefings
+in Bioinformatics</em>、<em>BMC Bioinformatics</em>
+，也可以直接谷歌生信相关期刊。</p>
+<span id="more"></span>
+<p>3、使用专业网站选刊<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[5 个网站帮你精准选到 SCI 投稿期刊！（附好用的期刊查找网址）](https://zhuanlan.zhihu.com/p/382157070)
+">[1]</span></a></sup></p>
+<p>Journal Finder：出版商开发的选刊工具</p>
+<ul>
+<li><a
+href="https://journalfinder.wiley.com/search?type=match">wiley</a></li>
+<li><a href="https://journalfinder.elsevier.com/">elsevier</a></li>
+</ul>
+<p>Journal Suggester：出版商开发的选刊工具</p>
+<ul>
+<li><p><a
+href="https://journalsuggester.springer.com/">springer</a>：已经无法使用</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402152157438.png" alt="image-20240215215728650" style="zoom:33%;" /></p></li>
+</ul>
+<p>其他网址：<a
+href="https://www.journalguide.com/">journalguide</a></p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/382157070">5
+个网站帮你精准选到 SCI
+投稿期刊！（附好用的期刊查找网址）</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>理论知识</category>
+      </categories>
+      <tags>
+        <tag>论文投稿</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>小提琴图和箱线图</title>
     <url>/%E5%B0%8F%E6%8F%90%E7%90%B4%E5%9B%BE%E5%92%8C%E7%AE%B1%E7%BA%BF%E5%9B%BE/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>小提琴图（violin
@@ -4197,6 +4096,404 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
+    <title>文献管理</title>
+    <url>/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、本地文献以一个字母开头（与课题相关）数字文献名作为文件名。（eg：k1、my
+literature）</p>
+<p>2、本地文献与Endnote相一致，ID为字母与数字，Label填写细分类或关键词，方便定位，Rating打分。</p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>理论知识</category>
+      </categories>
+      <tags>
+        <tag>文献管理</tag>
+        <tag>Endnote</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>正则表达式（视频笔记）</title>
+    <url>/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F(%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0)/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为该视频（<a
+href="https://www.bilibili.com/video/BV1Kg411g7bC?p=3&amp;share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9">三剑客正则</a>）的笔记分享。</p>
+<h1 id="基本用法">基本用法</h1>
+<p>正则表达式regular expression（RE）（匹配有规律的东西）：</p>
+<p>基础正则(Basic RE (BRE) )：<code>^ $ ^$ . * [a-z] [^abc]</code></p>
+<p>扩展正则(Extended RE (ERE))：+ | （）{} ？</p>
+<p>正则：使用一些符号表达重复出现，大小写，开头/结尾含义</p>
+<p>应用：三剑客（grep，awk, sed）、开发语言（python，golang, ...）</p>
+<p>使用：过滤有规律的内容</p>
+<span id="more"></span>
+<table>
+<thead>
+<tr class="header">
+<th>基础正则</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>^</td>
+<td>以...开头的行 ^he</td>
+</tr>
+<tr class="even">
+<td>$</td>
+<td>以...结尾的行 he$</td>
+</tr>
+<tr class="odd">
+<td>^$</td>
+<td>空行</td>
+</tr>
+<tr class="even">
+<td>.</td>
+<td>任意一个字符</td>
+</tr>
+<tr class="odd">
+<td>*</td>
+<td>前一个字符连续出现（重复）0次或0次以上</td>
+</tr>
+<tr class="even">
+<td>.*</td>
+<td>所有内容</td>
+</tr>
+<tr class="odd">
+<td>\</td>
+<td>转义字符 ab键</td>
+</tr>
+<tr class="even">
+<td>[]</td>
+<td>一个整体，匹配任意一个字符[abc] a或b或c</td>
+</tr>
+<tr class="odd">
+<td>[^]</td>
+<td>取反排除， [abc]</td>
+</tr>
+<tr class="even">
+<td>正则贪婪性</td>
+<td>熟悉特点即可，.*或连续出现</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 80%" />
+<col style="width: 6%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>扩展正则</th>
+<th>含义</th>
+<th>搭配</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>+</td>
+<td>前一个字符连续出现1次或1次以上</td>
+<td>[]+</td>
+</tr>
+<tr class="even">
+<td>|</td>
+<td>或者</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>（）</td>
+<td>一个整体，sed反向引用</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>{}</td>
+<td>o{n,m}前一个字母o，至少连续出现n次，最多连续出现m次</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>？</td>
+<td>连续出现 前一个字符出现0次或1次</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>注意事项：</p>
+<ul>
+<li><p>所有的符号英文符号</p></li>
+<li><p>学习正则，通过grep命令学习， grep加上单引号</p></li>
+<li><p>给grep,egrep加上颜色：<code>alias grep = 'grep — color=auto'</code>
+和<code>alias egrep='egrep —color=auto'</code></p></li>
+<li><p>注意系统的字符集：en_US.
+utf-8(大部分情况没问题)，如果出现问题修改字符集为：<code>export LANG=c</code></p></li>
+<li><p>快速掌握正则：配合grep -o 参数学习</p></li>
+</ul>
+<p>正则vs通配符</p>
+<table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 33%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>分类</th>
+<th>诞生目标（用途）</th>
+<th>支持的命令</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>正则（re）</td>
+<td>三剑客，高级语言，进行过滤（匹配字符）</td>
+<td>三剑客grep,sed,awk,find,rename(ubuntu),expr</td>
+</tr>
+<tr class="even">
+<td>通配符（pathname extension或glob）</td>
+<td>匹配文件（文件名）<em>.txt </em>.log {01..10}</td>
+<td>Linux下面大部分命令都支持</td>
+</tr>
+</tbody>
+</table>
+<h1 id="基础正则详解">基础正则详解</h1>
+<p>1、<code>^...</code> 表示以什么开头的行 <code>^he</code>
+以he开头的行</p>
+<p>2、<code>...$</code>
+表示以什么结尾的行<code>he$</code>以he结尾的行</p>
+<p>有些结尾并不是看到的字符，有些隐藏了（cat -A 显示所有）</p>
+<p>3、<code>^$</code>空行（这一行没有任何内容，也没有空格，空格也是个字符）</p>
+<p>排除文件中的空行：<code>grep -v '^$'</code>文件</p>
+<p>4、<code>.</code>(点)
+表示任意一个字符，但是<code>.</code>（点）不匹配空行</p>
+<p>5、<code>\</code> 转义字符：去除原有特殊含义</p>
+<p>匹配以点结尾的行 ：<code>grep '.$'</code>文件</p>
+<p>转义字符序列： ab键</p>
+<p>6、<code>*</code> 前一个字符连续出现0 次或0次以上</p>
+<p>连续出现：0（0出现一次）00（0出现2次）addfs(字母出现了6次)</p>
+<p>7、<code>.*</code> 所有内容（任意内容）</p>
+<p><code>.</code>(点)任意一个字符+ <code>*</code>前一个字符连续出现0
+次或0次以上 所以就是所有内容（包括空行）</p>
+<p>正则表达式的贪婪性，<code>._</code>表示所有或_连续出现的时候，表现出尽可能贪婪匹配</p>
+<p>特殊情况：<code>grep '2*' 文件</code>
+或<code>grep '2*' 文件</code>（所有都输出来了）</p>
+<p><code>2*</code>数字2出现了0次或0次以上</p>
+<p>0次以上： 2 2222 2222</p>
+<p>0次：相当于空 （grep 空就全输出了）</p>
+<p>8、<code>[] [abc]</code>1次匹配1个字符，匹配任何一个字符（a或b或c）</p>
+<p><code>[a-z]</code> 代表a到z的小写字母</p>
+<p><code>[A-Z]</code> 代表A到Z的大写字母</p>
+<p><code>[a-zA-Z]</code>或<code>[a-Z]</code>代表大小写字母</p>
+<p><code>[a-Z0-9]</code>代表大小写字母和数字</p>
+<p><code>[a-z]</code>grep 用-i，不区分大小写就是代表大小写字母</p>
+<p><code>[ ]</code>里面的内容去掉特殊含义
+如<code>[a-Z|]</code>匹配大小写和|</p>
+<p><code>（）</code>小括号 括弧</p>
+<p><code>[ ]</code>中括号</p>
+<p><code>&#123; &#125;</code> 大括号 花括号</p>
+<p>9、<code>[^]</code>取反
+如<code>[^abc]</code>匹配a或b或c之外的内容</p>
+<h1 id="扩展正则详解">扩展正则详解</h1>
+<p>1、<code>+</code>前一个字符连续出现1次或1次以上</p>
+<p><code>grep -E '0+' 文件</code>
+0出现一次或一次以上，这三种命令一样效果</p>
+<p><code>grep '0+' 文件</code>grep没用E参数不能使用扩展正则，但是转义字符把扩展正则转为基本正则。不推荐这样使用</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">egrep &#x27;0+&#x27; 文件</span><br></pre></td></tr></table></figure>
+<p>2、 | 或者 如<code>egrep 'apple | APPLE' 文件</code></p>
+<table>
+<thead>
+<tr class="header">
+<th>符号</th>
+<th>含义</th>
+<th>应用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[]</td>
+<td>1次匹配1个字符 [apple] a或p或l或e</td>
+<td>匹配单个字符[]和+</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>匹配1个字符或多个 a</td>
+</tr>
+</tbody>
+</table>
+<p>3、（）被括起来的内容，表示一个整体（一个字符）、后向引用（反向引用sed）</p>
+<p><code>egrep 'oldb(o|e)y' 文件</code> 匹配oldboy或oldbey的字符</p>
+<p>4、<code>&#123;&#125;</code>连续出现</p>
+<table>
+<thead>
+<tr class="header">
+<th>符号</th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>o{n,m}</td>
+<td>前一个字母o，至少连续出现n次，最多连续出现m次</td>
+<td>≥n ≤m</td>
+</tr>
+<tr class="even">
+<td>o{n}</td>
+<td>前一个字母o，连续出现n次</td>
+<td>==n</td>
+</tr>
+<tr class="odd">
+<td>o{n,}</td>
+<td>前一个字母o，至少连续出现n次</td>
+<td>≥n</td>
+</tr>
+<tr class="even">
+<td>o{,m}</td>
+<td>前一个字母o，最多连续出现m次</td>
+<td>≤m</td>
+</tr>
+</tbody>
+</table>
+<p>5、<code>？</code>连续出现 前一个字符出现0次或1次</p>
+<p><code>egrep 'god | gd' 文件</code>等于
+<code>egrep 'go?d' 文件</code></p>
+<p>过滤身份证号码： <code>egrep '[0-9]&#123;17&#125;[0-9x]' 文件</code>
+（1-17位数字，最后一个是数字或x）</p>
+<p>排除文件中的空行或含有#号的行：<code>egrep -v '^$ | #' 文件</code></p>
+<p>表达式<code>[0-255]</code>是一个字符集，它的含义是匹配
+0，1，2，5中任意一个字符</p>
+<p><code>[1-9][0-9]</code>可以匹配10到99之间的数字。这两个是最简单的。</p>
+<hr />
+<p>grep '搜索内容' 文件</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>-a</td>
+<td>将 binary 文件以 text 文件的方式搜寻数据</td>
+</tr>
+<tr class="even">
+<td>-c</td>
+<td>计算找到 '搜寻字符串' 的次数</td>
+</tr>
+<tr class="odd">
+<td>-i</td>
+<td>忽略大小写的不同，所以大小写视为相同</td>
+</tr>
+<tr class="even">
+<td>-n</td>
+<td>顺便输出行号</td>
+</tr>
+<tr class="odd">
+<td>-v</td>
+<td>反向选择，亦即显示出没有 '搜寻字符串' 内容的那一行！</td>
+</tr>
+<tr class="even">
+<td>--color=auto</td>
+<td>可以将找到的关键词部分加上颜色的显示喔！</td>
+</tr>
+<tr class="odd">
+<td>-o</td>
+<td>显示匹配过程，即只显示匹配到的内容</td>
+</tr>
+<tr class="even">
+<td>-E</td>
+<td>支持扩展正则(扩展正则用grep -E 或egrep)</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>代码相关</category>
+      </categories>
+      <tags>
+        <tag>Regex</tag>
+        <tag>Video notes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>期刊影响力</title>
+    <url>/%E6%9C%9F%E5%88%8A%E5%BD%B1%E5%93%8D%E5%8A%9B/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>影响因子（Impact Factor）：某期刊前两年发表的论文在该报告年份（JCR
+year）中被引用总次数除以该期刊在这两年内发表的论文总数。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="https://baike.baidu.com/item/%E5%BD%B1%E5%93%8D%E5%9B%A0%E5%AD%90/574727
+">[1]</span></a></sup></p>
+<p>期刊的IF（影响因子）每年不断浮动，把IF定值作为学术评价指标不适合，而且不同学科领域期刊的影响因子差异很大，仅凭IF不能直观地比较不同领域的期刊。把同一学科领域的期刊，<strong>按IF大到小做排序后，划分入不同区域。</strong>只要是某领域1区的期刊，就是该领域的顶级刊物，直观反映该刊在领域内的水准和大致排位。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="https://kyc.szcu.edu.cn/2023/0328/c2593a50685/page.htm
+">[2]</span></a></sup></p>
+<span id="more"></span>
+<ul>
+<li><p>JCR分区：汤森路透公司制定的JCR分区(原来是汤森路透，后来易主科睿唯安)，一般简称为JCR
+分区(Journal Citation Reports，简称JCR)。</p>
+<p>JCR将收录期刊分为176个不同学科类别。每个学科分类按期刊的影响因子高低，平均分为Q1、Q2、Q3和Q4四个区：</p>
+<ul>
+<li><p>影响因子前25%(含25%)期刊划分为Q1区；</p></li>
+<li><p>影响因子前25%～50% 为Q2区；</p></li>
+<li><p>影响因子前50%～75% 为Q3区；</p></li>
+<li><p>影响因子75%之后为Q4区。</p></li>
+</ul></li>
+<li><p>中科院分区：中国科学院国家科学图书馆制定的JCR分区，一般简称为「中科院分区」。</p>
+<p>中科院分区目前分为基础版和升级版（试行）</p>
+<p>中科院分区（基础版）先将JCR中所有期刊分为数学、物理、化学、生物、地学、天文、工程技术、医学、环境科学、农林科学、社会科学、管理科学及综合性期刊13
+大类。每个学科分类按照期刊的3年平均影响因子高低，分为4四个区：</p>
+<ul>
+<li><p>影响因子前5%为该类1 区；</p></li>
+<li><p>影响因子前6% ～ 20% 为2 区；</p></li>
+<li><p>影响因子前21% ～ 50% 为3 区；</p></li>
+<li><p>影响因子后50%为4区。</p></li>
+</ul>
+<p>中科院分区升级版在2020年1月公布，在基础版的基础上做了以下调整。</p>
+<ul>
+<li>针对期刊收录范围，升级版由基础版的只收录SCI期刊，扩展为收录SCI期刊和SSCI期刊。</li>
+<li>针对学科分类，升级版将期刊由基础版的13个学科扩展至18个。针对分区标准，升级版由基础版的按照影响因子分区，改为了按照期刊超越指数分区。</li>
+<li>值得一提的是，中科院分区目前属于过渡期，基础版和升级版均在更新和发布。2022年起，将只公布升级版。</li>
+</ul></li>
+</ul>
+<p><strong>JCR分区 PK 中科院分区</strong></p>
+<ul>
+<li><p>01 学科划分不同</p>
+<p>科睿唯安JCR的Journal
+Ranking没有设置大类学科，只分为176个具体学科，也就是中科院分区表中所指的小类学科。</p></li>
+<li><p>02 分区方法不同</p>
+<p>JCR是按照<strong>“平均主义”思想</strong>，根据刊物IF的高至低平均划分4个区，每个区含有该领域总量25%的期刊；中科院的分区如同<strong>社会阶层的金字塔结构</strong>，1区只有5%的顶级期刊，2~4区期刊数量也逐层增加。于是，采用中科院分区后往往出现<strong>“掉区”</strong>的情况。</p></li>
+</ul>
+<p>　　显然中科院的1区和2区杂志很少，杂志质量相对也高，基本都是本领域的顶级期刊。所以有的人发表的论文按JCR分区标准算一区，而按中科院分区算2区甚至三区。</p>
+<ul>
+<li><p>03 指标取值不同</p>
+<p>JCR是按当期（1年）的IF进行分区，中科院是按刊物前3年IF平均值进行分区。</p></li>
+<li><p>04 写法不同</p>
+<p>一般的，JCR中1区的期刊写作“Q1”，中科院1区的期刊写作“1区”，如此类推。最后的重点——我们到底该看哪个分区？
+　　其实两种分区方式都比较权威，具体怎么看，最直接的方法是看你们学校/单位认哪个。</p></li>
+</ul>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">https://baike.baidu.com/item/%E5%BD%B1%E5%93%8D%E5%9B%A0%E5%AD%90/574727<a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">https://kyc.szcu.edu.cn/2023/0328/c2593a50685/page.htm<a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>理论知识</category>
+      </categories>
+      <tags>
+        <tag>论文投稿</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>期刊、出版社、索引数据库</title>
     <url>/%E6%9C%9F%E5%88%8A%E3%80%81%E5%87%BA%E7%89%88%E7%A4%BE%E3%80%81%E7%B4%A2%E5%BC%95%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img
@@ -4267,146 +4564,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </categories>
       <tags>
         <tag>论文投稿</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>皮尔森（逊）相关系数（Pearson Correlation Coefficient, PCC）</title>
-    <url>/%E7%9A%AE%E5%B0%94%E6%A3%AE%EF%BC%88%E9%80%8A%EF%BC%89%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%EF%BC%88pearson-correlation-coefficient-pcc%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="介绍">介绍</h3>
-<h4 id="皮尔森相关系数">皮尔森相关系数</h4>
-<p>皮尔森相关系数也称皮尔森积矩相关系数(Pearson product-moment
-correlation coefficient)
-，是一种线性相关系数，是最常用的一种相关系数。记为r，用来反映变量X和变量Y的线性相关程度，r
-值介于-1到1之间，绝对值越大表明相关性越强。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[python 皮尔森相关系数（Pearson）](https://blog.csdn.net/small__roc/article/details/123519616)
-">[1]</span></a></sup></p>
-<p>适用连续变量。</p>
-<p>相关系数 与相关程度一般划分为 - 0.8 - 1.0 极强相关 - 0.6 - 0.8 强相关
-- 0.4 - 0.6 中等程度相关 - 0.2 - 0.4 弱相关 - 0.0 - 0.2
-极弱相关或无相关</p>
-<p>原假设：两者不存在相关性
-P值小，即我们观察的样本（不存在相关性）发生的概率小，存在相关性的概率大，如果原假设成立即不存在相关性，那么我们这个样本就很极端很显著。</p>
-<p><strong>相关系数绝对值越大，越相关，P值越小越相关。</strong></p>
-<span id="more"></span>
-<h4 id="线性回归的r平方">线性回归的R平方</h4>
-<p>线性回归后得到的r平方和使用皮尔森相关求得的r再平方数值上面是一样的。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[请问皮尔逊相关系数和r方是一种东西吗？](http://zhidao.baidu.com/question/493668152452206612/answer/2899388201)
-">[3]</span></a></sup></p>
-<p>R平方：决定系数，反应因变量的全部变异能通过回归关系被自变量解释的比例。<span
-class="math inline">\(R^2\)</span>
-值越接近1，吻合程度越高，越接近0，则吻合程度越低。<span
-class="math inline">\(R^2\)</span> 作为相关系数，一般机器默认的是<span
-class="math inline">\(R^2\)</span>
-&gt;0.99，这样才具有可行度和线性关系。<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[线性回归r2代表什么](https://worktile.com/kb/ask/6156.html)
-">[4]</span></a></sup></p>
-<h3 id="使用">使用</h3>
-<p><code>scipy.stats.pearsonr(x, y, *, alternative='two-sided')</code></p>
-<p><strong>Parameters</strong></p>
-<ul>
-<li>x(N,) array_like Input
-array.<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[scipy.stats.pearsonr](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html)
-">[2]</span></a></sup></li>
-<li>y(N,) array_like Input array.</li>
-<li>alternative {‘two-sided’, ‘greater’, ‘less’}, optional</li>
-</ul>
-<p>Defines the alternative hypothesis. Default is ‘two-sided’. The
-following options are available:</p>
-<ul>
-<li>‘two-sided’: the correlation(相关) is nonzero</li>
-<li>‘less’: the correlation is negative (less than zero)</li>
-<li>‘greater’: the correlation is positive (greater than zero)</li>
-</ul>
-<p><strong>Attributes</strong></p>
-<ul>
-<li><code>statistic</code> ：float，Pearson product-moment
-<strong>correlation coefficient</strong>.</li>
-<li><code>pvalue</code> ：float，The p-value associated with the chosen
-alternative.</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Python实现</span></span><br><span class="line"><span class="keyword">from</span> scipy.stats <span class="keyword">import</span> pearsonr</span><br><span class="line"></span><br><span class="line">x = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line">y = [<span class="number">1.2</span>,<span class="number">2.2</span>,<span class="number">3.1</span>,<span class="number">4.1</span>]</span><br><span class="line">result = pearsonr(x,y)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;pearson相关系数: &#123;:.6f&#125;&quot;</span>.<span class="built_in">format</span>(result.statistic))  <span class="comment"># result[0]</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;P-Value: &#123;:.6f&#125;&quot;</span>.<span class="built_in">format</span>(result.pvalue))  <span class="comment"># result[1]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># pearson相关系数: 0.999783</span></span><br><span class="line"><span class="comment"># P-Value: 0.000217</span></span><br></pre></td></tr></table></figure>
-<p><code>numpy.corrcoef(x, y=None, rowvar=True, bias=&lt;no value&gt;, ddof=&lt;no value&gt;, *, dtype=None)</code></p>
-<p>Return Pearson product-moment correlation
-coefficients.<sup id="fnref:5"><a href="#fn:5" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[numpy.corrcoef](https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html)
-">[5]</span></a></sup></p>
-<p>这里计算的是特征与特征（行与行/列与列）的相关系数。</p>
-<p><strong>Parameters</strong></p>
-<ul>
-<li><code>x</code>：array_like，A 1-D or 2-D array containing multiple
-variables and observations.</li>
-<li><code>y</code>：array_like, optional，An additional set of variables
-and observations. y has the same shape as x.</li>
-<li><code>rowvar</code>：bool, optional，If rowvar is True (default),
-then <strong>each row represents a variable, with observations in the
-columns</strong>. Otherwise, the relationship is transposed: each column
-represents a variable, while the rows contain observations.
-默认行为特征，列为样本；</li>
-<li><code>dtype</code>：data-type, optional，Data-type of the result. By
-default, the return data-type will have at least numpy.float64
-precision.</li>
-</ul>
-<p>Returns: R：ndarray，The correlation coefficient matrix of the
-variables.</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">a = pd.Series([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>])</span><br><span class="line">b = pd.Series([<span class="number">2</span>,<span class="number">4</span>,<span class="number">1</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">2</span>,<span class="number">7</span>,<span class="number">0</span>])</span><br><span class="line">c = pd.Series([<span class="number">0</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">7</span>,<span class="number">1</span>,<span class="number">9</span>,<span class="number">6</span>,<span class="number">2</span>])</span><br><span class="line">x = np.vstack((a,b,c))</span><br><span class="line">r = np.corrcoef(x)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;r:\n&#123;&#125;&quot;</span>.<span class="built_in">format</span>(r))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x:</span></span><br><span class="line"><span class="comment"># [[ 1  2  3  4  5  6  7  8  9 10]</span></span><br><span class="line"><span class="comment">#  [ 2  4  1  5  1  3  6  2  7  0]</span></span><br><span class="line"><span class="comment">#  [ 0  3  2  1  4  7  1  9  6  2]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># r:</span></span><br><span class="line"><span class="comment"># [[1.         0.10233683 0.47840854]</span></span><br><span class="line"><span class="comment">#  [0.10233683 1.         0.0242104 ]</span></span><br><span class="line"><span class="comment">#  [0.47840854 0.0242104  1.        ]]</span></span><br></pre></td></tr></table></figure>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302221100116.png" /></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = np.array([[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]])</span><br><span class="line">b = np.array([[<span class="number">11</span>, <span class="number">25</span>, <span class="number">346</span>], [<span class="number">734</span>, <span class="number">48</span>, <span class="number">49</span>]])</span><br><span class="line">r = np.corrcoef(a,b)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;a:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(a))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;b:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(b))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;r:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(r))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># a:</span></span><br><span class="line"><span class="comment"># [[1 2 3]</span></span><br><span class="line"><span class="comment">#  [4 5 6]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># b:</span></span><br><span class="line"><span class="comment"># [[ 11  25 346]</span></span><br><span class="line"><span class="comment">#  [734  48  49]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># r:</span></span><br><span class="line"><span class="comment"># [[ 1.          1.          0.88390399 -0.86539304]</span></span><br><span class="line"><span class="comment">#  [ 1.          1.          0.88390399 -0.86539304]</span></span><br><span class="line"><span class="comment">#  [ 0.88390399  0.88390399  1.         -0.53057867]</span></span><br><span class="line"><span class="comment">#  [-0.86539304 -0.86539304 -0.53057867  1.        ]]</span></span><br></pre></td></tr></table></figure>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302221100313.png" /></p>
-<h3 id="参考文献">参考文献</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/small__roc/article/details/123519616">python
-皮尔森相关系数（Pearson）</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html">scipy.stats.pearsonr</a><a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:3">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="http://zhidao.baidu.com/question/493668152452206612/answer/2899388201">请问皮尔逊相关系数和r方是一种东西吗？</a><a href="#fnref:3" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:4">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://worktile.com/kb/ask/6156.html">线性回归r2代表什么</a><a href="#fnref:4" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:5">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">5.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html">numpy.corrcoef</a><a href="#fnref:5" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>Statistics</tag>
       </tags>
   </entry>
   <entry>
@@ -4784,300 +4941,143 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>正则表达式（视频笔记）</title>
-    <url>/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F(%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0)/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为该视频（<a
-href="https://www.bilibili.com/video/BV1Kg411g7bC?p=3&amp;share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9">三剑客正则</a>）的笔记分享。</p>
-<h1 id="基本用法">基本用法</h1>
-<p>正则表达式regular expression（RE）（匹配有规律的东西）：</p>
-<p>基础正则(Basic RE (BRE) )：<code>^ $ ^$ . * [a-z] [^abc]</code></p>
-<p>扩展正则(Extended RE (ERE))：+ | （）{} ？</p>
-<p>正则：使用一些符号表达重复出现，大小写，开头/结尾含义</p>
-<p>应用：三剑客（grep，awk, sed）、开发语言（python，golang, ...）</p>
-<p>使用：过滤有规律的内容</p>
+    <title>皮尔森（逊）相关系数（Pearson Correlation Coefficient, PCC）</title>
+    <url>/%E7%9A%AE%E5%B0%94%E6%A3%AE%EF%BC%88%E9%80%8A%EF%BC%89%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%EF%BC%88pearson-correlation-coefficient-pcc%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="介绍">介绍</h3>
+<h4 id="皮尔森相关系数">皮尔森相关系数</h4>
+<p>皮尔森相关系数也称皮尔森积矩相关系数(Pearson product-moment
+correlation coefficient)
+，是一种线性相关系数，是最常用的一种相关系数。记为r，用来反映变量X和变量Y的线性相关程度，r
+值介于-1到1之间，绝对值越大表明相关性越强。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[python 皮尔森相关系数（Pearson）](https://blog.csdn.net/small__roc/article/details/123519616)
+">[1]</span></a></sup></p>
+<p>适用连续变量。</p>
+<p>相关系数 与相关程度一般划分为 - 0.8 - 1.0 极强相关 - 0.6 - 0.8 强相关
+- 0.4 - 0.6 中等程度相关 - 0.2 - 0.4 弱相关 - 0.0 - 0.2
+极弱相关或无相关</p>
+<p>原假设：两者不存在相关性
+P值小，即我们观察的样本（不存在相关性）发生的概率小，存在相关性的概率大，如果原假设成立即不存在相关性，那么我们这个样本就很极端很显著。</p>
+<p><strong>相关系数绝对值越大，越相关，P值越小越相关。</strong></p>
 <span id="more"></span>
-<table>
-<thead>
-<tr class="header">
-<th>基础正则</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>^</td>
-<td>以...开头的行 ^he</td>
-</tr>
-<tr class="even">
-<td>$</td>
-<td>以...结尾的行 he$</td>
-</tr>
-<tr class="odd">
-<td>^$</td>
-<td>空行</td>
-</tr>
-<tr class="even">
-<td>.</td>
-<td>任意一个字符</td>
-</tr>
-<tr class="odd">
-<td>*</td>
-<td>前一个字符连续出现（重复）0次或0次以上</td>
-</tr>
-<tr class="even">
-<td>.*</td>
-<td>所有内容</td>
-</tr>
-<tr class="odd">
-<td>\</td>
-<td>转义字符 ab键</td>
-</tr>
-<tr class="even">
-<td>[]</td>
-<td>一个整体，匹配任意一个字符[abc] a或b或c</td>
-</tr>
-<tr class="odd">
-<td>[^]</td>
-<td>取反排除， [abc]</td>
-</tr>
-<tr class="even">
-<td>正则贪婪性</td>
-<td>熟悉特点即可，.*或连续出现</td>
-</tr>
-</tbody>
-</table>
-<table>
-<colgroup>
-<col style="width: 12%" />
-<col style="width: 80%" />
-<col style="width: 6%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>扩展正则</th>
-<th>含义</th>
-<th>搭配</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>+</td>
-<td>前一个字符连续出现1次或1次以上</td>
-<td>[]+</td>
-</tr>
-<tr class="even">
-<td>|</td>
-<td>或者</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>（）</td>
-<td>一个整体，sed反向引用</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>{}</td>
-<td>o{n,m}前一个字母o，至少连续出现n次，最多连续出现m次</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>？</td>
-<td>连续出现 前一个字符出现0次或1次</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>注意事项：</p>
+<h4 id="线性回归的r平方">线性回归的R平方</h4>
+<p>线性回归后得到的r平方和使用皮尔森相关求得的r再平方数值上面是一样的。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[请问皮尔逊相关系数和r方是一种东西吗？](http://zhidao.baidu.com/question/493668152452206612/answer/2899388201)
+">[3]</span></a></sup></p>
+<p>R平方：决定系数，反应因变量的全部变异能通过回归关系被自变量解释的比例。<span
+class="math inline">\(R^2\)</span>
+值越接近1，吻合程度越高，越接近0，则吻合程度越低。<span
+class="math inline">\(R^2\)</span> 作为相关系数，一般机器默认的是<span
+class="math inline">\(R^2\)</span>
+&gt;0.99，这样才具有可行度和线性关系。<sup id="fnref:4"><a href="#fn:4" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[线性回归r2代表什么](https://worktile.com/kb/ask/6156.html)
+">[4]</span></a></sup></p>
+<h3 id="使用">使用</h3>
+<p><code>scipy.stats.pearsonr(x, y, *, alternative='two-sided')</code></p>
+<p><strong>Parameters</strong></p>
 <ul>
-<li><p>所有的符号英文符号</p></li>
-<li><p>学习正则，通过grep命令学习， grep加上单引号</p></li>
-<li><p>给grep,egrep加上颜色：<code>alias grep = 'grep — color=auto'</code>
-和<code>alias egrep='egrep —color=auto'</code></p></li>
-<li><p>注意系统的字符集：en_US.
-utf-8(大部分情况没问题)，如果出现问题修改字符集为：<code>export LANG=c</code></p></li>
-<li><p>快速掌握正则：配合grep -o 参数学习</p></li>
+<li>x(N,) array_like Input
+array.<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[scipy.stats.pearsonr](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html)
+">[2]</span></a></sup></li>
+<li>y(N,) array_like Input array.</li>
+<li>alternative {‘two-sided’, ‘greater’, ‘less’}, optional</li>
 </ul>
-<p>正则vs通配符</p>
-<table>
-<colgroup>
-<col style="width: 29%" />
-<col style="width: 33%" />
-<col style="width: 37%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>分类</th>
-<th>诞生目标（用途）</th>
-<th>支持的命令</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>正则（re）</td>
-<td>三剑客，高级语言，进行过滤（匹配字符）</td>
-<td>三剑客grep,sed,awk,find,rename(ubuntu),expr</td>
-</tr>
-<tr class="even">
-<td>通配符（pathname extension或glob）</td>
-<td>匹配文件（文件名）<em>.txt </em>.log {01..10}</td>
-<td>Linux下面大部分命令都支持</td>
-</tr>
-</tbody>
-</table>
-<h1 id="基础正则详解">基础正则详解</h1>
-<p>1、<code>^...</code> 表示以什么开头的行 <code>^he</code>
-以he开头的行</p>
-<p>2、<code>...$</code>
-表示以什么结尾的行<code>he$</code>以he结尾的行</p>
-<p>有些结尾并不是看到的字符，有些隐藏了（cat -A 显示所有）</p>
-<p>3、<code>^$</code>空行（这一行没有任何内容，也没有空格，空格也是个字符）</p>
-<p>排除文件中的空行：<code>grep -v '^$'</code>文件</p>
-<p>4、<code>.</code>(点)
-表示任意一个字符，但是<code>.</code>（点）不匹配空行</p>
-<p>5、<code>\</code> 转义字符：去除原有特殊含义</p>
-<p>匹配以点结尾的行 ：<code>grep '.$'</code>文件</p>
-<p>转义字符序列： ab键</p>
-<p>6、<code>*</code> 前一个字符连续出现0 次或0次以上</p>
-<p>连续出现：0（0出现一次）00（0出现2次）addfs(字母出现了6次)</p>
-<p>7、<code>.*</code> 所有内容（任意内容）</p>
-<p><code>.</code>(点)任意一个字符+ <code>*</code>前一个字符连续出现0
-次或0次以上 所以就是所有内容（包括空行）</p>
-<p>正则表达式的贪婪性，<code>._</code>表示所有或_连续出现的时候，表现出尽可能贪婪匹配</p>
-<p>特殊情况：<code>grep '2*' 文件</code>
-或<code>grep '2*' 文件</code>（所有都输出来了）</p>
-<p><code>2*</code>数字2出现了0次或0次以上</p>
-<p>0次以上： 2 2222 2222</p>
-<p>0次：相当于空 （grep 空就全输出了）</p>
-<p>8、<code>[] [abc]</code>1次匹配1个字符，匹配任何一个字符（a或b或c）</p>
-<p><code>[a-z]</code> 代表a到z的小写字母</p>
-<p><code>[A-Z]</code> 代表A到Z的大写字母</p>
-<p><code>[a-zA-Z]</code>或<code>[a-Z]</code>代表大小写字母</p>
-<p><code>[a-Z0-9]</code>代表大小写字母和数字</p>
-<p><code>[a-z]</code>grep 用-i，不区分大小写就是代表大小写字母</p>
-<p><code>[ ]</code>里面的内容去掉特殊含义
-如<code>[a-Z|]</code>匹配大小写和|</p>
-<p><code>（）</code>小括号 括弧</p>
-<p><code>[ ]</code>中括号</p>
-<p><code>&#123; &#125;</code> 大括号 花括号</p>
-<p>9、<code>[^]</code>取反
-如<code>[^abc]</code>匹配a或b或c之外的内容</p>
-<h1 id="扩展正则详解">扩展正则详解</h1>
-<p>1、<code>+</code>前一个字符连续出现1次或1次以上</p>
-<p><code>grep -E '0+' 文件</code>
-0出现一次或一次以上，这三种命令一样效果</p>
-<p><code>grep '0+' 文件</code>grep没用E参数不能使用扩展正则，但是转义字符把扩展正则转为基本正则。不推荐这样使用</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">egrep &#x27;0+&#x27; 文件</span><br></pre></td></tr></table></figure>
-<p>2、 | 或者 如<code>egrep 'apple | APPLE' 文件</code></p>
-<table>
-<thead>
-<tr class="header">
-<th>符号</th>
-<th>含义</th>
-<th>应用场景</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>[]</td>
-<td>1次匹配1个字符 [apple] a或p或l或e</td>
-<td>匹配单个字符[]和+</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td>匹配1个字符或多个 a</td>
-</tr>
-</tbody>
-</table>
-<p>3、（）被括起来的内容，表示一个整体（一个字符）、后向引用（反向引用sed）</p>
-<p><code>egrep 'oldb(o|e)y' 文件</code> 匹配oldboy或oldbey的字符</p>
-<p>4、<code>&#123;&#125;</code>连续出现</p>
-<table>
-<thead>
-<tr class="header">
-<th>符号</th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>o{n,m}</td>
-<td>前一个字母o，至少连续出现n次，最多连续出现m次</td>
-<td>≥n ≤m</td>
-</tr>
-<tr class="even">
-<td>o{n}</td>
-<td>前一个字母o，连续出现n次</td>
-<td>==n</td>
-</tr>
-<tr class="odd">
-<td>o{n,}</td>
-<td>前一个字母o，至少连续出现n次</td>
-<td>≥n</td>
-</tr>
-<tr class="even">
-<td>o{,m}</td>
-<td>前一个字母o，最多连续出现m次</td>
-<td>≤m</td>
-</tr>
-</tbody>
-</table>
-<p>5、<code>？</code>连续出现 前一个字符出现0次或1次</p>
-<p><code>egrep 'god | gd' 文件</code>等于
-<code>egrep 'go?d' 文件</code></p>
-<p>过滤身份证号码： <code>egrep '[0-9]&#123;17&#125;[0-9x]' 文件</code>
-（1-17位数字，最后一个是数字或x）</p>
-<p>排除文件中的空行或含有#号的行：<code>egrep -v '^$ | #' 文件</code></p>
-<p>表达式<code>[0-255]</code>是一个字符集，它的含义是匹配
-0，1，2，5中任意一个字符</p>
-<p><code>[1-9][0-9]</code>可以匹配10到99之间的数字。这两个是最简单的。</p>
-<hr />
-<p>grep '搜索内容' 文件</p>
-<table>
-<tbody>
-<tr class="odd">
-<td>-a</td>
-<td>将 binary 文件以 text 文件的方式搜寻数据</td>
-</tr>
-<tr class="even">
-<td>-c</td>
-<td>计算找到 '搜寻字符串' 的次数</td>
-</tr>
-<tr class="odd">
-<td>-i</td>
-<td>忽略大小写的不同，所以大小写视为相同</td>
-</tr>
-<tr class="even">
-<td>-n</td>
-<td>顺便输出行号</td>
-</tr>
-<tr class="odd">
-<td>-v</td>
-<td>反向选择，亦即显示出没有 '搜寻字符串' 内容的那一行！</td>
-</tr>
-<tr class="even">
-<td>--color=auto</td>
-<td>可以将找到的关键词部分加上颜色的显示喔！</td>
-</tr>
-<tr class="odd">
-<td>-o</td>
-<td>显示匹配过程，即只显示匹配到的内容</td>
-</tr>
-<tr class="even">
-<td>-E</td>
-<td>支持扩展正则(扩展正则用grep -E 或egrep)</td>
-</tr>
-</tbody>
-</table>
+<p>Defines the alternative hypothesis. Default is ‘two-sided’. The
+following options are available:</p>
+<ul>
+<li>‘two-sided’: the correlation(相关) is nonzero</li>
+<li>‘less’: the correlation is negative (less than zero)</li>
+<li>‘greater’: the correlation is positive (greater than zero)</li>
+</ul>
+<p><strong>Attributes</strong></p>
+<ul>
+<li><code>statistic</code> ：float，Pearson product-moment
+<strong>correlation coefficient</strong>.</li>
+<li><code>pvalue</code> ：float，The p-value associated with the chosen
+alternative.</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Python实现</span></span><br><span class="line"><span class="keyword">from</span> scipy.stats <span class="keyword">import</span> pearsonr</span><br><span class="line"></span><br><span class="line">x = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line">y = [<span class="number">1.2</span>,<span class="number">2.2</span>,<span class="number">3.1</span>,<span class="number">4.1</span>]</span><br><span class="line">result = pearsonr(x,y)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;pearson相关系数: &#123;:.6f&#125;&quot;</span>.<span class="built_in">format</span>(result.statistic))  <span class="comment"># result[0]</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;P-Value: &#123;:.6f&#125;&quot;</span>.<span class="built_in">format</span>(result.pvalue))  <span class="comment"># result[1]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># pearson相关系数: 0.999783</span></span><br><span class="line"><span class="comment"># P-Value: 0.000217</span></span><br></pre></td></tr></table></figure>
+<p><code>numpy.corrcoef(x, y=None, rowvar=True, bias=&lt;no value&gt;, ddof=&lt;no value&gt;, *, dtype=None)</code></p>
+<p>Return Pearson product-moment correlation
+coefficients.<sup id="fnref:5"><a href="#fn:5" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[numpy.corrcoef](https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html)
+">[5]</span></a></sup></p>
+<p>这里计算的是特征与特征（行与行/列与列）的相关系数。</p>
+<p><strong>Parameters</strong></p>
+<ul>
+<li><code>x</code>：array_like，A 1-D or 2-D array containing multiple
+variables and observations.</li>
+<li><code>y</code>：array_like, optional，An additional set of variables
+and observations. y has the same shape as x.</li>
+<li><code>rowvar</code>：bool, optional，If rowvar is True (default),
+then <strong>each row represents a variable, with observations in the
+columns</strong>. Otherwise, the relationship is transposed: each column
+represents a variable, while the rows contain observations.
+默认行为特征，列为样本；</li>
+<li><code>dtype</code>：data-type, optional，Data-type of the result. By
+default, the return data-type will have at least numpy.float64
+precision.</li>
+</ul>
+<p>Returns: R：ndarray，The correlation coefficient matrix of the
+variables.</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">a = pd.Series([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>])</span><br><span class="line">b = pd.Series([<span class="number">2</span>,<span class="number">4</span>,<span class="number">1</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="number">6</span>,<span class="number">2</span>,<span class="number">7</span>,<span class="number">0</span>])</span><br><span class="line">c = pd.Series([<span class="number">0</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">7</span>,<span class="number">1</span>,<span class="number">9</span>,<span class="number">6</span>,<span class="number">2</span>])</span><br><span class="line">x = np.vstack((a,b,c))</span><br><span class="line">r = np.corrcoef(x)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;r:\n&#123;&#125;&quot;</span>.<span class="built_in">format</span>(r))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x:</span></span><br><span class="line"><span class="comment"># [[ 1  2  3  4  5  6  7  8  9 10]</span></span><br><span class="line"><span class="comment">#  [ 2  4  1  5  1  3  6  2  7  0]</span></span><br><span class="line"><span class="comment">#  [ 0  3  2  1  4  7  1  9  6  2]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># r:</span></span><br><span class="line"><span class="comment"># [[1.         0.10233683 0.47840854]</span></span><br><span class="line"><span class="comment">#  [0.10233683 1.         0.0242104 ]</span></span><br><span class="line"><span class="comment">#  [0.47840854 0.0242104  1.        ]]</span></span><br></pre></td></tr></table></figure>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302221100116.png" /></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = np.array([[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]])</span><br><span class="line">b = np.array([[<span class="number">11</span>, <span class="number">25</span>, <span class="number">346</span>], [<span class="number">734</span>, <span class="number">48</span>, <span class="number">49</span>]])</span><br><span class="line">r = np.corrcoef(a,b)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;a:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(a))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;b:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(b))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;r:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(r))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># a:</span></span><br><span class="line"><span class="comment"># [[1 2 3]</span></span><br><span class="line"><span class="comment">#  [4 5 6]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># b:</span></span><br><span class="line"><span class="comment"># [[ 11  25 346]</span></span><br><span class="line"><span class="comment">#  [734  48  49]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># r:</span></span><br><span class="line"><span class="comment"># [[ 1.          1.          0.88390399 -0.86539304]</span></span><br><span class="line"><span class="comment">#  [ 1.          1.          0.88390399 -0.86539304]</span></span><br><span class="line"><span class="comment">#  [ 0.88390399  0.88390399  1.         -0.53057867]</span></span><br><span class="line"><span class="comment">#  [-0.86539304 -0.86539304 -0.53057867  1.        ]]</span></span><br></pre></td></tr></table></figure>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302221100313.png" /></p>
+<h3 id="参考文献">参考文献</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/small__roc/article/details/123519616">python
+皮尔森相关系数（Pearson）</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.pearsonr.html">scipy.stats.pearsonr</a><a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:3">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="http://zhidao.baidu.com/question/493668152452206612/answer/2899388201">请问皮尔逊相关系数和r方是一种东西吗？</a><a href="#fnref:3" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:4">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://worktile.com/kb/ask/6156.html">线性回归r2代表什么</a><a href="#fnref:4" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:5">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">5.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://numpy.org/doc/stable/reference/generated/numpy.corrcoef.html">numpy.corrcoef</a><a href="#fnref:5" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
 ]]></content>
       <categories>
         <category>科研学习</category>
-        <category>代码相关</category>
+        <category>理论知识</category>
       </categories>
       <tags>
-        <tag>Regex</tag>
-        <tag>Video notes</tag>
+        <tag>Python</tag>
+        <tag>Statistics</tag>
       </tags>
   </entry>
   <entry>
@@ -5123,6 +5123,95 @@ aria-label="[python中yield的用法详解——最简单，最清晰的解释](
 <span
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
 style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/mieleizhi0522/article/details/82142856">python中yield的用法详解——最简单，最清晰的解释</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>代码相关</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>简谈array,reshape,dataframe</title>
+    <url>/%E7%AE%80%E8%B0%88array-reshape-dataframe/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="array">array</h3>
+<p>Numpy的数据结构是n维的数组对象，叫做ndarray。
+NumPy数组一般是同质的（但有一种特殊的数组类型例外，它是异质的），即数组中的所有元素类型必须是一致的。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[NumPy中的ndarray与Pandas的Series和DataFrame之间的区别与转换](https://zhuanlan.zhihu.com/p/83660582)">[1]</span></a></sup></p>
+<p>优点：</p>
+<ul>
+<li>内存块风格：ndarray中的所有元素的类型都是相同的，存储元素时内存可以连续，在科学计算中，Numpy的ndarray就可以省掉很多循环语句，代码使用方面比Python原生list简单的多。</li>
+<li>ndarray支持并行化运算（向量化运算）</li>
+<li>Numpy底层使用C语言编写，内部解除了GIL（全局解释器锁），其对数组的操作速度不受Python解释器的限制，效率远高于纯Python代码。</li>
+</ul>
+<span id="more"></span>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">x = np.array([ <span class="number">1</span>,  <span class="number">2</span>,  <span class="number">3</span>,  <span class="number">4</span>,  <span class="number">5</span>,  <span class="number">6</span>,  <span class="number">7</span>,  <span class="number">8</span>,  <span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>, <span class="number">13</span>, <span class="number">14</span>, <span class="number">15</span>, <span class="number">16</span>])  <span class="comment"># 16行，没有列</span></span><br><span class="line"></span><br><span class="line">y = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">8</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">5</span>]])  <span class="comment"># 2行4列</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x行:&#123;&#125;&quot;</span>.<span class="built_in">format</span>(x.shape[<span class="number">0</span>]))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x维度:&#123;&#125;&quot;</span>.<span class="built_in">format</span>(x.shape))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;y行:&#123;&#125;&quot;</span>.<span class="built_in">format</span>(y.shape[<span class="number">0</span>]))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;y列:&#123;&#125;&quot;</span>.<span class="built_in">format</span>(y.shape[<span class="number">1</span>]))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x行:16</span></span><br><span class="line"><span class="comment"># x维度:(16,)</span></span><br><span class="line"><span class="comment"># y行:2</span></span><br><span class="line"><span class="comment"># y列:4</span></span><br></pre></td></tr></table></figure>
+<h4 id="reshape">reshape（）</h4>
+<p><a
+href="https://numpy.org/doc/stable/reference/generated/numpy.reshape.html">官方文档</a></p>
+<p><code>numpy.reshape(a, newshape, order='C')[source]</code></p>
+<ul>
+<li>a：数组--需要处理的数据<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[python基础之numpy.reshape详解](https://www.jianshu.com/p/fc2fe026f002)
+">[3]</span></a></sup></li>
+<li>newshape：新的格式--整数或整数数组，如(2,3)表示2行3列，新的形状应该与原来的形状兼容，即行数和列数相乘后等于a中元素的数量</li>
+<li>order : 可选范围为{‘C’, ‘F’,
+‘A’}。使用索引顺序读取a的元素，并按照索引顺序将元素放到变换后的的数组中。如果不进行order参数的设置，默认参数为C。</li>
+</ul>
+<p>（1）“C”指的是用类C写的读/索引顺序的元素，最后一个维度变化最快，第一个维度变化最慢。以二维数组为例，简单来讲就是<strong>横着读，横着写，优先读/写一行</strong>。</p>
+<p>（2）“F”是指用FORTRAN类索引顺序读/写元素，最后一个维度变化最慢，第一个维度变化最快。<strong>竖着读，竖着写，优先读/写一列</strong>。注意，“C”和“F”选项不考虑底层数组的内存布局，只引用索引的顺序。</p>
+<p>（3）“A”选项所生成的数组的效果与原数组a的数据存储方式有关，如果数据是按照FORTRAN存储的话，它的生成效果与”F“相同，否则与“C”相同。这里可能听起来有点模糊，下面会给出示例。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">x = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">82</span>,<span class="number">63</span>,<span class="number">91</span>,<span class="number">52</span>],[<span class="number">121</span>,<span class="number">345</span>,<span class="number">567</span>,<span class="number">987</span>]])</span><br><span class="line"></span><br><span class="line">x1 = x.reshape((<span class="number">2</span>,<span class="number">6</span>),order=<span class="string">&#x27;C&#x27;</span>)  <span class="comment"># 横着读，横着写，优先读/写一行</span></span><br><span class="line">x2 = x.reshape((<span class="number">2</span>,<span class="number">6</span>),order=<span class="string">&#x27;F&#x27;</span>)  <span class="comment"># 竖着读，竖着写，优先读/写一列</span></span><br><span class="line">x3 = x.reshape((<span class="number">2</span>,<span class="number">6</span>),order=<span class="string">&#x27;A&#x27;</span>)  <span class="comment"># 原数组FORTRAN存储，则竖着读，竖着写，优先读/写一列，否则横着读，横着写，优先读/写一行</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x1:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x1))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x2:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x2))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x3:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x3))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x:</span></span><br><span class="line"><span class="comment"># [[  1   2   3   4]</span></span><br><span class="line"><span class="comment">#  [ 82  63  91  52]</span></span><br><span class="line"><span class="comment">#  [121 345 567 987]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># x1:</span></span><br><span class="line"><span class="comment"># [[  1   2   3   4  82  63]</span></span><br><span class="line"><span class="comment">#  [ 91  52 121 345 567 987]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># x2:</span></span><br><span class="line"><span class="comment"># [[  1 121  63   3 567  52]</span></span><br><span class="line"><span class="comment">#  [ 82   2 345  91   4 987]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># x3:</span></span><br><span class="line"><span class="comment"># [[  1   2   3   4  82  63]</span></span><br><span class="line"><span class="comment">#  [ 91  52 121 345 567 987]]</span></span><br></pre></td></tr></table></figure>
+<p>出现-1的话，有两种情况 -
+<code>reshape(-1)</code>：原本数组有n个元素，返回一个n行无列的数组 -
+<code>reshape(-1,n)</code>
+n为任意数字，n为列数，-1会根据列数，自动计算出新数组的行数，再根据这个新的维度重新组合数组。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">82</span>,<span class="number">63</span>,<span class="number">91</span>,<span class="number">52</span>],[<span class="number">121</span>,<span class="number">345</span>,<span class="number">567</span>,<span class="number">987</span>]])</span><br><span class="line">y = x.reshape(-<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;y:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(y))  </span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x:</span></span><br><span class="line"><span class="comment"># [[  1   2   3   4]</span></span><br><span class="line"><span class="comment">#  [ 82  63  91  52]</span></span><br><span class="line"><span class="comment">#  [121 345 567 987]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># y:</span></span><br><span class="line"><span class="comment"># [  1   2   3   4  82  63  91  52 121 345 567 987]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">82</span>,<span class="number">63</span>,<span class="number">91</span>,<span class="number">52</span>],[<span class="number">121</span>,<span class="number">345</span>,<span class="number">567</span>,<span class="number">987</span>]])</span><br><span class="line">y = x.reshape(-<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;y:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(y))  </span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x:</span></span><br><span class="line"><span class="comment"># [[  1   2   3   4]</span></span><br><span class="line"><span class="comment">#  [ 82  63  91  52]</span></span><br><span class="line"><span class="comment">#  [121 345 567 987]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># y:</span></span><br><span class="line"><span class="comment"># [[  1   2]</span></span><br><span class="line"><span class="comment">#  [  3   4]</span></span><br><span class="line"><span class="comment">#  [ 82  63]</span></span><br><span class="line"><span class="comment">#  [ 91  52]</span></span><br><span class="line"><span class="comment">#  [121 345]</span></span><br><span class="line"><span class="comment">#  [567 987]]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 这是二维数据，6行1列，表示（6,1） </span></span><br><span class="line">[[ <span class="number">0.08540663</span>]</span><br><span class="line"> [ <span class="number">1.85038409</span>]</span><br><span class="line"> [-<span class="number">2.41396732</span>]</span><br><span class="line"> [ <span class="number">1.39196365</span>]</span><br><span class="line"> [-<span class="number">0.35908504</span>]</span><br><span class="line"> [ <span class="number">0.64526911</span>]]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 这是一维数据，6行无列（6，）</span></span><br><span class="line">[ <span class="number">0.08540663</span>  <span class="number">1.85038409</span> -<span class="number">2.41396732</span>  <span class="number">1.39196365</span> -<span class="number">0.35908504</span>  <span class="number">0.64526911</span>]</span><br></pre></td></tr></table></figure>
+<p>上面二维变一维：reshape(-1) 一维变二维：reshape(-1,1)</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = np.array([[ <span class="number">0.08540663</span>],[ <span class="number">1.85038409</span>],[-<span class="number">2.41396732</span>],[ <span class="number">1.39196365</span>],[-<span class="number">0.35908504</span>],[ <span class="number">0.64526911</span>]]) <span class="comment"># a是二维数据</span></span><br><span class="line">b = a.reshape(-<span class="number">1</span>)  <span class="comment"># b是一维数据</span></span><br><span class="line">c = b.reshape(-<span class="number">1</span>,<span class="number">1</span>) <span class="comment"># c是二维数据</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;a的维度：&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(a.shape))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;b：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(b))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;b的维度：&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(b.shape))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;c：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(c))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;c的维度：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(c.shape))</span><br><span class="line"></span><br><span class="line"><span class="comment"># a的维度：(6, 1)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># b：[ 0.08540663  1.85038409 -2.41396732  1.39196365 -0.35908504  0.64526911]</span></span><br><span class="line"><span class="comment"># b的维度：(6,)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># c：[[ 0.08540663]</span></span><br><span class="line"><span class="comment">#  [ 1.85038409]</span></span><br><span class="line"><span class="comment">#  [-2.41396732]</span></span><br><span class="line"><span class="comment">#  [ 1.39196365]</span></span><br><span class="line"><span class="comment">#  [-0.35908504]</span></span><br><span class="line"><span class="comment">#  [ 0.64526911]]</span></span><br><span class="line"><span class="comment"># c的维度：(6, 1)</span></span><br></pre></td></tr></table></figure>
+<h3 id="dataframe">dataframe</h3>
+<p>Pandas有两个主要的数据结构，Series和DataFrame，记住大小写区分。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[numpy 和 pandas 的区别详解](https://benpaodewoniu.github.io/2018/12/17/python39/)
+">[2]</span></a></sup></p>
+<p>Series类似于一维数组，和Numpy的array接近，由一组数据和数据标签组成。数据标签有索引的作用。</p>
+<p>Series是一维的数据结构，DataFrame是一个表格型的数据结构，它含有不同的列，每列都是不同的数据类型。我们可以把DataFrame看作Series组成的字典，它既有行索引也有列索引。</p>
+<h3 id="dataframe转化成array">dataframe转化成array:</h3>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df=df.values</span><br></pre></td></tr></table></figure>
+<h3 id="array转化成dataframe">array转化成dataframe</h3>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df = pd.DataFrame(df)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">a = np.array([[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">1</span>,<span class="number">2</span>]])</span><br><span class="line">b = pd.DataFrame(a)</span><br><span class="line">c = b.values</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(a))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(b))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(c))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># &lt;class &#x27;numpy.ndarray&#x27;&gt;</span></span><br><span class="line"><span class="comment"># &lt;class &#x27;pandas.core.frame.DataFrame&#x27;&gt;</span></span><br><span class="line"><span class="comment"># &lt;class &#x27;numpy.ndarray&#x27;&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/83660582">NumPy中的ndarray与Pandas的Series和DataFrame之间的区别与转换</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://benpaodewoniu.github.io/2018/12/17/python39/">numpy
+和 pandas 的区别详解</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:3">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.jianshu.com/p/fc2fe026f002">python基础之numpy.reshape详解</a><a href="#fnref:3" rev="footnote">
 ↩︎</a></span>
 </li>
 </ol>
@@ -5504,92 +5593,38 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>简谈array,reshape,dataframe</title>
-    <url>/%E7%AE%80%E8%B0%88array-reshape-dataframe/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="array">array</h3>
-<p>Numpy的数据结构是n维的数组对象，叫做ndarray。
-NumPy数组一般是同质的（但有一种特殊的数组类型例外，它是异质的），即数组中的所有元素类型必须是一致的。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[NumPy中的ndarray与Pandas的Series和DataFrame之间的区别与转换](https://zhuanlan.zhihu.com/p/83660582)">[1]</span></a></sup></p>
-<p>优点：</p>
-<ul>
-<li>内存块风格：ndarray中的所有元素的类型都是相同的，存储元素时内存可以连续，在科学计算中，Numpy的ndarray就可以省掉很多循环语句，代码使用方面比Python原生list简单的多。</li>
-<li>ndarray支持并行化运算（向量化运算）</li>
-<li>Numpy底层使用C语言编写，内部解除了GIL（全局解释器锁），其对数组的操作速度不受Python解释器的限制，效率远高于纯Python代码。</li>
-</ul>
+    <title>解决npm下载慢问题</title>
+    <url>/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h5 id="npm镜像">npm镜像：</h5>
+<p>淘宝：<code>http://registry.npm.taobao.org</code></p>
+<p>腾讯云：<code>http://mirrors.cloud.tencent.com/npm/</code></p>
+<p>华为云：<code>https://mirrors.huaweicloud.com/repository/npm/</code></p>
 <span id="more"></span>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">x = np.array([ <span class="number">1</span>,  <span class="number">2</span>,  <span class="number">3</span>,  <span class="number">4</span>,  <span class="number">5</span>,  <span class="number">6</span>,  <span class="number">7</span>,  <span class="number">8</span>,  <span class="number">9</span>, <span class="number">10</span>, <span class="number">11</span>, <span class="number">12</span>, <span class="number">13</span>, <span class="number">14</span>, <span class="number">15</span>, <span class="number">16</span>])  <span class="comment"># 16行，没有列</span></span><br><span class="line"></span><br><span class="line">y = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">8</span>,<span class="number">6</span>,<span class="number">9</span>,<span class="number">5</span>]])  <span class="comment"># 2行4列</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x行:&#123;&#125;&quot;</span>.<span class="built_in">format</span>(x.shape[<span class="number">0</span>]))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x维度:&#123;&#125;&quot;</span>.<span class="built_in">format</span>(x.shape))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;y行:&#123;&#125;&quot;</span>.<span class="built_in">format</span>(y.shape[<span class="number">0</span>]))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;y列:&#123;&#125;&quot;</span>.<span class="built_in">format</span>(y.shape[<span class="number">1</span>]))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x行:16</span></span><br><span class="line"><span class="comment"># x维度:(16,)</span></span><br><span class="line"><span class="comment"># y行:2</span></span><br><span class="line"><span class="comment"># y列:4</span></span><br></pre></td></tr></table></figure>
-<h4 id="reshape">reshape（）</h4>
-<p><a
-href="https://numpy.org/doc/stable/reference/generated/numpy.reshape.html">官方文档</a></p>
-<p><code>numpy.reshape(a, newshape, order='C')[source]</code></p>
+<h5 id="下载时临时使用淘宝镜像">下载时临时使用淘宝镜像</h5>
+<p>Windows使用powershell管理员打开，输入一下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install xxx --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<hr />
+<h5 id="永久更改镜像">永久更改镜像</h5>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p>再执行 <code>npm config get registry</code> 返回
+<code>http://registry.npm.taobao.org</code> 则设置成功</p>
+<hr />
+<h5 id="通过使用淘宝定制的cnpm安装">通过使用淘宝定制的cnpm安装：</h5>
 <ul>
-<li>a：数组--需要处理的数据<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[python基础之numpy.reshape详解](https://www.jianshu.com/p/fc2fe026f002)
-">[3]</span></a></sup></li>
-<li>newshape：新的格式--整数或整数数组，如(2,3)表示2行3列，新的形状应该与原来的形状兼容，即行数和列数相乘后等于a中元素的数量</li>
-<li>order : 可选范围为{‘C’, ‘F’,
-‘A’}。使用索引顺序读取a的元素，并按照索引顺序将元素放到变换后的的数组中。如果不进行order参数的设置，默认参数为C。</li>
+<li>安装cnpm</li>
 </ul>
-<p>（1）“C”指的是用类C写的读/索引顺序的元素，最后一个维度变化最快，第一个维度变化最慢。以二维数组为例，简单来讲就是<strong>横着读，横着写，优先读/写一行</strong>。</p>
-<p>（2）“F”是指用FORTRAN类索引顺序读/写元素，最后一个维度变化最慢，第一个维度变化最快。<strong>竖着读，竖着写，优先读/写一列</strong>。注意，“C”和“F”选项不考虑底层数组的内存布局，只引用索引的顺序。</p>
-<p>（3）“A”选项所生成的数组的效果与原数组a的数据存储方式有关，如果数据是按照FORTRAN存储的话，它的生成效果与”F“相同，否则与“C”相同。这里可能听起来有点模糊，下面会给出示例。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">x = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">82</span>,<span class="number">63</span>,<span class="number">91</span>,<span class="number">52</span>],[<span class="number">121</span>,<span class="number">345</span>,<span class="number">567</span>,<span class="number">987</span>]])</span><br><span class="line"></span><br><span class="line">x1 = x.reshape((<span class="number">2</span>,<span class="number">6</span>),order=<span class="string">&#x27;C&#x27;</span>)  <span class="comment"># 横着读，横着写，优先读/写一行</span></span><br><span class="line">x2 = x.reshape((<span class="number">2</span>,<span class="number">6</span>),order=<span class="string">&#x27;F&#x27;</span>)  <span class="comment"># 竖着读，竖着写，优先读/写一列</span></span><br><span class="line">x3 = x.reshape((<span class="number">2</span>,<span class="number">6</span>),order=<span class="string">&#x27;A&#x27;</span>)  <span class="comment"># 原数组FORTRAN存储，则竖着读，竖着写，优先读/写一列，否则横着读，横着写，优先读/写一行</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x1:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x1))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x2:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x2))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x3:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x3))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x:</span></span><br><span class="line"><span class="comment"># [[  1   2   3   4]</span></span><br><span class="line"><span class="comment">#  [ 82  63  91  52]</span></span><br><span class="line"><span class="comment">#  [121 345 567 987]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># x1:</span></span><br><span class="line"><span class="comment"># [[  1   2   3   4  82  63]</span></span><br><span class="line"><span class="comment">#  [ 91  52 121 345 567 987]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># x2:</span></span><br><span class="line"><span class="comment"># [[  1 121  63   3 567  52]</span></span><br><span class="line"><span class="comment">#  [ 82   2 345  91   4 987]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># x3:</span></span><br><span class="line"><span class="comment"># [[  1   2   3   4  82  63]</span></span><br><span class="line"><span class="comment">#  [ 91  52 121 345 567 987]]</span></span><br></pre></td></tr></table></figure>
-<p>出现-1的话，有两种情况 -
-<code>reshape(-1)</code>：原本数组有n个元素，返回一个n行无列的数组 -
-<code>reshape(-1,n)</code>
-n为任意数字，n为列数，-1会根据列数，自动计算出新数组的行数，再根据这个新的维度重新组合数组。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">82</span>,<span class="number">63</span>,<span class="number">91</span>,<span class="number">52</span>],[<span class="number">121</span>,<span class="number">345</span>,<span class="number">567</span>,<span class="number">987</span>]])</span><br><span class="line">y = x.reshape(-<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;y:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(y))  </span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x:</span></span><br><span class="line"><span class="comment"># [[  1   2   3   4]</span></span><br><span class="line"><span class="comment">#  [ 82  63  91  52]</span></span><br><span class="line"><span class="comment">#  [121 345 567 987]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># y:</span></span><br><span class="line"><span class="comment"># [  1   2   3   4  82  63  91  52 121 345 567 987]</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x = np.array([[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">82</span>,<span class="number">63</span>,<span class="number">91</span>,<span class="number">52</span>],[<span class="number">121</span>,<span class="number">345</span>,<span class="number">567</span>,<span class="number">987</span>]])</span><br><span class="line">y = x.reshape(-<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;x:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(x))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;y:\n&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(y))  </span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># x:</span></span><br><span class="line"><span class="comment"># [[  1   2   3   4]</span></span><br><span class="line"><span class="comment">#  [ 82  63  91  52]</span></span><br><span class="line"><span class="comment">#  [121 345 567 987]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># y:</span></span><br><span class="line"><span class="comment"># [[  1   2]</span></span><br><span class="line"><span class="comment">#  [  3   4]</span></span><br><span class="line"><span class="comment">#  [ 82  63]</span></span><br><span class="line"><span class="comment">#  [ 91  52]</span></span><br><span class="line"><span class="comment">#  [121 345]</span></span><br><span class="line"><span class="comment">#  [567 987]]</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 这是二维数据，6行1列，表示（6,1） </span></span><br><span class="line">[[ <span class="number">0.08540663</span>]</span><br><span class="line"> [ <span class="number">1.85038409</span>]</span><br><span class="line"> [-<span class="number">2.41396732</span>]</span><br><span class="line"> [ <span class="number">1.39196365</span>]</span><br><span class="line"> [-<span class="number">0.35908504</span>]</span><br><span class="line"> [ <span class="number">0.64526911</span>]]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 这是一维数据，6行无列（6，）</span></span><br><span class="line">[ <span class="number">0.08540663</span>  <span class="number">1.85038409</span> -<span class="number">2.41396732</span>  <span class="number">1.39196365</span> -<span class="number">0.35908504</span>  <span class="number">0.64526911</span>]</span><br></pre></td></tr></table></figure>
-<p>上面二维变一维：reshape(-1) 一维变二维：reshape(-1,1)</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">a = np.array([[ <span class="number">0.08540663</span>],[ <span class="number">1.85038409</span>],[-<span class="number">2.41396732</span>],[ <span class="number">1.39196365</span>],[-<span class="number">0.35908504</span>],[ <span class="number">0.64526911</span>]]) <span class="comment"># a是二维数据</span></span><br><span class="line">b = a.reshape(-<span class="number">1</span>)  <span class="comment"># b是一维数据</span></span><br><span class="line">c = b.reshape(-<span class="number">1</span>,<span class="number">1</span>) <span class="comment"># c是二维数据</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;a的维度：&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(a.shape))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;b：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(b))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;b的维度：&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(b.shape))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;c：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(c))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;c的维度：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(c.shape))</span><br><span class="line"></span><br><span class="line"><span class="comment"># a的维度：(6, 1)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># b：[ 0.08540663  1.85038409 -2.41396732  1.39196365 -0.35908504  0.64526911]</span></span><br><span class="line"><span class="comment"># b的维度：(6,)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># c：[[ 0.08540663]</span></span><br><span class="line"><span class="comment">#  [ 1.85038409]</span></span><br><span class="line"><span class="comment">#  [-2.41396732]</span></span><br><span class="line"><span class="comment">#  [ 1.39196365]</span></span><br><span class="line"><span class="comment">#  [-0.35908504]</span></span><br><span class="line"><span class="comment">#  [ 0.64526911]]</span></span><br><span class="line"><span class="comment"># c的维度：(6, 1)</span></span><br></pre></td></tr></table></figure>
-<h3 id="dataframe">dataframe</h3>
-<p>Pandas有两个主要的数据结构，Series和DataFrame，记住大小写区分。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[numpy 和 pandas 的区别详解](https://benpaodewoniu.github.io/2018/12/17/python39/)
-">[2]</span></a></sup></p>
-<p>Series类似于一维数组，和Numpy的array接近，由一组数据和数据标签组成。数据标签有索引的作用。</p>
-<p>Series是一维的数据结构，DataFrame是一个表格型的数据结构，它含有不同的列，每列都是不同的数据类型。我们可以把DataFrame看作Series组成的字典，它既有行索引也有列索引。</p>
-<h3 id="dataframe转化成array">dataframe转化成array:</h3>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">df=df.values</span><br></pre></td></tr></table></figure>
-<h3 id="array转化成dataframe">array转化成dataframe</h3>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df = pd.DataFrame(df)</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">a = np.array([[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">1</span>,<span class="number">2</span>]])</span><br><span class="line">b = pd.DataFrame(a)</span><br><span class="line">c = b.values</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(a))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(b))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(c))</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># &lt;class &#x27;numpy.ndarray&#x27;&gt;</span></span><br><span class="line"><span class="comment"># &lt;class &#x27;pandas.core.frame.DataFrame&#x27;&gt;</span></span><br><span class="line"><span class="comment"># &lt;class &#x27;numpy.ndarray&#x27;&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/83660582">NumPy中的ndarray与Pandas的Series和DataFrame之间的区别与转换</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://benpaodewoniu.github.io/2018/12/17/python39/">numpy
-和 pandas 的区别详解</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:3">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.jianshu.com/p/fc2fe026f002">python基础之numpy.reshape详解</a><a href="#fnref:3" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
+<p><code>npm install -g cnpm --registry=https://registry.npmmirror.com</code></p>
+<ul>
+<li>使用cnpm</li>
+</ul>
+<p><code>cnpm install xxx</code></p>
 ]]></content>
       <categories>
         <category>科研学习</category>
         <category>代码相关</category>
       </categories>
       <tags>
-        <tag>Python</tag>
+        <tag>NPM</tag>
       </tags>
   </entry>
   <entry>
@@ -5638,79 +5673,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>设置 Next 主题支持 Latex 渲染</title>
-    <url>/%E8%AE%BE%E7%BD%AE-next-%E4%B8%BB%E9%A2%98%E6%94%AF%E6%8C%81-latex-%E6%B8%B2%E6%9F%93/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：让 hexo 的 next 主题支持渲染 LaTeX 语法的数学公式。</p>
-<p>环境： <code>hexo version</code>即可查看hexo版本； <img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237479.png"
-alt="img" /></p>
-<p>查看<code>theme/next/package.json</code>即可查看next版本； <img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237584.png"
-alt="img" /></p>
-<span id="more"></span>
-<p>步骤：</p>
-<p>1、Powershell :</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-rendered-marked</span><br><span class="line">npm install hexo-<span class="built_in">filter</span>-mathjax --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<p>2、修改next主题配置文件，搜索math，找到mathjax，修改为true；</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mathjax:</span><br><span class="line">	enable: true</span><br></pre></td></tr></table></figure>
-<p>3、在文章的 front-matter 中添加 <code>mathjax: true</code>
-，该文章即可渲染[<a
-href="app://obsidian.md/index.html#fn-1-66fd1567c623a948">1]</a>；建议将
-<code>mathjax: true</code> 写入 <code>\scaffolds</code> 的 post.md
-文件中的 front-matter，以后每篇文章都会自动添加，自动渲染。</p>
-<h3 id="参考文章">参考文章</h3>
-<hr />
-<ol type="1">
-<li><a
-href="https://roro4ever.github.io/2019/12/01/hexo-Next主题渲染-latex-公式的配置方法/hexo-next主题渲染-latex-公式的配置方法/">Hexo
-Next主题渲染 Latex 公式的配置方法</a><a
-href="app://obsidian.md/index.html#fnref-1-66fd1567c623a948">↩︎</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>博客运营</category>
-        <category>其它</category>
-      </categories>
-      <tags>
-        <tag>Latex</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决npm下载慢问题</title>
-    <url>/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h5 id="npm镜像">npm镜像：</h5>
-<p>淘宝：<code>http://registry.npm.taobao.org</code></p>
-<p>腾讯云：<code>http://mirrors.cloud.tencent.com/npm/</code></p>
-<p>华为云：<code>https://mirrors.huaweicloud.com/repository/npm/</code></p>
-<span id="more"></span>
-<h5 id="下载时临时使用淘宝镜像">下载时临时使用淘宝镜像</h5>
-<p>Windows使用powershell管理员打开，输入一下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install xxx --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<hr />
-<h5 id="永久更改镜像">永久更改镜像</h5>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<p>再执行 <code>npm config get registry</code> 返回
-<code>http://registry.npm.taobao.org</code> 则设置成功</p>
-<hr />
-<h5 id="通过使用淘宝定制的cnpm安装">通过使用淘宝定制的cnpm安装：</h5>
-<ul>
-<li>安装cnpm</li>
-</ul>
-<p><code>npm install -g cnpm --registry=https://registry.npmmirror.com</code></p>
-<ul>
-<li>使用cnpm</li>
-</ul>
-<p><code>cnpm install xxx</code></p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>代码相关</category>
-      </categories>
-      <tags>
-        <tag>NPM</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>配置word版本控制</title>
     <url>/%E9%85%8D%E7%BD%AEword%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="下载git软件和pandoc软件">下载Git软件和Pandoc软件</h4>
@@ -5755,6 +5717,44 @@ Word 文件进行「纯文本式」版本控制？ | TomBen
         <tag>Git</tag>
         <tag>word</tag>
         <tag>Pandoc</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>设置 Next 主题支持 Latex 渲染</title>
+    <url>/%E8%AE%BE%E7%BD%AE-next-%E4%B8%BB%E9%A2%98%E6%94%AF%E6%8C%81-latex-%E6%B8%B2%E6%9F%93/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：让 hexo 的 next 主题支持渲染 LaTeX 语法的数学公式。</p>
+<p>环境： <code>hexo version</code>即可查看hexo版本； <img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237479.png"
+alt="img" /></p>
+<p>查看<code>theme/next/package.json</code>即可查看next版本； <img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237584.png"
+alt="img" /></p>
+<span id="more"></span>
+<p>步骤：</p>
+<p>1、Powershell :</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">npm uninstall hexo-rendered-marked</span><br><span class="line">npm install hexo-<span class="built_in">filter</span>-mathjax --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p>2、修改next主题配置文件，搜索math，找到mathjax，修改为true；</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mathjax:</span><br><span class="line">	enable: true</span><br></pre></td></tr></table></figure>
+<p>3、在文章的 front-matter 中添加 <code>mathjax: true</code>
+，该文章即可渲染[<a
+href="app://obsidian.md/index.html#fn-1-66fd1567c623a948">1]</a>；建议将
+<code>mathjax: true</code> 写入 <code>\scaffolds</code> 的 post.md
+文件中的 front-matter，以后每篇文章都会自动添加，自动渲染。</p>
+<h3 id="参考文章">参考文章</h3>
+<hr />
+<ol type="1">
+<li><a
+href="https://roro4ever.github.io/2019/12/01/hexo-Next主题渲染-latex-公式的配置方法/hexo-next主题渲染-latex-公式的配置方法/">Hexo
+Next主题渲染 Latex 公式的配置方法</a><a
+href="app://obsidian.md/index.html#fnref-1-66fd1567c623a948">↩︎</a></li>
+</ol>
+]]></content>
+      <categories>
+        <category>博客运营</category>
+        <category>其它</category>
+      </categories>
+      <tags>
+        <tag>Latex</tag>
       </tags>
   </entry>
   <entry>
