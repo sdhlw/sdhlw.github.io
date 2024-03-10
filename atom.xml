@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-03-09T14:16:17.181Z</updated>
+  <updated>2024-03-10T07:47:53.191Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python中excel的读写</title>
+    <link href="https://www.sdhlw.top/python%E4%B8%ADexcel%E7%9A%84%E8%AF%BB%E5%86%99/"/>
+    <id>https://www.sdhlw.top/python%E4%B8%ADexcel%E7%9A%84%E8%AF%BB%E5%86%99/</id>
+    <published>2024-03-10T07:38:21.000Z</published>
+    <updated>2024-03-10T07:47:53.191Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="导入-excel">导入 excel</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 指定 Excel 文件路径</span></span><br><span class="line">excel_path = <span class="string">r&#x27;D:\MyData\Boston_data.xlsx&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 从 Excel 文件中读取数据并存储到 DataFrame 中</span></span><br><span class="line">df = pd.read_excel(excel_path, sheet_name=<span class="string">&#x27;page_1&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示 DataFrame 中的数据</span></span><br><span class="line"><span class="built_in">print</span>(df)</span><br></pre></td></tr></table></figure><span id="more"></span><h3 id="导出为excel">导出为excel</h3><p>array导出为excel:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">data_df = pd.DataFrame(data)  <span class="comment"># 将ndarray格式转换为DataFrame</span></span><br><span class="line">target_df = pd.DataFrame(target) </span><br><span class="line">Boston_all = pd.concat([data_df,target_df],axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将文档写入excel表格中</span></span><br><span class="line">excel_path = <span class="string">r&#x27;D:\MyData\Boston_data.xlsx&#x27;</span></span><br><span class="line"><span class="keyword">with</span> pd.ExcelWriter(excel_path) <span class="keyword">as</span> writer:  <span class="comment"># 创建名称为 &quot;Boston_data.xlsx&quot; 的excel表格</span></span><br><span class="line">    Boston_all.to_excel(writer, <span class="string">&#x27;page_1&#x27;</span>)  <span class="comment"># 将data_df写入到&quot;page_1&quot;表格中</span></span><br></pre></td></tr></table></figure><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
+    
+    
+    <summary type="html">逐步完善</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="代码相关" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/"/>
+    
+    
+    <category term="Python 必会" scheme="https://www.sdhlw.top/tags/python-%E5%BF%85%E4%BC%9A/"/>
+    
+  </entry>
   
   <entry>
     <title>鸟山明走了</title>
@@ -536,30 +559,6 @@ href=&quot;https://credit.niso.org/&quot;&gt;官网&lt;/a&gt;，并对每个类�
     
     
     <category term="adobe illustrator" scheme="https://www.sdhlw.top/tags/adobe-illustrator/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>P2七校巡回演讲002图像基础知识和规范</title>
-    <link href="https://www.sdhlw.top/p2%E4%B8%83%E6%A0%A1%E5%B7%A1%E5%9B%9E%E6%BC%94%E8%AE%B2002%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%92%8C%E8%A7%84%E8%8C%83/"/>
-    <id>https://www.sdhlw.top/p2%E4%B8%83%E6%A0%A1%E5%B7%A1%E5%9B%9E%E6%BC%94%E8%AE%B2002%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%92%8C%E8%A7%84%E8%8C%83/</id>
-    <published>2024-01-14T14:45:53.000Z</published>
-    <updated>2024-02-18T01:47:04.286Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141655230.png" alt="" style="zoom:20%;" /></p><p>ppt绘制的图片，可导出位图、矢量图（emf、wmf）</p><span id="more"></span><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142211627.png" alt="" style="zoom:20%;" /></p><p>颜色种类对应位深度</p><p>查看图片信息：</p><ul><li><p>windows：右键--属性--详细信息</p></li><li><p>Photoshop：</p><ul><li><p>图像--图像大小：看dpi、实际尺寸</p></li><li><p>图像--模式（勾选rgb,8位通道），三种通道，每个通道有<code>2^8</code>种颜色，总的颜色种类有（<code>2^8</code>）×（<code>2^8</code>）×（<code>2^8</code>）=<code>2^24</code></p></li><li><p>文件--存储为tiff：lzw压缩投稿</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142223031.png" alt="" style="zoom:25%;" /></p></li></ul></li></ul><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142218219.png" alt="" style="zoom:20%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142223062.png" alt="" style="zoom:20%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142223967.png" alt="" style="zoom:20%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142228198.png" alt="" style="zoom:20%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142232244.png" alt="" style="zoom:20%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142235076.png" alt="" style="zoom:20%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142236595.png" alt="" style="zoom:20%;" /></p><center>300dpi对最小图片要求像素354</center><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142238968.png" alt="" style="zoom:20%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142240705.png" alt="" style="zoom:20%;" /></p><p>等宽字体：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142242708.png" alt="" style="zoom:25%;" /></p><p>第三种字体symbol:</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401142244649.png" alt="" style="zoom:20%;" /></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141655230.png&quot; alt=&quot;&quot; style=&quot;zoom:20%;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;ppt绘制的图片，可导出位图、矢量图（emf、wmf）&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
-    
-    
-    <category term="科研绘图" scheme="https://www.sdhlw.top/tags/%E7%A7%91%E7%A0%94%E7%BB%98%E5%9B%BE/"/>
     
   </entry>
   

@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.sdhlw.top/python/index.html</loc>
+    
+    <lastmod>2024-03-10T14:00:14.977Z</lastmod>
+    
+    <date>1710079215012</date>
+    <title> | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/python%E4%B8%ADexcel%E7%9A%84%E8%AF%BB%E5%86%99/</loc>
+    
+    <lastmod>2024-03-10T07:47:53.191Z</lastmod>
+    
+    <date>1710056301000</date>
+    <title>Python中excel的读写 | Jay's Blog</title>
+    
+    <desc>逐步完善</desc>
+  </url>
+  
+  <url>
     <loc>https://www.sdhlw.top/%E9%B8%9F%E5%B1%B1%E6%98%8E%E8%B5%B0%E4%BA%86/</loc>
     
     <lastmod>2024-03-09T14:16:17.181Z</lastmod>
