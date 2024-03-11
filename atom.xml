@@ -40,29 +40,6 @@
   </entry>
   
   <entry>
-    <title>Python中excel的读写</title>
-    <link href="https://www.sdhlw.top/python%E4%B8%ADexcel%E7%9A%84%E8%AF%BB%E5%86%99/"/>
-    <id>https://www.sdhlw.top/python%E4%B8%ADexcel%E7%9A%84%E8%AF%BB%E5%86%99/</id>
-    <published>2024-03-10T07:38:21.000Z</published>
-    <updated>2024-03-10T07:47:53.191Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="导入-excel">导入 excel</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 指定 Excel 文件路径</span></span><br><span class="line">excel_path = <span class="string">r&#x27;D:\MyData\Boston_data.xlsx&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 从 Excel 文件中读取数据并存储到 DataFrame 中</span></span><br><span class="line">df = pd.read_excel(excel_path, sheet_name=<span class="string">&#x27;page_1&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示 DataFrame 中的数据</span></span><br><span class="line"><span class="built_in">print</span>(df)</span><br></pre></td></tr></table></figure><span id="more"></span><h3 id="导出为excel">导出为excel</h3><p>array导出为excel:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">data_df = pd.DataFrame(data)  <span class="comment"># 将ndarray格式转换为DataFrame</span></span><br><span class="line">target_df = pd.DataFrame(target) </span><br><span class="line">Boston_all = pd.concat([data_df,target_df],axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将文档写入excel表格中</span></span><br><span class="line">excel_path = <span class="string">r&#x27;D:\MyData\Boston_data.xlsx&#x27;</span></span><br><span class="line"><span class="keyword">with</span> pd.ExcelWriter(excel_path) <span class="keyword">as</span> writer:  <span class="comment"># 创建名称为 &quot;Boston_data.xlsx&quot; 的excel表格</span></span><br><span class="line">    Boston_all.to_excel(writer, <span class="string">&#x27;page_1&#x27;</span>)  <span class="comment"># 将data_df写入到&quot;page_1&quot;表格中</span></span><br></pre></td></tr></table></figure><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
-    
-    
-    <summary type="html">逐步完善</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="代码相关" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/"/>
-    
-    
-    <category term="Python 必会" scheme="https://www.sdhlw.top/tags/python-%E5%BF%85%E4%BC%9A/"/>
-    
-  </entry>
-  
-  <entry>
     <title>鸟山明走了</title>
     <link href="https://www.sdhlw.top/%E9%B8%9F%E5%B1%B1%E6%98%8E%E8%B5%B0%E4%BA%86/"/>
     <id>https://www.sdhlw.top/%E9%B8%9F%E5%B1%B1%E6%98%8E%E8%B5%B0%E4%BA%86/</id>
@@ -188,9 +165,9 @@ aria-label=&quot;[Hexo 双线部署到 Coding 和 GitHub 提升访问速度](htt
     <category term="代码相关" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/"/>
     
     
-    <category term="Vscode" scheme="https://www.sdhlw.top/tags/vscode/"/>
-    
     <category term="Pycharm" scheme="https://www.sdhlw.top/tags/pycharm/"/>
+    
+    <category term="Vscode" scheme="https://www.sdhlw.top/tags/vscode/"/>
     
     <category term="Conda" scheme="https://www.sdhlw.top/tags/conda/"/>
     
@@ -554,6 +531,33 @@ href=&quot;https://credit.niso.org/&quot;&gt;官网&lt;/a&gt;，并对每个类�
     
     <category term="其它" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/%E5%85%B6%E5%AE%83/"/>
     
+    
+  </entry>
+  
+  <entry>
+    <title>等比例缩小pdf的尺寸大小</title>
+    <link href="https://www.sdhlw.top/%E7%AD%89%E6%AF%94%E4%BE%8B%E7%BC%A9%E5%B0%8Fpdf%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F/"/>
+    <id>https://www.sdhlw.top/%E7%AD%89%E6%AF%94%E4%BE%8B%E7%BC%A9%E5%B0%8Fpdf%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F/</id>
+    <published>2024-01-16T07:51:50.000Z</published>
+    <updated>2024-02-18T01:47:38.884Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span><p>软件：Adobe Acrobat Pro DC</p><p>使用软件打开相应pdf：</p><ul><li><p>文件--打印--自定义比例：调整相应比例，导出即可</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401161543556.png" alt="" style="zoom:50%;" /></p><p>导出之后，pdf中的图片变小，但是画布不变，对画布进行裁剪即可。</p><p>裁剪步骤：打开pdf--工具--编辑pdf（打开）--裁剪页面：绘制裁剪框，双击裁剪框中的内容，确定即可。</p></li></ul><!--more-->]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;软件：Adobe Acro</summary>
+      
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="科研绘图" scheme="https://www.sdhlw.top/tags/%E7%A7%91%E7%A0%94%E7%BB%98%E5%9B%BE/"/>
     
   </entry>
   
