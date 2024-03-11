@@ -22,18 +22,24 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="小提琴图（violin plot）是一种用于可视化数据分布的图表。它结合了箱线图和核密度图的优点，可以更直观地展示数据的分布情况和中位数、四分位数等统计量的位置。 小提琴图通常由两部分组成：中间的白点表示中位数，黑色的厚线表示四分位数范围，而外部的形状则是核密度估计的结果，类似于概率密度函数。不同小提琴之间的比较可以更好地呈现数据之间的差异和相似性。[1]">
+  <meta name="description" content="小提琴图（violin plot）是一种用于可视化数据分布的图表。它结合了箱线图和核密度图的优点，可以更直观地展示数据的分布情况和中位数、四分位数等统计量的位置。 小提琴图通常由两部分组成：中间的白点表示中位数，黑色的厚线表示四分位数范围，而外部的形状则是核密度估计的结果，类似于概率密度函数。不同小提琴之间的比较可以更好地呈现数据之间的差异和相似性。[1]">
 <meta property="og:type" content="article">
 <meta property="og:title" content="小提琴图和箱线图">
 <meta property="og:url" content="https://www.sdhlw.top/%E5%B0%8F%E6%8F%90%E7%90%B4%E5%9B%BE%E5%92%8C%E7%AE%B1%E7%BA%BF%E5%9B%BE/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="小提琴图（violin plot）是一种用于可视化数据分布的图表。它结合了箱线图和核密度图的优点，可以更直观地展示数据的分布情况和中位数、四分位数等统计量的位置。 小提琴图通常由两部分组成：中间的白点表示中位数，黑色的厚线表示四分位数范围，而外部的形状则是核密度估计的结果，类似于概率密度函数。不同小提琴之间的比较可以更好地呈现数据之间的差异和相似性。[1]">
+<meta property="og:description" content="小提琴图（violin plot）是一种用于可视化数据分布的图表。它结合了箱线图和核密度图的优点，可以更直观地展示数据的分布情况和中位数、四分位数等统计量的位置。 小提琴图通常由两部分组成：中间的白点表示中位数，黑色的厚线表示四分位数范围，而外部的形状则是核密度估计的结果，类似于概率密度函数。不同小提琴之间的比较可以更好地呈现数据之间的差异和相似性。[1]">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151452788.png">
+<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151452814.png">
+<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151452831.png">
+<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151452846.png">
+<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151455052.webp">
 <meta property="article:published_time" content="2023-04-15T08:02:58.000Z">
 <meta property="article:modified_time" content="2024-02-18T01:35:02.119Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="箱线图">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151452788.png">
 
 <link rel="canonical" href="https://www.sdhlw.top/%E5%B0%8F%E6%8F%90%E7%90%B4%E5%9B%BE%E5%92%8C%E7%AE%B1%E7%BA%BF%E5%9B%BE/">
 
@@ -261,7 +267,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>903</span>
+              <span>897</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -280,80 +286,33 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>小提琴图（violin
-plot）是一种用于可视化数据分布的图表。它结合了箱线图和核密度图的优点，可以更直观地展示数据的分布情况和中位数、四分位数等统计量的位置。</p>
-<p>小提琴图通常由两部分组成：中间的白点表示中位数，黑色的厚线表示四分位数范围，而外部的形状则是核密度估计的结果，类似于概率密度函数。不同小提琴之间的比较可以更好地呈现数据之间的差异和相似性。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="ChatGPT
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>小提琴图（violin plot）是一种用于可视化数据分布的图表。它结合了箱线图和核密度图的优点，可以更直观地展示数据的分布情况和中位数、四分位数等统计量的位置。</p>
+<p>小提琴图通常由两部分组成：中间的白点表示中位数，黑色的厚线表示四分位数范围，而外部的形状则是核密度估计的结果，类似于概率密度函数。不同小提琴之间的比较可以更好地呈现数据之间的差异和相似性。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="ChatGPT
 ">[1]</span></a></sup></p>
 <span id="more"></span>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151452788.png" /></p>
-<p>outside points：离群点 Upper Adjacent Value：上边界值 Third
-Quartile：第三四分位数 Median：中位数，第二四分位数 First Quartile
-：第一四分位数 Lower Adjacent Value：下边界值 *** 第一四分位数（Q
-1）：又称较小四分位数，等于该样本中所有数值由小到大排列后第25%的数字。
-第二四分位数（Q
-2）：又称中位数，等于该样本中所有数值由小到大排列后第50%的数字。
-第三四分位数（Q
-3）：又称较大四分位数，等于该样本中所有数值由小到大排列后第75%的数字。</p>
-<p>第三四分位数与第一四分位数的差距又称四分位距（InterQuartile Range,
-IQR）<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[四分位数-维基百科](https://zh.wikipedia.org/zh-hans/%E5%9B%9B%E5%88%86%E4%BD%8D%E6%95%B0) 
+
+
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151452788.png"></p>
+<p>outside points：离群点<br>Upper Adjacent Value：上边界值<br>Third Quartile：第三四分位数<br>Median：中位数，第二四分位数<br>First Quartile ：第一四分位数<br>Lower Adjacent Value：下边界值</p>
+<hr>
+<p>第一四分位数（Q 1）：又称较小四分位数，等于该样本中所有数值由小到大排列后第25%的数字。<br>第二四分位数（Q 2）：又称中位数，等于该样本中所有数值由小到大排列后第50%的数字。<br>第三四分位数（Q 3）：又称较大四分位数，等于该样本中所有数值由小到大排列后第75%的数字。</p>
+<p>第三四分位数与第一四分位数的差距又称四分位距（InterQuartile Range, IQR）<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[四分位数-维基百科](https://zh.wikipedia.org/zh-hans/%E5%9B%9B%E5%88%86%E4%BD%8D%E6%95%B0) 
 ">[2]</span></a></sup></p>
-<p>当有数值与第1与第3四分位数的范围差距1.5×IQR
-以上时，该值为离群值（outlier）。 数值位于范围外1.5×IQR 到3×IQR
-范围的数值，称作适度离群值（mild outlier）。 数值位于范围外3×IQR
-以上的数值，称作极端离群值（extreme outlier）。</p>
+<p>当有数值与第1与第3四分位数的范围差距1.5×IQR 以上时，该值为离群值（outlier）。<br>数值位于范围外1.5×IQR 到3×IQR 范围的数值，称作适度离群值（mild outlier）。<br>数值位于范围外3×IQR 以上的数值，称作极端离群值（extreme outlier）。</p>
 <p>小提琴图除了显示上述的统计数据外，它还显示了数据的整体分布。</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151452814.png" /></p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151452831.png" /></p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151452846.png" /></p>
-<p>如果数据的四分位数保持不变，箱形图就不会改变。那么，我们可以对数据进行修改，使四分位数不发生变化，但分布的形状会发生很大的变化。下面的
-GIF 图说明了这一点。</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151455052.webp" /></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151452814.png"></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151452831.png"></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151452846.png"></p>
+<p>如果数据的四分位数保持不变，箱形图就不会改变。那么，我们可以对数据进行修改，使四分位数不发生变化，但分布的形状会发生很大的变化。下面的 GIF 图说明了这一点。</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202304/202304151455052.webp"></p>
 <ul>
 <li>在直方图中，我们看到分布的对称形状</li>
 <li>我们可以在箱形图和小提琴图中看到前面提到的指标（中位数、IQR）。</li>
-<li>用于创建小提琴图的核密度图与添加在直方图上的核密度图是一样的。小提琴图中较宽的部分代表观测值取值的概率较高，较窄的部分则对应于较低的概率。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[如何通俗的理解小提琴图 - jinzhao 的文章 - 知乎](
+<li>用于创建小提琴图的核密度图与添加在直方图上的核密度图是一样的。小提琴图中较宽的部分代表观测值取值的概率较高，较窄的部分则对应于较低的概率。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[如何通俗的理解小提琴图 - jinzhao 的文章 - 知乎](
 https://zhuanlan.zhihu.com/p/376055263 )
 ">[3]</span></a></sup></li>
 </ul>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">ChatGPT<a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-hans/%E5%9B%9B%E5%88%86%E4%BD%8D%E6%95%B0">四分位数-维基百科</a><a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:3">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/376055263">如何通俗的理解小提琴图
-- jinzhao 的文章 - 知乎</a><a href="#fnref:3" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">ChatGPT<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-hans/%E5%9B%9B%E5%88%86%E4%BD%8D%E6%95%B0">四分位数-维基百科</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/376055263">如何通俗的理解小提琴图 - jinzhao 的文章 - 知乎</a><a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>
     </div>
 
     
