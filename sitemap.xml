@@ -2,14 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.sdhlw.top/%E7%8B%AC%E7%83%AD%E7%BC%96%E7%A0%81%EF%BC%88one-hot%EF%BC%89/</loc>
+    
+    <lastmod>2024-03-11T10:41:54.863Z</lastmod>
+    
+    <date>1710153475000</date>
+    <title>独热编码（one-hot） | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%BD%A2%E5%BC%8F/</loc>
+    
+    <lastmod>2024-03-11T10:34:50.503Z</lastmod>
+    
+    <date>1710153052000</date>
+    <title>数据处理的项目管理形式 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://www.sdhlw.top/python/index.html</loc>
     
     <lastmod>2024-03-11T03:53:48.701Z</lastmod>
     
-    <date>1710133883287</date>
+    <date>1710153732081</date>
     <title>Python 速查 | Jay's Blog</title>
     
-    <desc>快速查询：Python 函数的简单解释及使用 详细可参考：搜索使用 excel导入 excel12345678910import pandas as pd# 指定 Excel 文件路径excel_path = r&#x27;D:\MyData\Boston_data.xlsx&#x27;# 从 Excel 文件中读取数据并存储到 DataFrame 中df = pd.read_excel(exce</desc>
+    <desc>快速查询：Python 函数的简单解释及使用 详细可参考：搜索使用 excel 导入 excel 12345678910import pandas as pd# 指定 Excel 文件路径excel_path = r&#x27;D:\MyData\Boston_data.xlsx&#x27;# 从 Excel 文件中读取数据并存储到 DataFrame 中df = pd.read_excel(ex</desc>
   </url>
   
   <url>

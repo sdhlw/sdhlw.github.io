@@ -22,12 +22,12 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="复现这篇文章基于随机森林方法的缺失值填充 导入各自包： 1234567import numpy as npimport pandas as pdimport matplotlib.pyplot as plt# from sklearn.datasets import load_boston  # 新版本无波士顿数据from sklearn.impute import SimpleImputer">
+  <meta name="description" content="复现这篇文章基于随机森林方法的缺失值填充 导入各自包： 1234567import numpy as npimport pandas as pdimport matplotlib.pyplot as plt# from sklearn.datasets import load_boston  # 新版本无波士顿数据from sklearn.impute import SimpleImputer">
 <meta property="og:type" content="article">
 <meta property="og:title" content="随机森林填充空值">
 <meta property="og:url" content="https://www.sdhlw.top/%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97%E5%A1%AB%E5%85%85%E7%A9%BA%E5%80%BC/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="复现这篇文章基于随机森林方法的缺失值填充 导入各自包： 1234567import numpy as npimport pandas as pdimport matplotlib.pyplot as plt# from sklearn.datasets import load_boston  # 新版本无波士顿数据from sklearn.impute import SimpleImputer">
+<meta property="og:description" content="复现这篇文章基于随机森林方法的缺失值填充 导入各自包： 1234567import numpy as npimport pandas as pdimport matplotlib.pyplot as plt# from sklearn.datasets import load_boston  # 新版本无波士顿数据from sklearn.impute import SimpleImputer">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403101534554.png">
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403102005531.png">
@@ -286,88 +286,81 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>复现这篇文章<a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1795954">基于随机森林方法的缺失值填充</a></p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>复现这篇文章<a
+target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1795954">基于随机森林方法的缺失值填充</a></p>
 <p>导入各自包：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import pandas as pd</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line"># from sklearn.datasets import load_boston  # 新版本无波士顿数据</span><br><span class="line">from sklearn.impute import SimpleImputer  # 填充缺失值的类</span><br><span class="line">from sklearn.ensemble import RandomForestRegressor  # 随机森林回归</span><br><span class="line">from sklearn.model_selection import cross_val_score  # 交叉验证</span><br></pre></td></tr></table></figure>
-
 <span id="more"></span>
-
-<h3 id="1-波士顿数据集获取"><a href="#1-波士顿数据集获取" class="headerlink" title="1 波士顿数据集获取"></a>1 波士顿数据集获取</h3><p>利用犯罪率、是否邻近查尔斯河、公路可达性等信息，来预测 20 世纪 70 年代波士顿地区房屋价格的中位数。这个数据集包含 506 个数据点和 13 个特征。波士顿房价数据集在scikit-learn1.2版本以后被移除了,通过其他网站获取，该数据已整理成excel,放置于：<a target="_blank" rel="noopener" href="https://github.com/sdhlw/OA/tree/main/Boston_data">https://github.com/sdhlw/OA/tree/main/Boston_data</a></p>
+<h3 id="波士顿数据集获取">1 波士顿数据集获取</h3>
+<p>利用犯罪率、是否邻近查尔斯河、公路可达性等信息，来预测 20 世纪 70
+年代波士顿地区房屋价格的中位数。这个数据集包含 506 个数据点和 13
+个特征。波士顿房价数据集在scikit-learn1.2版本以后被移除了,通过其他网站获取，该数据已整理成excel,放置于：https://github.com/sdhlw/OA/tree/main/Boston_data</p>
 <p>数据：前12行为特征即x，最后一行为y</p>
-<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403101534554.png" alt="" style="zoom:33%;" />
-
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403101534554.png" alt="" style="zoom:33%;" /></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">data_url = &quot;http://lib.stat.cmu.edu/datasets/boston&quot;</span><br><span class="line">raw_df = pd.read_csv(data_url, sep=&quot;\s+&quot;, skiprows=22, header=None)</span><br><span class="line">data = np.hstack([raw_df.values[::2, :], raw_df.values[1::2, :2]])</span><br><span class="line">target = raw_df.values[1::2, 2] # 归一化和特征构造后都没有变化</span><br><span class="line">print(&quot;Data shape: &#123;&#125;&quot;.format(data.shape))</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-设置缺失样本"><a href="#2-设置缺失样本" class="headerlink" title="2 设置缺失样本"></a>2 设置缺失样本</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">rng = np.random.RandomState(<span class="number">0</span>)  <span class="comment"># 确定随机种子</span></span><br><span class="line">missing_rate = <span class="number">0.5</span>   <span class="comment"># 缺失率是50%</span></span><br><span class="line"><span class="comment"># 计算缺失的样本总数；floor是向下取整</span></span><br><span class="line">n_missing_samples = <span class="built_in">int</span>(np.floor(n_samples * n_features * missing_rate))  <span class="comment"># 行乘列乘0.5即取一半缺失值</span></span><br><span class="line"><span class="built_in">print</span>(n_missing_samples)  <span class="comment"># 3289 个数</span></span><br></pre></td></tr></table></figure>
-
+<h3 id="设置缺失样本">2 设置缺失样本</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">rng = np.random.RandomState(<span class="number">0</span>)  <span class="comment"># 确定随机种子</span></span><br><span class="line">missing_rate = <span class="number">0.5</span>   <span class="comment"># 缺失率是50%</span></span><br><span class="line"><span class="comment"># 计算缺失的样本总数；floor是向下取整</span></span><br><span class="line">n_missing_samples = <span class="built_in">int</span>(np.floor(n_samples * n_features * missing_rate))  <span class="comment"># 行乘列乘0.5即取一半缺失值</span></span><br><span class="line"><span class="built_in">print</span>(n_missing_samples)  <span class="comment"># 3289 个数</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># randint(下限,上限,n)：在上限和下限之间随机取出n个整数</span></span><br><span class="line">missing_features = rng.randint(<span class="number">0</span>, n_features, n_missing_samples) <span class="comment"># (0,13,3289)</span></span><br><span class="line">missing_samples = rng.randint(<span class="number">0</span>, n_samples, n_missing_samples) <span class="comment"># (0,506,3289)</span></span><br></pre></td></tr></table></figure>
-
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">X_missing = X_full.copy()</span><br><span class="line">y_missing = y_full.copy()</span><br><span class="line">X_missing[missing_samples,missing_features] = np.nan  <span class="comment"># 指定为nan，代表缺失掉的数据</span></span><br><span class="line"><span class="comment"># y_missing 不变</span></span><br><span class="line">X_missing = pd.D</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-数据填充"><a href="#3-数据填充" class="headerlink" title="3 数据填充"></a>3 数据填充</h3><h4 id="3-1-均值填充"><a href="#3-1-均值填充" class="headerlink" title="3.1 均值填充"></a>3.1 均值填充</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">imp_mean = SimpleImputer(missing_values=np.nan, strategy=<span class="string">&quot;mean&quot;</span>)  <span class="comment"># 指定缺失值是什么和用什么填充</span></span><br><span class="line">X_missing_mean = imp_mean.fit_transform(X_missing)  <span class="comment"># fit + predict----&gt;特殊接口transform</span></span><br><span class="line">pd.DataFrame(X_missing_mean).isnull().<span class="built_in">sum</span>() <span class="comment"># X_missing_mean是一个ndaraay</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="3-2-0值填充"><a href="#3-2-0值填充" class="headerlink" title="3.2 0值填充"></a>3.2 0值填充</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">imp_0 = SimpleImputer(missing_values=np.nan, strategy=<span class="string">&quot;constant&quot;</span>, fill_value=<span class="number">0</span>)   <span class="comment"># 用0进行填充</span></span><br><span class="line">X_missing_0 = imp_0.fit_transform(X_missing)</span><br><span class="line">pd.DataFrame(X_missing_0).isnull().<span class="built_in">sum</span>() </span><br></pre></td></tr></table></figure>
-
-<h4 id="3-3-随机森林填充"><a href="#3-3-随机森林填充" class="headerlink" title="3.3 随机森林填充"></a>3.3 随机森林填充</h4><p>假设一个具有<code>n</code>个特征的数据，特征T存在缺失值<strong>（大量缺失更适合）</strong>，把T当做是标签，<strong>其他的n-1个特征和原来的数据看作是新的特征矩阵</strong>，具体数据解释为：</p>
+<h3 id="数据填充">3 数据填充</h3>
+<h4 id="均值填充">3.1 均值填充</h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">imp_mean = SimpleImputer(missing_values=np.nan, strategy=<span class="string">&quot;mean&quot;</span>)  <span class="comment"># 指定缺失值是什么和用什么填充</span></span><br><span class="line">X_missing_mean = imp_mean.fit_transform(X_missing)  <span class="comment"># fit + predict----&gt;特殊接口transform</span></span><br><span class="line">pd.DataFrame(X_missing_mean).isnull().<span class="built_in">sum</span>() <span class="comment"># X_missing_mean是一个ndaraay</span></span><br></pre></td></tr></table></figure>
+<h4 id="值填充">3.2 0值填充</h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">imp_0 = SimpleImputer(missing_values=np.nan, strategy=<span class="string">&quot;constant&quot;</span>, fill_value=<span class="number">0</span>)   <span class="comment"># 用0进行填充</span></span><br><span class="line">X_missing_0 = imp_0.fit_transform(X_missing)</span><br><span class="line">pd.DataFrame(X_missing_0).isnull().<span class="built_in">sum</span>() </span><br></pre></td></tr></table></figure>
+<h4 id="随机森林填充">3.3 随机森林填充</h4>
+<p>假设一个具有<code>n</code>个特征的数据，特征T存在缺失值<strong>（大量缺失更适合）</strong>，把T当做是标签，<strong>其他的n-1个特征和原来的数据看作是新的特征矩阵</strong>，具体数据解释为：</p>
 <table>
 <thead>
-<tr>
-<th align="left">数据</th>
-<th align="left">说明</th>
+<tr class="header">
+<th style="text-align: left;">数据</th>
+<th style="text-align: left;">说明</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">Xtrain</td>
-<td align="left">特征T不缺失的值对应的n-1个特征+原始标签</td>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Xtrain</td>
+<td
+style="text-align: left;">特征T不缺失的值对应的n-1个特征+原始标签</td>
 </tr>
-<tr>
-<td align="left">ytrain</td>
-<td align="left">特征T不缺失的值</td>
+<tr class="even">
+<td style="text-align: left;">ytrain</td>
+<td style="text-align: left;">特征T不缺失的值</td>
 </tr>
-<tr>
-<td align="left">Xtest</td>
-<td align="left">特征T缺失的值对应的n-1个特征+原始标签</td>
+<tr class="odd">
+<td style="text-align: left;">Xtest</td>
+<td style="text-align: left;">特征T缺失的值对应的n-1个特征+原始标签</td>
 </tr>
-<tr>
-<td align="left">ytest</td>
-<td align="left">特征T缺失值（未知）</td>
+<tr class="even">
+<td style="text-align: left;">ytest</td>
+<td style="text-align: left;">特征T缺失值（未知）</td>
 </tr>
-</tbody></table>
-<p>注意： 如果其他特征也存在缺失值，遍历所有的特征，从缺失值最少的开始。</p>
-<ol>
+</tbody>
+</table>
+<p>注意：
+如果其他特征也存在缺失值，遍历所有的特征，从缺失值最少的开始。</p>
+<ol type="1">
 <li>缺失值越少，所需要的准确信息也越少</li>
 <li>填补一个特征，先将其他特征值的缺失值用<code>0</code>代替，这样每次循环一次，有缺失值的特征便会减少一个</li>
 </ol>
 <p>假设数据有n个特征，m行数据：</p>
-<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403102005531.png" alt="" style="zoom:33%;" />
-
-<p> 由于是从最少的缺失值特征开始填充，那么需要找出存在缺失值的索引的顺序：<code>argsort</code>函数的使用</p>
-<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403102026911.png" alt="" style="zoom:50%;" />
-
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403102005531.png" alt="" style="zoom:33%;" /></p>
+<p>由于是从最少的缺失值特征开始填充，那么需要找出存在缺失值的索引的顺序：<code>argsort</code>函数的使用</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403102026911.png" alt="" style="zoom:50%;" /></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">X_missing_reg = X_missing.copy()</span><br><span class="line"><span class="comment"># 找出缺失值从小到大对应的索引值</span></span><br><span class="line">sortindex = np.argsort(pd.DataFrame(X_missing_reg).isnull().<span class="built_in">sum</span>(axis=<span class="number">0</span>)).values</span><br></pre></td></tr></table></figure>
-
 <p>填充过程：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> sortindex:</span><br><span class="line">    <span class="comment"># 构建新的特征矩阵和新标签</span></span><br><span class="line">    df = X_missing_reg   <span class="comment"># 所有的操作都在df上进行，只是最后得到的填充值作用在X_missing_reg上面</span></span><br><span class="line">    fillc = df.iloc[:, i]   <span class="comment"># 某个需要填充的列，索引为i</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 没有被选中填充（!=）的特征与原始标签的连接起来；df就是新特征矩阵</span></span><br><span class="line">    df = pd.concat([df.iloc[:, df.columns != i], pd.DataFrame(y_full)], axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 新的特征矩阵df中，对含有缺失值的列，进行0的填补</span></span><br><span class="line">    <span class="comment"># 检查是否有0 pd.DataFrame(df_0).isnull().sum()</span></span><br><span class="line">    df_0 = SimpleImputer(missing_values=np.nan, strategy=<span class="string">&#x27;constant&#x27;</span>, fill_value=<span class="number">0</span>).fit_transform(df)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 找出训练集和测试集</span></span><br><span class="line">    ytrain = fillc[fillc.notnull()]  <span class="comment"># 被选中填充的特征矩阵T中的非空值</span></span><br><span class="line">    ytest = fillc[fillc.isnull()]  <span class="comment"># 被选中填充的特征矩阵T中的空值</span></span><br><span class="line">    Xtrain = df_0[ytrain.index, :]  <span class="comment"># 新特征矩阵上，被选出来要填充的特征的非空值对应的记录</span></span><br><span class="line">    Xtest = df_0[ytest.index, :]   <span class="comment"># 空值对应的记录</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 随机森林填充缺失值</span></span><br><span class="line">    rfc = RandomForestRegressor(n_estimators=<span class="number">100</span>)</span><br><span class="line">    rfc = rfc.fit(Xtrain, ytrain)</span><br><span class="line">    y_predict = rfc.predict(Xtest)  <span class="comment"># predict接口预测得到的结果就是用来填充空值的那些值</span></span><br><span class="line">    <span class="comment"># 将填补好的特征返回到我们的原始特征矩阵中</span></span><br><span class="line">    X_missing_reg.loc[X_missing_reg.iloc[:, i].isnull(), i] = y_predict</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-四种数据建模"><a href="#4-四种数据建模" class="headerlink" title="4 四种数据建模"></a>4 四种数据建模</h3><ul>
+<h3 id="四种数据建模">4 四种数据建模</h3>
+<ul>
 <li>MSE：均方误差；回归树的衡量指标，越小越好。sklearn中使用的是负均方误差neg_mean_squared_error。均方误差本身是种误差loss，通过负数表示</li>
 <li>R2：回归树score返回的真实值是R的平方，不是MSE</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">X = [X_full, X_missing_mean, X_missing_0, X_missing_reg]</span><br><span class="line">mse = []</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> X:</span><br><span class="line">    estimator = RandomForestRegressor(random_state=<span class="number">0</span>, n_estimators=<span class="number">100</span>)</span><br><span class="line">    scores = cross_val_score(estimator, x, y_full, scoring=<span class="string">&quot;neg_mean_squared_error&quot;</span>, cv=<span class="number">5</span>).mean()</span><br><span class="line">    mse.append(scores * -<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
-<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403102157302.png" alt="" style="zoom:67%;" />
-
-<h3 id="5-绘图"><a href="#5-绘图" class="headerlink" title="5 绘图"></a>5 绘图</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">x_labels = [<span class="string">&quot;Full Data&quot;</span>,</span><br><span class="line">           <span class="string">&quot;Mean Imputation&quot;</span>,</span><br><span class="line">           <span class="string">&quot;Zero Imputation&quot;</span>,</span><br><span class="line">           <span class="string">&quot;Regressor Imputation&quot;</span>]</span><br><span class="line"></span><br><span class="line">colors = [<span class="string">&#x27;r&#x27;</span>, <span class="string">&#x27;g&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;orange&#x27;</span>]</span><br><span class="line"></span><br><span class="line">plt.figure(figsize=(<span class="number">12</span>,<span class="number">6</span>))  <span class="comment"># 生成画布</span></span><br><span class="line">ax = plt.subplot(<span class="number">111</span>)  <span class="comment"># 添加子图</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 在上面的过程中已经求出了4种不同数据的MSE</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> np.arange(<span class="built_in">len</span>(mse)):  <span class="comment"># arange(4)</span></span><br><span class="line">    ax.barh(i, mse[i], color=colors[i],alpha=<span class="number">0.6</span>,align=<span class="string">&#x27;center&#x27;</span>)</span><br><span class="line"></span><br><span class="line">ax.set_title(<span class="string">&quot;Imputation Techniques with Boston Data&quot;</span>)  <span class="comment"># 标题</span></span><br><span class="line">ax.set_xlim(left=np.<span class="built_in">min</span>(mse)*<span class="number">0.9</span>,</span><br><span class="line">           right=np.<span class="built_in">max</span>(mse)*<span class="number">1.1</span>)  <span class="comment"># 横轴是mse的取值</span></span><br><span class="line"></span><br><span class="line">ax.set_yticks(np.arange(<span class="built_in">len</span>(mse)))</span><br><span class="line">ax.set_label(<span class="string">&quot;MSE&quot;</span>)</span><br><span class="line">ax.set_yticklabels(x_labels)   <span class="comment"># 用x_labels中的名字作为y轴的命名</span></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-
-<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403102157852.png" alt="" style="zoom:67%;" />
-
-
-
-
-
-
-
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p>无</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403102157302.png" alt="" style="zoom:67%;" /></p>
+<h3 id="绘图">5 绘图</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">x_labels = [<span class="string">&quot;Full Data&quot;</span>,</span><br><span class="line">           <span class="string">&quot;Mean Imputation&quot;</span>,</span><br><span class="line">           <span class="string">&quot;Zero Imputation&quot;</span>,</span><br><span class="line">           <span class="string">&quot;Regressor Imputation&quot;</span>]</span><br><span class="line"></span><br><span class="line">colors = [<span class="string">&#x27;r&#x27;</span>, <span class="string">&#x27;g&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;orange&#x27;</span>]</span><br><span class="line"></span><br><span class="line">plt.figure(figsize=(<span class="number">12</span>,<span class="number">6</span>))  <span class="comment"># 生成画布</span></span><br><span class="line">ax = plt.subplot(<span class="number">111</span>)  <span class="comment"># 添加子图</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 在上面的过程中已经求出了4种不同数据的MSE</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> np.arange(<span class="built_in">len</span>(mse)):  <span class="comment"># arange(4)</span></span><br><span class="line">    ax.barh(i, mse[i], color=colors[i],alpha=<span class="number">0.6</span>,align=<span class="string">&#x27;center&#x27;</span>)</span><br><span class="line"></span><br><span class="line">ax.set_title(<span class="string">&quot;Imputation Techniques with Boston Data&quot;</span>)  <span class="comment"># 标题</span></span><br><span class="line">ax.set_xlim(left=np.<span class="built_in">min</span>(mse)*<span class="number">0.9</span>,</span><br><span class="line">           right=np.<span class="built_in">max</span>(mse)*<span class="number">1.1</span>)  <span class="comment"># 横轴是mse的取值</span></span><br><span class="line"></span><br><span class="line">ax.set_yticks(np.arange(<span class="built_in">len</span>(mse)))</span><br><span class="line">ax.set_label(<span class="string">&quot;MSE&quot;</span>)</span><br><span class="line">ax.set_yticklabels(x_labels)   <span class="comment"># 用x_labels中的名字作为y轴的命名</span></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403102157852.png" alt="" style="zoom:67%;" /></p>
+<h3 id="参考文章">参考文章</h3>
+<p>无</p>
 
     </div>
 
@@ -470,7 +463,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%B3%A2%E5%A3%AB%E9%A1%BF%E6%95%B0%E6%8D%AE%E9%9B%86%E8%8E%B7%E5%8F%96"><span class="nav-text">1 波士顿数据集获取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E8%AE%BE%E7%BD%AE%E7%BC%BA%E5%A4%B1%E6%A0%B7%E6%9C%AC"><span class="nav-text">2 设置缺失样本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E6%95%B0%E6%8D%AE%E5%A1%AB%E5%85%85"><span class="nav-text">3 数据填充</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-%E5%9D%87%E5%80%BC%E5%A1%AB%E5%85%85"><span class="nav-text">3.1 均值填充</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-0%E5%80%BC%E5%A1%AB%E5%85%85"><span class="nav-text">3.2 0值填充</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97%E5%A1%AB%E5%85%85"><span class="nav-text">3.3 随机森林填充</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%9B%9B%E7%A7%8D%E6%95%B0%E6%8D%AE%E5%BB%BA%E6%A8%A1"><span class="nav-text">4 四种数据建模</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E7%BB%98%E5%9B%BE"><span class="nav-text">5 绘图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%A2%E5%A3%AB%E9%A1%BF%E6%95%B0%E6%8D%AE%E9%9B%86%E8%8E%B7%E5%8F%96"><span class="nav-text">1 波士顿数据集获取</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E7%BC%BA%E5%A4%B1%E6%A0%B7%E6%9C%AC"><span class="nav-text">2 设置缺失样本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E5%A1%AB%E5%85%85"><span class="nav-text">3 数据填充</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9D%87%E5%80%BC%E5%A1%AB%E5%85%85"><span class="nav-text">3.1 均值填充</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%80%BC%E5%A1%AB%E5%85%85"><span class="nav-text">3.2 0值填充</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97%E5%A1%AB%E5%85%85"><span class="nav-text">3.3 随机森林填充</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9B%E7%A7%8D%E6%95%B0%E6%8D%AE%E5%BB%BA%E6%A8%A1"><span class="nav-text">4 四种数据建模</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%98%E5%9B%BE"><span class="nav-text">5 绘图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -486,7 +479,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">75</span>
+          <span class="site-state-item-count">77</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -550,13 +543,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">115k</span>
+    <span title="Symbols count total">117k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:44</span>
+    <span title="Reading time total">1:46</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
