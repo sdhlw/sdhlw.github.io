@@ -22,26 +22,18 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="元字符元字符是具有特殊意义的字符，其定义在正则表达式中并不是统一的。元字符在字符组外和字符组内意义不一样。  ^: 脱字符，开头锚点  $:美元符，结尾锚点  []: 字符组  [^]：排除型字符组  .：点号，单个任意字符（字符组外部）  \&lt;：单词起始位置（某些egrep可能不支持，perl使用\b）  \&gt;：单词结束位置（某些egrep可能不支持，perl使用\b）  |： 或者">
+  <meta name="description" content="元字符 元字符是具有特殊意义的字符，其定义在正则表达式中并不是统一的。元字符在字符组外和字符组内意义不一样。  ^: 脱字符，开头锚点 $:美元符，结尾锚点 []: 字符组 [^]：排除型字符组 .：点号，单个任意字符（字符组外部） \&lt;：单词起始位置（某些egrep可能不支持，perl使用\b） \&gt;：单词结束位置（某些egrep可能不支持，perl使用\b） |">
 <meta property="og:type" content="article">
 <meta property="og:title" content="正则表达式基础">
 <meta property="og:url" content="https://www.sdhlw.top/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="元字符元字符是具有特殊意义的字符，其定义在正则表达式中并不是统一的。元字符在字符组外和字符组内意义不一样。  ^: 脱字符，开头锚点  $:美元符，结尾锚点  []: 字符组  [^]：排除型字符组  .：点号，单个任意字符（字符组外部）  \&lt;：单词起始位置（某些egrep可能不支持，perl使用\b）  \&gt;：单词结束位置（某些egrep可能不支持，perl使用\b）  |： 或者">
+<meta property="og:description" content="元字符 元字符是具有特殊意义的字符，其定义在正则表达式中并不是统一的。元字符在字符组外和字符组内意义不一样。  ^: 脱字符，开头锚点 $:美元符，结尾锚点 []: 字符组 [^]：排除型字符组 .：点号，单个任意字符（字符组外部） \&lt;：单词起始位置（某些egrep可能不支持，perl使用\b） \&gt;：单词结束位置（某些egrep可能不支持，perl使用\b） |">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208191721658.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208181102326.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208182050323.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208181719151.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208191133180.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208191136925.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208191139421.png">
 <meta property="article:published_time" content="2022-08-18T02:31:44.000Z">
 <meta property="article:modified_time" content="2024-02-18T01:32:32.981Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="Regex">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208191721658.png">
 
 <link rel="canonical" href="https://www.sdhlw.top/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%9F%BA%E7%A1%80/">
 
@@ -269,7 +261,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>2.5k</span>
+              <span>2.6k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -288,182 +280,225 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="元字符"><a href="#元字符" class="headerlink" title="元字符"></a>元字符</h1><p>元字符是具有特殊意义的字符，其定义在正则表达式中并不是统一的。元字符在字符组外和字符组内意义不一样。</p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="元字符">元字符</h1>
+<p>元字符是具有特殊意义的字符，其定义在正则表达式中并不是统一的。元字符在字符组外和字符组内意义不一样。</p>
 <ul>
-<li><p><code>^</code>: 脱字符，开头锚点</p>
-</li>
-<li><p><code>$</code>:美元符，结尾锚点</p>
-</li>
-<li><p><code>[]</code>: 字符组</p>
-</li>
-<li><p><code>[^]</code>：排除型字符组</p>
-</li>
-<li><p><code>.</code>：点号，单个任意字符（字符组外部）</p>
-</li>
-<li><p><code>\&lt;</code>：单词起始位置（某些egrep可能不支持，perl使用<code>\b</code>）</p>
-</li>
-<li><p><code>\&gt;</code>：单词结束位置（某些egrep可能不支持，perl使用<code>\b</code>）</p>
-</li>
-<li><p><code>|</code>： 或者，也叫多选分支（多选项），分隔两边表达式</p>
-</li>
+<li><p><code>^</code>: 脱字符，开头锚点</p></li>
+<li><p><code>$</code>:美元符，结尾锚点</p></li>
+<li><p><code>[]</code>: 字符组</p></li>
+<li><p><code>[^]</code>：排除型字符组</p></li>
+<li><p><code>.</code>：点号，单个任意字符（字符组外部）</p></li>
+<li><p><code>\&lt;</code>：单词起始位置（某些egrep可能不支持，perl使用<code>\b</code>）</p></li>
+<li><p><code>\&gt;</code>：单词结束位置（某些egrep可能不支持，perl使用<code>\b</code>）</p></li>
+<li><p><code>|</code>：
+或者，也叫多选分支（多选项），分隔两边表达式</p></li>
 <li><p><code>()</code>：限制竖线（多选项）范围；字符组成单元，受量词作用；反向引用捕获文本</p>
 <ul>
 <li><p><code>（？：）</code>：只分组不捕获，及得到的文本不会保存到变量中，不影响捕获计数</p>
- <span id="more"></span></li>
-</ul>
-</li>
+<p><span id="more"></span></p></li>
+</ul></li>
 <li><p>量词：</p>
 <ul>
-<li><code>？</code>：可选项，前元素出现0&#x2F;1次</li>
-<li><code>+</code>： 重复出现，前元素&gt;&#x3D;1</li>
-<li><code>*</code>：重复出现，前元素&gt;&#x3D;0</li>
-</ul>
-</li>
+<li><code>？</code>：可选项，前元素出现0/1次</li>
+<li><code>+</code>： 重复出现，前元素&gt;=1</li>
+<li><code>*</code>：重复出现，前元素&gt;=0</li>
+</ul></li>
 <li><p>区间量词：</p>
 <ul>
-<li><p><code>&#123;&#125;</code>：自定义重现次数</p>
-</li>
+<li><p><code>&#123;&#125;</code>：自定义重现次数</p></li>
 <li><table>
 <thead>
-<tr>
+<tr class="header">
 <th>符号</th>
 <th></th>
 <th></th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>o{n,m}</td>
 <td>前一个字母o，至少连续出现n次，最多连续出现m次</td>
 <td>≥n ≤m</td>
 </tr>
-<tr>
+<tr class="even">
 <td>o{n}</td>
 <td>前一个字母o，连续出现n次</td>
-<td>&#x3D;&#x3D;n</td>
+<td>==n</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>o{n,}</td>
 <td>前一个字母o，至少连续出现n次</td>
 <td>≥n</td>
 </tr>
-<tr>
+<tr class="even">
 <td>o{,m}</td>
 <td>前一个字母o，最多连续出现m次</td>
 <td>≤m</td>
 </tr>
-</tbody></table>
-</li>
-</ul>
-</li>
-<li><p><code>\1，\2</code>：反向引用 （匹配第一组、第二组括号内字表达式匹配的文本）</p>
-</li>
+</tbody>
+</table></li>
+</ul></li>
+<li><p><code>\1，\2</code>：反向引用
+（匹配第一组、第二组括号内字表达式匹配的文本）</p></li>
 </ul>
 <p><code>\</code>: 转义符</p>
 <p><code>-</code>：字符组内：普通符号（[之后，[^之后）、表示范围</p>
 <p><code>.*</code>：一组任何字符（某些工具中，不包括换行符）</p>
 <table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 93%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>符号</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
-<td>\t</td>
-<td>制表符</td>
+<tbody>
+<tr class="odd">
+<td> 制表符</td>
+<td></td>
 </tr>
-<tr>
-<td>\n</td>
+<tr class="even">
+<td></td>
 <td>换行符</td>
 </tr>
-<tr>
-<td>\r</td>
-<td>回车符</td>
+<tr class="odd">
+<td> 回车符</td>
+<td></td>
 </tr>
-<tr>
-<td>\s</td>
-<td>任何空白字符（whitespace character)：空格符、制表符、进纸符、回车符</td>
+<tr class="even">
+<td></td>
+<td>任何空白字符（whitespace
+character)：空格符、制表符、进纸符、回车符</td>
 </tr>
-<tr>
-<td>\S</td>
-<td>除\s之外的任何字符</td>
+<tr class="odd">
+<td></td>
+<td>除</td>
 </tr>
-<tr>
-<td>\w</td>
-<td>即[a-zA-Z0-9] 可使用 \w+来匹配一个单词</td>
+<tr class="even">
+<td></td>
+<td>即[a-zA-Z0-9] 可使用 +来匹配一个单词</td>
 </tr>
-<tr>
-<td>\W</td>
-<td>除\w之外的任何字符，也就是<code>[^a-zA-Z0-9]</code></td>
+<tr class="odd">
+<td></td>
+<td>除，也就是<code>[^a-zA-Z0-9]</code></td>
 </tr>
-<tr>
-<td>\d</td>
-<td>[0-9],即数字</td>
+<tr class="even">
+<td> [0-9],即数字</td>
+<td></td>
 </tr>
-<tr>
-<td>\D</td>
-<td>除\d外的任何字符，即<code>[^0-9]</code></td>
+<tr class="odd">
+<td></td>
+<td>除，即<code>[^0-9]</code></td>
 </tr>
-</tbody></table>
-<h1 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h1><ul>
-<li><p>一个字符组，即使是排除型字符组，也需要一个字符</p>
-</li>
-<li><p>字符组只能匹配一个字符，多选项匹配任意长度文本</p>
-</li>
-<li><p>锚点可以分为两大类：简单锚点（^、$、\G、\b、…）和复杂锚点（例如顺序环视和逆序环视）。</p>
-</li>
-<li><p>egrep的正则使用：<code>egrep &#39;^(from|subject)：&#39; file </code></p>
-</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208191721658.png" alt="image-20220818103601114"></p>
+</tbody>
+</table>
+<h1 id="tips">Tips</h1>
 <ul>
-<li><p><code>(first|lst)</code> &#x3D; <code>(fir|l)st</code></p>
-</li>
-<li><p><code>^a|b|c:.</code>与<code>^(a|b|c):.</code>不一样，括号的作用就是分组</p>
-</li>
-<li><p><code>\&lt;cat\&gt;</code> ：单词分界符（不是所有egrep都支持），匹配cat，单词版本的<code>^</code>和<code>$</code></p>
-</li>
+<li><p>一个字符组，即使是排除型字符组，也需要一个字符</p></li>
+<li><p>字符组只能匹配一个字符，多选项匹配任意长度文本</p></li>
+<li><p>锚点可以分为两大类：简单锚点（^、$、…）和复杂锚点（例如顺序环视和逆序环视）。</p></li>
+<li><p>egrep的正则使用：<code>egrep '^(from|subject)：' file</code></p></li>
 </ul>
-<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208181102326.png" alt="image-20220818110215589"></p>
-<h1 id="反向引用"><a href="#反向引用" class="headerlink" title="反向引用"></a>反向引用</h1><p>匹配与表达式先前部分匹配的同样的文本。</p>
+<figure>
+<img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208191721658.png"
+alt="image-20220818103601114" />
+<figcaption aria-hidden="true">image-20220818103601114</figcaption>
+</figure>
+<ul>
+<li><p><code>(first|lst)</code> = <code>(fir|l)st</code></p></li>
+<li><p><code>^a|b|c:.</code>与<code>^(a|b|c):.</code>不一样，括号的作用就是分组</p></li>
+<li><p><code>\&lt;cat\&gt;</code>
+：单词分界符（不是所有egrep都支持），匹配cat，单词版本的<code>^</code>和<code>$</code></p></li>
+</ul>
+<figure>
+<img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208181102326.png"
+alt="image-20220818110215589" />
+<figcaption aria-hidden="true">image-20220818110215589</figcaption>
+</figure>
+<h1 id="反向引用">反向引用</h1>
+<p>匹配与表达式先前部分匹配的同样的文本。</p>
 <p><code>([a-z])([0-9]) \1\2</code>：<code>\1</code>代表<code>[a-z]</code>匹配的内容，<code>\2</code>代表<code>[0-9]匹配的内容</code></p>
-<p>匹配<code>the the </code>：</p>
+<p>匹配<code>the the</code>：</p>
 <ul>
-<li><p><code>\&lt;the the\&gt;</code></p>
-</li>
-<li><p><code>\&lt;(A-Za-z+) +\1\&gt;</code> 比第一种找到的范围更大</p>
-</li>
+<li><p><code>\&lt;the the\&gt;</code></p></li>
+<li><p><code>\&lt;(A-Za-z+) +\1\&gt;</code>
+比第一种找到的范围更大</p></li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$price=~s/(\.\d\d[1-9]?)\d*/$1/</span><br><span class="line">$price   =~   s/  (\.\d\d[1-9]?)\d*  /$1/</span><br><span class="line"># 用括号内的内容   替换掉  括号内容加一个数字字符</span><br><span class="line"># 即去掉数字</span><br><span class="line">$price    # perl的变量</span><br><span class="line">=~  # 连接</span><br><span class="line">s/regex/replacement/ #查找和替换</span><br><span class="line">s/regex/replacement/g # g全局操作，即全局替换</span><br><span class="line">s/regex/replacement/i # i忽略大小写</span><br><span class="line">m/regex/ # 正则表达式匹配文本</span><br></pre></td></tr></table></figure>
-
-<h1 id="环视（断言）"><a href="#环视（断言）" class="headerlink" title="环视（断言）"></a>环视（断言）</h1><p>选择一个位置：顺序环视，即从左到右，匹配字符，最后回到原点即左边，肯定则有该匹配字符，否定则没有；逆序环视，即从右往左，匹配字符，最后回到原点即右边，肯定则有该匹配字符，否定则没有；所以找到字符在右的，使用顺序环视，找的字符在左的，使用逆序环视。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208182050323.png" alt="image-20220818205023327"></p>
-<p>正向先行断言：正向顺序环视<br>负向先行断言：否定顺序环视<br>正向后行断言：肯定逆序环视<br>负向后行断言：否定逆序环视</p>
-<p><code>(?=jeffrey)jeff</code>&#x3D;<code>jeff(?=rey)</code>：都能精确匹配第一行，第二行不会匹配</p>
+<h1 id="环视断言">环视（断言）</h1>
+<p>选择一个位置：顺序环视，即从左到右，匹配字符，最后回到原点即左边，肯定则有该匹配字符，否定则没有；逆序环视，即从右往左，匹配字符，最后回到原点即右边，肯定则有该匹配字符，否定则没有；所以找到字符在右的，使用顺序环视，找的字符在左的，使用逆序环视。</p>
+<figure>
+<img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208182050323.png"
+alt="image-20220818205023327" />
+<figcaption aria-hidden="true">image-20220818205023327</figcaption>
+</figure>
+<p>正向先行断言：正向顺序环视 负向先行断言：否定顺序环视
+正向后行断言：肯定逆序环视 负向后行断言：否定逆序环视</p>
+<p><code>(?=jeffrey)jeff</code>=<code>jeff(?=rey)</code>：都能精确匹配第一行，第二行不会匹配</p>
 <p><code>jeff</code>：两行都能匹配到</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">jeffrey</span><br><span class="line">jeffdrson</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208181719151.png" alt="image-20220818171920809"></p>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>程序设计语言有 3 种处理正则表达式的方式：集成式 （integrated）、程序式（procedural）和面向对象式（object oriented）。在第一种方式中，正则表达式是直接内建在语言之中的，Perl就是如此。Python采用的是面向对象式的办法。Awk 使用的是集成式处理方法。</p>
+<figure>
+<img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208181719151.png"
+alt="image-20220818171920809" />
+<figcaption aria-hidden="true">image-20220818171920809</figcaption>
+</figure>
+<h1 id="其他">其他</h1>
+<p>程序设计语言有 3 种处理正则表达式的方式：集成式
+（integrated）、程序式（procedural）和面向对象式（object
+oriented）。在第一种方式中，正则表达式是直接内建在语言之中的，Perl就是如此。Python采用的是面向对象式的办法。Awk
+使用的是集成式处理方法。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line">R = re.<span class="built_in">compile</span>(<span class="string">&quot;^Subjrct:(.*)&quot;</span>,re.IGNORECASE)；</span><br><span class="line">M = R.search(line)</span><br><span class="line"><span class="keyword">if</span> M:</span><br><span class="line">    subject = M.group(<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
-
-
-<p>宽松排列和注释模式 ：此模式会忽略字符组外部的所有空白字符。字符组内部的空白字符仍然有效（java.util.regex是例外），＃符号和换行符之间的内容视为注释。</p>
-<p>点号通配模式（dot-match-all match mode，也叫“单行模式”）：通常，点号是不能匹配换行符的。对现代编程语言来说，点号能够匹配换行符的模式和不能匹配的模式同样有用。这两种模式哪个更方便，取决于具体的情况。许多程序提供了两种方法供正则表达式选择。</p>
-<p>增强的行锚点模式（Enhanced line-anchor match mode，也叫 “多行文本模式”）：增强的行锚点模式会影响到行锚点「^」和「$」的匹配。通常情况 下，锚点「^」不能匹配字符串内部的换行符，而只能匹配目标字符串 的起始位置。但是在此增强模式下，它能够匹配字符串中内嵌的文本行的开头位置。</p>
-<p>文字文本模式：“文字文本（literal text）”模式几乎不能识别任何正则表达 式元字符。</p>
-<p>字符组通常表示肯定断言（positive assertion）。也就是说， 它们必须匹配一个字符。排除型字符组仍然需要匹配一个字符，只是 它没有在字符组中列出而已。</p>
-<p>在某些工具软件中，点号用来缩略表示可以匹配任何字符的字符 组，而在其他工具中，点号能匹配除了换行符之外的任何字符。</p>
+<p>宽松排列和注释模式
+：此模式会忽略字符组外部的所有空白字符。字符组内部的空白字符仍然有效（java.util.regex是例外），＃符号和换行符之间的内容视为注释。</p>
+<p>点号通配模式（dot-match-all match
+mode，也叫“单行模式”）：通常，点号是不能匹配换行符的。对现代编程语言来说，点号能够匹配换行符的模式和不能匹配的模式同样有用。这两种模式哪个更方便，取决于具体的情况。许多程序提供了两种方法供正则表达式选择。</p>
+<p>增强的行锚点模式（Enhanced line-anchor match mode，也叫
+“多行文本模式”）：增强的行锚点模式会影响到行锚点「^」和「$」的匹配。通常情况
+下，锚点「^」不能匹配字符串内部的换行符，而只能匹配目标字符串
+的起始位置。但是在此增强模式下，它能够匹配字符串中内嵌的文本行的开头位置。</p>
+<p>文字文本模式：“文字文本（literal text）”模式几乎不能识别任何正则表达
+式元字符。</p>
+<p>字符组通常表示肯定断言（positive assertion）。也就是说，
+它们必须匹配一个字符。排除型字符组仍然需要匹配一个字符，只是
+它没有在字符组中列出而已。</p>
+<p>在某些工具软件中，点号用来缩略表示可以匹配任何字符的字符
+组，而在其他工具中，点号能匹配除了换行符之外的任何字符。</p>
 <p>简单的字符组减法：<code>[[a-z]-[aeiou]]</code></p>
-<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208191133180.png" alt="image-20220819113303159"></p>
+<figure>
+<img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208191133180.png"
+alt="image-20220819113303159" />
+<figcaption aria-hidden="true">image-20220819113303159</figcaption>
+</figure>
 <p>完整的字符组集合运算：<code>[[a-z]&amp;&amp;[^aeiou]]</code></p>
-<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208191136925.png" alt="image-20220819113645224"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208191139421.png" alt="image-20220819113949496"></p>
-<h1 id="推荐阅读"><a href="#推荐阅读" class="headerlink" title="推荐阅读"></a>推荐阅读</h1><ul>
-<li><a target="_blank" rel="noopener" href="https://regexlearn.com/zh-cn">Regex Learn - 逐步从零基础到高阶。</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.r2coding.com/#/README?id=%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F">Road 2 Coding (r2coding.com)</a></li>
-<li><a target="_blank" rel="noopener" href="https://deerchao.cn/tutorials/regex/regex.htm">正则表达式30分钟入门教程 (deerchao.cn)</a></li>
+<figure>
+<img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208191136925.png"
+alt="image-20220819113645224" />
+<figcaption aria-hidden="true">image-20220819113645224</figcaption>
+</figure>
+<figure>
+<img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208191139421.png"
+alt="image-20220819113949496" />
+<figcaption aria-hidden="true">image-20220819113949496</figcaption>
+</figure>
+<h1 id="推荐阅读">推荐阅读</h1>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://regexlearn.com/zh-cn">Regex Learn -
+逐步从零基础到高阶。</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.r2coding.com/#/README?id=正则表达式">Road 2
+Coding (r2coding.com)</a></li>
+<li><a
+target="_blank" rel="noopener" href="https://deerchao.cn/tutorials/regex/regex.htm">正则表达式30分钟入门教程
+(deerchao.cn)</a></li>
 <li>精通正则表达式（effrey E. F. Friedl）：本文的绝大多数内容来源</li>
 </ul>
 
@@ -568,7 +603,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%83%E5%AD%97%E7%AC%A6"><span class="nav-text">元字符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Tips"><span class="nav-text">Tips</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%8D%E5%90%91%E5%BC%95%E7%94%A8"><span class="nav-text">反向引用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%AF%E8%A7%86%EF%BC%88%E6%96%AD%E8%A8%80%EF%BC%89"><span class="nav-text">环视（断言）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB"><span class="nav-text">推荐阅读</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%83%E5%AD%97%E7%AC%A6"><span class="nav-text">元字符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#tips"><span class="nav-text">Tips</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%8D%E5%90%91%E5%BC%95%E7%94%A8"><span class="nav-text">反向引用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%8E%AF%E8%A7%86%E6%96%AD%E8%A8%80"><span class="nav-text">环视（断言）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-text">其他</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8E%A8%E8%8D%90%E9%98%85%E8%AF%BB"><span class="nav-text">推荐阅读</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
