@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-03-15T02:52:41.099Z</updated>
+  <updated>2024-03-15T02:56:19.029Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -17,20 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>参考文献中英文混排-等与 etal 问题</title>
+    <title>参考文献中英文混排-等与 et al 问题</title>
     <link href="https://www.sdhlw.top/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%E7%AD%89%E4%B8%8Eetal%E9%97%AE%E9%A2%98/"/>
     <id>https://www.sdhlw.top/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%E7%AD%89%E4%B8%8Eetal%E9%97%AE%E9%A2%98/</id>
     <published>2024-03-15T01:59:38.000Z</published>
-    <updated>2024-03-15T02:52:41.099Z</updated>
+    <updated>2024-03-15T02:56:19.029Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>问题：zotero 使用 <ahref="https://github.com/sdhlw/Chinese-STD-GB-T-7714-related-csl">GB格式</a>插入英文文献时，英文文献为等</p><p>解决：</p><p>1、安装可以同时生成等和 etal 的csl格式，已放于OA 仓库：<ahref="https://github.com/sdhlw/OA/tree/main">china-national-standard-gb-t-7714-2015-numeric-BiLan.csl</a></p><p>打开word：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151007465.png" alt="" style="zoom:23%;" /></p><span id="more"></span><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151017925.png" alt="" style="zoom:33%;" /></p><p>2、在zotero中，将显示为等的英文文献的语言修改为“en”<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[[Zotero修改版]终于可以原生支持同时生成“et al”和“等”了](https://zhuanlan.zhihu.com/p/314928204)">[1]</span></a></sup></p><p>按照图片的内容修改，可解决英文文献引用过程中 et al. 变为 等的问题<sup id="fnref:2"><a href="#fn:2" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Zotero 插件之 Jasminum（茉莉花）的使用教程](https://blog.csdn.net/m0_67394827/article/details/134389267)">[2]</span></a></sup>，如果有一些论文的语言没有自动识别出来，或者是安装茉莉花插件之前的旧文献，我们可以手动进行操作找到自己需要设置语言的论文，点击右键-设置语言，之后，根据论文的语言设置为中文或者英文即可<sup id="fnref:3"><a href="#fn:3" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Zotero修改GB/T 7714参考文献格式-实现中英文混排](https://zhuanlan.zhihu.com/p/663341103)">[3]</span></a></sup>。</p><p>茉莉花插件批量修改条目为 en :</p><p>zotero：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151047433.png" alt="" style="zoom:40%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151048903.png" alt="" style="zoom:33%;" /></p><p>2、选中所有英文文献条目，右键：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151050754.png" alt="" style="zoom:25%;" /></p><p>3、点击 word 中 zotero 中的 refresh 即可</p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/314928204">[Zotero修改版]终于可以原生支持同时生成“etal”和“等”了</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span></li><li id="fn:2"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/m0_67394827/article/details/134389267">Zotero插件之Jasminum（茉莉花）的使用教程</a><a href="#fnref:2" rev="footnote">↩︎</a></span></li><li id="fn:3"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/663341103">Zotero修改GB/T7714参考文献格式-实现中英文混排</a><a href="#fnref:3" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>问题：zotero 使用 <ahref="https://github.com/sdhlw/Chinese-STD-GB-T-7714-related-csl">GB格式</a>插入英文文献时，英文文献为等</p><p>解决：</p><p>1、安装可以同时生成等和 et al 的csl格式，已放于OA 仓库：<ahref="https://github.com/sdhlw/OA/tree/main">china-national-standard-gb-t-7714-2015-numeric-BiLan.csl</a></p><p>打开word：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151007465.png" alt="" style="zoom:23%;" /></p><span id="more"></span><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151017925.png" alt="" style="zoom:33%;" /></p><p>2、在zotero中，将显示为等的英文文献的语言修改为“en”<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[[Zotero修改版]终于可以原生支持同时生成“et al”和“等”了](https://zhuanlan.zhihu.com/p/314928204)">[1]</span></a></sup></p><p>按照图片的内容修改，可解决英文文献引用过程中 et al. 变为 等的问题<sup id="fnref:2"><a href="#fn:2" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Zotero 插件之 Jasminum（茉莉花）的使用教程](https://blog.csdn.net/m0_67394827/article/details/134389267)">[2]</span></a></sup>，如果有一些论文的语言没有自动识别出来，或者是安装茉莉花插件之前的旧文献，我们可以手动进行操作找到自己需要设置语言的论文，点击右键-设置语言，之后，根据论文的语言设置为中文或者英文即可<sup id="fnref:3"><a href="#fn:3" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Zotero修改GB/T 7714参考文献格式-实现中英文混排](https://zhuanlan.zhihu.com/p/663341103)">[3]</span></a></sup>。</p><p>茉莉花插件批量修改条目为 en :</p><p>zotero：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151047433.png" alt="" style="zoom:40%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151048903.png" alt="" style="zoom:33%;" /></p><p>2、选中所有英文文献条目，右键：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151050754.png" alt="" style="zoom:25%;" /></p><p>3、点击 word 中 zotero 中的 refresh 即可</p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/314928204">[Zotero修改版]终于可以原生支持同时生成“etal”和“等”了</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span></li><li id="fn:2"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/m0_67394827/article/details/134389267">Zotero插件之Jasminum（茉莉花）的使用教程</a><a href="#fnref:2" rev="footnote">↩︎</a></span></li><li id="fn:3"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/663341103">Zotero修改GB/T7714参考文献格式-实现中英文混排</a><a href="#fnref:3" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
     
     
     <summary type="html">&lt;p&gt;问题：zotero 使用 &lt;a
 href=&quot;https://github.com/sdhlw/Chinese-STD-GB-T-7714-related-csl&quot;&gt;GB
 格式&lt;/a&gt;插入英文文献时，英文文献为等&lt;/p&gt;
 &lt;p&gt;解决：&lt;/p&gt;
-&lt;p&gt;1、安装可以同时生成等和 etal 的csl格式，已放于OA 仓库：&lt;a
+&lt;p&gt;1、安装可以同时生成等和 et al 的csl格式，已放于OA 仓库：&lt;a
 href=&quot;https://github.com/sdhlw/OA/tree/main&quot;&gt;china-national-standard-gb-t-7714-2015-numeric-BiLan.csl&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;打开word：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151007465.png&quot; alt=&quot;&quot; style=&quot;zoom:23%;&quot; /&gt;&lt;/p&gt;</summary>
@@ -73,16 +73,16 @@ href=&quot;https://github.com/sdhlw/OA/tree/main&quot;&gt;china-national-standar
     <link href="https://www.sdhlw.top/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%BD%A2%E5%BC%8F/"/>
     <id>https://www.sdhlw.top/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%BD%A2%E5%BC%8F/</id>
     <published>2024-03-11T10:30:52.000Z</published>
-    <updated>2024-03-11T15:30:26.438Z</updated>
+    <updated>2024-03-15T06:53:53.315Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>project</p><ul><li><p>origin_data</p></li><li><p>data</p></li><li><p>code</p></li><li><p>result</p></li></ul><span id="more"></span><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>project</p><ul><li><p>origin_data</p></li><li><p>clean_data</p></li><li><p>process(代码及工程文件)</p></li><li><p>result</p></li></ul><span id="more"></span><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;project&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;origin_data&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;data&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;code&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;clean_data&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;process(代码及工程文件)&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;result&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;</summary>
     

@@ -2,12 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.sdhlw.top/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%BD%A2%E5%BC%8F/</loc>
+    
+    <lastmod>2024-03-15T06:53:53.315Z</lastmod>
+    
+    <date>1710153052000</date>
+    <title>数据分析项目管理形式 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://www.sdhlw.top/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%E7%AD%89%E4%B8%8Eetal%E9%97%AE%E9%A2%98/</loc>
     
-    <lastmod>2024-03-15T02:52:41.099Z</lastmod>
+    <lastmod>2024-03-15T02:56:19.029Z</lastmod>
     
     <date>1710467978000</date>
-    <title>参考文献中英文混排-等与 etal 问题 | Jay's Blog</title>
+    <title>参考文献中英文混排-等与 et al 问题 | Jay's Blog</title>
     
     <desc></desc>
   </url>
@@ -39,7 +50,7 @@
     
     <lastmod>2024-03-13T01:34:22.336Z</lastmod>
     
-    <date>1710471211835</date>
+    <date>1710486677563</date>
     <title>Python 速查 | Jay's Blog</title>
     
     <desc>快速查询：Python 函数的简单解释及使用 详细可参考：搜索使用 excel 导入 excel 1234567891011121314import pandas as pd# 指定 Excel 文件路径excel_path = r&#x27;D:\MyData\Boston_data.xlsx&#x27;# 从 Excel 文件中读取数据并存储到 DataFrame 中df = pd.read_</desc>
@@ -63,17 +74,6 @@
     
     <date>1710083554000</date>
     <title>博客增加菜单栏页面 | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%BD%A2%E5%BC%8F/</loc>
-    
-    <lastmod>2024-03-11T15:30:26.438Z</lastmod>
-    
-    <date>1710153052000</date>
-    <title>数据分析项目管理形式 | Jay's Blog</title>
     
     <desc></desc>
   </url>
