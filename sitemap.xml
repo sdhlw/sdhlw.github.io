@@ -2,9 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.sdhlw.top/python/index.html</loc>
+    
+    <lastmod>2024-03-15T13:12:50.096Z</lastmod>
+    
+    <date>1710508371182</date>
+    <title>Python 速查 | Jay's Blog</title>
+    
+    <desc>快速查询：Python 函数的简单解释及使用 详细可参考：搜索使用 excel导入 excel1234567891011121314import pandas as pd# 指定 Excel 文件路径excel_path = r&#x27;D:\MyData\Boston_data.xlsx&#x27;# 从 Excel 文件中读取数据并存储到 DataFrame 中df = pd.read_ex</desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%E6%B3%95/</loc>
+    
+    <lastmod>2024-03-15T12:08:42.141Z</lastmod>
+    
+    <date>1710501491000</date>
+    <title>交叉验证法 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://www.sdhlw.top/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%BD%A2%E5%BC%8F/</loc>
     
-    <lastmod>2024-03-15T06:53:53.315Z</lastmod>
+    <lastmod>2024-03-15T08:16:41.242Z</lastmod>
     
     <date>1710153052000</date>
     <title>数据分析项目管理形式 | Jay's Blog</title>
@@ -43,17 +65,6 @@
     <title>独热编码（one-hot） | Jay's Blog</title>
     
     <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/python/index.html</loc>
-    
-    <lastmod>2024-03-13T01:34:22.336Z</lastmod>
-    
-    <date>1710486677563</date>
-    <title>Python 速查 | Jay's Blog</title>
-    
-    <desc>快速查询：Python 函数的简单解释及使用 详细可参考：搜索使用 excel 导入 excel 1234567891011121314import pandas as pd# 指定 Excel 文件路径excel_path = r&#x27;D:\MyData\Boston_data.xlsx&#x27;# 从 Excel 文件中读取数据并存储到 DataFrame 中df = pd.read_</desc>
   </url>
   
   <url>

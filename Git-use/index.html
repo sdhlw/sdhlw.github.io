@@ -29,11 +29,13 @@
 <meta property="og:site_name" content="Jay&#39;s Blog">
 <meta property="og:description" content="记录Git Bash的基本使用">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208061634599.png">
 <meta property="article:published_time" content="2022-08-06T08:22:35.000Z">
 <meta property="article:modified_time" content="2024-02-18T01:19:02.327Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208061634599.png">
 
 <link rel="canonical" href="https://www.sdhlw.top/Git-use/">
 
@@ -281,56 +283,35 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><figure>
-<img
-src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208061634599.png"
-alt="image-20220806163425145" />
-<figcaption aria-hidden="true">image-20220806163425145</figcaption>
-</figure>
-<h4 id="基本设置">基本设置</h4>
-<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/cong-wang/p/15026535.html">Windows
-Terminal 添加git bash</a>：</p>
-<p>打开Windows
-Terminal的设置文件settings.json，在profiles的list中添加一项：</p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208061634599.png" alt="image-20220806163425145"></p>
+<h4 id="基本设置"><a href="#基本设置" class="headerlink" title="基本设置"></a>基本设置</h4><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/cong-wang/p/15026535.html">Windows Terminal 添加git bash</a>：</p>
+<p>打开Windows Terminal的设置文件settings.json，在profiles的list中添加一项：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;guid&quot; : &quot;&#123;DCCB2820-E057-5204-2732-968F1D89107E&#125;&quot;,</span><br><span class="line">    &quot;name&quot; : &quot;Git Bash&quot;,</span><br><span class="line">    &quot;commandline&quot; : &quot;C:\\Program Files\\Git\\bin\\bash.exe --login -i&quot;,</span><br><span class="line">    &quot;icon&quot; : &quot;C:\\Users\\Lenovo\\Pictures\\nodelete\\git-bash.png&quot;</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
-<p>git bash 设置打开默认目录： vim ~/.bash_profile 将一下内容放进去(git
-bash here 会失去作用)：</p>
+
+<p>git bash 设置打开默认目录：<br>vim ~&#x2F;.bash_profile  将一下内容放进去(git bash here 会失去作用)：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> D:\\MyData\\10-other\\gitbook_md  <span class="comment"># 加入要去的目录</span></span><br></pre></td></tr></table></figure>
-<h4 id="基本命令">基本命令</h4>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;用户名&quot;  # 在命令行中配置本地仓库的账号和邮箱</span><br><span class="line">git config --global user.email &quot;123@qq.com&quot;</span><br><span class="line">git config --global color.ui true # 启用一些额外的颜色，这样就可以更容易地阅读命令的输出</span><br><span class="line"></span><br><span class="line">git init # 初始化仓库</span><br><span class="line">git add . # .表示所有文件。也可以git add 文件名 添加单独文件</span><br><span class="line">git commit -a -m &quot;备注信息&quot;  # 设置-a，修改文件后不需要再执行 git add 命令</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">给远程仓库取个别名叫origin</span></span><br><span class="line">git remote add origin https://gitee.com/star-language-star/python </span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">从远程获取代码并合并本地的版本(远程有readme，两边不统一，不可以推送，见报错2)</span></span><br><span class="line">git pull --rebase origin master </span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">将本地的 master分支推送到origin主机的master分支</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">第一次用-u，第二次就不用-u了。详见参考文章2</span></span><br><span class="line">git push -u origin master </span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="基本命令"><a href="#基本命令" class="headerlink" title="基本命令"></a>基本命令</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;用户名&quot;  # 在命令行中配置本地仓库的账号和邮箱</span><br><span class="line">git config --global user.email &quot;123@qq.com&quot;</span><br><span class="line">git config --global color.ui true # 启用一些额外的颜色，这样就可以更容易地阅读命令的输出</span><br><span class="line"></span><br><span class="line">git init # 初始化仓库</span><br><span class="line">git add . # .表示所有文件。也可以git add 文件名 添加单独文件</span><br><span class="line">git commit -a -m &quot;备注信息&quot;  # 设置-a，修改文件后不需要再执行 git add 命令</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">给远程仓库取个别名叫origin</span></span><br><span class="line">git remote add origin https://gitee.com/star-language-star/python </span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">从远程获取代码并合并本地的版本(远程有readme，两边不统一，不可以推送，见报错2)</span></span><br><span class="line">git pull --rebase origin master </span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">将本地的 master分支推送到origin主机的master分支</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">第一次用-u，第二次就不用-u了。详见参考文章2</span></span><br><span class="line">git push -u origin master </span><br></pre></td></tr></table></figure>
+
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">以后更改代码后拖到远程仓库步骤：到python项目文件夹下执行：</span></span><br><span class="line">git add . # 添加文件</span><br><span class="line">git commit -a -m &quot;备注信息&quot;  # 提交</span><br><span class="line">git push origin master  # 拖到远程仓库</span><br></pre></td></tr></table></figure>
-<h4 id="版本控制">版本控制</h4>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git commit -a -m &quot;备注信息&quot;  # 提交保留当前版本到本地仓库</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">对文件进行修改之后，想回退版本</span></span><br><span class="line">git log # 查看提交信息，有HEAD的就是最新版本</span><br><span class="line">git reflog # 回退到之前版本，git log看不到之后的提交，需用reflog</span><br><span class="line">git reset --hard HEAD^ # 回到上一个版本</span><br><span class="line">git reset --hard f6fb32a（历史版本号）# 版本号用log或reflog查看</span><br></pre></td></tr></table></figure>
+
+<h4 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git commit -a -m &quot;备注信息&quot;  # 提交保留当前版本到本地仓库</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">对文件进行修改之后，想回退版本</span></span><br><span class="line">git log # 查看提交信息，有HEAD的就是最新版本</span><br><span class="line">git reflog # 回退到之前版本，git log看不到之后的提交，需用reflog</span><br><span class="line">git reset --hard HEAD^ # 回到上一个版本</span><br><span class="line">git reset --hard f6fb32a（历史版本号）# 版本号用log或reflog查看</span><br></pre></td></tr></table></figure>
+
 <p>gitee更换地址后配置git：</p>
-<p>https://blog.csdn.net/m0_37034294/article/details/79986198</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_37034294/article/details/79986198">https://blog.csdn.net/m0_37034294/article/details/79986198</a></p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote rm origin</span><br><span class="line">git remote add origin 你的新远程仓库地址 # 之后输入的用户名是仓库地址中的用户名</span><br></pre></td></tr></table></figure>
-<h4 id="其他">其他</h4>
-<p>git clone --depth 1
-https://github.com/labuladong/fucking-algorithm.git</p>
+
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>git clone –depth 1 <a target="_blank" rel="noopener" href="https://github.com/labuladong/fucking-algorithm.git">https://github.com/labuladong/fucking-algorithm.git</a></p>
 <p>只克隆下包含最近一次commit的一个分支，这样这个项目文件就不会很大</p>
-<h4 id="报错">报错</h4>
-<p>1、$ git add . warning: LF will be replaced by CRLF in
-k_mer/.idea/inspectionProfiles/profiles_settings.xml.</p>
-<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/450cd21b36a4">关于git提示“warning:
-LF will be replaced by CRLF”终极解答 - 简书 (jianshu.com)</a></p>
-<p>执行了：git config --global core.autocrlf false</p>
+<h4 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h4><p>1、$ git add . warning: LF will be replaced by CRLF in k_mer&#x2F;.idea&#x2F;inspectionProfiles&#x2F;profiles_settings.xml.</p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/450cd21b36a4">关于git提示“warning: LF will be replaced by CRLF”终极解答 - 简书 (jianshu.com)</a></p>
+<p>执行了：git config –global core.autocrlf false</p>
 <p>2、error: failed to push some refs to</p>
-<p><a
-target="_blank" rel="noopener" href="https://blog.csdn.net/qq_45893999/article/details/106273214">(42条消息)
-error: failed to push some refs
-to如何解决_尘客-追梦的博客-CSDN博客</a></p>
-<p>3、<a
-target="_blank" rel="noopener" href="https://www.cnblogs.com/banbosuiyue/p/12674778.html">git提交后文件夹显示灰色无法打开的解决办法</a></p>
-<h4 id="参考文章">参考文章</h4>
-<p>1、<a
-target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/94008510">看完这篇还不会用Git，那我就哭了！</a>
-2、<a
-target="_blank" rel="noopener" href="https://blog.csdn.net/Lakers2015/article/details/111318801">git
-push 的 -u 参数含义</a> 3、<a
-target="_blank" rel="noopener" href="https://blog.csdn.net/ZZQHELLO2018/article/details/82354900">Git版本控制（完美整理版）</a>
-4、<a
-target="_blank" rel="noopener" href="https://www.cnblogs.com/chenjunjie12321/p/6876220.html">git的突出解决--git
-rebase之abort、continue、skip</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_45893999/article/details/106273214">(42条消息) error: failed to push some refs to如何解决_尘客-追梦的博客-CSDN博客</a></p>
+<p>3、<a target="_blank" rel="noopener" href="https://www.cnblogs.com/banbosuiyue/p/12674778.html">git提交后文件夹显示灰色无法打开的解决办法</a></p>
+<h4 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h4><p>1、<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/94008510">看完这篇还不会用Git，那我就哭了！</a><br>2、<a target="_blank" rel="noopener" href="https://blog.csdn.net/Lakers2015/article/details/111318801">git push 的 -u 参数含义</a><br>3、<a target="_blank" rel="noopener" href="https://blog.csdn.net/ZZQHELLO2018/article/details/82354900">Git版本控制（完美整理版）</a><br>4、<a target="_blank" rel="noopener" href="https://www.cnblogs.com/chenjunjie12321/p/6876220.html">git的突出解决–git rebase之abort、continue、skip</a></p>
 
     </div>
 
@@ -449,7 +430,7 @@ rebase之abort、continue、skip</a></p>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">78</span>
+          <span class="site-state-item-count">79</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -462,7 +443,7 @@ rebase之abort、continue、skip</a></p>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">46</span>
+        <span class="site-state-item-count">47</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -513,13 +494,13 @@ rebase之abort、continue、skip</a></p>
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">117k</span>
+    <span title="Symbols count total">119k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:47</span>
+    <span title="Reading time total">1:48</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
