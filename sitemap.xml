@@ -4,12 +4,12 @@
   <url>
     <loc>https://www.sdhlw.top/python/index.html</loc>
     
-    <lastmod>2024-03-15T13:12:50.096Z</lastmod>
+    <lastmod>2024-03-15T14:30:01.966Z</lastmod>
     
-    <date>1710508371182</date>
+    <date>1710550710733</date>
     <title>Python 速查 | Jay's Blog</title>
     
-    <desc>快速查询：Python 函数的简单解释及使用 详细可参考：搜索使用 excel导入 excel1234567891011121314import pandas as pd# 指定 Excel 文件路径excel_path = r&#x27;D:\MyData\Boston_data.xlsx&#x27;# 从 Excel 文件中读取数据并存储到 DataFrame 中df = pd.read_ex</desc>
+    <desc>快速查询：Python 函数的简单解释及使用 了解任何函数的最佳方式，谷歌搜索，找到函数的官方文档，阅读。 详细可参考：搜索使用 excel 导入 excel 1234567891011121314import pandas as pd# 指定 Excel 文件路径excel_path = r&#x27;D:\MyData\Boston_data.xlsx&#x27;# 从 Excel 文件中读取</desc>
   </url>
   
   <url>

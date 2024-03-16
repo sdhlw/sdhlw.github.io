@@ -29,16 +29,10 @@
 <meta property="og:site_name" content="Jay&#39;s Blog">
 <meta property="og:description" content="【不定时更新】用于记录Hexo的配置和命令的使用。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208031717949.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208031718828.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208031718930.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208031718837.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208031718225.png">
 <meta property="article:published_time" content="2022-07-30T03:49:55.000Z">
 <meta property="article:modified_time" content="2024-02-18T02:05:49.913Z">
 <meta property="article:author" content="Jay Chou">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208031717949.png">
 
 <link rel="canonical" href="https://www.sdhlw.top/hexo%E7%9A%84%E4%BD%BF%E7%94%A8/">
 
@@ -266,14 +260,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>2.7k</span>
+              <span>2.9k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>2 mins.</span>
+              <span>3 mins.</span>
             </span>
             <div class="post-description">【不定时更新】用于记录Hexo的配置和命令的使用。</div>
 
@@ -286,92 +280,156 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="一、配置参考"><a href="#一、配置参考" class="headerlink" title="一、配置参考"></a>一、配置参考</h4><ul>
-<li><p>初步搭建视频参考：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=erKYtw4Rfhk&t=1338s&ab_channel=CodeSheep%E7%A8%8B%E5%BA%8F%E7%BE%8A">手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo - YouTube</a> ↩</p>
-</li>
-<li><p>初步搭建文章参考：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/60578464">使用 Hexo+GitHub 搭建个人免费博客教程 知乎 </a></p>
-</li>
-<li><p>主题初步配置视频参考：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV16W411t7mq?share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9">https://www.bilibili.com/video/BV16W411t7mq?share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9</a></p>
-</li>
-<li><p>主题初步配置文章参考：<a target="_blank" rel="noopener" href="https://qianfanguojin.top/2019/07/20/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95%EF%BC%88%E4%BA%8C%EF%BC%89%EF%BC%9A%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E4%BB%A5%E5%8F%8A%E7%BE%8E%E5%8C%96/#6-2-%E4%BB%A3%E7%A0%81%E5%9D%97%E8%AE%BE%E7%BD%AE">Hexo博客搭建记录（二）：基本主题设置以及美化 | 谢同学的博客 (qianfanguojin.top)</a></p>
-</li>
-<li><p>更换主题：下载主题文件到theme文件夹下(<code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</code>)，修改_config.yml里themes为相关的主题名。然后<code>hexo clean</code> 再<code>hexo g</code> 和<code>hexo d</code>（目前next主题地址：<a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next">https://github.com/theme-next/hexo-theme-next</a>)</p>
-</li>
-<li><p>分类和标签设置：<a target="_blank" rel="noopener" href="https://linlif.github.io/2017/05/27/Hexo%E4%BD%BF%E7%94%A8%E6%94%BB%E7%95%A5-%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E5%8F%8A%E6%A0%87%E7%AD%BE/">Hexo使用攻略-添加分类及标签 | linlif-blog</a></p>
-</li>
-<li><p>添加搜索：<a target="_blank" rel="noopener" href="https://yashuning.github.io/2018/06/29/hexo-Next-%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/">hexo - Next 主题添加搜索功能 | Yaya’s blog (yashuning.github.io)</a></p>
-</li>
-<li><p>查看next版本：主题文件夹–&gt;package.json–&gt;搜索“version”。自己目前用的7.8.0版本</p>
-</li>
-<li><p>NeXt RSS的订阅：点击RSS图标，自动打开一个网址，复制该网址链接（此链接就是订阅源），复制到相应软件中，即可订阅</p>
-</li>
-<li><p>脚注的实现：下个插件就好了<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Hexo脚注插件 | 蓝蓝站点 (lanlan2017.github.io)](https://lanlan2017.github.io/blog/65d90bd2/)
-">[1]</span></a></sup>：<code>npm install hexo-reference --save</code> </p>
-</li>
-<li><p>评论功能的实现：<a target="_blank" rel="noopener" href="https://xinyufeng.net/2020/06/01/Hexo-Next%E4%B8%BB%E9%A2%98-%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/">Hexo Next主题 添加文章评论功能 | Peak Xin (xinyufeng.net)</a></p>
-</li>
-<li><p>博客成立时间：<a target="_blank" rel="noopener" href="https://blog.51cto.com/u_12877374/4977880">使用 Github 空间搭建 Hexo 技术博客——Hexo NexT主题内网站运行时间的设置（十）_12867374的技术博客_51CTO博客</a></p>
-</li>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="一配置参考">一、配置参考</h4>
+<ul>
+<li><p>初步搭建视频参考：<a
+target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=erKYtw4Rfhk&amp;t=1338s&amp;ab_channel=CodeSheep程序羊">手把手教你从0开始搭建自己的个人博客
+|无坑版视频教程| hexo - YouTube</a> ↩︎</p></li>
+<li><p>初步搭建文章参考：<a
+target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/60578464">使用 Hexo+GitHub
+搭建个人免费博客教程 知乎</a></p></li>
+<li><p>主题初步配置视频参考：https://www.bilibili.com/video/BV16W411t7mq?share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9</p></li>
+<li><p>主题初步配置文章参考：<a
+target="_blank" rel="noopener" href="https://qianfanguojin.top/2019/07/20/Hexo博客搭建记录（二）：主题设置以及美化/#6-2-代码块设置">Hexo博客搭建记录（二）：基本主题设置以及美化
+| 谢同学的博客 (qianfanguojin.top)</a></p></li>
+<li><p>更换主题：下载主题文件到theme文件夹下(<code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</code>)，修改_config.yml里themes为相关的主题名。然后<code>hexo clean</code>
+再<code>hexo g</code>
+和<code>hexo d</code>（目前next主题地址：https://github.com/theme-next/hexo-theme-next)</p></li>
+<li><p>分类和标签设置：<a
+target="_blank" rel="noopener" href="https://linlif.github.io/2017/05/27/Hexo使用攻略-添加分类及标签/">Hexo使用攻略-添加分类及标签
+| linlif-blog</a></p></li>
+<li><p>添加搜索：<a
+target="_blank" rel="noopener" href="https://yashuning.github.io/2018/06/29/hexo-Next-主题添加搜索功能/">hexo
+- Next 主题添加搜索功能 | Yaya's blog (yashuning.github.io)</a></p></li>
+<li><p>查看next版本：主题文件夹--&gt;package.json--&gt;搜索“version"。自己目前用的7.8.0版本</p></li>
+<li><p>NeXt
+RSS的订阅：点击RSS图标，自动打开一个网址，复制该网址链接（此链接就是订阅源），复制到相应软件中，即可订阅</p></li>
+<li><p>脚注的实现：下个插件就好了<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Hexo脚注插件 | 蓝蓝站点 (lanlan2017.github.io)](https://lanlan2017.github.io/blog/65d90bd2/)
+">[1]</span></a></sup>：<code>npm install hexo-reference --save</code></p></li>
+<li><p>评论功能的实现：<a
+target="_blank" rel="noopener" href="https://xinyufeng.net/2020/06/01/Hexo-Next主题-添加文章评论功能/">Hexo
+Next主题 添加文章评论功能 | Peak Xin (xinyufeng.net)</a></p></li>
+<li><p>博客成立时间：<a
+target="_blank" rel="noopener" href="https://blog.51cto.com/u_12877374/4977880">使用 Github 空间搭建
+Hexo 技术博客——Hexo
+NexT主题内网站运行时间的设置（十）_12867374的技术博客_51CTO博客</a></p></li>
 <li><p>去除power by ：hexo</p>
 <ul>
-<li>将主题（<code>next</code>）配置文件 <code>_config.yml</code> 中的以下字段设为 <code>false</code></li>
+<li>将主题（<code>next</code>）配置文件 <code>_config.yml</code>
+中的以下字段设为 <code>false</code></li>
 </ul>
 <blockquote>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">footer:</span><br><span class="line">    powered: false</span><br><span class="line">    theme:</span><br><span class="line">        enable: false</span><br><span class="line">        version: false</span><br></pre></td></tr></table></figure>
-</blockquote>
-</li>
-<li><p>代码块增加复制功能：在主题的配置文件_config.yml 中设置 copy_button 为 true 即可。</p>
-</li>
+</blockquote></li>
+<li><p>代码块增加复制功能：在主题的配置文件_config.yml 中设置
+copy_button 为 true 即可。</p></li>
 </ul>
-<p>购买域名：本人用的是：<a target="_blank" rel="noopener" href="https://www.name.com/zh-cn/">https://www.name.com/zh-cn/</a></p>
+<p>购买域名：本人用的是：https://www.name.com/zh-cn/</p>
 <p>购买域名后，需要解析域名：</p>
 <ul>
-<li><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208031717949.png" alt="image-20220803170153745"></li>
-<li><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208031718828.png" alt="image-20220803170232306"></li>
-<li><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208031718930.png" alt="image-20220803170419988"></li>
+<li><figure>
+<img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208031717949.png"
+alt="image-20220803170153745" />
+<figcaption aria-hidden="true">image-20220803170153745</figcaption>
+</figure></li>
+<li><figure>
+<img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208031718828.png"
+alt="image-20220803170232306" />
+<figcaption aria-hidden="true">image-20220803170232306</figcaption>
+</figure></li>
+<li><figure>
+<img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208031718930.png"
+alt="image-20220803170419988" />
+<figcaption aria-hidden="true">image-20220803170419988</figcaption>
+</figure></li>
 </ul>
 <p>解析域名之后需要添加到github仓库上以及绑定到hexo上：setting-page,填写新的网址，勾选下面的https,绑定hexo之后还需要等待一些时间，不勾选的话，绑定hexo之后就可以直接用新的网址查看了。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208031718837.png" alt="image-20220803171143202"></p>
+<figure>
+<img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208031718837.png"
+alt="image-20220803171143202" />
+<figcaption aria-hidden="true">image-20220803171143202</figcaption>
+</figure>
 <p>为什么需要选择CNAME：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208031718225.png" alt="image-20220803162054015"></p>
-<p>去到hexo的source文件夹，打开记事本，里面输入自己的域名，如 <a target="_blank" rel="noopener" href="https://www.example.com,保存名称为/">https://www.example.com，保存名称为</a> “CNAME”，格式为 “所有文件”（无 .txt 后缀）。</p>
+<figure>
+<img
+src="https://cdn.jsdelivr.net/gh/sdhlw/blog-image/202208031718225.png"
+alt="image-20220803162054015" />
+<figcaption aria-hidden="true">image-20220803162054015</figcaption>
+</figure>
+<p>去到hexo的source文件夹，打开记事本，里面输入自己的域名，如
+https://www.example.com，保存名称为 “CNAME”，格式为 “所有文件”（无 .txt
+后缀）。</p>
 <p>清除缓存等文件并重新发布网站，即可用新的网址查看了。</p>
 <ul>
 <li><p>hexo的NexT主题，怎么取消“文章目录”对标题的自动编号？</p>
-<p><a target="_blank" rel="noopener" href="https://segmentfault.com/q/1010000008494901">来源</a>，修改next主题配置文件那里toc的<code>number</code>为<code>false</code></p>
-</li>
-<li><p>文章加密：<a target="_blank" rel="noopener" href="https://github.com/D0n9X1n/hexo-blog-encrypt/blob/master/ReadMe.zh.md">https://github.com/D0n9X1n/hexo-blog-encrypt/blob/master/ReadMe.zh.md</a></p>
-</li>
+<p><a
+target="_blank" rel="noopener" href="https://segmentfault.com/q/1010000008494901">来源</a>，修改next主题配置文件那里toc的<code>number</code>为<code>false</code></p></li>
+<li><p>文章加密：https://github.com/D0n9X1n/hexo-blog-encrypt/blob/master/ReadMe.zh.md</p></li>
 </ul>
-<h4 id="二、基本命令"><a href="#二、基本命令" class="headerlink" title="二、基本命令"></a>二、基本命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">hexo init <span class="comment"># 初始化博客</span></span><br><span class="line"></span><br><span class="line">hexo clean <span class="comment"># 清除缓存</span></span><br><span class="line">hexo g <span class="comment"># generate 生成页面</span></span><br><span class="line">hexo s  <span class="comment"># server  启动本地服务预览：localhost:端口 填入浏览器地址</span></span><br><span class="line">hexo d <span class="comment"># deploy 部署发布</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建文章：layout有三种：post(会发布)、draft(草稿)、page(首页标签页)</span></span><br><span class="line"><span class="comment"># 三种文章的模板文件在根文件夹的scaffolds里</span></span><br><span class="line">hexo n [layout] 文件名  <span class="comment"># 不加layout, 默认layout是post</span></span><br><span class="line">hexo n <span class="built_in">test</span> <span class="comment"># 创建一个名叫test的发布文件</span></span><br><span class="line">hexo n draft <span class="built_in">test</span> <span class="comment"># 创建一个名叫test的草稿文件，不发布</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建三个首页的标签页：</span></span><br><span class="line">hexo n page tags  <span class="comment"># 使tags点击可用，执行结束记得修改生成的md文件，type填写为 tags</span></span><br><span class="line">hexo n page categories <span class="comment"># 与上同理</span></span><br><span class="line">hexo n page about <span class="comment"># 生成的md文件，就是点击看到的文章，可直接编辑填写</span></span><br></pre></td></tr></table></figure>
-
-
-
-<p>Hexo的分类和标签<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Hexo-NexT 分类多层级描述 | Chang (cs-cshi.github.io)](https://cs-cshi.github.io/hexo-blog/Hexo-NexT分类多层级描述/)
+<h4 id="二基本命令">二、基本命令</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">hexo init <span class="comment"># 初始化博客</span></span><br><span class="line"></span><br><span class="line">hexo clean <span class="comment"># 清除缓存</span></span><br><span class="line">hexo g <span class="comment"># generate 生成页面</span></span><br><span class="line">hexo s  <span class="comment"># server  启动本地服务预览：localhost:端口 填入浏览器地址</span></span><br><span class="line">hexo d <span class="comment"># deploy 部署发布</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建文章：layout有三种：post(会发布)、draft(草稿)、page(首页标签页)</span></span><br><span class="line"><span class="comment"># 三种文章的模板文件在根文件夹的scaffolds里</span></span><br><span class="line">hexo n [layout] 文件名  <span class="comment"># 不加layout, 默认layout是post</span></span><br><span class="line">hexo n <span class="built_in">test</span> <span class="comment"># 创建一个名叫test的发布文件</span></span><br><span class="line">hexo n draft <span class="built_in">test</span> <span class="comment"># 创建一个名叫test的草稿文件，不发布</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建三个首页的标签页：</span></span><br><span class="line">hexo n page tags  <span class="comment"># 使tags点击可用，执行结束记得修改生成的md文件，type填写为 tags</span></span><br><span class="line">hexo n page categories <span class="comment"># 与上同理</span></span><br><span class="line">hexo n page about <span class="comment"># 生成的md文件，就是点击看到的文章，可直接编辑填写</span></span><br></pre></td></tr></table></figure>
+<p>Hexo的分类和标签<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Hexo-NexT 分类多层级描述 | Chang (cs-cshi.github.io)](https://cs-cshi.github.io/hexo-blog/Hexo-NexT分类多层级描述/)
 ">[2]</span></a></sup>：分类具有顺序和层次性，而标签没有顺序和层次</p>
 <p>父子分类：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 文章的前缀</span><br><span class="line">categories:   # 方法1 Life是Diary的子分类，即分类具有顺序和层次性</span><br><span class="line">- Diary</span><br><span class="line">- Life</span><br><span class="line"></span><br><span class="line">categories:   # 方法2 Life是Diary的子分类</span><br><span class="line">- [Diary, Life]</span><br></pre></td></tr></table></figure>
-
 <p>同级分类：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">categories:  # Diary和life为同级分类</span><br><span class="line">- [Diary]</span><br><span class="line">- [Life]</span><br></pre></td></tr></table></figure>
-
 <p>标签使用：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tags:</span><br><span class="line">- PS3</span><br><span class="line">- Games</span><br></pre></td></tr></table></figure>
-
 <p>主页文章折叠：<code>&lt;!--more--&gt;</code>把这个添加在文章里，前面的内容显示，后面的内容就被折叠了。</p>
-<h4 id="三、问题解决："><a href="#三、问题解决：" class="headerlink" title="三、问题解决："></a>三、问题解决：</h4><p>1、端口占用：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45627031/article/details/108359235">(88条消息) FATAL Port 4000 has been used. Try other port instead._我是泛滥的博客-CSDN博客</a></p>
+<h4 id="三问题解决">三、问题解决：</h4>
+<p>1、端口占用：<a
+target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45627031/article/details/108359235">(88条消息)
+FATAL Port 4000 has been used. Try other port
+instead._我是泛滥的博客-CSDN博客</a></p>
 <p>2、</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br><span class="line">FATAL YAMLException: can not <span class="built_in">read</span> an implicit mapping pair; a colon is missed (107:14)</span><br><span class="line"><span class="comment"># 配置里：branch里少了一个空格</span></span><br></pre></td></tr></table></figure>
-
-<p>3、<a target="_blank" rel="noopener" href="https://blog.garryde.com/archives/46153.html">Hexo Next 修改中文不生效 - 咖里De (garryde.com)</a></p>
-<p>4、github 图床网页不显示，本地localhost 显示：可能是防盗链<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Hexo博客不显示图床图片的解决方法 · vgtiger's Studio](https://www.vgtiger.com/2021/05/20/Hexo博客不显示图床图片的解决方法/)
+<p>3、<a target="_blank" rel="noopener" href="https://blog.garryde.com/archives/46153.html">Hexo Next
+修改中文不生效 - 咖里De (garryde.com)</a></p>
+<p>4、github 图床网页不显示，本地localhost
+显示：可能是防盗链<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Hexo博客不显示图床图片的解决方法 · vgtiger&#39;s Studio](https://www.vgtiger.com/2021/05/20/Hexo博客不显示图床图片的解决方法/)
 ">[3]</span></a></sup>，修改<code>/hexo/themes/next/layout/_partials/head/head.swig</code>文件，不同主题修改的文件应该不同。可用ripgrep搜索一下文件中含<code>&lt;meta charset&gt;</code>的内容，排除html的文件，看文件是否在主题文件夹内，筛选一下。</p>
 <p>加入一下内容：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="四参考文章">四、参考文章</h4>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://lanlan2017.github.io/blog/65d90bd2/">Hexo脚注插件
+| 蓝蓝站点 (lanlan2017.github.io)</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://cs-cshi.github.io/hexo-blog/Hexo-NexT%E5%88%86%E7%B1%BB%E5%A4%9A%E5%B1%82%E7%BA%A7%E6%8F%8F%E8%BF%B0/">Hexo-NexT
+分类多层级描述 | Chang
+(cs-cshi.github.io)</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:3">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.vgtiger.com/2021/05/20/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8D%E6%98%BE%E7%A4%BA%E5%9B%BE%E5%BA%8A%E5%9B%BE%E7%89%87%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">Hexo博客不显示图床图片的解决方法
+· vgtiger's Studio</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
 
-
-
-<h4 id="四、参考文章"><a href="#四、参考文章" class="headerlink" title="四、参考文章"></a>四、参考文章</h4><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://lanlan2017.github.io/blog/65d90bd2/">Hexo脚注插件 | 蓝蓝站点 (lanlan2017.github.io)</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://cs-cshi.github.io/hexo-blog/Hexo-NexT%E5%88%86%E7%B1%BB%E5%A4%9A%E5%B1%82%E7%BA%A7%E6%8F%8F%E8%BF%B0/">Hexo-NexT 分类多层级描述 | Chang (cs-cshi.github.io)</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.vgtiger.com/2021/05/20/Hexo%E5%8D%9A%E5%AE%A2%E4%B8%8D%E6%98%BE%E7%A4%BA%E5%9B%BE%E5%BA%8A%E5%9B%BE%E7%89%87%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">Hexo博客不显示图床图片的解决方法 · vgtiger's Studio</a><a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>
     </div>
 
     
@@ -466,7 +524,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E9%85%8D%E7%BD%AE%E5%8F%82%E8%80%83"><span class="nav-text">一、配置参考</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="nav-text">二、基本命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%EF%BC%9A"><span class="nav-text">三、问题解决：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">四、参考文章</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E9%85%8D%E7%BD%AE%E5%8F%82%E8%80%83"><span class="nav-text">一、配置参考</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8C%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="nav-text">二、基本命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%89%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3"><span class="nav-text">三、问题解决：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9B%9B%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">四、参考文章</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -546,13 +604,13 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">119k</span>
+    <span title="Symbols count total">118k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:48</span>
+    <span title="Reading time total">1:47</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
