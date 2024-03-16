@@ -22,12 +22,12 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Next主题支持一个叫LeanCloud的云服务商提供的统计功能[1]。  注册LeanCloud帐号 首先要注册一个帐号，访问LeanCloud官网，点击免费试用，或者访问控制台都会进入登录&#x2F;注册页面，直接注册就好，也可以直接第三方账号登录，不过登录之后还是需要绑定邮箱和手机号。">
+  <meta name="description" content="Next主题支持一个叫LeanCloud的云服务商提供的统计功能[1]。   注册LeanCloud帐号首先要注册一个帐号，访问LeanCloud官网，点击免费试用，或者访问控制台都会进入登录&#x2F;注册页面，直接注册就好，也可以直接第三方账号登录，不过登录之后还是需要绑定邮箱和手机号。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo博客Next主题添加统计文章阅读量功能">
 <meta property="og:url" content="https://www.sdhlw.top/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E8%AE%BF%E9%97%AE%E9%87%8F/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="Next主题支持一个叫LeanCloud的云服务商提供的统计功能[1]。  注册LeanCloud帐号 首先要注册一个帐号，访问LeanCloud官网，点击免费试用，或者访问控制台都会进入登录&#x2F;注册页面，直接注册就好，也可以直接第三方账号登录，不过登录之后还是需要绑定邮箱和手机号。">
+<meta property="og:description" content="Next主题支持一个叫LeanCloud的云服务商提供的统计功能[1]。   注册LeanCloud帐号首先要注册一个帐号，访问LeanCloud官网，点击免费试用，或者访问控制台都会进入登录&#x2F;注册页面，直接注册就好，也可以直接第三方账号登录，不过登录之后还是需要绑定邮箱和手机号。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402191003696.png">
 <meta property="article:published_time" content="2024-02-19T01:48:32.000Z">
@@ -275,45 +275,27 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Next主题支持一个叫LeanCloud的云服务商提供的统计功能<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="Hexo博客Next主题添加统计文章阅读量功能(https://bjtu-hxs.github.io/2018/06/12/leancloud-config/)
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Next主题支持一个叫LeanCloud的云服务商提供的统计功能<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="Hexo博客Next主题添加统计文章阅读量功能(https://bjtu-hxs.github.io/2018/06/12/leancloud-config/)
 ">[1]</span></a></sup>。</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402191003696.png" alt="" style="zoom: 33%;" /></p>
-<h3 id="注册leancloud帐号">注册LeanCloud帐号</h3>
-<p>首先要注册一个帐号，访问<a
-target="_blank" rel="noopener" href="https://leancloud.cn/">LeanCloud官网</a>，点击免费试用，或者访问控制台都会进入登录/注册页面，直接注册就好，也可以直接第三方账号登录，不过登录之后还是需要绑定邮箱和手机号。</p>
+<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402191003696.png" alt="" style="zoom: 33%;" />
+
+<h3 id="注册LeanCloud帐号"><a href="#注册LeanCloud帐号" class="headerlink" title="注册LeanCloud帐号"></a>注册LeanCloud帐号</h3><p>首先要注册一个帐号，访问<a target="_blank" rel="noopener" href="https://leancloud.cn/">LeanCloud官网</a>，点击免费试用，或者访问控制台都会进入登录&#x2F;注册页面，直接注册就好，也可以直接第三方账号登录，不过登录之后还是需要绑定邮箱和手机号。</p>
 <span id="more"></span>
-<h3 id="配置leancloud端">配置LeanCloud端</h3>
-<p>有了帐号了，就是一名可以行使权力的正经用户了，那就开始配置Cloud，来为我们的Blog统计功能创建一个新应用吧。然后需要为统计阅读量创建一个表，然后得到应用的app-id与app-key，用来配置我们的Next实现统计功能。</p>
+
+<h3 id="配置LeanCloud端"><a href="#配置LeanCloud端" class="headerlink" title="配置LeanCloud端"></a>配置LeanCloud端</h3><p>有了帐号了，就是一名可以行使权力的正经用户了，那就开始配置Cloud，来为我们的Blog统计功能创建一个新应用吧。然后需要为统计阅读量创建一个表，然后得到应用的app-id与app-key，用来配置我们的Next实现统计功能。</p>
 <ul>
 <li>进入控制台，点击创建应用</li>
 <li>就命名为test吧，然后选择开发版（免费哒），然后创建</li>
 <li>点进test开发版，为统计阅读量单独创建一个Class，就是在数据库中建一个表，首先点击存储，然后创建Class，Next要求Class名称必须为Counter，所以命名一定要为Counter，为了防止阅读量统计不准确，建议ACL权限设置为无限制，然后点击创建Class。就会像我的数据库一样，除了一些带下划线_的表之外，还有一个Counter表。</li>
 </ul>
-<h3 id="设置网络安全">设置网络安全</h3>
-<p>由于app-id和app-key是完全暴露的，所以防止他人使用，我们可以在应用设置里面面设置Web安全局名，只有添加的域名才能使用该应用，防止有人Hack我们的数据库。点击设置，安全中心，Web域名安全，添加Blog域名，点击保存就OK了。</p>
-<h3 id="配置博客端">配置博客端</h3>
-<p>配置_config.yml文档</p>
+<h3 id="设置网络安全"><a href="#设置网络安全" class="headerlink" title="设置网络安全"></a>设置网络安全</h3><p>由于app-id和app-key是完全暴露的，所以防止他人使用，我们可以在应用设置里面面设置Web安全局名，只有添加的域名才能使用该应用，防止有人Hack我们的数据库。点击设置，安全中心，Web域名安全，添加Blog域名，点击保存就OK了。</p>
+<h3 id="配置博客端"><a href="#配置博客端" class="headerlink" title="配置博客端"></a>配置博客端</h3><p>配置_config.yml文档</p>
 <p>首先需要得到LeanCloud应用的app-id与app-key，在控制台，设置，应用key中就可以找到。</p>
-<p>然后配置就很简单了，只需要修改Next主题的配置文档_config.yml，该文档在blog/themes/next路径下，blog为你的博客文档夹，打开配置文档，找到LeanCloud配置项，修改为可用，添加对应app-id和app-key就行：</p>
+<p>然后配置就很简单了，只需要修改Next主题的配置文档_config.yml，该文档在blog&#x2F;themes&#x2F;next路径下，blog为你的博客文档夹，打开配置文档，找到LeanCloud配置项，修改为可用，添加对应app-id和app-key就行：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Show number of visitors to each article.</span><br><span class="line"># You can visit https://leancloud.cn get AppID and AppKey.</span><br><span class="line">leancloud_visitors:</span><br><span class="line">  enable: true</span><br><span class="line">  app_id: # 你的app-id </span><br><span class="line">  app_key: # 你的app-key</span><br></pre></td></tr></table></figure>
-<p>然后使用命令<code>hexo generate</code>重新生成Blog，<code>hexo deploy</code>部署到Github就OK了，</p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">Hexo博客Next主题添加统计文章阅读量功能(https://bjtu-hxs.github.io/2018/06/12/leancloud-config/)<a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
 
+<p>然后使用命令<code>hexo generate</code>重新生成Blog，<code>hexo deploy</code>部署到Github就OK了，</p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">Hexo博客Next主题添加统计文章阅读量功能(https://bjtu-hxs.github.io/2018/06/12/leancloud-config/)<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
     </div>
 
     
@@ -411,7 +393,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">Hexo博�
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%A8%E5%86%8Cleancloud%E5%B8%90%E5%8F%B7"><span class="nav-text">注册LeanCloud帐号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AEleancloud%E7%AB%AF"><span class="nav-text">配置LeanCloud端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8"><span class="nav-text">设置网络安全</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2%E7%AB%AF"><span class="nav-text">配置博客端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%A8%E5%86%8CLeanCloud%E5%B8%90%E5%8F%B7"><span class="nav-text">注册LeanCloud帐号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AELeanCloud%E7%AB%AF"><span class="nav-text">配置LeanCloud端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8"><span class="nav-text">设置网络安全</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E5%8D%9A%E5%AE%A2%E7%AB%AF"><span class="nav-text">配置博客端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

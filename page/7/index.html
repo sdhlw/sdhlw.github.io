@@ -258,7 +258,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>550</span>
+              <span>524</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -277,11 +277,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="改变默认路径">1、改变默认路径</h3>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter notebook --generate-config  # 若已有jupyter_notebook_config.py文件则不用执行</span><br></pre></td></tr></table></figure>
-<p>搜索找到jupyter_notebook_config.py文件，打开文件，找到<code>c.NotebookApp.notebook_dir</code>这行，在引号内填写自己事先创建的文件夹地址(注意地址的填写方式：<code>D://adf//fafad</code>)。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://zhuanlan.zhihu.com/p/70420213
+          <h3 id="1、改变默认路径"><a href="#1、改变默认路径" class="headerlink" title="1、改变默认路径"></a>1、改变默认路径</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter notebook --generate-config  # 若已有jupyter_notebook_config.py文件则不用执行</span><br></pre></td></tr></table></figure>
+
+<p>搜索找到jupyter_notebook_config.py文件，打开文件，找到<code>c.NotebookApp.notebook_dir</code>这行，在引号内填写自己事先创建的文件夹地址(注意地址的填写方式：<code>D://adf//fafad</code>)。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://zhuanlan.zhihu.com/p/70420213
 ">[1]</span></a></sup></p>
           <!--noindex-->
             <div class="post-button">
@@ -369,7 +367,7 @@ aria-label="https://zhuanlan.zhihu.com/p/70420213
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>4.1k</span>
+              <span>4.2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -390,7 +388,6 @@ aria-label="https://zhuanlan.zhihu.com/p/70420213
       
           <p>re库是Python关于正则表达式的一个内置模块，使用时无需下载，直接import即可。</p>
 <p>这个模块提供与Perl语言中类似的正则表达式匹配操作，支持bytes和unicode两种格式的字符串，处理的字符串可以包含空字符以及超出ASCII码范围的字符(比如中文字符)。</p>
-<p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/Python%E7%9A%84%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/#more" rel="contents">
@@ -477,7 +474,7 @@ aria-label="https://zhuanlan.zhihu.com/p/70420213
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>2.6k</span>
+              <span>2.5k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -496,22 +493,27 @@ aria-label="https://zhuanlan.zhihu.com/p/70420213
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="元字符">元字符</h1>
-<p>元字符是具有特殊意义的字符，其定义在正则表达式中并不是统一的。元字符在字符组外和字符组内意义不一样。</p>
+          <h1 id="元字符"><a href="#元字符" class="headerlink" title="元字符"></a>元字符</h1><p>元字符是具有特殊意义的字符，其定义在正则表达式中并不是统一的。元字符在字符组外和字符组内意义不一样。</p>
 <ul>
-<li><p><code>^</code>: 脱字符，开头锚点</p></li>
-<li><p><code>$</code>:美元符，结尾锚点</p></li>
-<li><p><code>[]</code>: 字符组</p></li>
-<li><p><code>[^]</code>：排除型字符组</p></li>
-<li><p><code>.</code>：点号，单个任意字符（字符组外部）</p></li>
-<li><p><code>\&lt;</code>：单词起始位置（某些egrep可能不支持，perl使用<code>\b</code>）</p></li>
-<li><p><code>\&gt;</code>：单词结束位置（某些egrep可能不支持，perl使用<code>\b</code>）</p></li>
-<li><p><code>|</code>：
-或者，也叫多选分支（多选项），分隔两边表达式</p></li>
+<li><p><code>^</code>: 脱字符，开头锚点</p>
+</li>
+<li><p><code>$</code>:美元符，结尾锚点</p>
+</li>
+<li><p><code>[]</code>: 字符组</p>
+</li>
+<li><p><code>[^]</code>：排除型字符组</p>
+</li>
+<li><p><code>.</code>：点号，单个任意字符（字符组外部）</p>
+</li>
+<li><p><code>\&lt;</code>：单词起始位置（某些egrep可能不支持，perl使用<code>\b</code>）</p>
+</li>
+<li><p><code>\&gt;</code>：单词结束位置（某些egrep可能不支持，perl使用<code>\b</code>）</p>
+</li>
+<li><p><code>|</code>： 或者，也叫多选分支（多选项），分隔两边表达式</p>
+</li>
 <li><p><code>()</code>：限制竖线（多选项）范围；字符组成单元，受量词作用；反向引用捕获文本</p>
 <ul>
 <li><p><code>（？：）</code>：只分组不捕获，及得到的文本不会保存到变量中，不影响捕获计数</p>
-<p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%9F%BA%E7%A1%80/#more" rel="contents">
@@ -598,7 +600,7 @@ aria-label="https://zhuanlan.zhihu.com/p/70420213
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>2.2k</span>
+              <span>2.4k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -617,14 +619,12 @@ aria-label="https://zhuanlan.zhihu.com/p/70420213
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>本文为该视频（<a
-target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Kg411g7bC?p=3&amp;share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9">三剑客正则</a>）的笔记分享。</p>
-<h1 id="基本用法">基本用法</h1>
-<p>正则表达式regular expression（RE）（匹配有规律的东西）：</p>
+          <p>本文为该视频（<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Kg411g7bC?p=3&share_source=copy_web&vd_source=7f2a81e814313c699f856c2ec72be7d9">三剑客正则</a>）的笔记分享。</p>
+<h1 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h1><p>正则表达式regular expression（RE）（匹配有规律的东西）：</p>
 <p>基础正则(Basic RE (BRE) )：<code>^ $ ^$ . * [a-z] [^abc]</code></p>
 <p>扩展正则(Extended RE (ERE))：+ | （）{} ？</p>
-<p>正则：使用一些符号表达重复出现，大小写，开头/结尾含义</p>
-<p>应用：三剑客（grep，awk, sed）、开发语言（python，golang, ...）</p>
+<p>正则：使用一些符号表达重复出现，大小写，开头&#x2F;结尾含义</p>
+<p>应用：三剑客（grep，awk, sed）、开发语言（python，golang, …）</p>
 <p>使用：过滤有规律的内容</p>
           <!--noindex-->
             <div class="post-button">
@@ -818,7 +818,7 @@ target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Kg411g7bC
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>658</span>
+              <span>697</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -1155,12 +1155,14 @@ target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Kg411g7bC
     <div class="post-body" itemprop="articleBody">
 
       
-          <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="题注">题注</h4>
-<p><a
-target="_blank" rel="noopener" href="https://www.zhihu.com/question/42802592/answer/383110578">来源</a></p>
+          <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="题注"><a href="#题注" class="headerlink" title="题注"></a>题注</h4><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/42802592/answer/383110578">来源</a></p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">style</span>=<span class="string">&quot;border-radius: 0.3125em;</span></span></span><br><span class="line"><span class="string"><span class="tag">    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&quot;</span> </span></span><br><span class="line"><span class="tag">    <span class="attr">src</span>=<span class="string">&quot;这里输入图片地址&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;color:orange; border-bottom: 1px solid #d9d9d9;</span></span></span><br><span class="line"><span class="string"><span class="tag">    display: inline-block;</span></span></span><br><span class="line"><span class="string"><span class="tag">    color: #999;</span></span></span><br><span class="line"><span class="string"><span class="tag">    padding: 2px;&quot;</span>&gt;</span>这里输入题注<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
 <p>更喜欢这种，图片还可以缩放：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;center&gt;题注&lt;/center&gt;</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -1240,7 +1242,7 @@ target="_blank" rel="noopener" href="https://www.zhihu.com/question/42802592/ans
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>257</span>
+              <span>239</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">

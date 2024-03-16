@@ -258,7 +258,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>960</span>
+              <span>959</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -278,37 +278,26 @@
 
       
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>交叉验证（cross-validation）是一种评估泛化性能（新数据能否正确预测）的统计学方法，它比单次划分训练集和测试集的方法更加稳定、全面。如果只划分一次训练集和测试集，可能难以分类的样本都在测试集中，那么精度会低的离谱，相反，如果容易分类的样本都在测试集中，精度则会高的离谱，所以会导致模型并不能反映数据的真实情况。</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403152007648.png" alt="" style="zoom:40%;" /></p>
-<span id="more"></span>
-<h3 id="k-折交叉验证">k 折交叉验证</h3>
-<p>最常用的交叉验证是 k 折交叉验证（k-fold cross-validation），其中k
-是由用户指定的数字，通常取5 或10。在执行5
-折交叉验证时，首先将数据划分为（大致）相等的5
-部分，每一部分叫作折（fold）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="安德里亚斯·穆勒, 莎拉·吉多. Python机器学习基础教程[M/OL]. 张亮, 译. 人民邮电出版社
-">[1]</span></a></sup>。</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151929998.png" alt="" style="zoom:80%;" /></p>
-<p>使用第1
-折作为测试集、其他折（2~5）作为训练集来训练第一个模型，并算出精度。共构建五个模型，对精度取平均值。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> cross_val_score</span><br><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris</span><br><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LogisticRegression</span><br><span class="line">iris =  load_iris()</span><br><span class="line">Logreg = LogisticRegression()</span><br><span class="line">scores = cross_val_score(Logreg,iris.data,iris.target,cv=<span class="number">5</span>) <span class="comment"># 模型，x,y,折数; 默认给出每个模型精度，自己需平均</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Average cross-validation score:&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(scores.mean())) </span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> cross_val_score</span><br><span class="line">scores = cross_val_score(Logreg,iris.data,iris.target,cv=<span class="number">5</span>) <span class="comment"># 模型，x,y,折数; 默认给出每个模型精度，自己需平均</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Average cross-validation score:&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(scores.mean())) </span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">安德里亚斯·穆勒,
-莎拉·吉多. Python机器学习基础教程[M/OL]. 张亮, 译.
-人民邮电出版社<a href="#fnref:1" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
+<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403152007648.png" alt="" style="zoom:40%;" />
 
+<span id="more"></span>
+
+<h3 id="k-折交叉验证"><a href="#k-折交叉验证" class="headerlink" title="k 折交叉验证"></a>k 折交叉验证</h3><p>最常用的交叉验证是 k 折交叉验证（k-fold cross-validation），其中k 是由用户指定的数字，通常取5 或10。在执行5 折交叉验证时，首先将数据划分为（大致）相等的5 部分，每一部分叫作折（fold）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="安德里亚斯·穆勒, 莎拉·吉多. Python机器学习基础教程[M/OL]. 张亮, 译. 人民邮电出版社
+">[1]</span></a></sup>。</p>
+<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151929998.png" alt="" style="zoom:80%;" />
+
+<p>使用第1 折作为测试集、其他折（2~5）作为训练集来训练第一个模型，并算出精度。共构建五个模型，对精度取平均值。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> cross_val_score</span><br><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris</span><br><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LogisticRegression</span><br><span class="line">iris =  load_iris()</span><br><span class="line">Logreg = LogisticRegression()</span><br><span class="line">scores = cross_val_score(Logreg,iris.data,iris.target,cv=<span class="number">5</span>) <span class="comment"># 模型，x,y,折数; 默认给出每个模型精度，自己需平均</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Average cross-validation score:&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(scores.mean())) </span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> cross_val_score</span><br><span class="line">scores = cross_val_score(Logreg,iris.data,iris.target,cv=<span class="number">5</span>) <span class="comment"># 模型，x,y,折数; 默认给出每个模型精度，自己需平均</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Average cross-validation score:&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(scores.mean())) </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">安德里亚斯·穆勒, 莎拉·吉多. Python机器学习基础教程[M/OL]. 张亮, 译. 人民邮电出版社<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
     </div>
 
     
