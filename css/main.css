@@ -1197,7 +1197,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #93b928;
+  background: #ff17a2;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2304,7 +2304,7 @@ mjx-container + br {
 }
 .highlight-container .highlight-wrap {
   overflow: hidden;
-  max-height: 319px;
+  max-height: 318px;
 }
 .highlight-container .highlight-footer {
   position: absolute;
@@ -2347,10 +2347,6 @@ mjx-container + br {
   border-radius: 4px 0 0 4px;
   padding: 0.1em 0 0.6em;
   transition: top ease 0.35s;
-}
-.highlight-container .hide-btn::after {
-  content: '\A'; /* 使用 ::after 伪元素添加换行 */
-  white-space: pre; /* 保持换行的空白字符 */
 }
 .highlight-container .fa-angle-up,
 .highlight-container .fa-angle-down {
