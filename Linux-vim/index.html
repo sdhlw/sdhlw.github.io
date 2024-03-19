@@ -287,10 +287,17 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一、Vim有四种模式"><a href="#一、Vim有四种模式" class="headerlink" title="一、Vim有四种模式"></a>一、Vim有四种模式</h1><h2 id="1、命令模式-x2F-正常模式（Command-mode）"><a href="#1、命令模式-x2F-正常模式（Command-mode）" class="headerlink" title="1、命令模式&#x2F;正常模式（Command mode）"></a>1、<strong>命令模式&#x2F;正常模式</strong>（Command mode）</h2><p>敲击键盘动作会被Vim识别为命令，而非输入字符。启动Vim默认进入命令模式。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Vim/三种模式 - 维基教科书，自由的教学读本 (wikibooks.org)](https://zh.m.wikibooks.org/zh-hans/Vim/三种模式)
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一vim有四种模式">一、Vim有四种模式</h1>
+<h2
+id="命令模式正常模式command-mode">1、<strong>命令模式/正常模式</strong>（Command
+mode）</h2>
+<p>敲击键盘动作会被Vim识别为命令，而非输入字符。启动Vim默认进入命令模式。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Vim/三种模式 - 维基教科书，自由的教学读本 (wikibooks.org)](https://zh.m.wikibooks.org/zh-hans/Vim/三种模式)
 ">[1]</span></a></sup></p>
 <ul>
-<li><code>i</code>：切换到插入模式  </li>
+<li><code>i</code>：切换到插入模式<br />
+</li>
 <li><code>：</code>：切换到底线命令模式</li>
 <li><code>v</code>：进入可视化模式(小写V、大写V、Ctrl+V均可进入该模式下)</li>
 <li><code>U</code>：撤销上一步操作</li>
@@ -298,88 +305,151 @@
 <li><code>dd</code> - 剪切当前行，包括换行符</li>
 <li><code>p</code>键可以将内容粘贴到当前光标后面</li>
 </ul>
-<h2 id="2、插入模式（Insert-mode）"><a href="#2、插入模式（Insert-mode）" class="headerlink" title="2、插入模式（Insert mode）"></a>2、<strong>插入模式</strong>（Insert mode）</h2><p>编辑文本，需进入该模式</p>
+<h2 id="插入模式insert-mode">2、<strong>插入模式</strong>（Insert
+mode）</h2>
+<p>编辑文本，需进入该模式</p>
 <ul>
 <li><code>Esc</code>：退出插入模式，进入命令模式</li>
 </ul>
-<h2 id="3、底线命令模式（Last-line-mode）"><a href="#3、底线命令模式（Last-line-mode）" class="headerlink" title="3、底线命令模式（Last line mode）"></a>3、<strong>底线命令模式</strong>（Last line mode）</h2><ul>
+<h2
+id="底线命令模式last-line-mode">3、<strong>底线命令模式</strong>（Last
+line mode）</h2>
+<ul>
 <li><code>Esc</code>：退出底线命令模式，进入命令模式</li>
 <li><code>q!</code>：不保存，强制退出vim</li>
 <li><code>wq</code>：保存，退出vim</li>
 <li><code>q</code>：不保存，退出vim</li>
 <li><code>w</code>：保存，不退出vim</li>
 </ul>
-<h2 id="4、可视化模式-Visual-mode-："><a href="#4、可视化模式-Visual-mode-：" class="headerlink" title="4、可视化模式(Visual-mode)："></a>4、<strong>可视化模式</strong>(Visual-mode)：</h2><ul>
-<li><p>文本选择：小写V进入（选择是以字符为单位的）、大写V进入（选择是以行为单位的）、Ctrl+V进入（矩形区域作为目标文本，以按下 Ctrl+v 位置作为矩形的一角，光标移动的终点位置作为它的对角）<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Linux Vim可视化模式及其用法 (biancheng.net)](http://c.biancheng.net/view/6355.html)
-">[2]</span></a></sup></p>
-</li>
+<h2
+id="可视化模式visual-mode">4、<strong>可视化模式</strong>(Visual-mode)：</h2>
+<ul>
+<li><p>文本选择：小写V进入（选择是以字符为单位的）、大写V进入（选择是以行为单位的）、Ctrl+V进入（矩形区域作为目标文本，以按下
+Ctrl+v
+位置作为矩形的一角，光标移动的终点位置作为它的对角）<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Linux Vim可视化模式及其用法 (biancheng.net)](http://c.biancheng.net/view/6355.html)
+">[2]</span></a></sup></p></li>
 <li><p>可视化命令：</p>
 <table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 85%" />
+</colgroup>
 <thead>
-<tr>
-<th align="left"><strong>命令</strong></th>
-<th align="left"><strong>命令</strong></th>
+<tr class="header">
+<th style="text-align: left;"><strong>命令</strong></th>
+<th style="text-align: left;"><strong>命令</strong></th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">d</td>
-<td align="left">删除选中的部分文本。</td>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">d</td>
+<td style="text-align: left;">删除选中的部分文本。</td>
 </tr>
-<tr>
-<td align="left">D</td>
-<td align="left">删除选中部分所在的行，和 d 不同之处在于，即使选中文本中有些字符所在的行没有都选中，删除时也会一并删除。</td>
+<tr class="even">
+<td style="text-align: left;">D</td>
+<td style="text-align: left;">删除选中部分所在的行，和 d
+不同之处在于，即使选中文本中有些字符所在的行没有都选中，删除时也会一并删除。</td>
 </tr>
-<tr>
-<td align="left">y</td>
-<td align="left">将选中部分复制到剪贴板中。</td>
+<tr class="odd">
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">将选中部分复制到剪贴板中。</td>
 </tr>
-<tr>
-<td align="left">p（小写）</td>
-<td align="left">将剪贴板中的内容粘贴到光标之后。</td>
+<tr class="even">
+<td style="text-align: left;">p（小写）</td>
+<td style="text-align: left;">将剪贴板中的内容粘贴到光标之后。</td>
 </tr>
-<tr>
-<td align="left">P（大写）</td>
-<td align="left">将剪贴板中的内容粘贴到光标之前。</td>
+<tr class="odd">
+<td style="text-align: left;">P（大写）</td>
+<td style="text-align: left;">将剪贴板中的内容粘贴到光标之前。</td>
 </tr>
-<tr>
-<td align="left">u（小写）</td>
-<td align="left">将选中部分中的大写字符全部改为小写字符。</td>
+<tr class="even">
+<td style="text-align: left;">u（小写）</td>
+<td
+style="text-align: left;">将选中部分中的大写字符全部改为小写字符。</td>
 </tr>
-<tr>
-<td align="left">U（大写）</td>
-<td align="left">将选中部分中的小写字符全部改为大写字符。</td>
+<tr class="odd">
+<td style="text-align: left;">U（大写）</td>
+<td
+style="text-align: left;">将选中部分中的小写字符全部改为大写字符。</td>
 </tr>
-<tr>
-<td align="left">&gt;</td>
-<td align="left">将选中部分右移（缩进）一个 tab 键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8 个空白字符的长度）。</td>
+<tr class="even">
+<td style="text-align: left;">&gt;</td>
+<td style="text-align: left;">将选中部分右移（缩进）一个 tab
+键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
+个空白字符的长度）。</td>
 </tr>
-<tr>
-<td align="left">&lt;</td>
-<td align="left">将选中部分左移一个 tab 键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8 个空白字符的长度）。</td>
+<tr class="odd">
+<td style="text-align: left;">&lt;</td>
+<td style="text-align: left;">将选中部分左移一个 tab
+键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
+个空白字符的长度）。</td>
 </tr>
-</tbody></table>
-</li>
+</tbody>
+</table></li>
 </ul>
-<h1 id="二、小技巧"><a href="#二、小技巧" class="headerlink" title="二、小技巧"></a>二、小技巧</h1><h2 id="1、设置行号"><a href="#1、设置行号" class="headerlink" title="1、设置行号"></a>1、设置行号</h2><p>vim ~&#x2F;.vimrc 写入：set number</p>
-<h2 id="2、设置粘贴模式"><a href="#2、设置粘贴模式" class="headerlink" title="2、设置粘贴模式"></a>2、设置粘贴模式</h2><p><code>:set paste</code> + 回车 + <code>i</code></p>
-<h2 id="3、快速到达首尾"><a href="#3、快速到达首尾" class="headerlink" title="3、快速到达首尾"></a>3、快速到达首尾</h2><ul>
+<h1 id="二小技巧">二、小技巧</h1>
+<h2 id="设置行号">1、设置行号</h2>
+<p>vim ~/.vimrc 写入：set number</p>
+<h2 id="设置粘贴模式">2、设置粘贴模式</h2>
+<p><code>:set paste</code> + 回车 + <code>i</code></p>
+<h2 id="快速到达首尾">3、快速到达首尾</h2>
+<ul>
 <li><code>gg</code>：跳转到文件头</li>
 <li>行数 +<code>gg</code>：跳转到指定行</li>
 <li>shift + g ：跳转到文件末尾</li>
 </ul>
-<h2 id="4、多行注释"><a href="#4、多行注释" class="headerlink" title="4、多行注释"></a>4、多行注释</h2><p><code>:20,30 s/^/#/g     </code> ：20-30行 用 # 注释掉。（python是用#注释地～～～）</p>
-<p><code> :20,30 s/^#//g</code> ：20-30行 取消注释</p>
+<h2 id="多行注释">4、多行注释</h2>
+<p><code>:20,30 s/^/#/g</code> ：20-30行 用 #
+注释掉。（python是用#注释地～～～）</p>
+<p><code>:20,30 s/^#//g</code> ：20-30行 取消注释</p>
 <ul>
 <li><p>注释：</p>
-<p>​	Ctrl + v ：vim中的视图模式，把要注释的内容选上<br>​	shift + i ：插入字符<br>​	shift + # ：把#插入到要注释的行前面（在第一行有显示）<br>​	Esc    ：按至少2次Esc，则会把所有选中的行都在其前面加#</p>
-</li>
+<p>​ Ctrl + v ：vim中的视图模式，把要注释的内容选上 ​ shift + i ：插入字符
+​shift + # ：把#插入到要注释的行前面（在第一行有显示） ​ Esc
+：按至少2次Esc，则会把所有选中的行都在其前面加#</p></li>
 <li><p>取消注释：</p>
-<p>​    Ctrl+v：进入视图模式<br>​    上下方向键选中要注释的行，左右键选择要删除的字符#<br>​    按d删除</p>
-</li>
+<p>​ Ctrl+v：进入视图模式 ​
+上下方向键选中要注释的行，左右键选择要删除的字符# ​ 按d删除</p></li>
 </ul>
-<h2 id="5、vim的搜索功能"><a href="#5、vim的搜索功能" class="headerlink" title="5、vim的搜索功能"></a>5、vim的搜索功能</h2><p>在 normal 模式下按下 <code>/</code> 即可进入查找模式，输入要查找的字符串并按下回车。 Vim 会跳转到第一个匹配。按下 <code>n</code> 查找下一个，按下 <code>N</code> 查找上一个。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[在 Vim 中优雅地查找和替换 | Harttle Land](https://harttle.land/2016/08/08/vim-search-in-file.html)
+<h2 id="vim的搜索功能">5、vim的搜索功能</h2>
+<p>在 normal 模式下按下 <code>/</code>
+即可进入查找模式，输入要查找的字符串并按下回车。 Vim
+会跳转到第一个匹配。按下 <code>n</code> 查找下一个，按下 <code>N</code>
+查找上一个。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[在 Vim 中优雅地查找和替换 | Harttle Land](https://harttle.land/2016/08/08/vim-search-in-file.html)
 ">[3]</span></a></sup></p>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://zh.m.wikibooks.org/zh-hans/Vim/%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F">Vim/三种模式 - 维基教科书，自由的教学读本 (wikibooks.org)</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="http://c.biancheng.net/view/6355.html">Linux Vim可视化模式及其用法 (biancheng.net)</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://harttle.land/2016/08/08/vim-search-in-file.html">在 Vim 中优雅地查找和替换 | Harttle Land</a><a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://zh.m.wikibooks.org/zh-hans/Vim/%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F">Vim/三种模式
+- 维基教科书，自由的教学读本
+(wikibooks.org)</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="http://c.biancheng.net/view/6355.html">Linux
+Vim可视化模式及其用法
+(biancheng.net)</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:3">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://harttle.land/2016/08/08/vim-search-in-file.html">在
+Vim 中优雅地查找和替换 | Harttle
+Land</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
     </div>
 
     
@@ -482,7 +552,10 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81Vim%E6%9C%89%E5%9B%9B%E7%A7%8D%E6%A8%A1%E5%BC%8F"><span class="nav-text">一、Vim有四种模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F-x2F-%E6%AD%A3%E5%B8%B8%E6%A8%A1%E5%BC%8F%EF%BC%88Command-mode%EF%BC%89"><span class="nav-text">1、命令模式&#x2F;正常模式（Command mode）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81%E6%8F%92%E5%85%A5%E6%A8%A1%E5%BC%8F%EF%BC%88Insert-mode%EF%BC%89"><span class="nav-text">2、插入模式（Insert mode）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E5%BA%95%E7%BA%BF%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F%EF%BC%88Last-line-mode%EF%BC%89"><span class="nav-text">3、底线命令模式（Last line mode）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A8%A1%E5%BC%8F-Visual-mode-%EF%BC%9A"><span class="nav-text">4、可视化模式(Visual-mode)：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%B0%8F%E6%8A%80%E5%B7%A7"><span class="nav-text">二、小技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E3%80%81%E8%AE%BE%E7%BD%AE%E8%A1%8C%E5%8F%B7"><span class="nav-text">1、设置行号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E3%80%81%E8%AE%BE%E7%BD%AE%E7%B2%98%E8%B4%B4%E6%A8%A1%E5%BC%8F"><span class="nav-text">2、设置粘贴模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E3%80%81%E5%BF%AB%E9%80%9F%E5%88%B0%E8%BE%BE%E9%A6%96%E5%B0%BE"><span class="nav-text">3、快速到达首尾</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E3%80%81%E5%A4%9A%E8%A1%8C%E6%B3%A8%E9%87%8A"><span class="nav-text">4、多行注释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5%E3%80%81vim%E7%9A%84%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="nav-text">5、vim的搜索功能</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80vim%E6%9C%89%E5%9B%9B%E7%A7%8D%E6%A8%A1%E5%BC%8F"><span class="nav-text">一、Vim有四种模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F%E6%AD%A3%E5%B8%B8%E6%A8%A1%E5%BC%8Fcommand-mode"><span class="nav-text">1、命令模式&#x2F;正常模式（Command
+mode）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8F%92%E5%85%A5%E6%A8%A1%E5%BC%8Finsert-mode"><span class="nav-text">2、插入模式（Insert
+mode）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%95%E7%BA%BF%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8Flast-line-mode"><span class="nav-text">3、底线命令模式（Last
+line mode）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A8%A1%E5%BC%8Fvisual-mode"><span class="nav-text">4、可视化模式(Visual-mode)：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E5%B0%8F%E6%8A%80%E5%B7%A7"><span class="nav-text">二、小技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E8%A1%8C%E5%8F%B7"><span class="nav-text">1、设置行号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E7%B2%98%E8%B4%B4%E6%A8%A1%E5%BC%8F"><span class="nav-text">2、设置粘贴模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E5%88%B0%E8%BE%BE%E9%A6%96%E5%B0%BE"><span class="nav-text">3、快速到达首尾</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E8%A1%8C%E6%B3%A8%E9%87%8A"><span class="nav-text">4、多行注释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vim%E7%9A%84%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="nav-text">5、vim的搜索功能</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -562,7 +635,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">118k</span>
+    <span title="Symbols count total">117k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>

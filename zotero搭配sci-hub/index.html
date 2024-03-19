@@ -22,20 +22,18 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="实现功能Zotero右键条目实现自动下载pdf 设置Sci-Hub作为PDF解析器打开Zotero的首选项，进入Advanced--&gt;Config Editor  搜索extensions.zotero.findPDFs.resolvers 双击extensions.zotero.findPDFs.resolvers，默认情况下是只有一对 []。 删除[]，并将以下代码粘贴进去。[1]">
+  <meta name="description" content="实现功能 Zotero右键条目实现自动下载pdf 设置Sci-Hub作为PDF解析器 打开Zotero的首选项，进入Advanced--&gt;Config Editor  搜索extensions.zotero.findPDFs.resolvers 双击extensions.zotero.findPDFs.resolvers，默认情况下是只有一对 []。 删除[]，并将以下代码粘">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Zotero搭配Sci-Hub">
 <meta property="og:url" content="https://www.sdhlw.top/zotero%E6%90%AD%E9%85%8Dsci-hub/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="实现功能Zotero右键条目实现自动下载pdf 设置Sci-Hub作为PDF解析器打开Zotero的首选项，进入Advanced--&gt;Config Editor  搜索extensions.zotero.findPDFs.resolvers 双击extensions.zotero.findPDFs.resolvers，默认情况下是只有一对 []。 删除[]，并将以下代码粘贴进去。[1]">
+<meta property="og:description" content="实现功能 Zotero右键条目实现自动下载pdf 设置Sci-Hub作为PDF解析器 打开Zotero的首选项，进入Advanced--&gt;Config Editor  搜索extensions.zotero.findPDFs.resolvers 双击extensions.zotero.findPDFs.resolvers，默认情况下是只有一对 []。 删除[]，并将以下代码粘">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302250911205.png">
 <meta property="article:published_time" content="2023-02-25T01:10:20.000Z">
 <meta property="article:modified_time" content="2024-02-18T01:29:38.257Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="Zotero">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302250911205.png">
 
 <link rel="canonical" href="https://www.sdhlw.top/zotero%E6%90%AD%E9%85%8Dsci-hub/">
 
@@ -268,7 +266,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>642</span>
+              <span>643</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -287,21 +285,39 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="实现功能"><a href="#实现功能" class="headerlink" title="实现功能"></a>实现功能</h3><p>Zotero右键条目实现自动下载pdf</p>
-<h3 id="设置Sci-Hub作为PDF解析器"><a href="#设置Sci-Hub作为PDF解析器" class="headerlink" title="设置Sci-Hub作为PDF解析器"></a>设置Sci-Hub作为PDF解析器</h3><p>打开Zotero的首选项，进入<code>Advanced--&gt;Config Editor</code></p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302250911205.png"></p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="实现功能">实现功能</h3>
+<p>Zotero右键条目实现自动下载pdf</p>
+<h3 id="设置sci-hub作为pdf解析器">设置Sci-Hub作为PDF解析器</h3>
+<p>打开Zotero的首选项，进入<code>Advanced--&gt;Config Editor</code></p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302250911205.png" /></p>
 <p>搜索<code>extensions.zotero.findPDFs.resolvers</code></p>
-<p>双击<code>extensions.zotero.findPDFs.resolvers</code>，默认情况下是只有一对 <code>[]</code>。</p>
-<p>删除<code>[]</code>，并将以下代码粘贴进去。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[更新版｜Zotero搭配Sci-Hub，真香！](https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg)
+<p>双击<code>extensions.zotero.findPDFs.resolvers</code>，默认情况下是只有一对
+<code>[]</code>。</p>
+<p>删除<code>[]</code>，并将以下代码粘贴进去。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[更新版｜Zotero搭配Sci-Hub，真香！](https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg)
 ">[1]</span></a></sup></p>
 <span id="more"></span>
-
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;  </span><br><span class="line"><span class="string">&quot;name&quot;</span>:<span class="string">&quot;Sci-Hub&quot;</span>,  </span><br><span class="line"><span class="string">&quot;method&quot;</span>:<span class="string">&quot;GET&quot;</span>,  </span><br><span class="line"><span class="string">&quot;url&quot;</span>:<span class="string">&quot;https://sci-hub.se/&#123;doi&#125;&quot;</span>,  </span><br><span class="line"><span class="string">&quot;mode&quot;</span>:<span class="string">&quot;html&quot;</span>,  </span><br><span class="line"><span class="string">&quot;selector&quot;</span>:<span class="string">&quot;#pdf&quot;</span>,  </span><br><span class="line"><span class="string">&quot;attribute&quot;</span>:<span class="string">&quot;src&quot;</span>,  </span><br><span class="line"><span class="string">&quot;automatic&quot;</span>:true  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <p>到此就成功将Sci-Hub配置为PDF解析器了，也就是说替代了默认的Unpaywall。</p>
 <p>现在即可右键条目下载pdf了（前提是条目包含doi）</p>
-<p>查找文件doi：<a target="_blank" rel="noopener" href="https://github.com/bwiernik/zotero-shortdoi/releases">https://github.com/bwiernik/zotero-shortdoi/releases</a></p>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg">更新版｜Zotero搭配Sci-Hub，真香！</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
+<p>查找文件doi：https://github.com/bwiernik/zotero-shortdoi/releases</p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg">更新版｜Zotero搭配Sci-Hub，真香！</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
     </div>
 
     
@@ -403,7 +419,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E5%8A%9F%E8%83%BD"><span class="nav-text">实现功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AESci-Hub%E4%BD%9C%E4%B8%BAPDF%E8%A7%A3%E6%9E%90%E5%99%A8"><span class="nav-text">设置Sci-Hub作为PDF解析器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E5%8A%9F%E8%83%BD"><span class="nav-text">实现功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AEsci-hub%E4%BD%9C%E4%B8%BApdf%E8%A7%A3%E6%9E%90%E5%99%A8"><span class="nav-text">设置Sci-Hub作为PDF解析器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -483,7 +499,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">118k</span>
+    <span title="Symbols count total">117k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
