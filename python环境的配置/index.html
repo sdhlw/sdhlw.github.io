@@ -30,7 +30,7 @@
 <meta property="og:description" content="需求：在使用 pycharm 或 vscode 时，对切换 python 的版本，以及安装的包的位置等环境问题，比较模糊。 该文章解决一下问题：  如何使用 conda 创建环境，如何下载指定版本的包到指定的环境 下载的包在本地的哪个目录 pycharm 和 vscode 如何使用 conda 的环境">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-03-08T09:11:11.000Z">
-<meta property="article:modified_time" content="2024-03-19T04:27:10.989Z">
+<meta property="article:modified_time" content="2024-03-19T11:50:41.647Z">
 <meta property="article:author" content="Jay Chou">
 <meta property="article:tag" content="Pycharm">
 <meta property="article:tag" content="Vscode">
@@ -239,7 +239,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-03-19 12:27:10" itemprop="dateModified" datetime="2024-03-19T12:27:10+08:00">2024-03-19</time>
+                <time title="Modified: 2024-03-19 19:50:41" itemprop="dateModified" datetime="2024-03-19T19:50:41+08:00">2024-03-19</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -268,14 +268,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>2.6k</span>
+              <span>3k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>2 mins.</span>
+              <span>3 mins.</span>
             </span>
 
         </div>
@@ -296,7 +296,9 @@
 <li>pycharm 和 vscode 如何使用 conda 的环境</li>
 </ul>
 <span id="more"></span>
-<p>解决：</p>
+<p>快捷命令：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># conda 命令,在 Anaconda Powershell Prompt 执行</span></span><br><span class="line">conda -V  <span class="comment"># 获取 conda 版本号</span></span><br><span class="line">conda env <span class="built_in">list</span> <span class="comment"># 列举当前所有环境</span></span><br><span class="line">conda activate test <span class="comment"># 激活环境</span></span><br><span class="line">conda create -n test python=<span class="number">3.10</span> <span class="comment"># 创建环境</span></span><br><span class="line">conda remove -n test --<span class="built_in">all</span> <span class="comment"># 删除环境</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># pip 命令</span></span><br><span class="line">pip install pandas==  <span class="comment"># 查看软件版本号</span></span><br><span class="line">pip install pandas==<span class="number">2.1</span><span class="number">.1</span> <span class="comment"># 下载指定版本软件</span></span><br><span class="line">pip install pandas==<span class="number">2.1</span><span class="number">.1</span> -i https://pypi.tuna.tsinghua.edu.cn/simple <span class="comment"># 调用清华源下载</span></span><br><span class="line">pip uninstall pandas <span class="comment"># 卸载软件</span></span><br></pre></td></tr></table></figure>
+<p>详细解决思路：</p>
 <p>1、环境的配置，使用 conda 软件</p>
 <p>miniconda 官网的下载方式： 命令行执行一下三行命令： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe -o miniconda.exe</span><br><span class="line">start /wait &quot;&quot; miniconda.exe /S</span><br><span class="line">del miniconda.exe</span><br></pre></td></tr></table></figure></p>
 <p>有一个问题，它默认安装位置在 C 盘，而想换安装位置怎么办？</p>
@@ -309,11 +311,12 @@ miniconda）</p>
 <p><code>C:\Users\Administrator\</code> 需要更换为你的安装目录。</p>
 <h3 id="conda-的基本使用">conda 的基本使用：</h3>
 <p>打开 Anaconda Powershell Prompt，执行基本命令，实现相关功能：</p>
-<p><code>conda -V</code> ：获取 conda 版本号 <code>conda env list</code>
-：列举当前所有环境 <code>conda create -n test python=3.10</code>
-：创建新的环境 (test)，并指定环境中使用的 python 版本，意味着 python
-直接通过 conda 安装，不需要单纯去 python 官网安装 python。
-<code>conda activate your_env_name</code> ：激活某个环境</p>
+<p><code>conda -V</code> ：获取 conda 版本号</p>
+<p><code>conda env list</code> ：列举当前所有环境</p>
+<p><code>conda create -n test python=3.10</code> ：创建新的环境
+(test)，并指定环境中使用的 python 版本，意味着 python 直接通过 conda
+安装，不需要单纯去 python 官网安装 python。</p>
+<p><code>conda activate your_env_name</code> ：激活某个环境</p>
 <p>重命名环境，先克隆，后删除： 把环境 rcnn 重命名成 tf</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda create -n tf --clone rcnn</span><br><span class="line">conda remove -n rcnn --all</span><br></pre></td></tr></table></figure>
 <p>下载指定的包到指定的环境：使用 conda，激活指定的环境，使用
@@ -347,9 +350,12 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/20240
 <p><img
 src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202403081740880.png" /></p>
 <p>如果选择上没有你那个环境，需要手动添加你需要的环境的python.exe地址（右键属性--安全--对象名称）：</p>
-<p>文档——&gt;首选项 ——&gt;设置 ：输入python path</p>
+<p>在vscode找到：文档——&gt;首选项 ——&gt;设置 ：输入python path</p>
 <p>找到 Python Conda Path</p>
-<p>在下面的输入框中将你创建的conda虚拟环境中python.exe文档的地址放上</p>
+<p>在下面的输入框中将你创建的conda虚拟环境中python.exe文档的地址放上<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[如何把jupyter切换到其他配置好的conda虚拟环境和vscode导入conda环境](https://zhuanlan.zhihu.com/p/157133694)
+">[2]</span></a></sup></p>
 <p>重启vscode即可。</p>
 <h3 id="参考文章">参考文章</h3>
 <div id="footnotes">
@@ -360,6 +366,12 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/20240
 <span
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
 style="display: inline-block; vertical-align: top; margin-left: 10px;">https://www.cnblogs.com/fireblackman/p/16422750.html<a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/157133694">如何把jupyter切换到其他配置好的conda虚拟环境和vscode导入conda环境</a><a href="#fnref:2" rev="footnote">
 ↩︎</a></span>
 </li>
 </ol>
@@ -549,7 +561,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://w
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">117k</span>
+    <span title="Symbols count total">118k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
