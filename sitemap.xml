@@ -2,9 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.sdhlw.top/%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%E6%B3%95/</loc>
+    
+    <lastmod>2024-03-20T13:49:41.078Z</lastmod>
+    
+    <date>1710501491000</date>
+    <title>交叉验证法 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/%E7%8B%AC%E7%AB%8B%E6%B5%8B%E8%AF%95%E4%B8%8E%E4%BA%A4%E5%8F%89%E6%B5%8B%E8%AF%95/</loc>
+    
+    <lastmod>2024-03-20T08:16:22.511Z</lastmod>
+    
+    <date>1710917339000</date>
+    <title>独立测试与交叉测试 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/python/index.html</loc>
+    
+    <lastmod>2024-03-20T06:49:13.559Z</lastmod>
+    
+    <date>1710942611410</date>
+    <title>Python 速查 | Jay's Blog</title>
+    
+    <desc>快速查询：Python 函数的简单解释及使用 了解任何函数的最佳方式，谷歌搜索，找到函数的官方文档，阅读。 详细可参考：搜索使用 常用包下载 1234567pip install numpypip install pandaspip install scikit-learnpip install matplotlibpip install tqdm # 运行进度条 pip install seab</desc>
+  </url>
+  
+  <url>
     <loc>https://www.sdhlw.top/python%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE/</loc>
     
-    <lastmod>2024-03-19T11:50:41.647Z</lastmod>
+    <lastmod>2024-03-19T11:54:27.308Z</lastmod>
     
     <date>1709889071000</date>
     <title>Python环境的配置 | Jay's Blog</title>
@@ -41,28 +74,6 @@
     
     <date>1676555813000</date>
     <title>皮尔森（逊）相关系数（Pearson Correlation Coefficient, PCC） | Jay's Blog</title>
-    
-    <desc></desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/python/index.html</loc>
-    
-    <lastmod>2024-03-16T01:55:49.357Z</lastmod>
-    
-    <date>1710849070751</date>
-    <title>Python 速查 | Jay's Blog</title>
-    
-    <desc>快速查询：Python 函数的简单解释及使用 了解任何函数的最佳方式，谷歌搜索，找到函数的官方文档，阅读。 详细可参考：搜索使用 excel 导入 excel 1234567891011121314import pandas as pd# 指定 Excel 文件路径excel_path = r&#x27;D:\MyData\Boston_data.xlsx&#x27;# 从 Excel 文件中读取</desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%E6%B3%95/</loc>
-    
-    <lastmod>2024-03-15T12:08:42.141Z</lastmod>
-    
-    <date>1710501491000</date>
-    <title>交叉验证法 | Jay's Blog</title>
     
     <desc></desc>
   </url>

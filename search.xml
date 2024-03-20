@@ -173,6 +173,181 @@ rebase之abort、continue、skip</a></p>
       </tags>
   </entry>
   <entry>
+    <title>Linux-vim</title>
+    <url>/Linux-vim/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一vim有四种模式">一、Vim有四种模式</h1>
+<h2
+id="命令模式正常模式command-mode">1、<strong>命令模式/正常模式</strong>（Command
+mode）</h2>
+<p>敲击键盘动作会被Vim识别为命令，而非输入字符。启动Vim默认进入命令模式。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Vim/三种模式 - 维基教科书，自由的教学读本 (wikibooks.org)](https://zh.m.wikibooks.org/zh-hans/Vim/三种模式)
+">[1]</span></a></sup></p>
+<ul>
+<li><code>i</code>：切换到插入模式<br />
+</li>
+<li><code>：</code>：切换到底线命令模式</li>
+<li><code>v</code>：进入可视化模式(小写V、大写V、Ctrl+V均可进入该模式下)</li>
+<li><code>U</code>：撤销上一步操作</li>
+<li><code>yy</code> - 复制当前行，包括换行符</li>
+<li><code>dd</code> - 剪切当前行，包括换行符</li>
+<li><code>p</code>键可以将内容粘贴到当前光标后面</li>
+</ul>
+<h2 id="插入模式insert-mode">2、<strong>插入模式</strong>（Insert
+mode）</h2>
+<p>编辑文本，需进入该模式</p>
+<ul>
+<li><code>Esc</code>：退出插入模式，进入命令模式</li>
+</ul>
+<h2
+id="底线命令模式last-line-mode">3、<strong>底线命令模式</strong>（Last
+line mode）</h2>
+<ul>
+<li><code>Esc</code>：退出底线命令模式，进入命令模式</li>
+<li><code>q!</code>：不保存，强制退出vim</li>
+<li><code>wq</code>：保存，退出vim</li>
+<li><code>q</code>：不保存，退出vim</li>
+<li><code>w</code>：保存，不退出vim</li>
+</ul>
+<h2
+id="可视化模式visual-mode">4、<strong>可视化模式</strong>(Visual-mode)：</h2>
+<ul>
+<li><p>文本选择：小写V进入（选择是以字符为单位的）、大写V进入（选择是以行为单位的）、Ctrl+V进入（矩形区域作为目标文本，以按下
+Ctrl+v
+位置作为矩形的一角，光标移动的终点位置作为它的对角）<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Linux Vim可视化模式及其用法 (biancheng.net)](http://c.biancheng.net/view/6355.html)
+">[2]</span></a></sup></p></li>
+<li><p>可视化命令：</p>
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 85%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>命令</strong></th>
+<th style="text-align: left;"><strong>命令</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">d</td>
+<td style="text-align: left;">删除选中的部分文本。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">D</td>
+<td style="text-align: left;">删除选中部分所在的行，和 d
+不同之处在于，即使选中文本中有些字符所在的行没有都选中，删除时也会一并删除。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">y</td>
+<td style="text-align: left;">将选中部分复制到剪贴板中。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">p（小写）</td>
+<td style="text-align: left;">将剪贴板中的内容粘贴到光标之后。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">P（大写）</td>
+<td style="text-align: left;">将剪贴板中的内容粘贴到光标之前。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">u（小写）</td>
+<td
+style="text-align: left;">将选中部分中的大写字符全部改为小写字符。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">U（大写）</td>
+<td
+style="text-align: left;">将选中部分中的小写字符全部改为大写字符。</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&gt;</td>
+<td style="text-align: left;">将选中部分右移（缩进）一个 tab
+键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
+个空白字符的长度）。</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">&lt;</td>
+<td style="text-align: left;">将选中部分左移一个 tab
+键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
+个空白字符的长度）。</td>
+</tr>
+</tbody>
+</table></li>
+</ul>
+<h1 id="二小技巧">二、小技巧</h1>
+<h2 id="设置行号">1、设置行号</h2>
+<p>vim ~/.vimrc 写入：set number</p>
+<h2 id="设置粘贴模式">2、设置粘贴模式</h2>
+<p><code>:set paste</code> + 回车 + <code>i</code></p>
+<h2 id="快速到达首尾">3、快速到达首尾</h2>
+<ul>
+<li><code>gg</code>：跳转到文件头</li>
+<li>行数 +<code>gg</code>：跳转到指定行</li>
+<li>shift + g ：跳转到文件末尾</li>
+</ul>
+<h2 id="多行注释">4、多行注释</h2>
+<p><code>:20,30 s/^/#/g</code> ：20-30行 用 #
+注释掉。（python是用#注释地～～～）</p>
+<p><code>:20,30 s/^#//g</code> ：20-30行 取消注释</p>
+<ul>
+<li><p>注释：</p>
+<p>​ Ctrl + v ：vim中的视图模式，把要注释的内容选上 ​ shift + i ：插入字符
+​shift + # ：把#插入到要注释的行前面（在第一行有显示） ​ Esc
+：按至少2次Esc，则会把所有选中的行都在其前面加#</p></li>
+<li><p>取消注释：</p>
+<p>​ Ctrl+v：进入视图模式 ​
+上下方向键选中要注释的行，左右键选择要删除的字符# ​ 按d删除</p></li>
+</ul>
+<h2 id="vim的搜索功能">5、vim的搜索功能</h2>
+<p>在 normal 模式下按下 <code>/</code>
+即可进入查找模式，输入要查找的字符串并按下回车。 Vim
+会跳转到第一个匹配。按下 <code>n</code> 查找下一个，按下 <code>N</code>
+查找上一个。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[在 Vim 中优雅地查找和替换 | Harttle Land](https://harttle.land/2016/08/08/vim-search-in-file.html)
+">[3]</span></a></sup></p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zh.m.wikibooks.org/zh-hans/Vim/%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F">Vim/三种模式
+- 维基教科书，自由的教学读本
+(wikibooks.org)</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="http://c.biancheng.net/view/6355.html">Linux
+Vim可视化模式及其用法
+(biancheng.net)</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span>
+</li>
+<li id="fn:3">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://harttle.land/2016/08/08/vim-search-in-file.html">在
+Vim 中优雅地查找和替换 | Harttle
+Land</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>软件使用</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Vim</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux-base</title>
     <url>/Linux-base/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="base">1、Base</h1>
@@ -576,181 +751,6 @@ href="https://www.zhihu.com/question/42802592/answer/383110578">来源</a></p>
       </tags>
   </entry>
   <entry>
-    <title>Linux-vim</title>
-    <url>/Linux-vim/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="一vim有四种模式">一、Vim有四种模式</h1>
-<h2
-id="命令模式正常模式command-mode">1、<strong>命令模式/正常模式</strong>（Command
-mode）</h2>
-<p>敲击键盘动作会被Vim识别为命令，而非输入字符。启动Vim默认进入命令模式。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Vim/三种模式 - 维基教科书，自由的教学读本 (wikibooks.org)](https://zh.m.wikibooks.org/zh-hans/Vim/三种模式)
-">[1]</span></a></sup></p>
-<ul>
-<li><code>i</code>：切换到插入模式<br />
-</li>
-<li><code>：</code>：切换到底线命令模式</li>
-<li><code>v</code>：进入可视化模式(小写V、大写V、Ctrl+V均可进入该模式下)</li>
-<li><code>U</code>：撤销上一步操作</li>
-<li><code>yy</code> - 复制当前行，包括换行符</li>
-<li><code>dd</code> - 剪切当前行，包括换行符</li>
-<li><code>p</code>键可以将内容粘贴到当前光标后面</li>
-</ul>
-<h2 id="插入模式insert-mode">2、<strong>插入模式</strong>（Insert
-mode）</h2>
-<p>编辑文本，需进入该模式</p>
-<ul>
-<li><code>Esc</code>：退出插入模式，进入命令模式</li>
-</ul>
-<h2
-id="底线命令模式last-line-mode">3、<strong>底线命令模式</strong>（Last
-line mode）</h2>
-<ul>
-<li><code>Esc</code>：退出底线命令模式，进入命令模式</li>
-<li><code>q!</code>：不保存，强制退出vim</li>
-<li><code>wq</code>：保存，退出vim</li>
-<li><code>q</code>：不保存，退出vim</li>
-<li><code>w</code>：保存，不退出vim</li>
-</ul>
-<h2
-id="可视化模式visual-mode">4、<strong>可视化模式</strong>(Visual-mode)：</h2>
-<ul>
-<li><p>文本选择：小写V进入（选择是以字符为单位的）、大写V进入（选择是以行为单位的）、Ctrl+V进入（矩形区域作为目标文本，以按下
-Ctrl+v
-位置作为矩形的一角，光标移动的终点位置作为它的对角）<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Linux Vim可视化模式及其用法 (biancheng.net)](http://c.biancheng.net/view/6355.html)
-">[2]</span></a></sup></p></li>
-<li><p>可视化命令：</p>
-<table>
-<colgroup>
-<col style="width: 14%" />
-<col style="width: 85%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;"><strong>命令</strong></th>
-<th style="text-align: left;"><strong>命令</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">d</td>
-<td style="text-align: left;">删除选中的部分文本。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">D</td>
-<td style="text-align: left;">删除选中部分所在的行，和 d
-不同之处在于，即使选中文本中有些字符所在的行没有都选中，删除时也会一并删除。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">y</td>
-<td style="text-align: left;">将选中部分复制到剪贴板中。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">p（小写）</td>
-<td style="text-align: left;">将剪贴板中的内容粘贴到光标之后。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">P（大写）</td>
-<td style="text-align: left;">将剪贴板中的内容粘贴到光标之前。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">u（小写）</td>
-<td
-style="text-align: left;">将选中部分中的大写字符全部改为小写字符。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">U（大写）</td>
-<td
-style="text-align: left;">将选中部分中的小写字符全部改为大写字符。</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">&gt;</td>
-<td style="text-align: left;">将选中部分右移（缩进）一个 tab
-键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
-个空白字符的长度）。</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">&lt;</td>
-<td style="text-align: left;">将选中部分左移一个 tab
-键规定的长度（CentOS 6.x 中，一个tab键默认相当于 8
-个空白字符的长度）。</td>
-</tr>
-</tbody>
-</table></li>
-</ul>
-<h1 id="二小技巧">二、小技巧</h1>
-<h2 id="设置行号">1、设置行号</h2>
-<p>vim ~/.vimrc 写入：set number</p>
-<h2 id="设置粘贴模式">2、设置粘贴模式</h2>
-<p><code>:set paste</code> + 回车 + <code>i</code></p>
-<h2 id="快速到达首尾">3、快速到达首尾</h2>
-<ul>
-<li><code>gg</code>：跳转到文件头</li>
-<li>行数 +<code>gg</code>：跳转到指定行</li>
-<li>shift + g ：跳转到文件末尾</li>
-</ul>
-<h2 id="多行注释">4、多行注释</h2>
-<p><code>:20,30 s/^/#/g</code> ：20-30行 用 #
-注释掉。（python是用#注释地～～～）</p>
-<p><code>:20,30 s/^#//g</code> ：20-30行 取消注释</p>
-<ul>
-<li><p>注释：</p>
-<p>​ Ctrl + v ：vim中的视图模式，把要注释的内容选上 ​ shift + i ：插入字符
-​shift + # ：把#插入到要注释的行前面（在第一行有显示） ​ Esc
-：按至少2次Esc，则会把所有选中的行都在其前面加#</p></li>
-<li><p>取消注释：</p>
-<p>​ Ctrl+v：进入视图模式 ​
-上下方向键选中要注释的行，左右键选择要删除的字符# ​ 按d删除</p></li>
-</ul>
-<h2 id="vim的搜索功能">5、vim的搜索功能</h2>
-<p>在 normal 模式下按下 <code>/</code>
-即可进入查找模式，输入要查找的字符串并按下回车。 Vim
-会跳转到第一个匹配。按下 <code>n</code> 查找下一个，按下 <code>N</code>
-查找上一个。<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[在 Vim 中优雅地查找和替换 | Harttle Land](https://harttle.land/2016/08/08/vim-search-in-file.html)
-">[3]</span></a></sup></p>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zh.m.wikibooks.org/zh-hans/Vim/%E4%B8%89%E7%A7%8D%E6%A8%A1%E5%BC%8F">Vim/三种模式
-- 维基教科书，自由的教学读本
-(wikibooks.org)</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="http://c.biancheng.net/view/6355.html">Linux
-Vim可视化模式及其用法
-(biancheng.net)</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span>
-</li>
-<li id="fn:3">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://harttle.land/2016/08/08/vim-search-in-file.html">在
-Vim 中优雅地查找和替换 | Harttle
-Land</a><a href="#fnref:3" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>软件使用</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Vim</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python-base</title>
     <url>/Python-base/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1
@@ -1124,6 +1124,76 @@ href="https://www.cnblogs.com/renping/p/7441494.html">环境</a></li>
       </tags>
   </entry>
   <entry>
+    <title>Windows 超赞软件 &amp; 扩展 &amp; 网站</title>
+    <url>/Windows%20%E8%B6%85%E8%B5%9E%E8%BD%AF%E4%BB%B6%20&amp;%20%E6%89%A9%E5%B1%95%20&amp;%20%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="软件">软件:</h4>
+<ul>
+<li><p>Edge浏览器（已换谷歌内核，且扩展丰富，无需翻墙即可添加多数Google扩展），Chrome浏览器、360极速浏览器、</p></li>
+<li><p>Foxmail（邮箱）、Bandizip（解压软件）、LICEcap（录屏GIF）、Snipaste（截图，贴图）、FastStone
+Image Viewer（图片查看器）</p></li>
+<li><p>Typora（Markdown编辑器）、Listary（快速搜索文件文件夹）、百度网盘、PanDownload（百度云解除）、Xmind(思维导图)</p></li>
+<li><p>ripgrep(命令行搜索软件，用于搜索纯文本文件内容)、<a
+href="https://chocolatey.org/install">Chocolatey</a>(软件管理，下载一些Windows的命令行工具)、rga(ripgrep-all，可搜pdf等其他格式)</p></li>
+<li><p>QQ OCR(没错，qq自带OCR!!!)、天若OCR、Quicker（快捷面板）、Utools
+(和quicker有些像)、手心输入法（最后还是换回搜狗，不得不承认搜狗的强大）、(PDF-XChange
+Editor、文电通pdf阅读器)、</p></li>
+<li><p>One
+commander(文件资源管理器)、Clover（文件资源管理器标签化）、DeskPins1.3（窗口置顶）、Spacesniff(直观地看到文件和文件夹的磁盘空间占用情况)、Coodesker(桌面管理软件)、Files
+uwp preview(文件资源管理器)</p></li>
+<li><p>MobaXterm
+(ssh客户端，最推荐，功能很多，不止ssh)、Putty(ssh客户端，比较mini)、Xshell（ssh客户端，朋友用过，自己木有）Windows
+Terminal（终端）</p></li>
+<li><p>IDE&amp;编辑器<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="编辑器就是纯编辑文本的编辑器、IDE是带有软件开发功能的“集成开发环境”。目前的编辑器功能强大，基本可以算作是IDE。简单点说自称IDE的IDE能做的活，自称编辑器的IDE未必能做，自称编辑器的IDE能做的活，自称IDE的IDE基本能做。
+">[1]</span></a></sup>：Vscode(Python、Markdown、LaTex等我都行，牛不牛)、Sublime
+Text、Thonny（Python）</p></li>
+<li><p>科研绘图：</p>
+<ul>
+<li>软件：origin、Photoshop、Adobe Illustrator</li>
+<li>网址：BioRender（生物类绘图）、Scidraw（专为SCI写作插图提供素材）、</li>
+</ul></li>
+</ul>
+<h4 id="edge扩展">Edge扩展</h4>
+<ul>
+<li>Adblock （广告拦截）</li>
+<li>Dark Reader (暗黑模式)</li>
+<li>Fireshot-capture page(截图)</li>
+<li>Infinity pro （好看好用的标签页）</li>
+<li>IGG谷歌学术助手</li>
+<li>沙拉查词</li>
+<li>壹伴（公众号助手）</li>
+</ul>
+<h4 id="网址">网址</h4>
+<ul>
+<li><p>软件下载：https://en.softonic.com/</p></li>
+<li><p>135编辑器（公众号排版）：https://www.135editor.com/</p></li>
+<li><p>创客贴（公众号封面）：https://www.chuangkit.com/</p></li>
+<li><p>LaTex在线：https://www.overleaf.com/</p></li>
+</ul>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">编辑器就是纯编辑文本的编辑器、IDE是带有软件开发功能的“集成开发环境”。目前的编辑器功能强大，基本可以算作是IDE。简单点说自称IDE的IDE能做的活，自称编辑器的IDE未必能做，自称编辑器的IDE能做的活，自称IDE的IDE基本能做。<a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>理论知识</category>
+      </categories>
+      <tags>
+        <tag>Software</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>adobe illustrator修改画布大小</title>
     <url>/adobe-illustrator%E4%BF%AE%E6%94%B9%E7%94%BB%E5%B8%83%E5%A4%A7%E5%B0%8F/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
@@ -1210,90 +1280,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://g
       </tags>
   </entry>
   <entry>
-    <title>Hexo代码块折叠功能</title>
-    <url>/hexo%E4%BB%A3%E7%A0%81%E5%9D%97%E6%8A%98%E5%8F%A0%E5%8A%9F%E8%83%BD/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="说明">说明</h3>
-<p>实现同样的效果：</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237971.gif" /></p>
-<p>本博客环境：<code>hexo@6.2.0</code>，<code>next@7.8.0</code>，以下所有代码，建立在这个基础之上。</p>
-<p>由 jQuery
-选择器选择代码模块<code>.highlight</code>相关的DOM节点，给超过某个高度的代码模块添加展开收起的盒子，让盒子实现展开隐藏效果。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[hexo博客代码折叠功能](https://www.toimc.com/hexo-usage-2/)">[1]</span></a></sup></p>
-<p><code>hexo version</code>即可查看hexo版本；</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237479.png" /></p>
-<p>查看<code>theme/next/package.json</code>即可查看next版本；</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237584.png" /></p>
-<span id="more"></span>
-<h3 id="添加-code-unfold.js">1、添加 code-unfold.js</h3>
-<p>把<code>code-unfold.js</code>放置在了<code>themes/next/source/js/code-unfold.js</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var CODE_MAX_HEIGHT = 200;</span><br><span class="line">var containers = [];</span><br><span class="line"></span><br><span class="line">// 展开</span><br><span class="line">$(&#x27;body&#x27;).on(&#x27;click&#x27;, &#x27;.js_unfold_code_btn&#x27;, function () &#123;</span><br><span class="line">  $(this).closest(&#x27;.js_highlight_container&#x27;).addClass(&#x27;on&#x27;);</span><br><span class="line">&#125;);</span><br><span class="line">// 收起</span><br><span class="line">$(&#x27;body&#x27;).on(&#x27;click&#x27;, &#x27;.js_retract_code_btn&#x27;, function () &#123;</span><br><span class="line">  var $container = $(this).closest(&#x27;.js_highlight_container&#x27;).removeClass(&#x27;on&#x27;);</span><br><span class="line">  var winTop = $(window).scrollTop();</span><br><span class="line">  var offsetTop = $container.offset().top;</span><br><span class="line">  $(this).css(&#x27;top&#x27;, 0);</span><br><span class="line">  if (winTop &gt; offsetTop) &#123;</span><br><span class="line">    // 设置滚动条位置</span><br><span class="line">    $(&#x27;body, html&#x27;).animate(&#123;</span><br><span class="line">      scrollTop: $container.offset().top - CODE_MAX_HEIGHT</span><br><span class="line">    &#125;, 600);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line">// 滚动事件，触发动画效果</span><br><span class="line">$(window).on(&#x27;scroll&#x27;, function () &#123;</span><br><span class="line">  var scrollTop = $(window).scrollTop();</span><br><span class="line">  var temp = [];</span><br><span class="line">  for (let i = 0; i &lt; containers.length; i++) &#123;</span><br><span class="line">    var item = containers[i];</span><br><span class="line">    var &#123; $container, height, $hide, hasHorizontalScrollbar &#125; = item;</span><br><span class="line">    if ($container.closest(&#x27;body&#x27;).length === 0) &#123;</span><br><span class="line">      // 如果 $container 元素已经不在页面上, 则删除该元素</span><br><span class="line">      // 防止pjax页面跳转之后，元素未删除</span><br><span class="line">      continue;</span><br><span class="line">    &#125;</span><br><span class="line">    temp.push(item);</span><br><span class="line">    if (!$container.hasClass(&#x27;on&#x27;)) &#123;</span><br><span class="line">      continue;</span><br><span class="line">    &#125;</span><br><span class="line">    var offsetTop = $container.offset().top;</span><br><span class="line">    var hideBtnHeight = $hide.outerHeight();</span><br><span class="line">    // 减去按钮高度，减去底部滚动条高度</span><br><span class="line">    var maxTop = parseInt(height - (hasHorizontalScrollbar ? 17 : 0) - hideBtnHeight);</span><br><span class="line">    let top = parseInt(</span><br><span class="line">      Math.min(</span><br><span class="line">        Math.max(scrollTop - offsetTop, 0), // 如果小于 0 ，则取 0</span><br><span class="line">        maxTop,// 如果大于 height ，则取 height</span><br><span class="line">      )</span><br><span class="line">    );</span><br><span class="line">    // 根据 sin 曲线设置&quot;收起代码&quot;位置</span><br><span class="line">    var halfHeight = parseInt($(window).height() / 2 * Math.sin((top / maxTop) * 90 * (2 * Math.PI/360)));</span><br><span class="line">    $hide.css(&#x27;top&#x27;, Math.min(top + halfHeight, maxTop));</span><br><span class="line">  &#125;</span><br><span class="line">  containers = temp;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">// 添加隐藏容器</span><br><span class="line">function addCodeWrap($node) &#123;</span><br><span class="line">  var $container = $node.wrap(&#x27;&lt;div class=&quot;js_highlight_container highlight-container&quot;&gt;&lt;div class=&quot;highlight-wrap&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#x27;).closest(&#x27;.js_highlight_container&#x27;);</span><br><span class="line"></span><br><span class="line">  // 底部 &quot;展开代码&quot; 与 侧边栏 &quot;收起代码&quot;</span><br><span class="line">  var $btn = $(`</span><br><span class="line">    &lt;div class=&quot;highlight-footer&quot;&gt;</span><br><span class="line">      &lt;a class=&quot;js_unfold_code_btn show-btn&quot; href=&quot;javascript:;&quot;&gt;展开代码&lt;i class=&quot;fa fa-angle-down&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;a class=&quot;js_retract_code_btn hide-btn&quot; href=&quot;javascript:;&quot;&gt;&lt;i class=&quot;fa fa-angle-up&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;收起代码&lt;/a&gt;</span><br><span class="line">  `);</span><br><span class="line"></span><br><span class="line">  $container.append($btn);</span><br><span class="line">  return $container;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">function codeUnfold () &#123;</span><br><span class="line">  $(&#x27;.highlight&#x27;).each(function () &#123;</span><br><span class="line">    // 防止重复渲染</span><br><span class="line">    if (this.__render__ === true) &#123;</span><br><span class="line">      return true;</span><br><span class="line">    &#125;</span><br><span class="line">    this.__render__ = true;</span><br><span class="line">    var $this = $(this);</span><br><span class="line">    var height = $(this).outerHeight();</span><br><span class="line">    if (height &gt; CODE_MAX_HEIGHT) &#123;</span><br><span class="line">      // 添加展开&amp;收起容器</span><br><span class="line">      var $container = addCodeWrap($this, height);</span><br><span class="line">      containers.push(&#123;</span><br><span class="line">        $container,</span><br><span class="line">        height,</span><br><span class="line">        $hide: $container.find(&#x27;.js_retract_code_btn&#x27;),</span><br><span class="line">        hasHorizontalScrollbar: this.scrollWidth &gt; this.offsetWidth,</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="添加-jquery">2、添加 jquery</h3>
-<p>修改next主题配置文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fancybox: true  </span><br></pre></td></tr></table></figure>
-<p>因为<code>fancybox</code>会依赖<code>jquery</code>，所以设置成<code>true</code>；</p>
-<h3 id="引用-code-unfold.js">3、引用 code-unfold.js</h3>
-<p>修改文件<code>themes/next/layout/_scripts/index.njk</code></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 在最后添加  </span><br><span class="line">&#123;&#123;- next_js(&#x27;code-unfold.js&#x27;) &#125;&#125;  </span><br></pre></td></tr></table></figure>
-<p>next8.0的模板是使用njk，旧版是使用swig<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Hexo-5.x 与 NexT-8.x 跨版本升级](https://www.imczw.com/post/tech/hexo5-next8-updated.html#more)
-">[2]</span></a></sup>；我的next是7.8版本，没有 <code>index.njk</code>
-文件只有 <code>index.swig</code>
-文件；查看了njk文件感觉和添加进去的代码格式似乎没有差别，尝试将以上代码添加到
-<code>index.swig</code> 文件中；</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237664.png" /></p>
-<p>下面找到文件<code>themes/next/source/js/next-boot.js</code>：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">NexT.boot.refresh = function () &#123;  </span><br><span class="line">  // 添加一行代码  </span><br><span class="line">  codeUnfold()  </span><br><span class="line">    </span><br><span class="line">  // ...</span><br></pre></td></tr></table></figure>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237750.png" /></p>
-<h3 id="添加样式">4、添加样式</h3>
-<p>1、创建 <code>highlight.styl</code>
-可以添加<code>theme/next/source/css/_common/components/highlight.styl</code>文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 展开收起效果</span><br><span class="line">.highlight-container</span><br><span class="line">  position: relative</span><br><span class="line">  background-color: highlight-background</span><br><span class="line">  &amp;.on</span><br><span class="line">    .highlight-footer</span><br><span class="line">      display: none</span><br><span class="line">    .hide-btn</span><br><span class="line">      display: flex</span><br><span class="line">    .highlight-wrap</span><br><span class="line">      max-height: none</span><br><span class="line">  .highlight-wrap</span><br><span class="line">    overflow: hidden</span><br><span class="line">    max-height: 200px</span><br><span class="line">  .highlight-footer</span><br><span class="line">    position absolute</span><br><span class="line">    width: 100%</span><br><span class="line">    left: 0</span><br><span class="line">    bottom: 0</span><br><span class="line">    height: 60px</span><br><span class="line">    background-image: &#x27;linear-gradient(-180deg, rgba(255,255,255,0) 0%, %s 65%)&#x27; % highlight-background;</span><br><span class="line">    text-align: center</span><br><span class="line">  .show-btn</span><br><span class="line">    font-size: 12px</span><br><span class="line">    color: #fff</span><br><span class="line">    position: absolute</span><br><span class="line">    left: 50%</span><br><span class="line">    transform: translateX(-50%)</span><br><span class="line">    bottom: 0</span><br><span class="line">    line-height: 2em</span><br><span class="line">    text-decoration: none</span><br><span class="line">    padding: 0 0.8em</span><br><span class="line">    text-align: center</span><br><span class="line">    border-radius: 4px 4px 0</span><br><span class="line">    &amp;:hover</span><br><span class="line">      text-decoration: none</span><br><span class="line">  .hide-btn</span><br><span class="line">    color: #fff</span><br><span class="line">    font-size: 12px</span><br><span class="line">    width: 22px</span><br><span class="line">    position: absolute</span><br><span class="line">    left: -21px</span><br><span class="line">    top: 0</span><br><span class="line">    line-height: 1em</span><br><span class="line">    text-decoration: none</span><br><span class="line">    text-align: center</span><br><span class="line">    display: none</span><br><span class="line">    flex-direction: column</span><br><span class="line">    background-color: highlight-background</span><br><span class="line">    border-radius: 4px 0 0 4px</span><br><span class="line">    padding: 0.1em 0 0.6em</span><br><span class="line">    transition: top ease 0.35s</span><br><span class="line">  .fa-angle-up,</span><br><span class="line">  .fa-angle-down</span><br><span class="line">    font-style: normal</span><br><span class="line">    color: #fff</span><br><span class="line">  .fa-angle-up:before</span><br><span class="line">    content:&quot;\f106&quot;</span><br><span class="line">  .fa-angle-down:before</span><br><span class="line">    content:&quot;\f107&quot;</span><br><span class="line">    margin-left: 0.5em</span><br><span class="line">  .js_unfold_code_btn, .js_retract_code_btn</span><br><span class="line">    background: rgba(0,0,0,0.5)</span><br><span class="line">    border-bottom: none !important</span><br><span class="line">    &amp;:hover</span><br><span class="line">      border-bottom-color: none !important</span><br></pre></td></tr></table></figure>
-<p>max-height: 200px：为设置代码块折叠之后的高度。</p>
-<p>2、引用样式 找到文件
-<code>themes/next/source/css/_common/components/index.styl</code>：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@import &#x27;post&#x27;;</span><br><span class="line">@import &#x27;pages&#x27;;</span><br><span class="line">@import &#x27;third-party&#x27;;</span><br><span class="line">// 添加这一行，不要加分号！！</span><br><span class="line">@import &#x27;highlight&#x27;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>该目录下（
-<code>themes/next/source/css/_common/components/</code>）没找到
-<code>index.styl</code> ，尝试将 <code>@import 'highlight'</code> 添加到
-<code>components.styl</code> ，看是否可行；</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237863.png" /></p>
-<p>实现了想要的效果，做的修改是可行的！</p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.toimc.com/hexo-usage-2/">hexo博客代码折叠功能</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.imczw.com/post/tech/hexo5-next8-updated.html#more">Hexo-5.x
-与 NexT-8.x 跨版本升级</a><a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>博客运营</category>
-        <category>其它</category>
-      </categories>
-  </entry>
-  <entry>
     <title>connecting to kernel：python</title>
     <url>/connecting-to-kernel%EF%BC%9Apython/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>使用环境：Vscode 和Jupyter Notebook 相关插件</p>
@@ -1332,120 +1318,6 @@ alt="image-20230118215647728" />
         <tag>Vscode</tag>
         <tag>Jupyter Notebook</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Windows 超赞软件 &amp; 扩展 &amp; 网站</title>
-    <url>/Windows%20%E8%B6%85%E8%B5%9E%E8%BD%AF%E4%BB%B6%20&amp;%20%E6%89%A9%E5%B1%95%20&amp;%20%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="软件">软件:</h4>
-<ul>
-<li><p>Edge浏览器（已换谷歌内核，且扩展丰富，无需翻墙即可添加多数Google扩展），Chrome浏览器、360极速浏览器、</p></li>
-<li><p>Foxmail（邮箱）、Bandizip（解压软件）、LICEcap（录屏GIF）、Snipaste（截图，贴图）、FastStone
-Image Viewer（图片查看器）</p></li>
-<li><p>Typora（Markdown编辑器）、Listary（快速搜索文件文件夹）、百度网盘、PanDownload（百度云解除）、Xmind(思维导图)</p></li>
-<li><p>ripgrep(命令行搜索软件，用于搜索纯文本文件内容)、<a
-href="https://chocolatey.org/install">Chocolatey</a>(软件管理，下载一些Windows的命令行工具)、rga(ripgrep-all，可搜pdf等其他格式)</p></li>
-<li><p>QQ OCR(没错，qq自带OCR!!!)、天若OCR、Quicker（快捷面板）、Utools
-(和quicker有些像)、手心输入法（最后还是换回搜狗，不得不承认搜狗的强大）、(PDF-XChange
-Editor、文电通pdf阅读器)、</p></li>
-<li><p>One
-commander(文件资源管理器)、Clover（文件资源管理器标签化）、DeskPins1.3（窗口置顶）、Spacesniff(直观地看到文件和文件夹的磁盘空间占用情况)、Coodesker(桌面管理软件)、Files
-uwp preview(文件资源管理器)</p></li>
-<li><p>MobaXterm
-(ssh客户端，最推荐，功能很多，不止ssh)、Putty(ssh客户端，比较mini)、Xshell（ssh客户端，朋友用过，自己木有）Windows
-Terminal（终端）</p></li>
-<li><p>IDE&amp;编辑器<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="编辑器就是纯编辑文本的编辑器、IDE是带有软件开发功能的“集成开发环境”。目前的编辑器功能强大，基本可以算作是IDE。简单点说自称IDE的IDE能做的活，自称编辑器的IDE未必能做，自称编辑器的IDE能做的活，自称IDE的IDE基本能做。
-">[1]</span></a></sup>：Vscode(Python、Markdown、LaTex等我都行，牛不牛)、Sublime
-Text、Thonny（Python）</p></li>
-<li><p>科研绘图：</p>
-<ul>
-<li>软件：origin、Photoshop、Adobe Illustrator</li>
-<li>网址：BioRender（生物类绘图）、Scidraw（专为SCI写作插图提供素材）、</li>
-</ul></li>
-</ul>
-<h4 id="edge扩展">Edge扩展</h4>
-<ul>
-<li>Adblock （广告拦截）</li>
-<li>Dark Reader (暗黑模式)</li>
-<li>Fireshot-capture page(截图)</li>
-<li>Infinity pro （好看好用的标签页）</li>
-<li>IGG谷歌学术助手</li>
-<li>沙拉查词</li>
-<li>壹伴（公众号助手）</li>
-</ul>
-<h4 id="网址">网址</h4>
-<ul>
-<li><p>软件下载：https://en.softonic.com/</p></li>
-<li><p>135编辑器（公众号排版）：https://www.135editor.com/</p></li>
-<li><p>创客贴（公众号封面）：https://www.chuangkit.com/</p></li>
-<li><p>LaTex在线：https://www.overleaf.com/</p></li>
-</ul>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">编辑器就是纯编辑文本的编辑器、IDE是带有软件开发功能的“集成开发环境”。目前的编辑器功能强大，基本可以算作是IDE。简单点说自称IDE的IDE能做的活，自称编辑器的IDE未必能做，自称编辑器的IDE能做的活，自称IDE的IDE基本能做。<a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-      </categories>
-      <tags>
-        <tag>Software</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo常用命令</title>
-    <url>/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li><p><code>hexo clean</code> : 清除缓存</p></li>
-<li><p><code>hexo g</code> : generate 生成页面</p></li>
-<li><p><code>hexo s</code>: server 启动本地服务预览,
-将给出的链接复制粘贴到浏览器地址栏即可预览</p></li>
-<li><p><code>hexo d</code>: deploy 部署发布</p>
-<span id="more"></span></li>
-</ul>
-<p>创建文章：layout有三种：post(会发布)、draft(草稿)、page(首页标签页)。三种文章的模板文档在根文档夹的scaffolds里。命令：<code>hexo n [layout] 文档名</code></p>
-<ul>
-<li><code>hexo n 第一篇文章</code>:
-添加名为第一篇文章的发布文章（不加layout, 默认layout是post）</li>
-<li><code>hexo n draft 第二篇文章</code>:
-添加名为第二篇文章的草稿文章，不发布</li>
-<li><code>hexo P 第二篇文章</code>: 草稿文章发布，即将文章从
-<code>source/_drafts</code> 移动到 <code>source/_posts</code></li>
-<li><code>hexo n page 测试页</code>：添加名为测试页的页面，页面不会出现在首页文章列表和归档中，也不支持分类和标签<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Hexo的常用命令](https://blog.csdn.net/sinat_37529938/article/details/111782829)
-">[1]</span></a></sup>，访问地址为：<code>主页地址/测试页</code></li>
-</ul>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/sinat_37529938/article/details/111782829">Hexo的常用命令</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>博客运营</category>
-        <category>其它</category>
-      </categories>
   </entry>
   <entry>
     <title>论文投稿之cover letter</title>
@@ -1871,6 +1743,134 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </categories>
   </entry>
   <entry>
+    <title>Hexo代码块折叠功能</title>
+    <url>/hexo%E4%BB%A3%E7%A0%81%E5%9D%97%E6%8A%98%E5%8F%A0%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="说明">说明</h3>
+<p>实现同样的效果：</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237971.gif" /></p>
+<p>本博客环境：<code>hexo@6.2.0</code>，<code>next@7.8.0</code>，以下所有代码，建立在这个基础之上。</p>
+<p>由 jQuery
+选择器选择代码模块<code>.highlight</code>相关的DOM节点，给超过某个高度的代码模块添加展开收起的盒子，让盒子实现展开隐藏效果。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[hexo博客代码折叠功能](https://www.toimc.com/hexo-usage-2/)">[1]</span></a></sup></p>
+<p><code>hexo version</code>即可查看hexo版本；</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237479.png" /></p>
+<p>查看<code>theme/next/package.json</code>即可查看next版本；</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237584.png" /></p>
+<span id="more"></span>
+<h3 id="添加-code-unfold.js">1、添加 code-unfold.js</h3>
+<p>把<code>code-unfold.js</code>放置在了<code>themes/next/source/js/code-unfold.js</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var CODE_MAX_HEIGHT = 200;</span><br><span class="line">var containers = [];</span><br><span class="line"></span><br><span class="line">// 展开</span><br><span class="line">$(&#x27;body&#x27;).on(&#x27;click&#x27;, &#x27;.js_unfold_code_btn&#x27;, function () &#123;</span><br><span class="line">  $(this).closest(&#x27;.js_highlight_container&#x27;).addClass(&#x27;on&#x27;);</span><br><span class="line">&#125;);</span><br><span class="line">// 收起</span><br><span class="line">$(&#x27;body&#x27;).on(&#x27;click&#x27;, &#x27;.js_retract_code_btn&#x27;, function () &#123;</span><br><span class="line">  var $container = $(this).closest(&#x27;.js_highlight_container&#x27;).removeClass(&#x27;on&#x27;);</span><br><span class="line">  var winTop = $(window).scrollTop();</span><br><span class="line">  var offsetTop = $container.offset().top;</span><br><span class="line">  $(this).css(&#x27;top&#x27;, 0);</span><br><span class="line">  if (winTop &gt; offsetTop) &#123;</span><br><span class="line">    // 设置滚动条位置</span><br><span class="line">    $(&#x27;body, html&#x27;).animate(&#123;</span><br><span class="line">      scrollTop: $container.offset().top - CODE_MAX_HEIGHT</span><br><span class="line">    &#125;, 600);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line">// 滚动事件，触发动画效果</span><br><span class="line">$(window).on(&#x27;scroll&#x27;, function () &#123;</span><br><span class="line">  var scrollTop = $(window).scrollTop();</span><br><span class="line">  var temp = [];</span><br><span class="line">  for (let i = 0; i &lt; containers.length; i++) &#123;</span><br><span class="line">    var item = containers[i];</span><br><span class="line">    var &#123; $container, height, $hide, hasHorizontalScrollbar &#125; = item;</span><br><span class="line">    if ($container.closest(&#x27;body&#x27;).length === 0) &#123;</span><br><span class="line">      // 如果 $container 元素已经不在页面上, 则删除该元素</span><br><span class="line">      // 防止pjax页面跳转之后，元素未删除</span><br><span class="line">      continue;</span><br><span class="line">    &#125;</span><br><span class="line">    temp.push(item);</span><br><span class="line">    if (!$container.hasClass(&#x27;on&#x27;)) &#123;</span><br><span class="line">      continue;</span><br><span class="line">    &#125;</span><br><span class="line">    var offsetTop = $container.offset().top;</span><br><span class="line">    var hideBtnHeight = $hide.outerHeight();</span><br><span class="line">    // 减去按钮高度，减去底部滚动条高度</span><br><span class="line">    var maxTop = parseInt(height - (hasHorizontalScrollbar ? 17 : 0) - hideBtnHeight);</span><br><span class="line">    let top = parseInt(</span><br><span class="line">      Math.min(</span><br><span class="line">        Math.max(scrollTop - offsetTop, 0), // 如果小于 0 ，则取 0</span><br><span class="line">        maxTop,// 如果大于 height ，则取 height</span><br><span class="line">      )</span><br><span class="line">    );</span><br><span class="line">    // 根据 sin 曲线设置&quot;收起代码&quot;位置</span><br><span class="line">    var halfHeight = parseInt($(window).height() / 2 * Math.sin((top / maxTop) * 90 * (2 * Math.PI/360)));</span><br><span class="line">    $hide.css(&#x27;top&#x27;, Math.min(top + halfHeight, maxTop));</span><br><span class="line">  &#125;</span><br><span class="line">  containers = temp;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">// 添加隐藏容器</span><br><span class="line">function addCodeWrap($node) &#123;</span><br><span class="line">  var $container = $node.wrap(&#x27;&lt;div class=&quot;js_highlight_container highlight-container&quot;&gt;&lt;div class=&quot;highlight-wrap&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#x27;).closest(&#x27;.js_highlight_container&#x27;);</span><br><span class="line"></span><br><span class="line">  // 底部 &quot;展开代码&quot; 与 侧边栏 &quot;收起代码&quot;</span><br><span class="line">  var $btn = $(`</span><br><span class="line">    &lt;div class=&quot;highlight-footer&quot;&gt;</span><br><span class="line">      &lt;a class=&quot;js_unfold_code_btn show-btn&quot; href=&quot;javascript:;&quot;&gt;展开代码&lt;i class=&quot;fa fa-angle-down&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/a&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;a class=&quot;js_retract_code_btn hide-btn&quot; href=&quot;javascript:;&quot;&gt;&lt;i class=&quot;fa fa-angle-up&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;收起代码&lt;/a&gt;</span><br><span class="line">  `);</span><br><span class="line"></span><br><span class="line">  $container.append($btn);</span><br><span class="line">  return $container;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">function codeUnfold () &#123;</span><br><span class="line">  $(&#x27;.highlight&#x27;).each(function () &#123;</span><br><span class="line">    // 防止重复渲染</span><br><span class="line">    if (this.__render__ === true) &#123;</span><br><span class="line">      return true;</span><br><span class="line">    &#125;</span><br><span class="line">    this.__render__ = true;</span><br><span class="line">    var $this = $(this);</span><br><span class="line">    var height = $(this).outerHeight();</span><br><span class="line">    if (height &gt; CODE_MAX_HEIGHT) &#123;</span><br><span class="line">      // 添加展开&amp;收起容器</span><br><span class="line">      var $container = addCodeWrap($this, height);</span><br><span class="line">      containers.push(&#123;</span><br><span class="line">        $container,</span><br><span class="line">        height,</span><br><span class="line">        $hide: $container.find(&#x27;.js_retract_code_btn&#x27;),</span><br><span class="line">        hasHorizontalScrollbar: this.scrollWidth &gt; this.offsetWidth,</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="添加-jquery">2、添加 jquery</h3>
+<p>修改next主题配置文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fancybox: true  </span><br></pre></td></tr></table></figure>
+<p>因为<code>fancybox</code>会依赖<code>jquery</code>，所以设置成<code>true</code>；</p>
+<h3 id="引用-code-unfold.js">3、引用 code-unfold.js</h3>
+<p>修改文件<code>themes/next/layout/_scripts/index.njk</code></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 在最后添加  </span><br><span class="line">&#123;&#123;- next_js(&#x27;code-unfold.js&#x27;) &#125;&#125;  </span><br></pre></td></tr></table></figure>
+<p>next8.0的模板是使用njk，旧版是使用swig<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Hexo-5.x 与 NexT-8.x 跨版本升级](https://www.imczw.com/post/tech/hexo5-next8-updated.html#more)
+">[2]</span></a></sup>；我的next是7.8版本，没有 <code>index.njk</code>
+文件只有 <code>index.swig</code>
+文件；查看了njk文件感觉和添加进去的代码格式似乎没有差别，尝试将以上代码添加到
+<code>index.swig</code> 文件中；</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237664.png" /></p>
+<p>下面找到文件<code>themes/next/source/js/next-boot.js</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">NexT.boot.refresh = function () &#123;  </span><br><span class="line">  // 添加一行代码  </span><br><span class="line">  codeUnfold()  </span><br><span class="line">    </span><br><span class="line">  // ...</span><br></pre></td></tr></table></figure>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237750.png" /></p>
+<h3 id="添加样式">4、添加样式</h3>
+<p>1、创建 <code>highlight.styl</code>
+可以添加<code>theme/next/source/css/_common/components/highlight.styl</code>文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 展开收起效果</span><br><span class="line">.highlight-container</span><br><span class="line">  position: relative</span><br><span class="line">  background-color: highlight-background</span><br><span class="line">  &amp;.on</span><br><span class="line">    .highlight-footer</span><br><span class="line">      display: none</span><br><span class="line">    .hide-btn</span><br><span class="line">      display: flex</span><br><span class="line">    .highlight-wrap</span><br><span class="line">      max-height: none</span><br><span class="line">  .highlight-wrap</span><br><span class="line">    overflow: hidden</span><br><span class="line">    max-height: 200px</span><br><span class="line">  .highlight-footer</span><br><span class="line">    position absolute</span><br><span class="line">    width: 100%</span><br><span class="line">    left: 0</span><br><span class="line">    bottom: 0</span><br><span class="line">    height: 60px</span><br><span class="line">    background-image: &#x27;linear-gradient(-180deg, rgba(255,255,255,0) 0%, %s 65%)&#x27; % highlight-background;</span><br><span class="line">    text-align: center</span><br><span class="line">  .show-btn</span><br><span class="line">    font-size: 12px</span><br><span class="line">    color: #fff</span><br><span class="line">    position: absolute</span><br><span class="line">    left: 50%</span><br><span class="line">    transform: translateX(-50%)</span><br><span class="line">    bottom: 0</span><br><span class="line">    line-height: 2em</span><br><span class="line">    text-decoration: none</span><br><span class="line">    padding: 0 0.8em</span><br><span class="line">    text-align: center</span><br><span class="line">    border-radius: 4px 4px 0</span><br><span class="line">    &amp;:hover</span><br><span class="line">      text-decoration: none</span><br><span class="line">  .hide-btn</span><br><span class="line">    color: #fff</span><br><span class="line">    font-size: 12px</span><br><span class="line">    width: 22px</span><br><span class="line">    position: absolute</span><br><span class="line">    left: -21px</span><br><span class="line">    top: 0</span><br><span class="line">    line-height: 1em</span><br><span class="line">    text-decoration: none</span><br><span class="line">    text-align: center</span><br><span class="line">    display: none</span><br><span class="line">    flex-direction: column</span><br><span class="line">    background-color: highlight-background</span><br><span class="line">    border-radius: 4px 0 0 4px</span><br><span class="line">    padding: 0.1em 0 0.6em</span><br><span class="line">    transition: top ease 0.35s</span><br><span class="line">  .fa-angle-up,</span><br><span class="line">  .fa-angle-down</span><br><span class="line">    font-style: normal</span><br><span class="line">    color: #fff</span><br><span class="line">  .fa-angle-up:before</span><br><span class="line">    content:&quot;\f106&quot;</span><br><span class="line">  .fa-angle-down:before</span><br><span class="line">    content:&quot;\f107&quot;</span><br><span class="line">    margin-left: 0.5em</span><br><span class="line">  .js_unfold_code_btn, .js_retract_code_btn</span><br><span class="line">    background: rgba(0,0,0,0.5)</span><br><span class="line">    border-bottom: none !important</span><br><span class="line">    &amp;:hover</span><br><span class="line">      border-bottom-color: none !important</span><br></pre></td></tr></table></figure>
+<p>max-height: 200px：为设置代码块折叠之后的高度。</p>
+<p>2、引用样式 找到文件
+<code>themes/next/source/css/_common/components/index.styl</code>：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@import &#x27;post&#x27;;</span><br><span class="line">@import &#x27;pages&#x27;;</span><br><span class="line">@import &#x27;third-party&#x27;;</span><br><span class="line">// 添加这一行，不要加分号！！</span><br><span class="line">@import &#x27;highlight&#x27;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>该目录下（
+<code>themes/next/source/css/_common/components/</code>）没找到
+<code>index.styl</code> ，尝试将 <code>@import 'highlight'</code> 添加到
+<code>components.styl</code> ，看是否可行；</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237863.png" /></p>
+<p>实现了想要的效果，做的修改是可行的！</p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.toimc.com/hexo-usage-2/">hexo博客代码折叠功能</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.imczw.com/post/tech/hexo5-next8-updated.html#more">Hexo-5.x
+与 NexT-8.x 跨版本升级</a><a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>博客运营</category>
+        <category>其它</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hexo常用命令</title>
+    <url>/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li><p><code>hexo clean</code> : 清除缓存</p></li>
+<li><p><code>hexo g</code> : generate 生成页面</p></li>
+<li><p><code>hexo s</code>: server 启动本地服务预览,
+将给出的链接复制粘贴到浏览器地址栏即可预览</p></li>
+<li><p><code>hexo d</code>: deploy 部署发布</p>
+<span id="more"></span></li>
+</ul>
+<p>创建文章：layout有三种：post(会发布)、draft(草稿)、page(首页标签页)。三种文章的模板文档在根文档夹的scaffolds里。命令：<code>hexo n [layout] 文档名</code></p>
+<ul>
+<li><code>hexo n 第一篇文章</code>:
+添加名为第一篇文章的发布文章（不加layout, 默认layout是post）</li>
+<li><code>hexo n draft 第二篇文章</code>:
+添加名为第二篇文章的草稿文章，不发布</li>
+<li><code>hexo P 第二篇文章</code>: 草稿文章发布，即将文章从
+<code>source/_drafts</code> 移动到 <code>source/_posts</code></li>
+<li><code>hexo n page 测试页</code>：添加名为测试页的页面，页面不会出现在首页文章列表和归档中，也不支持分类和标签<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Hexo的常用命令](https://blog.csdn.net/sinat_37529938/article/details/111782829)
+">[1]</span></a></sup>，访问地址为：<code>主页地址/测试页</code></li>
+</ul>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/sinat_37529938/article/details/111782829">Hexo的常用命令</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>博客运营</category>
+        <category>其它</category>
+      </categories>
+  </entry>
+  <entry>
     <title>hexo部署时报错SSL/TLS connection failed</title>
     <url>/hexo%E9%83%A8%E7%BD%B2%E6%97%B6%E6%8A%A5%E9%94%99ssl-tls-connection-failed/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
@@ -1906,38 +1906,6 @@ connection</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
       <categories>
         <category>博客运营</category>
         <category>其它</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Markdown超链接</title>
-    <url>/markdown%E8%B6%85%E9%93%BE%E6%8E%A5/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>行内形式<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Markdown超链接](https://m.imooc.com/wiki/markdownlesson-markdownlink)
-">[1]</span></a></sup>：<code>[百度](https://www.baidu.com/)</code></p>
-<p>全局形式：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[百度][b]</span><br><span class="line">[b]:https://www.baidu.com/</span><br></pre></td></tr></table></figure>
-<p>当一个超链接在文章中反复出现时，可以使用全局声明的形式，减少文章编写的工作量。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[天坛][tiantan]公园，是明清两代皇帝每年祭天和祈祷五谷丰收的地方。[天坛][tiantan]以严谨的建筑布局、奇特的建筑构造和瑰丽的建筑装饰着称于世。</span><br><span class="line">[tiantan]: http://www.tiantanpark.com</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://m.imooc.com/wiki/markdownlesson-markdownlink">Markdown超链接</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>博客运营</category>
-        <category>markdown</category>
       </categories>
   </entry>
   <entry>
@@ -2148,53 +2116,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>Mata分析森林图</title>
-    <url>/mata%E5%88%86%E6%9E%90%E6%A3%AE%E6%9E%97%E5%9B%BE/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>森林图是以统计指标和统计分析方法为基础，用数值运算结果绘制出的图型。用以综合展示每个被纳入研究的效应量以及汇总的合并效应量<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[5分钟教您快速解读meta分析的森林图](https://www.bilibili.com/video/BV1wY4y1C7t2/?spm_id_from=333.788&amp;vd_source=9f04b059fdee5024fd04678f53de10ad)
-">[1]</span></a></sup>。</p>
-<h3 id="连续变量">连续变量</h3>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182055153.png" alt="" style="zoom:67%;" /></p>
-<span id="more"></span>
-<p>异质性<span
-class="math inline">\(I^2\)</span>,它的数值代表这三篇RCT有没有明显差异，差异越小说明得出综合效应的结果越可靠，小于20%说明异质性小，大于50%说明异质性较大。</p>
-<p>favours代表菱形框往哪边偏倚支持那边就是更好的方法。</p>
-<p>综合效应如果贴到无效线，则无显著差异：</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182134793.png" alt="" style="zoom:23%;" /></p>
-<p>森林图：</p>
-<ul>
-<li>随机效应模型(Random)：随机效应模型是把每一篇RCT的影响力对等，不按它的样本量，把每一篇RCT平均影响综合效应表示出来。</li>
-<li>固定效应模型(Fixed)：固定效应模型是按它的样本量将样本量大的RCT影响权重加大，纳入人群更多的RCT的结果将更影响综合效应。</li>
-</ul>
-<p>一般我们推荐用随机效应模型，因为每一篇RCT都是独立个体，都应均等地影响综合效应，但是一种情况除外那就是其中一个RCT样本量非常大，而其他RCT样本量寥寥无几，那么显然这个样本量大的RCT结果更可靠，更应该权重放大，这就选择固定效应模型。其实不管选择什么模型，做好必要解释就行。</p>
-<h3 id="二分类变量">二分类变量</h3>
-<p>刚刚的图是连续变量，就是用平均值和标准差做比较。而有些结果是通过二分类变量展示的，比如说治愈率，就是总的人数(Tota)和治愈的人数(Events)。软件会自动将Events.定义为不良事件，所以事件发生次数越少，越偏向有利。但是像治愈这种良性事件，我们就需要把下边这个标记换个顺序即可。</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182125244.png" alt="" style="zoom:50%;" /></p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1wY4y1C7t2/?spm_id_from=333.788&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">5分钟教您快速解读meta分析的森林图</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-      </categories>
-      <tags>
-        <tag>Meta分析</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Jupyter Notebook 使用</title>
     <url>/jupyter-notebook-%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="改变默认路径">1、改变默认路径</h3>
@@ -2259,33 +2180,29 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://w
       </tags>
   </entry>
   <entry>
-    <title>Next主题添加切换暗黑模式</title>
-    <url>/next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E5%88%87%E6%8D%A2%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>安装 <code>hexo-next-darkmode</code> <a
-href="https://github.com/rqh656418510/hexo-next-darkmode/blob/main/README_CN.md">插件</a><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+    <title>Mata分析森林图</title>
+    <url>/mata%E5%88%86%E6%9E%90%E6%A3%AE%E6%9E%97%E5%9B%BE/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>森林图是以统计指标和统计分析方法为基础，用数值运算结果绘制出的图型。用以综合展示每个被纳入研究的效应量以及汇总的合并效应量<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
 class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Hexo Next 8.x 主题添加可切换的暗黑模式](https://www.techgrow.cn/posts/abf4aee1.html#Next-7-x-%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%8F%AF%E5%88%87%E6%8D%A2%E7%9A%84%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F)
-">[1]</span></a></sup></p>
-<p>windows管理员打开powershell，运行一下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-next-darkmode --save --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+aria-label="[5分钟教您快速解读meta分析的森林图](https://www.bilibili.com/video/BV1wY4y1C7t2/?spm_id_from=333.788&amp;vd_source=9f04b059fdee5024fd04678f53de10ad)
+">[1]</span></a></sup>。</p>
+<h3 id="连续变量">连续变量</h3>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182055153.png" alt="" style="zoom:67%;" /></p>
 <span id="more"></span>
-<h3 id="配置-hexo-插件">配置 Hexo 插件</h3>
-<p>在 Next 主题的 <code>_config.yml</code> 配置文档里添加以下内容</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Darkmode JS</span><br><span class="line"># For more information: https://github.com/rqh656418510/hexo-next-darkmode, https://github.com/sandoche/Darkmode.js</span><br><span class="line">darkmode_js:</span><br><span class="line">  enable: true</span><br><span class="line">  bottom: &#x27;64px&#x27; # default: &#x27;32px&#x27;</span><br><span class="line">  right: &#x27;unset&#x27; # default: &#x27;32px&#x27;</span><br><span class="line">  left: &#x27;32px&#x27; # default: &#x27;unset&#x27;</span><br><span class="line">  time: &#x27;0.5s&#x27; # default: &#x27;0.3s&#x27;</span><br><span class="line">  mixColor: &#x27;transparent&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  backgroundColor: &#x27;transparent&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  buttonColorDark: &#x27;#100f2c&#x27; # default: &#x27;#100f2c&#x27;</span><br><span class="line">  buttonColorLight: &#x27;#fff&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  isActivated: false # default false</span><br><span class="line">  saveInCookies: true # default: true</span><br><span class="line">  label: &#x27;🌓&#x27; # default: &#x27;&#x27;</span><br><span class="line">  autoMatchOsTheme: true # default: true</span><br><span class="line">  libUrl: # Set custom library cdn url for Darkmode.js</span><br></pre></td></tr></table></figure>
+<p>异质性<span
+class="math inline">\(I^2\)</span>,它的数值代表这三篇RCT有没有明显差异，差异越小说明得出综合效应的结果越可靠，小于20%说明异质性小，大于50%说明异质性较大。</p>
+<p>favours代表菱形框往哪边偏倚支持那边就是更好的方法。</p>
+<p>综合效应如果贴到无效线，则无显著差异：</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182134793.png" alt="" style="zoom:23%;" /></p>
+<p>森林图：</p>
 <ul>
-<li><code>isActivated: true</code>：默认激活暗黑 / 夜间模式，请始终与
-<code>saveInCookies: false</code>、<code>autoMatchOsTheme: false</code>
-一起使用；同时需要在 NexT 主题的 <code>_config.yml</code> 配置文档里设置
-<code>pjax: true</code>，即启用 Pjax。</li>
+<li>随机效应模型(Random)：随机效应模型是把每一篇RCT的影响力对等，不按它的样本量，把每一篇RCT平均影响综合效应表示出来。</li>
+<li>固定效应模型(Fixed)：固定效应模型是按它的样本量将样本量大的RCT影响权重加大，纳入人群更多的RCT的结果将更影响综合效应。</li>
 </ul>
-<h3 id="关闭原生的暗黑模式">关闭原生的暗黑模式</h3>
-<p>确保 Next 原生的 <code>darkmode</code> 选项设置为
-<code>false</code>，在 Next 的 <code>_config.yml</code>
-配置文档中更改以下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">darkmode: false</span><br></pre></td></tr></table></figure>
-<p>Hexo
-重新构建生成静态资源文档后，点击页面上的按钮即可切换暗黑模式：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
+<p>一般我们推荐用随机效应模型，因为每一篇RCT都是独立个体，都应均等地影响综合效应，但是一种情况除外那就是其中一个RCT样本量非常大，而其他RCT样本量寥寥无几，那么显然这个样本量大的RCT结果更可靠，更应该权重放大，这就选择固定效应模型。其实不管选择什么模型，做好必要解释就行。</p>
+<h3 id="二分类变量">二分类变量</h3>
+<p>刚刚的图是连续变量，就是用平均值和标准差做比较。而有些结果是通过二分类变量展示的，比如说治愈率，就是总的人数(Tota)和治愈的人数(Events)。软件会自动将Events.定义为不良事件，所以事件发生次数越少，越偏向有利。但是像治愈这种良性事件，我们就需要把下边这个标记换个顺序即可。</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182125244.png" alt="" style="zoom:50%;" /></p>
 <h3 id="参考文章">参考文章</h3>
 <div id="footnotes">
 <hr>
@@ -2294,8 +2211,7 @@ aria-label="[Hexo Next 8.x 主题添加可切换的暗黑模式](https://www.tec
 <li id="fn:1">
 <span
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.techgrow.cn/posts/abf4aee1.html#Next-7-x-%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%8F%AF%E5%88%87%E6%8D%A2%E7%9A%84%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F">Hexo
-Next 8.x 主题添加可切换的暗黑模式</a><a href="#fnref:1" rev="footnote">
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1wY4y1C7t2/?spm_id_from=333.788&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">5分钟教您快速解读meta分析的森林图</a><a href="#fnref:1" rev="footnote">
 ↩︎</a></span>
 </li>
 </ol>
@@ -2303,9 +2219,12 @@ Next 8.x 主题添加可切换的暗黑模式</a><a href="#fnref:1" rev="footnot
 </div>
 ]]></content>
       <categories>
-        <category>博客运营</category>
-        <category>其它</category>
+        <category>科研学习</category>
+        <category>理论知识</category>
       </categories>
+      <tags>
+        <tag>Meta分析</tag>
+      </tags>
   </entry>
   <entry>
     <title>Meta分析基本知识</title>
@@ -2460,6 +2379,252 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
+    <title>Next主题添加切换暗黑模式</title>
+    <url>/next%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E5%88%87%E6%8D%A2%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>安装 <code>hexo-next-darkmode</code> <a
+href="https://github.com/rqh656418510/hexo-next-darkmode/blob/main/README_CN.md">插件</a><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Hexo Next 8.x 主题添加可切换的暗黑模式](https://www.techgrow.cn/posts/abf4aee1.html#Next-7-x-%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%8F%AF%E5%88%87%E6%8D%A2%E7%9A%84%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F)
+">[1]</span></a></sup></p>
+<p>windows管理员打开powershell，运行一下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-next-darkmode --save --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h3 id="配置-hexo-插件">配置 Hexo 插件</h3>
+<p>在 Next 主题的 <code>_config.yml</code> 配置文档里添加以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Darkmode JS</span><br><span class="line"># For more information: https://github.com/rqh656418510/hexo-next-darkmode, https://github.com/sandoche/Darkmode.js</span><br><span class="line">darkmode_js:</span><br><span class="line">  enable: true</span><br><span class="line">  bottom: &#x27;64px&#x27; # default: &#x27;32px&#x27;</span><br><span class="line">  right: &#x27;unset&#x27; # default: &#x27;32px&#x27;</span><br><span class="line">  left: &#x27;32px&#x27; # default: &#x27;unset&#x27;</span><br><span class="line">  time: &#x27;0.5s&#x27; # default: &#x27;0.3s&#x27;</span><br><span class="line">  mixColor: &#x27;transparent&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  backgroundColor: &#x27;transparent&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  buttonColorDark: &#x27;#100f2c&#x27; # default: &#x27;#100f2c&#x27;</span><br><span class="line">  buttonColorLight: &#x27;#fff&#x27; # default: &#x27;#fff&#x27;</span><br><span class="line">  isActivated: false # default false</span><br><span class="line">  saveInCookies: true # default: true</span><br><span class="line">  label: &#x27;🌓&#x27; # default: &#x27;&#x27;</span><br><span class="line">  autoMatchOsTheme: true # default: true</span><br><span class="line">  libUrl: # Set custom library cdn url for Darkmode.js</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>isActivated: true</code>：默认激活暗黑 / 夜间模式，请始终与
+<code>saveInCookies: false</code>、<code>autoMatchOsTheme: false</code>
+一起使用；同时需要在 NexT 主题的 <code>_config.yml</code> 配置文档里设置
+<code>pjax: true</code>，即启用 Pjax。</li>
+</ul>
+<h3 id="关闭原生的暗黑模式">关闭原生的暗黑模式</h3>
+<p>确保 Next 原生的 <code>darkmode</code> 选项设置为
+<code>false</code>，在 Next 的 <code>_config.yml</code>
+配置文档中更改以下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">darkmode: false</span><br></pre></td></tr></table></figure>
+<p>Hexo
+重新构建生成静态资源文档后，点击页面上的按钮即可切换暗黑模式：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.techgrow.cn/posts/abf4aee1.html#Next-7-x-%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%8F%AF%E5%88%87%E6%8D%A2%E7%9A%84%E6%9A%97%E9%BB%91%E6%A8%A1%E5%BC%8F">Hexo
+Next 8.x 主题添加可切换的暗黑模式</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>博客运营</category>
+        <category>其它</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Numpy不用省略号和科学计数法</title>
+    <url>/numpy%E4%B8%8D%E7%94%A8%E7%9C%81%E7%95%A5%E5%8F%B7%E5%92%8C%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">np.set_printoptions(threshold = np.inf) <span class="comment"># 不使用省略号表示</span></span><br><span class="line">np.set_printoptions(suppress = <span class="literal">True</span>) <span class="comment"># 不使用科学计数显示</span></span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>代码相关</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>Numpy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Markdown超链接</title>
+    <url>/markdown%E8%B6%85%E9%93%BE%E6%8E%A5/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>行内形式<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Markdown超链接](https://m.imooc.com/wiki/markdownlesson-markdownlink)
+">[1]</span></a></sup>：<code>[百度](https://www.baidu.com/)</code></p>
+<p>全局形式：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[百度][b]</span><br><span class="line">[b]:https://www.baidu.com/</span><br></pre></td></tr></table></figure>
+<p>当一个超链接在文章中反复出现时，可以使用全局声明的形式，减少文章编写的工作量。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[天坛][tiantan]公园，是明清两代皇帝每年祭天和祈祷五谷丰收的地方。[天坛][tiantan]以严谨的建筑布局、奇特的建筑构造和瑰丽的建筑装饰着称于世。</span><br><span class="line">[tiantan]: http://www.tiantanpark.com</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://m.imooc.com/wiki/markdownlesson-markdownlink">Markdown超链接</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>博客运营</category>
+        <category>markdown</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Obsidian/Typora图床：腾讯云COS+Picgo</title>
+    <url>/obsidian%E5%9B%BE%E5%BA%8A%EF%BC%9A%E8%85%BE%E8%AE%AF%E4%BA%91cos-picgo/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：</p>
+<ul>
+<li><p>Obsidian实现图床功能</p></li>
+<li><p>图床换成腾讯云</p></li>
+<li><p>Obsidian/Typora实现可选择图片是否上传图床</p>
+<span id="more"></span></li>
+</ul>
+<h5 id="注册腾讯云账号创建-cos-存储桶">1、注册腾讯云账号，创建 COS
+存储桶</h5>
+<p>对象存储（Cloud Object
+Storage，COS）是腾讯云提供的⼀种存储海量⽂件的分布式存储服务，⽤户可通过⽹络随时存储和查看数据。通过
+COS 可以进⾏任意格式⽂件的上传、下载和管理。 注册：略 创建 COS
+存储桶<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="https://cloud.tencent.com/developer/article/2175760?from=15425&amp;areaSource=102001.1&amp;traceId=rScBYp1UZMEgRry4X3S5G">[1]</span></a></sup>：
+<img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616052.png" />
+<img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616087.png" /></p>
+<ul>
+<li>高级可选配置默认即可</li>
+<li>配置好之后创建</li>
+</ul>
+<h5 id="获取腾讯云cos密钥及基本信息">2、获取腾讯云COS密钥及基本信息</h5>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616142.png" /></p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616198.png" />
+在控制台 对象存储 中获取基本信息： <img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616267.png" /></p>
+<h5 id="picgo配置">3、Picgo配置</h5>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616330.png" /></p>
+<h5 id="obsidian-typora配置及图片上传">4、Obsidian /
+Typora配置及图片上传</h5>
+<p>安装插件：Image auto upload
+Plugin<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="https://sspai.com/post/72562">[2]</span></a></sup>
+默认配置，粘贴图片即可自动上传图片到图床。</p>
+<p>个人需求配置：取消粘贴即自动上传，图片有需要上传到图床时，通过命令行模式一键上传文章内的图片。</p>
+<p>命令行模式： 以文章为单位，在 Obsidian 中，按下命令行快捷键 Ctrl /
+Command + P，并选择 "upload all
+images"<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="https://sspai.com/post/75765
+">[3]</span></a></sup>。</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616415.png" /></p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616484.png" /></p>
+<p>Typora配置情况：</p>
+<p>同样设置粘贴不自动上传图片，需上传时右键再点击上传图片即可；</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301182208994.png" /></p>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">https://cloud.tencent.com/developer/article/2175760?from=15425&amp;areaSource=102001.1&amp;traceId=rScBYp1UZMEgRry4X3S5G<a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">https://sspai.com/post/72562<a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:3">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">https://sspai.com/post/75765<a href="#fnref:3" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>博客运营</category>
+        <category>markdown</category>
+      </categories>
+      <tags>
+        <tag>Obsidian</tag>
+        <tag>Picgo</tag>
+        <tag>腾讯云COS</tag>
+        <tag>图床</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Obsidian插件之Dataview</title>
+    <url>/obsidian%E6%8F%92%E4%BB%B6%E4%B9%8Bdataview/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、下载并启用插件
+2、写相应代码块<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Obsidian 插件之 Dataview](https://sspai.com/post/68183)
+">[1]</span></a></sup></p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302211102135.png" /></p>
+<ul>
+<li>list：展现形式。创建列表，还有 table、task 可以选择</li>
+<li>from：检索范围。从哪个文件夹（写在双引号里面），或者标签（写在#后面）</li>
+<li>where：</li>
+<li></li>
+<li>聚合条件。contains(file.name,"Dataview") 就是匹配文件名为 “Dataview”
+的文件</li>
+<li>sort：排序，根据什么做排序。 sort file.ctime
+就是根据文件的创建时间正序</li>
+</ul>
+<span id="more"></span>
+<p>一些自带的元数据：</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302211102234.png" /></p>
+<p>yml标记语言：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title:</span><br><span class="line">author:</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>title、author、tags这里都是yml语言的key，key可以自定义，也可支持中英文，dataview也是可以识别使用的；</p>
+<p>例子：</p>
+<p>前后加三个 ` ，前面的三个 ` 记得加上dataview，中间加入一下内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">table Title, Status</span><br><span class="line">from #test</span><br><span class="line">where</span><br><span class="line">contains(file.name,&quot;aa&quot;)</span><br><span class="line">sort file.ctime</span><br></pre></td></tr></table></figure>
+<p>创建一个tab，文章从test标签中查找，且文件名含有aa的文章，表格表头为file,
+Title, Status。</p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://sspai.com/post/68183">Obsidian
+插件之 Dataview</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>博客运营</category>
+        <category>markdown</category>
+      </categories>
+      <tags>
+        <tag>Obsidian插件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>NPM---Node 包管理器</title>
     <url>/npm-node-%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>npm（“Node 包管理器”）是 JavaScript 运行时 Node.js
@@ -2595,95 +2760,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>Obsidian插件之Dataview</title>
-    <url>/obsidian%E6%8F%92%E4%BB%B6%E4%B9%8Bdataview/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、下载并启用插件
-2、写相应代码块<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Obsidian 插件之 Dataview](https://sspai.com/post/68183)
-">[1]</span></a></sup></p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302211102135.png" /></p>
-<ul>
-<li>list：展现形式。创建列表，还有 table、task 可以选择</li>
-<li>from：检索范围。从哪个文件夹（写在双引号里面），或者标签（写在#后面）</li>
-<li>where：</li>
-<li></li>
-<li>聚合条件。contains(file.name,"Dataview") 就是匹配文件名为 “Dataview”
-的文件</li>
-<li>sort：排序，根据什么做排序。 sort file.ctime
-就是根据文件的创建时间正序</li>
-</ul>
-<span id="more"></span>
-<p>一些自带的元数据：</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302211102234.png" /></p>
-<p>yml标记语言：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title:</span><br><span class="line">author:</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>title、author、tags这里都是yml语言的key，key可以自定义，也可支持中英文，dataview也是可以识别使用的；</p>
-<p>例子：</p>
-<p>前后加三个 ` ，前面的三个 ` 记得加上dataview，中间加入一下内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">table Title, Status</span><br><span class="line">from #test</span><br><span class="line">where</span><br><span class="line">contains(file.name,&quot;aa&quot;)</span><br><span class="line">sort file.ctime</span><br></pre></td></tr></table></figure>
-<p>创建一个tab，文章从test标签中查找，且文件名含有aa的文章，表格表头为file,
-Title, Status。</p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://sspai.com/post/68183">Obsidian
-插件之 Dataview</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>博客运营</category>
-        <category>markdown</category>
-      </categories>
-      <tags>
-        <tag>Obsidian插件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Numpy不用省略号和科学计数法</title>
-    <url>/numpy%E4%B8%8D%E7%94%A8%E7%9C%81%E7%95%A5%E5%8F%B7%E5%92%8C%E7%A7%91%E5%AD%A6%E8%AE%A1%E6%95%B0%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">np.set_printoptions(threshold = np.inf) <span class="comment"># 不使用省略号表示</span></span><br><span class="line">np.set_printoptions(suppress = <span class="literal">True</span>) <span class="comment"># 不使用科学计数显示</span></span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>代码相关</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>Numpy</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>P1科研四部曲：论文作图、数据处理、大学技巧、实验图等</title>
-    <url>/p1%E7%A7%91%E7%A0%94%E5%9B%9B%E9%83%A8%E6%9B%B2%EF%BC%9A%E8%AE%BA%E6%96%87%E4%BD%9C%E5%9B%BE%E3%80%81%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E3%80%81%E5%A4%A7%E5%AD%A6%E6%8A%80%E5%B7%A7%E3%80%81%E5%AE%9E%E9%AA%8C%E5%9B%BE%E7%AD%89/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>笔记来源：https://www.bilibili.com/video/BV1F4411e7nw?p=1&amp;vd_source=9f04b059fdee5024fd04678f53de10ad</p>
-<span id="more"></span>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651883.png" alt="" style="zoom:20%;" /></p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651824.png" alt="" style="zoom:20%;" /></p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651577.png" alt="" style="zoom:20%;" /></p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651140.png" alt="" style="zoom:20%;" /></p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651451.png" alt="" style="zoom:20%;" /></p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-      </categories>
-      <tags>
-        <tag>科研绘图</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>P2七校巡回演讲002图像基础知识和规范</title>
     <url>/p2%E4%B8%83%E6%A0%A1%E5%B7%A1%E5%9B%9E%E6%BC%94%E8%AE%B2002%E5%9B%BE%E5%83%8F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%92%8C%E8%A7%84%E8%8C%83/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141655230.png" alt="" style="zoom:20%;" /></p>
@@ -2728,63 +2804,31 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>Obsidian/Typora图床：腾讯云COS+Picgo</title>
-    <url>/obsidian%E5%9B%BE%E5%BA%8A%EF%BC%9A%E8%85%BE%E8%AE%AF%E4%BA%91cos-picgo/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：</p>
+    <title>Python (matplotlib)保存矢量图</title>
+    <url>/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="保存矢量图">保存矢量图</h3>
+<p>语法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Python中Matplotlib Savefig()不同参数的使用](https://blog.csdn.net/wilbeok/article/details/111194473)
+">[1]</span></a></sup>：</p>
+<p><code>savefig(fname, dpi=None, facecolor=’w’, edgecolor=’w’, orientation=’portrait’, papertype=None, format=None, transparent=False, bbox_inches=None, pad_inches=0.1, frameon=None, metadata=None)</code></p>
+<p>简单使用：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.savefig(<span class="string">&#x27;C:\\Users\\Lenovo\\Pictures\\test03.svg&#x27;</span>, <span class="built_in">format</span>=<span class="string">&#x27;svg&#x27;</span>,dpi = <span class="number">600</span>,transparent=<span class="literal">False</span>,bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
 <ul>
-<li><p>Obsidian实现图床功能</p></li>
-<li><p>图床换成腾讯云</p></li>
-<li><p>Obsidian/Typora实现可选择图片是否上传图床</p>
-<span id="more"></span></li>
+<li>fname即
+<code>test03.svg</code>，<code>format='svg'</code>，<code>dpi = 600</code>
+为导出矢量图的三个参数</li>
+<li><code>transparent=False</code> ：照片背景不要透明</li>
+<li><code>bbox_inches='tight'</code>
+：使未保存到图中的图例（或其他部分）包含进来，避免图片保存下来不全。bbox_inches的作用是调整图的bbox,
+即bounding
+box(边界框)<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Python_matplotlib图例放在外侧保存时显示不完整问题解决](https://blog.csdn.net/Poul_henry/article/details/88311964)
+">[2]</span></a></sup></li>
 </ul>
-<h5 id="注册腾讯云账号创建-cos-存储桶">1、注册腾讯云账号，创建 COS
-存储桶</h5>
-<p>对象存储（Cloud Object
-Storage，COS）是腾讯云提供的⼀种存储海量⽂件的分布式存储服务，⽤户可通过⽹络随时存储和查看数据。通过
-COS 可以进⾏任意格式⽂件的上传、下载和管理。 注册：略 创建 COS
-存储桶<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://cloud.tencent.com/developer/article/2175760?from=15425&amp;areaSource=102001.1&amp;traceId=rScBYp1UZMEgRry4X3S5G">[1]</span></a></sup>：
-<img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616052.png" />
-<img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616087.png" /></p>
-<ul>
-<li>高级可选配置默认即可</li>
-<li>配置好之后创建</li>
-</ul>
-<h5 id="获取腾讯云cos密钥及基本信息">2、获取腾讯云COS密钥及基本信息</h5>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616142.png" /></p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616198.png" />
-在控制台 对象存储 中获取基本信息： <img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616267.png" /></p>
-<h5 id="picgo配置">3、Picgo配置</h5>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616330.png" /></p>
-<h5 id="obsidian-typora配置及图片上传">4、Obsidian /
-Typora配置及图片上传</h5>
-<p>安装插件：Image auto upload
-Plugin<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://sspai.com/post/72562">[2]</span></a></sup>
-默认配置，粘贴图片即可自动上传图片到图床。</p>
-<p>个人需求配置：取消粘贴即自动上传，图片有需要上传到图床时，通过命令行模式一键上传文章内的图片。</p>
-<p>命令行模式： 以文章为单位，在 Obsidian 中，按下命令行快捷键 Ctrl /
-Command + P，并选择 "upload all
-images"<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://sspai.com/post/75765
-">[3]</span></a></sup>。</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616415.png" /></p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301181616484.png" /></p>
-<p>Typora配置情况：</p>
-<p>同样设置粘贴不自动上传图片，需上传时右键再点击上传图片即可；</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/202301182208994.png" /></p>
+<span id="more"></span>
+<h3 id="参考文章">参考文章</h3>
 <div id="footnotes">
 <hr>
 <div id="footnotelist">
@@ -2792,19 +2836,14 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img/20230118220
 <li id="fn:1">
 <span
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://cloud.tencent.com/developer/article/2175760?from=15425&amp;areaSource=102001.1&amp;traceId=rScBYp1UZMEgRry4X3S5G<a href="#fnref:1" rev="footnote">
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/wilbeok/article/details/111194473">Python中Matplotlib
+Savefig()不同参数的使用</a><a href="#fnref:1" rev="footnote">
 ↩︎</a></span>
 </li>
 <li id="fn:2">
 <span
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://sspai.com/post/72562<a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:3">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://sspai.com/post/75765<a href="#fnref:3" rev="footnote">
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/Poul_henry/article/details/88311964">Python_matplotlib图例放在外侧保存时显示不完整问题解决</a><a href="#fnref:2" rev="footnote">
 ↩︎</a></span>
 </li>
 </ol>
@@ -2812,14 +2851,31 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://s
 </div>
 ]]></content>
       <categories>
-        <category>博客运营</category>
-        <category>markdown</category>
+        <category>科研学习</category>
+        <category>代码相关</category>
       </categories>
       <tags>
-        <tag>Obsidian</tag>
-        <tag>Picgo</tag>
-        <tag>腾讯云COS</tag>
-        <tag>图床</tag>
+        <tag>Python</tag>
+        <tag>Matplotlib</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>P1科研四部曲：论文作图、数据处理、大学技巧、实验图等</title>
+    <url>/p1%E7%A7%91%E7%A0%94%E5%9B%9B%E9%83%A8%E6%9B%B2%EF%BC%9A%E8%AE%BA%E6%96%87%E4%BD%9C%E5%9B%BE%E3%80%81%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E3%80%81%E5%A4%A7%E5%AD%A6%E6%8A%80%E5%B7%A7%E3%80%81%E5%AE%9E%E9%AA%8C%E5%9B%BE%E7%AD%89/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>笔记来源：https://www.bilibili.com/video/BV1F4411e7nw?p=1&amp;vd_source=9f04b059fdee5024fd04678f53de10ad</p>
+<span id="more"></span>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651883.png" alt="" style="zoom:20%;" /></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651824.png" alt="" style="zoom:20%;" /></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651577.png" alt="" style="zoom:20%;" /></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651140.png" alt="" style="zoom:20%;" /></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401141651451.png" alt="" style="zoom:20%;" /></p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>理论知识</category>
+      </categories>
+      <tags>
+        <tag>科研绘图</tag>
       </tags>
   </entry>
   <entry>
@@ -2933,62 +2989,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>Python (matplotlib)保存矢量图</title>
-    <url>/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="保存矢量图">保存矢量图</h3>
-<p>语法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Python中Matplotlib Savefig()不同参数的使用](https://blog.csdn.net/wilbeok/article/details/111194473)
-">[1]</span></a></sup>：</p>
-<p><code>savefig(fname, dpi=None, facecolor=’w’, edgecolor=’w’, orientation=’portrait’, papertype=None, format=None, transparent=False, bbox_inches=None, pad_inches=0.1, frameon=None, metadata=None)</code></p>
-<p>简单使用：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.savefig(<span class="string">&#x27;C:\\Users\\Lenovo\\Pictures\\test03.svg&#x27;</span>, <span class="built_in">format</span>=<span class="string">&#x27;svg&#x27;</span>,dpi = <span class="number">600</span>,transparent=<span class="literal">False</span>,bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-<ul>
-<li>fname即
-<code>test03.svg</code>，<code>format='svg'</code>，<code>dpi = 600</code>
-为导出矢量图的三个参数</li>
-<li><code>transparent=False</code> ：照片背景不要透明</li>
-<li><code>bbox_inches='tight'</code>
-：使未保存到图中的图例（或其他部分）包含进来，避免图片保存下来不全。bbox_inches的作用是调整图的bbox,
-即bounding
-box(边界框)<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Python_matplotlib图例放在外侧保存时显示不完整问题解决](https://blog.csdn.net/Poul_henry/article/details/88311964)
-">[2]</span></a></sup></li>
-</ul>
-<span id="more"></span>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/wilbeok/article/details/111194473">Python中Matplotlib
-Savefig()不同参数的使用</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/Poul_henry/article/details/88311964">Python_matplotlib图例放在外侧保存时显示不完整问题解决</a><a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>代码相关</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-        <tag>Matplotlib</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python环境的配置</title>
     <url>/python%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：在使用 pycharm 或 vscode 时，对切换 python
@@ -3025,9 +3025,9 @@ miniconda）</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">conda create -n tf --clone rcnn</span><br><span class="line">conda remove -n rcnn --all</span><br></pre></td></tr></table></figure>
 <p>下载指定的包到指定的环境：使用 conda，激活指定的环境，使用
 <code>pip install 包名</code> 下载相应的包</p>
-<p>pip 下载指定存在版本的包：
-1、使用命令查看包（pandas）有哪些版本：<code>pip install pandas==</code>
-2、使用命令下载指定版本的包：<code>pip install pandas==2.1.1</code></p>
+<p>pip 下载指定存在版本的包：</p>
+<p>1、使用命令查看包（pandas）有哪些版本：<code>pip install pandas==</code></p>
+<p>2、使用命令下载指定版本的包：<code>pip install pandas==2.1.1</code></p>
 <p>下载的包的位置就在 miniconda
 的安装目录中（<code>...\miniconda\envs</code>）</p>
 <p>临时使用指定镜像下载包名：<code>pip install pandas -i https://pypi.tuna.tsinghua.edu.cn/simple</code></p>
@@ -3090,6 +3090,77 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
         <tag>Pycharm</tag>
         <tag>Vscode</tag>
         <tag>Conda</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vscode &amp; Jupyter-Notebook：Output exceeds the size limit</title>
+    <url>/vscode-jupyter-notebook%EF%BC%9Aoutput-exceeds-the-size-limit/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Output exceeds the size limit. Open the full output data in a text
+editor</p>
+<p>每次报错信息过多就要用文本编辑器打开，可是打开之后都是没编译的，乱码看起来很难受。</p>
+<span id="more"></span>
+<p>参考了这篇<a
+href="https://stackoverflow.com/questions/72823258/vscode-interactive-python-output-exceeds-size-limit">回答</a>，找到以下解决方案，我修改为1000：</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302060049102.png" /></p>
+<p>修改之后，重启Vscode即可。</p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>软件使用</category>
+      </categories>
+      <tags>
+        <tag>Vscode</tag>
+        <tag>Jupyter Notebook</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vscode的Jupyter的change presentation</title>
+    <url>/vscode%E7%9A%84jupyter%E7%9A%84change-presentation/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：每次使用绘图，都是需要手动切换Change presentations
+来看到绘图结果，想要把image设置为默认显示，而不是txt。</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247820.png" /></p>
+<span id="more"></span>
+<p>解决方法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Change mimetype for VSC Jupyter Notebook ouput](https://stackoverflow.com/questions/68555264/change-mimetype-for-vsc-jupyter-notebook-ouput)
+">[1]</span></a></sup>：</p>
+<p>1、打开 <code>settings.json</code> 文件</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247208.png" /></p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247352.png" /></p>
+<p>2、搜索notebook，找到notebook设置部分，加入这句：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&quot;notebook.displayOrder&quot;: [&quot;image/png&quot;, &quot;text/plain&quot;]</span><br></pre></td></tr></table></figure>
+<p>如果已经存在该句，把 <code>"image/png"</code>
+放在前面；放进去注意格式，放在中间记得末尾加逗号，放在最后，前面一句记得加逗号；</p>
+<p>我的设置：</p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247432.png" /></p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://stackoverflow.com/questions/68555264/change-mimetype-for-vsc-jupyter-notebook-ouput">Change
+mimetype for VSC Jupyter Notebook
+ouput</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>软件使用</category>
+      </categories>
+      <tags>
+        <tag>Vscode</tag>
+        <tag>Jupyter Notebook</tag>
       </tags>
   </entry>
   <entry>
@@ -3299,74 +3370,17 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>Vscode &amp; Jupyter-Notebook：Output exceeds the size limit</title>
-    <url>/vscode-jupyter-notebook%EF%BC%9Aoutput-exceeds-the-size-limit/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Output exceeds the size limit. Open the full output data in a text
-editor</p>
-<p>每次报错信息过多就要用文本编辑器打开，可是打开之后都是没编译的，乱码看起来很难受。</p>
-<span id="more"></span>
-<p>参考了这篇<a
-href="https://stackoverflow.com/questions/72823258/vscode-interactive-python-output-exceeds-size-limit">回答</a>，找到以下解决方案，我修改为1000：</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302060049102.png" /></p>
-<p>修改之后，重启Vscode即可。</p>
+    <title>word支持的插入图片格式</title>
+    <url>/word%E6%94%AF%E6%8C%81%E7%9A%84%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401132000313.png" alt="image-20240113143016946" style="zoom:67%;" /></p>
 ]]></content>
       <categories>
         <category>科研学习</category>
         <category>软件使用</category>
       </categories>
       <tags>
-        <tag>Vscode</tag>
-        <tag>Jupyter Notebook</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vscode的Jupyter的change presentation</title>
-    <url>/vscode%E7%9A%84jupyter%E7%9A%84change-presentation/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：每次使用绘图，都是需要手动切换Change presentations
-来看到绘图结果，想要把image设置为默认显示，而不是txt。</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247820.png" /></p>
-<span id="more"></span>
-<p>解决方法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Change mimetype for VSC Jupyter Notebook ouput](https://stackoverflow.com/questions/68555264/change-mimetype-for-vsc-jupyter-notebook-ouput)
-">[1]</span></a></sup>：</p>
-<p>1、打开 <code>settings.json</code> 文件</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247208.png" /></p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247352.png" /></p>
-<p>2、搜索notebook，找到notebook设置部分，加入这句：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&quot;notebook.displayOrder&quot;: [&quot;image/png&quot;, &quot;text/plain&quot;]</span><br></pre></td></tr></table></figure>
-<p>如果已经存在该句，把 <code>"image/png"</code>
-放在前面；放进去注意格式，放在中间记得末尾加逗号，放在最后，前面一句记得加逗号；</p>
-<p>我的设置：</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302041247432.png" /></p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://stackoverflow.com/questions/68555264/change-mimetype-for-vsc-jupyter-notebook-ouput">Change
-mimetype for VSC Jupyter Notebook
-ouput</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>软件使用</category>
-      </categories>
-      <tags>
-        <tag>Vscode</tag>
-        <tag>Jupyter Notebook</tag>
+        <tag>word</tag>
       </tags>
   </entry>
   <entry>
@@ -3395,20 +3409,6 @@ ouput</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
       </tags>
   </entry>
   <entry>
-    <title>word支持的插入图片格式</title>
-    <url>/word%E6%94%AF%E6%8C%81%E7%9A%84%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E6%A0%BC%E5%BC%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401132000313.png" alt="image-20240113143016946" style="zoom:67%;" /></p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>软件使用</category>
-      </categories>
-      <tags>
-        <tag>word</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Zotero插件之Jasminum（茉莉花）</title>
     <url>/zotero%E6%8F%92%E4%BB%B6%E4%B9%8Bjasminum%EF%BC%88%E8%8C%89%E8%8E%89%E8%8A%B1%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：根据中文pdf，自动抓取条目信息</p>
@@ -3433,50 +3433,6 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/20230
 <li>更新中文 translators</li>
 <li>拉取文献引用次数，是否核心期刊</li>
 </ul>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>软件使用</category>
-      </categories>
-      <tags>
-        <tag>Zotero</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Zotero搭配Sci-Hub</title>
-    <url>/zotero%E6%90%AD%E9%85%8Dsci-hub/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="实现功能">实现功能</h3>
-<p>Zotero右键条目实现自动下载pdf</p>
-<h3 id="设置sci-hub作为pdf解析器">设置Sci-Hub作为PDF解析器</h3>
-<p>打开Zotero的首选项，进入<code>Advanced--&gt;Config Editor</code></p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302250911205.png" /></p>
-<p>搜索<code>extensions.zotero.findPDFs.resolvers</code></p>
-<p>双击<code>extensions.zotero.findPDFs.resolvers</code>，默认情况下是只有一对
-<code>[]</code>。</p>
-<p>删除<code>[]</code>，并将以下代码粘贴进去。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[更新版｜Zotero搭配Sci-Hub，真香！](https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg)
-">[1]</span></a></sup></p>
-<span id="more"></span>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&#123;  </span><br><span class="line"><span class="string">&quot;name&quot;</span>:<span class="string">&quot;Sci-Hub&quot;</span>,  </span><br><span class="line"><span class="string">&quot;method&quot;</span>:<span class="string">&quot;GET&quot;</span>,  </span><br><span class="line"><span class="string">&quot;url&quot;</span>:<span class="string">&quot;https://sci-hub.se/&#123;doi&#125;&quot;</span>,  </span><br><span class="line"><span class="string">&quot;mode&quot;</span>:<span class="string">&quot;html&quot;</span>,  </span><br><span class="line"><span class="string">&quot;selector&quot;</span>:<span class="string">&quot;#pdf&quot;</span>,  </span><br><span class="line"><span class="string">&quot;attribute&quot;</span>:<span class="string">&quot;src&quot;</span>,  </span><br><span class="line"><span class="string">&quot;automatic&quot;</span>:true  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>到此就成功将Sci-Hub配置为PDF解析器了，也就是说替代了默认的Unpaywall。</p>
-<p>现在即可右键条目下载pdf了（前提是条目包含doi）</p>
-<p>查找文件doi：https://github.com/bwiernik/zotero-shortdoi/releases</p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg">更新版｜Zotero搭配Sci-Hub，真香！</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
 ]]></content>
       <categories>
         <category>科研学习</category>
@@ -3578,24 +3534,26 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">https://b
       </tags>
   </entry>
   <entry>
-    <title>交叉验证法</title>
-    <url>/%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>交叉验证（cross-validation）是一种评估泛化性能（新数据能否正确预测）的统计学方法，它比单次划分训练集和测试集的方法更加稳定、全面。如果只划分一次训练集和测试集，可能难以分类的样本都在测试集中，那么精度会低的离谱，相反，如果容易分类的样本都在测试集中，精度则会高的离谱，所以会导致模型并不能反映数据的真实情况。</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403152007648.png" alt="" style="zoom:40%;" /></p>
-<span id="more"></span>
-<h3 id="k-折交叉验证">k 折交叉验证</h3>
-<p>最常用的交叉验证是 k 折交叉验证（k-fold cross-validation），其中k
-是由用户指定的数字，通常取5 或10。在执行5
-折交叉验证时，首先将数据划分为（大致）相等的5
-部分，每一部分叫作折（fold）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+    <title>Zotero搭配Sci-Hub</title>
+    <url>/zotero%E6%90%AD%E9%85%8Dsci-hub/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="实现功能">实现功能</h3>
+<p>Zotero右键条目实现自动下载pdf</p>
+<h3 id="设置sci-hub作为pdf解析器">设置Sci-Hub作为PDF解析器</h3>
+<p>打开Zotero的首选项，进入<code>Advanced--&gt;Config Editor</code></p>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302250911205.png" /></p>
+<p>搜索<code>extensions.zotero.findPDFs.resolvers</code></p>
+<p>双击<code>extensions.zotero.findPDFs.resolvers</code>，默认情况下是只有一对
+<code>[]</code>。</p>
+<p>删除<code>[]</code>，并将以下代码粘贴进去。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
 class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="安德里亚斯·穆勒, 莎拉·吉多. Python机器学习基础教程[M/OL]. 张亮, 译. 人民邮电出版社
-">[1]</span></a></sup>。</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151929998.png" alt="" style="zoom:80%;" /></p>
-<p>使用第1
-折作为测试集、其他折（2~5）作为训练集来训练第一个模型，并算出精度。共构建五个模型，对精度取平均值。</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> cross_val_score</span><br><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris</span><br><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LogisticRegression</span><br><span class="line">iris =  load_iris()</span><br><span class="line">Logreg = LogisticRegression()</span><br><span class="line">scores = cross_val_score(Logreg,iris.data,iris.target,cv=<span class="number">5</span>) <span class="comment"># 模型，x,y,折数; 默认给出每个模型精度，自己需平均</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Average cross-validation score:&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(scores.mean())) </span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> cross_val_score</span><br><span class="line">scores = cross_val_score(Logreg,iris.data,iris.target,cv=<span class="number">5</span>) <span class="comment"># 模型，x,y,折数; 默认给出每个模型精度，自己需平均</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Average cross-validation score:&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(scores.mean())) </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+aria-label="[更新版｜Zotero搭配Sci-Hub，真香！](https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg)
+">[1]</span></a></sup></p>
+<span id="more"></span>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">&#123;  </span><br><span class="line"><span class="string">&quot;name&quot;</span>:<span class="string">&quot;Sci-Hub&quot;</span>,  </span><br><span class="line"><span class="string">&quot;method&quot;</span>:<span class="string">&quot;GET&quot;</span>,  </span><br><span class="line"><span class="string">&quot;url&quot;</span>:<span class="string">&quot;https://sci-hub.se/&#123;doi&#125;&quot;</span>,  </span><br><span class="line"><span class="string">&quot;mode&quot;</span>:<span class="string">&quot;html&quot;</span>,  </span><br><span class="line"><span class="string">&quot;selector&quot;</span>:<span class="string">&quot;#pdf&quot;</span>,  </span><br><span class="line"><span class="string">&quot;attribute&quot;</span>:<span class="string">&quot;src&quot;</span>,  </span><br><span class="line"><span class="string">&quot;automatic&quot;</span>:true  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>到此就成功将Sci-Hub配置为PDF解析器了，也就是说替代了默认的Unpaywall。</p>
+<p>现在即可右键条目下载pdf了（前提是条目包含doi）</p>
+<p>查找文件doi：https://github.com/bwiernik/zotero-shortdoi/releases</p>
 <h3 id="参考文章">参考文章</h3>
 <div id="footnotes">
 <hr>
@@ -3604,9 +3562,8 @@ aria-label="安德里亚斯·穆勒, 莎拉·吉多. Python机器学习基础教
 <li id="fn:1">
 <span
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">安德里亚斯·穆勒,
-莎拉·吉多. Python机器学习基础教程[M/OL]. 张亮, 译.
-人民邮电出版社<a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://mp.weixin.qq.com/s/QMSG24tgn4z8ShfE9pVYMg">更新版｜Zotero搭配Sci-Hub，真香！</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
 </li>
 </ol>
 </div>
@@ -3614,58 +3571,11 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;">安德里
 ]]></content>
       <categories>
         <category>科研学习</category>
-        <category>代码相关</category>
+        <category>软件使用</category>
       </categories>
       <tags>
-        <tag>机器学习</tag>
+        <tag>Zotero</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>博客增加菜单栏页面</title>
-    <url>/%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%8F%9C%E5%8D%95%E6%A0%8F%E9%A1%B5%E9%9D%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、创建页面：<code>hexo n page "菜单名称"</code></p>
-<p>记得在yaml中type写好类别比如： "Python"</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403102339614.png" alt="" style="zoom:50%;"  /></p>
-<span id="more"></span>
-<p>2、修改主题配置文件中menu部分：</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403102331953.png" alt="" style="zoom: 25%;" /></p>
-<p>menu菜单每行的格式为"Key: /link/ ||
-icon"<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Hexo添加自定义分类菜单项并定制页面布局(简洁版)](https://finisky.github.io/customizecategorybyextension/)
-">[1]</span></a></sup>。</p>
-<p>选择自己的icon</p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://finisky.github.io/customizecategorybyextension/">Hexo添加自定义分类菜单项并定制页面布局(简洁版)</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://fontawesome.com/<a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://guiblogs.com/hexo30-22/">Day
-22：如何增加你 Hexo 的选单 Icon？
-_</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>博客运营</category>
-        <category>其它</category>
-      </categories>
   </entry>
   <entry>
     <title>【机器学习】Cross-Validation（交叉验证）</title>
@@ -3716,6 +3626,49 @@ href="https://zhuanlan.zhihu.com/p/24825503">【机器学习】Cross-Validation�
       </tags>
   </entry>
   <entry>
+    <title>交叉验证法</title>
+    <url>/%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>交叉验证（cross-validation）是一种评估泛化性能（新数据能否正确预测）的统计学方法，它比单次划分训练集和测试集的方法更加稳定、全面。如果只划分一次训练集和测试集，可能难以分类的样本都在测试集中，那么精度会低的离谱，相反，如果容易分类的样本都在测试集中，精度则会高的离谱，所以会导致模型并不能反映数据的真实情况。</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403152007648.png" alt="" style="zoom:40%;" /></p>
+<span id="more"></span>
+<h3 id="k-折交叉验证">k 折交叉验证</h3>
+<p>最常用的交叉验证是 k 折交叉验证（k-fold cross-validation），其中 k
+是由用户指定的数字，通常取5 或10。在执行5
+折交叉验证时，首先将数据划分为（大致）相等的5
+部分，每一部分叫作折（fold）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="安德里亚斯·穆勒, 莎拉·吉多. Python机器学习基础教程[M/OL]. 张亮, 译. 人民邮电出版社
+">[1]</span></a></sup>。交叉验证通常会和寻优一起，即在不同的数据划分情况下，不同的参数情况下，模型的表现如何，对参数寻优，在最优参数下，模型对整个数据（不同数据划分）的表现如何就是交叉验证也称交叉测试。</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151929998.png" alt="" style="zoom:80%;" /></p>
+<p>使用第1
+折作为测试集、其他折（2~5）作为训练集来训练第一个模型，并算出精度。共构建五个模型，最后对精度取平均值。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> cross_val_score</span><br><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris</span><br><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LogisticRegression</span><br><span class="line">iris =  load_iris()</span><br><span class="line">Logreg = LogisticRegression()</span><br><span class="line">scores = cross_val_score(Logreg,iris.data,iris.target,cv=<span class="number">5</span>) <span class="comment"># 模型，x,y,折数; 默认给出每个模型精度，自己需平均</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Average cross-validation score:&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(scores.mean())) </span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> cross_val_score</span><br><span class="line">scores = cross_val_score(Logreg,iris.data,iris.target,cv=<span class="number">5</span>) <span class="comment"># 模型，x,y,折数; 默认给出每个模型精度，自己需平均</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Average cross-validation score:&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(scores.mean())) </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">安德里亚斯·穆勒,
+莎拉·吉多. Python机器学习基础教程[M/OL]. 张亮, 译.
+人民邮电出版社<a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>代码相关</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客一篇文章一个文件夹问题</title>
     <url>/%E5%8D%9A%E5%AE%A2%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>post_asset_folder开启的话，便是这种情况，一篇文章一个文件夹，用来放置图片<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
@@ -3733,6 +3686,53 @@ aria-label="[关于hexo的配置：post_asset_folder 问题](https://github.com/
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
 style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://github.com/hexojs/hexo/issues/3551">关于hexo的配置：post_asset_folder
 问题</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>博客运营</category>
+        <category>其它</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>博客增加菜单栏页面</title>
+    <url>/%E5%8D%9A%E5%AE%A2%E5%A2%9E%E5%8A%A0%E8%8F%9C%E5%8D%95%E6%A0%8F%E9%A1%B5%E9%9D%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、创建页面：<code>hexo n page "菜单名称"</code></p>
+<p>记得在yaml中type写好类别比如： "Python"</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403102339614.png" alt="" style="zoom:50%;"  /></p>
+<span id="more"></span>
+<p>2、修改主题配置文件中menu部分：</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403102331953.png" alt="" style="zoom: 25%;" /></p>
+<p>menu菜单每行的格式为"Key: /link/ ||
+icon"<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Hexo添加自定义分类菜单项并定制页面布局(简洁版)](https://finisky.github.io/customizecategorybyextension/)
+">[1]</span></a></sup>。</p>
+<p>选择自己的icon</p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://finisky.github.io/customizecategorybyextension/">Hexo添加自定义分类菜单项并定制页面布局(简洁版)</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">https://fontawesome.com/<a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://guiblogs.com/hexo30-22/">Day
+22：如何增加你 Hexo 的选单 Icon？
+_</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span>
 </li>
 </ol>
 </div>
@@ -3798,6 +3798,53 @@ aria-label="[文章页的标签在文章的结尾显示了，而不是和时间�
 <span
 style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
 style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://github.com/iissnan/hexo-theme-next/issues/1901">文章页的标签在文章的结尾显示了，而不是和时间、分类一起显示</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>博客运营</category>
+        <category>其它</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hexo博客Next主题添加统计文章阅读量功能</title>
+    <url>/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E8%AE%BF%E9%97%AE%E9%87%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Next主题支持一个叫LeanCloud的云服务商提供的统计功能<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="Hexo博客Next主题添加统计文章阅读量功能(https://bjtu-hxs.github.io/2018/06/12/leancloud-config/)
+">[1]</span></a></sup>。</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402191003696.png" alt="" style="zoom: 33%;" /></p>
+<h3 id="注册leancloud帐号">注册LeanCloud帐号</h3>
+<p>首先要注册一个帐号，访问<a
+href="https://leancloud.cn/">LeanCloud官网</a>，点击免费试用，或者访问控制台都会进入登录/注册页面，直接注册就好，也可以直接第三方账号登录，不过登录之后还是需要绑定邮箱和手机号。</p>
+<span id="more"></span>
+<h3 id="配置leancloud端">配置LeanCloud端</h3>
+<p>有了帐号了，就是一名可以行使权力的正经用户了，那就开始配置Cloud，来为我们的Blog统计功能创建一个新应用吧。然后需要为统计阅读量创建一个表，然后得到应用的app-id与app-key，用来配置我们的Next实现统计功能。</p>
+<ul>
+<li>进入控制台，点击创建应用</li>
+<li>就命名为test吧，然后选择开发版（免费哒），然后创建</li>
+<li>点进test开发版，为统计阅读量单独创建一个Class，就是在数据库中建一个表，首先点击存储，然后创建Class，Next要求Class名称必须为Counter，所以命名一定要为Counter，为了防止阅读量统计不准确，建议ACL权限设置为无限制，然后点击创建Class。就会像我的数据库一样，除了一些带下划线_的表之外，还有一个Counter表。</li>
+</ul>
+<h3 id="设置网络安全">设置网络安全</h3>
+<p>由于app-id和app-key是完全暴露的，所以防止他人使用，我们可以在应用设置里面面设置Web安全局名，只有添加的域名才能使用该应用，防止有人Hack我们的数据库。点击设置，安全中心，Web域名安全，添加Blog域名，点击保存就OK了。</p>
+<h3 id="配置博客端">配置博客端</h3>
+<p>配置_config.yml文档</p>
+<p>首先需要得到LeanCloud应用的app-id与app-key，在控制台，设置，应用key中就可以找到。</p>
+<p>然后配置就很简单了，只需要修改Next主题的配置文档_config.yml，该文档在blog/themes/next路径下，blog为你的博客文档夹，打开配置文档，找到LeanCloud配置项，修改为可用，添加对应app-id和app-key就行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Show number of visitors to each article.</span><br><span class="line"># You can visit https://leancloud.cn get AppID and AppKey.</span><br><span class="line">leancloud_visitors:</span><br><span class="line">  enable: true</span><br><span class="line">  app_id: # 你的app-id </span><br><span class="line">  app_key: # 你的app-key</span><br></pre></td></tr></table></figure>
+<p>然后使用命令<code>hexo generate</code>重新生成Blog，<code>hexo deploy</code>部署到Github就OK了，</p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">Hexo博客Next主题添加统计文章阅读量功能(https://bjtu-hxs.github.io/2018/06/12/leancloud-config/)<a href="#fnref:1" rev="footnote">
 ↩︎</a></span>
 </li>
 </ol>
@@ -3881,106 +3928,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>图片基本概念</title>
-    <url>/%E5%9B%BE%E7%89%87%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="位图与矢量图">位图与矢量图</h4>
-<p>图片格式主要分为位图（Bitmap）和矢量图（Vector）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[【果断收藏】SCI期刊的图片接收要求！](https://mp.weixin.qq.com/s?__biz=MzIyODA4NDE1OA==&amp;mid=2247487677&amp;idx=1&amp;sn=25d77ffdd7e7787b292e0c6bb037f493&amp;chksm=e856006cdf21897a7c35607978634b635b4452ae6c8b955d095352a84f7892f83a021242c703&amp;scene=21#wechat_redirect)
-">[1]</span></a></sup>。</p>
-<ul>
-<li><p><strong>位图</strong>：（也可叫栅格图、点阵图）由像素点构成，放大之后可见如马赛克般的像素小点。位图常为.psd、.tiff、.jpg、.png、.bmp。处理位图时，输出图像的质量取决于处理过程开始时设置的分辨率高低。</p></li>
-<li><p><strong>矢量图</strong>：任意放大但清晰度不变，拥有无限的分辨率。矢量图常为.wmf、.emf、.cdx、.ai、.eps、.svg、.pdf、文档。</p></li>
-</ul>
-<span id="more"></span>
-<p>目前多数期刊要求图片格式为TIFF位图或者EPS矢量图，并且通常要求形成独立文档。因此，建议科研图片保存为TIFF位图或者EPS矢量图。</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401152247808.png" alt="" style="zoom: 25%;" /></p>
-<p>Tip1：建议大家保存图形、表、示意图或其他线图为矢量图。保存照片、复杂的插图为位图。</p>
-<p>Tip
-2：在图表转换成图片时，将图片格式设定为TIFF格式的位图或EPS的矢量图形式。</p>
-<p>Tip 3：如何将Excel中的图表转成高清晰度的位图呢？
-将Excel图表转存为PDF文档，PDF文档可以通过Adobe
-Illustrator或Photoshop打开后再转存为TIFF文档，稍微不同的是，使用Adobe
-Illustrator转存成TIFF文档才指定分辨率，而使用Photoshop打开PDF文档时就会询问选择什么分辨率。</p>
-<h4 id="像素pxpixel">像素px（Pixel）</h4>
-<p>它就是一个点，一个像素点，是屏幕上显示数据的最基本的点，单个像素没有具体的尺寸概念。相同尺寸的显示器下，像素越多，单个像素的尺寸就越小，屏幕越清晰；像素越少，单个像素的尺寸就越大，屏幕越模糊。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[【知识点】不明白px、pt、ppi、dpi、位图、矢量图？该收藏这篇文章了！](https://zhuanlan.zhihu.com/p/434250550)
-">[2]</span></a></sup>比如某张图片像素数目 (Pixels)：宽 1024 px, 768
-px</p>
-<h4 id="ptpoint">pt（Point）</h4>
-<p>是一个点，一个专用的印刷单位“磅”，大小为1/72英寸=0.35mm，大小固定。</p>
-<h4 id="ppipixels-per-inch">ppi（Pixels per inch）</h4>
-<p>图像分辨率，一个密度单位，指每英寸所包含的像素数目,ppi越大，像素越多，图片显示越清晰。</p>
-<h4 id="dpidots-per-inch">dpi（Dots per inch）</h4>
-<p>打印分辨率，一个密度单位，指每英寸点数，是一个量度单位，用于点阵数码影像，指每一英寸长度中，取样、可显示或输出点的数目。「dot」一般也翻译为「点」，但此点（dot）非彼点（point）。dot
-是用在打印设备上，所以它描绘的是打印精度，1英寸所能打印的墨点数量，值越大，印刷越精细。大部分期刊要求的是300dpi及以上的分辨率，之所以这样要求，是因为最后文章是要用于出版的，而杂志的出版方式以纸质要求为准。dpi是打印机通过墨粉成滴将图像呈现在纸张上的一种表述方式。当杂志只有在线形式时，一般要求的就是ppi，而大多杂志都是有纸质刊物的，所以都要求的是dpi。</p>
-<p><strong>实际尺寸 (Print Size)</strong>: 厘米 cm，英尺
-inch。1英寸为2.54 厘米</p>
-<p>占用磁盘空间：几兆 M, 几 k</p>
-<p>常见换算：</p>
-<ul>
-<li><p>屏幕上的显示：像素量px=像素密度ppi*屏幕尺寸inch</p></li>
-<li><p>纸张上的打印：像素数目（垂直或水平）=分辨率×实际尺寸<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[【4. 论文作图之图片的大小：像素数目、分辨率的正确调整方法】](https://www.bilibili.com/video/BV1Ke4y1e7Ve/?share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9) ↩
-">[3]</span></a></sup> Pixels=Resolution (DPI) X Print size (in
-inches)</p></li>
-</ul>
-<h4 id="图片大小">图片大小</h4>
-<p>期刊对图片的物理大小会有明确的说明，一般只会规定图片的宽度，图片可设定为单栏、1.5栏或双栏图片。</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401152246978.png" alt="" style="zoom:22%;" /></p>
-<h4 id="颜色模式">颜色模式</h4>
-<p>彩色图片的颜色模式一般分为两种：RGB和CMYK。简单来说，RGB用于显示屏上，CMYK用于印刷中，RGB图比CMYK图色彩更亮丽，表现效果更好。根据以上整理的各期刊的要求来看，绝大多数期刊要求提供RGB模式的图片，这大概是因为图片由RGB转变为CMYK模式较易，但反过来转变的话，图像的表现力会下降。</p>
-<p>使用绘图软件“新建文档”时就选择RGB模式，软件默认的8位/信道足够达到大多期刊的要求了，图片另存时也优先选择RGB模式。如果杂志特别要求提供CMYK模式的图片，RGB模式也很方便转换为CMYK模式！</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401152248364.png" alt="" style="zoom:67%;" /></p>
-<h4 id="图片的格式转换">图片的格式转换</h4>
-<p>论文提交时，一般要求上传图片的格式为 jpg 或 tif 或 eps,
-参考杂志的投稿说明。 图片的格式转换方法</p>
-<ul>
-<li>方法 1: PowerPoint 中的“图片另存为”</li>
-<li>方法 2: Photoshop 中的“另存为”</li>
-<li>方法 3: Windowsi 画图程序中的“另存为”</li>
-</ul>
-<p>矢量pdf转emf：https://convert2.cn/pdf-to-emf</p>
-<h4 id="参考文章">参考文章</h4>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://mp.weixin.qq.com/s?__biz=MzIyODA4NDE1OA==&amp;mid=2247487677&amp;idx=1&amp;sn=25d77ffdd7e7787b292e0c6bb037f493&amp;chksm=e856006cdf21897a7c35607978634b635b4452ae6c8b955d095352a84f7892f83a021242c703&amp;scene=21#wechat_redirect">【果断收藏】SCI期刊的图片接收要求！</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/434250550">【知识点】不明白px、pt、ppi、dpi、位图、矢量图？该收藏这篇文章了！</a><a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:3">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1Ke4y1e7Ve/?share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9">【4.
-论文作图之图片的大小：像素数目、分辨率的正确调整方法】</a>
-↩︎<a href="#fnref:3" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-      </categories>
-      <tags>
-        <tag>科研绘图</tag>
-        <tag>矢量图</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博客访问速度提升（双线部署coding &amp; github）</title>
     <url>/%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%E6%8F%90%E5%8D%87%EF%BC%88%E5%8F%8C%E7%BA%BF%E9%83%A8%E7%BD%B2coding-github%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>实现大陆访问，使用coding（大家可以理解为中国版的github），国外访问，使用github，以及可以提交百度收录（GitHub
@@ -4057,53 +4004,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
         <tag>Coding</tag>
         <tag>Github</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hexo博客Next主题添加统计文章阅读量功能</title>
-    <url>/%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E8%AE%BF%E9%97%AE%E9%87%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Next主题支持一个叫LeanCloud的云服务商提供的统计功能<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="Hexo博客Next主题添加统计文章阅读量功能(https://bjtu-hxs.github.io/2018/06/12/leancloud-config/)
-">[1]</span></a></sup>。</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402191003696.png" alt="" style="zoom: 33%;" /></p>
-<h3 id="注册leancloud帐号">注册LeanCloud帐号</h3>
-<p>首先要注册一个帐号，访问<a
-href="https://leancloud.cn/">LeanCloud官网</a>，点击免费试用，或者访问控制台都会进入登录/注册页面，直接注册就好，也可以直接第三方账号登录，不过登录之后还是需要绑定邮箱和手机号。</p>
-<span id="more"></span>
-<h3 id="配置leancloud端">配置LeanCloud端</h3>
-<p>有了帐号了，就是一名可以行使权力的正经用户了，那就开始配置Cloud，来为我们的Blog统计功能创建一个新应用吧。然后需要为统计阅读量创建一个表，然后得到应用的app-id与app-key，用来配置我们的Next实现统计功能。</p>
-<ul>
-<li>进入控制台，点击创建应用</li>
-<li>就命名为test吧，然后选择开发版（免费哒），然后创建</li>
-<li>点进test开发版，为统计阅读量单独创建一个Class，就是在数据库中建一个表，首先点击存储，然后创建Class，Next要求Class名称必须为Counter，所以命名一定要为Counter，为了防止阅读量统计不准确，建议ACL权限设置为无限制，然后点击创建Class。就会像我的数据库一样，除了一些带下划线_的表之外，还有一个Counter表。</li>
-</ul>
-<h3 id="设置网络安全">设置网络安全</h3>
-<p>由于app-id和app-key是完全暴露的，所以防止他人使用，我们可以在应用设置里面面设置Web安全局名，只有添加的域名才能使用该应用，防止有人Hack我们的数据库。点击设置，安全中心，Web域名安全，添加Blog域名，点击保存就OK了。</p>
-<h3 id="配置博客端">配置博客端</h3>
-<p>配置_config.yml文档</p>
-<p>首先需要得到LeanCloud应用的app-id与app-key，在控制台，设置，应用key中就可以找到。</p>
-<p>然后配置就很简单了，只需要修改Next主题的配置文档_config.yml，该文档在blog/themes/next路径下，blog为你的博客文档夹，打开配置文档，找到LeanCloud配置项，修改为可用，添加对应app-id和app-key就行：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># Show number of visitors to each article.</span><br><span class="line"># You can visit https://leancloud.cn get AppID and AppKey.</span><br><span class="line">leancloud_visitors:</span><br><span class="line">  enable: true</span><br><span class="line">  app_id: # 你的app-id </span><br><span class="line">  app_key: # 你的app-key</span><br></pre></td></tr></table></figure>
-<p>然后使用命令<code>hexo generate</code>重新生成Blog，<code>hexo deploy</code>部署到Github就OK了，</p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">Hexo博客Next主题添加统计文章阅读量功能(https://bjtu-hxs.github.io/2018/06/12/leancloud-config/)<a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>博客运营</category>
-        <category>其它</category>
-      </categories>
   </entry>
   <entry>
     <title>图片版权</title>
@@ -4231,6 +4131,106 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
+    <title>图片基本概念</title>
+    <url>/%E5%9B%BE%E7%89%87%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="位图与矢量图">位图与矢量图</h4>
+<p>图片格式主要分为位图（Bitmap）和矢量图（Vector）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[【果断收藏】SCI期刊的图片接收要求！](https://mp.weixin.qq.com/s?__biz=MzIyODA4NDE1OA==&amp;mid=2247487677&amp;idx=1&amp;sn=25d77ffdd7e7787b292e0c6bb037f493&amp;chksm=e856006cdf21897a7c35607978634b635b4452ae6c8b955d095352a84f7892f83a021242c703&amp;scene=21#wechat_redirect)
+">[1]</span></a></sup>。</p>
+<ul>
+<li><p><strong>位图</strong>：（也可叫栅格图、点阵图）由像素点构成，放大之后可见如马赛克般的像素小点。位图常为.psd、.tiff、.jpg、.png、.bmp。处理位图时，输出图像的质量取决于处理过程开始时设置的分辨率高低。</p></li>
+<li><p><strong>矢量图</strong>：任意放大但清晰度不变，拥有无限的分辨率。矢量图常为.wmf、.emf、.cdx、.ai、.eps、.svg、.pdf、文档。</p></li>
+</ul>
+<span id="more"></span>
+<p>目前多数期刊要求图片格式为TIFF位图或者EPS矢量图，并且通常要求形成独立文档。因此，建议科研图片保存为TIFF位图或者EPS矢量图。</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401152247808.png" alt="" style="zoom: 25%;" /></p>
+<p>Tip1：建议大家保存图形、表、示意图或其他线图为矢量图。保存照片、复杂的插图为位图。</p>
+<p>Tip
+2：在图表转换成图片时，将图片格式设定为TIFF格式的位图或EPS的矢量图形式。</p>
+<p>Tip 3：如何将Excel中的图表转成高清晰度的位图呢？
+将Excel图表转存为PDF文档，PDF文档可以通过Adobe
+Illustrator或Photoshop打开后再转存为TIFF文档，稍微不同的是，使用Adobe
+Illustrator转存成TIFF文档才指定分辨率，而使用Photoshop打开PDF文档时就会询问选择什么分辨率。</p>
+<h4 id="像素pxpixel">像素px（Pixel）</h4>
+<p>它就是一个点，一个像素点，是屏幕上显示数据的最基本的点，单个像素没有具体的尺寸概念。相同尺寸的显示器下，像素越多，单个像素的尺寸就越小，屏幕越清晰；像素越少，单个像素的尺寸就越大，屏幕越模糊。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[【知识点】不明白px、pt、ppi、dpi、位图、矢量图？该收藏这篇文章了！](https://zhuanlan.zhihu.com/p/434250550)
+">[2]</span></a></sup>比如某张图片像素数目 (Pixels)：宽 1024 px, 768
+px</p>
+<h4 id="ptpoint">pt（Point）</h4>
+<p>是一个点，一个专用的印刷单位“磅”，大小为1/72英寸=0.35mm，大小固定。</p>
+<h4 id="ppipixels-per-inch">ppi（Pixels per inch）</h4>
+<p>图像分辨率，一个密度单位，指每英寸所包含的像素数目,ppi越大，像素越多，图片显示越清晰。</p>
+<h4 id="dpidots-per-inch">dpi（Dots per inch）</h4>
+<p>打印分辨率，一个密度单位，指每英寸点数，是一个量度单位，用于点阵数码影像，指每一英寸长度中，取样、可显示或输出点的数目。「dot」一般也翻译为「点」，但此点（dot）非彼点（point）。dot
+是用在打印设备上，所以它描绘的是打印精度，1英寸所能打印的墨点数量，值越大，印刷越精细。大部分期刊要求的是300dpi及以上的分辨率，之所以这样要求，是因为最后文章是要用于出版的，而杂志的出版方式以纸质要求为准。dpi是打印机通过墨粉成滴将图像呈现在纸张上的一种表述方式。当杂志只有在线形式时，一般要求的就是ppi，而大多杂志都是有纸质刊物的，所以都要求的是dpi。</p>
+<p><strong>实际尺寸 (Print Size)</strong>: 厘米 cm，英尺
+inch。1英寸为2.54 厘米</p>
+<p>占用磁盘空间：几兆 M, 几 k</p>
+<p>常见换算：</p>
+<ul>
+<li><p>屏幕上的显示：像素量px=像素密度ppi*屏幕尺寸inch</p></li>
+<li><p>纸张上的打印：像素数目（垂直或水平）=分辨率×实际尺寸<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[【4. 论文作图之图片的大小：像素数目、分辨率的正确调整方法】](https://www.bilibili.com/video/BV1Ke4y1e7Ve/?share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9) ↩
+">[3]</span></a></sup> Pixels=Resolution (DPI) X Print size (in
+inches)</p></li>
+</ul>
+<h4 id="图片大小">图片大小</h4>
+<p>期刊对图片的物理大小会有明确的说明，一般只会规定图片的宽度，图片可设定为单栏、1.5栏或双栏图片。</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401152246978.png" alt="" style="zoom:22%;" /></p>
+<h4 id="颜色模式">颜色模式</h4>
+<p>彩色图片的颜色模式一般分为两种：RGB和CMYK。简单来说，RGB用于显示屏上，CMYK用于印刷中，RGB图比CMYK图色彩更亮丽，表现效果更好。根据以上整理的各期刊的要求来看，绝大多数期刊要求提供RGB模式的图片，这大概是因为图片由RGB转变为CMYK模式较易，但反过来转变的话，图像的表现力会下降。</p>
+<p>使用绘图软件“新建文档”时就选择RGB模式，软件默认的8位/信道足够达到大多期刊的要求了，图片另存时也优先选择RGB模式。如果杂志特别要求提供CMYK模式的图片，RGB模式也很方便转换为CMYK模式！</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401152248364.png" alt="" style="zoom:67%;" /></p>
+<h4 id="图片的格式转换">图片的格式转换</h4>
+<p>论文提交时，一般要求上传图片的格式为 jpg 或 tif 或 eps,
+参考杂志的投稿说明。 图片的格式转换方法</p>
+<ul>
+<li>方法 1: PowerPoint 中的“图片另存为”</li>
+<li>方法 2: Photoshop 中的“另存为”</li>
+<li>方法 3: Windowsi 画图程序中的“另存为”</li>
+</ul>
+<p>矢量pdf转emf：https://convert2.cn/pdf-to-emf</p>
+<h4 id="参考文章">参考文章</h4>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://mp.weixin.qq.com/s?__biz=MzIyODA4NDE1OA==&amp;mid=2247487677&amp;idx=1&amp;sn=25d77ffdd7e7787b292e0c6bb037f493&amp;chksm=e856006cdf21897a7c35607978634b635b4452ae6c8b955d095352a84f7892f83a021242c703&amp;scene=21#wechat_redirect">【果断收藏】SCI期刊的图片接收要求！</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/434250550">【知识点】不明白px、pt、ppi、dpi、位图、矢量图？该收藏这篇文章了！</a><a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:3">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1Ke4y1e7Ve/?share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9">【4.
+论文作图之图片的大小：像素数目、分辨率的正确调整方法】</a>
+↩︎<a href="#fnref:3" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>理论知识</category>
+      </categories>
+      <tags>
+        <tag>科研绘图</tag>
+        <tag>矢量图</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>投稿期刊推荐</title>
     <url>/%E6%8A%95%E7%A8%BF%E6%9C%9F%E5%88%8A%E6%8E%A8%E8%8D%90/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、查看自己参考文献的期刊</p>
@@ -4282,6 +4282,29 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
+    <title>好文推荐</title>
+    <url>/%E5%A5%BD%E6%96%87%E6%8E%A8%E8%8D%90/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、<a
+href="https://retompi.com/archived-blog/posts/2020/01/16/version-control-for-word-files-like-plain-text.html#git-pandoc">如何对
+Word 文件进行「纯文本式」版本控制？ | TomBen (retompi.com)</a></p>
+<p>2、<a
+href="https://backlog.com/git-tutorial/cn/stepup/stepup1_1.html">什么是分支？【分支
+(branch)】| 猴子都能懂的GIT入门| 贝格乐（Backlog）</a></p>
+<p>3、<a
+href="https://blog.51cto.com/yttitan/2409618">Shell脚本中的多任务并发执行_一壶浊酒的技术博客_51CTO博客</a></p>
+<p>4、<a
+href="https://notebook.community/gmonce/datascience/src/1%20-%20Yet%20Another%20Python%20Encoding%20Tutorial">Yet
+Another Python Encoding Tutorial</a></p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>理论知识</category>
+      </categories>
+      <tags>
+        <tag>好文推荐</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>文献管理</title>
     <url>/%E6%96%87%E7%8C%AE%E7%AE%A1%E7%90%86/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、本地文献以一个字母开头（与课题相关）数字文献名作为文件名。（eg：k1、my
@@ -4296,6 +4319,25 @@ literature）</p>
         <tag>文献管理</tag>
         <tag>Endnote</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>数据分析项目管理形式</title>
+    <url>/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%BD%A2%E5%BC%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>project</p>
+<ul>
+<li><p>origin_data</p></li>
+<li><p>clean_data</p></li>
+<li><p>process(代码及工程文件)</p></li>
+<li><p>result</p></li>
+</ul>
+<span id="more"></span>
+<h3 id="参考文章">参考文章</h3>
+<p>无</p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>代码相关</category>
+      </categories>
   </entry>
   <entry>
     <title>期刊、出版社、索引数据库</title>
@@ -4371,46 +4413,89 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
-    <title>好文推荐</title>
-    <url>/%E5%A5%BD%E6%96%87%E6%8E%A8%E8%8D%90/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、<a
-href="https://retompi.com/archived-blog/posts/2020/01/16/version-control-for-word-files-like-plain-text.html#git-pandoc">如何对
-Word 文件进行「纯文本式」版本控制？ | TomBen (retompi.com)</a></p>
-<p>2、<a
-href="https://backlog.com/git-tutorial/cn/stepup/stepup1_1.html">什么是分支？【分支
-(branch)】| 猴子都能懂的GIT入门| 贝格乐（Backlog）</a></p>
-<p>3、<a
-href="https://blog.51cto.com/yttitan/2409618">Shell脚本中的多任务并发执行_一壶浊酒的技术博客_51CTO博客</a></p>
-<p>4、<a
-href="https://notebook.community/gmonce/datascience/src/1%20-%20Yet%20Another%20Python%20Encoding%20Tutorial">Yet
-Another Python Encoding Tutorial</a></p>
+    <title>期刊影响力</title>
+    <url>/%E6%9C%9F%E5%88%8A%E5%BD%B1%E5%93%8D%E5%8A%9B/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>影响因子（Impact Factor）：某期刊前两年发表的论文在该报告年份（JCR
+year）中被引用总次数除以该期刊在这两年内发表的论文总数。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="https://baike.baidu.com/item/%E5%BD%B1%E5%93%8D%E5%9B%A0%E5%AD%90/574727
+">[1]</span></a></sup></p>
+<p>期刊的IF（影响因子）每年不断浮动，把IF定值作为学术评价指标不适合，而且不同学科领域期刊的影响因子差异很大，仅凭IF不能直观地比较不同领域的期刊。把同一学科领域的期刊，<strong>按IF大到小做排序后，划分入不同区域。</strong>只要是某领域1区的期刊，就是该领域的顶级刊物，直观反映该刊在领域内的水准和大致排位。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="https://kyc.szcu.edu.cn/2023/0328/c2593a50685/page.htm
+">[2]</span></a></sup></p>
+<span id="more"></span>
+<ul>
+<li><p>JCR分区：汤森路透公司制定的JCR分区(原来是汤森路透，后来易主科睿唯安)，一般简称为JCR
+分区(Journal Citation Reports，简称JCR)。</p>
+<p>JCR将收录期刊分为176个不同学科类别。每个学科分类按期刊的影响因子高低，平均分为Q1、Q2、Q3和Q4四个区：</p>
+<ul>
+<li><p>影响因子前25%(含25%)期刊划分为Q1区；</p></li>
+<li><p>影响因子前25%～50% 为Q2区；</p></li>
+<li><p>影响因子前50%～75% 为Q3区；</p></li>
+<li><p>影响因子75%之后为Q4区。</p></li>
+</ul></li>
+<li><p>中科院分区：中国科学院国家科学图书馆制定的JCR分区，一般简称为「中科院分区」。</p>
+<p>中科院分区目前分为基础版和升级版（试行）</p>
+<p>中科院分区（基础版）先将JCR中所有期刊分为数学、物理、化学、生物、地学、天文、工程技术、医学、环境科学、农林科学、社会科学、管理科学及综合性期刊13
+大类。每个学科分类按照期刊的3年平均影响因子高低，分为4四个区：</p>
+<ul>
+<li><p>影响因子前5%为该类1 区；</p></li>
+<li><p>影响因子前6% ～ 20% 为2 区；</p></li>
+<li><p>影响因子前21% ～ 50% 为3 区；</p></li>
+<li><p>影响因子后50%为4区。</p></li>
+</ul>
+<p>中科院分区升级版在2020年1月公布，在基础版的基础上做了以下调整。</p>
+<ul>
+<li>针对期刊收录范围，升级版由基础版的只收录SCI期刊，扩展为收录SCI期刊和SSCI期刊。</li>
+<li>针对学科分类，升级版将期刊由基础版的13个学科扩展至18个。针对分区标准，升级版由基础版的按照影响因子分区，改为了按照期刊超越指数分区。</li>
+<li>值得一提的是，中科院分区目前属于过渡期，基础版和升级版均在更新和发布。2022年起，将只公布升级版。</li>
+</ul></li>
+</ul>
+<p><strong>JCR分区 PK 中科院分区</strong></p>
+<ul>
+<li><p>01 学科划分不同</p>
+<p>科睿唯安JCR的Journal
+Ranking没有设置大类学科，只分为176个具体学科，也就是中科院分区表中所指的小类学科。</p></li>
+<li><p>02 分区方法不同</p>
+<p>JCR是按照<strong>“平均主义”思想</strong>，根据刊物IF的高至低平均划分4个区，每个区含有该领域总量25%的期刊；中科院的分区如同<strong>社会阶层的金字塔结构</strong>，1区只有5%的顶级期刊，2~4区期刊数量也逐层增加。于是，采用中科院分区后往往出现<strong>“掉区”</strong>的情况。</p></li>
+</ul>
+<p>　　显然中科院的1区和2区杂志很少，杂志质量相对也高，基本都是本领域的顶级期刊。所以有的人发表的论文按JCR分区标准算一区，而按中科院分区算2区甚至三区。</p>
+<ul>
+<li><p>03 指标取值不同</p>
+<p>JCR是按当期（1年）的IF进行分区，中科院是按刊物前3年IF平均值进行分区。</p></li>
+<li><p>04 写法不同</p>
+<p>一般的，JCR中1区的期刊写作“Q1”，中科院1区的期刊写作“1区”，如此类推。最后的重点——我们到底该看哪个分区？
+　　其实两种分区方式都比较权威，具体怎么看，最直接的方法是看你们学校/单位认哪个。</p></li>
+</ul>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">https://baike.baidu.com/item/%E5%BD%B1%E5%93%8D%E5%9B%A0%E5%AD%90/574727<a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+<li id="fn:2">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;">https://kyc.szcu.edu.cn/2023/0328/c2593a50685/page.htm<a href="#fnref:2" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
 ]]></content>
       <categories>
         <category>科研学习</category>
         <category>理论知识</category>
       </categories>
       <tags>
-        <tag>好文推荐</tag>
+        <tag>论文投稿</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>数据分析项目管理形式</title>
-    <url>/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%BD%A2%E5%BC%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>project</p>
-<ul>
-<li><p>origin_data</p></li>
-<li><p>clean_data</p></li>
-<li><p>process(代码及工程文件)</p></li>
-<li><p>result</p></li>
-</ul>
-<span id="more"></span>
-<h3 id="参考文章">参考文章</h3>
-<p>无</p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>代码相关</category>
-      </categories>
   </entry>
   <entry>
     <title>正则表达式（视频笔记）</title>
@@ -4943,91 +5028,6 @@ href="https://deerchao.cn/tutorials/regex/regex.htm">正则表达式30分钟入�
       </tags>
   </entry>
   <entry>
-    <title>期刊影响力</title>
-    <url>/%E6%9C%9F%E5%88%8A%E5%BD%B1%E5%93%8D%E5%8A%9B/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>影响因子（Impact Factor）：某期刊前两年发表的论文在该报告年份（JCR
-year）中被引用总次数除以该期刊在这两年内发表的论文总数。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://baike.baidu.com/item/%E5%BD%B1%E5%93%8D%E5%9B%A0%E5%AD%90/574727
-">[1]</span></a></sup></p>
-<p>期刊的IF（影响因子）每年不断浮动，把IF定值作为学术评价指标不适合，而且不同学科领域期刊的影响因子差异很大，仅凭IF不能直观地比较不同领域的期刊。把同一学科领域的期刊，<strong>按IF大到小做排序后，划分入不同区域。</strong>只要是某领域1区的期刊，就是该领域的顶级刊物，直观反映该刊在领域内的水准和大致排位。<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://kyc.szcu.edu.cn/2023/0328/c2593a50685/page.htm
-">[2]</span></a></sup></p>
-<span id="more"></span>
-<ul>
-<li><p>JCR分区：汤森路透公司制定的JCR分区(原来是汤森路透，后来易主科睿唯安)，一般简称为JCR
-分区(Journal Citation Reports，简称JCR)。</p>
-<p>JCR将收录期刊分为176个不同学科类别。每个学科分类按期刊的影响因子高低，平均分为Q1、Q2、Q3和Q4四个区：</p>
-<ul>
-<li><p>影响因子前25%(含25%)期刊划分为Q1区；</p></li>
-<li><p>影响因子前25%～50% 为Q2区；</p></li>
-<li><p>影响因子前50%～75% 为Q3区；</p></li>
-<li><p>影响因子75%之后为Q4区。</p></li>
-</ul></li>
-<li><p>中科院分区：中国科学院国家科学图书馆制定的JCR分区，一般简称为「中科院分区」。</p>
-<p>中科院分区目前分为基础版和升级版（试行）</p>
-<p>中科院分区（基础版）先将JCR中所有期刊分为数学、物理、化学、生物、地学、天文、工程技术、医学、环境科学、农林科学、社会科学、管理科学及综合性期刊13
-大类。每个学科分类按照期刊的3年平均影响因子高低，分为4四个区：</p>
-<ul>
-<li><p>影响因子前5%为该类1 区；</p></li>
-<li><p>影响因子前6% ～ 20% 为2 区；</p></li>
-<li><p>影响因子前21% ～ 50% 为3 区；</p></li>
-<li><p>影响因子后50%为4区。</p></li>
-</ul>
-<p>中科院分区升级版在2020年1月公布，在基础版的基础上做了以下调整。</p>
-<ul>
-<li>针对期刊收录范围，升级版由基础版的只收录SCI期刊，扩展为收录SCI期刊和SSCI期刊。</li>
-<li>针对学科分类，升级版将期刊由基础版的13个学科扩展至18个。针对分区标准，升级版由基础版的按照影响因子分区，改为了按照期刊超越指数分区。</li>
-<li>值得一提的是，中科院分区目前属于过渡期，基础版和升级版均在更新和发布。2022年起，将只公布升级版。</li>
-</ul></li>
-</ul>
-<p><strong>JCR分区 PK 中科院分区</strong></p>
-<ul>
-<li><p>01 学科划分不同</p>
-<p>科睿唯安JCR的Journal
-Ranking没有设置大类学科，只分为176个具体学科，也就是中科院分区表中所指的小类学科。</p></li>
-<li><p>02 分区方法不同</p>
-<p>JCR是按照<strong>“平均主义”思想</strong>，根据刊物IF的高至低平均划分4个区，每个区含有该领域总量25%的期刊；中科院的分区如同<strong>社会阶层的金字塔结构</strong>，1区只有5%的顶级期刊，2~4区期刊数量也逐层增加。于是，采用中科院分区后往往出现<strong>“掉区”</strong>的情况。</p></li>
-</ul>
-<p>　　显然中科院的1区和2区杂志很少，杂志质量相对也高，基本都是本领域的顶级期刊。所以有的人发表的论文按JCR分区标准算一区，而按中科院分区算2区甚至三区。</p>
-<ul>
-<li><p>03 指标取值不同</p>
-<p>JCR是按当期（1年）的IF进行分区，中科院是按刊物前3年IF平均值进行分区。</p></li>
-<li><p>04 写法不同</p>
-<p>一般的，JCR中1区的期刊写作“Q1”，中科院1区的期刊写作“1区”，如此类推。最后的重点——我们到底该看哪个分区？
-　　其实两种分区方式都比较权威，具体怎么看，最直接的方法是看你们学校/单位认哪个。</p></li>
-</ul>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://baike.baidu.com/item/%E5%BD%B1%E5%93%8D%E5%9B%A0%E5%AD%90/574727<a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://kyc.szcu.edu.cn/2023/0328/c2593a50685/page.htm<a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>理论知识</category>
-      </categories>
-      <tags>
-        <tag>论文投稿</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>波士顿房价数据集的处理</title>
     <url>/%E6%B3%A2%E5%A3%AB%E9%A1%BF%E6%88%BF%E4%BB%B7%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E5%A4%84%E7%90%86/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h3 id="需求">需求</h3>
@@ -5225,6 +5225,32 @@ Encoding）实现</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span>
       </categories>
   </entry>
   <entry>
+    <title>独立测试与交叉测试</title>
+    <url>/%E7%8B%AC%E7%AB%8B%E6%B5%8B%E8%AF%95%E4%B8%8E%E4%BA%A4%E5%8F%89%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>独立测试与交叉测试的区别在于数据的划分，不在于是否寻优。</p>
+<p>算法：比如随机森林</p>
+<p>模型：比如使用随机森林，进行参数寻优，在一组特定数据中训练得到最优参数的算法（模型只接触过训练集）</p>
+<p>评价模型：使用测试集评价，有独立测试、交叉测试。</p>
+<span id="more"></span>
+<ul>
+<li><p>独立测试：将数据集单次划分为训练集和测试集，训练集用于训练，测试集用于测试最后模型好坏结果。一般，训练集0.75，测试集0.25。</p></li>
+<li><p>交叉测试（Cross-Validation）：也就是交叉验证，比如常见的 k
+折交叉验证，将数据集先划分为 K 份，比较常见的为 5 或 10
+份，一份数据作为测试集，另外几份作为训练集，循环五次，即每一份数据都作为过测试集，也就是会得到五个模型精度，取均值作为该算法的评价。五折交叉中训练集比例为
+4/5，即
+0.8，交叉测试训练集比例高于独立测试，所以交叉测试结果会比独立测试结果好。</p></li>
+</ul>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403201613164.png" alt="" style="zoom:30%;" /></p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403201504416.png" alt="" style="zoom:80%;" /></p>
+<h3 id="参考文章">参考文章</h3>
+<p>无</p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>代码相关</category>
+      </categories>
+  </entry>
+  <entry>
     <title>皮尔森（逊）相关系数（Pearson Correlation Coefficient, PCC）</title>
     <url>/%E7%9A%AE%E5%B0%94%E6%A3%AE%EF%BC%88%E9%80%8A%EF%BC%89%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0%EF%BC%88pearson-correlation-coefficient-pcc%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="摘要">摘要</h4>
@@ -5341,6 +5367,28 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
+    <title>等比例缩小pdf的尺寸大小</title>
+    <url>/%E7%AD%89%E6%AF%94%E4%BE%8B%E7%BC%A9%E5%B0%8Fpdf%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
+<p>软件：Adobe Acrobat Pro DC</p>
+<p>使用软件打开相应pdf：</p>
+<ul>
+<li><p>文件--打印--自定义比例：调整相应比例，导出即可</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401161543556.png" alt="" style="zoom:50%;" /></p>
+<p>导出之后，pdf中的图片变小，但是画布不变，对画布进行裁剪即可。</p>
+<p>裁剪步骤：打开pdf--工具--编辑pdf（打开）--裁剪页面：绘制裁剪框，双击裁剪框中的内容，确定即可。</p></li>
+</ul>
+<!--more-->
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>软件使用</category>
+      </categories>
+      <tags>
+        <tag>科研绘图</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>简谈 Python yield</title>
     <url>/%E7%AE%80%E8%B0%88-python-yield/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>带yield的函数是一个生成器（generator），而不是一个函数了，这个生成器有一个函数就是next函数，next就相当于“下一步”生成哪个数，这一次的next开始的地方是接着上一次的next停止的地方执行的。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
@@ -5373,63 +5421,6 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </categories>
       <tags>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决npm下载慢问题</title>
-    <url>/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h5 id="npm镜像">npm镜像：</h5>
-<p>淘宝：<code>http://registry.npm.taobao.org</code></p>
-<p>腾讯云：<code>http://mirrors.cloud.tencent.com/npm/</code></p>
-<p>华为云：<code>https://mirrors.huaweicloud.com/repository/npm/</code></p>
-<span id="more"></span>
-<h5 id="下载时临时使用淘宝镜像">下载时临时使用淘宝镜像</h5>
-<p>Windows使用powershell管理员打开，输入一下命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install xxx --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<hr />
-<h5 id="永久更改镜像">永久更改镜像</h5>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-<p>再执行 <code>npm config get registry</code> 返回
-<code>http://registry.npm.taobao.org</code> 则设置成功</p>
-<hr />
-<h5 id="通过使用淘宝定制的cnpm安装">通过使用淘宝定制的cnpm安装：</h5>
-<ul>
-<li>安装cnpm</li>
-</ul>
-<p><code>npm install -g cnpm --registry=https://registry.npmmirror.com</code></p>
-<ul>
-<li>使用cnpm</li>
-</ul>
-<p><code>cnpm install xxx</code></p>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>代码相关</category>
-      </categories>
-      <tags>
-        <tag>NPM</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>等比例缩小pdf的尺寸大小</title>
-    <url>/%E7%AD%89%E6%AF%94%E4%BE%8B%E7%BC%A9%E5%B0%8Fpdf%E7%9A%84%E5%B0%BA%E5%AF%B8%E5%A4%A7%E5%B0%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span>
-<p>软件：Adobe Acrobat Pro DC</p>
-<p>使用软件打开相应pdf：</p>
-<ul>
-<li><p>文件--打印--自定义比例：调整相应比例，导出即可</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202401161543556.png" alt="" style="zoom:50%;" /></p>
-<p>导出之后，pdf中的图片变小，但是画布不变，对画布进行裁剪即可。</p>
-<p>裁剪步骤：打开pdf--工具--编辑pdf（打开）--裁剪页面：绘制裁剪框，双击裁剪框中的内容，确定即可。</p></li>
-</ul>
-<!--more-->
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>软件使用</category>
-      </categories>
-      <tags>
-        <tag>科研绘图</tag>
       </tags>
   </entry>
   <entry>
@@ -5594,6 +5585,41 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </categories>
       <tags>
         <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决npm下载慢问题</title>
+    <url>/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h5 id="npm镜像">npm镜像：</h5>
+<p>淘宝：<code>http://registry.npm.taobao.org</code></p>
+<p>腾讯云：<code>http://mirrors.cloud.tencent.com/npm/</code></p>
+<p>华为云：<code>https://mirrors.huaweicloud.com/repository/npm/</code></p>
+<span id="more"></span>
+<h5 id="下载时临时使用淘宝镜像">下载时临时使用淘宝镜像</h5>
+<p>Windows使用powershell管理员打开，输入一下命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install xxx --registry=http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<hr />
+<h5 id="永久更改镜像">永久更改镜像</h5>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry http://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p>再执行 <code>npm config get registry</code> 返回
+<code>http://registry.npm.taobao.org</code> 则设置成功</p>
+<hr />
+<h5 id="通过使用淘宝定制的cnpm安装">通过使用淘宝定制的cnpm安装：</h5>
+<ul>
+<li>安装cnpm</li>
+</ul>
+<p><code>npm install -g cnpm --registry=https://registry.npmmirror.com</code></p>
+<ul>
+<li>使用cnpm</li>
+</ul>
+<p><code>cnpm install xxx</code></p>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>代码相关</category>
+      </categories>
+      <tags>
+        <tag>NPM</tag>
       </tags>
   </entry>
   <entry>
@@ -5971,6 +5997,53 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="
       </tags>
   </entry>
   <entry>
+    <title>配置word版本控制</title>
+    <url>/%E9%85%8D%E7%BD%AEword%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="下载git软件和pandoc软件">下载Git软件和Pandoc软件</h4>
+<p>按照官网下载即可</p>
+<h4 id="配置git">配置Git</h4>
+<p>命令 <code>cd</code> 直接进入用户目录，找到文件
+<code>.gitconfig</code>，使用文本编辑器打开它，加入下面的内容，然后保存<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[如何对 Word 文件进行「纯文本式」版本控制？ | TomBen (retompi.com)](https://retompi.com/archived-blog/posts/2020/01/16/version-control-for-word-files-like-plain-text.html#安装-git-与-pandoc)
+">[1]</span></a></sup>。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[diff <span class="string">&quot;pandoc&quot;</span>]</span><br><span class="line">   textconv=pandoc --to=markdown</span><br><span class="line">   prompt = <span class="literal">false</span></span><br><span class="line"> [<span class="built_in">alias</span>]</span><br><span class="line">   wdiff = diff --word-diff=color --unified=1</span><br></pre></td></tr></table></figure>
+<p>新建一个文件夹，以后Word文件均放置于此，右键git bash here
+，初始化仓库：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 创建 Git 仓库</span><br><span class="line">git init</span><br></pre></td></tr></table></figure>
+<p>在Word 目录下，新建一个文件
+<code>.gitattributes</code>，写入下面的内容，然后保存。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">*.docx diff=pandoc</span><br></pre></td></tr></table></figure>
+<p>现在就可以再该目录下新建word文件了，最后保存的时候，记得用Git Bash
+提交到本地仓库，有大修改的时候就commit一次，有Github或Gitee账号，可以上传到账号上。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add . # 添加文件</span><br><span class="line">git commit -a -m &quot;备注信息&quot;  # 设置-a，修改文件后不需要再执行git add命令  </span><br></pre></td></tr></table></figure>
+<h4 id="参考文章">参考文章</h4>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://retompi.com/archived-blog/posts/2020/01/16/version-control-for-word-files-like-plain-text.html#%E5%AE%89%E8%A3%85-git-%E4%B8%8E-pandoc">如何对
+Word 文件进行「纯文本式」版本控制？ | TomBen
+(retompi.com)</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+]]></content>
+      <categories>
+        <category>科研学习</category>
+        <category>软件使用</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+        <tag>word</tag>
+        <tag>Pandoc</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>随机森林填充空值</title>
     <url>/%E9%9A%8F%E6%9C%BA%E6%A3%AE%E6%9E%97%E5%A1%AB%E5%85%85%E7%A9%BA%E5%80%BC/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>复现这篇文章<a
@@ -6080,53 +6153,6 @@ style="text-align: left;">特征T不缺失的值对应的n-1个特征+原始标�
       </categories>
       <tags>
         <tag>计算机基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>配置word版本控制</title>
-    <url>/%E9%85%8D%E7%BD%AEword%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h4 id="下载git软件和pandoc软件">下载Git软件和Pandoc软件</h4>
-<p>按照官网下载即可</p>
-<h4 id="配置git">配置Git</h4>
-<p>命令 <code>cd</code> 直接进入用户目录，找到文件
-<code>.gitconfig</code>，使用文本编辑器打开它，加入下面的内容，然后保存<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[如何对 Word 文件进行「纯文本式」版本控制？ | TomBen (retompi.com)](https://retompi.com/archived-blog/posts/2020/01/16/version-control-for-word-files-like-plain-text.html#安装-git-与-pandoc)
-">[1]</span></a></sup>。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">[diff <span class="string">&quot;pandoc&quot;</span>]</span><br><span class="line">   textconv=pandoc --to=markdown</span><br><span class="line">   prompt = <span class="literal">false</span></span><br><span class="line"> [<span class="built_in">alias</span>]</span><br><span class="line">   wdiff = diff --word-diff=color --unified=1</span><br></pre></td></tr></table></figure>
-<p>新建一个文件夹，以后Word文件均放置于此，右键git bash here
-，初始化仓库：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 创建 Git 仓库</span><br><span class="line">git init</span><br></pre></td></tr></table></figure>
-<p>在Word 目录下，新建一个文件
-<code>.gitattributes</code>，写入下面的内容，然后保存。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">*.docx diff=pandoc</span><br></pre></td></tr></table></figure>
-<p>现在就可以再该目录下新建word文件了，最后保存的时候，记得用Git Bash
-提交到本地仓库，有大修改的时候就commit一次，有Github或Gitee账号，可以上传到账号上。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add . # 添加文件</span><br><span class="line">git commit -a -m &quot;备注信息&quot;  # 设置-a，修改文件后不需要再执行git add命令  </span><br></pre></td></tr></table></figure>
-<h4 id="参考文章">参考文章</h4>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://retompi.com/archived-blog/posts/2020/01/16/version-control-for-word-files-like-plain-text.html#%E5%AE%89%E8%A3%85-git-%E4%B8%8E-pandoc">如何对
-Word 文件进行「纯文本式」版本控制？ | TomBen
-(retompi.com)</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-]]></content>
-      <categories>
-        <category>科研学习</category>
-        <category>软件使用</category>
-      </categories>
-      <tags>
-        <tag>Git</tag>
-        <tag>word</tag>
-        <tag>Pandoc</tag>
       </tags>
   </entry>
   <entry>
