@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-03-20T08:16:22.511Z</updated>
+  <updated>2024-04-05T06:49:49.634Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -15,6 +15,87 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>保存训练好的机器学习模型(转载)</title>
+    <link href="https://www.sdhlw.top/%E4%BF%9D%E5%AD%98%E8%AE%AD%E7%BB%83%E5%A5%BD%E7%9A%84%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A8%A1%E5%9E%8B/"/>
+    <id>https://www.sdhlw.top/%E4%BF%9D%E5%AD%98%E8%AE%AD%E7%BB%83%E5%A5%BD%E7%9A%84%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A8%A1%E5%9E%8B/</id>
+    <published>2024-04-05T03:52:40.000Z</published>
+    <updated>2024-04-05T06:49:49.634Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><ahref="https://blog.csdn.net/u012328159/article/details/79255805">保存训练好的机器学习模型</a>当我们训练好一个model后，下次如果还想用这个model，我们就需要把这个model保存下来，下次直接导入就好了，不然每次都跑一遍，训练时间短还好，要是一次跑好几天的那怕是要天荒地老了。</p><span id="more"></span><p>sklearn官网提供了两种保存model的方法：</p><p>1.使用python自带的pickle</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.ensemble <span class="keyword">import</span> RandomForestClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> datasets</span><br><span class="line"><span class="keyword">import</span> pickle</span><br><span class="line"></span><br><span class="line"><span class="comment">#方法一:python自带的pickle</span></span><br><span class="line">(X,y) = datasets.load_iris(return_X_y=<span class="literal">True</span>)</span><br><span class="line">rfc = RandomForestClassifier(n_estimators=<span class="number">100</span>,max_depth=<span class="number">100</span>)</span><br><span class="line">rfc.fit(X,y)</span><br><span class="line"><span class="built_in">print</span>(rfc.predict(X[<span class="number">0</span>:<span class="number">1</span>,:]))</span><br><span class="line"><span class="comment">#save model</span></span><br><span class="line">f = <span class="built_in">open</span>(<span class="string">&#x27;saved_model/rfc.pickle&#x27;</span>,<span class="string">&#x27;wb&#x27;</span>)</span><br><span class="line">pickle.dump(rfc,f)</span><br><span class="line">f.close()</span><br><span class="line"><span class="comment">#load model</span></span><br><span class="line">f = <span class="built_in">open</span>(<span class="string">&#x27;saved_model/rfc.pickle&#x27;</span>,<span class="string">&#x27;rb&#x27;</span>)</span><br><span class="line">rfc1 = pickle.load(f)</span><br><span class="line">f.close()</span><br><span class="line"><span class="built_in">print</span>(rfc1.predict(X[<span class="number">0</span>:<span class="number">1</span>,:]))</span><br></pre></td></tr></table></figure><p>2.使用sklearn中的模块joblib使用joblib模块更加的简单了，内核代码就两行</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.ensemble <span class="keyword">import</span> RandomForestClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> datasets</span><br><span class="line"><span class="keyword">from</span> sklearn.externals <span class="keyword">import</span> joblib</span><br><span class="line"><span class="comment">#方法二：使用sklearn中的模块joblib</span></span><br><span class="line">(X,y) = datasets.load_iris(return_X_y=<span class="literal">True</span>)</span><br><span class="line">rfc = RandomForestClassifier(n_estimators=<span class="number">100</span>,max_depth=<span class="number">100</span>)</span><br><span class="line">rfc.fit(X,y)</span><br><span class="line"><span class="built_in">print</span>(rfc.predict(X[<span class="number">0</span>:<span class="number">1</span>,:]))</span><br><span class="line"><span class="comment">#save model</span></span><br><span class="line">joblib.dump(rfc, <span class="string">&#x27;saved_model/rfc.pkl&#x27;</span>)</span><br><span class="line"><span class="comment">#load model</span></span><br><span class="line">rfc2 = joblib.load(<span class="string">&#x27;saved_model/rfc.pkl&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(rfc2.predict(X[<span class="number">0</span>:<span class="number">1</span>,:]))</span><br></pre></td></tr></table></figure><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a
+href=&quot;https://blog.csdn.net/u012328159/article/details/79255805&quot;&gt;保存训练好的机器学习模型&lt;/a&gt;
+当我们训练好一个model后，下次如果还想用这个model，我们就需要把这个model保存下来，下次直接导入就好了，不然每次都跑一遍，训练时间短还好，要是一次跑好几天的那怕是要天荒地老了。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="代码相关" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>毕业论文（GB/T 7714-2015）引用网页文章</title>
+    <link href="https://www.sdhlw.top/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%EF%BC%88gb-t-7714-2015%EF%BC%89%E5%BC%95%E7%94%A8%E7%BD%91%E9%A1%B5%E6%96%87%E7%AB%A0/"/>
+    <id>https://www.sdhlw.top/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%EF%BC%88gb-t-7714-2015%EF%BC%89%E5%BC%95%E7%94%A8%E7%BD%91%E9%A1%B5%E6%96%87%E7%AB%A0/</id>
+    <published>2024-03-28T09:55:54.000Z</published>
+    <updated>2024-03-28T10:09:28.326Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>一共需要7项信息<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[论文中引用网页内容在文中怎么标注？]( https://www.zhihu.com/question/457765989/answer/1869692237)">[1]</span></a></sup>：</p><p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\image-20240328175958216.png" alt="image-20240328175958216" style="zoom:33%;" /></p><p>①<strong>主要责任者</strong>：作者名字或责任机构，比如央视网、XXX研究所、XXX局等；</p><p>②<strong>题名</strong>：这一项一般没有什么异议，直接复制粘贴就好；</p><p>③<strong>文献类型标志</strong>：在GB2015附录B的表B.1中，可以找到电子公告的文献类型标识代码是EB；</p><p>④<strong>文献载体类型</strong>：在GB2015附录B的表B.2中，可以找到联机网络的载体类型标识代码是OL；</p><p>⑤<strong>更新或修改日期</strong>：资源的发布日期；</p><p>⑥<strong>引用日期</strong>：在着手写论文到提交论文之间都可以；</p><p>⑦<strong>获取和访问路径</strong>：网址。</p><span id="more"></span><p>如果是使用zotero的GB2015的csl的，使用浏览器插件添加进zotero的话，只要注意更正一下标题和作者就可以了，默认没添加作者，标题格式有些乱。</p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.zhihu.com/question/457765989/answer/1869692237">论文中引用网页内容在文中怎么标注？</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;一共需要7项信息&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
+class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
+aria-label=&quot;[论文中引用网页内容在文中怎么标注？]( https://www.zhihu.com/question/457765989/answer/1869692237)
+&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;C:\Users\19468\AppData\Roaming\Typora\typora-user-images\image-20240328175958216.png&quot; alt=&quot;image-20240328175958216&quot; style=&quot;zoom:33%;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;①&lt;strong&gt;主要责任者&lt;/strong&gt;：作者名字或责任机构，比如央视网、XXX研究所、XXX局等；&lt;/p&gt;
+&lt;p&gt;②&lt;strong&gt;题名&lt;/strong&gt;：这一项一般没有什么异议，直接复制粘贴就好；&lt;/p&gt;
+&lt;p&gt;③&lt;strong&gt;文献类型标志&lt;/strong&gt;：在GB2015附录B的表B.1中，可以找到电子公告的文献类型标识代码是EB；&lt;/p&gt;
+&lt;p&gt;④&lt;strong&gt;文献载体类型&lt;/strong&gt;：在GB2015附录B的表B.2中，可以找到联机网络的载体类型标识代码是OL；&lt;/p&gt;
+&lt;p&gt;⑤&lt;strong&gt;更新或修改日期&lt;/strong&gt;：资源的发布日期；&lt;/p&gt;
+&lt;p&gt;⑥&lt;strong&gt;引用日期&lt;/strong&gt;：在着手写论文到提交论文之间都可以；&lt;/p&gt;
+&lt;p&gt;⑦&lt;strong&gt;获取和访问路径&lt;/strong&gt;：网址。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Word Tips</title>
+    <link href="https://www.sdhlw.top/word-tips/"/>
+    <id>https://www.sdhlw.top/word-tips/</id>
+    <published>2024-03-24T07:51:58.000Z</published>
+    <updated>2024-03-24T07:54:09.625Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>快捷键：</p><ul><li>alt += ：插入公式</li></ul><span id="more"></span><p>b</p><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;快捷键：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;alt += ：插入公式&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="Word" scheme="https://www.sdhlw.top/tags/word/"/>
+    
+  </entry>
   
   <entry>
     <title>独立测试与交叉测试</title>
@@ -467,89 +548,6 @@ aria-label=&quot;[Hexo Next 8.x 主题添加可切换的暗黑模式](https://ww
     
     <category term="其它" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/%E5%85%B6%E5%AE%83/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Meta分析基本知识</title>
-    <link href="https://www.sdhlw.top/meta%E5%88%86%E6%9E%90%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/"/>
-    <id>https://www.sdhlw.top/meta%E5%88%86%E6%9E%90%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86/</id>
-    <published>2024-02-17T12:13:54.000Z</published>
-    <updated>2024-02-18T01:51:24.455Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>"Meta分析是一种对单独的研究结果进行统计分析的方法，对研究结果间差异的来源进行检验，并对具有足够相似性的结果进行定量合成。”<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[零基础完成一篇Meta分析SCI](https://www.bilibili.com/video/BV1Jp4y1C7kc/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad)">[1]</span></a></sup></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161510111.png" alt="" style="zoom: 25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161511104.png" alt="" style="zoom:25%;" /></p><p>需要掌握的技能： 文献检索、文献管理、数据提取、软件操作、写作成稿</p><span id="more"></span><h3 id="文献检索">1.文献检索</h3><p>检索哪些数据库？ 英文：Medline(Pubmed),Embase,WOS,Cochrane Library...中文：知网、万方、维普、CBM.. 其他：ClinicalTrials.gov、CCTRCINAHL....</p><p>怎么检索？</p><ul><li><p>六步法</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161518053.png" alt="" style="zoom:25%;" /></p></li><li><p>PICOS原则</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161520760.png" alt="" style="zoom:25%;" /></p></li><li><p>主题词+自由词</p></li></ul><p>主题词：通过数据库官方的主题词表，如</p><ul><li>Pubmed:Medical Subject Headings,简称MeSH</li><li>Embase:Emtree</li></ul><p>自由词：</p><p>①使用各学科在国家上通用、文献中出现过的术语：②从专业词典、手册、分类表及期刊中选择检索词或者参考现有的原始文献：③同义词、近义词、上位词、下位词； ④缩略语及英文的不同拼写形式：⑤选用动植物药名的中文、英文和拉丁文；⑥同一概念的几种表达方式对于词根相同者可用截词符解决。</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161524314.png" alt="" style="zoom:25%;" /></p><h3 id="文献管理">2.文献管理</h3><p>筛选文献 阅读笔记 写作编辑</p><p>工具：</p><ul><li>Endnote</li><li>NoteExpress</li><li><a href="http://refer.medlive.cn/">医学文献王</a></li></ul><h3 id="数据提取">3.数据提取</h3><p>提取内容： 1.基本信息：题目、原始研究作者、发表年份等2.纳入研究的合格数据：研究对象特征、干预措施、结局指标、研究设计等3.方法学部分：设计方案、研究期期限、随机方案、盲法、其他偏倚等4.其他信息：资助来源、关键性结论、混杂因素和是否校正</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161531552.png" alt="" style="zoom:80%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161532352.png" alt="" style="zoom:80%;" /></p><p>结局指标数据</p><p>统计常识：Mean,SD,SE,P,Cl,OR,RR,HR,特异度，敏感度等。</p><p>获取方法：</p><ul><li>直接从文献中获取</li><li>数据转换获取：Excel数据换算表、丁香园循证医学版、百度</li><li>提取工具获取：VebPlotDigitizer(WPD),Engauge Digitizer(ED)</li><li>找作者获取：发邮件</li><li>都获取不了：定性分析、剔别除（在文献筛选部分说明原因）</li></ul><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161537979.png" alt="" style="zoom:30%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161537541.png" alt="" style="zoom:30%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161540524.png" alt="" style="zoom:30%;" /></p><h3 id="软件操作">4.软件操作</h3><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161541894.png" alt="" style="zoom:33%;" /></p><p><ahref="https://training.cochrane.org/online-learning/core-software/revman">RevManWeb</a> 也适用于非 Cochrane 的系统评价，而 RevMan 5 只能用于 Cochrane的系统评价<sup id="fnref:2"><a href="#fn:2" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[手柄手教你meta分析](https://www.bilibili.com/video/BV1A64y1q7gc/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad)">[2]</span></a></sup>。</p><p>工具：</p><h3 id="写作投稿">5.写作投稿</h3><p>PRISMA声明:27条</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161544010.png" alt="" style="zoom:33%;" /></p><h3 id="如何架构一篇meta分析">如何架构一篇Meta分析</h3><p>PRISMA中文版已放至：<a href="https://github.com/sdhlw/OA"></a></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161548470.png" alt="" style="zoom:23%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161549521.png" alt="" style="zoom:23%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161550132.png" alt="" style="zoom:33%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161551937.png" alt="" style="zoom:33%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161552407.png" alt="" style="zoom:25%;" /></p><h4 id="标题">标题</h4><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402162247254.png" alt="" style="zoom:25%;" /></p><h4 id="摘要">摘要</h4><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402162312052.png" alt="" style="zoom:25%;" /></p><h4 id="前言">前言</h4><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402162321769.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171630916.png" alt="" style="zoom: 28%;" /></p><h4 id="方法">方法</h4><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171628238.png" alt="" style="zoom:33%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171632222.png" alt="" style="zoom:33%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171632175.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171633412.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171634756.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171635266.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171637960.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171639896.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171641901.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171642910.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171642318.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171643847.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171644034.png" alt="" style="zoom:25%;" /></p><h4 id="结果">结果</h4><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171645732.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171646956.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171647726.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171648832.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171649552.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171649219.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171650490.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171651630.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171652055.png" alt="" style="zoom:25%;" /></p><h4 id="讨论">讨论</h4><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171653693.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171654795.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171654670.png" alt="" style="zoom:25%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171655427.png" alt="" style="zoom:25%;" /></p><h4 id="资金支持">资金支持</h4><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402171657125.png" alt="" style="zoom:25%;" /></p><h4 id="stata实例演示制作森林图">Stata实例演示制作森林图</h4><p>此部分略</p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1Jp4y1C7kc/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">零基础完成一篇Meta分析SCI</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li><li id="fn:2"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1A64y1q7gc/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">手柄手教你meta分析</a><a href="#fnref:2" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&quot;Meta分析是一种对单独的研究结果进行统计分析的方法，对研究结果间差异的来源进行检验，并对具有足够相似性的结果进行定量合成。”&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
-class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
-aria-label=&quot;[零基础完成一篇Meta分析SCI](https://www.bilibili.com/video/BV1Jp4y1C7kc/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=9f04b059fdee5024fd04678f53de10ad)
-&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161510111.png&quot; alt=&quot;&quot; style=&quot;zoom: 25%;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402161511104.png&quot; alt=&quot;&quot; style=&quot;zoom:25%;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;需要掌握的技能： 文献检索、文献管理、数据提取、软件操作、写作成稿&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
-    
-    
-    <category term="Meta分析" scheme="https://www.sdhlw.top/tags/meta%E5%88%86%E6%9E%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Markdown超链接</title>
-    <link href="https://www.sdhlw.top/markdown%E8%B6%85%E9%93%BE%E6%8E%A5/"/>
-    <id>https://www.sdhlw.top/markdown%E8%B6%85%E9%93%BE%E6%8E%A5/</id>
-    <published>2024-02-16T15:36:21.000Z</published>
-    <updated>2024-02-18T01:50:06.394Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>行内形式<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Markdown超链接](https://m.imooc.com/wiki/markdownlesson-markdownlink)">[1]</span></a></sup>：<code>[百度](https://www.baidu.com/)</code></p><p>全局形式：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[百度][b]</span><br><span class="line">[b]:https://www.baidu.com/</span><br></pre></td></tr></table></figure><p>当一个超链接在文章中反复出现时，可以使用全局声明的形式，减少文章编写的工作量。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[天坛][tiantan]公园，是明清两代皇帝每年祭天和祈祷五谷丰收的地方。[天坛][tiantan]以严谨的建筑布局、奇特的建筑构造和瑰丽的建筑装饰着称于世。</span><br><span class="line">[tiantan]: http://www.tiantanpark.com</span><br></pre></td></tr></table></figure><span id="more"></span><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://m.imooc.com/wiki/markdownlesson-markdownlink">Markdown超链接</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;行内形式&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
-class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
-aria-label=&quot;[Markdown超链接](https://m.imooc.com/wiki/markdownlesson-markdownlink)
-&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;：&lt;code&gt;[百度](https://www.baidu.com/)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;全局形式：&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[百度][b]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[b]:https://www.baidu.com/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;当一个超链接在文章中反复出现时，可以使用全局声明的形式，减少文章编写的工作量。&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[天坛][tiantan]公园，是明清两代皇帝每年祭天和祈祷五谷丰收的地方。[天坛][tiantan]以严谨的建筑布局、奇特的建筑构造和瑰丽的建筑装饰着称于世。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;[tiantan]: http://www.tiantanpark.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="博客运营" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/"/>
-    
-    <category term="markdown" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/markdown/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>投稿期刊推荐</title>
-    <link href="https://www.sdhlw.top/%E6%8A%95%E7%A8%BF%E6%9C%9F%E5%88%8A%E6%8E%A8%E8%8D%90/"/>
-    <id>https://www.sdhlw.top/%E6%8A%95%E7%A8%BF%E6%9C%9F%E5%88%8A%E6%8E%A8%E8%8D%90/</id>
-    <published>2024-02-15T13:48:50.000Z</published>
-    <updated>2024-02-18T01:49:38.925Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、查看自己参考文献的期刊</p><p>2、专业定点期刊，比如做生信，就可以投<em>Bioinformatics</em>、<em>Briefingsin Bioinformatics</em>、<em>BMC Bioinformatics</em>，也可以直接谷歌生信相关期刊。</p><span id="more"></span><p>3、使用专业网站选刊<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[5 个网站帮你精准选到 SCI 投稿期刊！（附好用的期刊查找网址）](https://zhuanlan.zhihu.com/p/382157070)">[1]</span></a></sup></p><p>Journal Finder：出版商开发的选刊工具</p><ul><li><ahref="https://journalfinder.wiley.com/search?type=match">wiley</a></li><li><a href="https://journalfinder.elsevier.com/">elsevier</a></li></ul><p>Journal Suggester：出版商开发的选刊工具</p><ul><li><p><ahref="https://journalsuggester.springer.com/">springer</a>：已经无法使用</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402152157438.png" alt="image-20240215215728650" style="zoom:33%;" /></p></li></ul><p>其他网址：<ahref="https://www.journalguide.com/">journalguide</a></p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/382157070">5个网站帮你精准选到 SCI投稿期刊！（附好用的期刊查找网址）</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;1、查看自己参考文献的期刊&lt;/p&gt;
-&lt;p&gt;2、专业定点期刊，比如做生信，就可以投&lt;em&gt;Bioinformatics&lt;/em&gt;、&lt;em&gt;Briefings
-in Bioinformatics&lt;/em&gt;、&lt;em&gt;BMC Bioinformatics&lt;/em&gt;
-，也可以直接谷歌生信相关期刊。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
-    
-    
-    <category term="论文投稿" scheme="https://www.sdhlw.top/tags/%E8%AE%BA%E6%96%87%E6%8A%95%E7%A8%BF/"/>
     
   </entry>
   
