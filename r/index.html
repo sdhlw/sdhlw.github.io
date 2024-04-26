@@ -22,12 +22,12 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="如果有 chatgpt，直接问 chatgpt 足矣，这里只记录自己觉得常用的函数 Tips:  Rstudio：快速注释，Ctrl+shift+C  123install.packages(&quot;openxlsx&quot;,repos &#x3D; &quot;https:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;CRAN&#x2F;&quot;) # 如果已经翻墙，可把镜像删除library(">
+  <meta name="description" content="如果有 chatgpt，直接问 chatgpt 足矣，这里只记录自己觉得常用的函数 Tips:  Rstudio：快速注释，Ctrl+shift+C  123install.packages(&quot;openxlsx&quot;,repos &#x3D; &quot;https:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;CRAN&#x2F;&quot;) # 如果已经翻墙，可把镜像删除library(openx">
 <meta property="og:type" content="website">
 <meta property="og:title" content="R 速查">
 <meta property="og:url" content="https://www.sdhlw.top/r/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="如果有 chatgpt，直接问 chatgpt 足矣，这里只记录自己觉得常用的函数 Tips:  Rstudio：快速注释，Ctrl+shift+C  123install.packages(&quot;openxlsx&quot;,repos &#x3D; &quot;https:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;CRAN&#x2F;&quot;) # 如果已经翻墙，可把镜像删除library(">
+<meta property="og:description" content="如果有 chatgpt，直接问 chatgpt 足矣，这里只记录自己觉得常用的函数 Tips:  Rstudio：快速注释，Ctrl+shift+C  123install.packages(&quot;openxlsx&quot;,repos &#x3D; &quot;https:&#x2F;&#x2F;mirrors.ustc.edu.cn&#x2F;CRAN&#x2F;&quot;) # 如果已经翻墙，可把镜像删除library(openx">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-03-17T13:15:05.000Z">
 <meta property="article:modified_time" content="2024-03-18T03:12:49.182Z">
@@ -231,30 +231,15 @@
 <li>Rstudio：快速注释，Ctrl+shift+C</li>
 </ul>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">install.packages<span class="punctuation">(</span><span class="string">&quot;openxlsx&quot;</span><span class="punctuation">,</span>repos <span class="operator">=</span> <span class="string">&quot;https://mirrors.ustc.edu.cn/CRAN/&quot;</span><span class="punctuation">)</span> <span class="comment"># 如果已经翻墙，可把镜像删除</span></span><br><span class="line">library<span class="punctuation">(</span>openxlsx<span class="punctuation">)</span> <span class="comment"># 加载包</span></span><br><span class="line">str<span class="punctuation">(</span>datatest<span class="punctuation">)</span> <span class="comment"># 查看数据类型</span></span><br></pre></td></tr></table></figure>
-<h3 id="excel">excel</h3>
-<figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">library<span class="punctuation">(</span>openxlsx<span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 写入excel</span></span><br><span class="line">datatest <span class="operator">&lt;-</span>  write.xlsx<span class="punctuation">(</span>data<span class="punctuation">,</span> file <span class="operator">=</span> <span class="string">&quot;D://path//filename.xlsx&quot;</span><span class="punctuation">,</span>sheetName <span class="operator">=</span> <span class="string">&quot;sheet_name&quot;</span><span class="punctuation">,</span> startRow <span class="operator">=</span> start_row<span class="punctuation">,</span> startCol <span class="operator">=</span> start_col<span class="punctuation">,</span> overwrite <span class="operator">=</span> <span class="literal">TRUE</span><span class="punctuation">)</span> <span class="comment"># overwrite = TRUE，覆盖excel,确认自己需要。结果为 tibble 类型</span></span><br><span class="line">datatest <span class="operator">&lt;-</span> as.data.frame<span class="punctuation">(</span>datatest<span class="punctuation">)</span> <span class="comment"># tibble 类型转 data.frame 类型</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="imputefamd">imputeFAMD</h3>
-<p>对连续型特征和分类型特征进行缺失值填充<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[imputeFAMD: Impute mixed dataset](https://www.rdocumentation.org/packages/missMDA/versions/1.19/topics/imputeFAMD)
+
+<h3 id="excel"><a href="#excel" class="headerlink" title="excel"></a>excel</h3><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">library<span class="punctuation">(</span>openxlsx<span class="punctuation">)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 写入excel</span></span><br><span class="line">datatest <span class="operator">&lt;-</span>  write.xlsx<span class="punctuation">(</span>data<span class="punctuation">,</span> file <span class="operator">=</span> <span class="string">&quot;D://path//filename.xlsx&quot;</span><span class="punctuation">,</span>sheetName <span class="operator">=</span> <span class="string">&quot;sheet_name&quot;</span><span class="punctuation">,</span> startRow <span class="operator">=</span> start_row<span class="punctuation">,</span> startCol <span class="operator">=</span> start_col<span class="punctuation">,</span> overwrite <span class="operator">=</span> <span class="literal">TRUE</span><span class="punctuation">)</span> <span class="comment"># overwrite = TRUE，覆盖excel,确认自己需要。结果为 tibble 类型</span></span><br><span class="line">datatest <span class="operator">&lt;-</span> as.data.frame<span class="punctuation">(</span>datatest<span class="punctuation">)</span> <span class="comment"># tibble 类型转 data.frame 类型</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="imputeFAMD"><a href="#imputeFAMD" class="headerlink" title="imputeFAMD"></a>imputeFAMD</h3><p>对连续型特征和分类型特征进行缺失值填充<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[imputeFAMD: Impute mixed dataset](https://www.rdocumentation.org/packages/missMDA/versions/1.19/topics/imputeFAMD)
 ">[1]</span></a></sup></p>
 <figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">library<span class="punctuation">(</span>missMDA<span class="punctuation">)</span></span><br><span class="line">imputeFAMD<span class="punctuation">(</span>X<span class="punctuation">,</span> ncp <span class="operator">=</span> <span class="number">2</span><span class="punctuation">,</span> method<span class="operator">=</span><span class="built_in">c</span><span class="punctuation">(</span><span class="string">&quot;Regularized&quot;</span><span class="punctuation">,</span><span class="string">&quot;EM&quot;</span><span class="punctuation">)</span><span class="punctuation">,</span> row.w <span class="operator">=</span> <span class="literal">NULL</span><span class="punctuation">,</span></span><br><span class="line">      coeff.ridge<span class="operator">=</span><span class="number">1</span><span class="punctuation">,</span>threshold <span class="operator">=</span> <span class="number">1e-06</span><span class="punctuation">,</span> ind.sup<span class="operator">=</span><span class="literal">NULL</span><span class="punctuation">,</span> sup.var<span class="operator">=</span><span class="literal">NULL</span><span class="punctuation">,</span></span><br><span class="line">	  seed <span class="operator">=</span> <span class="literal">NULL</span><span class="punctuation">,</span> maxiter <span class="operator">=</span> <span class="number">1000</span><span class="punctuation">,</span>...<span class="punctuation">)</span></span><br></pre></td></tr></table></figure>
-<p>X 为有缺失值的data.frame</p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.rdocumentation.org/packages/missMDA/versions/1.19/topics/imputeFAMD">imputeFAMD:
-Impute mixed dataset</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
 
+<p>X 为有缺失值的data.frame</p>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.rdocumentation.org/packages/missMDA/versions/1.19/topics/imputeFAMD">imputeFAMD: Impute mixed dataset</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
       </div>
       
       
@@ -315,7 +300,7 @@ Impute mixed dataset</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#excel"><span class="nav-text">excel</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#imputefamd"><span class="nav-text">imputeFAMD</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#excel"><span class="nav-text">excel</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#imputeFAMD"><span class="nav-text">imputeFAMD</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -331,7 +316,7 @@ Impute mixed dataset</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">83</span>
+          <span class="site-state-item-count">90</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -344,7 +329,7 @@ Impute mixed dataset</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">48</span>
+        <span class="site-state-item-count">49</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -395,13 +380,13 @@ Impute mixed dataset</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">120k</span>
+    <span title="Symbols count total">123k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:49</span>
+    <span title="Reading time total">1:51</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
