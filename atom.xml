@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-05-01T14:19:08.152Z</updated>
+  <updated>2024-05-01T15:03:19.022Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://www.sdhlw.top/%E5%A4%9A%E7%BA%A7%E5%88%97%E8%A1%A8%E5%AF%BC%E8%87%B4%E5%9B%BE%E8%A1%A8%E4%BA%8C-1%E9%97%AE%E9%A2%98/"/>
     <id>https://www.sdhlw.top/%E5%A4%9A%E7%BA%A7%E5%88%97%E8%A1%A8%E5%AF%BC%E8%87%B4%E5%9B%BE%E8%A1%A8%E4%BA%8C-1%E9%97%AE%E9%A2%98/</id>
     <published>2024-05-01T02:56:10.000Z</published>
-    <updated>2024-05-01T14:19:08.152Z</updated>
+    <updated>2024-05-01T15:03:19.022Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="问题">问题</h1><p>一级标题：第一章 XXX</p><p>图表的题注名称：图一.1</p><p>想要的效果：根据章节序号，插入题注时是：图1.1 和表1.1</p><span id="more"></span><h1 id="方案一">方案一</h1><p>临时方案，更新域，会失效。</p><ul><li><p>首先光标定位到问题题注前标题行，再单击【开始】-【段落】-【多级列表】-【定义新的多级列表】命令，勾选正规形式编号，将第一章，变为第1章<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[“图0-1”和“图一-1”你遇到过么？ ](https://www.sohu.com/a/374084254_825825)">[1]</span></a></sup>。</p></li><li><p>Ctrl +A全选全文，按【F9】刷新所有域（选择更新目录，而不是页码）。此时，题注编号已经显示为小写数字格式了。</p></li><li><p>定位到标题行，定义多级列表中取消勾选正规形式编号。</p><p>操作后：表或图序号前会多一个横线</p></li></ul><p>word导出pdf时，默认会更新域，所以我们要锁住域：</p><ul><li>全选文档内容（Ctrl+A）</li><li>锁定域（Ctrl+F11）</li><li>解锁域（Ctrl+Shift+F11）</li></ul><h1 id="方案二">方案二</h1><p>永久方案，更新域，不会失效</p><ul><li><p>光标定位到题注前标题行的尾部，按组合键【Ctrl+Alt+回车】输入一个【样式分割符】，定位到样式分割符后面按下【回车】键，使标题行与正文分别成为两个独立段落</p></li><li><p>定位到标题行中【样式分割符】后面，直接（为样式分割符后面的空文本）应用一个级别稍小的标题样式。（如果你的标题用到了四级标题，可以应用五级或六级标题）</p></li><li><p>修改多级列表：将刚才应用到样式分隔符后面的标题样式，链接到大纲级别中，比如应用了标题5：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405011146203.png" alt="" style="zoom:50%;" /></p><ul><li><p>重新插入题注：添加题注时需要注意，单击【题注】对话框中的【编号】按钮，在弹出的【题注编号】对话框中，在【章节起始样式】下拉列表中选择刚才设置的标题（比如刚才的标题5）</p></li><li><p>第一步和第二步要每个章节都设置。</p><p>出现的问题：题注是没问题了，但是如果之前已经插入较多题注，现在一个个重新插入，还不如使用临时方案快捷，而且左侧标题目录会多出一些空白内容（级别文字会被当成目录）。</p></li></ul></li></ul><h1 id="参考文章">参考文章</h1><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.sohu.com/a/374084254_825825">“图0-1”和“图一-1”你遇到过么？</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span></li></ol></div></div>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="问题">问题</h1><p>一级标题：第一章 XXX</p><p>图表的题注名称：图一.1</p><p>想要的效果：根据章节序号，插入题注时是：图1.1 和表1.1</p><span id="more"></span><h1 id="方案一">方案一</h1><p>临时方案，更新域，会失效。</p><ul><li><p>首先光标定位到问题题注前标题行，再单击【开始】-【段落】-【多级列表】-【定义新的多级列表】命令，<strong>勾选正规形式编号</strong>，将第一章，变为第1章<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[“图0-1”和“图一-1”你遇到过么？ ](https://www.sohu.com/a/374084254_825825)">[1]</span></a></sup>。</p></li><li><p>Ctrl +A全选全文，按【F9】刷新所有域（选择更新目录，而不是页码）。此时，题注编号已经显示为小写数字格式了。</p></li><li><p>定位到标题行，定义多级列表中取消勾选正规形式编号。</p><p>操作后：表或图序号前会多一个横线</p></li></ul><p>word导出pdf时，默认会更新域，所以我们要锁住域：</p><ul><li>全选文档内容（Ctrl+A）</li><li>锁定域（Ctrl+F11）</li><li>解锁域（Ctrl+Shift+F11）</li><li>更新域（F9）</li></ul><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404292200851.png" alt="" style="zoom:50%;" /></p><h1 id="方案二">方案二</h1><p>永久方案，更新域，不会失效</p><ul><li><p>光标定位到题注前标题行的尾部，按组合键【Ctrl+Alt+回车】输入一个【样式分割符】，定位到样式分割符后面按下【回车】键，使标题行与正文分别成为两个独立段落</p></li><li><p>定位到标题行中【样式分割符】后面，直接（为样式分割符后面的空文本）应用一个级别稍小的标题样式。（如果你的标题用到了四级标题，可以应用五级或六级标题）</p></li><li><p>修改多级列表：将刚才应用到样式分隔符后面的标题样式，链接到大纲级别中，比如应用了标题5：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405011146203.png" alt="" style="zoom:50%;" /></p></li><li><p>重新插入题注：添加题注时需要注意，单击【题注】对话框中的【编号】按钮，在弹出的【题注编号】对话框中，在【章节起始样式】下拉列表中选择刚才设置的标题（比如刚才的标题5）</p></li><li><p>第一步和第二步要每个章节都设置。</p><p>出现的问题：题注是没问题了，但是如果之前已经插入较多题注，现在一个个重新插入，还不如使用临时方案快捷，而且左侧标题目录会多出一些空白内容（级别文字会被当成目录）。</p></li></ul><h1 id="参考文章">参考文章</h1><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.sohu.com/a/374084254_825825">“图0-1”和“图一-1”你遇到过么？</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span></li></ol></div></div>]]></content>
     
     
     <summary type="html">&lt;h1 id=&quot;问题&quot;&gt;问题&lt;/h1&gt;
@@ -47,9 +47,9 @@
     <link href="https://www.sdhlw.top/%E9%9A%90%E8%97%8F%E6%88%96%E6%98%BE%E7%A4%BAword%E4%B8%AD%E7%9A%84%E6%A0%87%E8%AE%B0/"/>
     <id>https://www.sdhlw.top/%E9%9A%90%E8%97%8F%E6%88%96%E6%98%BE%E7%A4%BAword%E4%B8%AD%E7%9A%84%E6%A0%87%E8%AE%B0/</id>
     <published>2024-04-30T08:00:30.000Z</published>
-    <updated>2024-04-30T09:13:47.142Z</updated>
+    <updated>2024-05-01T14:58:04.838Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301602411.png" alt="" style="zoom:50%;" /></p><span id="more"></span><p>b</p><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301602411.png" alt="" style="zoom:50%;" /></p><span id="more"></span><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301602411.png&quot; alt=&quot;&quot; style=&quot;zoom:50%;&quot; /&gt;&lt;/p&gt;</summary>
@@ -70,19 +70,19 @@
     <link href="https://www.sdhlw.top/%E5%9B%BD%E9%99%85%E9%80%9A%E8%A1%8C%E4%B8%89%E7%BA%BF%E8%A1%A8/"/>
     <id>https://www.sdhlw.top/%E5%9B%BD%E9%99%85%E9%80%9A%E8%A1%8C%E4%B8%89%E7%BA%BF%E8%A1%A8/</id>
     <published>2024-04-30T06:53:21.000Z</published>
-    <updated>2024-04-30T09:13:23.148Z</updated>
+    <updated>2024-05-01T14:59:07.498Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>学位论文对表的要求（GB/T7713.1一2006）：</p><p>5.3.3表 表应具有“自明性”。表应有编号。表的编号由“表”和从“1”开始的阿拉伯数字组成，表较多时，可分章编号。表宜有表题，表题即表的名称，置于表的编号之后。表的编号和表题应置于表上方。表的编排，一般是内容和测试项目由左至右横读，数据依序竖读。表的编排建议采用国际通行的三线表。如某个表需要转页接排，在随后的各页上应重复表的编号。编号后跟表题（可省略）和“（续）”，置于表上方。 续表均应重复表头。</p><span id="more"></span><hr /><p>国际通行三线表：整体符合三线表的基本格式即可，具体格式要求并没有找到一个通用标准，这里以多数高校论文通行标准进行制作。</p><p>多数高校里建议表格里的粗线条为1.5磅，细线条为0.75磅<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[论文中的三线表及表格规范](https://blog.csdn.net/weixin_42703239/article/details/125047796)">[1]</span></a></sup>。“三线表”不一定只有3条线，必要时可加辅助线，但无论加多少条辅助线，仍称做“三线表”。</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301459307.png" alt="表格基本要素名称" style="zoom: 67%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301511189.png" alt="三线表" style="zoom:50%;" /></p><p>字体和段落要求<sup id="fnref:2"><a href="#fn:2" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[三分钟快速制作论文三线表](https://www.bilibili.com/video/BV1ug411e7KH/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad)">[2]</span></a></sup>：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301519725.png" alt="" style="zoom:33%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301519139.png" alt="" style="zoom:33%;" /></p><p>跨页续表：光标在跨页的第一行，Ctrl + shift + enter (拆分为2个表)，腾出续表标题<sup id="fnref:3"><a href="#fn:3" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[30s制作三线表及续表](https://www.bilibili.com/video/BV1Ck4y1e7gR/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad)">[3]</span></a></sup>。上表底线设置0.75磅，下表添加行，设置与上表一样的标题行。</p><p>续表格式(居中)：</p><p>表 3‑1 某某某（续表） Table 3‑1 XXXXX (continued)</p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/weixin_42703239/article/details/125047796">论文中的三线表及表格规范</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li><li id="fn:2"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1ug411e7KH/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">三分钟快速制作论文三线表</a><a href="#fnref:2" rev="footnote">↩︎</a></span></li><li id="fn:3"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1Ck4y1e7gR/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">30s制作三线表及续表</a><a href="#fnref:3" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>学位论文对表的要求（GB/T7713.1一2006）：</p><p>5.3.3表 表应具有“自明性”。</p><p>表应有编号。表的编号由“表”和从“1”开始的阿拉伯数字组成，表较多时，可分章编号。</p><p>表宜有表题，表题即表的名称，置于表的编号之后。表的编号和表题应置于表上方。</p><p>表的编排，一般是内容和测试项目由左至右横读，数据依序竖读。</p><p>表的编排建议采用国际通行的三线表。</p><p>如某个表需要转页接排，在随后的各页上应重复表的编号。编号后跟表题（可省略）和“（续）”，置于表上方。</p><p>续表均应重复表头。</p><span id="more"></span><hr /><p>国际通行三线表：整体符合三线表的基本格式即可，具体格式要求并没有找到一个通用标准，这里以多数高校论文通行标准进行制作。</p><p>多数高校里建议表格里的粗线条为1.5磅，细线条为0.75磅<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[论文中的三线表及表格规范](https://blog.csdn.net/weixin_42703239/article/details/125047796)">[1]</span></a></sup>。“三线表”不一定只有3条线，必要时可加辅助线，但无论加多少条辅助线，仍称做“三线表”。</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301459307.png" alt="表格基本要素名称" style="zoom: 67%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301511189.png" alt="三线表" style="zoom:50%;" /></p><p>字体和段落要求<sup id="fnref:2"><a href="#fn:2" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[三分钟快速制作论文三线表](https://www.bilibili.com/video/BV1ug411e7KH/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad)">[2]</span></a></sup>：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301519725.png" alt="" style="zoom: 80%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301519139.png" alt="" style="zoom: 80%;" /></p><p>跨页续表：光标在跨页的第一行，Ctrl + shift + enter (拆分为2个表)，腾出续表标题<sup id="fnref:3"><a href="#fn:3" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[30s制作三线表及续表](https://www.bilibili.com/video/BV1Ck4y1e7gR/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad)">[3]</span></a></sup>。上表底线设置0.75磅，下表添加行，设置与上表一样的标题行。</p><p>续表格式(居中)：</p><p>表 3‑1 某某某（续表）</p><p>Table 3‑1 XXXXX (continued)</p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/weixin_42703239/article/details/125047796">论文中的三线表及表格规范</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li><li id="fn:2"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1ug411e7KH/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">三分钟快速制作论文三线表</a><a href="#fnref:2" rev="footnote">↩︎</a></span></li><li id="fn:3"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1Ck4y1e7gR/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">30s制作三线表及续表</a><a href="#fnref:3" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
     
     
     <summary type="html">&lt;p&gt;学位论文对表的要求（GB/T7713.1一2006）：&lt;/p&gt;
-&lt;p&gt;5.3.3表 表应具有“自明性”。
-表应有编号。表的编号由“表”和从“1”开始的阿拉伯数字组成，表较多时，可分章编号。
-表宜有表题，表题即表的名称，置于表的编号之后。表的编号和表题应置于表上方。
-表的编排，一般是内容和测试项目由左至右横读，数据依序竖读。
-表的编排建议采用国际通行的三线表。
-如某个表需要转页接排，在随后的各页上应重复表的编号。编号后跟表题（可省略）和“（续）”，置于
-表上方。 续表均应重复表头。&lt;/p&gt;</summary>
+&lt;p&gt;5.3.3表 表应具有“自明性”。&lt;/p&gt;
+&lt;p&gt;表应有编号。表的编号由“表”和从“1”开始的阿拉伯数字组成，表较多时，可分章编号。&lt;/p&gt;
+&lt;p&gt;表宜有表题，表题即表的名称，置于表的编号之后。表的编号和表题应置于表上方。&lt;/p&gt;
+&lt;p&gt;表的编排，一般是内容和测试项目由左至右横读，数据依序竖读。&lt;/p&gt;
+&lt;p&gt;表的编排建议采用国际通行的三线表。&lt;/p&gt;
+&lt;p&gt;如某个表需要转页接排，在随后的各页上应重复表的编号。编号后跟表题（可省略）和“（续）”，置于表上方。&lt;/p&gt;
+&lt;p&gt;续表均应重复表头。&lt;/p&gt;</summary>
     
     
     
@@ -100,15 +100,13 @@
     <link href="https://www.sdhlw.top/%E9%A1%B5%E7%9C%89%E8%87%AA%E5%8A%A8%E8%AF%86%E5%88%AB%E7%AB%A0%E8%8A%82%E5%90%8D%E7%A7%B0/"/>
     <id>https://www.sdhlw.top/%E9%A1%B5%E7%9C%89%E8%87%AA%E5%8A%A8%E8%AF%86%E5%88%AB%E7%AB%A0%E8%8A%82%E5%90%8D%E7%A7%B0/</id>
     <published>2024-04-30T02:56:14.000Z</published>
-    <updated>2024-04-30T03:05:55.119Z</updated>
+    <updated>2024-05-01T15:00:13.517Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>插入两个域：一个章节序号，一个章节名称</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301100938.png" alt="" style="zoom:67%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301105899.png" alt="章节序号" style="zoom:67%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301102852.png" alt="章节名称" style="zoom:67%;" /></p><span id="more"></span><p>b</p><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>插入两个域：一个章节序号，一个章节名称</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301100938.png" alt="" style="zoom:67%;" /></p><span id="more"></span><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301105899.png" alt="" style="zoom:67%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301102852.png" alt="" style="zoom:67%;" /></p><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;插入两个域：一个章节序号，一个章节名称&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301100938.png&quot; alt=&quot;&quot; style=&quot;zoom:67%;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301105899.png&quot; alt=&quot;章节序号&quot; style=&quot;zoom:67%;&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301102852.png&quot; alt=&quot;章节名称&quot; style=&quot;zoom:67%;&quot; /&gt;&lt;/p&gt;</summary>
+&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301100938.png&quot; alt=&quot;&quot; style=&quot;zoom:67%;&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -132,35 +130,6 @@
     <summary type="html">&lt;p&gt;在章节前插入分节符时：&lt;/p&gt;
 &lt;p&gt;错误：光标定位在章节前一页末尾，插入下一页分节符（会导致章节前面出现空行）&lt;/p&gt;
 &lt;p&gt;正确：光标定位在章节前面，插入连续分节符&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
-    
-    
-    <category term="word" scheme="https://www.sdhlw.top/tags/word/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>多级列表的章节序号二.1问题</title>
-    <link href="https://www.sdhlw.top/%E5%A4%9A%E7%BA%A7%E5%88%97%E8%A1%A8%E7%9A%84%E7%AB%A0%E8%8A%82%E5%BA%8F%E5%8F%B7%E4%BA%8C-1/"/>
-    <id>https://www.sdhlw.top/%E5%A4%9A%E7%BA%A7%E5%88%97%E8%A1%A8%E7%9A%84%E7%AB%A0%E8%8A%82%E5%BA%8F%E5%8F%B7%E4%BA%8C-1/</id>
-    <published>2024-04-28T14:25:33.000Z</published>
-    <updated>2024-04-29T14:04:17.443Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>图片表格页眉需要章节的域为阿拉伯数字，但是章节名称又要求是一二三等格式</p><p>解决方法：</p><p>在定义多级列表时，除了一级标题外，其他标题勾选正规形式编号<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[如何给论文标题设置多级列表自动编号【第一章 1.1 1.1.1】](https://www.bilibili.com/video/BV1FV4y157kx/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad)">[1]</span></a></sup>。</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404292200851.png" alt="" style="zoom:50%;" /></p><span id="more"></span><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1FV4y157kx/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">如何给论文标题设置多级列表自动编号【第一章1.1 1.1.1】</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span></li></ol></div></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;图片表格页眉需要章节的域为阿拉伯数字，但是章节名称又要求是一二三等格式&lt;/p&gt;
-&lt;p&gt;解决方法：&lt;/p&gt;
-&lt;p&gt;在定义多级列表时，除了一级标题外，其他标题勾选正规形式编号&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
-class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
-aria-label=&quot;[如何给论文标题设置多级列表自动编号【第一章 1.1 1.1.1】](https://www.bilibili.com/video/BV1FV4y157kx/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&amp;amp;vd_source=9f04b059fdee5024fd04678f53de10ad)
-&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404292200851.png&quot; alt=&quot;&quot; style=&quot;zoom:50%;&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -340,27 +309,6 @@ aria-label=&quot;[同比与环比有何不同？](https://www.stats.gov.cn/zs/tj
     
     
     <category term="origin" scheme="https://www.sdhlw.top/tags/origin/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>shap可解释性</title>
-    <link href="https://www.sdhlw.top/shap%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7/"/>
-    <id>https://www.sdhlw.top/shap%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7/</id>
-    <published>2024-04-15T14:30:33.000Z</published>
-    <updated>2024-04-15T14:30:49.337Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;
-</summary>
-      
-    
-    
-    
     
   </entry>
   
@@ -549,6 +497,55 @@ href=&quot;https://github.com/sdhlw/OA/tree/main&quot;&gt;china-national-standar
     
     
     <category term="Zotero" scheme="https://www.sdhlw.top/tags/zotero/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>独热编码（one-hot）</title>
+    <link href="https://www.sdhlw.top/%E7%8B%AC%E7%83%AD%E7%BC%96%E7%A0%81%EF%BC%88one-hot%EF%BC%89/"/>
+    <id>https://www.sdhlw.top/%E7%8B%AC%E7%83%AD%E7%BC%96%E7%A0%81%EF%BC%88one-hot%EF%BC%89/</id>
+    <published>2024-03-11T10:37:55.000Z</published>
+    <updated>2024-03-13T01:42:15.485Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>独热编码(one-hot encoding)独热编码是通过创建一个新的虚拟特征，虚拟特征的每一列各代表标称数据的一个值。例如，颜色一共有四个取值green、blue、red、black，独热编码是通过四位二进制来表示，如果是green就表示为<code>[1,0,0,0]</code>，对应的颜色是<code>[green,blue,red,black]</code>，如果属于哪一种颜色，则取值为1，否则为0。</p><span id="more"></span><h3 id="实现的两种方式">实现的两种方式</h3><p>1、OneHotEncoder<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[数据分析预处理 -字符型类别变量（string）](https://blog.csdn.net/Poisson_SHAN/article/details/108894118)">[1]</span></a></sup>：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sklearn.preprocessing <span class="keyword">as</span> pre_processing</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">label=pre_processing.LabelEncoder()</span><br><span class="line">labels=label.fit_transform([<span class="string">&#x27;中国&#x27;</span>,<span class="string">&#x27;美国&#x27;</span>,<span class="string">&#x27;法国&#x27;</span>,<span class="string">&#x27;德国&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span>(labels)</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># [0 3 2 1]</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">labels=np.array(labels).reshape(<span class="built_in">len</span>(labels),<span class="number">1</span>) <span class="comment">#先将X组织成（sample，feature）的格式</span></span><br><span class="line"> </span><br><span class="line">onehot=pre_processing.OneHotEncoder()</span><br><span class="line">onehot_label=onehot.fit_transform(labels)</span><br><span class="line"><span class="built_in">print</span>(onehot_label.toarray())   <span class="comment">#这里一定要进行toarray()</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out：</span></span><br><span class="line"><span class="comment"># [[1. 0. 0. 0.]</span></span><br><span class="line"><span class="comment">#  [0. 0. 0. 1.]</span></span><br><span class="line"><span class="comment">#  [0. 0. 1. 0.]</span></span><br><span class="line"><span class="comment">#  [0. 1. 0. 0.]]</span></span><br></pre></td></tr></table></figure><p>2、pd.get_dummies<sup id="fnref:2"><a href="#fn:2" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Python下数值型与字符型类别变量独热编码（One-hot Encoding）实现](https://cloud.tencent.com/developer/article/1851294)">[2]</span></a></sup></p><p>在<code>get_dummies()</code>函数中，默认情况下<ahref="https://www.zhihu.com/search?q=独热编码&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3246378958%7D">独热编码</a>生成的是bool类型的True和False。如果你希望将其转换为数值型的0和1，你可以使用参数<code>dtype</code>来指定数据类型为<ahref="https://www.zhihu.com/search?q=整数型&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3246378958%7D">整数型</a>。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">onedata = pd.get_dummies(data,columns=[<span class="string">&#x27;SoilType&#x27;</span>],dtype=<span class="built_in">int</span>)</span><br></pre></td></tr></table></figure><h3 id="例子">例子</h3><p>首先我们的数据：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建颜色数据</span></span><br><span class="line">colors = [<span class="string">&#x27;红色&#x27;</span>, <span class="string">&#x27;蓝色&#x27;</span>, <span class="string">&#x27;绿色&#x27;</span>]</span><br><span class="line">color_data = np.random.choice(colors, size=<span class="number">100</span>, p=[<span class="number">0.4</span>, <span class="number">0.4</span>, <span class="number">0.2</span>])</span><br><span class="line"><span class="comment"># 创建目标变量数据</span></span><br><span class="line">value_data = np.random.randn(<span class="number">100</span>) * <span class="number">10</span> + <span class="number">50</span></span><br><span class="line"><span class="comment"># 将数据合并为数据集</span></span><br><span class="line">data = pd.DataFrame(&#123;<span class="string">&#x27;color&#x27;</span>: color_data, <span class="string">&#x27;value&#x27;</span>: value_data&#125;)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;data:&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(data))</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">data:   color      value</span><br><span class="line"><span class="number">0</span>     蓝色  <span class="number">64.725733</span></span><br><span class="line"><span class="number">1</span>     蓝色  <span class="number">34.763842</span></span><br><span class="line"><span class="number">2</span>     红色  <span class="number">43.883487</span></span><br><span class="line"><span class="number">3</span>     红色  <span class="number">42.106679</span></span><br><span class="line"><span class="number">4</span>     红色  <span class="number">48.876011</span></span><br><span class="line">..   ...        ...</span><br><span class="line"><span class="number">95</span>    蓝色  <span class="number">64.521983</span></span><br><span class="line"><span class="number">96</span>    蓝色  <span class="number">57.808631</span></span><br><span class="line"><span class="number">97</span>    绿色  <span class="number">44.561463</span></span><br><span class="line"><span class="number">98</span>    蓝色  <span class="number">61.872843</span></span><br><span class="line"><span class="number">99</span>    蓝色  <span class="number">49.776371</span></span><br><span class="line"></span><br><span class="line">[<span class="number">100</span> rows x <span class="number">2</span> columns]</span><br></pre></td></tr></table></figure><p>进行独热编码后的数据：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用pandas的get_dummies方法进行one-hot编码</span></span><br><span class="line">onehot = pd.get_dummies(data[<span class="string">&#x27;color&#x27;</span>], prefix=<span class="string">&#x27;color&#x27;</span>) <span class="comment"># 取出这列，并对这列进行独热编码</span></span><br><span class="line"><span class="comment"># 将编码后的特征与目标变量合并</span></span><br><span class="line">data_onehot = pd.concat([data[<span class="string">&#x27;value&#x27;</span>], onehot], axis=<span class="number">1</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;onehot之后的数据：\n&#123;&#125;&quot;</span>.<span class="built_in">format</span>(data_onehot))</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">onehot之后的数据：</span><br><span class="line">        value  color_红色  color_绿色  color_蓝色</span><br><span class="line"><span class="number">0</span>   <span class="number">64.725733</span>         <span class="number">0</span>         <span class="number">0</span>         <span class="number">1</span></span><br><span class="line"><span class="number">1</span>   <span class="number">34.763842</span>         <span class="number">0</span>         <span class="number">0</span>         <span class="number">1</span></span><br><span class="line"><span class="number">2</span>   <span class="number">43.883487</span>         <span class="number">1</span>         <span class="number">0</span>         <span class="number">0</span></span><br><span class="line"><span class="number">3</span>   <span class="number">42.106679</span>         <span class="number">1</span>         <span class="number">0</span>         <span class="number">0</span></span><br><span class="line"><span class="number">4</span>   <span class="number">48.876011</span>         <span class="number">1</span>         <span class="number">0</span>         <span class="number">0</span></span><br><span class="line">..        ...       ...       ...       ...</span><br><span class="line"><span class="number">95</span>  <span class="number">64.521983</span>         <span class="number">0</span>         <span class="number">0</span>         <span class="number">1</span></span><br><span class="line"><span class="number">96</span>  <span class="number">57.808631</span>         <span class="number">0</span>         <span class="number">0</span>         <span class="number">1</span></span><br><span class="line"><span class="number">97</span>  <span class="number">44.561463</span>         <span class="number">0</span>         <span class="number">1</span>         <span class="number">0</span></span><br><span class="line"><span class="number">98</span>  <span class="number">61.872843</span>         <span class="number">0</span>         <span class="number">0</span>         <span class="number">1</span></span><br><span class="line"><span class="number">99</span>  <span class="number">49.776371</span>         <span class="number">0</span>         <span class="number">0</span>         <span class="number">1</span></span><br><span class="line"></span><br><span class="line">[<span class="number">100</span> rows x <span class="number">4</span> columns]</span><br></pre></td></tr></table></figure><p>划分训练集和测试集：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将数据集划分为训练集和测试集</span></span><br><span class="line">X_train, X_test, y_train, y_test = train_test_split(data_onehot.drop(<span class="string">&#x27;value&#x27;</span>, axis=<span class="number">1</span>), data_onehot[<span class="string">&#x27;value&#x27;</span>], test_size=<span class="number">0.2</span>, random_state=<span class="number">42</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建线性回归模型并拟合训练集</span></span><br><span class="line">model = LinearRegression()</span><br><span class="line">model.fit(X_train, y_train)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在测试集上进行预测并评估性能</span></span><br><span class="line">y_pred = model.predict(X_test)</span><br><span class="line">score = r2_score(y_test, y_pred)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;R-squared score:&quot;</span>, score)</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">R-squared score: -<span class="number">0.12562920003687705</span></span><br></pre></td></tr></table></figure><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/Poisson_SHAN/article/details/108894118">数据分析预处理-字符型类别变量（string）</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li><li id="fn:2"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://cloud.tencent.com/developer/article/1851294">Python下数值型与字符型类别变量独热编码（One-hotEncoding）实现</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span></li></ol></div></div>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;独热编码(one-hot encoding)
+独热编码是通过创建一个新的虚拟特征，虚拟特征的每一列各代表标称数据的一个值。例如，颜色一共有四个取值green、blue、red、black，独热编码是通过四位二进制来表示，如果是green就表示为&lt;code&gt;[1,0,0,0]&lt;/code&gt;，对应的颜色是&lt;code&gt;[green,blue,red,black]&lt;/code&gt;，如果属于哪一种颜色，则取值为1，否则为0。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="代码相关" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>数据分析项目管理形式</title>
+    <link href="https://www.sdhlw.top/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%BD%A2%E5%BC%8F/"/>
+    <id>https://www.sdhlw.top/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%BD%A2%E5%BC%8F/</id>
+    <published>2024-03-11T10:30:52.000Z</published>
+    <updated>2024-03-15T08:16:41.242Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>project</p><ul><li><p>origin_data</p></li><li><p>clean_data</p></li><li><p>process(代码及工程文件)</p></li><li><p>result</p></li></ul><span id="more"></span><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;project&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;origin_data&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;clean_data&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;process(代码及工程文件)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;result&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="代码相关" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/"/>
+    
     
   </entry>
   
