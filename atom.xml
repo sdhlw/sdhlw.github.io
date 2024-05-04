@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-05-03T06:30:20.067Z</updated>
+  <updated>2024-05-04T13:14:05.474Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo文章添加空白行</title>
+    <link href="https://www.sdhlw.top/hexo%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E7%A9%BA%E7%99%BD%E8%A1%8C/"/>
+    <id>https://www.sdhlw.top/hexo%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E7%A9%BA%E7%99%BD%E8%A1%8C/</id>
+    <published>2024-05-04T13:07:35.000Z</published>
+    <updated>2024-05-04T13:14:05.474Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>相信很多人按很多空白键或回车键，发现只能空一行(甚至无法加入空白行)，去除多余的空白行是Markdown特色之一。如果编排文章格式时，真的要有空白行，编辑上可以使用<code> </code>，利用空白符号进行『添加空白行』的动作。另外，也可以使用<code>&lt;br /&gt;</code>或<code>&lt;p /&gt;</code>添加空白行<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Hexo-开始撰写文章](https://jameswang.pro/2016/02/28/Hexo-WriteABlog/)">[1]</span></a></sup>。</p><span id="more"></span><p>实例：</p><p>没有空行：</p><p>a</p><p>b</p><p>a和b之间添加空行：</p><p>a</p><p><br /></p><p>b</p><p>源代码：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405042110211.png" alt="" style="zoom:80%;" /></p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://jameswang.pro/2016/02/28/Hexo-WriteABlog/">Hexo-开始撰写文章</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;相信很多人按很多空白键或回车键，发现只能空一行(甚至无法加入空白行)，去除多余的空白行是Markdown特色之一。如果编排文章格式时，真的要有空白行，编辑上可以使用&lt;code&gt; &lt;/code&gt;，利用空白符号进行『添加空白行』的动作。另外，也可以使用&lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;或&lt;code&gt;&amp;lt;p /&amp;gt;&lt;/code&gt;添加空白行&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
+class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
+aria-label=&quot;[Hexo-开始撰写文章](https://jameswang.pro/2016/02/28/Hexo-WriteABlog/)
+&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="博客运营" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/"/>
+    
+    <category term="markdown" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/markdown/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>git bash中vim高亮搜索内容</title>
@@ -50,16 +74,13 @@ aria-label=&quot;[vim搜索设置高亮](https://blog.csdn.net/hzhsan/article/de
     <link href="https://www.sdhlw.top/hexo%E6%96%87%E7%AB%A0%E5%89%8D%E9%9D%A2%E6%B7%BB%E5%8A%A0%E4%BD%9C%E8%80%85%E5%90%8D%E7%A7%B0/"/>
     <id>https://www.sdhlw.top/hexo%E6%96%87%E7%AB%A0%E5%89%8D%E9%9D%A2%E6%B7%BB%E5%8A%A0%E4%BD%9C%E8%80%85%E5%90%8D%E7%A7%B0/</id>
     <published>2024-05-03T06:07:41.000Z</published>
-    <updated>2024-05-03T06:31:54.032Z</updated>
+    <updated>2024-05-04T12:57:41.417Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>想要的效果：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405042051953.png" alt="" style="zoom:80%;" /></p><span id="more"></span><p>实现：</p><ul><li><p>在文章 yaml 开头添加：<code>author: 卓别林</code></p></li><li><p>修改themes/next/layout/_macro 的 post.swig文档<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Hexo-文章作者字段设置](https://blog.themismin.com/posts/5cedc789.html)">[1]</span></a></sup></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">#&#125;&lt;/&#123;% if theme.seo %&#125;h2&#123;% else %&#125;h1&#123;% endif %&#125;&gt;</span><br><span class="line"> &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line"> &lt;div class=&quot;post-meta&quot;&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   &#123;# 此位置插入作者字段 #&#125;</span><br><span class="line">   &#123;% if post.author %&#125;</span><br><span class="line">     &lt;span class=&quot;post-author&quot; &gt;</span><br><span class="line">       &lt;span class=&quot;post-meta-item-text&quot;&gt;作者&amp;#58;&lt;/span&gt;</span><br><span class="line">       &#123;&#123; post.author &#125;&#125;</span><br><span class="line">     &lt;/span&gt;</span><br><span class="line">     &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">   &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">   &lt;span class=&quot;post-time&quot;&gt;</span><br><span class="line">     &#123;% if theme.post_meta.created_at %&#125;</span><br><span class="line">       &lt;span class=&quot;post-meta-item-icon&quot;&gt;</span><br><span class="line">         &lt;i class=&quot;fa fa-calendar-o&quot;&gt;&lt;/i&gt;</span><br></pre></td></tr></table></figure><p>注意这段代码不是全部添加进去，如果你只是添加作者字段，只需要把下面这段添加到合适的位置：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;# 此位置插入作者字段 #&#125;</span><br><span class="line">&#123;% if post.author %&#125;</span><br><span class="line">  &lt;span class=&quot;post-author&quot; &gt;</span><br><span class="line">    &lt;span class=&quot;post-meta-item-text&quot;&gt;作者&amp;#58;&lt;/span&gt;</span><br><span class="line">    &#123;&#123; post.author &#125;&#125;</span><br><span class="line">  &lt;/span&gt;</span><br><span class="line">  &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure><p>比如直接放在<code>&lt;div class="post-meta"&gt;</code>后面，注意缩进和实例代码一致</p></li></ul><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.themismin.com/posts/5cedc789.html">Hexo-文章作者字段设置</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-&lt;h3 id=&quot;参考文章&quot;&gt;参考</summary>
-      
+    <summary type="html">&lt;p&gt;想要的效果：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405042051953.png&quot; alt=&quot;&quot; style=&quot;zoom:80%;&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -71,13 +92,13 @@ aria-label=&quot;[vim搜索设置高亮](https://blog.csdn.net/hzhsan/article/de
   </entry>
   
   <entry>
-    <title>当我真正开始爱自己--卓别林</title>
+    <title>当我真正开始爱自己</title>
     <link href="https://www.sdhlw.top/%E5%BD%93%E6%88%91%E7%9C%9F%E6%AD%A3%E5%BC%80%E5%A7%8B%E7%88%B1%E8%87%AA%E5%B7%B1/"/>
     <id>https://www.sdhlw.top/%E5%BD%93%E6%88%91%E7%9C%9F%E6%AD%A3%E5%BC%80%E5%A7%8B%E7%88%B1%E8%87%AA%E5%B7%B1/</id>
     <published>2024-05-03T05:50:08.000Z</published>
-    <updated>2024-05-04T12:02:12.814Z</updated>
+    <updated>2024-05-04T13:14:50.955Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>当我真正开始爱自己，</p><p>我才认识到，所有的痛苦和情感的折磨，</p><p>都只是提醒我：活着，不要违背自己的本心。</p><p>今天我明白了，这叫做“真实”。</p><span id="more"></span><p>当我真正开始爱自己，</p><p>我才懂得，把自己的愿望强加于人，</p><p>是多么的无礼，就算我知道，时机并不成熟，</p><p>那人也还没有做好准备，</p><p>就算那个人就是我自己。</p><p>今天我明白了，这叫做“尊重”。</p><p>当我开始真正爱自己，</p><p>我不再渴求不同的人生，</p><p>我知道任何发生在我身边的事情，</p><p>都是对我成长的邀请。</p><p>如今，我称之为“成熟”。</p><p>当我开始真正爱自己，</p><p>我才明白，我其实一直都在正确的时间，</p><p>正确的地方，发生的一切都恰如其分。</p><p>由此我得以平静。</p><p>今天我明白了，这叫做“自信”。</p><p>当我真正开始爱自己，</p><p>我不再牺牲自己的自由时间，</p><p>不再去勾画什么宏伟的明天。</p><p>今天我只做有趣和快乐的事，</p><p>做自己热爱，让心欢喜的事，</p><p>用我的方式、我的韵律。</p><p>今天我明白了，这叫做“单纯”。</p><p>当我开始真正爱自己，</p><p>我开始远离一切不健康的东西。</p><p>不论是饮食和人物，还是事情和环境，</p><p>我远离一切让我远离本真的东西。</p><p>从前我把这叫做“追求健康的自私自利”，</p><p>但今天我明白了，这是“自爱”。</p><p>当我开始真正爱自己，</p><p>我不再总想着要永远正确，不犯错误。</p><p>我今天明白了，这叫做“谦逊”。</p><p>当我开始真正爱自己，</p><p>我不再继续沉溺于过去，</p><p>也不再为明天而忧虑，</p><p>现在我只活在一切正在发生的当下，</p><p>今天，我活在此时此地，</p><p>如此日复一日。这就叫“完美”。</p><p>当我开始真正爱自己，</p><p>我明白，我的思虑让我变得贫乏和病态，</p><p>但当我唤起了心灵的力量，</p><p>理智就变成了一个重要的伙伴，</p><p>这种组合我称之为，“心的智慧”。</p><p>我们无须再害怕自己和他人的分歧，</p><p>矛盾和问题，因为即使星星有时也会碰在一起，</p><p>形成新的世界，今天我明白，这就是“生命”。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>当我真正开始爱自己，</p><p>我才认识到，所有的痛苦和情感的折磨，</p><p>都只是提醒我：活着，不要违背自己的本心。</p><p>今天我明白了，这叫做“真实”。</p><span id="more"></span><p><br /></p><p>当我真正开始爱自己，</p><p>我才懂得，把自己的愿望强加于人，</p><p>是多么的无礼，就算我知道，时机并不成熟，</p><p>那人也还没有做好准备，</p><p>就算那个人就是我自己。</p><p>今天我明白了，这叫做“尊重”。</p><p><br /></p><p>当我开始真正爱自己，</p><p>我不再渴求不同的人生，</p><p>我知道任何发生在我身边的事情，</p><p>都是对我成长的邀请。</p><p>如今，我称之为“成熟”。</p><p><br /></p><p>当我开始真正爱自己，</p><p>我才明白，我其实一直都在正确的时间，</p><p>正确的地方，发生的一切都恰如其分。</p><p>由此我得以平静。</p><p>今天我明白了，这叫做“自信”。</p><p><br /></p><p>当我真正开始爱自己，</p><p>我不再牺牲自己的自由时间，</p><p>不再去勾画什么宏伟的明天。</p><p>今天我只做有趣和快乐的事，</p><p>做自己热爱，让心欢喜的事，</p><p>用我的方式、我的韵律。</p><p>今天我明白了，这叫做“单纯”。</p><p><br /></p><p>当我开始真正爱自己，</p><p>我开始远离一切不健康的东西。</p><p>不论是饮食和人物，还是事情和环境，</p><p>我远离一切让我远离本真的东西。</p><p>从前我把这叫做“追求健康的自私自利”，</p><p>但今天我明白了，这是“自爱”。</p><p>当我开始真正爱自己，</p><p>我不再总想着要永远正确，不犯错误。</p><p>我今天明白了，这叫做“谦逊”。</p><p>当我开始真正爱自己，</p><p>我不再继续沉溺于过去，</p><p>也不再为明天而忧虑，</p><p>现在我只活在一切正在发生的当下，</p><p>今天，我活在此时此地，</p><p>如此日复一日。这就叫“完美”。</p><p>当我开始真正爱自己，</p><p>我明白，我的思虑让我变得贫乏和病态，</p><p>但当我唤起了心灵的力量，</p><p>理智就变成了一个重要的伙伴，</p><p>这种组合我称之为，“心的智慧”。</p><p>我们无须再害怕自己和他人的分歧，</p><p>矛盾和问题，因为即使星星有时也会碰在一起，</p><p>形成新的世界，今天我明白，这就是“生命”。</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;当我真正开始爱自己，&lt;/p&gt;
@@ -520,30 +541,6 @@ aria-label=&quot;[论文中引用网页内容在文中怎么标注？]( https://
     
     <category term="代码相关" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>交叉验证法</title>
-    <link href="https://www.sdhlw.top/%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%E6%B3%95/"/>
-    <id>https://www.sdhlw.top/%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81%E6%B3%95/</id>
-    <published>2024-03-15T11:18:11.000Z</published>
-    <updated>2024-03-20T13:49:41.078Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>交叉验证（cross-validation）是一种评估泛化性能（新数据能否正确预测）的统计学方法，它比单次划分训练集和测试集的方法更加稳定、全面。如果只划分一次训练集和测试集，可能难以分类的样本都在测试集中，那么精度会低的离谱，相反，如果容易分类的样本都在测试集中，精度则会高的离谱，所以会导致模型并不能反映数据的真实情况。</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403152007648.png" alt="" style="zoom:40%;" /></p><span id="more"></span><h3 id="k-折交叉验证">k 折交叉验证</h3><p>最常用的交叉验证是 k 折交叉验证（k-fold cross-validation），其中 k是由用户指定的数字，通常取5 或10。在执行5折交叉验证时，首先将数据划分为（大致）相等的5部分，每一部分叫作折（fold）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="安德里亚斯·穆勒, 莎拉·吉多. Python机器学习基础教程[M/OL]. 张亮, 译. 人民邮电出版社">[1]</span></a></sup>。交叉验证通常会和寻优一起，即在不同的数据划分情况下，不同的参数情况下，模型的表现如何，对参数寻优，在最优参数下，模型对整个数据（不同数据划分）的表现如何就是交叉验证也称交叉测试。</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151929998.png" alt="" style="zoom:80%;" /></p><p>使用第1折作为测试集、其他折（2~5）作为训练集来训练第一个模型，并算出精度。共构建五个模型，最后对精度取平均值。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> cross_val_score</span><br><span class="line"><span class="keyword">from</span> sklearn.datasets <span class="keyword">import</span> load_iris</span><br><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LogisticRegression</span><br><span class="line">iris =  load_iris()</span><br><span class="line">Logreg = LogisticRegression()</span><br><span class="line">scores = cross_val_score(Logreg,iris.data,iris.target,cv=<span class="number">5</span>) <span class="comment"># 模型，x,y,折数; 默认给出每个模型精度，自己需平均</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Average cross-validation score:&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(scores.mean())) </span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> cross_val_score</span><br><span class="line">scores = cross_val_score(Logreg,iris.data,iris.target,cv=<span class="number">5</span>) <span class="comment"># 模型，x,y,折数; 默认给出每个模型精度，自己需平均</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Average cross-validation score:&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(scores.mean())) </span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;">安德里亚斯·穆勒,莎拉·吉多. Python机器学习基础教程[M/OL]. 张亮, 译.人民邮电出版社<a href="#fnref:1" rev="footnote"> ↩︎</a></span></li></ol></div></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;交叉验证（cross-validation）是一种评估泛化性能（新数据能否正确预测）的统计学方法，它比单次划分训练集和测试集的方法更加稳定、全面。如果只划分一次训练集和测试集，可能难以分类的样本都在测试集中，那么精度会低的离谱，相反，如果容易分类的样本都在测试集中，精度则会高的离谱，所以会导致模型并不能反映数据的真实情况。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403152007648.png&quot; alt=&quot;&quot; style=&quot;zoom:40%;&quot; /&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="代码相关" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/"/>
-    
-    
-    <category term="机器学习" scheme="https://www.sdhlw.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   

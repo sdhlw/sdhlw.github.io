@@ -203,6 +203,127 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/%E7%AE%80%E8%B0%88array-reshape-dataframe/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/jay.jpg">
+      <meta itemprop="name" content="Jay chou">
+      <meta itemprop="description" content="a solitary spark and wars begin">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jay's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/%E7%AE%80%E8%B0%88array-reshape-dataframe/" class="post-title-link" itemprop="url">简谈array,reshape,dataframe</a>
+        </h2>
+
+        <div class="post-meta">
+	   
+	   
+           
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2023-02-15 16:18:19" itemprop="dateCreated datePublished" datetime="2023-02-15T16:18:19+08:00">2023-02-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-02-18 09:33:12" itemprop="dateModified" datetime="2024-02-18T09:33:12+08:00">2024-02-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">科研学习</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">代码相关</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/%E7%AE%80%E8%B0%88array-reshape-dataframe/" class="post-meta-item leancloud_visitors" data-flag-title="简谈array,reshape,dataframe" title="Views">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span class="leancloud-visitors-count"></span>
+            </span><br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>4k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>4 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="array">array</h3>
+<p>Numpy的数据结构是n维的数组对象，叫做ndarray。
+NumPy数组一般是同质的（但有一种特殊的数组类型例外，它是异质的），即数组中的所有元素类型必须是一致的。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[NumPy中的ndarray与Pandas的Series和DataFrame之间的区别与转换](https://zhuanlan.zhihu.com/p/83660582)">[1]</span></a></sup></p>
+<p>优点：</p>
+<ul>
+<li>内存块风格：ndarray中的所有元素的类型都是相同的，存储元素时内存可以连续，在科学计算中，Numpy的ndarray就可以省掉很多循环语句，代码使用方面比Python原生list简单的多。</li>
+<li>ndarray支持并行化运算（向量化运算）</li>
+<li>Numpy底层使用C语言编写，内部解除了GIL（全局解释器锁），其对数组的操作速度不受Python解释器的限制，效率远高于纯Python代码。</li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/%E7%AE%80%E8%B0%88array-reshape-dataframe/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -221,6 +342,9 @@
         </h2>
 
         <div class="post-meta">
+	   
+	   
+           
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
@@ -349,6 +473,9 @@ aria-label="[Python_matplotlib图例放在外侧保存时显示不完整问题�
         </h2>
 
         <div class="post-meta">
+	   
+	   
+           
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
@@ -464,6 +591,9 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/20230
         </h2>
 
         <div class="post-meta">
+	   
+	   
+           
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
@@ -575,6 +705,9 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/20230
         </h2>
 
         <div class="post-meta">
+	   
+	   
+           
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
@@ -689,6 +822,9 @@ alt="img" /></p>
         </h2>
 
         <div class="post-meta">
+	   
+	   
+           
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
@@ -800,6 +936,9 @@ alt="img" /></p>
         </h2>
 
         <div class="post-meta">
+	   
+	   
+           
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
@@ -908,6 +1047,9 @@ alt="img" /></p>
         </h2>
 
         <div class="post-meta">
+	   
+	   
+           
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
@@ -1018,6 +1160,9 @@ editor</p>
         </h2>
 
         <div class="post-meta">
+	   
+	   
+           
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
@@ -1129,6 +1274,9 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/20230
         </h2>
 
         <div class="post-meta">
+	   
+	   
+           
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-calendar"></i>
@@ -1199,128 +1347,6 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/20230
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/pip%E4%B8%8B%E8%BD%BD%E5%A4%AA%E6%85%A2/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E3%80%90%E7%AC%AC%E4%B8%80%E7%AB%A0%E3%80%91/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/jay.jpg">
-      <meta itemprop="name" content="Jay chou">
-      <meta itemprop="description" content="a solitary spark and wars begin">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jay's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E3%80%90%E7%AC%AC%E4%B8%80%E7%AB%A0%E3%80%91/" class="post-title-link" itemprop="url">Python机器学习基础教程【第一章】</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2023-02-02 17:43:19" itemprop="dateCreated datePublished" datetime="2023-02-02T17:43:19+08:00">2023-02-02</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-02-18 09:27:33" itemprop="dateModified" datetime="2024-02-18T09:27:33+08:00">2024-02-18</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">科研学习</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">代码相关</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E3%80%90%E7%AC%AC%E4%B8%80%E7%AB%A0%E3%80%91/" class="post-meta-item leancloud_visitors" data-flag-title="Python机器学习基础教程【第一章】" title="Views">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">Views: </span>
-              <span class="leancloud-visitors-count"></span>
-            </span><br>
-            <span class="post-meta-item" title="Symbols count in article">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>5k</span>
-            </span>
-            <span class="post-meta-item" title="Reading time">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>5 mins.</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>本书的附加代码可以在 GitHub 下载：<a
-target="_blank" rel="noopener" href="https://github.com/amueller/introduction_to_ml_with_python">introduction
-to ml with python</a></p>
-<p>监督学习算法（supervised learning algorithm）
-无监督学习算法（unsupervised learning algorithm）</p>
-<p>在机器学习中，这里的每个实体或每一行被称为一个样本（sample）或数据点，而每一列（用来描述这些实体的属性）则被称为特征（feature）。</p>
-<p>如何构建良好的数据表征，这被称为特征提取（feature
-extraction）或特征工程（feature engineering）</p>
-<p><strong>scikit-learn</strong> 依赖于另外两个 Python 包：NumPy
-（Python 科学计算的基础包之一）和 SciPy（ Python
-中用于科学计算的函数集合）。 算法详细文档：<a
-target="_blank" rel="noopener" href="https://scikit-learn.org/stable/index.html"
-class="uri">https://scikit-learn.org/stable/index.html</a> 用户指南：<a
-target="_blank" rel="noopener" href="http://scikit-learn.org/stable/user_guide.html"
-class="uri">http://scikit-learn.org/stable/user_guide.html</a></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/python%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E3%80%90%E7%AC%AC%E4%B8%80%E7%AB%A0%E3%80%91/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -1413,7 +1439,7 @@ class="uri">http://scikit-learn.org/stable/user_guide.html</a></p>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">98</span>
+          <span class="site-state-item-count">99</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -1477,13 +1503,13 @@ class="uri">http://scikit-learn.org/stable/user_guide.html</a></p>
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">125k</span>
+    <span title="Symbols count total">126k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:53</span>
+    <span title="Reading time total">1:54</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
