@@ -270,7 +270,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>1.1k</span>
+              <span>1.2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -290,36 +290,26 @@
 
       
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>想要的效果：</p>
-<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405042051953.png" alt="" style="zoom:80%;" /></p>
+<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405042051953.png" alt="" style="zoom:80%;" />
+
+
 <span id="more"></span>
+
 <p>实现：</p>
 <ul>
-<li><p>在文章 yaml 开头添加：<code>author: 卓别林</code></p></li>
-<li><p>修改themes/next/layout/_macro 的 post.swig
-文档<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[Hexo-文章作者字段设置](https://blog.themismin.com/posts/5cedc789.html)
+<li><p>在文章 yaml 开头添加：<code>author: 卓别林</code></p>
+</li>
+<li><p>修改themes&#x2F;next&#x2F;layout&#x2F;_macro 的 post.swig 文档<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Hexo-文章作者字段设置](https://blog.themismin.com/posts/5cedc789.html)
 ">[1]</span></a></sup></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">#&#125;&lt;/&#123;% if theme.seo %&#125;h2&#123;% else %&#125;h1&#123;% endif %&#125;&gt;</span><br><span class="line"> &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line"> &lt;div class=&quot;post-meta&quot;&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   &#123;# 此位置插入作者字段 #&#125;</span><br><span class="line">   &#123;% if post.author %&#125;</span><br><span class="line">     &lt;span class=&quot;post-author&quot; &gt;</span><br><span class="line">       &lt;span class=&quot;post-meta-item-text&quot;&gt;作者&amp;#58;&lt;/span&gt;</span><br><span class="line">       &#123;&#123; post.author &#125;&#125;</span><br><span class="line">     &lt;/span&gt;</span><br><span class="line">     &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">   &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">   &lt;span class=&quot;post-time&quot;&gt;</span><br><span class="line">     &#123;% if theme.post_meta.created_at %&#125;</span><br><span class="line">       &lt;span class=&quot;post-meta-item-icon&quot;&gt;</span><br><span class="line">         &lt;i class=&quot;fa fa-calendar-o&quot;&gt;&lt;/i&gt;</span><br></pre></td></tr></table></figure>
+
 <p>注意这段代码不是全部添加进去，如果你只是添加作者字段，只需要把下面这段添加到合适的位置：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;# 此位置插入作者字段 #&#125;</span><br><span class="line">&#123;% if post.author %&#125;</span><br><span class="line">  &lt;span class=&quot;post-author&quot; &gt;</span><br><span class="line">    &lt;span class=&quot;post-meta-item-text&quot;&gt;作者&amp;#58;&lt;/span&gt;</span><br><span class="line">    &#123;&#123; post.author &#125;&#125;</span><br><span class="line">  &lt;/span&gt;</span><br><span class="line">  &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
-<p>比如直接放在<code>&lt;div class="post-meta"&gt;</code>后面，注意缩进和实例代码一致</p></li>
-</ul>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.themismin.com/posts/5cedc789.html">Hexo-文章作者字段设置</a><a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
 
+<p>比如直接放在<code>&lt;div class=&quot;post-meta&quot;&gt;</code>后面，注意缩进和实例代码一致</p>
+</li>
+</ul>
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.themismin.com/posts/5cedc789.html">Hexo-文章作者字段设置</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
     </div>
 
     
@@ -505,7 +495,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:54</span>
+    <span title="Reading time total">1:55</span>
 </div>
 
 <!-- 网站运行时间的设置 -->

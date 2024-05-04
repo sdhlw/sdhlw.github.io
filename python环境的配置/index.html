@@ -22,13 +22,16 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="需求：在使用 pycharm 或 vscode 时，对切换 python 的版本，以及安装的包的位置等环境问题，比较模糊。 该文章解决一下问题：  如何使用 conda 创建环境，如何下载指定版本的包到指定的环境 下载的包在本地的哪个目录 pycharm 和 vscode 如何使用 conda 的环境">
+  <meta name="description" content="需求：在使用 pycharm 或 vscode 时，对切换 python 的版本，以及安装的包的位置等环境问题，比较模糊。 该文章解决一下问题：  如何使用 conda 创建环境，如何下载指定版本的包到指定的环境 下载的包在本地的哪个目录 pycharm 和 vscode 如何使用 conda 的环境">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python环境的配置">
 <meta property="og:url" content="https://www.sdhlw.top/python%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="需求：在使用 pycharm 或 vscode 时，对切换 python 的版本，以及安装的包的位置等环境问题，比较模糊。 该文章解决一下问题：  如何使用 conda 创建环境，如何下载指定版本的包到指定的环境 下载的包在本地的哪个目录 pycharm 和 vscode 如何使用 conda 的环境">
+<meta property="og:description" content="需求：在使用 pycharm 或 vscode 时，对切换 python 的版本，以及安装的包的位置等环境问题，比较模糊。 该文章解决一下问题：  如何使用 conda 创建环境，如何下载指定版本的包到指定的环境 下载的包在本地的哪个目录 pycharm 和 vscode 如何使用 conda 的环境">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202403081740750.png">
+<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202403081740814.png">
+<meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202403081740880.png">
 <meta property="article:published_time" content="2024-03-08T09:11:11.000Z">
 <meta property="article:modified_time" content="2024-03-19T11:54:27.308Z">
 <meta property="article:author" content="Jay chou">
@@ -36,6 +39,7 @@
 <meta property="article:tag" content="Vscode">
 <meta property="article:tag" content="Conda">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202403081740750.png">
 
 <link rel="canonical" href="https://www.sdhlw.top/python%E7%8E%AF%E5%A2%83%E7%9A%84%E9%85%8D%E7%BD%AE/">
 
@@ -290,8 +294,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：在使用 pycharm 或 vscode 时，对切换 python
-的版本，以及安装的包的位置等环境问题，比较模糊。</p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>需求：在使用 pycharm 或 vscode 时，对切换 python 的版本，以及安装的包的位置等环境问题，比较模糊。</p>
 <p>该文章解决一下问题：</p>
 <ul>
 <li>如何使用 conda 创建环境，如何下载指定版本的包到指定的环境</li>
@@ -299,88 +302,55 @@
 <li>pycharm 和 vscode 如何使用 conda 的环境</li>
 </ul>
 <span id="more"></span>
+
 <p>快捷命令：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># conda 命令,在 Anaconda Powershell Prompt 执行</span></span><br><span class="line">conda -V  <span class="comment"># 获取 conda 版本号</span></span><br><span class="line">conda env <span class="built_in">list</span> <span class="comment"># 列举当前所有环境</span></span><br><span class="line">conda activate test <span class="comment"># 激活环境</span></span><br><span class="line">conda create -n test python=<span class="number">3.10</span> <span class="comment"># 创建环境</span></span><br><span class="line">conda remove -n test --<span class="built_in">all</span> <span class="comment"># 删除环境</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># pip 命令</span></span><br><span class="line">pip install pandas==  <span class="comment"># 查看软件版本号</span></span><br><span class="line">pip install pandas==<span class="number">2.1</span><span class="number">.1</span> <span class="comment"># 下载指定版本软件</span></span><br><span class="line">pip install pandas==<span class="number">2.1</span><span class="number">.1</span> -i https://pypi.tuna.tsinghua.edu.cn/simple <span class="comment"># 调用清华源下载</span></span><br><span class="line">pip uninstall pandas <span class="comment"># 卸载软件</span></span><br></pre></td></tr></table></figure>
+
 <p>详细解决思路：</p>
 <p>1、环境的配置，使用 conda 软件</p>
-<p>miniconda 官网的下载方式： 命令行执行一下三行命令： <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe -o miniconda.exe</span><br><span class="line">start /wait &quot;&quot; miniconda.exe /S</span><br><span class="line">del miniconda.exe</span><br></pre></td></tr></table></figure></p>
+<p>miniconda 官网的下载方式：<br>命令行执行一下三行命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe -o miniconda.exe</span><br><span class="line">start /wait &quot;&quot; miniconda.exe /S</span><br><span class="line">del miniconda.exe</span><br></pre></td></tr></table></figure>
+
 <p>有一个问题，它默认安装位置在 C 盘，而想换安装位置怎么办？</p>
-<p>第一行下载 exe 文件 第二行执行 exe 文件，安装软件 第三行删除 exe
-文件</p>
-<p>最简单的是执行第一行之后，找到 exe
-双击，可视化安装即可选择安装位置，可勾选添加到环境变量，没勾选，可手动将三个目录添加到环境目录（目的:任意位置可以调用
-miniconda）</p>
+<p>第一行下载 exe 文件<br>第二行执行 exe 文件，安装软件<br>第三行删除 exe 文件</p>
+<p>最简单的是执行第一行之后，找到 exe 双击，可视化安装即可选择安装位置，可勾选添加到环境变量，没勾选，可手动将三个目录添加到环境目录（目的:任意位置可以调用 miniconda）</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1）C:\Users\Administrator\Miniconda3；   </span><br><span class="line">2）C:\Users\Administrator\Miniconda3\Scripts；   </span><br><span class="line">3）C:\Users\Administrator\Miniconda3\Library\bin</span><br></pre></td></tr></table></figure>
-<p><code>C:\Users\Administrator\</code> 需要更换为你的安装目录。</p>
-<h3 id="conda-的基本使用">conda 的基本使用：</h3>
-<p>打开 Anaconda Powershell Prompt，执行基本命令，实现相关功能：</p>
+
+<p><code>C:\Users\Administrator\</code>  需要更换为你的安装目录。</p>
+<h3 id="conda-的基本使用："><a href="#conda-的基本使用：" class="headerlink" title="conda 的基本使用："></a>conda 的基本使用：</h3><p>打开 Anaconda Powershell Prompt，执行基本命令，实现相关功能：</p>
 <p><code>conda -V</code> ：获取 conda 版本号</p>
 <p><code>conda env list</code> ：列举当前所有环境</p>
-<p><code>conda create -n test python=3.10</code> ：创建新的环境
-(test)，并指定环境中使用的 python 版本，意味着 python 直接通过 conda
-安装，不需要单纯去 python 官网安装 python。</p>
+<p><code>conda create -n test python=3.10</code> ：创建新的环境 (test)，并指定环境中使用的 python 版本，意味着 python 直接通过 conda 安装，不需要单纯去 python 官网安装 python。</p>
 <p><code>conda activate your_env_name</code> ：激活某个环境</p>
-<p>重命名环境，先克隆，后删除： 把环境 rcnn 重命名成 tf</p>
+<p>重命名环境，先克隆，后删除：<br>把环境 rcnn 重命名成 tf</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">conda create -n tf --clone rcnn</span><br><span class="line">conda remove -n rcnn --all</span><br></pre></td></tr></table></figure>
-<p>下载指定的包到指定的环境：使用 conda，激活指定的环境，使用
-<code>pip install 包名</code> 下载相应的包</p>
+
+<p>下载指定的包到指定的环境：使用 conda，激活指定的环境，使用 <code>pip install 包名</code> 下载相应的包</p>
 <p>pip 下载指定存在版本的包：</p>
 <p>1、使用命令查看包（pandas）有哪些版本：<code>pip install pandas==</code></p>
 <p>2、使用命令下载指定版本的包：<code>pip install pandas==2.1.1</code></p>
-<p>下载的包的位置就在 miniconda
-的安装目录中（<code>...\miniconda\envs</code>）</p>
+<p>下载的包的位置就在 miniconda 的安装目录中（<code>...\miniconda\envs </code>）</p>
 <p>临时使用指定镜像下载包名：<code>pip install pandas -i https://pypi.tuna.tsinghua.edu.cn/simple</code></p>
 <p>conda 添加镜像源：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud//pytorch/</span><br><span class="line">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/</span><br><span class="line">conda config --add channels https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">清华：https://pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line">阿里云：http://mirrors.aliyun.com/pypi/simple/</span><br><span class="line">中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/</span><br></pre></td></tr></table></figure>
-<p>去除镜像源，恢复默认配置<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="https://www.cnblogs.com/fireblackman/p/16422750.html">[1]</span></a></sup>：</p>
+
+<p>去除镜像源，恢复默认配置<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="https://www.cnblogs.com/fireblackman/p/16422750.html">[1]</span></a></sup>：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 全部删除  </span><br><span class="line">conda config --remove-key channels </span><br><span class="line"># 指定删除</span><br><span class="line">conda config --remove channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line">conda config --remove channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span><br><span class="line">conda config --remove channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud//pytorch/</span><br><span class="line">conda config --remove channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/</span><br></pre></td></tr></table></figure>
-<h3 id="pycharm-如何调用-conda-环境">pycharm 如何调用 conda 环境：</h3>
-<p>首先新建工程，打开工程，再进行设置：<code>file--setting--project</code>
-的 <code>Python Interpreter</code> 的 <code>add Interpreter</code>
-,然后选择 miniconda 安装目录的 envs 的环境名称目录里的
-<code>python.exe</code> 即可</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202403081740750.png" /></p>
-<h3 id="vscode-调用相应-conda-环境">vscode 调用相应 conda 环境：</h3>
-<p>vscode 如果已经安装了 python 插件，那么 python
-插件就可以管理环境了</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202403081740814.png" /></p>
+<h3 id="pycharm-如何调用-conda-环境："><a href="#pycharm-如何调用-conda-环境：" class="headerlink" title="pycharm 如何调用 conda 环境："></a>pycharm 如何调用 conda 环境：</h3><p>首先新建工程，打开工程，再进行设置：<code>file--setting--project</code> 的 <code>Python Interpreter</code> 的 <code>add Interpreter</code> ,然后选择 miniconda 安装目录的 envs 的环境名称目录里的 <code>python.exe</code> 即可</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202403081740750.png"></p>
+<h3 id="vscode-调用相应-conda-环境："><a href="#vscode-调用相应-conda-环境：" class="headerlink" title="vscode 调用相应 conda 环境："></a>vscode 调用相应 conda 环境：</h3><p>vscode 如果已经安装了 python 插件，那么 python 插件就可以管理环境了</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202403081740814.png"></p>
 <p>如果在 vscode 使用了 jupyter notebook 可以直接选择 conda 环境</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202403081740880.png" /></p>
-<p>如果选择上没有你那个环境，需要手动添加你需要的环境的python.exe地址（右键属性--安全--对象名称）：</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202403081740880.png"></p>
+<p>如果选择上没有你那个环境，需要手动添加你需要的环境的python.exe地址（右键属性–安全–对象名称）：</p>
 <p>在vscode找到：文档——&gt;首选项 ——&gt;设置 ：输入python path</p>
 <p>找到 Python Conda Path</p>
-<p>在下面的输入框中将你创建的conda虚拟环境中python.exe文档的地址放上<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[如何把jupyter切换到其他配置好的conda虚拟环境和vscode导入conda环境](https://zhuanlan.zhihu.com/p/157133694)
+<p>在下面的输入框中将你创建的conda虚拟环境中python.exe文档的地址放上<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[如何把jupyter切换到其他配置好的conda虚拟环境和vscode导入conda环境](https://zhuanlan.zhihu.com/p/157133694)
 ">[2]</span></a></sup></p>
 <p>重启vscode即可。</p>
-<h3 id="参考文章">参考文章</h3>
-<div id="footnotes">
-<hr>
-<div id="footnotelist">
-<ol style="list-style: none; padding-left: 0; margin-left: 40px">
-<li id="fn:1">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;">https://www.cnblogs.com/fireblackman/p/16422750.html<a href="#fnref:1" rev="footnote">
-↩︎</a></span>
-</li>
-<li id="fn:2">
-<span
-style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span
-style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/157133694">如何把jupyter切换到其他配置好的conda虚拟环境和vscode导入conda环境</a><a href="#fnref:2" rev="footnote">
-↩︎</a></span>
-</li>
-</ol>
-</div>
-</div>
-
+<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">https://www.cnblogs.com/fireblackman/p/16422750.html<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/157133694">如何把jupyter切换到其他配置好的conda虚拟环境和vscode导入conda环境</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div>
     </div>
 
     
@@ -486,7 +456,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#conda-%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="nav-text">conda 的基本使用：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pycharm-%E5%A6%82%E4%BD%95%E8%B0%83%E7%94%A8-conda-%E7%8E%AF%E5%A2%83"><span class="nav-text">pycharm 如何调用 conda 环境：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vscode-%E8%B0%83%E7%94%A8%E7%9B%B8%E5%BA%94-conda-%E7%8E%AF%E5%A2%83"><span class="nav-text">vscode 调用相应 conda 环境：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#conda-%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%EF%BC%9A"><span class="nav-text">conda 的基本使用：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pycharm-%E5%A6%82%E4%BD%95%E8%B0%83%E7%94%A8-conda-%E7%8E%AF%E5%A2%83%EF%BC%9A"><span class="nav-text">pycharm 如何调用 conda 环境：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vscode-%E8%B0%83%E7%94%A8%E7%9B%B8%E5%BA%94-conda-%E7%8E%AF%E5%A2%83%EF%BC%9A"><span class="nav-text">vscode 调用相应 conda 环境：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -572,7 +542,7 @@ style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:54</span>
+    <span title="Reading time total">1:55</span>
 </div>
 
 <!-- 网站运行时间的设置 -->
