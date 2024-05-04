@@ -29,7 +29,7 @@
 <meta property="og:site_name" content="Jay&#39;s Blog">
 <meta property="og:description" content="a solitary spark and wars begin">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="Jay Chou">
+<meta property="article:author" content="Jay chou">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://www.sdhlw.top/page/7/">
@@ -203,11 +203,365 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/jay.jpg">
+      <meta itemprop="name" content="Jay chou">
+      <meta itemprop="description" content="a solitary spark and wars begin">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jay's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/" class="post-title-link" itemprop="url">Python (matplotlib)保存矢量图</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2023-02-11 03:54:42" itemprop="dateCreated datePublished" datetime="2023-02-11T03:54:42+08:00">2023-02-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-02-18 09:26:50" itemprop="dateModified" datetime="2024-02-18T09:26:50+08:00">2024-02-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">科研学习</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">代码相关</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/" class="post-meta-item leancloud_visitors" data-flag-title="Python (matplotlib)保存矢量图" title="Views">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span class="leancloud-visitors-count"></span>
+            </span><br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>600</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>1 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="保存矢量图">保存矢量图</h3>
+<p>语法<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Python中Matplotlib Savefig()不同参数的使用](https://blog.csdn.net/wilbeok/article/details/111194473)
+">[1]</span></a></sup>：</p>
+<p><code>savefig(fname, dpi=None, facecolor=’w’, edgecolor=’w’, orientation=’portrait’, papertype=None, format=None, transparent=False, bbox_inches=None, pad_inches=0.1, frameon=None, metadata=None)</code></p>
+<p>简单使用：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">plt.savefig(<span class="string">&#x27;C:\\Users\\Lenovo\\Pictures\\test03.svg&#x27;</span>, <span class="built_in">format</span>=<span class="string">&#x27;svg&#x27;</span>,dpi = <span class="number">600</span>,transparent=<span class="literal">False</span>,bbox_inches=<span class="string">&#x27;tight&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<ul>
+<li>fname即
+<code>test03.svg</code>，<code>format='svg'</code>，<code>dpi = 600</code>
+为导出矢量图的三个参数</li>
+<li><code>transparent=False</code> ：照片背景不要透明</li>
+<li><code>bbox_inches='tight'</code>
+：使未保存到图中的图例（或其他部分）包含进来，避免图片保存下来不全。bbox_inches的作用是调整图的bbox,
+即bounding
+box(边界框)<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Python_matplotlib图例放在外侧保存时显示不完整问题解决](https://blog.csdn.net/Poul_henry/article/details/88311964)
+">[2]</span></a></sup></li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/python-matplotlib-%E4%BF%9D%E5%AD%98%E7%9F%A2%E9%87%8F%E5%9B%BE/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/python-matplotlib-%E6%94%B9%E5%8F%98%E7%94%BB%E5%B8%83%E8%83%8C%E6%99%AF/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/jay.jpg">
+      <meta itemprop="name" content="Jay chou">
+      <meta itemprop="description" content="a solitary spark and wars begin">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jay's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/python-matplotlib-%E6%94%B9%E5%8F%98%E7%94%BB%E5%B8%83%E8%83%8C%E6%99%AF/" class="post-title-link" itemprop="url">Python(matplotlib) 改变画布背景</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2023-02-11 03:31:23" itemprop="dateCreated datePublished" datetime="2023-02-11T03:31:23+08:00">2023-02-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-02-18 09:27:14" itemprop="dateModified" datetime="2024-02-18T09:27:14+08:00">2024-02-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">科研学习</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">代码相关</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/python-matplotlib-%E6%94%B9%E5%8F%98%E7%94%BB%E5%B8%83%E8%83%8C%E6%99%AF/" class="post-meta-item leancloud_visitors" data-flag-title="Python(matplotlib) 改变画布背景" title="Views">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span class="leancloud-visitors-count"></span>
+            </span><br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>1.2k</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>1 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>起因：为了设置画布不透明效果</p>
+<p>对象形式：<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[How to set opacity of background colour of graph with Matplotlib](https://stackoverflow.com/questions/4581504/how-to-set-opacity-of-background-colour-of-graph-with-matplotlib)
+">[1]</span></a></sup></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">fig = plt.figure()</span><br><span class="line">fig.patch.set_facecolor(<span class="string">&#x27;white&#x27;</span>)  <span class="comment"># 设置画布白色不透明（坐标轴外），再画图</span></span><br><span class="line">fig.patch.set_alpha(<span class="number">1</span>)</span><br><span class="line">ax = fig.add_subplot(<span class="number">111</span>)  <span class="comment"># 创建1*1的网格，并添加第一个网格</span></span><br><span class="line">ax.patch.set_facecolor(<span class="string">&#x27;white&#x27;</span>) <span class="comment"># 设置白色不透明（坐标轴内）</span></span><br><span class="line">ax.patch.set_alpha(<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">ax.plot(<span class="built_in">range</span>(<span class="number">10</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># If we don&#x27;t specify the edgecolor and facecolor for the figure when</span></span><br><span class="line"><span class="comment"># saving with savefig, it will override the value we set earlier!</span></span><br><span class="line">fig.savefig(<span class="string">&#x27;test01.png&#x27;</span>, facecolor=fig.get_facecolor(), edgecolor=<span class="string">&#x27;none&#x27;</span>)  <span class="comment"># 一定要加这俩个参数，否则保存后会被改掉参数</span></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img
+src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/202302110342899.png" /></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/python-matplotlib-%E6%94%B9%E5%8F%98%E7%94%BB%E5%B8%83%E8%83%8C%E6%99%AF/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/jay.jpg">
+      <meta itemprop="name" content="Jay chou">
+      <meta itemprop="description" content="a solitary spark and wars begin">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jay's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">解决npm下载慢问题</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2023-02-07 22:57:33" itemprop="dateCreated datePublished" datetime="2023-02-07T22:57:33+08:00">2023-02-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-02-18 09:33:42" itemprop="dateModified" datetime="2024-02-18T09:33:42+08:00">2024-02-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">科研学习</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">代码相关</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/" class="post-meta-item leancloud_visitors" data-flag-title="解决npm下载慢问题" title="Views">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span class="leancloud-visitors-count"></span>
+            </span><br>
+            <span class="post-meta-item" title="Symbols count in article">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              <span>445</span>
+            </span>
+            <span class="post-meta-item" title="Reading time">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              <span>1 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h5 id="npm镜像">npm镜像：</h5>
+<p>淘宝：<code>http://registry.npm.taobao.org</code></p>
+<p>腾讯云：<code>http://mirrors.cloud.tencent.com/npm/</code></p>
+<p>华为云：<code>https://mirrors.huaweicloud.com/repository/npm/</code></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/%E8%A7%A3%E5%86%B3npm%E4%B8%8B%E8%BD%BD%E6%85%A2%E9%97%AE%E9%A2%98/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
     <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/%E8%AE%BE%E7%BD%AE-next-%E4%B8%BB%E9%A2%98%E6%94%AF%E6%8C%81-latex-%E6%B8%B2%E6%9F%93/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/jay.jpg">
-      <meta itemprop="name" content="Jay Chou">
+      <meta itemprop="name" content="Jay chou">
       <meta itemprop="description" content="a solitary spark and wars begin">
     </span>
 
@@ -311,6 +665,8 @@ alt="img" /></p>
   
   
 
+
+
       
   
   
@@ -319,7 +675,7 @@ alt="img" /></p>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/jay.jpg">
-      <meta itemprop="name" content="Jay Chou">
+      <meta itemprop="name" content="Jay chou">
       <meta itemprop="description" content="a solitary spark and wars begin">
     </span>
 
@@ -420,6 +776,8 @@ alt="img" /></p>
   
   
 
+
+
       
   
   
@@ -428,7 +786,7 @@ alt="img" /></p>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/jay.jpg">
-      <meta itemprop="name" content="Jay Chou">
+      <meta itemprop="name" content="Jay chou">
       <meta itemprop="description" content="a solitary spark and wars begin">
     </span>
 
@@ -526,6 +884,8 @@ alt="img" /></p>
   
   
 
+
+
       
   
   
@@ -534,7 +894,7 @@ alt="img" /></p>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/jay.jpg">
-      <meta itemprop="name" content="Jay Chou">
+      <meta itemprop="name" content="Jay chou">
       <meta itemprop="description" content="a solitary spark and wars begin">
     </span>
 
@@ -634,6 +994,8 @@ editor</p>
   
   
 
+
+
       
   
   
@@ -642,7 +1004,7 @@ editor</p>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/jay.jpg">
-      <meta itemprop="name" content="Jay Chou">
+      <meta itemprop="name" content="Jay chou">
       <meta itemprop="description" content="a solitary spark and wars begin">
     </span>
 
@@ -743,6 +1105,8 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/20230
   
   
 
+
+
       
   
   
@@ -751,7 +1115,7 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/20230
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/jay.jpg">
-      <meta itemprop="name" content="Jay Chou">
+      <meta itemprop="name" content="Jay chou">
       <meta itemprop="description" content="a solitary spark and wars begin">
     </span>
 
@@ -854,6 +1218,8 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/20230
   
   
 
+
+
       
   
   
@@ -862,7 +1228,7 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202302/20230
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/jay.jpg">
-      <meta itemprop="name" content="Jay Chou">
+      <meta itemprop="name" content="Jay chou">
       <meta itemprop="description" content="a solitary spark and wars begin">
     </span>
 
@@ -974,348 +1340,7 @@ class="uri">http://scikit-learn.org/stable/user_guide.html</a></p>
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/hexo%E4%BB%A3%E7%A0%81%E5%9D%97%E6%8A%98%E5%8F%A0%E5%8A%9F%E8%83%BD/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/jay.jpg">
-      <meta itemprop="name" content="Jay Chou">
-      <meta itemprop="description" content="a solitary spark and wars begin">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jay's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/hexo%E4%BB%A3%E7%A0%81%E5%9D%97%E6%8A%98%E5%8F%A0%E5%8A%9F%E8%83%BD/" class="post-title-link" itemprop="url">Hexo代码块折叠功能</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2023-01-25 22:35:42" itemprop="dateCreated datePublished" datetime="2023-01-25T22:35:42+08:00">2023-01-25</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-03-16 11:13:30" itemprop="dateModified" datetime="2024-03-16T11:13:30+08:00">2024-03-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/" itemprop="url" rel="index"><span itemprop="name">博客运营</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/%E5%85%B6%E5%AE%83/" itemprop="url" rel="index"><span itemprop="name">其它</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/hexo%E4%BB%A3%E7%A0%81%E5%9D%97%E6%8A%98%E5%8F%A0%E5%8A%9F%E8%83%BD/" class="post-meta-item leancloud_visitors" data-flag-title="Hexo代码块折叠功能" title="Views">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">Views: </span>
-              <span class="leancloud-visitors-count"></span>
-            </span><br>
-            <span class="post-meta-item" title="Symbols count in article">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>5.4k</span>
-            </span>
-            <span class="post-meta-item" title="Reading time">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>5 mins.</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="说明">说明</h3>
-<p>实现同样的效果：</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237971.gif" /></p>
-<p>本博客环境：<code>hexo@6.2.0</code>，<code>next@7.8.0</code>，以下所有代码，建立在这个基础之上。</p>
-<p>由 jQuery
-选择器选择代码模块<code>.highlight</code>相关的DOM节点，给超过某个高度的代码模块添加展开收起的盒子，让盒子实现展开隐藏效果。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[hexo博客代码折叠功能](https://www.toimc.com/hexo-usage-2/)">[1]</span></a></sup></p>
-<p><code>hexo version</code>即可查看hexo版本；</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237479.png" /></p>
-<p>查看<code>theme/next/package.json</code>即可查看next版本；</p>
-<p><img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301252237584.png" /></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/hexo%E4%BB%A3%E7%A0%81%E5%9D%97%E6%8A%98%E5%8F%A0%E5%8A%9F%E8%83%BD/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/npm-node-%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/jay.jpg">
-      <meta itemprop="name" content="Jay Chou">
-      <meta itemprop="description" content="a solitary spark and wars begin">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jay's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/npm-node-%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/" class="post-title-link" itemprop="url">NPM---Node 包管理器</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2023-01-23 00:02:55" itemprop="dateCreated datePublished" datetime="2023-01-23T00:02:55+08:00">2023-01-23</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-02-18 09:23:39" itemprop="dateModified" datetime="2024-02-18T09:23:39+08:00">2024-02-18</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">科研学习</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">代码相关</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/npm-node-%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/" class="post-meta-item leancloud_visitors" data-flag-title="NPM---Node 包管理器" title="Views">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">Views: </span>
-              <span class="leancloud-visitors-count"></span>
-            </span><br>
-            <span class="post-meta-item" title="Symbols count in article">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>3.3k</span>
-            </span>
-            <span class="post-meta-item" title="Reading time">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>3 mins.</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>npm（“Node 包管理器”）是 JavaScript 运行时 Node.js
-的默认程序包管理器。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
-class="hint--top hint--error hint--medium hint--rounded hint--bounce"
-aria-label="[什么是 npm —— 写给初学者的编程教程](https://www.freecodecamp.org/chinese/news/what-is-npm-a-node-package-manager-tutorial-for-beginners/)
-">[1]</span></a></sup></p>
-<p>npm 由两个主要部分组成：</p>
-<ul>
-<li><p>用于发布和下载程序包的 CLI（命令行界面）工具</p></li>
-<li><p>托管 JavaScript 程序包的 在线存储库
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/npm-node-%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://www.sdhlw.top/hexo%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0%EF%BC%9Agitalk/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/jay.jpg">
-      <meta itemprop="name" content="Jay Chou">
-      <meta itemprop="description" content="a solitary spark and wars begin">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jay's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/hexo%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0%EF%BC%9Agitalk/" class="post-title-link" itemprop="url">Hexo评论功能的实现：Gitalk</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2023-01-22 23:50:20" itemprop="dateCreated datePublished" datetime="2023-01-22T23:50:20+08:00">2023-01-22</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-02-18 10:05:57" itemprop="dateModified" datetime="2024-02-18T10:05:57+08:00">2024-02-18</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/" itemprop="url" rel="index"><span itemprop="name">博客运营</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/%E5%85%B6%E5%AE%83/" itemprop="url" rel="index"><span itemprop="name">其它</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/hexo%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0%EF%BC%9Agitalk/" class="post-meta-item leancloud_visitors" data-flag-title="Hexo评论功能的实现：Gitalk" title="Views">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">Views: </span>
-              <span class="leancloud-visitors-count"></span>
-            </span><br>
-            <span class="post-meta-item" title="Symbols count in article">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>12k</span>
-            </span>
-            <span class="post-meta-item" title="Reading time">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>11 mins.</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>需求： 1、用Gitalk实现评论功能 2、去除之前的Valine实现的评论功能</p>
-<p>可在主题配置文件搜索<code>comment system</code>，查看支持的评论系统；个人使用Gitalk进行配置；
-<img
-src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/202301222346734.png" /></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/hexo%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%9E%E7%8E%B0%EF%BC%9Agitalk/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
 
   
@@ -1378,9 +1403,9 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/20230
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Jay Chou"
+    <img class="site-author-image" itemprop="image" alt="Jay chou"
       src="/images/jay.jpg">
-  <p class="site-author-name" itemprop="name">Jay Chou</p>
+  <p class="site-author-name" itemprop="name">Jay chou</p>
   <div class="site-description" itemprop="description">a solitary spark and wars begin</div>
 </div>
 <div class="site-state-wrap motion-element">
@@ -1388,7 +1413,7 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/20230
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">95</span>
+          <span class="site-state-item-count">98</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -1446,19 +1471,19 @@ src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202301/20230
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Jay Chou</span>
+  <span class="author" itemprop="copyrightHolder">Jay chou</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">124k</span>
+    <span title="Symbols count total">125k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">Reading time total &asymp;</span>
-    <span title="Reading time total">1:52</span>
+    <span title="Reading time total">1:53</span>
 </div>
 
 <!-- 网站运行时间的设置 -->

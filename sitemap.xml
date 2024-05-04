@@ -2,6 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.sdhlw.top/%E5%BD%93%E6%88%91%E7%9C%9F%E6%AD%A3%E5%BC%80%E5%A7%8B%E7%88%B1%E8%87%AA%E5%B7%B1/</loc>
+    
+    <lastmod>2024-05-03T08:13:11.257Z</lastmod>
+    
+    <date>1714715408000</date>
+    <title>当我真正开始爱自己--卓别林 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/hexo%E6%96%87%E7%AB%A0%E5%89%8D%E9%9D%A2%E6%B7%BB%E5%8A%A0%E4%BD%9C%E8%80%85%E5%90%8D%E7%A7%B0/</loc>
+    
+    <lastmod>2024-05-03T06:31:54.032Z</lastmod>
+    
+    <date>1714716461000</date>
+    <title>hexo文章前面添加作者名称 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/vim%E9%AB%98%E4%BA%AE%E6%90%9C%E7%B4%A2%E5%86%85%E5%AE%B9/</loc>
+    
+    <lastmod>2024-05-03T06:30:20.067Z</lastmod>
+    
+    <date>1714717015000</date>
+    <title>git bash中vim高亮搜索内容 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://www.sdhlw.top/%E9%9A%90%E8%97%8F%E6%88%96%E6%98%BE%E7%A4%BAword%E4%B8%AD%E7%9A%84%E6%A0%87%E8%AE%B0/</loc>
     
     <lastmod>2024-05-02T02:49:46.443Z</lastmod>
@@ -193,7 +226,7 @@
     
     <lastmod>2024-03-20T06:49:13.559Z</lastmod>
     
-    <date>1714650980369</date>
+    <date>1714822806102</date>
     <title>Python 速查 | Jay's Blog</title>
     
     <desc>快速查询：Python 函数的简单解释及使用 了解任何函数的最佳方式，谷歌搜索，找到函数的官方文档，阅读。 详细可参考：搜索使用 常用包下载 1234567pip install numpypip install pandaspip install scikit-learnpip install matplotlibpip install tqdm # 运行进度条 pip install seab</desc>

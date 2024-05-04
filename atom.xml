@@ -6,15 +6,91 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-05-01T15:03:19.022Z</updated>
+  <updated>2024-05-03T06:30:20.067Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
-    <name>Jay Chou</name>
+    <name>Jay chou</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git bash中vim高亮搜索内容</title>
+    <link href="https://www.sdhlw.top/vim%E9%AB%98%E4%BA%AE%E6%90%9C%E7%B4%A2%E5%86%85%E5%AE%B9/"/>
+    <id>https://www.sdhlw.top/vim%E9%AB%98%E4%BA%AE%E6%90%9C%E7%B4%A2%E5%86%85%E5%AE%B9/</id>
+    <published>2024-05-03T06:16:55.000Z</published>
+    <updated>2024-05-03T06:30:20.067Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、临时设置：vim打开文档--&gt;命令行形式输入<code>set hlsearch</code>。缺点：关闭文档后，下次打开，又需要重新设置一遍<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[vim搜索设置高亮](https://blog.csdn.net/hzhsan/article/details/44228241)">[1]</span></a></sup>。</p><p>2、永久设置（推荐）：在<code>~/.vimrc</code>中配制<code>vim ~/.vimrc</code> 在文档中加上<code>set hlsearch</code>然后保存退出便可。 优点：一次设置，永久生效。 <span id="more"></span></p><p>git bash的<code>.vimrc</code>文件在哪里？</p><p>打开git bash，输入<code>vim --version</code>即可找到vimrc文件，比如我的在<code>/etc/vimrc</code></p><p><code>vim /etc/vimrc</code>在最后一行添加<code>set hlsearch</code>即可（修改<code>/etc/vimrc</code>文件需要以管理员打开gitbash）</p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/hzhsan/article/details/44228241">vim搜索设置高亮</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;1、临时设置：vim打开文档--&amp;gt;命令行形式输入
+&lt;code&gt;set hlsearch&lt;/code&gt;。
+缺点：关闭文档后，下次打开，又需要重新设置一遍&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
+class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
+aria-label=&quot;[vim搜索设置高亮](https://blog.csdn.net/hzhsan/article/details/44228241)
+&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
+&lt;p&gt;2、永久设置（推荐）：在&lt;code&gt;~/.vimrc&lt;/code&gt;中配制
+&lt;code&gt;vim ~/.vimrc&lt;/code&gt; 在文档中加上&lt;code&gt;set hlsearch&lt;/code&gt;
+然后保存退出便可。 优点：一次设置，永久生效。</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="代码相关" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo文章前面添加作者名称</title>
+    <link href="https://www.sdhlw.top/hexo%E6%96%87%E7%AB%A0%E5%89%8D%E9%9D%A2%E6%B7%BB%E5%8A%A0%E4%BD%9C%E8%80%85%E5%90%8D%E7%A7%B0/"/>
+    <id>https://www.sdhlw.top/hexo%E6%96%87%E7%AB%A0%E5%89%8D%E9%9D%A2%E6%B7%BB%E5%8A%A0%E4%BD%9C%E8%80%85%E5%90%8D%E7%A7%B0/</id>
+    <published>2024-05-03T06:07:41.000Z</published>
+    <updated>2024-05-03T06:31:54.032Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><span id="more"></span><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;h3 id=&quot;参考文章&quot;&gt;参考</summary>
+      
+    
+    
+    
+    <category term="博客运营" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/"/>
+    
+    <category term="其它" scheme="https://www.sdhlw.top/categories/%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%90%A5/%E5%85%B6%E5%AE%83/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>当我真正开始爱自己--卓别林</title>
+    <link href="https://www.sdhlw.top/%E5%BD%93%E6%88%91%E7%9C%9F%E6%AD%A3%E5%BC%80%E5%A7%8B%E7%88%B1%E8%87%AA%E5%B7%B1/"/>
+    <id>https://www.sdhlw.top/%E5%BD%93%E6%88%91%E7%9C%9F%E6%AD%A3%E5%BC%80%E5%A7%8B%E7%88%B1%E8%87%AA%E5%B7%B1/</id>
+    <published>2024-05-03T05:50:08.000Z</published>
+    <updated>2024-05-03T08:13:11.257Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>当我真正开始爱自己，</p><p>我才认识到，所有的痛苦和情感的折磨，</p><p>都只是提醒我：活着，不要违背自己的本心。</p><p>今天我明白了，这叫做“真实”。</p><span id="more"></span><p>当我真正开始爱自己，</p><p>我才懂得，把自己的愿望强加于人，</p><p>是多么的无礼，就算我知道，时机并不成熟，</p><p>那人也还没有做好准备，</p><p>就算那个人就是我自己。</p><p>今天我明白了，这叫做“尊重”。</p><p>当我开始真正爱自己，</p><p>我不再渴求不同的人生，</p><p>我知道任何发生在我身边的事情，</p><p>都是对我成长的邀请。</p><p>如今，我称之为“成熟”。</p><p>当我开始真正爱自己，</p><p>我才明白，我其实一直都在正确的时间，</p><p>正确的地方，发生的一切都恰如其分。</p><p>由此我得以平静。</p><p>今天我明白了，这叫做“自信”。</p><p>当我真正开始爱自己，</p><p>我不再牺牲自己的自由时间，</p><p>不再去勾画什么宏伟的明天。</p><p>今天我只做有趣和快乐的事，</p><p>做自己热爱，让心欢喜的事，</p><p>用我的方式、我的韵律。</p><p>今天我明白了，这叫做“单纯”。</p><p>当我开始真正爱自己，</p><p>我开始远离一切不健康的东西。</p><p>不论是饮食和人物，还是事情和环境，</p><p>我远离一切让我远离本真的东西。</p><p>从前我把这叫做“追求健康的自私自利”，</p><p>但今天我明白了，这是“自爱”。</p><p>当我开始真正爱自己，</p><p>我不再总想着要永远正确，不犯错误。</p><p>我今天明白了，这叫做“谦逊”。</p><p>当我开始真正爱自己，</p><p>我不再继续沉溺于过去，</p><p>也不再为明天而忧虑，</p><p>现在我只活在一切正在发生的当下，</p><p>今天，我活在此时此地，</p><p>如此日复一日。这就叫“完美”。</p><p>当我开始真正爱自己，</p><p>我明白，我的思虑让我变得贫乏和病态，</p><p>但当我唤起了心灵的力量，</p><p>理智就变成了一个重要的伙伴，</p><p>这种组合我称之为，“心的智慧”。</p><p>我们无须再害怕自己和他人的分歧，</p><p>矛盾和问题，因为即使星星有时也会碰在一起，</p><p>形成新的世界，今天我明白，这就是“生命”。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;当我真正开始爱自己，&lt;/p&gt;
+&lt;p&gt;我才认识到，所有的痛苦和情感的折磨，&lt;/p&gt;
+&lt;p&gt;都只是提醒我：活着，不要违背自己的本心。&lt;/p&gt;
+&lt;p&gt;今天我明白了，这叫做“真实”。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活随笔" scheme="https://www.sdhlw.top/categories/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>多级列表导致图表二.1问题</title>
@@ -468,85 +544,6 @@ aria-label=&quot;[论文中引用网页内容在文中怎么标注？]( https://
     
     
     <category term="机器学习" scheme="https://www.sdhlw.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>参考文献中英文混排-等与 et al 问题</title>
-    <link href="https://www.sdhlw.top/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%E7%AD%89%E4%B8%8Eetal%E9%97%AE%E9%A2%98/"/>
-    <id>https://www.sdhlw.top/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE%E7%AD%89%E4%B8%8Eetal%E9%97%AE%E9%A2%98/</id>
-    <published>2024-03-15T01:59:38.000Z</published>
-    <updated>2024-03-15T02:56:19.029Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>问题：zotero 使用 <ahref="https://github.com/sdhlw/Chinese-STD-GB-T-7714-related-csl">GB格式</a>插入英文文献时，英文文献为等</p><p>解决：</p><p>1、安装可以同时生成等和 et al 的csl格式，已放于OA 仓库：<ahref="https://github.com/sdhlw/OA/tree/main">china-national-standard-gb-t-7714-2015-numeric-BiLan.csl</a></p><p>打开word：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151007465.png" alt="" style="zoom:23%;" /></p><span id="more"></span><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151017925.png" alt="" style="zoom:33%;" /></p><p>2、在zotero中，将显示为等的英文文献的语言修改为“en”<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[[Zotero修改版]终于可以原生支持同时生成“et al”和“等”了](https://zhuanlan.zhihu.com/p/314928204)">[1]</span></a></sup></p><p>按照图片的内容修改，可解决英文文献引用过程中 et al. 变为 等的问题<sup id="fnref:2"><a href="#fn:2" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Zotero 插件之 Jasminum（茉莉花）的使用教程](https://blog.csdn.net/m0_67394827/article/details/134389267)">[2]</span></a></sup>，如果有一些论文的语言没有自动识别出来，或者是安装茉莉花插件之前的旧文献，我们可以手动进行操作找到自己需要设置语言的论文，点击右键-设置语言，之后，根据论文的语言设置为中文或者英文即可<sup id="fnref:3"><a href="#fn:3" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Zotero修改GB/T 7714参考文献格式-实现中英文混排](https://zhuanlan.zhihu.com/p/663341103)">[3]</span></a></sup>。</p><p>茉莉花插件批量修改条目为 en :</p><p>zotero：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151047433.png" alt="" style="zoom:40%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151048903.png" alt="" style="zoom:33%;" /></p><p>2、选中所有英文文献条目，右键：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151050754.png" alt="" style="zoom:25%;" /></p><p>3、点击 word 中 zotero 中的 refresh 即可</p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/314928204">[Zotero修改版]终于可以原生支持同时生成“etal”和“等”了</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span></li><li id="fn:2"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/m0_67394827/article/details/134389267">Zotero插件之Jasminum（茉莉花）的使用教程</a><a href="#fnref:2" rev="footnote">↩︎</a></span></li><li id="fn:3"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/663341103">Zotero修改GB/T7714参考文献格式-实现中英文混排</a><a href="#fnref:3" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;问题：zotero 使用 &lt;a
-href=&quot;https://github.com/sdhlw/Chinese-STD-GB-T-7714-related-csl&quot;&gt;GB
-格式&lt;/a&gt;插入英文文献时，英文文献为等&lt;/p&gt;
-&lt;p&gt;解决：&lt;/p&gt;
-&lt;p&gt;1、安装可以同时生成等和 et al 的csl格式，已放于OA 仓库：&lt;a
-href=&quot;https://github.com/sdhlw/OA/tree/main&quot;&gt;china-national-standard-gb-t-7714-2015-numeric-BiLan.csl&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;打开word：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403151007465.png&quot; alt=&quot;&quot; style=&quot;zoom:23%;&quot; /&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
-    
-    
-    <category term="Zotero" scheme="https://www.sdhlw.top/tags/zotero/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>独热编码（one-hot）</title>
-    <link href="https://www.sdhlw.top/%E7%8B%AC%E7%83%AD%E7%BC%96%E7%A0%81%EF%BC%88one-hot%EF%BC%89/"/>
-    <id>https://www.sdhlw.top/%E7%8B%AC%E7%83%AD%E7%BC%96%E7%A0%81%EF%BC%88one-hot%EF%BC%89/</id>
-    <published>2024-03-11T10:37:55.000Z</published>
-    <updated>2024-03-13T01:42:15.485Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>独热编码(one-hot encoding)独热编码是通过创建一个新的虚拟特征，虚拟特征的每一列各代表标称数据的一个值。例如，颜色一共有四个取值green、blue、red、black，独热编码是通过四位二进制来表示，如果是green就表示为<code>[1,0,0,0]</code>，对应的颜色是<code>[green,blue,red,black]</code>，如果属于哪一种颜色，则取值为1，否则为0。</p><span id="more"></span><h3 id="实现的两种方式">实现的两种方式</h3><p>1、OneHotEncoder<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[数据分析预处理 -字符型类别变量（string）](https://blog.csdn.net/Poisson_SHAN/article/details/108894118)">[1]</span></a></sup>：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sklearn.preprocessing <span class="keyword">as</span> pre_processing</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">label=pre_processing.LabelEncoder()</span><br><span class="line">labels=label.fit_transform([<span class="string">&#x27;中国&#x27;</span>,<span class="string">&#x27;美国&#x27;</span>,<span class="string">&#x27;法国&#x27;</span>,<span class="string">&#x27;德国&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span>(labels)</span><br><span class="line"></span><br><span class="line"><span class="comment"># out:</span></span><br><span class="line"><span class="comment"># [0 3 2 1]</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">labels=np.array(labels).reshape(<span class="built_in">len</span>(labels),<span class="number">1</span>) <span class="comment">#先将X组织成（sample，feature）的格式</span></span><br><span class="line"> </span><br><span class="line">onehot=pre_processing.OneHotEncoder()</span><br><span class="line">onehot_label=onehot.fit_transform(labels)</span><br><span class="line"><span class="built_in">print</span>(onehot_label.toarray())   <span class="comment">#这里一定要进行toarray()</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># out：</span></span><br><span class="line"><span class="comment"># [[1. 0. 0. 0.]</span></span><br><span class="line"><span class="comment">#  [0. 0. 0. 1.]</span></span><br><span class="line"><span class="comment">#  [0. 0. 1. 0.]</span></span><br><span class="line"><span class="comment">#  [0. 1. 0. 0.]]</span></span><br></pre></td></tr></table></figure><p>2、pd.get_dummies<sup id="fnref:2"><a href="#fn:2" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Python下数值型与字符型类别变量独热编码（One-hot Encoding）实现](https://cloud.tencent.com/developer/article/1851294)">[2]</span></a></sup></p><p>在<code>get_dummies()</code>函数中，默认情况下<ahref="https://www.zhihu.com/search?q=独热编码&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3246378958%7D">独热编码</a>生成的是bool类型的True和False。如果你希望将其转换为数值型的0和1，你可以使用参数<code>dtype</code>来指定数据类型为<ahref="https://www.zhihu.com/search?q=整数型&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3246378958%7D">整数型</a>。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">onedata = pd.get_dummies(data,columns=[<span class="string">&#x27;SoilType&#x27;</span>],dtype=<span class="built_in">int</span>)</span><br></pre></td></tr></table></figure><h3 id="例子">例子</h3><p>首先我们的数据：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建颜色数据</span></span><br><span class="line">colors = [<span class="string">&#x27;红色&#x27;</span>, <span class="string">&#x27;蓝色&#x27;</span>, <span class="string">&#x27;绿色&#x27;</span>]</span><br><span class="line">color_data = np.random.choice(colors, size=<span class="number">100</span>, p=[<span class="number">0.4</span>, <span class="number">0.4</span>, <span class="number">0.2</span>])</span><br><span class="line"><span class="comment"># 创建目标变量数据</span></span><br><span class="line">value_data = np.random.randn(<span class="number">100</span>) * <span class="number">10</span> + <span class="number">50</span></span><br><span class="line"><span class="comment"># 将数据合并为数据集</span></span><br><span class="line">data = pd.DataFrame(&#123;<span class="string">&#x27;color&#x27;</span>: color_data, <span class="string">&#x27;value&#x27;</span>: value_data&#125;)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;data:&#123;&#125;\n&quot;</span>.<span class="built_in">format</span>(data))</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">data:   color      value</span><br><span class="line"><span class="number">0</span>     蓝色  <span class="number">64.725733</span></span><br><span class="line"><span class="number">1</span>     蓝色  <span class="number">34.763842</span></span><br><span class="line"><span class="number">2</span>     红色  <span class="number">43.883487</span></span><br><span class="line"><span class="number">3</span>     红色  <span class="number">42.106679</span></span><br><span class="line"><span class="number">4</span>     红色  <span class="number">48.876011</span></span><br><span class="line">..   ...        ...</span><br><span class="line"><span class="number">95</span>    蓝色  <span class="number">64.521983</span></span><br><span class="line"><span class="number">96</span>    蓝色  <span class="number">57.808631</span></span><br><span class="line"><span class="number">97</span>    绿色  <span class="number">44.561463</span></span><br><span class="line"><span class="number">98</span>    蓝色  <span class="number">61.872843</span></span><br><span class="line"><span class="number">99</span>    蓝色  <span class="number">49.776371</span></span><br><span class="line"></span><br><span class="line">[<span class="number">100</span> rows x <span class="number">2</span> columns]</span><br></pre></td></tr></table></figure><p>进行独热编码后的数据：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用pandas的get_dummies方法进行one-hot编码</span></span><br><span class="line">onehot = pd.get_dummies(data[<span class="string">&#x27;color&#x27;</span>], prefix=<span class="string">&#x27;color&#x27;</span>) <span class="comment"># 取出这列，并对这列进行独热编码</span></span><br><span class="line"><span class="comment"># 将编码后的特征与目标变量合并</span></span><br><span class="line">data_onehot = pd.concat([data[<span class="string">&#x27;value&#x27;</span>], onehot], axis=<span class="number">1</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;onehot之后的数据：\n&#123;&#125;&quot;</span>.<span class="built_in">format</span>(data_onehot))</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">onehot之后的数据：</span><br><span class="line">        value  color_红色  color_绿色  color_蓝色</span><br><span class="line"><span class="number">0</span>   <span class="number">64.725733</span>         <span class="number">0</span>         <span class="number">0</span>         <span class="number">1</span></span><br><span class="line"><span class="number">1</span>   <span class="number">34.763842</span>         <span class="number">0</span>         <span class="number">0</span>         <span class="number">1</span></span><br><span class="line"><span class="number">2</span>   <span class="number">43.883487</span>         <span class="number">1</span>         <span class="number">0</span>         <span class="number">0</span></span><br><span class="line"><span class="number">3</span>   <span class="number">42.106679</span>         <span class="number">1</span>         <span class="number">0</span>         <span class="number">0</span></span><br><span class="line"><span class="number">4</span>   <span class="number">48.876011</span>         <span class="number">1</span>         <span class="number">0</span>         <span class="number">0</span></span><br><span class="line">..        ...       ...       ...       ...</span><br><span class="line"><span class="number">95</span>  <span class="number">64.521983</span>         <span class="number">0</span>         <span class="number">0</span>         <span class="number">1</span></span><br><span class="line"><span class="number">96</span>  <span class="number">57.808631</span>         <span class="number">0</span>         <span class="number">0</span>         <span class="number">1</span></span><br><span class="line"><span class="number">97</span>  <span class="number">44.561463</span>         <span class="number">0</span>         <span class="number">1</span>         <span class="number">0</span></span><br><span class="line"><span class="number">98</span>  <span class="number">61.872843</span>         <span class="number">0</span>         <span class="number">0</span>         <span class="number">1</span></span><br><span class="line"><span class="number">99</span>  <span class="number">49.776371</span>         <span class="number">0</span>         <span class="number">0</span>         <span class="number">1</span></span><br><span class="line"></span><br><span class="line">[<span class="number">100</span> rows x <span class="number">4</span> columns]</span><br></pre></td></tr></table></figure><p>划分训练集和测试集：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 将数据集划分为训练集和测试集</span></span><br><span class="line">X_train, X_test, y_train, y_test = train_test_split(data_onehot.drop(<span class="string">&#x27;value&#x27;</span>, axis=<span class="number">1</span>), data_onehot[<span class="string">&#x27;value&#x27;</span>], test_size=<span class="number">0.2</span>, random_state=<span class="number">42</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建线性回归模型并拟合训练集</span></span><br><span class="line">model = LinearRegression()</span><br><span class="line">model.fit(X_train, y_train)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在测试集上进行预测并评估性能</span></span><br><span class="line">y_pred = model.predict(X_test)</span><br><span class="line">score = r2_score(y_test, y_pred)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;R-squared score:&quot;</span>, score)</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">R-squared score: -<span class="number">0.12562920003687705</span></span><br></pre></td></tr></table></figure><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/Poisson_SHAN/article/details/108894118">数据分析预处理-字符型类别变量（string）</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li><li id="fn:2"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://cloud.tencent.com/developer/article/1851294">Python下数值型与字符型类别变量独热编码（One-hotEncoding）实现</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span></li></ol></div></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;独热编码(one-hot encoding)
-独热编码是通过创建一个新的虚拟特征，虚拟特征的每一列各代表标称数据的一个值。例如，颜色一共有四个取值green、blue、red、black，独热编码是通过四位二进制来表示，如果是green就表示为&lt;code&gt;[1,0,0,0]&lt;/code&gt;，对应的颜色是&lt;code&gt;[green,blue,red,black]&lt;/code&gt;，如果属于哪一种颜色，则取值为1，否则为0。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="代码相关" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>数据分析项目管理形式</title>
-    <link href="https://www.sdhlw.top/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%BD%A2%E5%BC%8F/"/>
-    <id>https://www.sdhlw.top/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%9A%84%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86%E5%BD%A2%E5%BC%8F/</id>
-    <published>2024-03-11T10:30:52.000Z</published>
-    <updated>2024-03-15T08:16:41.242Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>project</p><ul><li><p>origin_data</p></li><li><p>clean_data</p></li><li><p>process(代码及工程文件)</p></li><li><p>result</p></li></ul><span id="more"></span><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;project&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;origin_data&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;clean_data&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;process(代码及工程文件)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;result&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="代码相关" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/"/>
-    
     
   </entry>
   
