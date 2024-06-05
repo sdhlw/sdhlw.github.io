@@ -22,17 +22,17 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="快速查询：Python 函数的简单解释及使用 了解任何函数的最佳方式，谷歌搜索，找到函数的官方文档，阅读。 详细可参考：搜索使用  常用包下载1234567pip install numpypip install pandaspip install scikit-learnpip install matplotlibpip install tqdm  # 运行进度条 pip install sea">
+  <meta name="description" content="快速查询：Python 函数的简单解释及使用 了解任何函数的最佳方式，谷歌搜索，找到函数的官方文档，阅读。 详细可参考：搜索使用  常用包下载 1234567pip install numpypip install pandaspip install scikit-learnpip install matplotlibpip install tqdm  # 运行进度条 pip insta">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Python 速查">
 <meta property="og:url" content="https://www.sdhlw.top/python/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="快速查询：Python 函数的简单解释及使用 了解任何函数的最佳方式，谷歌搜索，找到函数的官方文档，阅读。 详细可参考：搜索使用  常用包下载1234567pip install numpypip install pandaspip install scikit-learnpip install matplotlibpip install tqdm  # 运行进度条 pip install sea">
+<meta property="og:description" content="快速查询：Python 函数的简单解释及使用 了解任何函数的最佳方式，谷歌搜索，找到函数的官方文档，阅读。 详细可参考：搜索使用  常用包下载 1234567pip install numpypip install pandaspip install scikit-learnpip install matplotlibpip install tqdm  # 运行进度条 pip insta">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403121450460.png">
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403121824833.png">
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403102139111.png">
-<meta property="article:published_time" content="2024-05-04T12:26:03.504Z">
+<meta property="article:published_time" content="2024-06-05T14:12:26.742Z">
 <meta property="article:modified_time" content="2024-05-04T12:26:01.466Z">
 <meta property="article:author" content="Jay chou">
 <meta name="twitter:card" content="summary">
@@ -232,95 +232,115 @@
           <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>快速查询：Python 函数的简单解释及使用</p>
 <p>了解任何函数的最佳方式，谷歌搜索，找到函数的官方文档，阅读。</p>
 <p>详细可参考：<a target="_blank" rel="noopener" href="https://www.runoob.com/">搜索使用</a></p>
-<hr>
-<h1 id="常用包下载"><a href="#常用包下载" class="headerlink" title="常用包下载"></a>常用包下载</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">pip install numpy</span><br><span class="line">pip install pandas</span><br><span class="line">pip install scikit-learn</span><br><span class="line">pip install matplotlib</span><br><span class="line">pip install tqdm  <span class="comment"># 运行进度条 </span></span><br><span class="line">pip install seaborn <span class="comment"># 绘图</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<h1 id="excel"><a href="#excel" class="headerlink" title="excel"></a>excel</h1><h2 id="导入-excel"><a href="#导入-excel" class="headerlink" title="导入 excel"></a>导入 excel</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 指定 Excel 文件路径</span></span><br><span class="line">excel_path = <span class="string">r&#x27;D:\MyData\Boston_data.xlsx&#x27;</span></span><br><span class="line"><span class="comment"># 从 Excel 文件中读取数据并存储到 DataFrame 中</span></span><br><span class="line">df = pd.read_excel(excel_path, sheet_name=<span class="string">&#x27;page_1&#x27;</span>)</span><br><span class="line"><span class="comment"># 显示 DataFrame 中的数据</span></span><br><span class="line"><span class="built_in">print</span>(df)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 多个page同时导入</span></span><br><span class="line"><span class="keyword">with</span> pd.ExcelFile(<span class="string">r&quot;D:\MyData\数据.xlsx&quot;</span>) <span class="keyword">as</span> xls:</span><br><span class="line">    df1 = pd.read_excel(xls, <span class="string">&quot;page1&quot;</span>)</span><br><span class="line">    df2 = pd.read_excel(xls, <span class="string">&quot;page2&quot;</span>)</span><br><span class="line">    df3 = pd.read_excel(xls, <span class="string">&quot;page3&quot;</span>)</span><br></pre></td></tr></table></figure>
-
+<hr />
+<h1 id="常用包下载">常用包下载</h1>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">pip install numpy</span><br><span class="line">pip install pandas</span><br><span class="line">pip install scikit-learn</span><br><span class="line">pip install matplotlib</span><br><span class="line">pip install tqdm  <span class="comment"># 运行进度条 </span></span><br><span class="line">pip install seaborn <span class="comment"># 绘图</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="excel">excel</h1>
+<h2 id="导入-excel">导入 excel</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment"># 指定 Excel 文件路径</span></span><br><span class="line">excel_path = <span class="string">r&#x27;D:\MyData\Boston_data.xlsx&#x27;</span></span><br><span class="line"><span class="comment"># 从 Excel 文件中读取数据并存储到 DataFrame 中</span></span><br><span class="line">df = pd.read_excel(excel_path, sheet_name=<span class="string">&#x27;page_1&#x27;</span>)</span><br><span class="line"><span class="comment"># 显示 DataFrame 中的数据</span></span><br><span class="line"><span class="built_in">print</span>(df)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 多个page同时导入</span></span><br><span class="line"><span class="keyword">with</span> pd.ExcelFile(<span class="string">r&quot;D:\MyData\数据.xlsx&quot;</span>) <span class="keyword">as</span> xls:</span><br><span class="line">    df1 = pd.read_excel(xls, <span class="string">&quot;page1&quot;</span>)</span><br><span class="line">    df2 = pd.read_excel(xls, <span class="string">&quot;page2&quot;</span>)</span><br><span class="line">    df3 = pd.read_excel(xls, <span class="string">&quot;page3&quot;</span>)</span><br></pre></td></tr></table></figure>
 <span id="more"></span>
-
-<h2 id="导出-excel"><a href="#导出-excel" class="headerlink" title="导出 excel"></a>导出 excel</h2><p>array导出为excel:</p>
+<h2 id="导出-excel">导出 excel</h2>
+<p>array导出为excel:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># pip install openpyxl</span></span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">data_df = pd.DataFrame(data)  <span class="comment"># 将ndarray格式转换为DataFrame</span></span><br><span class="line">target_df = pd.DataFrame(target) </span><br><span class="line">Boston_all = pd.concat([data_df,target_df],axis=<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 将文档写入excel表格中</span></span><br><span class="line">excel_path = <span class="string">r&#x27;D:\MyData\Boston_data.xlsx&#x27;</span></span><br><span class="line"><span class="keyword">with</span> pd.ExcelWriter(excel_path) <span class="keyword">as</span> writer:  <span class="comment"># 创建名称为 &quot;Boston_data.xlsx&quot; 的excel表格</span></span><br><span class="line">    Boston_all.to_excel(writer, <span class="string">&#x27;page_1&#x27;</span>)  <span class="comment"># 将data_df写入到&quot;page_1&quot;表格中</span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<h1 id="numpy"><a href="#numpy" class="headerlink" title="numpy"></a>numpy</h1><h2 id="np-one"><a href="#np-one" class="headerlink" title="np.one()"></a>np.one()</h2><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403121450460.png" alt="" style="zoom:50%;" />
-
-<h2 id="np-sort"><a href="#np-sort" class="headerlink" title="np.sort()"></a>np.sort()</h2><p><a target="_blank" rel="noopener" href="https://numpy.org/doc/stable/reference/generated/numpy.sort.html">sort()</a> 给数组元素排序, 返回也是数组array</p>
-<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403121824833.png" alt="" style="zoom:40%;" />
-
-<h2 id="np-argsort"><a href="#np-argsort" class="headerlink" title="np.argsort()"></a>np.argsort()</h2><p><a target="_blank" rel="noopener" href="https://numpy.org/doc/stable/reference/generated/numpy.argsort.html">np.argsort()</a></p>
+<hr />
+<h1 id="numpy">numpy</h1>
+<h2 id="np.one">np.one()</h2>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403121450460.png" alt="" style="zoom:50%;" /></p>
+<h2 id="np.sort">np.sort()</h2>
+<p><a
+target="_blank" rel="noopener" href="https://numpy.org/doc/stable/reference/generated/numpy.sort.html">sort()</a>
+给数组元素排序, 返回也是数组array</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403121824833.png" alt="" style="zoom:40%;" /></p>
+<h2 id="np.argsort">np.argsort()</h2>
+<p><a
+target="_blank" rel="noopener" href="https://numpy.org/doc/stable/reference/generated/numpy.argsort.html">np.argsort()</a></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = np.array([<span class="number">3</span>, <span class="number">1</span>, <span class="number">2</span>])</span><br><span class="line">np.argsort(x) <span class="comment"># 返回从小到大数值的索引</span></span><br><span class="line">array([<span class="number">1</span>, <span class="number">2</span>, <span class="number">0</span>])</span><br></pre></td></tr></table></figure>
-
-<h1 id="pandas"><a href="#pandas" class="headerlink" title="pandas"></a>pandas</h1><h2 id="pd-concat"><a href="#pd-concat" class="headerlink" title="pd.concat()"></a>pd.concat()</h2><p><a target="_blank" rel="noopener" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.concat.html">concat()</a> 对dataframe或者series进行拼接</p>
-<p><code>pd.concat([df1,df2],axis=0) </code>: 0为index方向即上下方向，1为index方向即左右方向</p>
+<h1 id="pandas">pandas</h1>
+<h2 id="pd.concat">pd.concat()</h2>
+<p><a
+target="_blank" rel="noopener" href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.concat.html">concat()</a>
+对dataframe或者series进行拼接</p>
+<p><code>pd.concat([df1,df2],axis=0)</code>:
+0为index方向即上下方向，1为index方向即左右方向</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">df1 = pd.DataFrame(data=np.ones((<span class="number">3</span>,<span class="number">3</span>))*<span class="number">1</span>,columns=[<span class="string">&quot;a&quot;</span>,<span class="string">&quot;b&quot;</span>,<span class="string">&quot;c&quot;</span>],index=[<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>])</span><br><span class="line">df2 = pd.DataFrame(data=np.ones((<span class="number">3</span>,<span class="number">3</span>))*<span class="number">2</span>,columns=[<span class="string">&quot;a&quot;</span>,<span class="string">&quot;b&quot;</span>,<span class="string">&quot;c&quot;</span>],index=[<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>])</span><br><span class="line">df3 = pd.DataFrame(data=np.ones((<span class="number">3</span>,<span class="number">3</span>))*<span class="number">3</span>,columns=[<span class="string">&quot;d&quot;</span>,<span class="string">&quot;e&quot;</span>,<span class="string">&quot;f&quot;</span>],index=[<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>])</span><br><span class="line"><span class="built_in">print</span>(df1)</span><br><span class="line"><span class="built_in">print</span>(df2)</span><br><span class="line"><span class="built_in">print</span>(df3)</span><br></pre></td></tr></table></figure>
-
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">     a    b    c</span><br><span class="line"><span class="number">0</span>  <span class="number">1.0</span>  <span class="number">1.0</span>  <span class="number">1.0</span></span><br><span class="line"><span class="number">1</span>  <span class="number">1.0</span>  <span class="number">1.0</span>  <span class="number">1.0</span></span><br><span class="line"><span class="number">2</span>  <span class="number">1.0</span>  <span class="number">1.0</span>  <span class="number">1.0</span></span><br><span class="line">     a    b    c</span><br><span class="line"><span class="number">0</span>  <span class="number">2.0</span>  <span class="number">2.0</span>  <span class="number">2.0</span></span><br><span class="line"><span class="number">1</span>  <span class="number">2.0</span>  <span class="number">2.0</span>  <span class="number">2.0</span></span><br><span class="line"><span class="number">2</span>  <span class="number">2.0</span>  <span class="number">2.0</span>  <span class="number">2.0</span></span><br><span class="line">     d    e    f</span><br><span class="line"><span class="number">0</span>  <span class="number">3.0</span>  <span class="number">3.0</span>  <span class="number">3.0</span></span><br><span class="line"><span class="number">1</span>  <span class="number">3.0</span>  <span class="number">3.0</span>  <span class="number">3.0</span></span><br><span class="line"><span class="number">2</span>  <span class="number">3.0</span>  <span class="number">3.0</span>  <span class="number">3.0</span></span><br></pre></td></tr></table></figure>
-
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pd.concat([df1,df2],axis=<span class="number">0</span>) <span class="comment"># 0为index方向即上下方向</span></span><br></pre></td></tr></table></figure>
-
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">     a    b    c</span><br><span class="line"><span class="number">0</span>  <span class="number">1.0</span>  <span class="number">1.0</span>  <span class="number">1.0</span></span><br><span class="line"><span class="number">1</span>  <span class="number">1.0</span>  <span class="number">1.0</span>  <span class="number">1.0</span></span><br><span class="line"><span class="number">2</span>  <span class="number">1.0</span>  <span class="number">1.0</span>  <span class="number">1.0</span></span><br><span class="line"><span class="number">0</span>  <span class="number">2.0</span>  <span class="number">2.0</span>  <span class="number">2.0</span></span><br><span class="line"><span class="number">1</span>  <span class="number">2.0</span>  <span class="number">2.0</span>  <span class="number">2.0</span></span><br><span class="line"><span class="number">2</span>  <span class="number">2.0</span>  <span class="number">2.0</span>  <span class="number">2.0</span></span><br></pre></td></tr></table></figure>
-
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pd.concat([df1,df2],axis=<span class="number">1</span>) <span class="comment"># 1为index方向即左右方向</span></span><br></pre></td></tr></table></figure>
-
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">     a    b    c    a    b    c</span><br><span class="line"><span class="number">0</span>  <span class="number">1.0</span>  <span class="number">1.0</span>  <span class="number">1.0</span>  <span class="number">2.0</span>  <span class="number">2.0</span>  <span class="number">2.0</span></span><br><span class="line"><span class="number">1</span>  <span class="number">1.0</span>  <span class="number">1.0</span>  <span class="number">1.0</span>  <span class="number">2.0</span>  <span class="number">2.0</span>  <span class="number">2.0</span></span><br><span class="line"><span class="number">2</span>  <span class="number">1.0</span>  <span class="number">1.0</span>  <span class="number">1.0</span>  <span class="number">2.0</span>  <span class="number">2.0</span>  <span class="number">2.0</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="zip"><a href="#zip" class="headerlink" title="zip"></a>zip</h2><p>将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的列表。在 Python 3.x 中为了减少内存，zip() 返回的是一个对象。如需展示列表，需手动 list() 转换。</p>
+<h2 id="zip">zip</h2>
+<p>将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的列表。在
+Python 3.x 中为了减少内存，zip() 返回的是一个对象。如需展示列表，需手动
+list() 转换。</p>
 <p>语法：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">zip([iterable, ...])</span><br><span class="line"># iterable -- 一个或多个迭代器(列表等);</span><br></pre></td></tr></table></figure>
-
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = [<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c = [<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>zipped = <span class="built_in">zip</span>(a,b)     <span class="comment"># 返回一个对象</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>zipped</span><br><span class="line">&lt;<span class="built_in">zip</span> <span class="built_in">object</span> at <span class="number">0x103abc288</span>&gt;</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">list</span>(zipped)  <span class="comment"># list() 转换为列表</span></span><br><span class="line">[(<span class="number">1</span>, <span class="number">4</span>), (<span class="number">2</span>, <span class="number">5</span>), (<span class="number">3</span>, <span class="number">6</span>)]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <p>解压：星号</p>
-<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403102139111.png" alt="" style="zoom:50%;" />
-
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403102139111.png" alt="" style="zoom:50%;" /></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>a1, a2 = <span class="built_in">zip</span>(*<span class="built_in">zip</span>(a,b))          <span class="comment"># 与 zip 相反，zip(*) 可理解为解压，返回二维矩阵式，要放回列表，需要自己转换</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">list</span>(a1)</span><br><span class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="built_in">list</span>(a2)</span><br><span class="line">[<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure>
-
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">score = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">b = [<span class="string">&quot;a&quot;</span>,<span class="string">&quot;b&quot;</span>,<span class="string">&quot;c&quot;</span>]</span><br><span class="line">[*<span class="built_in">zip</span>(b,score)]</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="df-columns"><a href="#df-columns" class="headerlink" title="df.columns"></a>df.columns</h2><p>获得dataframe的列索引即列名，可将其转换为列表：<code>df.columns.tolist()</code></p>
-<hr>
-<h1 id="Machine-learning"><a href="#Machine-learning" class="headerlink" title="Machine learning"></a>Machine learning</h1><h2 id="划分训练集，验证集，测试集"><a href="#划分训练集，验证集，测试集" class="headerlink" title="划分训练集，验证集，测试集"></a>划分训练集，验证集，测试集</h2><p><strong>训练集</strong>就像是学生的课本，学生 根据课本里的内容来掌握知识，<strong>验证集</strong>就像是作业，通过作业可以知道 不同学生学习情况、进步的速度快慢，而最终的<strong>测试集</strong>就像是考试，考的题是平常都没有见过，考察学生举一反三的能力。</p>
+<hr />
+<h2 id="df.columns">df.columns</h2>
+<p>获得dataframe的列索引即列名，可将其转换为列表：<code>df.columns.tolist()</code></p>
+<hr />
+<h1 id="machine-learning">Machine learning</h1>
+<h2 id="划分训练集验证集测试集">划分训练集，验证集，测试集</h2>
+<p><strong>训练集</strong>就像是学生的课本，学生
+根据课本里的内容来掌握知识，<strong>验证集</strong>就像是作业，通过作业可以知道
+不同学生学习情况、进步的速度快慢，而最终的<strong>测试集</strong>就像是考试，考的题是平常都没有见过，考察学生举一反三的能力。</p>
 <ul>
 <li>训练集（Training Dataset）：训练阶段使用</li>
-<li>验证集（Validation Dataset）：调整超参数(在机器学习模型中，需要人工选择的参数称为超参数。超参数选择不恰当，就会出现欠拟合或者过拟合的问题。)，让模型处于最好状态。没有超参数可以不使用验证集，可直接用测试集评估效果。</li>
+<li>验证集（Validation
+Dataset）：调整超参数(在机器学习模型中，需要人工选择的参数称为超参数。超参数选择不恰当，就会出现欠拟合或者过拟合的问题。)，让模型处于最好状态。没有超参数可以不使用验证集，可直接用测试集评估效果。</li>
 <li>测试集（Test Dataset）：评估模型</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line">X_train,X_test,y_train,y_test = train_test_split(X,y,test_size = <span class="number">0.2</span>，random_state=<span class="number">0</span>) <span class="comment"># 划分训练集和测试集</span></span><br></pre></td></tr></table></figure>
-
-<p>将特征数据存储在 X 中，目标数据存储在 y 中。test size 参数指定了测试集占整个数据集的比例，这里设置为0.2表示测试集占20%。random state 参数用于设置随机种子，以确保每次划分得到相同的结果。</p>
+<p>将特征数据存储在 X 中，目标数据存储在 y 中。test size
+参数指定了测试集占整个数据集的比例，这里设置为0.2表示测试集占20%。random
+state 参数用于设置随机种子，以确保每次划分得到相同的结果。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line">X_train,X_valtest,y_train,y_valtest = train_test_split(X,y,test_size = <span class="number">0.4</span>，random_state=<span class="number">0</span>)</span><br><span class="line">X_val,X_test,y_val,y_test = train_test_split(X_valtest,y_valtest,test_size = <span class="number">0.5</span>，random_state=<span class="number">0</span>) <span class="comment"># 划分训练集，验证集，测试集</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="参数网格寻优"><a href="#参数网格寻优" class="headerlink" title="参数网格寻优"></a>参数网格寻优</h2><p>选择超参数（需要人工选择的参数称为超参数）的时候，有两个途径，一个是凭<strong>经验微调</strong>，另一个就是选择不同大小的参数，带入模型中，<strong>挑选表现最好</strong>的参数。使用Scikit-Learn的GridSearchCV来做这项穷举参数，搜索最好表现的参数组合工作。</p>
-<p>GridSearchCV的名字其实可以拆分为两部分，GridSearch和CV，即网格搜索和交叉验证<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Python机器学习笔记：Grid SearchCV（网格搜索）](https://www.cnblogs.com/wj-1314/p/10422159.html)
+<h2 id="参数网格寻优">参数网格寻优</h2>
+<p>选择超参数（需要人工选择的参数称为超参数）的时候，有两个途径，一个是凭<strong>经验微调</strong>，另一个就是选择不同大小的参数，带入模型中，<strong>挑选表现最好</strong>的参数。使用Scikit-Learn的GridSearchCV来做这项穷举参数，搜索最好表现的参数组合工作。</p>
+<p>GridSearchCV的名字其实可以拆分为两部分，GridSearch和CV，即网格搜索和交叉验证<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[Python机器学习笔记：Grid SearchCV（网格搜索）](https://www.cnblogs.com/wj-1314/p/10422159.html)
 ">[1]</span></a></sup>。网格搜索，搜索的是参数，即在指定的参数范围内，按步长依次调整参数，利用调整的参数训练学习器，从所有的参数中找到在验证集上精度最高的参数，这其实是一个训练和比较的过程。交叉验证保证模型正确反映数据的真实情况，减少误差。</p>
-<p>本质上就是穷尽参数，找出表现最好的一组参数，所以输入就需要：<br>1、用什么模型<br>2、可选参数（不同算法模型，参数不一样）<br>3、几折交叉</p>
-<p>输出就是：<br>1、最好的参数组合<br>2、最好的模型</p>
-<p><a target="_blank" rel="noopener" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html">GridSearchCV 官方文档</a> </p>
+<p>本质上就是穷尽参数，找出表现最好的一组参数，所以输入就需要：
+1、用什么模型 2、可选参数（不同算法模型，参数不一样） 3、几折交叉</p>
+<p>输出就是： 1、最好的参数组合 2、最好的模型</p>
+<p><a
+target="_blank" rel="noopener" href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html">GridSearchCV
+官方文档</a></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">clf = KNeighborsClassifier()  <span class="comment"># knn模型实例化</span></span><br><span class="line">parameters = &#123;<span class="string">&#x27;n_neighbors&#x27;</span>: [i <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">10</span>)]&#125;  <span class="comment"># 设置超参数，不同模型不一样</span></span><br><span class="line">gc = GridSearchCV(clf, parameters, cv=<span class="number">5</span>)  <span class="comment"># 网格寻优实例化（含3折交叉验证）</span></span><br><span class="line">gc.fit(X_val, y_val)    <span class="comment"># 模型训练，并寻优 </span></span><br><span class="line">best_p = gc.best_params_  <span class="comment"># 寻优最佳参数</span></span><br><span class="line">bestknn = gc.best_estimator_   <span class="comment"># 最佳模型</span></span><br><span class="line">test_score = bestknn.score(X_test,y_test) <span class="comment"># 最佳模型下，测试集精度</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="k-折交叉验证"><a href="#k-折交叉验证" class="headerlink" title="k 折交叉验证"></a>k 折交叉验证</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> cross_val_score</span><br><span class="line">scores = cross_val_score(Logreg,iris.data,iris.target,cv=<span class="number">5</span>) <span class="comment"># 模型，x,y,折数; 默认给出每个模型精度，自己需平均</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Average cross-validation score:&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(scores.mean())) </span><br></pre></td></tr></table></figure>
-
-<h2 id="KNN-（k近邻）"><a href="#KNN-（k近邻）" class="headerlink" title="KNN （k近邻）"></a>KNN （k近邻）</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 分类</span></span><br><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line">knn = KNeighborsClassifier(n_neighbors=<span class="number">1</span>) <span class="comment"># 实例化</span></span><br><span class="line">knn.fit(X_train, y_train)</span><br><span class="line">prediction = knn.predict(X_test) </span><br><span class="line">score = knn.score(X_test,y_test)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 回归</span></span><br><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsRegressor</span><br><span class="line">knn = KNeighborsRegressor(n_neighbors=<span class="number">1</span>)</span><br><span class="line">knn.fit(X_train, y_train)</span><br><span class="line">prediction = knn.predict(X_test) </span><br><span class="line">score = knn.score(X_test,y_test)</span><br></pre></td></tr></table></figure>
-
-<h2 id="SVM"><a href="#SVM" class="headerlink" title="SVM"></a>SVM</h2><p>核支持向量机（kernelized support vector machine），通常简称为SVM。</p>
+<h2 id="k-折交叉验证">k 折交叉验证</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> cross_val_score</span><br><span class="line">scores = cross_val_score(Logreg,iris.data,iris.target,cv=<span class="number">5</span>) <span class="comment"># 模型，x,y,折数; 默认给出每个模型精度，自己需平均</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Average cross-validation score:&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(scores.mean())) </span><br></pre></td></tr></table></figure>
+<h2 id="knn-k近邻">KNN （k近邻）</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 分类</span></span><br><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line">knn = KNeighborsClassifier(n_neighbors=<span class="number">1</span>) <span class="comment"># 实例化</span></span><br><span class="line">knn.fit(X_train, y_train)</span><br><span class="line">prediction = knn.predict(X_test) </span><br><span class="line">score = knn.score(X_test,y_test)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 回归</span></span><br><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsRegressor</span><br><span class="line">knn = KNeighborsRegressor(n_neighbors=<span class="number">1</span>)</span><br><span class="line">knn.fit(X_train, y_train)</span><br><span class="line">prediction = knn.predict(X_test) </span><br><span class="line">score = knn.score(X_test,y_test)</span><br></pre></td></tr></table></figure>
+<h2 id="svm">SVM</h2>
+<p>核支持向量机（kernelized support vector
+machine），通常简称为SVM。</p>
 <ul>
 <li>在低维数据和高维数据表现都很好（少特征和多特征）</li>
 <li>1万样本可能还好，10万样本运行内存和时间面临挑战</li>
 <li>预处理和调参要非常小心，与随机森林和梯度提升则相反（很少预处理，甚至不需要）</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVR  <span class="comment"># Support Vector Regression 支持向量回归</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 回归模型</span></span><br><span class="line">svr_rbf = SVR(kernel=<span class="string">&quot;rbf&quot;</span>, C=<span class="number">100</span>, gamma=<span class="number">0.1</span>, epsilon=<span class="number">0.1</span>) <span class="comment"># 高斯核/径向基 核函数</span></span><br><span class="line">svr_lin = SVR(kernel=<span class="string">&quot;linear&quot;</span>, C=<span class="number">100</span>, gamma=<span class="string">&quot;auto&quot;</span>)  <span class="comment"># 线性核函数</span></span><br><span class="line">svr_poly = SVR(kernel=<span class="string">&quot;poly&quot;</span>, C=<span class="number">100</span>, gamma=<span class="string">&quot;auto&quot;</span>, degree=<span class="number">3</span>, epsilon=<span class="number">0.1</span>, coef0=<span class="number">1</span>) <span class="comment"># 多项式核函数</span></span><br><span class="line">svr_rbf.fit(X_train, y_train)</span><br><span class="line">prediction = svr_rbf.predict(X_test) </span><br><span class="line">score = svr_rbf.score(X_test,y_test) <span class="comment"># </span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 分类模型</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="rf">RF</h2>
+<h1 id="参考文章">参考文章</h1>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.cnblogs.com/wj-1314/p/10422159.html">Python机器学习笔记：Grid
+SearchCV（网格搜索）</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
 
-
-
-<h2 id="RF"><a href="#RF" class="headerlink" title="RF"></a>RF</h2><h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.cnblogs.com/wj-1314/p/10422159.html">Python机器学习笔记：Grid SearchCV（网格搜索）</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
       </div>
       
       
@@ -381,7 +401,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%8C%85%E4%B8%8B%E8%BD%BD"><span class="nav-text">常用包下载</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#excel"><span class="nav-text">excel</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%BC%E5%85%A5-excel"><span class="nav-text">导入 excel</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%BC%E5%87%BA-excel"><span class="nav-text">导出 excel</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#numpy"><span class="nav-text">numpy</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#np-one"><span class="nav-text">np.one()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#np-sort"><span class="nav-text">np.sort()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#np-argsort"><span class="nav-text">np.argsort()</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pandas"><span class="nav-text">pandas</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#pd-concat"><span class="nav-text">pd.concat()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zip"><span class="nav-text">zip</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#df-columns"><span class="nav-text">df.columns</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Machine-learning"><span class="nav-text">Machine learning</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%92%E5%88%86%E8%AE%AD%E7%BB%83%E9%9B%86%EF%BC%8C%E9%AA%8C%E8%AF%81%E9%9B%86%EF%BC%8C%E6%B5%8B%E8%AF%95%E9%9B%86"><span class="nav-text">划分训练集，验证集，测试集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E7%BD%91%E6%A0%BC%E5%AF%BB%E4%BC%98"><span class="nav-text">参数网格寻优</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#k-%E6%8A%98%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81"><span class="nav-text">k 折交叉验证</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#KNN-%EF%BC%88k%E8%BF%91%E9%82%BB%EF%BC%89"><span class="nav-text">KNN （k近邻）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SVM"><span class="nav-text">SVM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#RF"><span class="nav-text">RF</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%8C%85%E4%B8%8B%E8%BD%BD"><span class="nav-text">常用包下载</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#excel"><span class="nav-text">excel</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%BC%E5%85%A5-excel"><span class="nav-text">导入 excel</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%BC%E5%87%BA-excel"><span class="nav-text">导出 excel</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#numpy"><span class="nav-text">numpy</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#np.one"><span class="nav-text">np.one()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#np.sort"><span class="nav-text">np.sort()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#np.argsort"><span class="nav-text">np.argsort()</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pandas"><span class="nav-text">pandas</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#pd.concat"><span class="nav-text">pd.concat()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zip"><span class="nav-text">zip</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#df.columns"><span class="nav-text">df.columns</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#machine-learning"><span class="nav-text">Machine learning</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%92%E5%88%86%E8%AE%AD%E7%BB%83%E9%9B%86%E9%AA%8C%E8%AF%81%E9%9B%86%E6%B5%8B%E8%AF%95%E9%9B%86"><span class="nav-text">划分训练集，验证集，测试集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E7%BD%91%E6%A0%BC%E5%AF%BB%E4%BC%98"><span class="nav-text">参数网格寻优</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#k-%E6%8A%98%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81"><span class="nav-text">k 折交叉验证</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#knn-k%E8%BF%91%E9%82%BB"><span class="nav-text">KNN （k近邻）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#svm"><span class="nav-text">SVM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rf"><span class="nav-text">RF</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-text">参考文章</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -397,7 +417,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">99</span>
+          <span class="site-state-item-count">107</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -410,7 +430,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">49</span>
+        <span class="site-state-item-count">52</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -461,7 +481,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">126k</span>
+    <span title="Symbols count total">127k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>

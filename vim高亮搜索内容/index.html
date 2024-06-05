@@ -22,12 +22,12 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="1、临时设置：vim打开文档–&gt;命令行形式输入 set hlsearch。缺点：关闭文档后，下次打开，又需要重新设置一遍[1]。 2、永久设置（推荐）：在~&#x2F;.vimrc中配制vim ~&#x2F;.vimrc在文档中加上set hlsearch 然后保存退出便可。优点：一次设置，永久生效。">
+  <meta name="description" content="1、临时设置：vim打开文档--&gt;命令行形式输入 set hlsearch。 缺点：关闭文档后，下次打开，又需要重新设置一遍[1]。 2、永久设置（推荐）：在~&#x2F;.vimrc中配制 vim ~&#x2F;.vimrc 在文档中加上set hlsearch 然后保存退出便可。 优点：一次设置，永久生效。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git bash中vim高亮搜索内容">
 <meta property="og:url" content="https://www.sdhlw.top/vim%E9%AB%98%E4%BA%AE%E6%90%9C%E7%B4%A2%E5%86%85%E5%AE%B9/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="1、临时设置：vim打开文档–&gt;命令行形式输入 set hlsearch。缺点：关闭文档后，下次打开，又需要重新设置一遍[1]。 2、永久设置（推荐）：在~&#x2F;.vimrc中配制vim ~&#x2F;.vimrc在文档中加上set hlsearch 然后保存退出便可。优点：一次设置，永久生效。">
+<meta property="og:description" content="1、临时设置：vim打开文档--&gt;命令行形式输入 set hlsearch。 缺点：关闭文档后，下次打开，又需要重新设置一遍[1]。 2、永久设置（推荐）：在~&#x2F;.vimrc中配制 vim ~&#x2F;.vimrc 在文档中加上set hlsearch 然后保存退出便可。 优点：一次设置，永久生效。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-05-03T06:16:55.000Z">
 <meta property="article:modified_time" content="2024-05-03T06:30:20.067Z">
@@ -262,7 +262,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>289</span>
+              <span>291</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -281,15 +281,35 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、临时设置：vim打开文档–&gt;命令行形式输入 <code>set hlsearch</code>。<br>缺点：关闭文档后，下次打开，又需要重新设置一遍<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[vim搜索设置高亮](https://blog.csdn.net/hzhsan/article/details/44228241)
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、临时设置：vim打开文档--&gt;命令行形式输入
+<code>set hlsearch</code>。
+缺点：关闭文档后，下次打开，又需要重新设置一遍<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[vim搜索设置高亮](https://blog.csdn.net/hzhsan/article/details/44228241)
 ">[1]</span></a></sup>。</p>
-<p>2、永久设置（推荐）：在<code>~/.vimrc</code>中配制<br><code>vim ~/.vimrc</code><br>在文档中加上<code>set hlsearch </code><br>然后保存退出便可。<br>优点：一次设置，永久生效。</p>
-<span id="more"></span>
-
+<p>2、永久设置（推荐）：在<code>~/.vimrc</code>中配制
+<code>vim ~/.vimrc</code> 在文档中加上<code>set hlsearch</code>
+然后保存退出便可。 优点：一次设置，永久生效。 <span id="more"></span></p>
 <p>git bash的<code>.vimrc</code>文件在哪里？</p>
-<p>打开git bash ，输入<code>vim --version</code>即可找到vimrc文件，比如我的在<code>/etc/vimrc</code></p>
-<p><code>vim /etc/vimrc</code>在最后一行添加<code>set hlsearch </code>即可（修改<code>/etc/vimrc</code>文件需要以管理员打开git bash）</p>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/hzhsan/article/details/44228241">vim搜索设置高亮</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
+<p>打开git bash
+，输入<code>vim --version</code>即可找到vimrc文件，比如我的在<code>/etc/vimrc</code></p>
+<p><code>vim /etc/vimrc</code>在最后一行添加<code>set hlsearch</code>即可（修改<code>/etc/vimrc</code>文件需要以管理员打开git
+bash）</p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://blog.csdn.net/hzhsan/article/details/44228241">vim搜索设置高亮</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
+
     </div>
 
     
@@ -405,7 +425,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">99</span>
+          <span class="site-state-item-count">107</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -418,7 +438,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">49</span>
+        <span class="site-state-item-count">52</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -469,7 +489,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">126k</span>
+    <span title="Symbols count total">127k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>

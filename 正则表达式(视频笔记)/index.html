@@ -22,12 +22,12 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="本文为该视频（三剑客正则）的笔记分享。 基本用法正则表达式regular expression（RE）（匹配有规律的东西）： 基础正则(Basic RE (BRE) )：^ $ ^$ . * [a-z] [^abc] 扩展正则(Extended RE (ERE))：+ | （）{} ？ 正则：使用一些符号表达重复出现，大小写，开头&#x2F;结尾含义 应用：三剑客（grep，awk, sed）、开">
+  <meta name="description" content="本文为该视频（三剑客正则）的笔记分享。 基本用法 正则表达式regular expression（RE）（匹配有规律的东西）： 基础正则(Basic RE (BRE) )：^ $ ^$ . * [a-z] [^abc] 扩展正则(Extended RE (ERE))：+ | （）{} ？ 正则：使用一些符号表达重复出现，大小写，开头&#x2F;结尾含义 应用：三剑客（grep，awk, sed）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="正则表达式（视频笔记）">
 <meta property="og:url" content="https://www.sdhlw.top/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F(%E8%A7%86%E9%A2%91%E7%AC%94%E8%AE%B0)/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="本文为该视频（三剑客正则）的笔记分享。 基本用法正则表达式regular expression（RE）（匹配有规律的东西）： 基础正则(Basic RE (BRE) )：^ $ ^$ . * [a-z] [^abc] 扩展正则(Extended RE (ERE))：+ | （）{} ？ 正则：使用一些符号表达重复出现，大小写，开头&#x2F;结尾含义 应用：三剑客（grep，awk, sed）、开">
+<meta property="og:description" content="本文为该视频（三剑客正则）的笔记分享。 基本用法 正则表达式regular expression（RE）（匹配有规律的东西）： 基础正则(Basic RE (BRE) )：^ $ ^$ . * [a-z] [^abc] 扩展正则(Extended RE (ERE))：+ | （）{} ？ 正则：使用一些符号表达重复出现，大小写，开头&#x2F;结尾含义 应用：三剑客（grep，awk, sed）">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-08-16T08:11:24.000Z">
 <meta property="article:modified_time" content="2024-02-18T01:32:20.185Z">
@@ -270,7 +270,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>2.4k</span>
+              <span>2.2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -289,264 +289,290 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为该视频（<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Kg411g7bC?p=3&share_source=copy_web&vd_source=7f2a81e814313c699f856c2ec72be7d9">三剑客正则</a>）的笔记分享。</p>
-<h1 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h1><p>正则表达式regular expression（RE）（匹配有规律的东西）：</p>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>本文为该视频（<a
+target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Kg411g7bC?p=3&amp;share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9">三剑客正则</a>）的笔记分享。</p>
+<h1 id="基本用法">基本用法</h1>
+<p>正则表达式regular expression（RE）（匹配有规律的东西）：</p>
 <p>基础正则(Basic RE (BRE) )：<code>^ $ ^$ . * [a-z] [^abc]</code></p>
 <p>扩展正则(Extended RE (ERE))：+ | （）{} ？</p>
-<p>正则：使用一些符号表达重复出现，大小写，开头&#x2F;结尾含义</p>
-<p>应用：三剑客（grep，awk, sed）、开发语言（python，golang, …）</p>
+<p>正则：使用一些符号表达重复出现，大小写，开头/结尾含义</p>
+<p>应用：三剑客（grep，awk, sed）、开发语言（python，golang, ...）</p>
 <p>使用：过滤有规律的内容</p>
 <span id="more"></span>
-
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>基础正则</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>^</td>
-<td>以…开头的行 ^he</td>
+<td>以...开头的行 ^he</td>
 </tr>
-<tr>
+<tr class="even">
 <td>$</td>
-<td>以…结尾的行 he$</td>
+<td>以...结尾的行 he$</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>^$</td>
 <td>空行</td>
 </tr>
-<tr>
+<tr class="even">
 <td>.</td>
 <td>任意一个字符</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>*</td>
 <td>前一个字符连续出现（重复）0次或0次以上</td>
 </tr>
-<tr>
+<tr class="even">
 <td>.*</td>
 <td>所有内容</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>\</td>
-<td>转义字符 \n换行 \t tab键</td>
+<td>转义字符 ab键</td>
 </tr>
-<tr>
+<tr class="even">
 <td>[]</td>
 <td>一个整体，匹配任意一个字符[abc] a或b或c</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>[^]</td>
 <td>取反排除， [abc]</td>
 </tr>
-<tr>
+<tr class="even">
 <td>正则贪婪性</td>
 <td>熟悉特点即可，.*或连续出现</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 80%" />
+<col style="width: 6%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>扩展正则</th>
 <th>含义</th>
 <th>搭配</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>+</td>
 <td>前一个字符连续出现1次或1次以上</td>
 <td>[]+</td>
 </tr>
-<tr>
+<tr class="even">
 <td>|</td>
 <td>或者</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>（）</td>
 <td>一个整体，sed反向引用</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>{}</td>
 <td>o{n,m}前一个字母o，至少连续出现n次，最多连续出现m次</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>？</td>
 <td>连续出现 前一个字符出现0次或1次</td>
 <td></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>注意事项：</p>
 <ul>
-<li><p>所有的符号英文符号</p>
-</li>
-<li><p>学习正则，通过grep命令学习， grep加上单引号</p>
-</li>
-<li><p>给grep,egrep加上颜色：<code>alias grep = &#39;grep — color=auto&#39;</code> 和<code>alias egrep=&#39;egrep —color=auto&#39;</code></p>
-</li>
-<li><p>注意系统的字符集：en_US. utf-8(大部分情况没问题)，如果出现问题修改字符集为：<code>export LANG=c</code></p>
-</li>
-<li><p>快速掌握正则：配合grep -o 参数学习</p>
-</li>
+<li><p>所有的符号英文符号</p></li>
+<li><p>学习正则，通过grep命令学习， grep加上单引号</p></li>
+<li><p>给grep,egrep加上颜色：<code>alias grep = 'grep — color=auto'</code>
+和<code>alias egrep='egrep —color=auto'</code></p></li>
+<li><p>注意系统的字符集：en_US.
+utf-8(大部分情况没问题)，如果出现问题修改字符集为：<code>export LANG=c</code></p></li>
+<li><p>快速掌握正则：配合grep -o 参数学习</p></li>
 </ul>
 <p>正则vs通配符</p>
 <table>
+<colgroup>
+<col style="width: 29%" />
+<col style="width: 33%" />
+<col style="width: 37%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>分类</th>
 <th>诞生目标（用途）</th>
 <th>支持的命令</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>正则（re）</td>
 <td>三剑客，高级语言，进行过滤（匹配字符）</td>
 <td>三剑客grep,sed,awk,find,rename(ubuntu),expr</td>
 </tr>
-<tr>
+<tr class="even">
 <td>通配符（pathname extension或glob）</td>
-<td>匹配文件（文件名）*.txt *.log {01..10}</td>
+<td>匹配文件（文件名）<em>.txt </em>.log {01..10}</td>
 <td>Linux下面大部分命令都支持</td>
 </tr>
-</tbody></table>
-<h1 id="基础正则详解"><a href="#基础正则详解" class="headerlink" title="基础正则详解"></a>基础正则详解</h1><p>1、<code>^...</code> 表示以什么开头的行 <code>^he</code> 以he开头的行</p>
-<p>2、<code>...$</code> 表示以什么结尾的行<code>he$</code>以he结尾的行</p>
+</tbody>
+</table>
+<h1 id="基础正则详解">基础正则详解</h1>
+<p>1、<code>^...</code> 表示以什么开头的行 <code>^he</code>
+以he开头的行</p>
+<p>2、<code>...$</code>
+表示以什么结尾的行<code>he$</code>以he结尾的行</p>
 <p>有些结尾并不是看到的字符，有些隐藏了（cat -A 显示所有）</p>
-<p>3、<code>^$ </code>空行（这一行没有任何内容，也没有空格，空格也是个字符）</p>
-<p>排除文件中的空行：<code>grep -v &#39;^$&#39; </code>文件</p>
-<p>4、<code>.</code>(点) 表示任意一个字符，但是<code>.</code>（点）不匹配空行</p>
+<p>3、<code>^$</code>空行（这一行没有任何内容，也没有空格，空格也是个字符）</p>
+<p>排除文件中的空行：<code>grep -v '^$'</code>文件</p>
+<p>4、<code>.</code>(点)
+表示任意一个字符，但是<code>.</code>（点）不匹配空行</p>
 <p>5、<code>\</code> 转义字符：去除原有特殊含义</p>
-<p>匹配以点结尾的行 ：<code>grep &#39;.$&#39; </code>文件</p>
-<p>转义字符序列： \n回车换行 \t tab键</p>
+<p>匹配以点结尾的行 ：<code>grep '.$'</code>文件</p>
+<p>转义字符序列： ab键</p>
 <p>6、<code>*</code> 前一个字符连续出现0 次或0次以上</p>
 <p>连续出现：0（0出现一次）00（0出现2次）addfs(字母出现了6次)</p>
 <p>7、<code>.*</code> 所有内容（任意内容）</p>
-<p><code>.</code>(点)任意一个字符+ <code>*</code>前一个字符连续出现0 次或0次以上 所以就是所有内容（包括空行）</p>
+<p><code>.</code>(点)任意一个字符+ <code>*</code>前一个字符连续出现0
+次或0次以上 所以就是所有内容（包括空行）</p>
 <p>正则表达式的贪婪性，<code>._</code>表示所有或_连续出现的时候，表现出尽可能贪婪匹配</p>
-<p>特殊情况：<code>grep &#39;2*&#39; 文件</code>  或<code>grep &#39;2*&#39; 文件</code>（所有都输出来了）</p>
-<p><code>2* </code>数字2出现了0次或0次以上</p>
-<p>0次以上： 2   2222   2222</p>
+<p>特殊情况：<code>grep '2*' 文件</code>
+或<code>grep '2*' 文件</code>（所有都输出来了）</p>
+<p><code>2*</code>数字2出现了0次或0次以上</p>
+<p>0次以上： 2 2222 2222</p>
 <p>0次：相当于空 （grep 空就全输出了）</p>
-<p>8、<code>[] [abc] </code>1次匹配1个字符，匹配任何一个字符（a或b或c）</p>
+<p>8、<code>[] [abc]</code>1次匹配1个字符，匹配任何一个字符（a或b或c）</p>
 <p><code>[a-z]</code> 代表a到z的小写字母</p>
 <p><code>[A-Z]</code> 代表A到Z的大写字母</p>
-<p><code>[a-zA-Z] </code>或<code>[a-Z]</code>代表大小写字母</p>
-<p><code>[a-Z0-9] </code>代表大小写字母和数字</p>
-<p><code>[a-z] </code>grep 用-i，不区分大小写就是代表大小写字母</p>
-<p><code>[ ]</code>里面的内容去掉特殊含义 如<code>[a-Z|]</code>匹配大小写和|</p>
+<p><code>[a-zA-Z]</code>或<code>[a-Z]</code>代表大小写字母</p>
+<p><code>[a-Z0-9]</code>代表大小写字母和数字</p>
+<p><code>[a-z]</code>grep 用-i，不区分大小写就是代表大小写字母</p>
+<p><code>[ ]</code>里面的内容去掉特殊含义
+如<code>[a-Z|]</code>匹配大小写和|</p>
 <p><code>（）</code>小括号 括弧</p>
-<p><code>[ ] </code>中括号</p>
+<p><code>[ ]</code>中括号</p>
 <p><code>&#123; &#125;</code> 大括号 花括号</p>
-<p>9、<code>[^] </code>取反 如<code>[^abc] </code>匹配a或b或c之外的内容</p>
-<h1 id="扩展正则详解"><a href="#扩展正则详解" class="headerlink" title="扩展正则详解"></a>扩展正则详解</h1><p>1、<code>+</code>前一个字符连续出现1次或1次以上</p>
-<p><code>grep -E &#39;0+&#39; 文件</code>  0出现一次或一次以上，这三种命令一样效果</p>
-<p><code>grep &#39;0+&#39; 文件</code>grep没用E参数不能使用扩展正则，但是转义字符把扩展正则转为基本正则。不推荐这样使用</p>
+<p>9、<code>[^]</code>取反
+如<code>[^abc]</code>匹配a或b或c之外的内容</p>
+<h1 id="扩展正则详解">扩展正则详解</h1>
+<p>1、<code>+</code>前一个字符连续出现1次或1次以上</p>
+<p><code>grep -E '0+' 文件</code>
+0出现一次或一次以上，这三种命令一样效果</p>
+<p><code>grep '0+' 文件</code>grep没用E参数不能使用扩展正则，但是转义字符把扩展正则转为基本正则。不推荐这样使用</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">egrep &#x27;0+&#x27; 文件</span><br></pre></td></tr></table></figure>
-
-<p>2、 | 或者 如<code>egrep &#39;apple | APPLE&#39; 文件</code></p>
+<p>2、 | 或者 如<code>egrep 'apple | APPLE' 文件</code></p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>符号</th>
 <th>含义</th>
 <th>应用场景</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>[]</td>
 <td>1次匹配1个字符 [apple] a或p或l或e</td>
 <td>匹配单个字符[]和+</td>
 </tr>
-<tr>
+<tr class="even">
 <td></td>
 <td></td>
 <td>匹配1个字符或多个 a</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>3、（）被括起来的内容，表示一个整体（一个字符）、后向引用（反向引用sed）</p>
-<p><code>egrep &#39;oldb(o|e)y&#39; 文件</code>  匹配oldboy或oldbey的字符</p>
-<p>4、<code>&#123;&#125; </code>连续出现</p>
+<p><code>egrep 'oldb(o|e)y' 文件</code> 匹配oldboy或oldbey的字符</p>
+<p>4、<code>&#123;&#125;</code>连续出现</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>符号</th>
 <th></th>
 <th></th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>o{n,m}</td>
 <td>前一个字母o，至少连续出现n次，最多连续出现m次</td>
 <td>≥n ≤m</td>
 </tr>
-<tr>
+<tr class="even">
 <td>o{n}</td>
 <td>前一个字母o，连续出现n次</td>
-<td>&#x3D;&#x3D;n</td>
+<td>==n</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>o{n,}</td>
 <td>前一个字母o，至少连续出现n次</td>
 <td>≥n</td>
 </tr>
-<tr>
+<tr class="even">
 <td>o{,m}</td>
 <td>前一个字母o，最多连续出现m次</td>
 <td>≤m</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>5、<code>？</code>连续出现 前一个字符出现0次或1次</p>
-<p><code>egrep &#39;god | gd&#39; 文件</code>等于 <code>egrep &#39;go?d&#39; 文件</code></p>
-<p>过滤身份证号码： <code>egrep &#39;[0-9]&#123;17&#125;[0-9x]&#39; 文件</code> （1-17位数字，最后一个是数字或x）</p>
-<p>排除文件中的空行或含有#号的行：<code>egrep -v &#39;^$ | #&#39; 文件</code></p>
-<p>表达式<code>[0-255]</code>是一个字符集，它的含义是匹配 0，1，2，5中任意一个字符</p>
+<p><code>egrep 'god | gd' 文件</code>等于
+<code>egrep 'go?d' 文件</code></p>
+<p>过滤身份证号码： <code>egrep '[0-9]&#123;17&#125;[0-9x]' 文件</code>
+（1-17位数字，最后一个是数字或x）</p>
+<p>排除文件中的空行或含有#号的行：<code>egrep -v '^$ | #' 文件</code></p>
+<p>表达式<code>[0-255]</code>是一个字符集，它的含义是匹配
+0，1，2，5中任意一个字符</p>
 <p><code>[1-9][0-9]</code>可以匹配10到99之间的数字。这两个是最简单的。</p>
-<hr>
-<p>grep ‘搜索内容’ 文件</p>
+<hr />
+<p>grep '搜索内容' 文件</p>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>-a</td>
 <td>将 binary 文件以 text 文件的方式搜寻数据</td>
 </tr>
-<tr>
+<tr class="even">
 <td>-c</td>
-<td>计算找到 ‘搜寻字符串’ 的次数</td>
+<td>计算找到 '搜寻字符串' 的次数</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>-i</td>
 <td>忽略大小写的不同，所以大小写视为相同</td>
 </tr>
-<tr>
+<tr class="even">
 <td>-n</td>
 <td>顺便输出行号</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>-v</td>
-<td>反向选择，亦即显示出没有 ‘搜寻字符串’ 内容的那一行！</td>
+<td>反向选择，亦即显示出没有 '搜寻字符串' 内容的那一行！</td>
 </tr>
-<tr>
-<td>–color&#x3D;auto</td>
+<tr class="even">
+<td>--color=auto</td>
 <td>可以将找到的关键词部分加上颜色的显示喔！</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>-o</td>
 <td>显示匹配过程，即只显示匹配到的内容</td>
 </tr>
-<tr>
+<tr class="even">
 <td>-E</td>
 <td>支持扩展正则(扩展正则用grep -E 或egrep)</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
     </div>
 
@@ -668,7 +694,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">99</span>
+          <span class="site-state-item-count">107</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -681,7 +707,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">49</span>
+        <span class="site-state-item-count">52</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -732,7 +758,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">126k</span>
+    <span title="Symbols count total">127k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>

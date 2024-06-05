@@ -22,12 +22,12 @@
     var CONFIG = {"hostname":"www.sdhlw.top","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="森林图是以统计指标和统计分析方法为基础，用数值运算结果绘制出的图型。用以综合展示每个被纳入研究的效应量以及汇总的合并效应量[1]。 连续变量">
+  <meta name="description" content="森林图是以统计指标和统计分析方法为基础，用数值运算结果绘制出的图型。用以综合展示每个被纳入研究的效应量以及汇总的合并效应量[1]。 连续变量">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mata分析森林图">
 <meta property="og:url" content="https://www.sdhlw.top/mata%E5%88%86%E6%9E%90%E6%A3%AE%E6%9E%97%E5%9B%BE/index.html">
 <meta property="og:site_name" content="Jay&#39;s Blog">
-<meta property="og:description" content="森林图是以统计指标和统计分析方法为基础，用数值运算结果绘制出的图型。用以综合展示每个被纳入研究的效应量以及汇总的合并效应量[1]。 连续变量">
+<meta property="og:description" content="森林图是以统计指标和统计分析方法为基础，用数值运算结果绘制出的图型。用以综合展示每个被纳入研究的效应量以及汇总的合并效应量[1]。 连续变量">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182055153.png">
 <meta property="og:image" content="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182134793.png">
@@ -273,7 +273,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span>637</span>
+              <span>640</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
@@ -292,31 +292,42 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>森林图是以统计指标和统计分析方法为基础，用数值运算结果绘制出的图型。用以综合展示每个被纳入研究的效应量以及汇总的合并效应量<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[5分钟教您快速解读meta分析的森林图](https://www.bilibili.com/video/BV1wY4y1C7t2/?spm_id_from=333.788&vd_source=9f04b059fdee5024fd04678f53de10ad)
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>森林图是以统计指标和统计分析方法为基础，用数值运算结果绘制出的图型。用以综合展示每个被纳入研究的效应量以及汇总的合并效应量<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span
+class="hint--top hint--error hint--medium hint--rounded hint--bounce"
+aria-label="[5分钟教您快速解读meta分析的森林图](https://www.bilibili.com/video/BV1wY4y1C7t2/?spm_id_from=333.788&amp;vd_source=9f04b059fdee5024fd04678f53de10ad)
 ">[1]</span></a></sup>。</p>
-<h3 id="连续变量"><a href="#连续变量" class="headerlink" title="连续变量"></a>连续变量</h3><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182055153.png" alt="" style="zoom:67%;" />
-
+<h3 id="连续变量">连续变量</h3>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182055153.png" alt="" style="zoom:67%;" /></p>
 <span id="more"></span>
-
-<p>异质性$I^2$,它的数值代表这三篇RCT有没有明显差异，差异越小说明得出综合效应的结果越可靠，小于20%说明异质性小，大于50%说明异质性较大。</p>
+<p>异质性<span
+class="math inline">\(I^2\)</span>,它的数值代表这三篇RCT有没有明显差异，差异越小说明得出综合效应的结果越可靠，小于20%说明异质性小，大于50%说明异质性较大。</p>
 <p>favours代表菱形框往哪边偏倚支持那边就是更好的方法。</p>
 <p>综合效应如果贴到无效线，则无显著差异：</p>
-<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182134793.png" alt="" style="zoom:23%;" />
-
-
-
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182134793.png" alt="" style="zoom:23%;" /></p>
 <p>森林图：</p>
 <ul>
 <li>随机效应模型(Random)：随机效应模型是把每一篇RCT的影响力对等，不按它的样本量，把每一篇RCT平均影响综合效应表示出来。</li>
 <li>固定效应模型(Fixed)：固定效应模型是按它的样本量将样本量大的RCT影响权重加大，纳入人群更多的RCT的结果将更影响综合效应。</li>
 </ul>
 <p>一般我们推荐用随机效应模型，因为每一篇RCT都是独立个体，都应均等地影响综合效应，但是一种情况除外那就是其中一个RCT样本量非常大，而其他RCT样本量寥寥无几，那么显然这个样本量大的RCT结果更可靠，更应该权重放大，这就选择固定效应模型。其实不管选择什么模型，做好必要解释就行。</p>
-<h3 id="二分类变量"><a href="#二分类变量" class="headerlink" title="二分类变量"></a>二分类变量</h3><p>刚刚的图是连续变量，就是用平均值和标准差做比较。而有些结果是通过二分类变量展示的，比如说治愈率，就是总的人数(Tota)和治愈的人数(Events)。软件会自动将Events.定义为不良事件，所以事件发生次数越少，越偏向有利。但是像治愈这种良性事件，我们就需要把下边这个标记换个顺序即可。</p>
-<img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182125244.png" alt="" style="zoom:50%;" />
+<h3 id="二分类变量">二分类变量</h3>
+<p>刚刚的图是连续变量，就是用平均值和标准差做比较。而有些结果是通过二分类变量展示的，比如说治愈率，就是总的人数(Tota)和治愈的人数(Events)。软件会自动将Events.定义为不良事件，所以事件发生次数越少，越偏向有利。但是像治愈这种良性事件，我们就需要把下边这个标记换个顺序即可。</p>
+<p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img202305/202402182125244.png" alt="" style="zoom:50%;" /></p>
+<h3 id="参考文章">参考文章</h3>
+<div id="footnotes">
+<hr>
+<div id="footnotelist">
+<ol style="list-style: none; padding-left: 0; margin-left: 40px">
+<li id="fn:1">
+<span
+style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span
+style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wY4y1C7t2/?spm_id_from=333.788&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">5分钟教您快速解读meta分析的森林图</a><a href="#fnref:1" rev="footnote">
+↩︎</a></span>
+</li>
+</ol>
+</div>
+</div>
 
-
-
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1wY4y1C7t2/?spm_id_from=333.788&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">5分钟教您快速解读meta分析的森林图</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>
     </div>
 
     
@@ -436,7 +447,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">99</span>
+          <span class="site-state-item-count">107</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -449,7 +460,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">49</span>
+        <span class="site-state-item-count">52</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -500,7 +511,7 @@
       <i class="fa fa-chart-area"></i>
     </span>
       <span class="post-meta-item-text">Symbols count total: </span>
-    <span title="Symbols count total">126k</span>
+    <span title="Symbols count total">127k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>

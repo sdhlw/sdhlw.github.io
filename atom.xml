@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-05-04T13:14:05.474Z</updated>
+  <updated>2024-05-24T13:22:43.204Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -17,16 +17,226 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>origin导出矢量图片，线条变粗</title>
+    <link href="https://www.sdhlw.top/origin%E5%AF%BC%E5%87%BA%E7%9F%A2%E9%87%8F%E5%9B%BE%E7%89%87%EF%BC%8C%E7%BA%BF%E6%9D%A1%E5%8F%98%E7%B2%97/"/>
+    <id>https://www.sdhlw.top/origin%E5%AF%BC%E5%87%BA%E7%9F%A2%E9%87%8F%E5%9B%BE%E7%89%87%EF%BC%8C%E7%BA%BF%E6%9D%A1%E5%8F%98%E7%B2%97/</id>
+    <published>2024-05-24T13:17:06.000Z</published>
+    <updated>2024-05-24T13:22:43.204Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>origin导出矢量图，如果发现线条明显变粗，可以勾选<strong>保持尺寸</strong>即可<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[ When I export graph as SVG or EPS, the objects inserted to the graph become extremely large. What should I do?](https://www.originlab.com/doc/Quick-Help/SVG-EPS-Object-Not-Keep)">[1]</span></a></sup>。</p><span id="more"></span><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405242122494.png" alt="" style="zoom:50%;" /></p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.originlab.com/doc/Quick-Help/SVG-EPS-Object-Not-Keep">When I export graph as SVG or EPS, the objects inserted to the graphbecome extremely large. What should Ido?</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span></li></ol></div></div>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;origin导出矢量图，如果发现线条明显变粗，可以勾选&lt;strong&gt;保持尺寸&lt;/strong&gt;即可&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
+class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
+aria-label=&quot;[ When I export graph as SVG or EPS, the objects inserted to the graph become extremely large. What should I do?](https://www.originlab.com/doc/Quick-Help/SVG-EPS-Object-Not-Keep)
+&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="origin" scheme="https://www.sdhlw.top/tags/origin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>word常用域操作</title>
+    <link href="https://www.sdhlw.top/word%E5%B8%B8%E7%94%A8%E5%9F%9F%E6%93%8D%E4%BD%9C/"/>
+    <id>https://www.sdhlw.top/word%E5%B8%B8%E7%94%A8%E5%9F%9F%E6%93%8D%E4%BD%9C/</id>
+    <published>2024-05-23T14:42:27.000Z</published>
+    <updated>2024-05-23T14:44:04.334Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul><li>全选文档内容（Ctrl+A）<ul><li>锁定域（Ctrl+F11）</li><li>解锁域（Ctrl+Shift+F11）</li><li>更新域（F9）</li></ul></li></ul><span id="more"></span><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;全选文档内容（Ctrl+A）
+&lt;ul&gt;
+&lt;li&gt;锁定域（Ctrl+F11）&lt;/li&gt;
+&lt;li&gt;解锁域（Ctrl+Shift+F11）&lt;/li&gt;
+&lt;li&gt;更新域（F9）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="word" scheme="https://www.sdhlw.top/tags/word/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>论文排版的那些事</title>
+    <link href="https://www.sdhlw.top/%E8%AE%BA%E6%96%87%E6%8E%92%E7%89%88%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/"/>
+    <id>https://www.sdhlw.top/%E8%AE%BA%E6%96%87%E6%8E%92%E7%89%88%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</id>
+    <published>2024-05-23T14:32:14.000Z</published>
+    <updated>2024-06-05T14:13:59.072Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul><li><p>论文排版中最常用到的就是域，章节序号，图表公式序号，交叉引用（正文中的图X-X,表X-X），页眉（自动章节名称）、页脚、参考文献都会用到域。域最大的作用就是你调节文本或图表顺序时，其序号会自动进行调整，如果不使用域，排版时会很混乱。</p></li><li><p>知道什么是分节符，分页符，每个章节要用分节符分隔开，这样标题序号和图表序号才会是正确的。</p></li><li><p>参考文献的管理，使用zotero进行管理，在zotero中先要有item，再通过word中的zotero插件进行参考文献的引用，使用csl格式管理格式要求</p></li><li><p>格式排版内容：文本样式、页眉页脚、图表公式规范、参考文献</p></li></ul><span id="more"></span><p>整体排版流程参考：</p><p>1、确定整个文章的页面布局并应用到全文（每个学校都有2个封面，以封面合适的页面布局作为整个文章的页面布局），这个很重要，页面布局决定了每一页能承载多少文本与图表，如果图表较多，你排版之后再来改页面布局，意味着你之前的排版可能白费了！</p><p>2、创建合适的标题样式，链接到多级列表，应用于每个标题，解决标题、图表、公式序号问题。正常使用三级标题即可，加上正文、中文图表标题样式，英文图表标题样式，需要创建6种标题样式。</p><p>2、在每一章的前面，添加下一页分页符和连续分节符。</p><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;论文排版中最常用到的就是域，章节序号，图表公式序号，交叉引用（正文中的图X-X,表X-X），页眉（自动章节名称）、页脚、参考文献都会用到域。域最大的作用就是你调节文本或图表顺序时，其序号会自动进行调整，如果不使用域，排版时会很混乱。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;知道什么是分节符，分页符，每个章节要用分节符分隔开，这样标题序号和图表序号才会是正确的。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;参考文献的管理，使用zotero进行管理，在zotero中先要有item，再通过word中的zotero插件进行参考文献的引用，使用csl格式管理格式要求&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;格式排版内容：文本样式、页眉页脚、图表公式规范、参考文献&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="word" scheme="https://www.sdhlw.top/tags/word/"/>
+    
+    <category term="论文排版" scheme="https://www.sdhlw.top/tags/%E8%AE%BA%E6%96%87%E6%8E%92%E7%89%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>word标题缩进总是变回默认值</title>
+    <link href="https://www.sdhlw.top/word%E6%A0%87%E9%A2%98%E7%BC%A9%E8%BF%9B%E6%80%BB%E6%98%AF%E5%8F%98%E5%9B%9E%E9%BB%98%E8%AE%A4%E5%80%BC/"/>
+    <id>https://www.sdhlw.top/word%E6%A0%87%E9%A2%98%E7%BC%A9%E8%BF%9B%E6%80%BB%E6%98%AF%E5%8F%98%E5%9B%9E%E9%BB%98%E8%AE%A4%E5%80%BC/</id>
+    <published>2024-05-14T12:19:42.000Z</published>
+    <updated>2024-05-14T12:31:18.512Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>这个问题我刚刚遇到。看你的图片，是三级标题的问题。在对标题三修改样式时，将样式基准选为标题2，之后在对标题三的字体和格式进行设置，保存就可以了。关闭文档再打开也不会莫名其妙的将3级标题缩进了<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Word标题问题？每次重启Word，标题段落缩进总是变回默认值？]( https://www.zhihu.com/question/285585962/answer/1157764423)">[1]</span></a></sup></p><span id="more"></span><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.zhihu.com/question/285585962/answer/1157764423">Word标题问题？每次重启Word，标题段落缩进总是变回默认值？</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;这个问题我刚刚遇到。看你的图片，是三级标题的问题。在对标题三修改样式时，将样式基准选为标题2，之后在对标题三的字体和格式进行设置，保存就可以了。关闭文档再打开也不会莫名其妙的将3级标题缩进了&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
+class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
+aria-label=&quot;[Word标题问题？每次重启Word，标题段落缩进总是变回默认值？]( https://www.zhihu.com/question/285585962/answer/1157764423)
+&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>查询期刊的ISSN号</title>
+    <link href="https://www.sdhlw.top/%E6%9F%A5%E8%AF%A2%E6%9C%9F%E5%88%8A%E7%9A%84issn%E5%8F%B7/"/>
+    <id>https://www.sdhlw.top/%E6%9F%A5%E8%AF%A2%E6%9C%9F%E5%88%8A%E7%9A%84issn%E5%8F%B7/</id>
+    <published>2024-05-09T04:04:24.000Z</published>
+    <updated>2024-05-09T04:10:57.873Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>web of science</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405091205984.png" alt="" style="zoom:80%;" /></p><p>E-ISSN是ISSN的电子<ahref="https://www.ais.cn/journal">期刊</a>。ISSN号是标准的国际串行号。如果期刊出版物的出版分为印刷版和电子版，那么就会有两个ISSN号，即印刷版ISSN号和电子版E-ISSN号，都是由国际ISO标准协会颁布的。</p><span id="more"></span><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;">找到相关文章，点击期刊名称即可查看。<a href="#fnref:1" rev="footnote">↩︎</a></span></li><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.sohu.com/a/634370818_121124289">如何查询期刊的ISSN号？</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span></li></ol></div></div>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;web of science&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405091205984.png&quot; alt=&quot;&quot; style=&quot;zoom:80%;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;E-ISSN是ISSN的电子&lt;a
+href=&quot;https://www.ais.cn/journal&quot;&gt;期刊&lt;/a&gt;。ISSN号是标准的国际串行号。如果期刊出版物的出版分为印刷版和电子版，那么就会有两个ISSN号，即印刷版ISSN号和电子版E-ISSN号，都是由国际ISO标准协会颁布的。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>potplayer音频倍速播放</title>
+    <link href="https://www.sdhlw.top/potplayer%E9%9F%B3%E9%A2%91%E5%80%8D%E9%80%9F%E6%92%AD%E6%94%BE/"/>
+    <id>https://www.sdhlw.top/potplayer%E9%9F%B3%E9%A2%91%E5%80%8D%E9%80%9F%E6%92%AD%E6%94%BE/</id>
+    <published>2024-05-09T02:34:05.000Z</published>
+    <updated>2024-05-09T02:38:13.765Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>方法1：快捷键：Z恢复默认速度；C加速；X减速。每按一次就会加倍提速或加倍降速。</p><span id="more"></span><p>方法2：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405091037671.png" alt="" style="zoom: 67%;" /></p><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;方法1：快捷键：Z恢复默认速度；C加速；X减速。每按一次就会加倍提速或加倍降速。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="potplayer" scheme="https://www.sdhlw.top/tags/potplayer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>zotero支持哪种知网引用格式导入</title>
+    <link href="https://www.sdhlw.top/zotero%E6%94%AF%E6%8C%81%E5%93%AA%E7%A7%8D%E7%9F%A5%E7%BD%91%E5%BC%95%E7%94%A8%E6%A0%BC%E5%BC%8F%E5%AF%BC%E5%85%A5/"/>
+    <id>https://www.sdhlw.top/zotero%E6%94%AF%E6%8C%81%E5%93%AA%E7%A7%8D%E7%9F%A5%E7%BD%91%E5%BC%95%E7%94%A8%E6%A0%BC%E5%BC%8F%E5%AF%BC%E5%85%A5/</id>
+    <published>2024-05-08T04:38:29.000Z</published>
+    <updated>2024-05-08T05:48:54.334Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>复制 Refworks 格式到剪切板，使用 zotero 导入即可</p><span id="more"></span><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405081344569.png" alt="" style="zoom:80%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405081344605.png" alt="" style="zoom:70%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405081346890.png" alt="" style="zoom:80%;" /></p><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;复制 Refworks 格式到剪切板，使用 zotero 导入即可&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="zotero" scheme="https://www.sdhlw.top/tags/zotero/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>zotero的item（条目）换collection（文件夹）</title>
+    <link href="https://www.sdhlw.top/zotero%E7%9A%84item%EF%BC%88%E6%9D%A1%E7%9B%AE%EF%BC%89%E6%8D%A2collection%EF%BC%88%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%89/"/>
+    <id>https://www.sdhlw.top/zotero%E7%9A%84item%EF%BC%88%E6%9D%A1%E7%9B%AE%EF%BC%89%E6%8D%A2collection%EF%BC%88%E6%96%87%E4%BB%B6%E5%A4%B9%EF%BC%89/</id>
+    <published>2024-05-06T14:39:38.000Z</published>
+    <updated>2024-05-06T14:46:37.399Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul><li>1 右键条目，选择添加到新的文件夹</li><li>检查新文件夹是否有该条目</li><li>2 右键条目，将该条目从该文件夹删除</li></ul><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405062244761.png" alt="image-20240506224339798" style="zoom:67%;" /></p><span id="more"></span><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;1 右键条目，选择添加到新的文件夹&lt;/li&gt;
+&lt;li&gt;检查新文件夹是否有该条目&lt;/li&gt;
+&lt;li&gt;2 右键条目，将该条目从该文件夹删除&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405062244761.png&quot; alt=&quot;image-20240506224339798&quot; style=&quot;zoom:67%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="zotero" scheme="https://www.sdhlw.top/tags/zotero/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo文章添加空白行</title>
     <link href="https://www.sdhlw.top/hexo%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E7%A9%BA%E7%99%BD%E8%A1%8C/"/>
     <id>https://www.sdhlw.top/hexo%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E7%A9%BA%E7%99%BD%E8%A1%8C/</id>
     <published>2024-05-04T13:07:35.000Z</published>
     <updated>2024-05-04T13:14:05.474Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>相信很多人按很多空白键或回车键，发现只能空一行(甚至无法加入空白行)，去除多余的空白行是Markdown特色之一。如果编排文章格式时，真的要有空白行，编辑上可以使用<code> </code>，利用空白符号进行『添加空白行』的动作。另外，也可以使用<code>&lt;br /&gt;</code>或<code>&lt;p /&gt;</code>添加空白行<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Hexo-开始撰写文章](https://jameswang.pro/2016/02/28/Hexo-WriteABlog/)">[1]</span></a></sup>。</p><span id="more"></span><p>实例：</p><p>没有空行：</p><p>a</p><p>b</p><p>a和b之间添加空行：</p><p>a</p><br /><p>b</p><p>源代码：</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405042110211.png" alt="" style="zoom:80%;" /><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://jameswang.pro/2016/02/28/Hexo-WriteABlog/">Hexo-开始撰写文章</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>相信很多人按很多空白键或回车键，发现只能空一行(甚至无法加入空白行)，去除多余的空白行是Markdown特色之一。如果编排文章格式时，真的要有空白行，编辑上可以使用<code> </code>，利用空白符号进行『添加空白行』的动作。另外，也可以使用<code>&lt;br /&gt;</code>或<code>&lt;p /&gt;</code>添加空白行<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Hexo-开始撰写文章](https://jameswang.pro/2016/02/28/Hexo-WriteABlog/)">[1]</span></a></sup>。</p><span id="more"></span><p>实例：</p><p>没有空行：</p><p>a</p><p>b</p><p>a和b之间添加空行：</p><p>a</p><p><br /></p><p>b</p><p>源代码：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405042110211.png" alt="" style="zoom:80%;" /></p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://jameswang.pro/2016/02/28/Hexo-WriteABlog/">Hexo-开始撰写文章</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
     
     
-    <summary type="html">&lt;p&gt;相信很多人按很多空白键或回车键，发现只能空一行(甚至无法加入空白行)，去除多余的空白行是Markdown特色之一。如果编排文章格式时，真的要有空白行，编辑上可以使用&lt;code&gt; &lt;/code&gt;，利用空白符号进行『添加空白行』的动作。另外，也可以使用&lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;或&lt;code&gt;&amp;lt;p /&amp;gt;&lt;/code&gt;添加空白行&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot; aria-label=&quot;[Hexo-开始撰写文章](https://jameswang.pro/2016/02/28/Hexo-WriteABlog/)
+    <summary type="html">&lt;p&gt;相信很多人按很多空白键或回车键，发现只能空一行(甚至无法加入空白行)，去除多余的空白行是Markdown特色之一。如果编排文章格式时，真的要有空白行，编辑上可以使用&lt;code&gt; &lt;/code&gt;，利用空白符号进行『添加空白行』的动作。另外，也可以使用&lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;或&lt;code&gt;&amp;lt;p /&amp;gt;&lt;/code&gt;添加空白行&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
+class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
+aria-label=&quot;[Hexo-开始撰写文章](https://jameswang.pro/2016/02/28/Hexo-WriteABlog/)
 &quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;</summary>
     
     
@@ -45,12 +255,18 @@
     <published>2024-05-03T06:16:55.000Z</published>
     <updated>2024-05-03T06:30:20.067Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、临时设置：vim打开文档–&gt;命令行形式输入 <code>set hlsearch</code>。<br>缺点：关闭文档后，下次打开，又需要重新设置一遍<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[vim搜索设置高亮](https://blog.csdn.net/hzhsan/article/details/44228241)">[1]</span></a></sup>。</p><p>2、永久设置（推荐）：在<code>~/.vimrc</code>中配制<br><code>vim ~/.vimrc</code><br>在文档中加上<code>set hlsearch </code><br>然后保存退出便可。<br>优点：一次设置，永久生效。</p><span id="more"></span><p>git bash的<code>.vimrc</code>文件在哪里？</p><p>打开git bash ，输入<code>vim --version</code>即可找到vimrc文件，比如我的在<code>/etc/vimrc</code></p><p><code>vim /etc/vimrc</code>在最后一行添加<code>set hlsearch </code>即可（修改<code>/etc/vimrc</code>文件需要以管理员打开git bash）</p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/hzhsan/article/details/44228241">vim搜索设置高亮</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、临时设置：vim打开文档--&gt;命令行形式输入<code>set hlsearch</code>。缺点：关闭文档后，下次打开，又需要重新设置一遍<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[vim搜索设置高亮](https://blog.csdn.net/hzhsan/article/details/44228241)">[1]</span></a></sup>。</p><p>2、永久设置（推荐）：在<code>~/.vimrc</code>中配制<code>vim ~/.vimrc</code> 在文档中加上<code>set hlsearch</code>然后保存退出便可。 优点：一次设置，永久生效。 <span id="more"></span></p><p>git bash的<code>.vimrc</code>文件在哪里？</p><p>打开git bash，输入<code>vim --version</code>即可找到vimrc文件，比如我的在<code>/etc/vimrc</code></p><p><code>vim /etc/vimrc</code>在最后一行添加<code>set hlsearch</code>即可（修改<code>/etc/vimrc</code>文件需要以管理员打开gitbash）</p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/hzhsan/article/details/44228241">vim搜索设置高亮</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
     
     
-    <summary type="html">&lt;p&gt;1、临时设置：vim打开文档–&amp;gt;命令行形式输入 &lt;code&gt;set hlsearch&lt;/code&gt;。&lt;br&gt;缺点：关闭文档后，下次打开，又需要重新设置一遍&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot; aria-label=&quot;[vim搜索设置高亮](https://blog.csdn.net/hzhsan/article/details/44228241)
+    <summary type="html">&lt;p&gt;1、临时设置：vim打开文档--&amp;gt;命令行形式输入
+&lt;code&gt;set hlsearch&lt;/code&gt;。
+缺点：关闭文档后，下次打开，又需要重新设置一遍&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
+class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
+aria-label=&quot;[vim搜索设置高亮](https://blog.csdn.net/hzhsan/article/details/44228241)
 &quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
-&lt;p&gt;2、永久设置（推荐）：在&lt;code&gt;~/.vimrc&lt;/code&gt;中配制&lt;br&gt;&lt;code&gt;vim ~/.vimrc&lt;/code&gt;&lt;br&gt;在文档中加上&lt;code&gt;set hlsearch &lt;/code&gt;&lt;br&gt;然后保存退出便可。&lt;br&gt;优点：一次设置，永久生效。&lt;/p&gt;</summary>
+&lt;p&gt;2、永久设置（推荐）：在&lt;code&gt;~/.vimrc&lt;/code&gt;中配制
+&lt;code&gt;vim ~/.vimrc&lt;/code&gt; 在文档中加上&lt;code&gt;set hlsearch&lt;/code&gt;
+然后保存退出便可。 优点：一次设置，永久生效。</summary>
     
     
     
@@ -68,11 +284,11 @@
     <published>2024-05-03T06:07:41.000Z</published>
     <updated>2024-05-04T12:57:41.417Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>想要的效果：</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405042051953.png" alt="" style="zoom:80%;" /><span id="more"></span><p>实现：</p><ul><li><p>在文章 yaml 开头添加：<code>author: 卓别林</code></p></li><li><p>修改themes&#x2F;next&#x2F;layout&#x2F;_macro 的 post.swig 文档<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[Hexo-文章作者字段设置](https://blog.themismin.com/posts/5cedc789.html)">[1]</span></a></sup></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">#&#125;&lt;/&#123;% if theme.seo %&#125;h2&#123;% else %&#125;h1&#123;% endif %&#125;&gt;</span><br><span class="line"> &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line"> &lt;div class=&quot;post-meta&quot;&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   &#123;# 此位置插入作者字段 #&#125;</span><br><span class="line">   &#123;% if post.author %&#125;</span><br><span class="line">     &lt;span class=&quot;post-author&quot; &gt;</span><br><span class="line">       &lt;span class=&quot;post-meta-item-text&quot;&gt;作者&amp;#58;&lt;/span&gt;</span><br><span class="line">       &#123;&#123; post.author &#125;&#125;</span><br><span class="line">     &lt;/span&gt;</span><br><span class="line">     &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">   &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">   &lt;span class=&quot;post-time&quot;&gt;</span><br><span class="line">     &#123;% if theme.post_meta.created_at %&#125;</span><br><span class="line">       &lt;span class=&quot;post-meta-item-icon&quot;&gt;</span><br><span class="line">         &lt;i class=&quot;fa fa-calendar-o&quot;&gt;&lt;/i&gt;</span><br></pre></td></tr></table></figure><p>注意这段代码不是全部添加进去，如果你只是添加作者字段，只需要把下面这段添加到合适的位置：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;# 此位置插入作者字段 #&#125;</span><br><span class="line">&#123;% if post.author %&#125;</span><br><span class="line">  &lt;span class=&quot;post-author&quot; &gt;</span><br><span class="line">    &lt;span class=&quot;post-meta-item-text&quot;&gt;作者&amp;#58;&lt;/span&gt;</span><br><span class="line">    &#123;&#123; post.author &#125;&#125;</span><br><span class="line">  &lt;/span&gt;</span><br><span class="line">  &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure><p>比如直接放在<code>&lt;div class=&quot;post-meta&quot;&gt;</code>后面，注意缩进和实例代码一致</p></li></ul><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.themismin.com/posts/5cedc789.html">Hexo-文章作者字段设置</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>想要的效果：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405042051953.png" alt="" style="zoom:80%;" /></p><span id="more"></span><p>实现：</p><ul><li><p>在文章 yaml 开头添加：<code>author: 卓别林</code></p></li><li><p>修改themes/next/layout/_macro 的 post.swig文档<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[Hexo-文章作者字段设置](https://blog.themismin.com/posts/5cedc789.html)">[1]</span></a></sup></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">#&#125;&lt;/&#123;% if theme.seo %&#125;h2&#123;% else %&#125;h1&#123;% endif %&#125;&gt;</span><br><span class="line"> &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line"> &lt;div class=&quot;post-meta&quot;&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   &#123;# 此位置插入作者字段 #&#125;</span><br><span class="line">   &#123;% if post.author %&#125;</span><br><span class="line">     &lt;span class=&quot;post-author&quot; &gt;</span><br><span class="line">       &lt;span class=&quot;post-meta-item-text&quot;&gt;作者&amp;#58;&lt;/span&gt;</span><br><span class="line">       &#123;&#123; post.author &#125;&#125;</span><br><span class="line">     &lt;/span&gt;</span><br><span class="line">     &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">   &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">   &lt;span class=&quot;post-time&quot;&gt;</span><br><span class="line">     &#123;% if theme.post_meta.created_at %&#125;</span><br><span class="line">       &lt;span class=&quot;post-meta-item-icon&quot;&gt;</span><br><span class="line">         &lt;i class=&quot;fa fa-calendar-o&quot;&gt;&lt;/i&gt;</span><br></pre></td></tr></table></figure><p>注意这段代码不是全部添加进去，如果你只是添加作者字段，只需要把下面这段添加到合适的位置：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;# 此位置插入作者字段 #&#125;</span><br><span class="line">&#123;% if post.author %&#125;</span><br><span class="line">  &lt;span class=&quot;post-author&quot; &gt;</span><br><span class="line">    &lt;span class=&quot;post-meta-item-text&quot;&gt;作者&amp;#58;&lt;/span&gt;</span><br><span class="line">    &#123;&#123; post.author &#125;&#125;</span><br><span class="line">  &lt;/span&gt;</span><br><span class="line">  &lt;span class=&quot;post-meta-divider&quot;&gt;|&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure><p>比如直接放在<code>&lt;div class="post-meta"&gt;</code>后面，注意缩进和实例代码一致</p></li></ul><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.themismin.com/posts/5cedc789.html">Hexo-文章作者字段设置</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
     
     
     <summary type="html">&lt;p&gt;想要的效果：&lt;/p&gt;
-&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405042051953.png&quot; alt=&quot;&quot; style=&quot;zoom:80%;&quot; /&gt;</summary>
+&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405042051953.png&quot; alt=&quot;&quot; style=&quot;zoom:80%;&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -90,7 +306,7 @@
     <published>2024-05-03T05:50:08.000Z</published>
     <updated>2024-05-04T13:20:13.046Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>当我真正开始爱自己，</p><p>我才认识到，所有的痛苦和情感的折磨，</p><p>都只是提醒我：活着，不要违背自己的本心。</p><p>今天我明白了，这叫做“真实”。</p><span id="more"></span><br /><p>当我真正开始爱自己，</p><p>我才懂得，把自己的愿望强加于人，</p><p>是多么的无礼，就算我知道，时机并不成熟，</p><p>那人也还没有做好准备，</p><p>就算那个人就是我自己。</p><p>今天我明白了，这叫做“尊重”。</p><br /><p>当我开始真正爱自己，</p><p>我不再渴求不同的人生，</p><p>我知道任何发生在我身边的事情，</p><p>都是对我成长的邀请。</p><p>如今，我称之为“成熟”。</p><br /><p>当我开始真正爱自己，</p><p>我才明白，我其实一直都在正确的时间，</p><p>正确的地方，发生的一切都恰如其分。</p><p>由此我得以平静。</p><p>今天我明白了，这叫做“自信”。</p><br /><p>当我真正开始爱自己，</p><p>我不再牺牲自己的自由时间，</p><p>不再去勾画什么宏伟的明天。</p><p>今天我只做有趣和快乐的事，</p><p>做自己热爱，让心欢喜的事，</p><p>用我的方式、我的韵律。</p><p>今天我明白了，这叫做“单纯”。</p><br /><p>当我开始真正爱自己，</p><p>我开始远离一切不健康的东西。</p><p>不论是饮食和人物，还是事情和环境，</p><p>我远离一切让我远离本真的东西。</p><p>从前我把这叫做“追求健康的自私自利”，</p><p>但今天我明白了，这是“自爱”。</p><br /><p>当我开始真正爱自己，</p><p>我不再总想着要永远正确，不犯错误。</p><p>我今天明白了，这叫做“谦逊”。</p><br /><p>当我开始真正爱自己，</p><p>我不再继续沉溺于过去，</p><p>也不再为明天而忧虑，</p><p>现在我只活在一切正在发生的当下，</p><p>今天，我活在此时此地，</p><p>如此日复一日。这就叫“完美”。</p><br /><p>当我开始真正爱自己，</p><p>我明白，我的思虑让我变得贫乏和病态，</p><p>但当我唤起了心灵的力量，</p><p>理智就变成了一个重要的伙伴，</p><p>这种组合我称之为，“心的智慧”。</p><p>我们无须再害怕自己和他人的分歧，</p><p>矛盾和问题，因为即使星星有时也会碰在一起，</p><p>形成新的世界，今天我明白，这就是“生命”。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>当我真正开始爱自己，</p><p>我才认识到，所有的痛苦和情感的折磨，</p><p>都只是提醒我：活着，不要违背自己的本心。</p><p>今天我明白了，这叫做“真实”。</p><span id="more"></span><p><br /></p><p>当我真正开始爱自己，</p><p>我才懂得，把自己的愿望强加于人，</p><p>是多么的无礼，就算我知道，时机并不成熟，</p><p>那人也还没有做好准备，</p><p>就算那个人就是我自己。</p><p>今天我明白了，这叫做“尊重”。</p><p><br /></p><p>当我开始真正爱自己，</p><p>我不再渴求不同的人生，</p><p>我知道任何发生在我身边的事情，</p><p>都是对我成长的邀请。</p><p>如今，我称之为“成熟”。</p><p><br /></p><p>当我开始真正爱自己，</p><p>我才明白，我其实一直都在正确的时间，</p><p>正确的地方，发生的一切都恰如其分。</p><p>由此我得以平静。</p><p>今天我明白了，这叫做“自信”。</p><p><br /></p><p>当我真正开始爱自己，</p><p>我不再牺牲自己的自由时间，</p><p>不再去勾画什么宏伟的明天。</p><p>今天我只做有趣和快乐的事，</p><p>做自己热爱，让心欢喜的事，</p><p>用我的方式、我的韵律。</p><p>今天我明白了，这叫做“单纯”。</p><p><br /></p><p>当我开始真正爱自己，</p><p>我开始远离一切不健康的东西。</p><p>不论是饮食和人物，还是事情和环境，</p><p>我远离一切让我远离本真的东西。</p><p>从前我把这叫做“追求健康的自私自利”，</p><p>但今天我明白了，这是“自爱”。</p><p><br /></p><p>当我开始真正爱自己，</p><p>我不再总想着要永远正确，不犯错误。</p><p>我今天明白了，这叫做“谦逊”。</p><p><br /></p><p>当我开始真正爱自己，</p><p>我不再继续沉溺于过去，</p><p>也不再为明天而忧虑，</p><p>现在我只活在一切正在发生的当下，</p><p>今天，我活在此时此地，</p><p>如此日复一日。这就叫“完美”。</p><p><br /></p><p>当我开始真正爱自己，</p><p>我明白，我的思虑让我变得贫乏和病态，</p><p>但当我唤起了心灵的力量，</p><p>理智就变成了一个重要的伙伴，</p><p>这种组合我称之为，“心的智慧”。</p><p>我们无须再害怕自己和他人的分歧，</p><p>矛盾和问题，因为即使星星有时也会碰在一起，</p><p>形成新的世界，今天我明白，这就是“生命”。</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;当我真正开始爱自己，&lt;/p&gt;
@@ -110,12 +326,13 @@
     <link href="https://www.sdhlw.top/%E5%A4%9A%E7%BA%A7%E5%88%97%E8%A1%A8%E5%AF%BC%E8%87%B4%E5%9B%BE%E8%A1%A8%E4%BA%8C-1%E9%97%AE%E9%A2%98/"/>
     <id>https://www.sdhlw.top/%E5%A4%9A%E7%BA%A7%E5%88%97%E8%A1%A8%E5%AF%BC%E8%87%B4%E5%9B%BE%E8%A1%A8%E4%BA%8C-1%E9%97%AE%E9%A2%98/</id>
     <published>2024-05-01T02:56:10.000Z</published>
-    <updated>2024-05-01T15:03:19.022Z</updated>
+    <updated>2024-05-23T14:47:45.643Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>一级标题：第一章 XXX</p><p>图表的题注名称：图一.1</p><p>想要的效果：根据章节序号，插入题注时是：图1.1 和表1.1</p><span id="more"></span><h1 id="方案一"><a href="#方案一" class="headerlink" title="方案一"></a>方案一</h1><p>临时方案，更新域，会失效。</p><ul><li><p>首先光标定位到问题题注前标题行，再单击【开始】-【段落】-【多级列表】-【定义新的多级列表】命令，<strong>勾选正规形式编号</strong>，将第一章，变为第1章<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[“图0-1”和“图一-1”你遇到过么？ ](https://www.sohu.com/a/374084254_825825)">[1]</span></a></sup>。</p></li><li><p>Ctrl +A 全选全文，按【F9】刷新所有域（选择更新目录，而不是页码）。此时，题注编号已经显示为小写数字格式了。</p></li><li><p>定位到标题行，定义多级列表中取消勾选正规形式编号。</p><p>操作后：表或图序号前会多一个横线</p></li></ul><p>word导出pdf时，默认会更新域，所以我们要锁住域：</p><ul><li>全选文档内容（Ctrl+A）</li><li>锁定域（Ctrl+F11）</li><li>解锁域（Ctrl+Shift+F11）</li><li>更新域（F9）</li></ul><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404292200851.png" alt="" style="zoom:50%;" /><h1 id="方案二"><a href="#方案二" class="headerlink" title="方案二"></a>方案二</h1><p>永久方案，更新域，不会失效</p><ul><li><p>光标定位到题注前标题行的尾部，按组合键【Ctrl+Alt+回车】输入一个【样式分割符】，定位到样式分割符后面按下【回车】键，使标题行与正文分别成为两个独立段落</p></li><li><p>定位到标题行中【样式分割符】后面，直接（为样式分割符后面的空文本）应用一个级别稍小的标题样式。（如果你的标题用到了四级标题，可以应用五级或六级标题）</p></li><li><p>修改多级列表：将刚才应用到样式分隔符后面的标题样式，链接到大纲级别中，比如应用了标题5：</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405011146203.png" alt="" style="zoom:50%;" /></li><li><p>重新插入题注：添加题注时需要注意，单击【题注】对话框中的【编号】按钮，在弹出的【题注编号】对话框中，在【章节起始样式】下拉列表中选择刚才设置的标题（比如刚才的标题5）</p></li><li><p>第一步和第二步要每个章节都设置。</p><p>出现的问题：题注是没问题了，但是如果之前已经插入较多题注，现在一个个重新插入，还不如使用临时方案快捷，而且左侧标题目录会多出一些空白内容（级别文字会被当成目录）。</p></li></ul><h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.sohu.com/a/374084254_825825">“图0-1”和“图一-1”你遇到过么？ </a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="问题">问题</h1><p>一级标题：第一章 XXX</p><p>图表的题注名称：图一.1</p><p>想要的效果：根据章节序号，插入题注时是：图1.1 和表1.1</p><span id="more"></span><h1 id="方案一">方案一</h1><p>临时方案，更新域，会失效。</p><ul><li><p>首先光标定位到问题题注前标题行，再单击【开始】-【段落】-【多级列表】-【定义新的多级列表】命令，<strong>勾选正规形式编号</strong>，将第一章，变为第1章<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[“图0-1”和“图一-1”你遇到过么？ ](https://www.sohu.com/a/374084254_825825)">[1]</span></a></sup>。</p></li><li><p>Ctrl +A全选全文，按【F9】刷新所有域（选择更新目录，而不是页码）。此时，题注编号已经显示为小写数字格式了。</p></li><li><p>定位到标题行，定义多级列表中取消勾选正规形式编号。</p></li><li><p>word导出pdf时，默认会更新域，所以我们要锁住域：（Ctrl+A）+（Ctrl+F11）</p></li></ul><p>常用域操作：</p><ul><li>全选文档内容（Ctrl+A）<ul><li>锁定域（Ctrl+F11）</li><li>解锁域（Ctrl+Shift+F11）</li><li>更新域（F9）</li></ul></li></ul><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404292200851.png" alt="" style="zoom:50%;" /></p><h1 id="方案二">方案二</h1><p>永久方案，更新域，不会失效</p><ul><li><p>光标定位到题注前标题行的尾部，按组合键【Ctrl+Alt+回车】输入一个【样式分割符】，定位到样式分割符后面按下【回车】键，使标题行与正文分别成为两个独立段落</p></li><li><p>定位到标题行中【样式分割符】后面，直接（为样式分割符后面的空文本）应用一个级别稍小的标题样式。（如果你的标题用到了四级标题，可以应用五级或六级标题）</p></li><li><p>修改多级列表：将刚才应用到样式分隔符后面的标题样式，链接到大纲级别中，比如应用了标题5：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405011146203.png" alt="" style="zoom:50%;" /></p></li><li><p>重新插入题注：添加题注时需要注意，单击【题注】对话框中的【编号】按钮，在弹出的【题注编号】对话框中，在【章节起始样式】下拉列表中选择刚才设置的标题（比如刚才的标题5）</p></li><li><p>第一步和第二步要每个章节都设置。</p><p>出现的问题：题注是没问题了，但是如果之前已经插入较多题注，现在一个个重新插入，还不如使用临时方案快捷，而且左侧标题目录会多出一些空白内容（级别文字会被当成目录）。</p></li></ul><h1 id="参考文章">参考文章</h1><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.sohu.com/a/374084254_825825">“图0-1”和“图一-1”你遇到过么？</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span></li></ol></div></div>]]></content>
     
     
-    <summary type="html">&lt;h1 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h1&gt;&lt;p&gt;一级标题：第一章 XXX&lt;/p&gt;
+    <summary type="html">&lt;h1 id=&quot;问题&quot;&gt;问题&lt;/h1&gt;
+&lt;p&gt;一级标题：第一章 XXX&lt;/p&gt;
 &lt;p&gt;图表的题注名称：图一.1&lt;/p&gt;
 &lt;p&gt;想要的效果：根据章节序号，插入题注时是：图1.1 和表1.1&lt;/p&gt;</summary>
     
@@ -137,11 +354,11 @@
     <published>2024-04-30T08:00:30.000Z</published>
     <updated>2024-05-02T02:49:46.443Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>编辑标记：</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301602411.png" alt="" style="zoom:50%;" /><span id="more"></span><p>段落标记、制表符、空格：文件–选项：</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405021047997.png" alt="" style="zoom:80%;" /><p>表格网格线：选中表格：</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405021049021.png" alt="" style="zoom:80%;" /><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p>无</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>编辑标记：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301602411.png" alt="" style="zoom:50%;" /></p><span id="more"></span><p>段落标记、制表符、空格：文件--选项：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405021047997.png" alt="" style="zoom:80%;" /></p><p>表格网格线：选中表格：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202405021049021.png" alt="" style="zoom:80%;" /></p><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;编辑标记：&lt;/p&gt;
-&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301602411.png&quot; alt=&quot;&quot; style=&quot;zoom:50%;&quot; /&gt;</summary>
+&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301602411.png&quot; alt=&quot;&quot; style=&quot;zoom:50%;&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -161,11 +378,11 @@
     <published>2024-04-30T06:53:21.000Z</published>
     <updated>2024-05-01T14:59:07.498Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>学位论文对表的要求（GB&#x2F;T7713.1一2006）：</p><p>5.3.3表<br>表应具有“自明性”。</p><p>表应有编号。表的编号由“表”和从“1”开始的阿拉伯数字组成，表较多时，可分章编号。</p><p>表宜有表题，表题即表的名称，置于表的编号之后。表的编号和表题应置于表上方。</p><p>表的编排，一般是内容和测试项目由左至右横读，数据依序竖读。</p><p>表的编排建议采用国际通行的三线表。</p><p>如某个表需要转页接排，在随后的各页上应重复表的编号。编号后跟表题（可省略）和“（续）”，置于表上方。</p><p>续表均应重复表头。</p><span id="more"></span><hr><p>国际通行三线表：整体符合三线表的基本格式即可，具体格式要求并没有找到一个通用标准，这里以多数高校论文通行标准进行制作。</p><p>多数高校里建议表格里的粗线条为1.5磅，细线条为0.75磅<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[论文中的三线表及表格规范](https://blog.csdn.net/weixin_42703239/article/details/125047796)">[1]</span></a></sup>。“三线表”不一定只有3条线，必要时可加辅助线，但无论加多少条辅助线，仍称做“三线表”。</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301459307.png" alt="表格基本要素名称" style="zoom: 67%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301511189.png" alt="三线表" style="zoom:50%;" /><p>字体和段落要求<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[三分钟快速制作论文三线表](https://www.bilibili.com/video/BV1ug411e7KH/?spm_id_from=333.337.search-card.all.click&vd_source=9f04b059fdee5024fd04678f53de10ad)">[2]</span></a></sup>：</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301519725.png" alt="" style="zoom: 80%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301519139.png" alt="" style="zoom: 80%;" /><p>跨页续表：光标在跨页的第一行，Ctrl + shift + enter (拆分为2个表) ，腾出续表标题<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[30s制作三线表及续表](https://www.bilibili.com/video/BV1Ck4y1e7gR/?spm_id_from=333.337.search-card.all.click&vd_source=9f04b059fdee5024fd04678f53de10ad)">[3]</span></a></sup>。上表底线设置0.75磅，下表添加行，设置与上表一样的标题行。</p><p>续表格式(居中)：</p><p>表 3‑1 某某某（续表）</p><p>Table 3‑1 XXXXX (continued)</p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/weixin_42703239/article/details/125047796">论文中的三线表及表格规范</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1ug411e7KH/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">三分钟快速制作论文三线表</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1Ck4y1e7gR/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">30s制作三线表及续表</a><a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>学位论文对表的要求（GB/T7713.1一2006）：</p><p>5.3.3表 表应具有“自明性”。</p><p>表应有编号。表的编号由“表”和从“1”开始的阿拉伯数字组成，表较多时，可分章编号。</p><p>表宜有表题，表题即表的名称，置于表的编号之后。表的编号和表题应置于表上方。</p><p>表的编排，一般是内容和测试项目由左至右横读，数据依序竖读。</p><p>表的编排建议采用国际通行的三线表。</p><p>如某个表需要转页接排，在随后的各页上应重复表的编号。编号后跟表题（可省略）和“（续）”，置于表上方。</p><p>续表均应重复表头。</p><span id="more"></span><hr /><p>国际通行三线表：整体符合三线表的基本格式即可，具体格式要求并没有找到一个通用标准，这里以多数高校论文通行标准进行制作。</p><p>多数高校里建议表格里的粗线条为1.5磅，细线条为0.75磅<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[论文中的三线表及表格规范](https://blog.csdn.net/weixin_42703239/article/details/125047796)">[1]</span></a></sup>。“三线表”不一定只有3条线，必要时可加辅助线，但无论加多少条辅助线，仍称做“三线表”。</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301459307.png" alt="表格基本要素名称" style="zoom: 67%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301511189.png" alt="三线表" style="zoom:50%;" /></p><p>字体和段落要求<sup id="fnref:2"><a href="#fn:2" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[三分钟快速制作论文三线表](https://www.bilibili.com/video/BV1ug411e7KH/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad)">[2]</span></a></sup>：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301519725.png" alt="" style="zoom: 80%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301519139.png" alt="" style="zoom: 80%;" /></p><p>跨页续表：光标在跨页的第一行，Ctrl + shift + enter (拆分为2个表)，腾出续表标题<sup id="fnref:3"><a href="#fn:3" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[30s制作三线表及续表](https://www.bilibili.com/video/BV1Ck4y1e7gR/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad)">[3]</span></a></sup>。上表底线设置0.75磅，下表添加行，设置与上表一样的标题行。</p><p>续表格式(居中)：</p><p>表 3‑1 某某某（续表）</p><p>Table 3‑1 XXXXX (continued)</p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://blog.csdn.net/weixin_42703239/article/details/125047796">论文中的三线表及表格规范</a><a href="#fnref:1" rev="footnote">↩︎</a></span></li><li id="fn:2"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1ug411e7KH/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">三分钟快速制作论文三线表</a><a href="#fnref:2" rev="footnote">↩︎</a></span></li><li id="fn:3"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1Ck4y1e7gR/?spm_id_from=333.337.search-card.all.click&amp;vd_source=9f04b059fdee5024fd04678f53de10ad">30s制作三线表及续表</a><a href="#fnref:3" rev="footnote">↩︎</a></span></li></ol></div></div>]]></content>
     
     
-    <summary type="html">&lt;p&gt;学位论文对表的要求（GB&amp;#x2F;T7713.1一2006）：&lt;/p&gt;
-&lt;p&gt;5.3.3表&lt;br&gt;表应具有“自明性”。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;学位论文对表的要求（GB/T7713.1一2006）：&lt;/p&gt;
+&lt;p&gt;5.3.3表 表应具有“自明性”。&lt;/p&gt;
 &lt;p&gt;表应有编号。表的编号由“表”和从“1”开始的阿拉伯数字组成，表较多时，可分章编号。&lt;/p&gt;
 &lt;p&gt;表宜有表题，表题即表的名称，置于表的编号之后。表的编号和表题应置于表上方。&lt;/p&gt;
 &lt;p&gt;表的编排，一般是内容和测试项目由左至右横读，数据依序竖读。&lt;/p&gt;
@@ -191,11 +408,11 @@
     <published>2024-04-30T02:56:14.000Z</published>
     <updated>2024-05-01T15:00:13.517Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>插入两个域：一个章节序号，一个章节名称</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301100938.png" alt="" style="zoom:67%;" /><span id="more"></span><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301105899.png" alt="" style="zoom:67%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301102852.png" alt="" style="zoom:67%;" /><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p>无</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>插入两个域：一个章节序号，一个章节名称</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301100938.png" alt="" style="zoom:67%;" /></p><span id="more"></span><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301105899.png" alt="" style="zoom:67%;" /></p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301102852.png" alt="" style="zoom:67%;" /></p><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;插入两个域：一个章节序号，一个章节名称&lt;/p&gt;
-&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301100938.png&quot; alt=&quot;&quot; style=&quot;zoom:67%;&quot; /&gt;</summary>
+&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301100938.png&quot; alt=&quot;&quot; style=&quot;zoom:67%;&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -213,7 +430,7 @@
     <published>2024-04-30T02:34:46.000Z</published>
     <updated>2024-04-30T02:47:12.005Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>在章节前插入分节符时：</p><p>错误：光标定位在章节前一页末尾，插入下一页分节符（会导致章节前面出现空行）</p><p>正确：光标定位在章节前面，插入连续分节符</p><span id="more"></span><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301046240.png" alt="" style="zoom:67%;" /><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p>无</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>在章节前插入分节符时：</p><p>错误：光标定位在章节前一页末尾，插入下一页分节符（会导致章节前面出现空行）</p><p>正确：光标定位在章节前面，插入连续分节符</p><span id="more"></span><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404301046240.png" alt="" style="zoom:67%;" /></p><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;在章节前插入分节符时：&lt;/p&gt;
@@ -238,10 +455,10 @@
     <published>2024-04-28T13:15:20.000Z</published>
     <updated>2024-04-28T14:24:38.157Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404282116942.png" alt="" style="zoom:50%;" /><span id="more"></span><p>段落缩进没有问题，多级列表的编号对齐方式设置成右对齐了。。。</p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p>无</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404282116942.png" alt="" style="zoom:50%;" /></p><span id="more"></span><p>段落缩进没有问题，多级列表的编号对齐方式设置成右对齐了。。。</p><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
     
     
-    <summary type="html">&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404282116942.png&quot; alt=&quot;&quot; style=&quot;zoom:50%;&quot; /&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404282116942.png&quot; alt=&quot;&quot; style=&quot;zoom:50%;&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -259,12 +476,14 @@
     <link href="https://www.sdhlw.top/%E6%9C%9F%E5%88%8A%E6%98%AF%E5%90%A6%E6%98%AF%E6%9C%88%E5%88%8A%EF%BC%9F/"/>
     <id>https://www.sdhlw.top/%E6%9C%9F%E5%88%8A%E6%98%AF%E5%90%A6%E6%98%AF%E6%9C%88%E5%88%8A%EF%BC%9F/</id>
     <published>2024-04-26T06:03:23.000Z</published>
-    <updated>2024-04-26T06:26:33.444Z</updated>
+    <updated>2024-05-09T04:02:55.409Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>期刊周期决定着文章发行的时间，期刊周期有月刊、年刊、半月刊、双月刊等<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[期刊双月刊和月刊有区别？ ](https://zhuanlan.zhihu.com/p/439359413)">[1]</span></a></sup>。</p><ul><li>期刊周期为月刊的意思就是说，这本刊物每一个月安排一次出版发行，只是安排排版的时间，具体审核周期还是要根据实际情况来看的。</li><li>期刊周期为双月刊意思就是这本刊物每两个月一次出版发行，双月刊要比月刊出版时间久些，如果是着急发表论文的作者，尤其是需要评职称的，可能周期为双月刊的刊物比较影响。</li></ul><span id="more"></span><p>某个期刊1984年创刊，到2011年为第28年，那么2011年12期，就是第28卷12期。28就是卷号，12就是期号，一卷12期就说明刊物为月刊。卷号是从创刊那一年开始算起的，期号是从一年的第一个月算起。如果某期刊是双月刊，那么它一年就只有6期，也就是说一卷6期，12月出来的是第6期。即这里“期”为1个年度中依时间顺序发行的期数的编号;而“卷”是此刊物从创刊年度开始按年度顺序逐年累加的编年号<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[期刊卷号期号怎么查 ](https://www.sohu.com/a/128460286_448629)">[2]</span></a></sup>。</p><p>有的期刊没有卷号只有期号，是以其出版年作为卷号。在引用时不写卷号，只标注期号，比如《焊接技术》2016年9月出版的期刊的卷号是2016年，期号是9，引用时称作2016年第9期。</p><p>弄明白了期刊的卷号期号是怎么回事，就容易查询了。简单来说，卷跟年份有关系，期跟月份、出版周期有关系。如果一份期刊有卷号，需要知道该期刊的创刊时间和出版时间，将出版年份减去创刊年份加一，即是卷号。算期号，需要知道该期刊出版周期和出版月份，比如双月刊，一年应该有6期，单月出版的话，一年的出版时间应该是1月、3月、5月、7月、9月、11月，5月出版的就是第3期。双月出版的话一年的出版时间是2月、4月、6月、8月、10月、12月，8月出版的就是第4期。以此类推，其他出版周期也是这么算的。</p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/439359413">期刊双月刊和月刊有区别？ </a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.sohu.com/a/128460286_448629">期刊卷号期号怎么查 </a><a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>期刊周期决定着文章发行的时间，期刊周期有月刊、年刊、半月刊、双月刊等<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[期刊双月刊和月刊有区别？ ](https://zhuanlan.zhihu.com/p/439359413)">[1]</span></a></sup>。</p><ul><li>期刊周期为月刊的意思就是说，这本刊物每一个月安排一次出版发行，只是安排排版的时间，具体审核周期还是要根据实际情况来看的。</li><li>期刊周期为双月刊意思就是这本刊物每两个月一次出版发行，双月刊要比月刊出版时间久些，如果是着急发表论文的作者，尤其是需要评职称的，可能周期为双月刊的刊物比较影响。</li></ul><span id="more"></span><p>某个期刊1984年创刊，到2011年为第28年，那么2011年12期，就是第28卷12期。28就是卷号，12就是期号，一卷12期就说明刊物为月刊。卷号是从创刊那一年开始算起的，期号是从一年的第一个月算起。如果某期刊是双月刊，那么它一年就只有6期，也就是说一卷6期，12月出来的是第6期。即这里“期”为1个年度中依时间顺序发行的期数的编号;而“卷”是此刊物从创刊年度开始按年度顺序逐年累加的编年号<sup id="fnref:2"><a href="#fn:2" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[期刊卷号期号怎么查 ](https://www.sohu.com/a/128460286_448629)">[2]</span></a></sup>。</p><p>有的期刊没有卷号只有期号，是以其出版年作为卷号。在引用时不写卷号，只标注期号，比如《焊接技术》2016年9月出版的期刊的卷号是2016年，期号是9，引用时称作2016年第9期。有些文章则有卷号，没有期号。</p><p>弄明白了期刊的卷号期号是怎么回事，就容易查询了。简单来说，卷跟年份有关系，期跟月份、出版周期有关系。如果一份期刊有卷号，需要知道该期刊的创刊时间和出版时间，将出版年份减去创刊年份加一，即是卷号。算期号，需要知道该期刊出版周期和出版月份，比如双月刊，一年应该有6期，单月出版的话，一年的出版时间应该是1月、3月、5月、7月、9月、11月，5月出版的就是第3期。双月出版的话一年的出版时间是2月、4月、6月、8月、10月、12月，8月出版的就是第4期。以此类推，其他出版周期也是这么算的。</p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/439359413">期刊双月刊和月刊有区别？</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span></li><li id="fn:2"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.sohu.com/a/128460286_448629">期刊卷号期号怎么查</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span></li></ol></div></div>]]></content>
     
     
-    <summary type="html">&lt;p&gt;期刊周期决定着文章发行的时间，期刊周期有月刊、年刊、半月刊、双月刊等&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot; aria-label=&quot;[期刊双月刊和月刊有区别？ ](https://zhuanlan.zhihu.com/p/439359413)
+    <summary type="html">&lt;p&gt;期刊周期决定着文章发行的时间，期刊周期有月刊、年刊、半月刊、双月刊等&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
+class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
+aria-label=&quot;[期刊双月刊和月刊有区别？ ](https://zhuanlan.zhihu.com/p/439359413)
 &quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;期刊周期为月刊的意思就是说，这本刊物每一个月安排一次出版发行，只是安排排版的时间，具体审核周期还是要根据实际情况来看的。&lt;/li&gt;
@@ -287,12 +506,12 @@
     <published>2024-04-23T01:38:38.000Z</published>
     <updated>2024-04-23T01:43:41.776Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>模板和主题差别，具体还不清楚。保存主题的话，在图片上右键即可看到保存主题。</p><p>模板保存：</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404230940336.png" alt="" style="zoom:67%;" /><span id="more"></span><p>模板使用：选中数据，点击上方绘图：</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404230942830.png" alt="" style="zoom:67%;" /><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p>无</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>模板和主题差别，具体还不清楚。保存主题的话，在图片上右键即可看到保存主题。</p><p>模板保存：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404230940336.png" alt="" style="zoom:67%;" /></p><span id="more"></span><p>模板使用：选中数据，点击上方绘图：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404230942830.png" alt="" style="zoom:67%;" /></p><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;模板和主题差别，具体还不清楚。保存主题的话，在图片上右键即可看到保存主题。&lt;/p&gt;
 &lt;p&gt;模板保存：&lt;/p&gt;
-&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404230940336.png&quot; alt=&quot;&quot; style=&quot;zoom:67%;&quot; /&gt;</summary>
+&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404230940336.png&quot; alt=&quot;&quot; style=&quot;zoom:67%;&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -302,218 +521,6 @@
     
     
     <category term="origin" scheme="https://www.sdhlw.top/tags/origin/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>word设置章节序号（域）</title>
-    <link href="https://www.sdhlw.top/word%E8%AE%BE%E7%BD%AE%E7%AB%A0%E8%8A%82%E5%BA%8F%E5%8F%B7%EF%BC%88%E5%9F%9F%EF%BC%89/"/>
-    <id>https://www.sdhlw.top/word%E8%AE%BE%E7%BD%AE%E7%AB%A0%E8%8A%82%E5%BA%8F%E5%8F%B7%EF%BC%88%E5%9F%9F%EF%BC%89/</id>
-    <published>2024-04-21T11:51:14.000Z</published>
-    <updated>2024-04-29T14:08:36.612Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>首先通常会将标题样式与序号做关联，设置时要记住在系统标题样式上进行修改，而不是自己新建样式，否则会出现问题（插入题注时，上一个图片的域出现问题）。</p><p>步骤 ：</p><p>1、对标题应用样式（word自带样式）</p><p>2、定义新的多级列表</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404211957143.png" alt="" style="zoom:80%;" /><p>3、右键标题样式进行适当修改即可<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[【word标题自动编号】从原理上帮你分析，3分钟永久学会](https://www.bilibili.com/video/BV1cv411h7Pj/?share_source=copy_web&vd_source=7f2a81e814313c699f856c2ec72be7d9)">[1]</span></a></sup></p><span id="more"></span><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1cv411h7Pj/?share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9">【word标题自动编号】从原理上帮你分析，3分钟永久学会</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;首先通常会将标题样式与序号做关联，设置时要记住在系统标题样式上进行修改，而不是自己新建样式，否则会出现问题（插入题注时，上一个图片的域出现问题）。&lt;/p&gt;
-&lt;p&gt;步骤 ：&lt;/p&gt;
-&lt;p&gt;1、对标题应用样式（word自带样式）&lt;/p&gt;
-&lt;p&gt;2、定义新的多级列表&lt;/p&gt;
-&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404211957143.png&quot; alt=&quot;&quot; style=&quot;zoom:80%;&quot; /&gt;
-
-&lt;p&gt;3、右键标题样式进行适当修改即可&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot; aria-label=&quot;[【word标题自动编号】从原理上帮你分析，3分钟永久学会](https://www.bilibili.com/video/BV1cv411h7Pj/?share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9)
-&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>同比，环比</title>
-    <link href="https://www.sdhlw.top/%E5%90%8C%E6%AF%94%EF%BC%8C%E7%8E%AF%E6%AF%94/"/>
-    <id>https://www.sdhlw.top/%E5%90%8C%E6%AF%94%EF%BC%8C%E7%8E%AF%E6%AF%94/</id>
-    <published>2024-04-20T07:39:10.000Z</published>
-    <updated>2024-04-20T10:43:55.609Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><strong>一、同比基本概念</strong></p><p>同比是以上年同期为基期相比较，即本期某一时间段与上年某一时间段相比， 可以理解为今年第 n 月与去年第 n 月的比较。如，2019 年 12 月份与 2018 年 12 月份相比较，2019 年上半年与 2018 年上半年相比较就是同比。同比增长率是指本期和上一年同期相比较的增长率，计算公式为：同比增长率＝（本期数－同期数）／同期数×100%。例如，某公司 2019 年上半年利润 3000 万元，为本期数， 同期数就是 2018 年上半年的利润 2000 万元，同比增长率为（3000 － 2000）／ 2000×100% ＝ 50%，即某公司 2019 年上半年利润同比增长 50%。<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[同比与环比有何不同？](https://www.stats.gov.cn/zs/tjws/tjbk/202301/t20230101_1912960.html)">[1]</span></a></sup></p><p><strong>二、环比基本概念</strong></p><p>环比是与上一个相邻统计周期相比较，表明统计指标逐期的发展变化 , 可以理解为第 n 月与第 n-1 月的比较。如，2019 年 12 月份与 2019 年 11 月份相比较，2019 年 1 月份与 2018 年 12 月份相比较就是环比。环比增长率是指本期和上期相比较的增长率，计算公式为：环比增长率 &#x3D;（本期数－上期数）／上期数 ×100%。例如，某公司 2019 年 6 月份营业额为 100 万元，为本期数，上期数就是 2019 年 5 月份营业额 80 万元，环比增长率为（100 － 80）／ 80×100% ＝25%，即某公司 2019 年 6 月份营业额环比增长 25%。</p><span id="more"></span><p><strong>三、同比和环比的应用</strong></p><p>环比侧重反映数据的<strong>短期变化</strong>。用环比增长速度反映指标变化时，时效性强， 比较灵敏。比如，对居民消费价格指数（CPI）的环比涨跌幅进行分析，可以判断短期内物价变化的方向（上升或下降）。环比的不足之处是，对一些随着季节变化而波动的指标，将当期的数据直接与上期相比时，容易受到季节因素的干扰， 使得用其反映的增长速度波动往往较大。比如，由于“双十一”促销影响，11 月份网上零售额相比 10 月份增加较多，而 12 月份网上零售额相比 11 月份会减少较多，相应地，11 月份的环比增长速度会比较高，而 12 月份的环比增长速度就可能是负的，但这并不能说明网上零售额发生了趋势性变化。所以进行环比计算之前一般需要先把经济指标变动中的季节性因素剔除掉，即进行季节调整后，再计算环比增长速度。</p><p>同比相对于环比，侧重反映<strong>长期趋势</strong>，能够一定程度上克服季节性波动的影响。比如，同样是“双十一”促销，使用同比增长速度，10 月、11 月、12 月的波动不会像环比波动那样大，主要由于上年与今年11 月“双十一”促销因素均存在。但另一方面，同比增长速度的缺点是易于受基期因素影响，比如，上年基期受灾害影响，数据波动大，而今年同期未受灾害影响，则同比增长速度会表现出波动变化。</p><p>总之，同比和环比所反映的虽然都是变化速度，但由于对比基期不同，反映的内涵完全不同。一般来说，环比可以与环比相比较，而不能拿同比与环比相比较。但是，对于同一个领域，当既要考虑历史发展趋势，又要考虑短期变化时，则应把同比与环比放在一起进行对照分析。</p><p>同比并不局限于去年<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[增长问题之同比和环比](https://www.bilibili.com/video/BV1Wv411W7yp/?share_source=copy_web&vd_source=7f2a81e814313c699f856c2ec72be7d9)">[2]</span></a></sup>：</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404201628748.png" alt="" style="zoom: 23%;" /><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.stats.gov.cn/zs/tjws/tjbk/202301/t20230101_1912960.html">同比与环比有何不同？</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.bilibili.com/video/BV1Wv411W7yp/?share_source=copy_web&amp;vd_source=7f2a81e814313c699f856c2ec72be7d9">增长问题之同比和环比</a><a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;strong&gt;一、同比基本概念&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;同比是以上年同期为基期相比较，即本期某一时间段与上年某一时间段相比， 可以理解为今年第 n 月与去年第 n 月的比较。如，2019 年 12 月份与 2018 年 12 月份相比较，2019 年上半年与 2018 年上半年相比较就是同比。同比增长率是指本期和上一年同期相比较的增长率，计算公式为：同比增长率＝（本期数－同期数）／同期数×100%。例如，某公司 2019 年上半年利润 3000 万元，为本期数， 同期数就是 2018 年上半年的利润 2000 万元，同比增长率为（3000 － 2000）／ 2000×100% ＝ 50%，即某公司 2019 年上半年利润同比增长 50%。&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot; aria-label=&quot;[同比与环比有何不同？](https://www.stats.gov.cn/zs/tjws/tjbk/202301/t20230101_1912960.html)
-&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;二、环比基本概念&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;环比是与上一个相邻统计周期相比较，表明统计指标逐期的发展变化 , 可以理解为第 n 月与第 n-1 月的比较。如，2019 年 12 月份与 2019 年 11 月份相比较，2019 年 1 月份与 2018 年 12 月份相比较就是环比。环比增长率是指本期和上期相比较的增长率，计算公式为：环比增长率 &amp;#x3D;（本期数－上期数）／上期数 ×100%。例如，某公司 2019 年 6 月份营业额为 100 万元，为本期数，上期数就是 2019 年 5 月份营业额 80 万元，环比增长率为（100 － 80）／ 80×100% ＝25%，即某公司 2019 年 6 月份营业额环比增长 25%。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>origin修改默认保存目录</title>
-    <link href="https://www.sdhlw.top/origin%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E4%BF%9D%E5%AD%98%E7%9B%AE%E5%BD%95/"/>
-    <id>https://www.sdhlw.top/origin%E4%BF%AE%E6%94%B9%E9%BB%98%E8%AE%A4%E4%BF%9D%E5%AD%98%E7%9B%AE%E5%BD%95/</id>
-    <published>2024-04-19T13:31:34.000Z</published>
-    <updated>2024-04-19T13:46:00.436Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404192143309.png" alt="" style="zoom:67%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404192145112.png" alt="" style="zoom:67%;" /><span id="more"></span><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p>无</p>]]></content>
-    
-    
-    <summary type="html">&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404192143309.png&quot; alt=&quot;&quot; style=&quot;zoom:67%;&quot; /&gt;
-
-&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404192145112.png&quot; alt=&quot;&quot; style=&quot;zoom:67%;&quot; /&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
-    
-    
-    <category term="origin" scheme="https://www.sdhlw.top/tags/origin/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>论文公式自动编号</title>
-    <link href="https://www.sdhlw.top/%E8%AE%BA%E6%96%87%E5%85%AC%E5%BC%8F%E8%87%AA%E5%8A%A8%E7%BC%96%E5%8F%B7/"/>
-    <id>https://www.sdhlw.top/%E8%AE%BA%E6%96%87%E5%85%AC%E5%BC%8F%E8%87%AA%E5%8A%A8%E7%BC%96%E5%8F%B7/</id>
-    <published>2024-04-12T08:48:23.000Z</published>
-    <updated>2024-04-12T11:29:45.117Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>章节标题后面：alt + F9 或者手动插入域：</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404121726396.png" alt="" style="zoom:50%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404121652753.png" alt="" style="zoom:33%;" /><p>公式框内：插入一下内容，<code>&#123;&#125;</code>为域的内容</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404121703377.png" alt="" style="zoom:33%;" /><p>更新域：windows可以使用打印，或者在域代码附近，右键，选择更新域</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404121708075.png" alt="" style="zoom: 50%;" /><span id="more"></span><p>ctrl + f9 会导致zotero引用乱码，需要重新点一下</p><p>公式不多，不使用域，直接</p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p>无</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;章节标题后面：alt + F9 或者手动插入域：&lt;/p&gt;
-&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404121726396.png&quot; alt=&quot;&quot; style=&quot;zoom:50%;&quot; /&gt;
-
-&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404121652753.png&quot; alt=&quot;&quot; style=&quot;zoom:33%;&quot; /&gt;
-
-&lt;p&gt;公式框内：插入一下内容，&lt;code&gt;&amp;#123;&amp;#125;&lt;/code&gt;为域的内容&lt;/p&gt;
-&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404121703377.png&quot; alt=&quot;&quot; style=&quot;zoom:33%;&quot; /&gt;
-
-&lt;p&gt;更新域：windows可以使用打印，或者在域代码附近，右键，选择更新域&lt;/p&gt;
-&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404121708075.png&quot; alt=&quot;&quot; style=&quot;zoom: 50%;&quot; /&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
-    
-    
-    <category term="word" scheme="https://www.sdhlw.top/tags/word/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>保存训练好的机器学习模型(转载)</title>
-    <link href="https://www.sdhlw.top/%E4%BF%9D%E5%AD%98%E8%AE%AD%E7%BB%83%E5%A5%BD%E7%9A%84%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A8%A1%E5%9E%8B/"/>
-    <id>https://www.sdhlw.top/%E4%BF%9D%E5%AD%98%E8%AE%AD%E7%BB%83%E5%A5%BD%E7%9A%84%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A8%A1%E5%9E%8B/</id>
-    <published>2024-04-05T03:52:40.000Z</published>
-    <updated>2024-04-05T06:49:49.634Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p><a href="https://blog.csdn.net/u012328159/article/details/79255805">保存训练好的机器学习模型</a><br>        当我们训练好一个model后，下次如果还想用这个model，我们就需要把这个model保存下来，下次直接导入就好了，不然每次都跑一遍，训练时间短还好，要是一次跑好几天的那怕是要天荒地老了。</p><span id="more"></span><p>sklearn官网提供了两种保存model的方法：</p><p>1.使用python自带的pickle</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.ensemble <span class="keyword">import</span> RandomForestClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> datasets</span><br><span class="line"><span class="keyword">import</span> pickle</span><br><span class="line"></span><br><span class="line"><span class="comment">#方法一:python自带的pickle</span></span><br><span class="line">(X,y) = datasets.load_iris(return_X_y=<span class="literal">True</span>)</span><br><span class="line">rfc = RandomForestClassifier(n_estimators=<span class="number">100</span>,max_depth=<span class="number">100</span>)</span><br><span class="line">rfc.fit(X,y)</span><br><span class="line"><span class="built_in">print</span>(rfc.predict(X[<span class="number">0</span>:<span class="number">1</span>,:]))</span><br><span class="line"><span class="comment">#save model</span></span><br><span class="line">f = <span class="built_in">open</span>(<span class="string">&#x27;saved_model/rfc.pickle&#x27;</span>,<span class="string">&#x27;wb&#x27;</span>)</span><br><span class="line">pickle.dump(rfc,f)</span><br><span class="line">f.close()</span><br><span class="line"><span class="comment">#load model</span></span><br><span class="line">f = <span class="built_in">open</span>(<span class="string">&#x27;saved_model/rfc.pickle&#x27;</span>,<span class="string">&#x27;rb&#x27;</span>)</span><br><span class="line">rfc1 = pickle.load(f)</span><br><span class="line">f.close()</span><br><span class="line"><span class="built_in">print</span>(rfc1.predict(X[<span class="number">0</span>:<span class="number">1</span>,:]))</span><br></pre></td></tr></table></figure><p>2.使用sklearn中的模块joblib<br>使用joblib模块更加的简单了，内核代码就两行</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.ensemble <span class="keyword">import</span> RandomForestClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn <span class="keyword">import</span> datasets</span><br><span class="line"><span class="keyword">from</span> sklearn.externals <span class="keyword">import</span> joblib</span><br><span class="line"><span class="comment">#方法二：使用sklearn中的模块joblib</span></span><br><span class="line">(X,y) = datasets.load_iris(return_X_y=<span class="literal">True</span>)</span><br><span class="line">rfc = RandomForestClassifier(n_estimators=<span class="number">100</span>,max_depth=<span class="number">100</span>)</span><br><span class="line">rfc.fit(X,y)</span><br><span class="line"><span class="built_in">print</span>(rfc.predict(X[<span class="number">0</span>:<span class="number">1</span>,:]))</span><br><span class="line"><span class="comment">#save model</span></span><br><span class="line">joblib.dump(rfc, <span class="string">&#x27;saved_model/rfc.pkl&#x27;</span>)</span><br><span class="line"><span class="comment">#load model</span></span><br><span class="line">rfc2 = joblib.load(<span class="string">&#x27;saved_model/rfc.pkl&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(rfc2.predict(X[<span class="number">0</span>:<span class="number">1</span>,:]))</span><br></pre></td></tr></table></figure><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p>无</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/u012328159/article/details/79255805&quot;&gt;保存训练好的机器学习模型&lt;/a&gt;&lt;br&gt;        当我们训练好一个model后，下次如果还想用这个model，我们就需要把这个model保存下来，下次直接导入就好了，不然每次都跑一遍，训练时间短还好，要是一次跑好几天的那怕是要天荒地老了。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="代码相关" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>毕业论文（GB/T 7714-2015）引用网页文章</title>
-    <link href="https://www.sdhlw.top/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%EF%BC%88gb-t-7714-2015%EF%BC%89%E5%BC%95%E7%94%A8%E7%BD%91%E9%A1%B5%E6%96%87%E7%AB%A0/"/>
-    <id>https://www.sdhlw.top/%E6%AF%95%E4%B8%9A%E8%AE%BA%E6%96%87%EF%BC%88gb-t-7714-2015%EF%BC%89%E5%BC%95%E7%94%A8%E7%BD%91%E9%A1%B5%E6%96%87%E7%AB%A0/</id>
-    <published>2024-03-28T09:55:54.000Z</published>
-    <updated>2024-04-08T08:02:02.663Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>一共需要7项信息<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="[论文中引用网页内容在文中怎么标注？]( https://www.zhihu.com/question/457765989/answer/1869692237)">[1]</span></a></sup>：</p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404081601932.png" alt="" style="zoom:33%;" /><p>①<strong>主要责任者</strong>：作者名字或责任机构，比如央视网、XXX研究所、XXX局等；</p><p>②<strong>题名</strong>：这一项一般没有什么异议，直接复制粘贴就好；</p><p>③<strong>文献类型标志</strong>：在GB2015附录B的表B.1中，可以找到电子公告的文献类型标识代码是EB；</p><p>④<strong>文献载体类型</strong>：在GB2015附录B的表B.2中，可以找到联机网络的载体类型标识代码是OL；</p><p>⑤<strong>更新或修改日期</strong>：资源的发布日期；</p><p>⑥<strong>引用日期</strong>：在着手写论文到提交论文之间都可以；</p><p>⑦<strong>获取和访问路径</strong>：网址。</p><span id="more"></span><p>如果是使用zotero的GB2015的csl的，使用浏览器插件添加进zotero的话，只要注意更正一下标题和作者就可以了，默认没添加作者，标题格式有些乱。</p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.zhihu.com/question/457765989/answer/1869692237">论文中引用网页内容在文中怎么标注？</a><a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;一共需要7项信息&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot; aria-label=&quot;[论文中引用网页内容在文中怎么标注？]( https://www.zhihu.com/question/457765989/answer/1869692237)
-&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;：&lt;/p&gt;
-&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404081601932.png&quot; alt=&quot;&quot; style=&quot;zoom:33%;&quot; /&gt;
-
-&lt;p&gt;①&lt;strong&gt;主要责任者&lt;/strong&gt;：作者名字或责任机构，比如央视网、XXX研究所、XXX局等；&lt;/p&gt;
-&lt;p&gt;②&lt;strong&gt;题名&lt;/strong&gt;：这一项一般没有什么异议，直接复制粘贴就好；&lt;/p&gt;
-&lt;p&gt;③&lt;strong&gt;文献类型标志&lt;/strong&gt;：在GB2015附录B的表B.1中，可以找到电子公告的文献类型标识代码是EB；&lt;/p&gt;
-&lt;p&gt;④&lt;strong&gt;文献载体类型&lt;/strong&gt;：在GB2015附录B的表B.2中，可以找到联机网络的载体类型标识代码是OL；&lt;/p&gt;
-&lt;p&gt;⑤&lt;strong&gt;更新或修改日期&lt;/strong&gt;：资源的发布日期；&lt;/p&gt;
-&lt;p&gt;⑥&lt;strong&gt;引用日期&lt;/strong&gt;：在着手写论文到提交论文之间都可以；&lt;/p&gt;
-&lt;p&gt;⑦&lt;strong&gt;获取和访问路径&lt;/strong&gt;：网址。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Word Tips</title>
-    <link href="https://www.sdhlw.top/word-tips/"/>
-    <id>https://www.sdhlw.top/word-tips/</id>
-    <published>2024-03-24T07:51:58.000Z</published>
-    <updated>2024-03-24T07:54:09.625Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>快捷键：</p><ul><li>alt  +&#x3D; ：插入公式</li></ul><span id="more"></span><p>b</p><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p>无</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;快捷键：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;alt  +&amp;#x3D; ：插入公式&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
-    
-    
-    <category term="Word" scheme="https://www.sdhlw.top/tags/word/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>独立测试与交叉测试</title>
-    <link href="https://www.sdhlw.top/%E7%8B%AC%E7%AB%8B%E6%B5%8B%E8%AF%95%E4%B8%8E%E4%BA%A4%E5%8F%89%E6%B5%8B%E8%AF%95/"/>
-    <id>https://www.sdhlw.top/%E7%8B%AC%E7%AB%8B%E6%B5%8B%E8%AF%95%E4%B8%8E%E4%BA%A4%E5%8F%89%E6%B5%8B%E8%AF%95/</id>
-    <published>2024-03-20T06:48:59.000Z</published>
-    <updated>2024-03-20T08:16:22.511Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>独立测试与交叉测试的区别在于数据的划分，不在于是否寻优。</p><p>算法：比如随机森林</p><p>模型：比如使用随机森林，进行参数寻优，在一组特定数据中训练得到最优参数的算法（模型只接触过训练集）</p><p>评价模型：使用测试集评价，有独立测试、交叉测试。</p><span id="more"></span><ul><li><p>独立测试：将数据集单次划分为训练集和测试集，训练集用于训练，测试集用于测试最后模型好坏结果。一般，训练集0.75，测试集0.25。</p></li><li><p>交叉测试（Cross-Validation）：也就是交叉验证，比如常见的 k 折交叉验证，将数据集先划分为 K 份，比较常见的为 5 或 10 份，一份数据作为测试集，另外几份作为训练集，循环五次，即每一份数据都作为过测试集，也就是会得到五个模型精度，取均值作为该算法的评价。五折交叉中训练集比例为 4&#x2F;5，即 0.8，交叉测试训练集比例高于独立测试，所以交叉测试结果会比独立测试结果好。</p></li></ul><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403201613164.png" alt="" style="zoom:30%;" /><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202403201504416.png" alt="" style="zoom:80%;" /><h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><p>无</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;独立测试与交叉测试的区别在于数据的划分，不在于是否寻优。&lt;/p&gt;
-&lt;p&gt;算法：比如随机森林&lt;/p&gt;
-&lt;p&gt;模型：比如使用随机森林，进行参数寻优，在一组特定数据中训练得到最优参数的算法（模型只接触过训练集）&lt;/p&gt;
-&lt;p&gt;评价模型：使用测试集评价，有独立测试、交叉测试。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="代码相关" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E4%BB%A3%E7%A0%81%E7%9B%B8%E5%85%B3/"/>
-    
     
   </entry>
   
