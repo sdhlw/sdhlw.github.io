@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.sdhlw.top/word%E7%A9%BA%E7%99%BD%E5%A4%84%E6%B7%BB%E5%8A%A0%E7%A9%BA%E6%A0%BC/</loc>
+    
+    <lastmod>2024-06-05T14:36:46.902Z</lastmod>
+    
+    <date>1717598061000</date>
+    <title>word空白处添加空格 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
+    <loc>https://www.sdhlw.top/mata%E5%88%86%E6%9E%90%E6%A3%AE%E6%9E%97%E5%9B%BE/</loc>
+    
+    <lastmod>2024-06-05T14:25:38.524Z</lastmod>
+    
+    <date>1708263632000</date>
+    <title>Meta分析森林图 | Jay's Blog</title>
+    
+    <desc></desc>
+  </url>
+  
+  <url>
     <loc>https://www.sdhlw.top/%E8%AE%BA%E6%96%87%E6%8E%92%E7%89%88%E7%9A%84%E9%82%A3%E4%BA%9B%E4%BA%8B/</loc>
     
     <lastmod>2024-06-05T14:13:59.072Z</lastmod>
@@ -160,7 +182,7 @@
     
     <lastmod>2024-05-04T12:26:01.466Z</lastmod>
     
-    <date>1717596746742</date>
+    <date>1717642146536</date>
     <title>Python 速查 | Jay's Blog</title>
     
     <desc>快速查询：Python 函数的简单解释及使用 了解任何函数的最佳方式，谷歌搜索，找到函数的官方文档，阅读。 详细可参考：搜索使用 常用包下载 1234567pip install numpypip install pandaspip install scikit-learnpip install matplotlibpip install tqdm # 运行进度条 pip install seab</desc>
@@ -483,17 +505,6 @@
     <title>Windows 超赞软件 & 扩展 & 网站 | Jay's Blog</title>
     
     <desc>【不定时更新】用于记录Windows比较不错的软件和浏览器扩展。</desc>
-  </url>
-  
-  <url>
-    <loc>https://www.sdhlw.top/mata%E5%88%86%E6%9E%90%E6%A3%AE%E6%9E%97%E5%9B%BE/</loc>
-    
-    <lastmod>2024-03-08T11:08:25.880Z</lastmod>
-    
-    <date>1708263632000</date>
-    <title>Mata分析森林图 | Jay's Blog</title>
-    
-    <desc></desc>
   </url>
   
   <url>

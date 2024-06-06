@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-05-24T13:22:43.204Z</updated>
+  <updated>2024-06-05T14:36:46.902Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>word空白处添加空格</title>
+    <link href="https://www.sdhlw.top/word%E7%A9%BA%E7%99%BD%E5%A4%84%E6%B7%BB%E5%8A%A0%E7%A9%BA%E6%A0%BC/"/>
+    <id>https://www.sdhlw.top/word%E7%A9%BA%E7%99%BD%E5%A4%84%E6%B7%BB%E5%8A%A0%E7%A9%BA%E6%A0%BC/</id>
+    <published>2024-06-05T14:34:21.000Z</published>
+    <updated>2024-06-05T14:36:46.902Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>文件--选项：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202406052236129.png" alt="" style="zoom:80%;" /></p><span id="more"></span><p>b</p><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;文件--选项：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202406052236129.png&quot; alt=&quot;&quot; style=&quot;zoom:80%;&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="word" scheme="https://www.sdhlw.top/tags/word/"/>
+    
+  </entry>
   
   <entry>
     <title>origin导出矢量图片，线条变粗</title>
@@ -496,31 +520,6 @@ aria-label=&quot;[期刊双月刊和月刊有区别？ ](https://zhuanlan.zhihu.
     
     <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>origin保存模板/主题</title>
-    <link href="https://www.sdhlw.top/origin%E4%BF%9D%E5%AD%98%E6%A8%A1%E6%9D%BF-%E4%B8%BB%E9%A2%98/"/>
-    <id>https://www.sdhlw.top/origin%E4%BF%9D%E5%AD%98%E6%A8%A1%E6%9D%BF-%E4%B8%BB%E9%A2%98/</id>
-    <published>2024-04-23T01:38:38.000Z</published>
-    <updated>2024-04-23T01:43:41.776Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>模板和主题差别，具体还不清楚。保存主题的话，在图片上右键即可看到保存主题。</p><p>模板保存：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404230940336.png" alt="" style="zoom:67%;" /></p><span id="more"></span><p>模板使用：选中数据，点击上方绘图：</p><p><img src="https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404230942830.png" alt="" style="zoom:67%;" /></p><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;模板和主题差别，具体还不清楚。保存主题的话，在图片上右键即可看到保存主题。&lt;/p&gt;
-&lt;p&gt;模板保存：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://my-picture-1316590908.cos.ap-chongqing.myqcloud.com/img2024/03202404230940336.png&quot; alt=&quot;&quot; style=&quot;zoom:67%;&quot; /&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
-    
-    
-    <category term="origin" scheme="https://www.sdhlw.top/tags/origin/"/>
     
   </entry>
   
