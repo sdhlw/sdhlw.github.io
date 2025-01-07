@@ -6,7 +6,7 @@
   <link href="https://www.sdhlw.top/atom.xml" rel="self"/>
   
   <link href="https://www.sdhlw.top/"/>
-  <updated>2024-06-05T14:36:46.902Z</updated>
+  <updated>2024-06-06T04:37:37.241Z</updated>
   <id>https://www.sdhlw.top/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>文献导入zotero注意事项</title>
+    <link href="https://www.sdhlw.top/%E6%96%87%E7%8C%AE%E5%AF%BC%E5%85%A5zotero%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"/>
+    <id>https://www.sdhlw.top/%E6%96%87%E7%8C%AE%E5%AF%BC%E5%85%A5zotero%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</id>
+    <published>2024-06-06T04:36:02.000Z</published>
+    <updated>2024-06-06T04:37:37.241Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1、文章题目：首句字母大写，其他小写</p><p>2、</p><span id="more"></span><p>b</p><h3 id="参考文章">参考文章</h3><p>无</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;1、文章题目：首句字母大写，其他小写&lt;/p&gt;
+&lt;p&gt;2、&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="软件使用" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+    
+    
+    <category term="zotero" scheme="https://www.sdhlw.top/tags/zotero/"/>
+    
+  </entry>
   
   <entry>
     <title>word空白处添加空格</title>
@@ -492,34 +516,6 @@ aria-label=&quot;[vim搜索设置高亮](https://blog.csdn.net/hzhsan/article/de
     
     
     <category term="word" scheme="https://www.sdhlw.top/tags/word/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>期刊周期是否是月刊？</title>
-    <link href="https://www.sdhlw.top/%E6%9C%9F%E5%88%8A%E6%98%AF%E5%90%A6%E6%98%AF%E6%9C%88%E5%88%8A%EF%BC%9F/"/>
-    <id>https://www.sdhlw.top/%E6%9C%9F%E5%88%8A%E6%98%AF%E5%90%A6%E6%98%AF%E6%9C%88%E5%88%8A%EF%BC%9F/</id>
-    <published>2024-04-26T06:03:23.000Z</published>
-    <updated>2024-05-09T04:02:55.409Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>期刊周期决定着文章发行的时间，期刊周期有月刊、年刊、半月刊、双月刊等<sup id="fnref:1"><a href="#fn:1" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[期刊双月刊和月刊有区别？ ](https://zhuanlan.zhihu.com/p/439359413)">[1]</span></a></sup>。</p><ul><li>期刊周期为月刊的意思就是说，这本刊物每一个月安排一次出版发行，只是安排排版的时间，具体审核周期还是要根据实际情况来看的。</li><li>期刊周期为双月刊意思就是这本刊物每两个月一次出版发行，双月刊要比月刊出版时间久些，如果是着急发表论文的作者，尤其是需要评职称的，可能周期为双月刊的刊物比较影响。</li></ul><span id="more"></span><p>某个期刊1984年创刊，到2011年为第28年，那么2011年12期，就是第28卷12期。28就是卷号，12就是期号，一卷12期就说明刊物为月刊。卷号是从创刊那一年开始算起的，期号是从一年的第一个月算起。如果某期刊是双月刊，那么它一年就只有6期，也就是说一卷6期，12月出来的是第6期。即这里“期”为1个年度中依时间顺序发行的期数的编号;而“卷”是此刊物从创刊年度开始按年度顺序逐年累加的编年号<sup id="fnref:2"><a href="#fn:2" rel="footnote"><spanclass="hint--top hint--error hint--medium hint--rounded hint--bounce"aria-label="[期刊卷号期号怎么查 ](https://www.sohu.com/a/128460286_448629)">[2]</span></a></sup>。</p><p>有的期刊没有卷号只有期号，是以其出版年作为卷号。在引用时不写卷号，只标注期号，比如《焊接技术》2016年9月出版的期刊的卷号是2016年，期号是9，引用时称作2016年第9期。有些文章则有卷号，没有期号。</p><p>弄明白了期刊的卷号期号是怎么回事，就容易查询了。简单来说，卷跟年份有关系，期跟月份、出版周期有关系。如果一份期刊有卷号，需要知道该期刊的创刊时间和出版时间，将出版年份减去创刊年份加一，即是卷号。算期号，需要知道该期刊出版周期和出版月份，比如双月刊，一年应该有6期，单月出版的话，一年的出版时间应该是1月、3月、5月、7月、9月、11月，5月出版的就是第3期。双月出版的话一年的出版时间是2月、4月、6月、8月、10月、12月，8月出版的就是第4期。以此类推，其他出版周期也是这么算的。</p><h3 id="参考文章">参考文章</h3><div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://zhuanlan.zhihu.com/p/439359413">期刊双月刊和月刊有区别？</a><a href="#fnref:1" rev="footnote"> ↩︎</a></span></li><li id="fn:2"><spanstyle="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><spanstyle="display: inline-block; vertical-align: top; margin-left: 10px;"><a href="https://www.sohu.com/a/128460286_448629">期刊卷号期号怎么查</a><a href="#fnref:2" rev="footnote"> ↩︎</a></span></li></ol></div></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;期刊周期决定着文章发行的时间，期刊周期有月刊、年刊、半月刊、双月刊等&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;&lt;span
-class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot;
-aria-label=&quot;[期刊双月刊和月刊有区别？ ](https://zhuanlan.zhihu.com/p/439359413)
-&quot;&gt;[1]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;期刊周期为月刊的意思就是说，这本刊物每一个月安排一次出版发行，只是安排排版的时间，具体审核周期还是要根据实际情况来看的。&lt;/li&gt;
-&lt;li&gt;期刊周期为双月刊意思就是这本刊物每两个月一次出版发行，双月刊要比月刊出版时间久些，如果是着急发表论文的作者，尤其是需要评职称的，可能周期为双月刊的刊物比较影响。&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="科研学习" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="理论知识" scheme="https://www.sdhlw.top/categories/%E7%A7%91%E7%A0%94%E5%AD%A6%E4%B9%A0/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"/>
-    
     
   </entry>
   
